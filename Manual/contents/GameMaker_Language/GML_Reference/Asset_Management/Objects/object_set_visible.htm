@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>object_set_visible</title>
+  <title>oggetto_set_visibile</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function object_set_visible" />
   <meta name="rh-index-keywords" content="object_set_visible" />
@@ -14,52 +14,52 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>object_set_visible</h1>
-  <p>With this function you can flag a specific object as being visible or not (for more information on the &quot;visible&quot; flag see the section on the <a href="../../../../The_Asset_Editors/Objects.htm">Object Editor</a>). This means that all instances of this object that are created <i>after visible has been changed</i> will be created with this new state, while instances that are already in the room may not be affected.</p>
-  <p>Please note that this is not an instance function! You can set the visible flag of individual instances using the <a href="../Instances/Instance_Variables/visible.htm"><span class="inline">visible</span></a> variable and so have ten instances all flagged as visible even though the object in question has the flag set to false in the IDE, and even if you change the visible flag of the object to true using this function, all instances that currently in the room will remain as they were, and only instances created after calling the function will start with visible flagged as true.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>oggetto_set_visibile</h1>
+  <p>Con questa funzione è possibile contrassegnare uno specifico <span class="notranslate">object</span> come visibile o meno (per maggiori informazioni sul flag &quot;visible&quot; si veda la sezione sull'<a href="../../../../The_Asset_Editors/Objects.htm">Object Editor</a>). Questo significa che tutte le istanze di questo <span class="notranslate">object</span> che vengono create <i>dopo che visible è stato cambiato</i> saranno create con questo nuovo stato, mentre le istanze che sono già nel <span class="notranslate">room</span> potrebbero non essere interessate.</p>
+  <p>Si prega di notare che questa non è una funzione di istanza! Potete impostare il flag di visibilità delle singole istanze usando la variabile <a href="../Instances/Instance_Variables/visible.htm"><span class="inline">visible</span></a> e quindi avere dieci istanze tutte contrassegnate come visibili anche se il <span class="notranslate">object</span> in questione ha il flag impostato a false nel <span class="notranslate">IDE</span>, e anche se cambiate il flag visibile del <span class="notranslate">object</span> a true usando questa funzione, tutte le istanze che attualmente nel <span class="notranslate">room</span> rimarranno come erano, e solo le istanze create dopo aver chiamato la funzione inizieranno con visible contrassegnato come true.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">object_set_visible( index, vis );</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Asset_Object">Object Asset</span></td>
-        <td>The index of the object to change.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Asset_Object">Oggetto Attività</span></td>
+        <td><span class="notranslate">The index of the object to change.</span></td>
       </tr>
       <tr>
-        <td>vis</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td>The new visibility of the object (<span class="inline">true</span>=visible, <span class="inline">false</span>=invisible).</td>
+        <td><span class="notranslate">vis</span></td>
+        <td><span data-keyref="Type_Bool">Booleano</span></td>
+        <td><span class="notranslate">The new visibility of the object (<span class="inline">true</span>=visibile, <span class="inline">false</span>=invisibile).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if !object_get_visible(obj_Block)<br />
     {<br />
         object_set_visible(obj_Block, true);<br />
     }</p>
-  <p>The above code checks the visible flag of the object &quot;obj_Block&quot; and if it is false then it is changed to be flagged as true.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controlla il flag visibile di <span class="notranslate">object</span> &quot;obj_Block&quot; e se è falso allora viene cambiato per essere contrassegnato come vero.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Objects.htm">Objects</a></div>
-        <div style="float:right">Next: <a href="object_index.htm">object_index</a></div>
+        <div style="float:left">Indietro: <a href="Objects.htm">Oggetti</a></div>
+        <div style="float:right">Il prossimo: <a href="object_index.htm"><span class="notranslate">object_index</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 object_set_visible

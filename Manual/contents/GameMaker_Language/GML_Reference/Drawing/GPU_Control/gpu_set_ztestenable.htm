@@ -6,7 +6,7 @@
   <title>gpu_set_ztestenable</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function gpu_set_ztestenable" />
   <meta name="rh-index-keywords" content="gpu_set_ztestenable" />
@@ -15,44 +15,44 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gpu_set_ztestenable</h1>
-  <p>This function can be used to toggle z-buffer testing on or off, affecting how things will be drawn (in general only of use when working with 3D projects). Essentially, by default when z-testing is off and you have two objects drawing to the same space,
-    <i>both</i> objects will be rendered regardless of whether one will over-draw the other, resulting in unnecessary draw calls. If you switch this on then the z-buffer is tested to see whether an object will be &quot;visible&quot; and not drawn if it&#39;s
-    not. Note that this is the <i>default</i> behaviour, but you can change this by changing the type of comparison used for z-buffer testing (see the function <a href="gpu_get_zfunc.htm"><span class="inline">gpu_set_zfunc()</span></a>.</p>
-  <p>By default z-buffer testing is off (<span class="inline">false</span>).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione può essere usata per attivare o disattivare il test dello z-buffer, influenzando il modo in cui le cose saranno disegnate (in generale è utile solo quando si lavora con progetti 3D). Essenzialmente, per impostazione predefinita, quando lo z-testing è disattivato e si hanno due <span class="notranslate">objects</span> che disegnano nello stesso spazio,
+   <i>entrambi</i> <span class="notranslate">objects</span> saranno renderizzati senza considerare se uno disegnerà più dell'altro, con il risultato di chiamate di disegno non necessarie. Se <span class="notranslate">switch</span> questo è on allora lo z-buffer è testato per vedere se un <span class="notranslate">object</span> sarà &quot;visibile&quot; e non disegnato se non lo è
+    no. Si noti che questo è il comportamento <i>predefinito</i>, ma è possibile cambiarlo cambiando il tipo di confronto utilizzato per il test dello z-buffer (vedere la funzione <a href="gpu_get_zfunc.htm"><span class="inline">gpu_set_zfunc()</span></a>.</p>
+  <p>Per default il test dello z-buffer è disattivato (<span class="inline">false</span>).</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">gpu_set_ztestenable(enable);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>enable</td><td><span data-keyref="Type_Bool"></span></td>
-        <td>Enable or disable z-buffer testing (<span class="inline">true</span> or <span class="inline">false</span>).</td>
+        <td><span class="notranslate">enable</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">Enable or disable z-buffer testing (<span class="inline">true</span> o <span class="inline">false</span>).</td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">gpu_set_ztestenable(true);<br/> draw_sprite(spr_Background, 0, 0, 0);<br/> gpu_set_ztestenable(false);
   </p>
-  <p>The above code switches on z-buffer testing to draw a background sprite and then switches it back off again to continue drawing.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra attiva il test dello z-buffer per disegnare uno sfondo <span class="notranslate">sprite</span> e poi lo disattiva di nuovo per continuare a disegnare.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="GPU_Control.htm">GPU Control</a></div>
-        <div style="float:right">Next: <a href="gpu_set_zfunc.htm">gpu_set_zfunc</a></div>
+        <div style="float:left">Indietro: <a href="GPU_Control.htm">Controllo GPU</a></div>
+        <div style="float:right">Il prossimo: <a href="gpu_set_zfunc.htm"><span class="notranslate">gpu_set_zfunc</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 gpu_set_ztestenable

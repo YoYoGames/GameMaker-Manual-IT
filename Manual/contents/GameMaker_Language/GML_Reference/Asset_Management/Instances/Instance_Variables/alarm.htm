@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>alarm</title>
+  <title>allarme</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the variable alarm" />
   <meta name="rh-index-keywords" content="alarm" />
@@ -14,40 +14,41 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">alarm</span></h1>
-  <p>This 1-dimensional <a href="../../../../GML_Overview/Arrays.htm">array</a> is used to get the current value for any alarms that the instance may have, or it can be used to set those alarms. There are twelve alarms built into each instance of an object, and each one has its own <a href="../../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">event</a> that will run when this variable reaches 0.</p>
-  <p>Alarms are counted down at the start of each step, <strong>after</strong> the Begin Step event but <strong>before</strong> the main Step event, and before anything is rendered for the frame. This means that if you set an alarm to <span class="inline2">1</span> in the Begin Step event, its event will run in that same frame (as the alarm will be counted down to 0 after Begin Step has finished), but if you set an alarm to <span class="inline2">1</span> in the Step event, it will run in the next frame.</p>
-  <p>It should be noted that the alarm is not finished when it reaches 0 (although the event has been triggered) as the next step it will go down to -1, so if you need to stop an alarm for any reason you should set its array value to -1 <i>not</i> 0. Alarm times are calculated in <i>game steps</i>, with a value of 30 being 30 steps, 60 being 60 steps, etc.</p>
-  <p class="note"><span data-conref="../../../../../assets/snippets/Tag_note.hts"> </span> An alarm with no actions or code in it will not run. However, even with just a comment and no code, the alarm will count down.</p>
-  <p>You can set the alarm array directly (and retrieve the current alarm value directly by using the array too), but under some circumstances this is not the most appropriate method, so you can also use the function <span class="inline3_func"><a data-xref="{title}" href="../alarm_set.htm">alarm_set</a></span> to set an alarm, and the function <span class="inline3_func"><a data-xref="{title}" href="../alarm_get.htm">alarm_get</a></span> to get the value of an alarm.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">alarm</span>[val];</p>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span> (-1 if the alarm isn&#39;t running)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <h1>allarme</h1>
+  <p>Questo <a href="../../../../GML_Overview/Arrays.htm">array di</a> 1 dimensione è usato per ottenere il valore corrente per qualsiasi allarme che l'istanza può avere, o può essere usato per impostare tali allarmi. Ci sono dodici allarmi incorporati in ogni istanza di un <span class="notranslate">object</span>, e ognuno ha il suo <a href="../../../../../The_Asset_Editors/Object_Properties/Object_Events.htm"><span class="notranslate">event</span></a> che verrà eseguito quando questa variabile raggiunge lo 0.</p>
+  <p>Gli allarmi sono contati all'inizio di ogni passo, <strong>dopo</strong> l'evento Begin Step ma <strong>prima dell</strong> 'evento Main Step, e prima che qualsiasi cosa sia resa per il fotogramma. Questo significa che se impostate un allarme a <span class="inline2">1</span> nell'evento Begin Step, il suo evento verrà eseguito in quello stesso fotogramma (poiché l'allarme verrà contato a 0 dopo che Begin Step è finito), ma se impostate un allarme a <span class="inline2">1</span> nell'evento Step, verrà eseguito nel fotogramma successivo.</p>
+  <p>Va notato che l'allarme non è finito quando raggiunge lo 0 (anche se l'evento è stato innescato) in quanto il passo successivo scenderà a -1, quindi se avete bisogno di fermare un allarme per qualsiasi motivo dovreste impostare il suo valore di array a -1 <i>e non</i> a 0. I tempi di allarme sono calcolati in <i>passi di gioco</i>, con un valore di 30 che è 30 passi, 60 che è 60 passi, ecc.</p>
+  <p class="note"><span class="note">NOTA</span> Un allarme senza azioni o codice non funzionerà. Tuttavia, anche solo con un commento e nessun codice, l'allarme farà il conto alla rovescia.</p>
+  <p>Potete impostare direttamente l'array di allarmi (e recuperare il valore attuale dell'allarme direttamente usando anche l'array), ma in alcune circostanze questo non è il metodo più appropriato, quindi potete anche usare la funzione <span class="inline"><a href="../alarm_set.htm">alarm_set()</a></span> per impostare un allarme, e la funzione <a href="../alarm_get.htm"><span class="inline">alarm_get()</span></a> per ottenere il valore di un allarme.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
+  <p class="code">alarm[val];</p>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Real"></span> (-1 if the alarm isn&#39;t running)</p>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if canshoot<br />
     {<br />
         if keyboard_check_pressed(vk_space)<br />
         {<br />
             canshoot = false;<br />
-            alarm[0] = game_get_speed(gamespeed_fps);<br />
+            alarm[0] = room_speed;<br />
             instance_create_layer(x, y, &quot;Bullets&quot;, obj_Bullet);<br />
         }<br />
     }</p>
-  <p>The above code checks a variable and then if it is true, checks for a key press and if that is true it finally sets the variable to false, sets an alarm (where it will be set to true again) and creates an instance.</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controlla una variabile e poi, se è vero, controlla la pressione di un tasto e se è vero, infine imposta la variabile su false, imposta un allarme (dove sarà impostato di nuovo su true) e crea un'istanza.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instance_Variables.htm">Instance Variables</a></div>
-        <div style="float:right">Next: <a href="direction.htm">direction</a></div>
+        <div style="float:left">Indietro: <a href="Instance_Variables.htm">Variabili di istanza</a></div>
+        <div style="float:right">Il prossimo: <a href="direction.htm"><span class="notranslate">direction</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 alarm

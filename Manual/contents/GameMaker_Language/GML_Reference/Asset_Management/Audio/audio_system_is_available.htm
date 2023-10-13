@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>audio_system_is_available</title>
+  <title>il sistema audio è disponibile</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function audio_system_is_available" />
   <meta name="rh-index-keywords" content="audio_system_is_available" />
@@ -15,18 +15,17 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">audio_system_is_available</span></h1>
-  <p>This function can be used to check and see if the audio system has been initialised and the audio context is initialised and running.</p>
-  <p>On all platforms, this function will return <span class="inline2">true</span> immediately after Game Start when the audio engine is <a href="audio_system_is_initialised.htm">initialised</a>, <i>except on the <b>HTML5</b> target</i>. On HTML5, the audio context status can change at any time depending on user input, the browser being used, and its version, so this function can be used to check and see if audio can be played or not. If the function returns <span class="inline2">false</span> (i.e. the audio context status is not running), then only unstreamed sounds <i>may</i> play (but it&#39;s not guaranteed, and you should assume that no audio can be played), while if it returns <span class="inline2">true</span> then all audio will play.</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> To check if the audio system is <em>initialised</em> on HTML5, you should use <span class="inline3_func"><a data-xref="{title}" href="audio_system_is_initialised.htm">audio_system_is_initialised</a></span> instead. The audio system has to be initialised first before it can be available.</p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">audio_system_is_available</span>();</p>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Bool"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">if <span data-field="title" data-format="default">audio_system_is_available</span>()<br />
+  <h1>il sistema audio è disponibile</h1>
+  <p>Questa funzione può essere usata per controllare e vedere se il sistema audio è stato inizializzato, o se il contesto audio è in esecuzione. Su tutte le piattaforme, questa funzione restituirà true immediatamente dopo l'avvio del gioco quando il motore audio è inizializzato, <i>tranne che sul target <b>HTML5</b></i>. Su HTML5, lo stato del contesto audio può cambiare in qualsiasi momento a seconda dell'input dell'utente, del browser utilizzato e della sua versione, quindi questa funzione può essere utilizzata per controllare e vedere se l'audio può essere riprodotto o meno. Se la funzione restituisce <span class="inline">false</span> (cioè: lo stato del contesto audio non è in esecuzione), allora solo i suoni non in streaming <i>possono essere</i> riprodotti (ma non è garantito, e si dovrebbe assumere che nessun audio può essere riprodotto), mentre se restituisce <span class="inline">true</span> allora tutto l'audio verrà riprodotto.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
+  <p class="code">audio_system_is_available();</p>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Bool"></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p class="code">if audio_system_is_available()<br />
     {<br />
         if audio_is_paused(global.Music)<br />
         {<br />
@@ -47,17 +46,19 @@
             audio_pause_sound(global.Music);<br />
         }<br />
     }</p>
-  <p>The above code will pause/unpause an audio track depending on whether the audio system is initialised and available or not.</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra mette in pausa/disattiva una traccia audio a seconda che il sistema audio sia inizializzato e disponibile o meno.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Audio.htm">Audio</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="audio_system_is_initialised.htm">audio_system_is_initialised</a></div>
+        <div style="float:left">Indietro: <a href="Audio.htm">Audio</a></div>
+        <div style="float:right">Il prossimo: <a href="audio_exists.htm"><span class="notranslate">audio_exists</span></a></div>
+        
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 audio_system_is_available

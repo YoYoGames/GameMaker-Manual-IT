@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>file_text_close</title>
+  <title>chiusura del file_testo</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for file_text_close" />
   <meta name="rh-index-keywords" content="file_text_close" />
@@ -14,28 +14,28 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>file_text_close</h1>
-  <p>Once you have finished working with a given file (whether reading from it or writing to it), you must close the file again, or else you risk losing the information contained within. This also prevents memory leaks and makes sure that you never go over the file limit by having more than 32 files open.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>chiusura del file_testo</h1>
+  <p>Una volta che avete finito di lavorare con un dato file (sia in lettura che in scrittura), dovete chiudere nuovamente il file, altrimenti rischiate di perdere le informazioni contenute al suo interno. Questo previene anche le perdite di memoria e fa sì che non si superi mai il limite dei file avendo più di 32 file aperti.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">file_text_close(fileid);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>fileid</td><td><span data-keyref="Type_ID_File_Text"></span></td>
-        <td>The id of the file to close.</td>
+        <td><span class="notranslate">fileid</span></td><td><span data-keyref="Type_ID_File_Text"></span></td>
+        <td><span class="notranslate">The id of the file to close.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var file = file_text_open_write(working_directory + &quot;Game_Data.txt&quot;);<br />
     while (!file_text_eof(file))<br />
     {<br />
@@ -43,18 +43,18 @@
     }<br />
     file_text_write_string(file, level_data);<br />
     file_text_close(file);</p>
-  <p>The above code opens a file for writing then loops through the lines of text already written to the file until it reaches the end. At this point it writes a string and then closes the file again.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra apre un file per la scrittura poi <span class="notranslate">loops</span> attraverso le linee di testo già scritte nel file fino a raggiungere la fine. A questo punto scrive un <span class="notranslate">string</span> e poi chiude nuovamente il file.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Text_Files.htm">Text Files</a></div>
-        <div style="float:right">Next: <a href="file_text_open_read.htm">file_text_open_read</a></div>
+        <div style="float:left">Indietro: <a href="Text_Files.htm">File di testo</a></div>
+        <div style="float:right">Il prossimo: <a href="file_text_open_read.htm"><span class="notranslate">file_text_open_read</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 file_text_close

@@ -6,7 +6,7 @@
   <title>sprite_index</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function sprite_index" />
   <meta name="rh-index-keywords" content="sprite_index" />
@@ -15,15 +15,15 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>sprite_index</h1>
-  <p>This variable returns the index of the current sprite for the instance, or -1 if the instance has no sprite associated with it. You can change it to give the instance a different sprite by giving it the name of a sprite from the resource tree or by using a variable that has an externally loaded sprite indexed in it. Changing the sprite does not change the index of the currently visible frame, so if you change the sprite on frame number 3, the new sprite will be drawn with that frame visible (assuming it has the same number of frames).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa variabile restituisce l'indice dell'attuale <span class="notranslate">sprite</span> per l'istanza, o -1 se l'istanza non ha alcun <span class="notranslate">sprite</span> associato ad essa. Potete cambiarla per dare all'istanza un diverso <span class="notranslate">sprite</span> dandole il nome di un <span class="notranslate">sprite</span> dall'albero delle risorse o usando una variabile che ha un <span class="notranslate">sprite</span> caricato esternamente indicizzato in esso. Cambiare il <span class="notranslate">sprite</span> non cambia l'indice del frame attualmente visibile, quindi se cambiate il <span class="notranslate">sprite</span> sul frame numero 3, il nuovo <span class="notranslate">sprite</span> sarà disegnato con quel frame visibile (assumendo che abbia lo stesso numero di frame).</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">sprite_index;</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Asset_Sprite">Sprite Asset</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">with (obj_Check)<br />
     {<br />
         if !collision_line(x, y, other.x, other.y, obj_Wall, false, true)<br />
@@ -35,18 +35,18 @@
             sprite_index = spr_clear;<br />
         }<br />
     }</p>
-  <p>The above code will loop through all instances of &quot;obj_Check&quot; checking for a collision line between them and the instance running the code. The sprite of those instances will be changed depending on the return value (true or false) for the collision line.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra <span class="notranslate">loop</span> attraverso tutte le istanze di &quot;obj_Check&quot; controllando una linea di collisione tra loro e l'istanza che esegue il codice. Il <span class="notranslate">sprite</span> di queste istanze sarà cambiato a seconda del valore di ritorno (vero o falso) per la linea di collisione.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Instance_Variables.htm">Sprite Instance Variables</a></div>
-        <div style="float:right">Next: <a href="sprite_width.htm">sprite_width</a></div>
+        <div style="float:left">Indietro: <a href="Sprite_Instance_Variables.htm">Variabili di istanza dello sprite</a></div>
+        <div style="float:right">Il prossimo: <a href="sprite_width.htm"><span class="notranslate">sprite_width</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 sprite_index

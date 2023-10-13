@@ -1,201 +1,196 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Object Events</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
-  <meta name="rh-authors" content="Mark Alexander" />
-  <meta name="topic-comment" content="Page detailing the events system and the different events in an object" />
-  <meta name="rh-index-keywords" content="Objects - Events" />
-  <meta name="search-keywords" content="events,object events,events list" />
-  <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
-</head>
-<body>
-  <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Object Events</span></h1>
-  <p>So, what are <span data-field="title" data-format="default">Object Events</span>? Basically, these are discreet moments in the game loop where things are made to happen based on what you have programmed for them. <span data-keyref="GameMaker Name">GameMaker</span> works with cycles of these events - from the moment a room is started to the moment it is finished there is a game loop running where every <strong>step </strong>a series of events are run or checked, and you can choose to place <span data-keyref="GML_Code">GML Code</span> or <span data-keyref="GML_Visual">GML Visual</span> actions in your objects that respond to these events (a step is a moment in game time, governed by the <a href="../../Settings/Game_Options.htm">Game Frames Per Second</a> setting, and can also be called a <strong>frame</strong>) .</p>
-  <p>Let&#39;s look at a typical object setup with events and code:</p>
-  <p><img alt="Object Editor Events View" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_Events.png" />As you can see in our example object there are a number of events listed that it should respond to, but initially when you create an object this list is empty and you must decide which events you need and what instances of that object should do when those events are triggered. To add events into the object, you press the <strong>Add Event</strong> button found at the bottom of the events list which will bring up the following window: </p>
-  <p><img alt="Object Editor Events List" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_EventList.png" />This is the list of all the basic events and event categories which an object can respond to, and within each category are sub events to further refine behaviours. For example, if you click on the <strong>K</strong><strong>ey Press</strong> <img alt="Key Press Icon" height="16" src="../../assets/Images/Icons/Icon_KeyboardPress.png" width="16" /> event category you will then get a further window popping up with the events that allow you to select <em>which </em>key the object should respond to.</p>
-  <p>Once you have selected your event, the event&#39;s editor window will be chained to it and open up on the right.</p>
-  <div data-conref="../../assets/snippets/Visual_Code_Choice.hts"> </div>
-  <p>You can now edit the <span data-keyref="GML_Code">GML Code</span> (or blocks) to give your object a specific behaviour or reaction to that event.</p>
-  <p>You can click the right mouse button <img alt="RMB Icon" class="icon" src="../../assets/Images/Icons/Icon_RMB.png" style="" /> on any event that has been added to an object to get the following menu options:</p>
-  <p><img alt="Object Editor Events Menu" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_RMBMenu.png" />These options are:</p>
-  <ul class="colour">
-    <li><strong>Add Event</strong> - Add a new event from the event list.</li>
-    <li><strong>Show Parent Event</strong> - View the inherited event from the parent in a read-only mode.</li>
-    <li><strong>Open Parent Event</strong> - Open the inherited event in the parent object.</li>
-    <li><strong>Cut </strong>/ <strong>Copy </strong>/ <strong>Paste Events</strong> - Cut, copy or paste the selected event. You can use the standard keyboard shortcuts too: <img alt="CTRL Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_Ctrl.png" width="55" /> / <img alt="CMD Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_Cmd.png" width="55" /> + <span class="inline">X</span>, <img alt="CTRL Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_Ctrl.png" width="55" /> / <img alt="CMD Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_Cmd.png" width="55" /> + <span class="inline">C</span>, and <img alt="CTRL Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_Ctrl.png" width="55" /> / <img alt="CMD Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_Cmd.png" width="55" /> + <span class="inline">V</span>.</li>
-    <li><strong>Duplicate Event</strong> - Duplicate the chosen event. This will take the contents of the chosen event and duplicate them in another event that you specify.</li>
-    <li><strong>Change Event</strong> - Change the event. This will prompt you to choose another event category and once selected the contents of the current event will be changed to the new event (removing the original event in the process).</li>
-    <li><strong>Convert To GML Visual / Code</strong> - Object events will be created using the method chosen when you created the project, either using <span data-keyref="GML_Code">GML Code</span> or <span data-keyref="GML_Visual">GML Visual</span> actions. With this option you can convert from one to the other, regardless of the project type.</li>
-    <li><strong>Delete Event</strong> - Delete the event (or events).</li>
-  </ul>
-  <p>When removing events, you can use <img alt="Shift Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_Shift.png" width="55" /> + <img alt="LMB Icon" class="icon" src="../../assets/Images/Icons/Icon_LMB.png" /> to select multiple events and then delete them all together.Each object you create has its own discreet list of events which are added into it from <a data-xref="{title}" href="../Objects.htm">The Object Editor</a>. These events fall into two categories:</p>
-  <ul class="colour">
-    <li>those that run every single game step</li>
-    <li>those that are &quot;triggered&quot; by a game event, like the instance reaching the room edge or a keyboard or mouse press.</li>
-  </ul>
-  <p>The full list of events is given below:</p>
-  <p><img alt="Create Event Icon" src="../../assets/Images/Icons/Icon_Create.png" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#">Create</a></p>
-  <div class="droptext" data-targetname="drop-down8">
-    <p class="dropspot">This event happens when an instance of the object is first created, and is the very first thing that happens within an instance placed in the room through the Room Editor when a room is entered. This means that this event is the ideal place to initialize <a class="glossterm" data-glossterm="variable" href="#">variable</a><span class="glossextra">s</span>, start <a href="../Timelines.htm">Timelines</a>, set <a href="../Paths.htm">Paths</a> etc... and do anything else that generally only needs to be done once or only when an instance is first created in the room. If your object has any <strong>Object Variables</strong> or <strong>Instance Variables</strong> added in either the Object Editor or the Room Editor, then these variables will be initialised first and then the <strong>Create Event</strong> will be run.</p>
-    <p class="dropspot">Remember that you can modify anything you set up in the Create Event from the <a href="../Room_Properties/Layer_Properties.htm">Instance Creation Code</a> in the Room Editor, as that is run directly after the create event for the instance and can be used to create <strong>Instance Variables</strong> or to override any variables added as Object Variables or in the actual Create Event.</p>
-    <div data-conref="../../assets/snippets/Instance_creation_order_warning.hts"> </div>
-    <p class="dropspot"> </p>
-  </div>
-  <p><img alt="Destroy Event Icon" src="../../assets/Images/Icons/Icon_Destroy.png" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down9" href="#">Destroy</a></p>
-  <div class="droptext" data-targetname="drop-down9">
-    <p class="dropspot">This event is the event to be executed when an instance is destroyed. It is often overlooked when adding behaviours to objects, but it can be very useful, for example by creating explosion or particle effects when an enemy is killed, or for re-spawning a new instance of the object in another part of the room, or even for adding points onto a score.</p>
-    <p class="dropspot"> </p>
-  </div>
-  <p><img alt="Clean Up Event Icon" src="../../assets/Images/Icons/Icon_Destroy.png" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down10" href="#">Clean Up</a></p>
-  <div class="droptext" data-targetname="drop-down10">
-    <p class="dropspot"><span>This event will be called after any event that removes an instance of the object from the room. So, it will be triggered if:</span></p>
-    <ul class="dropspotlist">
-      <li class="dropspot"><span>the instance is destroyed</span></li>
-      <li class="dropspot"><span>the room ends</span></li>
-      <li class="dropspot"><span>the game ends</span></li>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Eventi dell'oggetto</title>
+    <meta name="generator" content="Adobe RoboHelp 2020" />
+    <meta name="rh-authors" content="Mark Alexander" />
+    <meta name="topic-comment" content="Page detailing the events system and the different events in an object" />
+    <meta name="rh-index-keywords" content="Objects - Events" />
+    <meta name="search-keywords" content="events,object events,events list" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
+    <script src="../../assets/scripts/main_script.js"></script>
+  </head>
+  <body><!--<div class="body-scroll" style="top: 150px;">-->
+    <h1>Eventi dell'oggetto</h1>
+    <p>Quindi, cosa sono gli <strong>eventi</strong> <span class="notranslate">object</span>? Fondamentalmente, questi sono momenti discreti nel gioco <span class="notranslate">loop</span> dove le cose vengono fatte accadere in base a ciò che avete programmato per loro. <span data-keyref="GameMaker Name">GameMaker</span> lavora con cicli di questi eventi - dal momento in cui un <span class="notranslate">room</span> è iniziato al momento in cui è finito c'è un gioco <span class="notranslate">loop</span> in esecuzione dove ogni <strong>passo una </strong>serie di eventi vengono eseguiti o controllati, e si può scegliere di inserire codice o <span class="notranslate">GML</span> azioni visive nel vostro <span class="notranslate">objects</span> che rispondono a questi eventi (un passo è un momento nel tempo di gioco, governato dall'impostazione della velocità <span class="notranslate">room</span>, e può anche essere chiamato un <strong>frame</strong>) .</p>
+    <p>Guardiamo una tipica configurazione di <span class="notranslate">object</span> con eventi e codice:</p>
+    <p><img>Come puoi vedere nel nostro esempio <span class="notranslate">object</span> ci sono un certo numero di eventi elencati a cui dovrebbe rispondere, ma inizialmente quando crei un <span class="notranslate">object</span> questa lista è vuota e devi decidere di quali eventi hai bisogno e cosa dovrebbero fare le istanze di quel <span class="notranslate">object</span> quando quegli eventi vengono attivati. Per aggiungere eventi in <span class="notranslate">object</span>, si preme il pulsante <em>Add Event</em> che si trova in fondo alla lista degli eventi e che fa apparire la seguente finestra:</p>
+    <p><img>Questa è la lista di tutti gli eventi di base e delle categorie di eventi a cui un <span class="notranslate">object</span> può rispondere, e all'interno di ogni categoria ci sono dei sotto-eventi per perfezionare ulteriormente i comportamenti. Per esempio, se cliccate sulla categoria di eventi<strong>Key Press</strong> <img> vi apparirà un'altra finestra con gli eventi che vi permettono di selezionare a <em>quale </em>tasto <span class="notranslate">object</span> deve rispondere.</p>
+    <p>Una volta che hai selezionato il tuo evento, la finestra dell'editor dell'evento sarà concatenata ad esso e si aprirà sulla destra.</p>
+    <div data-conref="../../assets/snippets/Visual_Code_Choice.hts"> </div>
+    <p>Ora potete modificare il codice (o i blocchi) di <span class="notranslate">GML</span> per dare al vostro <span class="notranslate">object</span> un comportamento specifico o una reazione a quell'evento.</p>
+    <p>Puoi cliccare con il tasto destro del mouse <img> su qualsiasi evento che è stato aggiunto a <span class="notranslate">object</span> per ottenere le seguenti opzioni di menu:</p>
+    <p><img>Queste opzioni sono:</p>
+    <ul class="colour">
+      <li><strong>Aggiungi evento</strong> - Aggiungi un nuovo evento dalla lista degli eventi.</li>
+      <li><strong>Taglia / </strong> <strong>Copia / </strong> <strong>Incolla eventi</strong> - Taglia, copia o incolla l'evento selezionato. Puoi usare anche le scorciatoie da tastiera standard: <img> / <img> + <span class="inline">X</span>, <img> / <img> + <span class="inline">C</span>, e <img> / <img> + <span class="inline">V</span>.</li>
+      <li><strong>Duplica evento</strong> - Duplica l'evento scelto. Questo prenderà il contenuto dell'evento scelto e lo duplicherà in un altro evento da te specificato.</li>
+      <li><strong>Cambia evento</strong> - Cambia l'evento. Questo ti chiederà di scegliere un'altra categoria di evento e una volta selezionato il contenuto dell'evento corrente verrà cambiato nel nuovo evento (rimuovendo l'evento originale nel processo).</li>
+      <li><strong>Convert To <span class="notranslate">GML</span> Visual / Code</strong> - gli eventi di <span class="notranslate">Object</span> saranno creati usando il metodo scelto quando hai creato il progetto, o usando il codice o usando le azioni di <span class="notranslate">GML</span> Visual. Con questa opzione puoi convertire da uno all'altro, indipendentemente dal tipo di progetto.</li>
+      <li><strong>Elimina evento</strong> - Elimina l'evento (o gli eventi).</li>
     </ul>
-    <p class="dropspot"><span>It is designed for you to use to &quot;clean up&quot; any dynamic resources that you may have in your game (like surfaces, data structures, etc...) or to perform any task that you need performed <em>once </em>when the instance is removed from the game in any way.</span></p>
-    <p class="dropspot"><span>Note that this event will be called <em>instantly </em>after the event that triggered it, but the instance will not actually be removed from the game <strong>until the end of the current event</strong>. For example, if you call <span class="inline">instance_destroy()</span> in the Step Event, then the Destroy Event will be called, then the Clean Up Event, and then <em>the rest of the Step Event will finish running</em>. This means that any code you have after the call to <span class="inline">instance_destroy()</span> will still be run and be a potential cause for errors if you&#39;ve cleaned up a data structure or some other resource that the code requires, so care must be taken when using this event.</span> </p>
-    <p> </p>
-  </div>
-  <p><img alt="Alarm Event Icon" src="../../assets/Images/Icons/Icon_Alarm.png" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down11" href="#">Alarm</a></p>
-  <div class="droptext" data-targetname="drop-down11">
-    <p class="dropspot">The alarm category is split into 12 events, one for each of the possible alarms that can be set in an instance. So, when you click on the <em>Add Alarm </em>category you are presented with this window:</p>
-    <p class="dropspot"><img alt="Object Editor Alarm Events" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_AlarmEvents.png" />Here you select the alarm that you wish to create and, once that is done, you will see that it has been added to the event window allowing you to add code to it as normal. But what is an alarm? Well, it is a special event that does nothing unless the alarm has been previously set, and then it will wait until that alarm has counted down to 0 before running the actions or code that you have added into it.</p>
-    <p class="dropspot">Once the alarm has reached 0 and run the code, it will then count down to -1, where it will remain until set again (meaning you can check the value of an alarm to see if it is greater than -1, which will tell you if it&#39;s running or not). So, say you set <span class="inline">alarm[0]</span> in the create event of the object to 30, this means that <span data-keyref="GameMaker Name">GameMaker</span> will count down 30 game steps before it runs the actions or code that are placed in the <span class="inline">alarm[0]</span> event. Note that setting an alarm to 0 will <em>not </em>run the alarm code, as the event is triggered, but the alarm is set to -1 immediately, so the code is skipped. If you need an alarm to run the very next step, then you should set it to 1.</p>
-    <p class="dropspot">This can be very useful as it allows you to set things in motion at precise moments, and you can even have them repeat as there is nothing to stop you setting an alarm in its own event. Imagine you have a monster and you want it to turn right every three seconds... well, you would set an alarm in its create event to the room speed * 3 (if the room speed is 30, that&#39;s 30 steps per second, so multiply that by 3 and you get 3 seconds!) and then in the alarm event you would have the code or action to set its direction, as well as the action (or code) to set its alarm to room speed * 3 again. In this way, you can set up simple game loops where things only happen at specific intervals.</p>
-    <p class="dropspot">It is worth noting that an alarm with no actions or code in it in it will <em>not </em>count down. However, even with just a comment and no code or actions, then the alarm will continue to count down and can be set and checked as you would normally.</p>
-    <p class="dropspot"> </p>
-  </div>
-  <p><img alt="Step Event Icon" src="../../assets/Images/Icons/Icon_Step.png" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down12" href="#">Step</a></p>
-  <div class="droptext" data-targetname="drop-down12">
-    <p class="dropspot"><span data-keyref="GameMaker Name">GameMaker</span> splits time into <strong>steps </strong>with the room speed defining how many of these steps there are supposed to be per second (a step can also be called a <strong>frame</strong>). A single step, is basically the loop that runs constantly with all the events being checked and triggered as necessary while the game runs, so as you can imagine, the <strong>Step Event </strong>is an event that is checked every single step of the game while the instance exists.</p>
-    <p class="dropspot">The step event is actually comprised of three sub events that are outlined below:</p>
-    <p class="dropspot"><img alt="Object Editor Step Events" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_Step.png" />For most things the standard step event will be fine to use, but sometimes you want a bit more control over what code runs and at what time, so for that you are provided with the <strong>Begin </strong>and <strong>End </strong>step events. All three are checked every step, but their order will never vary even if future updates to the <span data-keyref="GameMaker Name">GameMaker</span> engine change other events, which means that this is the only reliable method of making sure that something always happens before something else.</p>
-    <p class="dropspot">What can the step event be used for? Well, it can be used for actions or code that needs to be executed continuously. For example, if one object should follow another, here you can adapt the direction of motion towards the object we are following to keep it moving smoothly behind. Be careful with this event though, and don&#39;t put many complicated actions in the step event of objects, especially if you are planning on having lots of instances of the object in your game room, as this might slow the game down. Many things can be placed into alarms, or set to trigger using some of the <strong>Other </strong>events, rather than happening all the time.</p>
-    <p class="dropspot"> </p>
-    <p class="dropspot"> </p>
-  </div>
-  <p><img alt="Collision Event Icon" src="../../assets/Images/Icons/Icon_Collision.png" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down13" href="#">Collision</a></p>
-  <div class="droptext" data-targetname="drop-down13">
-    <p class="dropspot">Obviously when making a game, it is very important that you know when two (or more) instances of an object have collided, and for that we have the <strong>Collision Event</strong>. This is an event that you place in an object and then specify against which other object you should be checking for collisions.</p>
-    <p class="dropspot">When you don&#39;t have physics turned on, these collisions will be calculated based on the mask of the two objects (the mask is defined within the sprite properties, or can be assigned independently in the object properties) and whether they overlap or not. Note, that if one or the other instances in the collision does not have a mask assigned (or the sprite mask is set to nothing), <em>even if it is drawing something</em> no collisions will be detected.</p>
-    <p class="dropspot">If you have <strong>Physics </strong>on, then the collision will be based on the type of <strong>collision shape</strong> (<em>Fixture</em>) that you have defined for the object in its physics properties, as will its reaction to the collision. This means you may not need any code to deal with the collision, but this event will still <em>need to have at least a comment in it </em>for the collisions to be detected.</p>
-    <p class="dropspot">Finally, it should be noted that all collisions will be calculated once per game step before the collision event is triggered, such that when the collision event runs, all collisions will have been calculated already and pre-assigned. This means that if you create an instance in this event and then try to check for a collision with it, the collision wont be detected or resolved until the next <a class="glossterm" data-glossterm="iteration" href="#">iteration</a> of the game loop.</p>
-    <p class="dropspot"> </p>
-    <p class="dropspot"> </p>
-  </div>
-  <p><img alt="Keyboard Icon" src="../../assets/Images/Icons/Icon_Keyboard.png" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down14" href="#">Keyboard,</a>  <img alt="Keyboard Press Icon" src="../../assets/Images/Icons/Icon_KeyboardPress.png" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down14" href="#">Keyboard Press,</a>  <img alt="Keyboard Release Icon" height="16" src="../../assets/Images/Icons/Icon_KeyboardRelease.png" style="cursor: nwse-resize;" width="15" /> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down14" href="#">Keyboard Release</a></p>
-  <div class="droptext" data-targetname="drop-down14">
-    <p class="dropspot">Letting the player control the different aspects of your game is very important, and to that end <span data-keyref="GameMaker Name">GameMaker</span> provides you with a very comprehensive list of keyboard events that can be used in any of the three main keyboard categories. For the general Keyboard category, it is triggered continuously every step for as long as the selected key is pressed down, while the Press and Release category events will only be triggered once when the key is initially pressed down or released.</p>
-    <p class="dropspot">It should be noted that keyboard events are actually triggered in all active instances in a room whenever a key is used, but only those that have an event defined for that particular key will respond and you can create multiple keyboard events in any object and the instances of that object will respond to all of them while the game is running.</p>
-    <p class="dropspot">When you add any keyboard event to an object, you will be presented with the keyboard sub event menu where you can specify the key you are to be checking for:</p>
-    <p class="dropspot"><img alt="Object Editor Keyboard Events" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_Keyboard.png" />Most of them are fairly obvious, but let&#39;s just go through the sections briefly - at the top we have the arrow keys, followed by the most used modifier keys, then the rest of the keyboard (split into further sub-sections so you can get the exact key required like <img alt="Escape Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_Escape.png" width="55" /> or <img alt="Insert Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_Insert.png" width="55" />) and finally two very special sub events, <strong>No Key</strong> and <strong>Any Key</strong>. As their names imply, these are sub events that check for when <em>no </em>key is pressed or for when <em>any </em>key is pressed. Please note that the keys on the numeric keypad only produce the corresponding events when <strong>Number Lock </strong>is enabled.</p>
-    <p class="dropspot">The <strong>Press </strong>and <strong>Release </strong>events for the keyboard are almost exactly the same as the regular keyboard event, except that instead of being triggered continuously, they are triggered once only. When the keyboard first registers that a key has been pressed it will generate a <strong>Keyboard Pressed</strong> event (as well as a regular Keyboard event), and the first time after that where a key is no longer being detected as pressed it will trigger a single <strong>Keyboard Release</strong> event.</p>
-    <p class="dropspot"> </p>
-    <p class="dropspot"> </p>
-  </div>
-  <p><img alt=" Mouse Icon" height="16" src="../../assets/Images/Icons/Icon_MouseEvent.png" width="16" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down16" href="#">Mouse</a></p>
-  <div class="droptext" data-targetname="drop-down16">
-    <p class="dropspot">The Mouse category is separated into a series of events that can be selected to give you a more precise control over what is happening in your game. Here you can see exactly what these events are:</p>
-    <p class="dropspot"><img alt="Object Editor Mouse Events" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_Mouse.png" />The left <img alt="LMB Icon" class="icon" src="../../assets/Images/Icons/Icon_LMB.png" />, right <img alt="RMB Icon" class="icon" src="../../assets/Images/Icons/Icon_RMB.png" /> and middle <img alt="MMB Icon" class="icon" src="../../assets/Images/Icons/Icon_MMB.png" /> button events (whether <strong>normal</strong>, <strong>pressed </strong>or <strong>released</strong>) all work on the mask of the instance that has the event. What this means is that <span data-keyref="GameMaker Name">GameMaker</span> will check the position of the mouse in the room when those buttons are used against the collision masks of the instances that have a mouse event. If there is a &quot;collision&quot; with the instance <a class="glossterm" data-glossterm="bounding box" href="#">bounding box</a> then the event will be triggered, so make sure that any instance with these events has a sprite with a valid collision mask or that the object has a mask sprite selected in the object properties. As their names imply, these events will be triggered either once when the chosen mouse button is first pressed or released, or continuously each step while the button is maintained. </p>
-    <p class="dropspot">The mouse enter and leave events are also similar to the button events in that they too rely on the mask of the instance to work, but this time they are triggered when the mouse first &quot;enters&quot; (touches) the instance or when the mouse &quot;leaves&quot; (stops touching) the instance. These events are not continuous however, and are triggered only once for each time the mouse enters or leaves the object - so they are an ideal method for creating, for example, buttons that need to change as the mouse hovers over them before going back to normal when the mouse is removed.</p>
-    <p class="dropspot">Finally we have another section to the mouse events which is called the <strong>Global Mouse</strong>. In this sub-menu you will find a selection of events that are for recording mouse events in instances even when the mouse is not over them or even near them. These are events that are generated for <em>all </em>instances and if there are actions or code defined for the specified event then it will be run, regardless of the position of the mouse within the game room.</p>
-    <p class="dropspot">Please note that on mobile or touch-screen devices the left mouse button <img alt="LMB Icon" class="icon" src="../../assets/Images/Icons/Icon_LMB.png" /> can also be used to check for a finger tab on a touch screen, and the right mouse button <img alt="RMB Icon" class="icon" src="../../assets/Images/Icons/Icon_RMB.png" /> is triggered by a double tap on the screen (this behaviour can be changed using code).</p>
-    <p class="dropspot"> </p>
-    <p class="dropspot"> </p>
-  </div>
-  <p><img alt="Gestures Icon" src="../../assets/Images/Icons/Icon_Gesture.png" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down18" href="#">Gestures</a></p>
-  <div class="droptext" data-targetname="drop-down18">
-    <p class="dropspot">This event is the one that will be triggered by the user touching the screen (on mobile) or clicking and moving the mouse (on all other platforms). These events are similar to the mouse events, in that you have regular versions and <em>global</em> versions. The regular versions of these events will only be triggered when the touches occur on an instance that has a sprite (or a mask) and the touches occur within its <a class="glossterm" data-glossterm="bounding box" href="#">bounding box</a>. The global versions of these events, however, will be triggered by the user touching <em>anywhere </em>on the screen.</p>
-    <p class="dropspot">The gesture events detect the following:</p>
-    <ul class="dropspotlist">
-      <li class="dropspot"><img alt="Tap Icon" class="icon" src="../../assets/Images/Icons/Icon_Tap.png" /> <strong>taps </strong>- when a user clicks/touches and releases quickly</li>
-      <li class="dropspot"><img alt="Drag Icon" class="icon" src="../../assets/Images/Icons/Icon_Drag.png" /> <strong>drags </strong>- when a user touches/clicks and maintains it then moves their finger/cursor</li>
-      <li class="dropspot"><img alt="Flick Icon" class="icon" height="20" src="../../assets/Images/Icons/Icon_Flick.png" width="20" /> <strong>flicks </strong>- when the user moves and releases a touch/click in one movement</li>
-      <li class="dropspot"><img alt="Pinch Icon" class="icon" src="../../assets/Images/Icons/Icon_Pinch.png" /> <strong>pinches </strong>- when the user has two fingers on the screen and then moves them together/apart</li>
-      <li class="dropspot"><img alt="Rotate Icon" class="icon" src="../../assets/Images/Icons/Icon_Rotate.png" /> <strong>rotates </strong>- when the user has two fingers on the screen and then rotates them around a point</li>
+    <p>Quando rimuovi gli eventi, puoi usare <img> + <img> per selezionare più eventi e poi cancellarli tutti insieme.Ogni <span class="notranslate">object</span> che crei ha la sua discreta lista di eventi che vengono aggiunti in esso dall'<strong>Object Editor</strong>. Questi eventi rientrano in due categorie:</p>
+    <ul class="colour">
+      <li>quelli che eseguono ogni singolo passo del gioco</li>
+      <li>quelli che sono &quot;innescati&quot; da un evento di gioco, come l'istanza che raggiunge il bordo <span class="notranslate">room</span> o una pressione della tastiera o del mouse.</li>
     </ul>
-    <p class="dropspot"><img alt="Object Editor Gesture Events" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_Gesture.png" />The different events will always contain a DS Map called the &quot;<span class="inline">event_data</span>&quot; map, which will contain a number of key/value pairs with data on the touch/click position and movement. For full details on all the available sub-events and how they work, please see the following section:</p>
-    <ul class="dropspotlist">
-      <li class="dropspot"><a href="Gesture_Events.htm">The Gesture Event</a></li>
-    </ul>
-    <p class="dropspot"> </p>
-    <p class="dropspot"> </p>
-  </div>
-  <p><img alt="Other Icon" height="16" src="../../assets/Images/Icons/Icon_Other.png" width="16" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down19" href="#">Other</a></p>
-  <div class="droptext" data-targetname="drop-down19">
-    <p class="dropspot">There are a number of special events for use when making games with <span data-keyref="GameMaker Name">GameMaker</span> and they are mostly grouped together under the Other event and can be selected from the pop up menu of sub events that comes up when you select this. Here is an image of all these other events:</p>
-    <p class="dropspot"><img alt="Object Editor Other Events" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_OtherEvents.png" />For more information on each of the events listed in the image above, please see the following section:</p>
-    <ul class="dropspotlist">
-      <li class="dropspot"><a href="Other_Events.htm">The Other Events</a></li>
-    </ul>
-    <p class="dropspot" data-condition="Export:Beta">In beta versions, this list also contains the <a href="../../GameMaker_Language/GML_Reference/Rollback/Rollback_Events.htm">Rollback Start</a> and <a data-xref="{text}" href="../../GameMaker_Language/GML_Reference/Rollback/Rollback_Events.htm#h1">Rollback Event</a> events.</p>
-    <p class="dropspot"> </p>
-  </div>
-  <p><img alt="Draw Event" src="../../assets/Images/Icons/Icon_Draw.png" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down20" href="#">Draw</a></p>
-  <div class="droptext" data-targetname="drop-down20">
-    <p class="dropspot">This event category is the one that governs what you see on the screen when you run your game, and is split into various discreet events:</p>
-    <p class="dropspot"><img alt="Draw Events" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_Draw.png" />As you can see, the draw event category has multiple different event types. <strong>Draw Begin</strong>, <strong>Draw </strong>and <strong>Draw End</strong> are the &quot;standard&quot; draw events which you will probably use most. By default the main Draw event is always called for every instance, regardless of whether it has a sprite or not, although if you flag the instance as invisible, the event will not be triggered (so keep this in mind if you have any game logic in the draw event of an invisible object, as it won&#39;t run). The main draw event is also where <span data-keyref="GameMaker Name">GameMaker</span> default draws the instance sprite when there is no code nor actions in the event (ie: you haven&#39;t added it into the event list for the object). Default drawing uses the sprite associated with the instance and will draw that with any transforms set in code or actions applied.</p>
-    <p class="dropspot">The standard draw events draw <em>before </em>the <strong>Draw GUI </strong>events and <em>between </em>the <strong>Pre Draw </strong>and <strong>Post Draw </strong>events, meaning that everything that is drawn in this event is drawn beneath that of the <strong>Draw GUI </strong>event, regardless of the layer (ie: anything drawn in the Draw GUI event will always be drawn over anything drawn in the normal draw event, regardless of layer order).</p>
-    <p class="dropspot">Note that the above is simply an overview of how the Draw Events work, but for full details on all the available sub-events, please see the following section:</p>
-    <ul class="dropspotlist">
-      <li class="dropspot"><a href="Draw_Events.htm">The Draw Event</a></li>
-    </ul>
-    <p> </p>
-    <p> </p>
-    <p class="dropspot"> </p>
-  </div>
-  <p><img alt="Async Event" src="../../assets/Images/Icons/Icon_Async.png" /><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down21" href="#">Asynchronous</a></p>
-  <div class="droptext" data-targetname="drop-down21">
-    <p class="dropspot">This event category is special in that the events it contains are not triggered by default by <span data-keyref="GameMaker Name">GameMaker</span>, but rather by the end of some other action, like the loading of a file, or the reply from a web server. The category is split into the following events:</p>
-    <p class="dropspot"><img alt="Object Editor Asynchronous Events" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_Async.png" /></p>
-    <p class="dropspot">So, say you want to add an image file to <span data-keyref="GameMaker Name">GameMaker</span>. Well, you would code this in another event (maybe the Create Event) of an object and then have that object draw a loading bar while waiting (for example), polling the appropriate asynchronous event until the <a class="glossterm" data-glossterm="callback" href="#">callback</a> that tells <span data-keyref="GameMaker Name">GameMaker</span> the file has loaded. You can then use the data returned in this event to do other things, like change room, or purchase an item.</p>
-    <p class="dropspot">Note that the above is simply an overview of how the Asynchronous Event works, but for full details on all the available sub-events, please see the following section:</p>
-    <ul class="dropspotlist">
-      <li class="dropspot"><a href="Async_Events.htm">Asynchronous Events List</a></li>
-    </ul>
-    <p class="dropspot"> </p>
-  </div>
-  <p> </p>
-  <p>You should also note that you can name events, or at least give them a short descriptive text that will be shown beside them in the Event Editor. To do this, simply add the following into the very first line of the code editor for the event (when using <span data-keyref="GML_Code">GML Code</span>):</p>
-  <p class="code">/// @description Your text here</p>
-  <p>So, you could have something like this in - for example - an <strong>Alarm </strong>event:</p>
-  <p class="code">/// @description This is the AI Fight alarm</p>
-  <p>And now in your Event Editor you&#39;ll see this:</p>
-  <p><img alt="Object Editor Named Events" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_NamedEvents.png" /></p>
-  <p>For <span data-keyref="GML_Visual">GML Visual</span> users, adding a comment requires the use of the <strong>Execute Code</strong> action, which should be placed at the very top of the actions for the event, before everything else. When you add this action, you then give it the same line of code that is shown above to name the event, e.g.:</p>
-  <p><img alt="Naming An Event In DnD" class="center" src="../../assets/Images/Asset_Editors/Editor_Object_DnD_NamedEvents.png" style="cursor: nwse-resize;" />For additional information on some of the above events and general event running order, please see the following sections:</p>
-  <ul class="colour">
-    <li><a href="Event_Order.htm">Event Order</a></li>
-    <li><a href="Other_Events.htm">The Other Events</a></li>
-    <li><a href="Draw_Events.htm">The Draw Events</a></li>
-    <li><a href="Async_Events.htm">The Async Events</a></li>
-    <li><a href="Gesture_Events.htm">The Gesture Events</a></li>
-  </ul>
-  <p> </p>
-  <p> </p>
-  <div class="footer">
-    <div class="buttons">
-      <div class="clear">
-        <div style="float:left">Back: <a href="../Objects.htm">The Object Editor</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="Parent_Objects.htm">Parent Objects</a></div>
-      </div>
+    <p>L'elenco completo degli eventi è riportato di seguito:</p>
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#">Creare</a></p>
+    <div class="droptext" data-targetname="drop-down8">
+      <p class="dropspot">Questo evento accade quando un'istanza di <span class="notranslate">object</span> viene creata per la prima volta, ed è la prima cosa che accade all'interno di un'istanza posta in <span class="notranslate">room</span> attraverso l'Editor di <span class="notranslate">Room</span> quando un <span class="notranslate">room</span> viene inserito. Ciò significa che questo evento è il luogo ideale per inizializzare le <a class="glossterm" data-glossterm="variabile" href="#">variabili</a>, avviare le <a href="../Timelines.htm">linee temporali</a>, impostare i <a href="../Paths.htm">percorsi</a> ecc... e fare qualsiasi altra cosa che generalmente deve essere fatta solo una volta o solo quando un'istanza viene creata per la prima volta in <span class="notranslate">room</span>. Se il tuo <span class="notranslate">object</span> ha delle <strong>variabili oggetto</strong> o <strong>variabili istanza</strong> aggiunte nell'editor <span class="notranslate">Object</span> o nell'editor <span class="notranslate">Room</span>, allora queste variabili saranno inizializzate per prime e poi verrà eseguito l'<strong>evento Create</strong>.</p>
+      <p class="dropspot">Ricorda che puoi modificare qualsiasi cosa tu abbia impostato nell'evento Create dal <a href="../Room_Properties/Layer_Properties.htm">codice di creazione dell'istanza</a> nell'editor <span class="notranslate">Room</span>, poiché questo viene eseguito direttamente dopo l'evento di creazione dell'istanza e può essere usato per creare <strong>variabili di istanza</strong> o per sovrascrivere qualsiasi variabile aggiunta come <span class="notranslate">Object</span> Variables o nell'attuale evento Create.</p>
+      <div data-conref="../../assets/snippets/Instance_creation_order_warning.hts"> </div>
+      <p class="dropspot"> </p>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
-  </div>
-  <!-- KEYWORDS
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down9" href="#">Distruggere</a></p>
+    <div class="droptext" data-targetname="drop-down9">
+      <p class="dropspot">Questo evento è l'evento da eseguire quando un'istanza viene distrutta. È spesso trascurato quando si aggiungono comportamenti a <span class="notranslate">objects</span>, ma può essere molto utile, per esempio creando effetti di esplosione o di particelle quando un nemico viene ucciso, o per il re-spawn di una nuova istanza di <span class="notranslate">object</span> in un'altra parte del <span class="notranslate">room</span>, o anche per aggiungere punti a un punteggio.</p>
+      <p class="dropspot"> </p>
+    </div>
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down10" href="#">Pulire</a></p>
+    <div class="droptext" data-targetname="drop-down10">
+      <p class="dropspot"><span>Questo evento sarà chiamato dopo qualsiasi evento che rimuove un'istanza di <span class="notranslate">object</span> da <span class="notranslate">room</span>. Quindi, sarà attivato se:</span></p>
+      <ul class="dropspotlist">
+        <li class="dropspot"><span>l'istanza viene distrutta</span></li>
+        <li class="dropspot"><span>il <span class="notranslate">room</span> finisce</span></li>
+        <li class="dropspot"><span>il gioco finisce</span></li>
+      </ul>
+      <p class="dropspot"><span>È progettato per essere utilizzato per &quot;pulire&quot; qualsiasi risorsa dinamica che si può avere nel gioco (come superfici, strutture dati, ecc...) o per eseguire qualsiasi compito che si ha bisogno di eseguire <em>una volta </em>quando l'istanza viene rimossa dal gioco in qualsiasi modo.</span></p>
+      <p class="dropspot"><span>Nota che questo evento sarà chiamato <em>immediatamente </em>dopo l'evento che lo ha innescato, ma l'istanza non sarà effettivamente rimossa dal gioco <strong>fino alla fine dell'evento corrente</strong>. Per esempio, se chiamate <span class="inline">instance_destroy()</span> nell'evento Step, verrà chiamato l'evento Destroy, poi l'evento Clean Up, e poi il <em>resto dell'evento Step finirà di funzionare</em>. Questo significa che qualsiasi codice che avete dopo la chiamata a <span class="inline">instance_destroy()</span> sarà ancora eseguito e sarà una potenziale causa di errori se avete pulito una struttura dati o qualche altra risorsa che il codice richiede, quindi bisogna fare attenzione quando si usa questo evento.</span> </p>
+      <p> </p>
+    </div>
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down11" href="#">Allarme</a></p>
+    <div class="droptext" data-targetname="drop-down11">
+      <p class="dropspot">La categoria allarme è divisa in 12 eventi, uno per ognuno dei possibili allarmi che possono essere impostati in un'istanza. Così, quando clicchi sulla categoria <em>Aggiungi allarme </em>ti si presenta questa finestra:</p>
+      <p class="dropspot"><img>Qui si seleziona l'allarme che si desidera creare e, una volta fatto, si vedrà che è stato aggiunto alla finestra dell'evento permettendo di aggiungere codice ad esso come normale. Ma cos'è un allarme? Beh, è un evento speciale che non fa nulla a meno che l'allarme non sia stato precedentemente impostato, e poi aspetterà che l'allarme abbia contato fino a 0 prima di eseguire le azioni o il codice che hai aggiunto in esso.</p>
+      <p class="dropspot">Una volta che l'allarme ha raggiunto lo 0 ed eseguito il codice, conterà alla rovescia fino a -1, dove rimarrà fino a quando non sarà impostato di nuovo (ciò significa che potete controllare il valore di un allarme per vedere se è maggiore di -1, il che vi dirà se è in esecuzione o meno). Quindi, diciamo che impostate <span class="inline">alarm[0]</span> nell'evento di creazione di <span class="notranslate">object</span> a 30, questo significa che <span data-keyref="GameMaker Name">GameMaker</span> farà un conto alla rovescia di 30 passi di gioco prima di eseguire le azioni o il codice che sono posti nell'evento <span class="inline">alarm[0]</span>. Notate che impostando un allarme a 0 <em>non </em>verrà eseguito il codice dell'allarme, poiché l'evento viene attivato, ma l'allarme viene impostato immediatamente a -1, quindi il codice viene saltato. Se hai bisogno di un allarme per eseguire il passo successivo, allora dovresti impostarlo a 1.</p>
+      <p class="dropspot">Questo può essere molto utile perché vi permette di mettere in moto le cose in momenti precisi, e potete anche farle ripetere, dato che nulla vi impedisce di impostare un allarme nel suo stesso evento. Immaginate di avere un mostro e di volere che giri a destra ogni tre secondi... beh, potreste impostare un allarme nel suo evento di creazione alla velocità <span class="notranslate">room</span> * 3 (se la velocità <span class="notranslate">room</span> è 30, sono 30 passi al secondo, quindi moltiplicatelo per 3 e avrete 3 secondi!) e poi nell'evento di allarme avreste il codice o l'azione per impostare la sua direzione, così come l'azione (o il codice) per impostare il suo allarme a <span class="notranslate">room</span> velocità * 3 ancora. In questo modo, è possibile impostare un semplice gioco <span class="notranslate">loops</span> dove le cose accadono solo a intervalli specifici.</p>
+      <p class="dropspot">Vale la pena notare che un allarme senza azioni o codice <em>non </em>farà il conto alla rovescia. Tuttavia, anche solo con un commento e nessun codice o azione, l'allarme continuerà il conto alla rovescia e può essere impostato e controllato come si farebbe normalmente.</p>
+      <p class="dropspot"> </p>
+    </div>
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down12" href="#">Passo</a></p>
+    <div class="droptext" data-targetname="drop-down12">
+      <p class="dropspot"><span data-keyref="GameMaker Name">GameMaker</span> divide il tempo in <strong>passi </strong>con la velocità <span class="notranslate">room</span> che definisce quanti di questi passi ci devono essere al secondo (un passo può anche essere chiamato <strong>frame</strong>). Un singolo passo, è fondamentalmente il <span class="notranslate">loop</span> che gira costantemente con tutti gli eventi che vengono controllati e attivati come necessario mentre il gioco gira, quindi come potete immaginare, l'<strong>Evento Passo </strong>è un evento che viene controllato ogni singolo passo del gioco mentre l'istanza esiste.</p>
+      <p class="dropspot">L'evento passo è in realtà composto da tre sotto-eventi che sono delineati di seguito:</p>
+      <p class="dropspot"><img>Per la maggior parte delle cose l'evento passo standard andrà bene da usare, ma a volte si vuole un po' più di controllo su quale codice viene eseguito e in quale momento, quindi per questo vengono forniti gli eventi passo <strong>Begin </strong>e <strong>End </strong>. Tutti e tre vengono controllati ad ogni passo, ma il loro ordine non varierà mai anche se futuri aggiornamenti del motore di <span data-keyref="GameMaker Name">GameMaker</span> cambieranno altri eventi, il che significa che questo è l'unico metodo affidabile per assicurarsi che qualcosa accada sempre prima di qualcos'altro.</p>
+      <p class="dropspot">Per cosa può essere usato l'evento step? Bene, può essere usato per azioni o codice che deve essere eseguito continuamente. Per esempio, se un <span class="notranslate">object</span> deve seguirne un altro, qui si può adattare la direzione del movimento verso il <span class="notranslate">object</span> che stiamo seguendo per mantenerlo in movimento regolare dietro. Fate attenzione con questo evento però, e non mettete molte azioni complicate nell'evento step di <span class="notranslate">objects</span>, specialmente se state pensando di avere molte istanze di <span class="notranslate">object</span> nel vostro gioco <span class="notranslate">room</span>, perché questo potrebbe rallentare il gioco. Molte cose possono essere messe in allarmi, o impostate per scattare usando alcuni degli <strong>Altri </strong>eventi, piuttosto che accadere tutto il tempo.</p>
+      <p class="dropspot"> </p>
+      <p class="dropspot"> </p>
+    </div>
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down13" href="#">Collisione</a></p>
+    <div class="droptext" data-targetname="drop-down13">
+      <p class="dropspot">Ovviamente quando si fa un gioco, è molto importante sapere quando due (o più) istanze di un <span class="notranslate">object</span> si sono scontrate, e per questo abbiamo il <strong>Collision Event</strong>. Questo è un evento che si inserisce in un <span class="notranslate">object</span> e poi si specifica contro quale altro <span class="notranslate">object</span> si dovrebbe controllare per le collisioni.</p>
+      <p class="dropspot">Quando non hai la fisica attivata, queste collisioni saranno calcolate in base alla maschera dei due <span class="notranslate">objects</span> (la maschera è definita nelle proprietà di <span class="notranslate">sprite</span>, o può essere assegnata indipendentemente nelle proprietà di <span class="notranslate">object</span> ) e se si sovrappongono o meno. Si noti che se una o l'altra istanza nella collisione non ha una maschera assegnata (o la maschera <span class="notranslate">sprite</span> è impostata su niente), <em>anche se sta disegnando qualcosa</em> non verrà rilevata nessuna collisione.</p>
+      <p class="dropspot">Se avete <strong>Physics </strong>on, allora la collisione sarà basata sul tipo di <strong>forma di collisione</strong><em>(Fixture</em>) che avete definito per <span class="notranslate">object</span> nelle sue proprietà fisiche, così come la sua reazione alla collisione. Questo significa che potreste non aver bisogno di alcun codice per gestire la collisione, ma questo evento <em>avrà </em>comunque <em>bisogno di avere almeno un commento in esso </em>per far sì che le collisioni vengano rilevate.</p>
+      <p class="dropspot">Infine, va notato che tutte le collisioni saranno calcolate una volta per passo di gioco prima che l'evento collisione sia attivato, in modo tale che quando l'evento collisione viene eseguito, tutte le collisioni saranno già state calcolate e pre-assegnate. Questo significa che se si crea un'istanza in questo evento e poi si cerca di controllare una collisione con essa, la collisione non sarà rilevata o risolta fino alla prossima <a class="glossterm" data-glossterm="iterazione" href="#">iterazione</a> del gioco <span class="notranslate">loop</span>.</p>
+      <p class="dropspot"> </p>
+      <p class="dropspot"> </p>
+    </div>
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down14" href="#">Tastiera,</a>  <img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down14" href="#">Premere la tastiera,</a>  <img> <a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down14" href="#">Rilascio della tastiera</a></p>
+    <div class="droptext" data-targetname="drop-down14">
+      <p class="dropspot">Permettere al giocatore di controllare i diversi aspetti del vostro gioco è molto importante, e a tal fine <span data-keyref="GameMaker Name">GameMaker</span> vi fornisce una lista molto completa di eventi di tastiera che possono essere utilizzati in una qualsiasi delle tre categorie principali di tastiera. Per la categoria Tastiera generale, viene attivata continuamente ogni passo per tutto il tempo in cui il tasto selezionato è premuto, mentre gli eventi della categoria Premi e rilascia vengono attivati solo una volta quando il tasto viene inizialmente premuto o rilasciato.</p>
+      <p class="dropspot">Va notato che gli eventi della tastiera sono effettivamente attivati in tutte le istanze attive in un <span class="notranslate">room</span> ogni volta che viene usato un tasto, ma solo quelle che hanno un evento definito per quel particolare tasto risponderanno e si possono creare più eventi della tastiera in qualsiasi <span class="notranslate">object</span> e le istanze di quel <span class="notranslate">object</span> risponderanno a tutti loro mentre il gioco è in esecuzione.</p>
+      <p class="dropspot">Quando aggiungete un qualsiasi evento di tastiera a un <span class="notranslate">object</span>, vi verrà presentato il menu del sotto evento di tastiera dove potete specificare il tasto che dovete controllare:</p>
+      <p class="dropspot"><img>La maggior parte di essi sono abbastanza ovvi, ma passiamo brevemente in rassegna le sezioni - in cima abbiamo i tasti freccia, seguiti dai tasti modificatori più usati, poi il resto della tastiera (diviso in ulteriori sottosezioni in modo da poter ottenere il tasto esatto richiesto come <img> o <img>) e infine due eventi secondari molto speciali, <strong>No Key</strong> e <strong>Any Key</strong>. Come i loro nomi implicano, questi sono eventi secondari che controllano quando <em>nessun </em>tasto è premuto o quando un <em>qualsiasi </em>tasto è premuto. Notate che i tasti del tastierino numerico producono gli eventi corrispondenti solo quando <strong>Number Lock </strong>è abilitato.</p>
+      <p class="dropspot">Gli eventi <strong>Press </strong>and <strong>Release </strong>per la tastiera sono quasi esattamente gli stessi dell'evento normale della tastiera, eccetto che invece di essere attivati continuamente, sono attivati una sola volta. Quando la tastiera registra per la prima volta che un tasto è stato premuto, genererà un evento <strong>Keyboard Pressed</strong> (così come un normale evento Keyboard), e la prima volta dopo che un tasto non viene più rilevato come premuto, verrà attivato un singolo evento <strong>Keyboard Release</strong>.</p>
+      <p class="dropspot"> </p>
+      <p class="dropspot"> </p>
+    </div>
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down16" href="#">Mouse</a></p>
+    <div class="droptext" data-targetname="drop-down16">
+      <p class="dropspot">La categoria Mouse è separata in una serie di eventi che possono essere selezionati per darvi un controllo più preciso su ciò che accade nel vostro gioco. Qui potete vedere esattamente quali sono questi eventi:</p>
+      <p class="dropspot"><img>Gli eventi dei pulsanti sinistro <img>, destro <img> e centrale <img> (che siano <strong>normali</strong>, <strong>premuti </strong>o <strong>rilasciati</strong>) lavorano tutti sulla maschera dell'istanza che ha l'evento. Ciò significa che <span data-keyref="GameMaker Name">GameMaker</span> controllerà la posizione del mouse in <span class="notranslate">room</span> quando questi pulsanti vengono usati contro le maschere di collisione delle istanze che hanno un evento del mouse. Se c'è una &quot;collisione&quot; con il <a class="glossterm" data-glossterm="scatola di delimitazione" href="#">bounding box dell</a> 'istanza, allora l'evento verrà attivato, quindi assicuratevi che ogni istanza con questi eventi abbia un <span class="notranslate">sprite</span> con una maschera di collisione valida o che il <span class="notranslate">object</span> abbia una maschera <span class="notranslate">sprite</span> selezionata nelle proprietà di <span class="notranslate">object</span>. Come i loro nomi implicano, questi eventi saranno innescati o una volta quando il pulsante del mouse scelto viene premuto o rilasciato per la prima volta, o continuamente ogni passo mentre il pulsante viene mantenuto. </p>
+      <p class="dropspot">Gli eventi mouse enter e leave sono anch'essi simili agli eventi dei pulsanti, in quanto anch'essi si basano sulla maschera dell'istanza per funzionare, ma questa volta vengono attivati quando il mouse &quot;entra&quot; (tocca) per la prima volta nell'istanza o quando il mouse &quot;lascia&quot; (smette di toccare) l'istanza. Questi eventi non sono continui però, e vengono attivati solo una volta per ogni volta che il mouse entra o esce da <span class="notranslate">object</span> - quindi sono un metodo ideale per creare, per esempio, pulsanti che devono cambiare quando il mouse ci passa sopra prima di tornare normali quando il mouse viene rimosso.</p>
+      <p class="dropspot">Infine abbiamo un'altra sezione per gli eventi del mouse che si chiama <strong>Global Mouse</strong>. In questo sottomenu troverete una selezione di eventi che servono a registrare gli eventi del mouse nelle istanze anche quando il mouse non è sopra di esse o nemmeno vicino ad esse. Questi sono eventi che vengono generati per <em>tutte le </em>istanze e se ci sono azioni o codice definito per l'evento specificato allora verrà eseguito, indipendentemente dalla posizione del mouse all'interno del gioco <span class="notranslate">room</span>.</p>
+      <p class="dropspot">Si prega di notare che su dispositivi mobili o touch-screen il pulsante sinistro del mouse <img> può anche essere usato per controllare la presenza di una linguetta del dito su un touch screen, e il pulsante destro del mouse <img> è attivato da un doppio tocco sullo schermo (questo comportamento può essere cambiato usando il codice).</p>
+      <p class="dropspot"> </p>
+      <p class="dropspot"> </p>
+    </div>
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down18" href="#">Gesti</a></p>
+    <div class="droptext" data-targetname="drop-down18">
+      <p class="dropspot">Questo evento è quello che sarà innescato dall'utente che tocca lo schermo (su mobile) o che clicca e muove il mouse (su tutte le altre piattaforme). Questi eventi sono simili agli eventi del mouse, nel senso che si hanno versioni regolari e versioni <em>globali</em>. Le versioni regolari di questi eventi saranno attivate solo quando i tocchi si verificano su un'istanza che ha un <span class="notranslate">sprite</span> (o una maschera) e i tocchi si verificano all'interno del suo <a class="glossterm" data-glossterm="scatola di delimitazione" href="#">perimetro</a>. Le versioni globali di questi eventi, invece, saranno attivate dal tocco dell'utente <em>in qualsiasi punto </em>dello schermo.</p>
+      <p class="dropspot">Gli eventi del gesto rilevano quanto segue:</p>
+      <ul class="dropspotlist">
+        <li class="dropspot"><img> <strong>tocchi - </strong> quando un utente clicca/tocca e rilascia rapidamente</li>
+        <li class="dropspot"><img> <strong>trascina - </strong> quando un utente tocca/clicca e lo mantiene poi muove il suo dito/cursore</li>
+        <li class="dropspot"><img> <strong>flick - </strong> quando l'utente muove e rilascia un tocco/click in un unico movimento</li>
+        <li class="dropspot"><img> <strong>pizzichi - </strong> quando l'utente ha due dita sullo schermo e poi le muove insieme/separate</li>
+        <li class="dropspot"><img> <strong>ruota - </strong> quando l'utente ha due dita sullo schermo e poi le ruota intorno a un punto</li>
+      </ul>
+      <p class="dropspot"><img>I diversi eventi conterranno sempre una mappa DS chiamata &quot;<span class="inline">event_data</span>&quot;, che conterrà una serie di coppie chiave/valore con dati sulla posizione e sul movimento del tocco/click. Per tutti i dettagli su tutti i sotto-eventi disponibili e su come funzionano, si veda la sezione seguente:</p>
+      <ul class="dropspotlist">
+        <li class="dropspot"><a href="Gesture_Events.htm">L'evento del gesto</a></li>
+      </ul>
+      <p class="dropspot"> </p>
+      <p class="dropspot"> </p>
+    </div>
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down19" href="#">Altro</a></p>
+    <div class="droptext" data-targetname="drop-down19">
+      <p class="dropspot">Ci sono un certo numero di eventi speciali da usare quando si fanno giochi con <span data-keyref="GameMaker Name">GameMaker</span> e sono per lo più raggruppati sotto l'evento Other e possono essere selezionati dal menu pop-up dei sotto-eventi che appare quando si seleziona questo. Ecco un'immagine di tutti questi altri eventi:</p>
+      <p class="dropspot"><img>Per ulteriori informazioni su ciascuno degli eventi elencati nell'immagine qui sopra, si prega di consultare la sezione seguente:</p>
+      <ul class="dropspotlist">
+        <li class="dropspot"><a href="Other_Events.htm">Gli altri eventi</a></li>
+      </ul>
+      <p class="dropspot"> </p>
+    </div>
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down20" href="#">Disegna</a></p>
+    <div class="droptext" data-targetname="drop-down20">
+      <p class="dropspot">Questa categoria di eventi è quella che regola ciò che si vede sullo schermo quando si esegue il gioco, ed è divisa in vari eventi discreti:</p>
+      <p class="dropspot"><img>Come puoi vedere, la categoria degli eventi di disegno ha diversi tipi di eventi. <strong>Draw Begin</strong>, <strong>Draw </strong>e <strong>Draw End</strong> sono gli eventi di disegno &quot;standard&quot; che probabilmente userete di più. Per impostazione predefinita l'evento principale Draw viene sempre chiamato per ogni istanza, indipendentemente dal fatto che abbia un <span class="notranslate">sprite</span> o meno, anche se se si contrassegna l'istanza come invisibile, l'evento non verrà attivato (quindi tenetelo a mente se avete qualsiasi logica di gioco nell'evento draw di un invisibile <span class="notranslate">object</span>, in quanto non verrà eseguito). L'evento di disegno principale è anche dove <span data-keyref="GameMaker Name">GameMaker</span> disegna di default l'istanza <span class="notranslate">sprite</span> quando non c'è codice o azioni nell'evento (cioè: non lo avete aggiunto nella lista degli eventi per <span class="notranslate">object</span>). Il disegno di default usa il <span class="notranslate">sprite</span> associato all'istanza e lo disegnerà con qualsiasi trasformazione impostata nel codice o nelle azioni applicate.</p>
+      <p class="dropspot">Gli eventi di disegno standard disegnano <em>prima </em>degli eventi <strong>Draw GUI </strong>e <em>tra </em>gli eventi <strong>Pre Draw </strong>e <strong>Post Draw </strong>, il che significa che tutto ciò che viene disegnato in questo evento viene disegnato sotto quello dell'evento <strong>Draw GUI </strong>, indipendentemente dal livello (cioè: qualsiasi cosa disegnata nell'evento Draw GUI sarà sempre disegnata sopra qualsiasi cosa disegnata nell'evento Draw normale, indipendentemente dall'ordine dei livelli).</p>
+      <p class="dropspot">Nota che quanto sopra è semplicemente una panoramica di come funzionano gli eventi di disegno, ma per i dettagli completi su tutti i sotto-eventi disponibili, vedi la sezione seguente:</p>
+      <ul class="dropspotlist">
+        <li class="dropspot"><a href="Draw_Events.htm">L'evento del sorteggio</a></li>
+      </ul>
+      <p> </p>
+      <p> </p>
+      <p class="dropspot"> </p>
+    </div>
+    <p><img><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down21" href="#">Asincrono</a></p>
+    <div class="droptext" data-targetname="drop-down21">
+      <p class="dropspot">Questa categoria di eventi è speciale in quanto gli eventi che contiene non sono attivati di default da <span data-keyref="GameMaker Name">GameMaker</span>, ma piuttosto dalla fine di qualche altra azione, come il caricamento di un file, o la risposta da un web <span class="notranslate">server</span>. La categoria è suddivisa nei seguenti eventi:</p>
+      <p class="dropspot"><img alt="Object Editor Events View" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_Events.png"/></p>
+      <p class="dropspot">Quindi, diciamo che volete aggiungere un file immagine a <span data-keyref="GameMaker Name">GameMaker</span>. Bene, dovreste codificare questo in un altro evento (forse il Create Event) di un <span class="notranslate">object</span> e poi fare in modo che <span class="notranslate">object</span> disegni una barra di caricamento in attesa (per esempio), facendo il polling dell'evento asincrono appropriato fino al <a class="glossterm" data-glossterm="callback" href="#">callback</a> che dice a <span data-keyref="GameMaker Name">GameMaker</span> che il file è stato caricato. Potete poi usare i dati restituiti in questo evento per fare altre cose, come cambiare <span class="notranslate">room</span>, o acquistare un oggetto.</p>
+      <p class="dropspot">Si noti che quanto sopra è semplicemente una panoramica di come funziona l'evento asincrono, ma per i dettagli completi su tutti i sotto-eventi disponibili, si veda la sezione seguente:</p>
+      <ul class="dropspotlist">
+        <li class="dropspot"><a href="Async_Events.htm">Elenco degli eventi asincroni</a></li>
+      </ul>
+      <p class="dropspot"> </p>
+    </div>
+    <p> </p>
+    <p>Dovresti anche notare che puoi dare un nome agli eventi, o almeno dare loro un breve testo descrittivo che sarà mostrato accanto ad essi nell'Editor di eventi. Per fare questo, aggiungi semplicemente quanto segue nella primissima riga dell'editor di codice per l'evento (quando usi il <span data-keyref="GML_Code">codice GML</span>):</p>
+    <p class="code">/// @description Your text here</p>
+    <p>Quindi, potreste avere qualcosa del genere in - per esempio - un evento <strong>Alarm </strong>:</p>
+    <p class="code">/// @description This is the AI Fight alarm</p>
+    <p>E ora nel tuo Editor di eventi vedrai questo:</p>
+    <p><img alt="Object Editor Events List" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_EventList.png"/></p>
+    <p>Per gli utenti di <span data-keyref="GML_Visual">GML Visual</span>, l'aggiunta di un commento richiede l'uso dell'azione <strong>Execute Code</strong>, che dovrebbe essere posta in cima alle azioni dell'evento, prima di tutto il resto. Quando si aggiunge questa azione, si dà ad essa la stessa linea di codice che è mostrata sopra per nominare l'evento, ad es:</p>
+    <p><img>Per ulteriori informazioni su alcuni degli eventi di cui sopra e l'ordine di esecuzione generale dell'evento, si prega di vedere le seguenti sezioni:</p>
+    <ul class="colour">
+      <li><a href="Event_Order.htm">Ordine dell'evento</a></li>
+      <li><a href="Other_Events.htm">Gli altri eventi</a></li>
+      <li><a href="Draw_Events.htm">Gli eventi del sorteggio</a></li>
+      <li><a href="Async_Events.htm">Gli eventi asincroni</a></li>
+      <li><a href="Gesture_Events.htm">Gli eventi del gesto</a></li>
+    </ul>
+    <p> </p>
+    <p> </p>
+    <p> </p>
+    <div class="footer">
+      <div class="buttons">
+        <div class="clear">
+          <div style="float:left">Indietro: <a href="../Objects.htm">Il <span class="notranslate">Object</span> Editor</a></div>
+          <div style="float:right">Prossimo: Oggetti genitori</div>
+        </div>
+      </div>
+      <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
+    </div>
+    <!-- KEYWORDS
 Object Events
 Named Events
--->
-  <!-- TAGS
+--><!-- TAGS
 object_events
--->
-</body>
+--></body>
 </html>

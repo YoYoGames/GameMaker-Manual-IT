@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>virtual_key_add</title>
+  <title>chiave virtuale aggiunta</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for virtual_key_add" />
   <meta name="rh-index-keywords" content="virtual_key_add" />
@@ -14,65 +14,65 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>virtual_key_add</h1>
-  <p>This function enables you to map &quot;touches&quot; of a screen area to keyboard events. This means that once you have assigned an area to a virtual key, all touches on that area will trigger the keyboard event corresponding to the key you have mapped to the area. You can assign each virtual key you define to a variable too, which can then be used in the further virtual key functions to show, hide and delete them. These keys are assigned on a <i>per room</i> basis and will be automatically removed by <span data-keyref="GameMaker Name">GameMaker</span> when changing rooms.</p>
-  <p>The actual position of the virtual key is based on the <i>screen</i> position rather than room position and so the x/y values are absolute on the screen. This means that you don&#39;t need to worry about the use of views or the relative room coordinates, and can simply define the keys in the <strong>Create Event</strong> of an object (you only need to define a virtual key once per-room), then draw your key sprites in the <a href="../../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">Draw GUI Event</a>, sizing the GUI layer to be the same as the screen.</p>
-  <p> </p>
-  <h4>Syntax</h4>
+  <h1>chiave virtuale aggiunta</h1>
+  <p>Questa funzione vi permette di mappare i &quot;tocchi&quot; di un'area dello schermo agli eventi della tastiera. Questo significa che una volta che avete assegnato un'area a un tasto virtuale, tutti i tocchi su quell'area attiveranno l'evento della tastiera corrispondente al tasto che avete mappato all'area. Puoi anche assegnare ogni tasto virtuale che definisci a una variabile, che può poi essere usata nelle ulteriori funzioni dei tasti virtuali per mostrarli, nasconderli e cancellarli. Questi tasti sono assegnati <i>per ogni stanza</i> e saranno automaticamente rimossi da <span data-keyref="GameMaker Name">GameMaker</span> quando si cambia <span class="notranslate">rooms</span>.</p>
+  <p>La posizione effettiva della chiave virtuale è basata sulla posizione dello <i>schermo</i> piuttosto che su <span class="notranslate">room</span> e quindi i valori x/y sono assoluti sullo schermo. Questo significa che non dovete preoccuparvi dell'uso delle viste o delle coordinate relative <span class="notranslate">room</span>, e potete semplicemente definire le chiavi nell'<strong>evento Create</strong> di un <span class="notranslate">object</span> (dovete definire una chiave virtuale solo una volta per stanza), poi disegnare la vostra chiave <span class="notranslate">sprites</span> nell'<a href="../../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">evento Draw GUI</a>, dimensionando il livello GUI per essere uguale allo schermo.</p>
+  <p> </p>
+  <h4>Sintassi</h4>
   <p class="code">virtual_key_add(x, y, w, h, keycode);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>x</td>
+        <td><span class="notranslate">x</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">Real</a></span></td>
-        <td>The x coordinate (left side) of the virtual key <i>on the screen</i></td>
+        <td><span class="notranslate">The x coordinate (left side) of the virtual key <i>on the screen</i></span></td>
       </tr>
       <tr>
-        <td>y</td>
+        <td><span class="notranslate">y</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">Real</a></span></td>
-        <td>The y coordinate (top side) of the virtual key <i>on the screen</i></td>
+        <td><span class="notranslate">The y coordinate (top side) of the virtual key <i>on the screen</i></span></td>
       </tr>
       <tr>
-        <td>w</td>
+        <td><span class="notranslate">w</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">Real</a></span></td>
-        <td>The width of the virtual key</td>
+        <td><span class="notranslate">The width of the virtual key</span></td>
       </tr>
       <tr>
-        <td>h</td>
+        <td><span class="notranslate">h</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">Real</a></span></td>
-        <td>The height of the virtual key</td>
+        <td><span class="notranslate">The height of the virtual key</span></td>
       </tr>
       <tr>
-        <td>keycode</td>
-        <td><span data-keyref="Type_Constant_VK"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Game_Input/Keyboard_Input/Keyboard_Input.htm">Virtual Key Constant (vk_*)</a></span></td>
-        <td>Which keyboard key event should be triggered by touching this area</td>
+        <td><span class="notranslate">keycode</span></td>
+        <td><span data-keyref="Type_Constant_VK"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Game_Input/Keyboard_Input/Keyboard_Input.htm">Costante chiave virtuale (vk_*)</a></span></td>
+        <td><span class="notranslate">Which keyboard key event should be triggered by touching this area</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_ID_Virtual_Key_OnScreen"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Game_Input/Virtual_Keys_And_Keyboards/virtual_key_add.htm">Virtual Key ID</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">global.Left = virtual_key_add(32, 32, 64, 64, vk_left);</p>
-  <p>The above code creates a virtual key 64x64 pixels square, positioned on the screen at (32, 32) which will trigger the vk_left event when touched and assigns the index of this virtual key to a global variable.</p>
+  <p>Il codice qui sopra crea un tasto virtuale quadrato di 64x64 pixel, posizionato sullo schermo a (32, 32) che attiverà l'evento vk_left quando viene toccato e assegna l'indice di questo tasto virtuale a una variabile globale.</p>
   <p><b></b></p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Virtual_Keys_And_Keyboards.htm">Virtual Keys And Keyboards</a></div>
-        <div style="float:right">Next: <a href="virtual_key_show.htm">virtual_key_show</a></div>
+        <div style="float:left">Indietro: <a href="Virtual_Keys_And_Keyboards.htm">Tastiere e tastiere virtuali</a></div>
+        <div style="float:right">Il prossimo: <a href="virtual_key_show.htm"><span class="notranslate">virtual_key_show</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 virtual_key_add

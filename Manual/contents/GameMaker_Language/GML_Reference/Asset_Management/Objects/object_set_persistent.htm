@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>object_set_persistent</title>
+  <title>oggetto_set_persistente</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function object_set_persistent" />
   <meta name="rh-index-keywords" content="object_set_persistent" />
@@ -14,54 +14,54 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>object_set_persistent</h1>
-  <p>With this function you can set the persistence of a specific object. A persistent object is &quot;carried over&quot; from room to room and maintains its properties at all times (for more information on persistence see the section on the <a href="../../../../The_Asset_Editors/Objects.htm">Object Editor</a>). Setting the persistence of the object means that all instances of this object that are created <i>after the persistence has been changed</i> will be created persistent, while instances that are already in the room may not be affected.</p>
-  <p>When you create an instance with persistence enabled in a room, it will be assigned a layer or a depth (depending on which function you used to create the instance of the object). When the room is changed, and if the following room does <i>not</i> have a layer with the same name or depth as the one assigned, then a new layer will be created for the instance that is persisting across the rooms. If you gave a named layer when the instance was created, then the new layer will also be named the same as original layer, while if you assigned a depth to the instance then the new layer will be named &quot;<span class="inline">_layer_XXX</span>&quot;, where &quot;XXX&quot; is a hex value used to give the layer a unique name. These layers will be removed from the room on Room End. Another thing to note about layers and persistent instances is that if you have assigned the instance a named layer on creation, and there is another layer in the following rooms with the same name, then the persisted instance will be assigned to the layer with the same name <i>regardless of the depth of the layer</i>. Finally, if a persisted instance moves to a room with a layer at the same depth as the instance was created on, it will <i>not</i> be assigned to this layer, but instead a new layer will be created at the same depth (following the naming convention explained previously).</p>
-  <p>Please note that this is not an instance function! You can set the persistent flag of individual instances using the <a href="../Instances/Instance_Variables/persistent.htm"><span class="inline">persistent</span></a> variable and so have ten instances all flagged as persistent even though the object in question has the flag set to false in the IDE, and even if you change the persistent flag of the object to true using this function, all instances that currently in the room will remain as they were, and only instances created after calling the function will start with persistent flagged as true.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>oggetto_set_persistente</h1>
+  <p>Con questa funzione potete impostare la persistenza di uno specifico <span class="notranslate">object</span>. Un <span class="notranslate">object</span> persistente è &quot;riportato&quot; da <span class="notranslate">room</span> a <span class="notranslate">room</span> e mantiene le sue proprietà in ogni momento (per maggiori informazioni sulla persistenza vedere la sezione sull'<a href="../../../../The_Asset_Editors/Objects.htm">Object Editor</a>). Impostare la persistenza di <span class="notranslate">object</span> significa che tutte le istanze di questo <span class="notranslate">object</span> che sono create <i>dopo che la persistenza è stata cambiata</i> saranno create persistenti, mentre le istanze che sono già in <span class="notranslate">room</span> potrebbero non essere interessate.</p>
+  <p>Quando si crea un'istanza con persistenza abilitata in un <span class="notranslate">room</span>, le viene assegnato un livello o una profondità (a seconda di quale funzione si è usata per creare l'istanza del <span class="notranslate">object</span>). Quando <span class="notranslate">room</span> viene cambiato, e se il seguente <span class="notranslate">room</span> <i>non</i> ha un livello con lo stesso nome o profondità di quello assegnato, allora verrà creato un nuovo livello per l'istanza che sta persistendo attraverso <span class="notranslate">rooms</span>. Se hai dato un nome al livello quando l'istanza è stata creata, allora anche il nuovo livello avrà lo stesso nome del livello originale, mentre se hai assegnato una profondità all'istanza allora il nuovo livello sarà chiamato &quot;<span class="inline">_layer_XXX</span>&quot;, dove &quot;XXX&quot; è un valore hex usato per dare un nome unico al livello. Questi livelli saranno rimossi da <span class="notranslate">room</span> su <span class="notranslate">Room</span> End. Un'altra cosa da notare sui livelli e le istanze persistenti è che se hai assegnato all'istanza un livello con un nome alla creazione, e c'è un altro livello nel seguente <span class="notranslate">rooms</span> con lo stesso nome, allora l'istanza persistente sarà assegnata al livello con lo stesso nome <i>indipendentemente dalla profondità del livello</i>. Infine, se un'istanza persistente si sposta su un <span class="notranslate">room</span> con un livello alla stessa profondità in cui l'istanza è stata creata, <i>non</i> verrà assegnata a questo livello, ma verrà invece creato un nuovo livello alla stessa profondità (seguendo la convenzione di denominazione spiegata in precedenza).</p>
+  <p>Si prega di notare che questa non è una funzione di istanza! Potete impostare il flag persistente delle singole istanze usando la variabile <a href="../Instances/Instance_Variables/persistent.htm"><span class="inline">persistent</span></a> e quindi avere dieci istanze tutte contrassegnate come persistenti anche se il <span class="notranslate">object</span> in questione ha il flag impostato a false nel <span class="notranslate">IDE</span>, e anche se cambiate il flag persistente del <span class="notranslate">object</span> a true usando questa funzione, tutte le istanze che attualmente nel <span class="notranslate">room</span> rimarranno come erano, e solo le istanze create dopo aver chiamato la funzione inizieranno con persistent contrassegnato come true.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">object_set_persistent(index, pers);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Asset_Object">Object Asset</span></td>
-        <td>The index of the object to change.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Asset_Object">Oggetto Attività</span></td>
+        <td><span class="notranslate">The index of the object to change.</span></td>
       </tr>
       <tr>
-        <td>pers</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td>Whether the object should be flagged as persistent (<span class="inline">true</span>) or not (<span class="inline">false</span>).</td>
+        <td><span class="notranslate">pers</span></td>
+        <td><span data-keyref="Type_Bool">Booleano</span></td>
+        <td><span class="notranslate">Whether the object should be flagged as persistent (<span class="inline">true</span>) o no (<span class="inline">false</span>).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (room == rm_final)<br />
     {<br />
         object_set_persistent(obj_Player, false);<br />
     }<br />
     instance_create_layer(32, 32, &quot;Instances&quot;, obj_Player);</p>
-  <p>The above code checks to see in which room the instance is currently in and if it is in the specified &quot;rm_final&quot; then it sets the persistence of the object &quot;obj_Player&quot; to false and then creates the instance.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controlla per vedere in quale <span class="notranslate">room</span> l'istanza si trova attualmente e se è nello specificato &quot;rm_final&quot; allora imposta la persistenza di <span class="notranslate">object</span> &quot;obj_Player&quot; a false e poi crea l'istanza.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Objects.htm">Objects</a></div>
-        <div style="float:right">Next: <a href="object_set_solid.htm">object_set_solid</a></div>
+        <div style="float:left">Indietro: <a href="Objects.htm">Oggetti</a></div>
+        <div style="float:right">Il prossimo: <a href="object_set_solid.htm"><span class="notranslate">object_set_solid</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 object_set_persistent

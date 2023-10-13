@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>matrix_multiply</title>
+  <title>matrice_moltiplica</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for matrix_multiply" />
   <meta name="rh-index-keywords" content="matrix_multiply" />
@@ -14,48 +14,48 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>matrix_multiply</h1>
-  <p>With this function you can multiply two matrix arrays together to create a new transform matrix. The function will return the new matrix index which should be stored in a variable for future use.</p>
-  <p class="note"><b>NOTE</b>: You can&#39;t use a matrix constant as an argument with this function, so if you wish to multiply the (for example) view matrix with a custom matrix that you have built, you must first call <span style="font-size:1px;"><a href="matrix_get.htm"><span class="inline">matrix_get()</span></a></span> and assign the view matrix values to an array variable, then multiply it by your custom matrix, and then set the chosen matrix (view, projection or world).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>matrice_moltiplica</h1>
+  <p>Con questa funzione potete moltiplicare insieme due matrici per creare una nuova matrice di trasformazione. La funzione restituisce l'indice della nuova matrice che dovrebbe essere memorizzato in una variabile per uso futuro.</p>
+  <p class="note"><b>NOTA</b>: Non potete usare una costante di matrice come argomento con questa funzione, quindi se volete moltiplicare la matrice di vista (per esempio) con una matrice personalizzata che avete costruito, dovete prima chiamare <span style="font-size:1px;"><a href="matrix_get.htm"><span class="inline">matrix_get()</span></a></span> e assegnare i valori della matrice di vista a una matrice variabile, poi moltiplicarla per la vostra matrice personalizzata, e poi impostare la matrice scelta (vista, proiezione o mondo).</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">matrix_multiply(matrix1, matrix2);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>matrix1</td><td><span data-keyref="Type_Array_Matrix"></span></td>
-        <td>The first matrix index to use.</td>
+        <td><span class="notranslate">matrix1</span></td><td><span data-keyref="Type_Array_Matrix"></span></td>
+        <td><span class="notranslate">The first matrix index to use.</span></td>
      </tr>
       <tr>
-        <td>matrix2</td><td><span data-keyref="Type_Array_Matrix"></span></td>
-        <td>The second matrix index to use.</td>
+        <td><span class="notranslate">matrix2</span></td><td><span data-keyref="Type_Array_Matrix"></span></td>
+        <td><span class="notranslate">The second matrix index to use.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Array_Matrix">Matrix Array</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var v_matrix = matrix_get(matrix_view);<br />
     var new_matrix = matrix_multiply(v_matrix, my_matrix);<br />
     matrix_set(matrix_view, new_matrix);</p>
-  <p>The above code will get the current view matrix, then multiply that with a custom matrix and then use the resulting matrix index to set the view matrix again.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra otterrà la matrice di vista corrente, poi la moltiplicherà con una matrice personalizzata e poi userà l'indice della matrice risultante per impostare nuovamente la matrice di vista.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Matrix_Functions.htm">Matrix Functions</a></div>
-        <div style="float:right">Next: <a href="matrix_build_identity.htm">matrix_build_identity</a></div>
+        <div style="float:left">Indietro: <a href="Matrix_Functions.htm">Funzioni di matrice</a></div>
+        <div style="float:right">Il prossimo: <a href="matrix_build_identity.htm"><span class="notranslate">matrix_build_identity</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 matrix_multiply

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>For</title>
+  <title>Per</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the For action" />
   <meta name="rh-index-keywords" content="GML Visual Action - For" />
@@ -14,58 +14,58 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="For Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Loops/i_Loops_For.png" /> For</h1>
-  <p>The <b>For</b> action is used to perform loops that only terminate when a value reaches the given condition. You give an initial value as a variable (which can be flagged as a temporary local variable - this is usually what you want), then you give
-    the condition to check the variable against (for example if it is less than a certain value), and then finally the amount to increment the variable by each iteration of the loop. So, the general flow is as follows:</p>
+  <h1><img> Per</h1>
+  <p>L'azione <b>For</b> è usata per eseguire <span class="notranslate">loops</span> che termina solo quando un valore raggiunge la condizione data. Si dà un valore iniziale come variabile (che può essere contrassegnato come una variabile locale temporanea - questo è di solito ciò che si vuole), poi si dà
+    la condizione per controllare la variabile (per esempio se è inferiore a un certo valore), e infine l'importo per incrementare la variabile di ogni iterazione di <span class="notranslate">loop</span>. Quindi, il flusso generale è il seguente:</p>
   <ul class="colour">
-    <li>You initialise a variable to a value</li>
-    <li>You set the condition to check this variable against</li>
-    <li>You set how much the variable should be incremented by each iteration of the loop</li>
-    <li>You then add actions into the loop, and these will be run for each iteration until the condition returns <span class="inline">false</span> or a Break action is encountered.</li>
+    <li>Si inizializza una variabile ad un valore</li>
+    <li>Si imposta la condizione per controllare questa variabile rispetto a</li>
+    <li>Si imposta quanto la variabile dovrebbe essere incrementata da ogni iterazione del ciclo</li>
+    <li>Si aggiungono poi delle azioni in <span class="notranslate">loop</span>, e queste saranno eseguite per ogni iterazione fino a quando la condizione ritorna <span class="inline">false</span> o si incontra un'azione Break.</li>
   </ul>
-  <p>When adding actions to be performed within the loop, these are added much as you would add an action to an &quot;if&quot;, ie: dropping it to the side of the action rather than under it:</p>
-  <p><img alt="For drop actions" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Loops/For_Drop.png" />All actions added to the side will be included in the For and will be performed before the event or script continues
-    with the actions added under. Note that you can end any loop prematurely if you call the <a href="Break.htm">Break</a> action, and when using For loops you don&#39;t <i>have</i> to increment and you can make it decrement too, as long as the condition
-    you use is appropriate. For example, set the initial variable to 10, set the condition to check for less than 0 and then set the increment value to -1 and the loop will iterate 10 times, counting backwards from 10 to 0.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="For Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Loops/a_Loops_For.png" /></p>
-  <h4>Arguments:</h4>
+  <p>Quando si aggiungono azioni da eseguire all'interno di <span class="notranslate">loop</span>, queste vengono aggiunte come si aggiungerebbe un'azione a un &quot;se&quot;, cioè: lasciandola cadere a lato dell'azione piuttosto che sotto di essa:</p>
+  <p><img>Tutte le azioni aggiunte al lato saranno incluse nel For e saranno eseguite prima che l'evento o <span class="notranslate">script</span> continui
+    con le azioni aggiunte sotto. Notate che potete terminare prematuramente qualsiasi <span class="notranslate">loop</span> se chiamate l'azione <a href="Break.htm">Break</a>, e quando usate For <span class="notranslate">loops</span> non <i>dovete</i> incrementare e potete anche decrementare, purché la condizione
+    che usate è appropriata. Per esempio, impostate la variabile iniziale a 10, impostate la condizione per controllare che sia inferiore a 0 e poi impostate il valore di incremento a -1 e <span class="notranslate">loop</span> itererà 10 volte, contando all'indietro da 10 a 0.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="For Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Loops/i_Loops_For.png" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Initialise</td>
-        <td>Initialise the variable that will be used for counting to a value (can be flagged as a temporary local variable)</td>
+        <td><span class="notranslate">Initialise</span></td>
+        <td>Inizializza la variabile che sarà usata per il conteggio a un valore (può essere contrassegnata come variabile locale temporanea)</td>
       </tr>
       <tr>
-        <td>Condition</td>
-        <td>The condition to check to break the loop</td>
+        <td><span class="notranslate">Condition</span></td>
+        <td>La condizione da controllare per interrompere il ciclo</td>
       </tr>
       <tr>
-        <td>Increment</td>
-        <td>The amount to increment (or decrement) the initial count variable by each iteration of the loop</td>
+        <td><span class="notranslate">Increment</span></td>
+        <td>La quantità da incrementare (o decrementare) la variabile di conteggio iniziale per ogni iterazione del ciclo</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="For Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Loops/e_Loops_For.png" />The above action block code runs a <span class="inline">for</span> loop to check and see if a gamepad is connected to any of the 12 available
-    &quot;slots&quot;. If a gamepad is discovered, a global variable is set to the current slot number and the loop is broken.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione di cui sopra esegue un <span class="inline">for</span> <span class="notranslate">loop</span> per controllare e vedere se un gamepad è collegato a uno dei 12
+    &quot;slot&quot; disponibili. Se viene scoperto un gamepad, una variabile globale viene impostata sul numero di slot corrente e il <span class="notranslate">loop</span> viene interrotto.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Loop_Actions.htm">Loop Actions</a></div>
-        <div style="float:right">Next: <a href="Break.htm">Break</a></div>
+        <div style="float:left">Indietro: <a href="Loop_Actions.htm">Azioni in loop</a></div>
+        <div style="float:right">Il prossimo: <a href="Break.htm">Break</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Action - For

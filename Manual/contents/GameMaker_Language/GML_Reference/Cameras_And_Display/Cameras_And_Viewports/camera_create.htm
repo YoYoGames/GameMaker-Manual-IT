@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>camera_create</title>
+  <title>creare una telecamera</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for camera_create" />
   <meta name="rh-index-keywords" content="camera_create" />
@@ -15,34 +15,34 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>camera_create</h1>
-  <p>This function will create an &quot;empty&quot; camera, ie: a camera with no view or projection settings defined. Once you have created the camera you can then use the different <a href="../../Maths_And_Numbers/Matrix_Functions/Matrix_Functions.htm">matrix functions</a> to set the view and projection matrices. You can also use this function to create the camera and then use the different <span class="inline">camera_set_*</span> functions to set up the view, however note that you <i>must</i> provide at least a position and view size, otherwise the resulting camera will not be valid and give odd results if applied to a view port (if you do not set the object following, borders or move speed these will be set to the default values for a view camera in the Room Editor).</p>
-  <p>Note that cameras are like all dynamic resources and will occupy memory when created. This means that you need to take care not to create cameras unnecessarily and to destroy those that you don&#39;t need by calling the function <a href="camera_destroy.htm"><span class="inline">camera_destroy()</span></a>. This also means that cameras will persist from room to room if assigned to a <span class="inline">global</span> variable (they will persist when assigned to instance or local variables too, but you can&#39;t access them after changing room, hence the memory leak), so that you can - for example - create a new camera, assign it to a global variable, and then at the start of each room set the required view and projection matrices and the view port you need to use.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>creare una telecamera</h1>
+  <p>Questa funzione creerà una camera &quot;vuota&quot;, cioè: una camera senza impostazioni di vista o proiezione definite. Una volta creata la telecamera, potrete poi utilizzare le diverse <a href="../../Maths_And_Numbers/Matrix_Functions/Matrix_Functions.htm">funzioni di matrice</a> per impostare le matrici di vista e di proiezione. Puoi anche usare questa funzione per creare la camera e poi usare le diverse funzioni <span class="inline">camera_set_*</span> per impostare la vista, tuttavia nota che <i>devi</i> fornire almeno una posizione e una dimensione di vista, altrimenti la camera risultante non sarà valida e darà risultati strani se applicata ad una porta di vista (se non imposti il <span class="notranslate">object</span> following, i bordi o la velocità di movimento questi saranno impostati ai valori di default per una camera di vista nell'Editor <span class="notranslate">Room</span> ).</p>
+  <p>Si noti che le telecamere sono come tutte le risorse dinamiche e occupano memoria quando vengono create. Questo significa che dovete fare attenzione a non creare inutilmente delle telecamere e a distruggere quelle che non vi servono chiamando la funzione <a href="camera_destroy.htm"><span class="inline">camera_destroy()</span></a>. Questo significa anche che le telecamere persisteranno da <span class="notranslate">room</span> a <span class="notranslate">room</span> se assegnate a una variabile <span class="inline">global</span> (persisteranno anche quando assegnate a variabili di istanza o locali, ma non è possibile accedervi dopo aver cambiato <span class="notranslate">room</span>, da cui la perdita di memoria), in modo che si possa - per esempio - creare una nuova telecamera, assegnarla a una variabile globale, e poi all'inizio di ogni <span class="notranslate">room</span> impostare le matrici di vista e di proiezione richieste e la porta di vista da utilizzare.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">camera_create();</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_ID_Camera">Camera ID</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">view_camera[0] = camera_create();<br />
     var viewmat = matrix_build_lookat(640, 240, -10, 640, 240, 0, 0, 1, 0);<br />
     var projmat = matrix_build_projection_ortho(640, 480, 1.0, 32000.0);<br />
     camera_set_view_mat(view_camera[0], viewmat);<br />
     camera_set_proj_mat(view_camera[0], projmat);</p>
-  <p>The above code creates a new camera and assigns its ID to view[0]. The view and projection matrices are then created and stored in local variables before being used to set the camera.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra crea una nuova telecamera e assegna il suo ID a view[0]. Le matrici di vista e di proiezione sono poi create e memorizzate in variabili locali prima di essere utilizzate per impostare la telecamera.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Cameras_And_View_Ports.htm">Cameras And View Ports</a></div>
-        <div style="float:right">Next: <a href="camera_create_view.htm">camera_create_view</a></div>
+        <div style="float:left">Indietro: <a href="Cameras_And_View_Ports.htm">Telecamere e porte di visualizzazione</a></div>
+        <div style="float:right">Il prossimo: <a href="camera_create_view.htm"><span class="notranslate">camera_create_view</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 camera_create

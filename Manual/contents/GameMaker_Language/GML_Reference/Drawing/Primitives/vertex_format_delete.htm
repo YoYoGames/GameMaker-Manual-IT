@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>vertex_format_delete</title>
+  <title>cancellazione del formato dei vertici</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for vertex_format_delete" />
   <meta name="rh-index-keywords" content="vertex_format_delete" />
@@ -14,43 +14,43 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>vertex_format_delete</h1>
-  <p>This function must be called whenever you are finished using any created vector formats. You provide the format ID value (as returned by the function <a href="vertex_format_end.htm"><span class="inline">vector_format_end()</span></a>), and this function will free the memory associated with it. Note that if you try to use this format again after calling this function, you will get an error.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>cancellazione del formato dei vertici</h1>
+  <p>Questa funzione deve essere chiamata ogni volta che avete finito di usare qualsiasi formato vettoriale creato. Voi fornite il valore dell'ID del formato (come restituito dalla funzione <a href="vertex_format_end.htm"><span class="inline">vector_format_end()</span></a>), e questa funzione libererà la memoria associata ad esso. Notate che se cercate di utilizzare nuovamente questo formato dopo aver chiamato questa funzione, otterrete un errore.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">vertex_format_delete(formatID);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>formatID</td>
-        <td><span data-keyref="Type_ID_Vertex_Format">Vertex Format ID</span></td>
-        <td>The vertex format to delete</td>
+        <td><span class="notranslate">formatID</span></td>
+        <td><span data-keyref="Type_ID_Vertex_Format">ID del formato dei vertici</span></td>
+        <td><span class="notranslate">The vertex format to delete</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">vertex_format_delete(myFormat);</p>
-  <p>The above code will remove the vertex format created in the variable &quot;myFormat&quot; from memory.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra rimuoverà dalla memoria il formato dei vertici creato nella variabile &quot;myFormat&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Primitives_And_Vertex_Formats.htm">Primitives And Vertex Formats</a></div>
-        <div style="float:right">Next: <a href="vertex_create_buffer.htm">vertex_create_buffer</a></div>
+        <div style="float:left">Indietro: <a href="Primitives_And_Vertex_Formats.htm">Primitivi e formati di vertici</a></div>
+        <div style="float:right">Il prossimo: <a href="vertex_create_buffer.htm"><span class="notranslate">vertex_create_buffer</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 vertex_format_delete

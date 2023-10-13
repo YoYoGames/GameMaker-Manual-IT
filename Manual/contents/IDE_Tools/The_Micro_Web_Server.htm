@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>The Micro Web Server</title>
+  <title>Il micro server web</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section that covers the micro web server." />
   <meta name="rh-index-keywords" content="Micro Web Server" />
@@ -14,27 +14,27 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>The Micro Web Server</h1>
-  <p>This small tool&#39;s primary function is to connect to and serve files to some of the available target platforms for <span data-keyref="GameMaker Name">GameMaker</span> (like the HTML5 target). It also serves files for the <span data-keyref="GameMaker Name">GameMaker</span> manual when used offline.</p>
-  <p>When you run a game on a target that requires the Micro Web Server, you will see a new window open as the game is served to the chosen device:</p>
+  <h1>Il micro server web</h1>
+  <p>La funzione principale di questo piccolo strumento è quella di connettersi e servire file ad alcune delle piattaforme di destinazione disponibili per <span data-keyref="GameMaker Name">GameMaker</span> (come la destinazione HTML5). Serve anche i file per il manuale di <span data-keyref="GameMaker Name">GameMaker</span> quando viene usato offline.</p>
+  <p>Quando si esegue un gioco su un obiettivo che richiede il Micro Web <span class="notranslate">Server</span>, si vedrà una nuova finestra aperta mentre il gioco viene servito al dispositivo scelto:</p>
   <p><img alt="Micro Web Server Window" class="center" src="../assets/Images/IDE Tools/Micro_Web_Server.png" /></p>
-  <p class="note"><span class="note">NOTE</span> The first time you run a game on a target that requires the Micro Web Server, you may get a firewall alert. You should permit the web server to communicate through the firewall if this happens.</p>
-  <p>When the Micro Web Server is running, you can access your game from any local device (and even remotely, if port forwarding is properly set up). Simply access your computer&#39;s local IP address through the port shown in this window, and you will be able to play your game from another device, like a mobile phone, or another computer.</p>
-  <p>For example, let&#39;s say your computer&#39;s local IP address is <span class="inline2">192.168.0.110</span> (<a href="https://lifehacker.com/how-to-find-your-local-and-external-ip-address-5833108">read this</a> to know how to find it), and the port shown in the Micro Web Server window is <span class="inline2">51264</span>. After running the game on your computer, you would connect to <span class="inline2">192.168.0.110:51264</span> from a browser on your mobile, and play your game.</p>
-  <p>The Web Server will show a certain amount of debug information related to the files that have been served, and has a button to clear this at the bottom. Beside the &quot;Clear&quot; button is the path to the root JS file for the project, while underneath that you have the <strong>Network Speed</strong> option. This is set to &quot;No Limit&quot; by default, but clicking it will open up a list of different network options:</p>
-  <p><img alt="Micro Web Server Window Bandwidths" class="center" src="../assets/Images/IDE Tools/Micro_Web_Server_Bandwidths.png" />Changing this setting will also change the package <strong>Size </strong>option to the right. You can also edit this manually, in which case the Network Speed will be set to &quot;Custom&quot;. Setting it to anything other than the maximum value will effectively throttle the network transfer speed and permit you to test games in a low bandwidth environment.</p>
-  <p>You can also see the list of <strong>Allowed IPs</strong> along with the <strong>Port </strong>number being used, but these cannot be edited in the Micro Web Server. They should be set instead in the <a href="../Setting_Up_And_Version_Information/The_Device_Manager.htm">Device Manager</a> settings for the given device target, or the <a data-xref="{text}" href="../Setting_Up_And_Version_Information/Platform_Preferences/HTML5.htm#h">HTML5 Preferences</a> when using the &quot;Default&quot; device.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p class="note"><span class="note">NOTA</span> La prima volta che eseguite un gioco su un obiettivo che richiede il Micro Web <span class="notranslate">Server</span>, potreste ottenere un avviso del firewall. Dovreste permettere al web <span class="notranslate">server</span> di comunicare attraverso il firewall se questo accade.</p>
+  <p>Quando Micro Web <span class="notranslate">Server</span> è in funzione, puoi accedere al tuo gioco da qualsiasi dispositivo locale (e anche in remoto, se il port forwarding è impostato correttamente). Basta accedere all'indirizzo IP locale del tuo computer attraverso la porta mostrata in questa finestra, e sarai in grado di giocare al tuo gioco da un altro dispositivo, come un telefono cellulare, o un altro computer.</p>
+  <p>Per esempio, diciamo che l'indirizzo IP locale del tuo computer è <span class="inline2">192.168.0.110</span><a href="https://lifehacker.com/how-to-find-your-local-and-external-ip-address-5833108">(leggi qui</a> per sapere come trovarlo), e la porta mostrata nella finestra Micro Web <span class="notranslate">Server</span> è <span class="inline2">51264</span>. Dopo aver eseguito il gioco sul tuo computer, ti connetterai a <span class="inline2">192.168.0.110:51264</span> da un browser sul tuo cellulare, e giocherai al tuo gioco.</p>
+  <p>Il Web <span class="notranslate">Server</span> mostrerà una certa quantità di informazioni di debug relative ai file che sono stati serviti, e ha un pulsante per cancellarle in basso. Accanto al pulsante &quot;Clear&quot; c'è il <span class="notranslate">path</span> al file JS principale del progetto, mentre sotto c'è l'opzione <strong>Network Speed</strong>. Questa è impostata di default su &quot;No Limit&quot;, ma cliccandoci sopra si aprirà una lista di diverse opzioni di rete:</p>
+  <p><img>Cambiando questa impostazione cambierà anche l'opzione <strong>Dimensione </strong>pacchetto a destra. Puoi anche modificarla manualmente, nel qual caso la velocità di rete sarà impostata su &quot;Custom&quot;. Impostandola su un valore diverso da quello massimo, la velocità di trasferimento della rete verrà effettivamente strozzata e ti permetterà di testare i giochi in un ambiente a bassa larghezza di banda.</p>
+  <p>Potete anche vedere l'elenco degli <strong>IP consentiti</strong> insieme al numero di <strong>porta </strong>utilizzato, ma questi non possono essere modificati in Micro Web <span class="notranslate">Server</span>. Dovrebbero invece essere impostati nelle impostazioni di <a href="../Setting_Up_And_Version_Information/The_Device_Manager.htm">Device Manager</a> per il dato dispositivo di destinazione, o nelle <a data-xref="{text}" href="../Setting_Up_And_Version_Information/Platform_Preferences/HTML5.htm#h">Preferenze HTML5</a> quando si usa il dispositivo &quot;Default&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Additional_IDE_Tools.htm">Additional IDE Tools</a></div>
-        <div style="float:right">Next: <a href="The_Inspector.htm">The Inspector Window</a></div>
+        <div style="float:left">Indietro: <a href="Additional_IDE_Tools.htm">Strumenti aggiuntivi <span class="notranslate">IDE</span> </a></div>
+        <div style="float:right">Prossimo: <a href="The_Inspector.htm">La finestra dell'ispettore</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Micro Web Server

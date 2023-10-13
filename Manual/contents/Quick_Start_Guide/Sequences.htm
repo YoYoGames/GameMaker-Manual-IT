@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Sequences</title>
+  <title>Sequenze</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Overview of Sequences in games." />
   <meta name="rh-index-keywords" content="Quick Start - Sequences" />
@@ -15,29 +15,29 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Sequences</h1>
-  <p>The final asset we&#39;ll discuss in this guide before moving on to discuss how it all comes together in the <strong>Room Editor</strong>, is the <strong>Sequences</strong> asset. A sequence is essentially a collection of other assets that are collected in one place and then animated together. The final animation (sequence) can then be added to rooms in your game much like instances.</p>
-  <p>Sequences are created through the <a href="../The_Asset_Editors/Sequences.htm"><strong>Sequence Editor</strong></a> which is opened whenever you create a new sequence asset in the <a href="../Introduction/The_Asset_Browser.htm">Asset Browser</a>:</p>
-  <p><img alt="The Sequences Editor" class="center" src="../assets/Images/QS_Guide/QS_Sequences_Editor.png" />To create a basic sequence you add either a sound, a sprite or an instance into the sequence <em>canvas</em> and then position it to where you want it to be at the start of the sequence. This creates an <strong><a class="glossterm" data-glossterm="Asset Track" href="#">Asset Track</a></strong> in the <a class="glossterm" data-glossterm="Track Panel" href="#">Track Panel</a> <em></em> and also adds <strong></strong>a <strong><a class="glossterm" data-glossterm="keyframe" href="#">keyframe</a></strong> into the <a class="glossterm" data-glossterm="Dope Sheet" href="#">Dope Sheet</a> to show the duration that the asset will be visible for.</p>
-  <p>Time for the sequence is in frames (which is the same as steps for instances, ie: one frame is the same as one game step), and you can see what will happen at any given frame by moving the sequence <strong><a class="glossterm" data-glossterm="playhead" href="#">playhead</a></strong> in the dope sheet. The playhead position is also used for adding in <strong>keyframes </strong>which are the frames where you want some state to change to begin or end. Parameter keys are stored on <strong><a class="glossterm" data-glossterm="parameter tracks" href="#">parameter tracks</a></strong> for the given asset.</p>
-  <p>So, you would position the asset and set its scale and colour and other properties at frame 0 of the sequence. You would then record the parameter keys for the asset and move the playhead to the frame where you want to set the next asset state (position, colour, etc....). On this frame you would again change the different parameters and record keys for them, then repeat this process as required for the length of the sequence. When you press play on the sequence, the asset will be animated, with the sequence <a class="glossterm" data-glossterm="linear interpolation" href="#">interpolating</a> between the different parameter states, giving an end result something like this: </p>
-  <p><img alt="Sequence Example Image" class="center" src="../assets/Images/QS_Guide/QS_Sequence_Example.gif" />We won&#39;t go into more details about how sequences work here, but suffice to say that they are an incredibly powerful tool for doing anything from cut-scenes, to menus, to character states and much more.</p>
-  <p>The page linked below gives you all the details on how to use sequences in your games:</p>
+  <h1>Sequenze</h1>
+  <p>L'ultimo <span class="notranslate">asset</span> di cui parleremo in questa guida, prima di passare a parlare di come tutto si riunisce nell'<strong>Editor delle stanze</strong>, è l'asset <strong>Sequenze</strong>. Un <span class="notranslate">sequence</span> è essenzialmente una collezione di altri <span class="notranslate">assets</span> che sono raccolti in un posto e poi animati insieme. L'animazione finale (<span class="notranslate">sequence</span>) può poi essere aggiunta a <span class="notranslate">rooms</span> nel vostro gioco, proprio come le istanze.</p>
+  <p>Le sequenze vengono create attraverso l'editor <a href="../The_Asset_Editors/Sequences.htm"><strong>Editor di sequenze</strong></a> che si apre ogni volta che si crea un nuovo <span class="notranslate">sequence</span> <span class="notranslate">asset</span> nel <a href="../Introduction/The_Asset_Browser.htm">Browser delle risorse</a>:</p>
+  <p><img>Per creare un <span class="notranslate">sequence</span> di base si aggiunge un suono, un <span class="notranslate">sprite</span> o un'istanza nel <em>canvas</em> della sequenza e poi lo si posiziona dove si vuole che sia all'inizio del <span class="notranslate">sequence</span>. Questo crea un <strong><a class="glossterm" data-glossterm="Asset Track" href="#">Traccia delle risorse</a></strong> nel <a class="glossterm" data-glossterm="Pannello dei binari" href="#">Track Panel</a> <em></em> e aggiunge anche <strong></strong>a <strong><a class="glossterm" data-glossterm="keyframe" href="#">keyframe</a></strong> nel <a class="glossterm" data-glossterm="Foglio di droga" href="#">Dope Sheet</a> per mostrare la durata per cui il <span class="notranslate">asset</span> sarà visibile.</p>
+  <p>Il tempo per <span class="notranslate">sequence</span> è in fotogrammi (che è lo stesso dei passi per le istanze, cioè: un fotogramma è lo stesso di un passo di gioco), e si può vedere cosa succederà in ogni dato fotogramma spostando la sequenza <strong><a class="glossterm" data-glossterm="playhead" href="#">playhead</a></strong> in <span class="notranslate">dope sheet</span>. La posizione del playhead è anche usata per aggiungere i <strong>fotogrammi chiave </strong>, che sono i fotogrammi in cui si vuole che qualche stato cambi all'inizio o alla fine. I parametri chiave sono memorizzati su <strong><a class="glossterm" data-glossterm="tracce dei parametri" href="#">parametro tracce</a></strong> per il dato <span class="notranslate">asset</span>.</p>
+  <p>Così, posizionereste il <span class="notranslate">asset</span> e impostereste la sua scala e il suo colore e altre proprietà al fotogramma 0 del <span class="notranslate">sequence</span>. Poi registrereste le chiavi dei parametri per il <span class="notranslate">asset</span> e spostereste il playhead al fotogramma dove volete impostare il prossimo stato del <span class="notranslate">asset</span> (posizione, colore, ecc....). Su questo fotogramma cambieresti di nuovo i diversi parametri e registreresti le chiavi per essi, poi ripeteresti questo processo come richiesto per la lunghezza di <span class="notranslate">sequence</span>. Quando premi play su <span class="notranslate">sequence</span>, <span class="notranslate">asset</span> sarà animato, con <span class="notranslate">sequence</span> <a class="glossterm" data-glossterm="interpolazione lineare" href="#">che interpola</a> tra i diversi stati dei parametri, dando un risultato finale simile a questo: </p>
+  <p><img>Non entreremo in ulteriori dettagli su come funziona <span class="notranslate">sequences</span> qui, ma è sufficiente dire che sono uno strumento incredibilmente potente per fare qualsiasi cosa, dalle scene tagliate, ai menu, agli stati dei personaggi e molto altro.</p>
+  <p>La pagina linkata qui sotto vi dà tutti i dettagli su come usare <span class="notranslate">sequences</span> nei vostri giochi:</p>
   <ul class="colour">
-    <li><a href="../The_Asset_Editors/Sequences.htm">The Sequences Editor</a></li>
+    <li><a href="../The_Asset_Editors/Sequences.htm">Il <span class="notranslate">Sequences</span> Editore</a></li>
   </ul>
-  <p>Now we can move on to talk about the  <strong>Room Editor</strong>, which is where all these parts of your game come together...</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Ora possiamo passare a parlare del <strong>Room Editor</strong>, che è dove tutte queste parti del vostro gioco si uniscono...</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Content.htm">Index</a></div>
-        <div style="float:right">Next: <a href="Rooms.htm">Rooms</a></div>
+        <div style="float:left">Indietro: <a href="../Content.htm">Indice</a></div>
+        <div style="float:right">Il prossimo: <a href="Rooms.htm">Camere</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Quick Start: Sequences

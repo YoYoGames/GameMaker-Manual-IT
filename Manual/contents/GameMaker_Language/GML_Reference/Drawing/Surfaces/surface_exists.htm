@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>surface_exists</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>superficie_esiste</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for surface_exists" />
   <meta name="rh-index-keywords" content="surface_exists" />
@@ -15,30 +15,28 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1 id="h">surface_exists</h1>
-  <p>This function is essential when working with surfaces due to their volatile nature. Surfaces are always held in texture memory which means that they can be destroyed from one moment to the next (for example, when a screensaver starts on windows, or when minimised on an Android device), so you should always check that a surface exists before doing anything with it (this includes drawing it to the screen). The example code below shows a typical use of this command in the draw event of an instance to check for a surface and re-create it if it has been removed (note that the surface will have been originally created in the create event of the object).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>superficie_esiste</h1>
+  <p>Questa funzione è essenziale quando si lavora con le superfici a causa della loro natura volatile. Le superfici sono sempre tenute in <span class="notranslate">texture</span> memoria, il che significa che possono essere distrutte da un momento all'altro (per esempio, quando si avvia uno screensaver su windows, o quando si minimizza su un dispositivo <span class="notranslate">Android</span> ), quindi si dovrebbe sempre controllare che una superficie esista prima di fare qualcosa con essa (questo include disegnarla sullo schermo). Il codice di esempio qui sotto mostra un uso tipico di questo comando nell'evento draw di un'istanza per controllare una superficie e ricrearla se è stata rimossa (si noti che la superficie sarà stata originariamente creata nell'evento create di <span class="notranslate">object</span>).</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">surface_exists(surface_id);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
+     </tr>
       <tr>
-        <td>surface_id</td>
-        <td><span data-keyref="Type_ID_Surface"></span></td>
-        <td>The ID of the surface to check.</td>
-      </tr>
+        <td><span class="notranslate">surface_id</span></td><td><span data-keyref="Type_ID_Surface"></span></td>
+        <td><span class="notranslate">The ID of the surface to check.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Bool"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if !surface_exists(surf)<br />
     {<br />
         surf = surface_create(1024, 1024);<br />
@@ -50,18 +48,18 @@
             draw_surface(surf,0,0);<br />
         }<br />
     }</p>
-  <p>The above code will check to see if a surface indexed in the variable &quot;surf&quot; exists, and if it does not, it will re-create it. If it does exist, it then checks to see which view is currently being drawn and if it is view[1] it draws the surface.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controllerà per vedere se una superficie indicizzata nella variabile &quot;surf&quot; esiste, e se non esiste, la ricreerà. Se esiste, controlla per vedere quale vista è attualmente disegnata e se è la vista[1], disegna la superficie.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Surfaces.htm">Surfaces</a></div>
-        <div style="float:right">Next: <a href="surface_create.htm">surface_create</a></div>
+        <div style="float:left">Indietro: <a href="Surfaces.htm">Superfici</a></div>
+        <div style="float:right">Il prossimo: <a href="surface_create.htm"><span class="notranslate">surface_create</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 surface_exists

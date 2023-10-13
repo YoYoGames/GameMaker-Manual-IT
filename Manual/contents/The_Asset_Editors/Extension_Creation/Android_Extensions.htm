@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Android Extensions</title>
+  <title>Estensioni Android</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page detailing how Android extensions work" />
   <meta name="rh-index-keywords" content="Extensions - Creating Android Extensions" />
@@ -14,26 +14,26 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Android Extensions</h1>
-  <p>To create an extension for Android you have to do it in two parts. The first part would be to add the extension itself, along with the required files, and the second is to create the functions and macros/constants that the extension requires.</p>
-  <p>The functions and constants are added using <strong>placeholder </strong>files to group them together, so you&#39;d add a placeholder and then define the functions and macros as explained in the previous section. To add the rest of the files though you would need to first tick the <em>Android </em>check-box in the <b>Extra Platforms</b> section of the editor, which will open up the extension&#39;s Android Properties:</p>
+  <h1>Estensioni Android</h1>
+  <p>Per creare un <span class="notranslate">extension</span> per <span class="notranslate">Android</span> bisogna farlo in due parti. La prima parte consiste nell'aggiungere lo stesso <span class="notranslate">extension</span>, insieme ai file necessari, e la seconda nel creare le funzioni e le macro/costanti che <span class="notranslate">extension</span> richiede.</p>
+  <p>Le funzioni e le costanti vengono aggiunte usando file <strong>segnaposto </strong>per raggrupparle, quindi si aggiunge un segnaposto e poi si definiscono le funzioni e le macro come spiegato nella sezione precedente. Per aggiungere il resto dei file, tuttavia, è necessario prima selezionare la casella di controllo <em>Android </em>nella sezione <b>Piattaforme extra</b> dell'editor, che aprirà le proprietà dell'estensione <span class="notranslate">Android</span>:</p>
   <p class="dropspot"><img alt="Android Editor" class="center" src="../../assets/Images/Asset_Editors/Editor_Extensions_Android.png" /></p>
-  <p>Here you can give the following details:</p>
+  <p>Qui è possibile fornire i seguenti dettagli:</p>
   <ul class="colour">
-    <li class="dropspot"><strong>Class Name</strong>: Your extension can have multiple classes, with each class having its own functions and constants, so you should give it a name that reflects its purpose.</li>
-    <li class="dropspot"><strong>Android Permissions</strong>: Here you can add in any extra permissions that your extension requires. What these permissions are will depend entirely on the use that the extension has, and so you should <a href="https://developer.android.com/reference/android/Manifest.permission.html">check the documentation supplied by Google</a> for the Android platform, or, if you are using a third party SDK, the documentation that comes with the SDK. To add a new permission you need to click on the <img alt="Add Argument Icon" class="icon" height="18" src="../../assets/Images/Icons/Icon_AddArgument.png" width="18" /> button to add a placeholder permission, and then do a double <img alt="LMB Icon" class="icon" src="../../assets/Images/Icons/Icon_LMB.png" /> click on that to edit it to what is required. You can remove permissions using the <img alt="Remove Argument Icon" class="icon" src="../../assets/Images/Icons/Icon_RemoveArgument.png" /> button.</li>
-    <li class="dropspot"><b>Code Injection</b>: Here you can add any code to be injected (added) into your Android application when your game is built for testing or final release. Make sure to revise this (and your permissions) carefully before submitting any games to the store, as incorrect settings will cause your game to be failed for submission. See the section below for more information.</li>
+    <li class="dropspot"><strong>Nome della classe</strong>: Il vostro <span class="notranslate">extension</span> può avere più classi, ognuna delle quali ha le sue funzioni e le sue costanti, quindi dovreste dargli un nome che rifletta il suo scopo.</li>
+    <li class="dropspot"><strong>Permessi Android</strong>: Qui si possono aggiungere le autorizzazioni extra che il vostro <span class="notranslate">extension</span> richiede. I permessi dipendono interamente dall'uso che se ne fa <span class="notranslate">extension</span> e quindi si deve <a href="https://developer.android.com/reference/android/Manifest.permission.html">controllare la documentazione fornita da Google</a> per la piattaforma <span class="notranslate">Android</span> o, se si utilizza un SDK di terze parti, la documentazione fornita con l'SDK. Per aggiungere un nuovo permesso è necessario fare clic sul pulsante <img> per aggiungere un permesso segnaposto, quindi fare un doppio <img> clic su di esso per modificarlo in base alle esigenze. È possibile rimuovere i permessi utilizzando il pulsante <img>.</li>
+    <li class="dropspot"><b>Iniezione di codice</b>: Qui è possibile aggiungere qualsiasi codice da iniettare (aggiungere) nell'applicazione <span class="notranslate">Android</span> quando il gioco viene creato per il test o il rilascio finale. Assicuratevi di rivedere attentamente questo codice (e le vostre autorizzazioni) prima di inviare qualsiasi gioco al negozio, in quanto impostazioni errate causeranno il fallimento dell'invio del gioco. Per ulteriori informazioni, consultare la sezione sottostante.</li>
   </ul>
-  <h2 id="h">Code Injection</h2>
-  <p>Any code entered into the &quot;Code Injection&quot; window will need to be separated into distinct XML groups, as shown in the screenshot above. The XML tag you use for a group will determine where the code is injected into your application.</p>
-  <p>You can use the following syntax to create code injection groups:</p>
+  <h2 id="h">Iniezione di codice</h2>
+  <p>Il codice inserito nella finestra &quot;Code Injection&quot; dovrà essere separato in gruppi XML distinti, come mostrato nella schermata precedente. Il tag XML utilizzato per un gruppo determinerà il punto in cui il codice verrà iniettato nell'applicazione.</p>
+  <p>Per creare gruppi di iniezione di codice si può usare la seguente sintassi:</p>
   <p class="code">&lt;YYTagName&gt;<br />
     <br />
     // Code to inject<br />
     <br />
     &lt;/YYTagName&gt;
   </p>
-  <p>The following tags are available for the Android platform:</p>
+  <p>Per la piattaforma <span class="notranslate">Android</span> sono disponibili i seguenti tag:</p>
   <p class="code">YYAndroidTopLevelGradle<br />
     YYAndroidTopLevelGradleBuildscript<br />
     YYAndroidTopLevelGradleBuildscriptRepositories<br />
@@ -54,10 +54,9 @@
     YYAndroidManifestApplicationInject<br />
     YYAndroidStringValuesInjection<br />
     YYAndroidLayout<br />
-    YYAndroidProguard<br />
-    YYAndroidLogcat
+    <span>YYAndroidProguard</span>
   </p>
-  <p>The runtime location where the code is injected will depend on the type of the tag:</p>
+  <p>La posizione di <span class="notranslate">runtime</span> in cui viene iniettato il codice dipende dal tipo di tag:</p>
   <table>
     <colgroup>
       <col style="width: 174px;" />
@@ -65,56 +64,45 @@
     </colgroup>
     <tbody>
       <tr>
-        <th style="">Tag Type</th>
-        <th style="">Injection Path</th>
+        <th style="">Tipo di etichetta</th>
+        <th style="">Percorso di iniezione</th>
       </tr>
       <tr>
-        <td style=""><strong>Top Level Gradle</strong></td>
-        <td style="">{RUNTIME}\android\runner\RootFiles\build.gradle</td>
+        <td style=""><strong>Livello superiore di Gradle</strong></td>
+        <td style="">{RUNTIME}androidrunner}RootFilesbuild.gradle</td>
       </tr>
       <tr>
-        <td style=""><strong>Module Level Gradle</strong></td>
-        <td style="">{RUNTIME}\android\runner\ProjectFiles\build.gradle</td>
+        <td style=""><strong>Livello di modulo Gradle</strong></td>
+        <td style="">{RUNTIME}androidrunner\ProjectFiles\build.gradle</td>
       </tr>
       <tr>
-        <td style=""><strong>Android Manifest</strong></td>
-        <td style="">{RUNTIME}\android\runner\ProjectFiles\src\main\AndroidManifest.xml</td>
+        <td style=""><strong>Manifesto Android</strong></td>
+        <td style="">{RUNTIME}android\runner\ProjectFiles\src\main\AndroidManifest.xml</td>
       </tr>
       <tr>
-        <td style=""><strong>Strings</strong></td>
-        <td style="">{RUNTIME}\android\runner\ProjectFiles\src\main\res\values\strings.xml</td>
+        <td style=""><strong>Corde</strong></td>
+        <td style="">{RUNTIME}androidrunnerProjectFiles\src\main\resvalues\strings.xml</td>
       </tr>
       <tr>
         <td style=""><strong>Layout</strong></td>
-        <td style="">{RUNTIME}\android\runner\ProjectFiles\src\main\res\layout\main.xml</td>
+        <td style="">{RUNTIME}androidrunnerprojectFiles\src\main\reslayout\main.xml</td>
       </tr>
     </tbody>
   </table>
-  <p class="note"><span class="note">NOTE</span> These paths are only for VM; for YYC, injected code will go into the <span class="inline">{RUNTIME}\yyc\</span> directory, where the paths may or may not be equivalent to those for VM.</p>
-  <h3>Usage Tips</h3>
-  <ul class="colour">
-    <li>You can use <span class="inline2">YYAndroidLogcat</span> to use custom logging tags with <a href="https://developer.android.com/studio/command-line/logcat">Logcat</a>. Set up your tag with a priority level, e.g.:<br />
-      <br />
-      <span class="inline2">&lt;YYAndroidLogcat&gt;</span><br />
-      <span class="inline2">myDebugTag:V</span><br />
-      <span class="inline2">&lt;/YYAndroidLogcat&gt;</span><br />
-      <br />
-      In your extension, use a logging function to log a message with this tag, e.g. <span class="inline2">Log.i(&quot;myDebugTag&quot;, &quot;Hello World&quot;);</span>
-    </li>
-  </ul>
-  <h2>Source Files</h2>
-  <p>Once you have set this up correctly, you will need to add the files required for your extension package to work. To do this you need to click on the buttons at the bottom, either <em>Add SDK</em> or <em>Add Source</em> and then browse to the files you wish to add. Added files will be stored in the <span class="inline">AndroidSource</span> directory along with your extension. You can open this location at any time by right clicking <img alt="RMB Icon" class="icon" src="../../assets/Images/Icons/Icon_RMB.png" /> on the extension and selecting <em>Open in Explorer</em>.</p>
-  <p>For information on your creating native extensions for Android, see <a href="Extended_Examples.htm">Source Examples</a>.</p>
-  <p> </p>
-  <p> </p>
+  <p class="note"><span class="note">NOTA</span> Questi <span class="notranslate">paths</span> sono solo per VM; per YYC, il codice iniettato andrà nella directory <span class="inline">{RUNTIME}\yyc\</span>, dove i <span class="notranslate">paths</span> possono o meno essere equivalenti a quelli per VM.</p>
+  <h2>File sorgente</h2>
+  <p>Una volta configurato correttamente, è necessario aggiungere i file necessari per il funzionamento del pacchetto <span class="notranslate">extension</span>. Per farlo, dovete fare clic sui pulsanti in basso, <em>Add SDK</em> o <em>Add Source</em>, e poi navigare fino ai file che desiderate aggiungere. I file aggiunti saranno memorizzati nella directory <span class="inline">AndroidSource</span> insieme al pacchetto <span class="notranslate">extension</span>. <span class="notranslate">extension</span> È possibile aprire questa posizione in qualsiasi momento facendo clic con il pulsante destro del mouse su <img> e selezionando <em>Apri in Explorer</em>.</p>
+  <p>Per informazioni sulla creazione di <span class="notranslate">extensions</span> nativo per <span class="notranslate">Android</span>, vedere <a href="Extended_Examples.htm">Esempi di sorgenti</a>.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Extensions.htm">The Extension Editor</a></div>
-        <div style="float:right">Next: <a href="iOS_Extensions.htm">iOS Extensions</a></div>
+        <div style="float:left">Indietro: <a href="../Extensions.htm">L'editore <span class="notranslate">Extension</span> </a></div>
+        <div style="float:right">Avanti: <a href="iOS_Extensions.htm">Estensioni iOS</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Android Extensions

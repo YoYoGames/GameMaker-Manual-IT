@@ -6,7 +6,7 @@
   <title>gamepad_remove_mapping</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for gamepad_remove_mapping" />
   <meta name="rh-index-keywords" content="gamepad_remove_mapping" />
@@ -15,43 +15,43 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gamepad_remove_mapping</h1>
-  <p>This function can be used to remove the current device mapping from the given gamepad slot index. Once called, the slot index will need to be remapped using the <a href="gamepad_test_mapping.htm"><span class="inline">gamepad_test_mapping()</span></a> function if you want to be able to be able to use the gamepad constants to detect input correctly (direct input can always be retrieved using the <span class="inline"><a href="gamepad_axis_count.htm">gamepad_axis</a>/<a href="gamepad_button_count.htm">button</a>/<a href="gamepad_hat_count.htm">hat_count()</a></span> and <span class="inline"><a href="gamepad_axis_value.htm">gamepad_axis</a>/<a href="gamepad_button_value.htm">button</a>/<a href="gamepad_hat_value.htm">hat_value()</a></span> functions together).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione può essere usata per rimuovere la mappatura corrente del dispositivo dall'indice dello slot del gamepad dato. Una volta chiamato, l'indice dello slot dovrà essere rimappato usando la funzione <a href="gamepad_test_mapping.htm"><span class="inline">gamepad_test_mapping()</span></a> se si vuole essere in grado di utilizzare le costanti del gamepad per rilevare correttamente l'input (l'input diretto può sempre essere recuperato utilizzando le funzioni <span class="inline"><a href="gamepad_axis_count.htm">gamepad_axis</a>/<a href="gamepad_button_count.htm">button</a>/<a href="gamepad_hat_count.htm">hat_count()</a></span> e <span class="inline"><a href="gamepad_axis_value.htm">gamepad_axis</a>/<a href="gamepad_button_value.htm">button</a>/<a href="gamepad_hat_value.htm">hat_value()</a></span> insieme).</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">gamepad_remove_mapping(index);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>index</td><td><span data-keyref="Type_Real"></span></td>
-        <td>Which gamepad index &quot;slot&quot; to remove the mapping from.</td>
+        <td><span class="notranslate">index</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">Which gamepad index &quot;slot&quot; to remove the mapping from.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if remap == true<br />
     {<br />
         gamepad_remove_mapping(global.PadIndex);<br />
     }</p>
-  <p>The above code will remove the mapping from the given gamepad index slot based on the value of a variable.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra rimuoverà la mappatura dal dato slot di indice del gamepad in base al valore di una variabile.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Gamepad_Input.htm">Gamepad Input</a></div>
-        <div style="float:right">Next: <a href="gamepad_is_supported.htm">gamepad_is_supported</a></div>
+        <div style="float:left">Indietro: <a href="Gamepad_Input.htm">Ingresso Gamepad</a></div>
+        <div style="float:right">Il prossimo: <a href="gamepad_is_supported.htm"><span class="notranslate">gamepad_is_supported</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 gamepad_remove_mapping

@@ -6,7 +6,7 @@
   <title>gc_target_frame_time</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for gc_target_frame_time" />
   <meta name="rh-index-keywords" content="gc_target_frame_time" />
@@ -15,44 +15,44 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gc_target_frame_time</h1>
-  <p>With this function you can <span>indicate to the garbage collector that it shoulde aim to spend no more than the time specified running each frame. The function takes a time value <span>specified in microseconds (where 1,000,000 microseconds equals one second) and the default target frame time is 100 microseconds.</span></span></p>
-  <p><span><span>Please note that this is simply a </span></span><span><em>target</em> value, as some operations still need to run completely in one frame and may sometimes take longer than the target time. Also note that i<span>ncreasing the target time will make the garbage collector more responsive to rapid changes in memory usage and will cause memory to be freed more quickly, though in practice this is unlikely to be required in most cases. Also note that setting the target frame time to 0 will <em>not </em>cause the collector to stop completely - it will still do a minimal amount of work each frame. To completely disable the collector use the <span class="inline"><a href="gc_enable.htm">gc_enable()</a></span> function.</span> </span></p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Con questa funzione potete <span>indicare al garbage collector che dovrebbe mirare a spendere non più del tempo specificato nell'esecuzione di ogni frame. La funzione prende un valore di tempo <span>specificato in microsecondi (dove 1.000.000 di microsecondi equivale a un secondo) e il tempo predefinito del frame target è 100 microsecondi</span></span>.</p>
+  <p><span><span>Si prega di notare che questo è semplicemente un </span></span><span>valore<em>obiettivo</em>, poiché alcune operazioni devono ancora essere eseguite completamente in un fotogramma e a volte possono richiedere più tempo del tempo obiettivo. Notate anche che<span>aumentando il tempo obiettivo il garbage collector sarà più reattivo ai rapidi cambiamenti nell'uso della memoria e farà sì che la memoria venga liberata più rapidamente, anche se in pratica è improbabile che ciò sia necessario nella maggior parte dei casi. Notate anche che impostare il tempo di frame target a 0 <em>non </em>causerà l'arresto completo del collettore - farà ancora una quantità minima di lavoro ad ogni frame. Per disabilitare completamente il raccoglitore usate la funzione <span class="inline"><a href="gc_enable.htm">gc_enable()</a></span> </span>. </span></p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">gc_target_frame_time(time);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>time</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The target time - in microseconds -  that the garbage collector should work each frame</td>
+        <td><span class="notranslate">time</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The target time - in microseconds -  that the garbage collector should work each frame</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (gc_get_target_frame_time() != 50)<br />
     {<br />
         gc_target_frame_time(50);<br />
     }</p>
-  <p>The above code checks the current frame time target for the garbage collector and if it is not 50 microseconds then it is set to this value.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra controlla l'obiettivo di tempo del frame corrente per il garbage collector e se non è 50 microsecondi allora è impostato su questo valore.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Garbage_Collection.htm">Garbage Collection</a></div>
-        <div style="float:right">Next: <a href="gc_get_target_frame_time.htm">gc_get_target_frame_time</a></div>
+        <div style="float:left">Indietro: <a href="Garbage_Collection.htm">Raccolta della spazzatura</a></div>
+        <div style="float:right">Dopo: <a href="gc_get_target_frame_time.htm">gc_get_target_frame_time</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 gc_target_frame_time

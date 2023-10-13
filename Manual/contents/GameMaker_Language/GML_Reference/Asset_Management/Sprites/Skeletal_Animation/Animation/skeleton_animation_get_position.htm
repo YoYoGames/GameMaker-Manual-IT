@@ -6,7 +6,7 @@
   <title>skeleton_animation_get_position</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Bart Teunis" />
   <meta name="topic-comment" content="Page explaining the function skeleton_animation_get_position" />
   <meta name="rh-index-keywords" content="skeleton_animation_get_position" />
@@ -16,45 +16,46 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1><span data-field="title" data-format="default">skeleton_animation_get_position</span></h1>
-  <p>This function will return the position of the animation on the specified animation track as a value ranging from 0 to 1. This way you can get the track position as a percentage where the value 0 corresponds to 0% and the value 1 to 100%.</p>
-  <p>It will return -1 if no animation is assigned to the specific track given or if the instance has no sprite set.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione restituisce la posizione dell'animazione sulla traccia di animazione specificata come valore compreso tra 0 e 1. In questo modo è possibile ottenere la posizione della traccia come percentuale, dove il valore 0 corrisponde allo 0% e il valore 1 al 100%.</p>
+  <p>Restituirà -1 se nessuna animazione è assegnata alla traccia specifica indicata o se l'istanza non ha impostato <span class="notranslate">sprite</span>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code"><span data-field="title" data-format="default">skeleton_animation_get_position</span>(track);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>track</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The animation track to get the position of.</td>
+        <td><span class="notranslate">track</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Reale</a></span></td>
+        <td><span class="notranslate">The animation track to get the position of.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Restituzione:</h4>
   <p class="code"><span data-keyref="Type_Real"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var _position = <span data-field="title" data-format="default">skeleton_animation_get_position</span>(0);<br />
     var _position_percent = _position * 100;<br />
     show_debug_message(&quot;The skeleton animation position on track 0 is at &quot; + string(_position_percent) + &quot;%.&quot;);</p>
-  <p>The above code checks the current position of the skeleton animation assigned to track 0 and stores it in a temporary variable <span class="inline2">_position</span>. It then converts that value to a percentage by multiplying it by 100 and stores the result of that in another temporary variable <span class="inline2">_position_percent</span>.<br />
-    Finally it shows a debug message that displays the percent value.</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente controlla la posizione corrente dell'animazione dello scheletro assegnata alla traccia 0 e la memorizza in una variabile temporanea <span class="inline2">_position</span>. Quindi converte il valore in percentuale moltiplicandolo per 100 e memorizza il risultato in un'altra variabile temporanea <span class="inline2">_position_percent</span>.<br>
+    Infine, mostra un messaggio di debug che visualizza il valore percentuale.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Animation.htm">Animation</a></div>
-        <div style="float:right">Next: <a href="skeleton_animation_set_position.htm">skeleton_animation_set_position</a></div>
+        <div style="float:left">Indietro: <a href="Animation.htm">Animazione</a></div>
+        <div style="float:right">Avanti: <a href="skeleton_animation_set_position.htm">skeleton_animation_set_position</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_animation_get_frame

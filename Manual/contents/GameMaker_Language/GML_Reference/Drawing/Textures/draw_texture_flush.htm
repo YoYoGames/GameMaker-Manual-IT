@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>draw_texture_flush</title>
+  <title>disegnare_texture_flush</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for ​draw_texture_flush" />
   <meta name="rh-index-keywords" content="draw_texture_flush" />
@@ -15,32 +15,32 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_texture_flush</h1>
-  <p>With this function you can remove all textures from video memory, and they will then be reloaded on first use. This is the only effective way to manage video memory when you have multiple texture pages for a game, and you should flush the texture memory
-    between levels on your game and organise the graphics using the texture group feature to ensure that the minimum number of textures are used.</p>
-  <p>It is worth noting that <i>by default</i> on all targets, texture pages will only be loaded as they are required and you can use the various prefetch and flush functions for sprites (found <a href="../../Asset_Management/Sprites/Sprite_Manipulation/Sprite_Manipulation.htm">here</a>)
-    to manage things as well as this function.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>disegnare_texture_flush</h1>
+  <p>Con questa funzione è possibile rimuovere tutti i <span class="notranslate">textures</span> dalla memoria video, e saranno poi ricaricati al primo utilizzo. Questo è l'unico modo efficace per gestire la memoria video quando si hanno più pagine <span class="notranslate">texture</span> per un gioco, e si dovrebbe lavare la memoria <span class="notranslate">texture</span> 
+    tra un livello e l'altro del vostro gioco e organizzare la grafica usando la funzione <span class="notranslate">texture</span> group per assicurarsi che venga usato il numero minimo di <span class="notranslate">textures</span>.</p>
+  <p>Vale la pena notare che <i>per impostazione predefinita</i> su tutti gli obiettivi, <span class="notranslate">texture</span> le pagine saranno caricate solo quando sono richieste e si possono usare le varie funzioni di prefetch e flush per <span class="notranslate">sprites</span> (trovate <a href="../../Asset_Management/Sprites/Sprite_Manipulation/Sprite_Manipulation.htm">qui</a>)
+    per gestire le cose così come questa funzione.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">draw_texture_flush();</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">draw_texture_flush();</p>
-  <p>The above code flushes the video memory of texture data, and would probably be placed in the create event of the first instance of an object placed in the room.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra ripulisce la memoria video dai dati di <span class="notranslate">texture</span>, e sarebbe probabilmente collocato nell'evento di creazione della prima istanza di un <span class="notranslate">object</span> inserito in <span class="notranslate">room</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Textures.htm">Textures</a></div>
-        <div style="float:right">Next: <a href="texture_prefetch.htm">texture_prefetch</a></div>
+        <div style="float:left">Indietro: <a href="Textures.htm">Textures</a></div>
+        <div style="float:right">Il prossimo: <a href="texture_prefetch.htm"><span class="notranslate">texture_prefetch</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 draw_texture_flush

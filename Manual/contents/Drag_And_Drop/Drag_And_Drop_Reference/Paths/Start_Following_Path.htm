@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Start Following Path</title>
+  <title>Iniziare a seguire il percorso</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Start Following Path action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Start Following Path" />
@@ -14,66 +14,66 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Start Following Path Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Paths/i_Paths_Start_Following_Path.png" width="32" /> Start Following Path</h1>
-  <p>This action will start an instance following along a path that has been created in the Asset Browser. You would then use this action to tell your instance which path to follow, what speed to follow the path (measured in pixels per game frame), how to
-    behave when it reaches the end of the path, and whether to follow the absolute or relative path position. When setting the speed you can use negative values to signify that the instance should follow the path in reverse and it&#39;s worth noting that
-    the speed you set here can be modified by the speed modifier set in the path editor for each path point, so if you set the path speed to 2 and in the path one of the points has a speed modifier of 200%, then the actual speed at that point will be
-    4 pixels per game frame.</p>
-  <p>Once you&#39;ve set the initial path speed you can set how the instance should behave when it reaches the end of the path from the following options (note that when an instance reaches the end of a path this will also trigger an <a href="../../../The_Asset_Editors/Object_Properties/Other_Events.htm">Other - Path Ended Event</a>):</p>
+  <h1><img> Iniziare a seguire il percorso</h1>
+  <p>Questa azione avvia un'istanza che segue un <span class="notranslate">path</span> che è stato creato nel Browser di <span class="notranslate">Asset</span>. Dovreste quindi usare questa azione per dire alla vostra istanza quale <span class="notranslate">path</span> seguire, quale velocità seguire il <span class="notranslate">path</span> (misurata in pixel per fotogramma di gioco), come
+    comportarsi quando raggiunge la fine di <span class="notranslate">path</span>, e se seguire la posizione assoluta o relativa di <span class="notranslate">path</span>. Quando si imposta la velocità si possono usare valori negativi per indicare che l'istanza dovrebbe seguire il <span class="notranslate">path</span> al contrario e vale la pena notare che
+    la velocità che imposti qui può essere modificata dal modificatore di velocità impostato nell'editor di <span class="notranslate">path</span> per ogni punto di <span class="notranslate">path</span>, quindi se imposti la velocità di <span class="notranslate">path</span> a 2 e in <span class="notranslate">path</span> uno dei punti ha un modificatore di velocità del 200%, allora la velocità effettiva in quel punto sarà
+    4 pixel per fotogramma di gioco.</p>
+  <p>Una volta che hai impostato la velocità iniziale <span class="notranslate">path</span> puoi impostare come l'istanza dovrebbe comportarsi quando raggiunge la fine del <span class="notranslate">path</span> dalle seguenti opzioni (nota che quando un'istanza raggiunge la fine di un <span class="notranslate">path</span> questo innescherà anche un <a href="../../../The_Asset_Editors/Object_Properties/Other_Events.htm">Other - <span class="notranslate">Path</span> Ended Event</a>):</p>
   <ul class="colour">
-    <li><b>Stop</b>: End the path, stopping the instance on the last path point.</li>
-    <li><b>Restart</b>: Continue the path from the start, jumping to the start position again if the path is not marked as closed in the Path Editor.</li>
-    <li><b>Loop</b>: Continue from the current position to run the path again.</li>
-    <li><b>Reverse</b>: Go backwards along the path again (achieved by reversing the path follow speed), and when it reaches the start of the path, it will reverse again, etc...</li>
+    <li><b>Stop</b>: Termina il <span class="notranslate">path</span>, fermando l'istanza sull'ultimo punto <span class="notranslate">path</span>.</li>
+    <li><b>Riavviare</b>: Continua il <span class="notranslate">path</span> dall'inizio, saltando di nuovo alla posizione iniziale se il <span class="notranslate">path</span> non è segnato come chiuso nell'Editor <span class="notranslate">Path</span>.</li>
+    <li><b>Loop</b>: Continua dalla posizione attuale per eseguire di nuovo il <span class="notranslate">path</span>.</li>
+    <li><b>Invertire</b>: Andare di nuovo all'indietro lungo il <span class="notranslate">path</span> (ottenuto invertendo la velocità di <span class="notranslate">path</span> follow), e quando raggiunge l'inizio del <span class="notranslate">path</span>, invertirà di nuovo, ecc...</li>
   </ul>
-  <p>Finally, you can flag the path as being <i>Absolute </i>or not. By default the instance will start following the path from its current position (the relative position), but if you flag the <em>Absolute</em> checkbox then it will start following the
-    path exactly as you designed and placed it in the Path Editor (the absolute position). The image below illustrates this:</p>
-  <p><img alt="Path Relative Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Paths/path_relative_image.png" />As you can see in the image above, the two instances are following the <i>same</i> path started
-    with this action, but one of the instances is following the <i>absolute</i> path while the other is following the <i>relative</i> path. It should be noted that when <em>Absolute </em>is flagged the instance will &quot;jump&quot; to the start of the
-    path no matter where in the room it is placed.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Path Start Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Paths/a_Paths_Start_Following_Path.png" /></p>
-  <h4>Arguments:</h4>
+  <p>Infine, è possibile contrassegnare <span class="notranslate">path</span> come <i>Assoluto </i>o no. Per impostazione predefinita l'istanza inizierà a seguire il <span class="notranslate">path</span> dalla sua posizione attuale (la posizione relativa), ma se si contrassegna la casella <em>Absolute</em> allora inizierà a seguire il
+    <span class="notranslate">path</span> esattamente come l'hai disegnata e posizionata nell'editor di <span class="notranslate">Path</span> (la posizione assoluta). L'immagine qui sotto illustra questo:</p>
+  <p><img>Come potete vedere nell'immagine qui sopra, le due istanze stanno seguendo lo <i>stesso</i> <span class="notranslate">path</span> iniziato
+    con questa azione, ma una delle istanze sta seguendo l'<i>assoluto</i> <span class="notranslate">path</span> mentre l'altra sta seguendo il <i>relativo</i> <span class="notranslate">path</span>. Va notato che quando <em>Absolute </em>è contrassegnato, l'istanza &quot;salterà&quot; all'inizio del file
+    <span class="notranslate">path</span> non importa in quale punto di <span class="notranslate">room</span> sia posizionata.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="Start Following Path Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Paths/i_Paths_Start_Following_Path.png" width="32" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Path</td>
-        <td>The path asset to start following</td>
+        <td><span class="notranslate">Path</span></td>
+        <td>Il <span class="notranslate">path</span> <span class="notranslate">asset</span> per iniziare a seguire</td>
       </tr>
       <tr>
-        <td>Speed</td>
-        <td>The speed (in pixels per game frame) to follow the path</td>
+        <td><span class="notranslate">Speed</span></td>
+        <td>La velocità (in pixel per fotogramma di gioco) per seguire il percorso</td>
       </tr>
       <tr>
-        <td>On End</td>
-        <td>The response to reaching the end of the path</td>
+        <td><span class="notranslate">On End</span></td>
+        <td>La risposta al raggiungimento della fine del sentiero</td>
       </tr>
       <tr>
-        <td>Absolute</td>
-        <td>Whether to start at absolute or relative position</td>
+        <td><span class="notranslate">Absolute</span></td>
+        <td>Se iniziare in posizione assoluta o relativa</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Path Start Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Paths/e_Paths_Start_Following_Path.png" />The above action block will make the calling instance follow a path (starting at its absolute
-    position and continuing at end) when a key is pressed.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il blocco d'azione di cui sopra farà seguire all'istanza chiamante un <span class="notranslate">path</span> (partendo dalla sua posizione assoluta
+    e continuando alla fine) quando viene premuto un tasto.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Path_Actions.htm">Path Actions</a></div>
-        <div style="float:right">Next: <a href="Stop_Following_Path.htm">Stop Following Path</a></div>
+        <div style="float:left">Indietro: <a href="Path_Actions.htm">Azioni del percorso</a></div>
+        <div style="float:right">Prossimo: <a href="Stop_Following_Path.htm">Smettere di seguire il percorso</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Start Following Path

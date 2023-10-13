@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Creating Sprites</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Creazione di sprites</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Overview of what a sprite is and how to make one." />
   <meta name="rh-index-keywords" content="Quick Start - Sprites" />
@@ -15,45 +14,62 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Creating Sprites</h1>
-  <p>Now that you <a href="What_Is_Programming_.htm">know what a program is</a>, it&#39;s time to look at some of the different <strong>assets </strong>that can be used in <span data-keyref="GameMaker Name">GameMaker</span> to make your game. To start with, we&#39;ll look at <strong>sprites</strong>, which are generally one of the first things you&#39;ll need when making any project. As explained in the section on <a href="../Introduction/The_Asset_Browser.htm">The Asset Browser</a>, a sprite is an image that can be animated (although it doesn&#39;t have to be) and then drawn to the screen. In general a sprite will be associated with an object, but you can draw sprites on their own, either from code or in the room editor <strong>Asset Layer</strong> (we&#39;ll talk about this in more detail later, in the section on <a href="Rooms.htm">rooms</a>). You can also create a sprite to be used as a <a class="glossterm" data-glossterm="tile sets" href="#">tile sets</a>, but we&#39;ll explore that option in a later section too.</p>
-  <p>When you create a new project from the <a href="../Introduction/The_Start_Page.htm">Start Page</a>, the asset browser will only contain empty folders for the resources you may need, so you need to right-click <img alt="Icon RMB" class="icon" src="../assets/Images/Icons/Icon_RMB.png" /> on the sprite asset folder and then select the option <strong>Create</strong> (if you don&#39;t have a sprite asset folder you can make one from the right-click menu and then create the sprite, or you can simply right-click anywhere in the asset browser and create it). This will create a new sprite asset and open <a data-xref="{title}" href="../The_Asset_Editors/Sprites.htm">The Sprite Editor</a> for you (if the sprite editor does not open, simply double-click <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> on the new asset):</p>
-  <p><img alt="The Sprite Editor" class="center" src="../assets/Images/QS_Guide/QS_Sprites_SpriteEditor.png" />As you can see, the top left of the window has a field for the <strong>Name </strong>of the sprite. All sprites (and all other assets) must have a name given to them so that you (and <span data-keyref="GameMaker Name">GameMaker</span>) can identify them easily, although you should note that this name is really just a <strong> <a class="glossterm" data-glossterm="variable" href="#">variable</a></strong> which holds an ID value that &quot;points&quot; to the resource, in this case a sprite. It&#39;s best to give each sprite a descriptive name so that you can identify at a glance whether a particular asset is a sprite or an object or something else, and many people do this by prefixing or suffixing the resource with the letters &quot; <span class="inline">spr</span>&quot; - for example, &quot; <span class="inline">spr_Ball</span>&quot;. Note that resource names are limited to using only letters, digits and the underscore symbol &quot;_&quot;, and the name of all assets must start with a letter, not a number.</p>
-  <p>The other features of the sprite editor we&#39;ll discuss at the end of this section, but first we need to explain how to draw a sprite. This is done in <a data-xref="{title}" href="../The_Asset_Editors/Image_Editor.htm">The Image Editor</a>. The image editor is a very powerful tool for creating the graphics in your game and is opened by clicking the <em>Edit Image </em>button.</p>
-  <p><img alt="The Image Editor" class="center" src="../assets/Images/QS_Guide/QS_Sprites_ImageEditor.png" /></p>
-  <p>We won&#39;t go into too much depth about the tools available here - for that we have the Image Editor section of the manual - but briefly you have:</p>
+  <h1>Creazione di sprites</h1>
+  <p>Ora che <a href="What_Is_Programming_.htm">sapete cos'è un programma</a>, è il momento di guardare alcune delle diverse <strong>risorse </strong>che possono essere utilizzate in <span data-keyref="GameMaker Name">GameMaker</span> per fare il vostro gioco. Per cominciare, daremo un'occhiata agli <strong>sprites</strong>,
+    che sono generalmente una delle prime cose di cui avrete bisogno quando fate un qualsiasi progetto. Come spiegato nella sezione su <a href="../Introduction/The_Asset_Browser.htm">The <span class="notranslate">Asset</span> Browser</a>, un <span class="notranslate">sprite</span> è un'immagine che può essere animata (anche se non
+    essere animata (anche se non deve esserlo per forza) e poi disegnata sullo schermo. In generale un <span class="notranslate">sprite</span> sarà associato ad un <span class="notranslate">object</span>, ma è possibile disegnare <span class="notranslate">sprites</span> da soli, sia dal codice che nell'editor <span class="notranslate">room</span> <strong>Asset Layer</strong> (ne parleremo più in dettaglio più avanti,
+    nella sezione sulle <a href="Rooms.htm">stanze</a>). Puoi anche creare un <span class="notranslate">sprite</span> da usare come <a class="glossterm" data-glossterm="set di piastrelle" href="#">set di piastrelle</a>, ma esploreremo anche questa opzione in una sezione successiva.</p>
+  <p>Quando crei un nuovo progetto dalla <a href="../Introduction/The_Start_Page.htm">pagina iniziale</a>, il browser <span class="notranslate">asset</span> conterrà solo cartelle vuote per le risorse di cui potresti aver bisogno, quindi devi cliccare con il tasto destro del mouse <img> sulla cartella <span class="notranslate">sprite</span> <span class="notranslate">asset</span> e poi selezionare l'opzione <strong>Create</strong> (se non hai una cartella <span class="notranslate">sprite</span> <span class="notranslate">asset</span> puoi crearne una dal menu del tasto destro del mouse e poi creare la <span class="notranslate">sprite</span>, oppure puoi semplicemente cliccare con il tasto destro del mouse in qualsiasi punto dell'asset
+    e crearla). Questo creerà un nuovo <span class="notranslate">sprite</span> <span class="notranslate">asset</span> e aprirà la cartella <a href="../The_Asset_Editors/Sprites.htm"><strong>editor di sprite</strong></a> per te (se l'editor di <span class="notranslate">sprite</span> non si apre, fai semplicemente doppio clic su <img> sul nuovo <span class="notranslate">asset</span>):</p>
+  <p><img>Come potete vedere, in alto a sinistra della finestra c'è un campo per il <strong>Nome </strong>del <span class="notranslate">sprite</span>. Tutti i <span class="notranslate">sprites</span> (e tutti gli altri <span class="notranslate">assets</span>) devono avere
+    un nome dato loro in modo che voi (e <span data-keyref="GameMaker Name">GameMaker</span>) possiate identificarli facilmente, anche se dovreste notare che questo nome è in realtà solo un <strong> <a class="glossterm" data-glossterm="variabile" href="#">variabile</a></strong> che contiene un valore ID
+    che &quot;punta&quot; alla risorsa, in questo caso un <span class="notranslate">sprite</span>. È meglio dare ad ogni <span class="notranslate">sprite</span> un nome descrittivo in modo da poter identificare a colpo d'occhio se un particolare <span class="notranslate">asset</span> è un <span class="notranslate">sprite</span> o un <span class="notranslate">object</span> o qualcos'altro, e molte persone lo fanno
+    con il prefisso o il suffisso della risorsa con le lettere &quot; <span class="inline">spr</span>&quot; - per esempio, &quot; <span class="inline">spr_Ball</span>&quot;. Si noti che i nomi delle risorse sono limitati all'uso di sole lettere, cifre e il simbolo di sottolineatura
+    simbolo &quot;_&quot;, e il nome di tutti i <span class="notranslate">assets</span> deve iniziare con una lettera, non con un numero.</p>
+  <p>Le altre caratteristiche dell'editor <span class="notranslate">sprite</span> le discuteremo alla fine di questa sezione, ma prima dobbiamo spiegare come disegnare un <span class="notranslate">sprite</span>. Questo viene fatto nel <a href="../The_Asset_Editors/Image_Editor.htm"><strong>Editor di immagini</strong></a>. L'editor di immagini
+    è uno strumento molto potente per creare la grafica del vostro gioco e si apre cliccando sul pulsante <em>Edit Image </em>.</p>
+  <p><img alt="Icon RMB" class="icon" src="../assets/Images/Icons/Icon_RMB.png"/></p>
+  <p>Non andremo troppo in profondità sugli strumenti disponibili qui - per quello abbiamo la sezione Image Editor del manuale - ma brevemente avete:</p>
   <ul class="colour">
-    <li>At the top left, the <strong>frame view</strong> - this shows the frame(s) of your sprite and can be resized using the magnifying glass icons.</li>
-    <li>In the centre we have the drawing <strong>canvas</strong> - this shows the currently selected frame ready for drawing and you can use the middle mouse button <img alt="MMB Icon" class="icon" height="24" src="../assets/Images/Icons/Icon_MMB.png" width="21" /> to pan around and the mouse wheel <img alt="MMB Icon" class="icon" height="24" src="../assets/Images/Icons/Icon_MMB.png" width="21" /> to zoom in and out.</li>
-    <li>At the top right we have the basic <strong>brushes</strong> - here you can pick the brush for drawing, and any custom brushes will also be added here.</li>
-    <li>At the middle right we have the <strong>colour picker</strong> - here we can choose the colour to use for the left and/or right mouse button, since you can draw on the canvas with one or the other buttons at the same time.</li>
-    <li>Just below the colour picker we have our <strong>tools </strong>- these are the different drawing tools, including the brush, flood fill, masking and shape tools. Note that some of the tools are split diagonally and will draw either outlined or filled shapes depending on which side of the line you click on to select them.</li>
-    <li>At the bottom right we have the <strong>layers view</strong> - like many other drawing tools out there, you can create different layers to draw onto, permitting you to experiment with position and colour etc... without having to worry about destroying what&#39;s underneath.</li>
+    <li>In alto a sinistra, la <strong>vista della cornice</strong> - questa mostra la cornice (o le cornici) del tuo <span class="notranslate">sprite</span> e può essere ridimensionata usando le icone della lente di ingrandimento.</li>
+    <li>Al centro abbiamo la <strong>tela</strong> da disegno - questa mostra la cornice attualmente selezionata pronta per il disegno e puoi usare il pulsante centrale del mouse <img> per fare una panoramica e la rotella del mouse <img> per ingrandire e ridurre.</li>
+    <li>In alto a destra abbiamo i <strong>pennelli</strong> di base - qui puoi scegliere il pennello per disegnare, e qualsiasi pennello personalizzato verrà aggiunto qui.</li>
+    <li>Al centro a destra abbiamo il <strong>selezionatore di colori</strong> - qui possiamo scegliere il colore da usare per il pulsante sinistro e/o destro del mouse, dato che puoi disegnare sulla tela con uno o l'altro pulsante allo stesso tempo.</li>
+    <li>Appena sotto il selezionatore di colori abbiamo i nostri <strong>strumenti - </strong> questi sono i diversi strumenti di disegno, inclusi il pennello, il riempimento, la mascheratura e gli strumenti di forma. Nota che alcuni degli strumenti sono divisi in diagonale e disegneranno forme delineate o riempite
+      a seconda del lato della linea su cui si clicca per selezionarli.</li>
+    <li>In basso a destra abbiamo la <strong>vista dei livelli</strong> - come molti altri strumenti di disegno là fuori, puoi creare diversi livelli su cui disegnare, permettendoti di sperimentare con la posizione e il colore ecc... senza doverti preoccupare di distruggere
+      quello che c'è sotto.</li>
   </ul>
-  <p>Draw something into the image editor and take some time to play with the options, then when you are ready close the image editor workspace (which will save the image) to take you back to the main workspace with the sprite editor in it. We&#39;ll discuss a few other features of the sprite editor that are important to know when just getting started...</p>
-  <p>The first thing you need know is how to set the <strong>origin </strong>for the sprite. The origin is simply the point that will be used to &quot;anchor&quot; our sprite within the room, and in this case we want to set it to the centre.</p>
-  <p>So we click <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> on the from down menu for setting the origin and select &quot;middle centre&quot;:</p>
-  <p><img alt="Example Showing The Sprite Origin" class="center" src="../assets/Images/QS_Guide/QS_Sprites_SpriteOrigin.png" /></p>
-  <p>You&#39;ll see the blue origin marker in the preview image move to the center of the sprite. Note that you can place the origin anywhere you wish by simply clicking <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> on the preview image, and you can also manually input the origin position by adding values into the x/y fields at the top.</p>
-  <p>Another important thing to do know is how to set the <strong>collision mask</strong> for the sprite. The collision mask is the area that <span data-keyref="GameMaker Name">GameMaker</span> will check to see if there has been a collision with any other instance of an object in the game, and by default this is set to rectangle (which is also the fastest to resolve). Note that you can set the detection mode for the <strong> <a class="glossterm" data-glossterm="bounding box" href="#">bounding box</a></strong> to be either automatic (the default value) or manual. If you choose manual you will be able to set the bounding box values left, right, top and bottom.</p>
-  <p><img alt="Example Showing The Sprite Mask" class="center" src="../assets/Images/QS_Guide/QS_Sprites_SpriteMask.png" /></p>
-  <p>Any type of collision mask other than rectangle will be slower to resolve, but when making a small, simple game it&#39;s not usually an issue. Note that you can also import sprites made in other software by clicking the <em>Import </em>button in the sprite editor, and you can also drag image files onto the <span data-keyref="GameMaker Name">GameMaker</span> IDE to add them as sprites to the Asset Browser. You can also drag sprites from the Asset Browser to add them to things directly, in which case the IDE will highlight the places you can add the sprite to:</p>
-  <p><img alt="Where To Drop A Sprite On An Object" class="center" src="../assets/Images/QS_Guide/QS_DropSprite.png" />If you&#39;d like more detailed information on the Sprite Editor and the Image Editor, please see the following sections of the manual:</p>
+  <p>Disegna qualcosa nell'editor di immagini e prenditi un po' di tempo per giocare con le opzioni, poi quando sei pronto chiudi l'editor di immagini <span class="notranslate">workspace</span> (che salverà l'immagine) per tornare al sito principale <span class="notranslate">workspace</span> con l'editor <span class="notranslate">sprite</span>. Discuteremo
+    alcune altre caratteristiche dell'editor <span class="notranslate">sprite</span> che sono importanti da conoscere quando si inizia...</p>
+  <p>La prima cosa che dovete sapere è come impostare l'<strong>origine </strong>per <span class="notranslate">sprite</span>. L'origine è semplicemente il punto che sarà usato per &quot;ancorare&quot; il nostro <span class="notranslate">sprite</span> all'interno di <span class="notranslate">room</span>, e in questo caso vogliamo impostarlo al centro.</p>
+  <p>Quindi clicchiamo <img> sul menu a tendina per impostare l'origine e selezioniamo &quot;centro centrale&quot;:</p>
+  <p><img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png"/></p>
+  <p>Vedrete il marcatore di origine blu nell'immagine di anteprima spostarsi al centro di <span class="notranslate">sprite</span>. Notate che potete posizionare l'origine dove volete semplicemente cliccando <img> sull'immagine di anteprima.
+    e puoi anche inserire manualmente la posizione dell'origine aggiungendo valori nei campi x/y in alto.</p>
+  <p>Un'altra cosa importante da sapere è come impostare la <strong>maschera di collisione</strong> per <span class="notranslate">sprite</span>. La maschera di collisione è l'area che <span data-keyref="GameMaker Name">GameMaker</span> controllerà per vedere se c'è stata una collisione con qualsiasi altra istanza di un <span class="notranslate">object</span> nel gioco,
+    e per impostazione predefinita è impostata su rectangle (che è anche la più veloce da risolvere). Notate che potete impostare la modalità di rilevamento per l'elemento <strong> <a class="glossterm" data-glossterm="scatola di delimitazione" href="#">bounding box</a></strong> sia automatica
+    (il valore predefinito) o manuale. Se scegliete manuale sarete in grado di impostare i valori del rettangolo di delimitazione a sinistra, a destra, in alto e in basso.</p>
+  <p><img alt="The Sprite Editor" class="center" src="../assets/Images/QS_Guide/QS_Sprites_SpriteEditor.png"/></p>
+  <p>Qualsiasi tipo di maschera di collisione diversa dal rettangolo sarà più lenta da risolvere, ma quando si fa un gioco piccolo e semplice di solito non è un problema. Si noti che è anche possibile importare <span class="notranslate">sprites</span> fatto in altri software cliccando il pulsante <em>Importa </em>nell
+    <span class="notranslate">sprite</span> ed è anche possibile trascinare i file immagine su <span data-keyref="GameMaker Name">GameMaker</span> <span class="notranslate">IDE</span> per aggiungerli come <span class="notranslate">sprites</span> al Browser di <span class="notranslate">Asset</span>. È anche possibile trascinare <span class="notranslate">sprites</span> dal Browser <span class="notranslate">Asset</span> per aggiungerli direttamente alle cose, nel qual caso il <span class="notranslate">IDE</span> evidenzierà i
+    luoghi in cui è possibile aggiungere il <span class="notranslate">sprite</span>:</p>
+  <p><img>Se vuoi informazioni più dettagliate sull'editor <span class="notranslate">Sprite</span> e sull'editor di immagini, vedi le seguenti sezioni del manuale:</p>
   <ul class="colour">
-    <li><a href="../The_Asset_Editors/Sprites.htm">Editors: The Sprite Editor</a></li>
-    <li><a href="../The_Asset_Editors/Image_Editor.htm">Editors: The Image Editor</a></li>
+    <li><a href="../The_Asset_Editors/Sprites.htm">Redattori: Il <span class="notranslate">Sprite</span> Editore</a></li>
+    <li><a href="../The_Asset_Editors/Image_Editor.htm">Editori: L'editor di immagini</a></li>
   </ul>
-  <p>You can close the sprite editor now as we are going to move on to discuss <strong> Tile Sets</strong>.</p>
-  <p> </p>
-  <p> </p>
+  <p>Potete chiudere l'editor di <span class="notranslate">sprite</span> ora, dato che stiamo per passare a discutere di <strong> Tile Sets</strong>.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Content.htm">Index</a></div>
-        <div style="float:right">Next: <a href="Creating_Tile_Sets.htm">Creating Tilesets</a></div>
+        <div style="float:left">Indietro: <a href="../Content.htm">Indice</a></div>
+        <div style="float:right">Avanti: <a href="Creating_Tile_Sets.htm">Creazione di Tileset</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Creating Sprites
@@ -62,5 +78,5 @@ Quick Start: Creating Sprites
   <!-- TAGS
 qs_sprites
 -->
-</body>
-</html>
+
+</body></html>

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>external_define</title>
+  <title>esterno_definire</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for external_define" />
   <meta name="rh-index-keywords" content="external_define,dll_cdecl,dll_stdcall,ty_real,ty_string" />
@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>external_define</h1>
-  <p>This function can be used to define an external function call to a specific dll (for Windows) or dylib (for Mac). This file can be either an included file or part of an extension.</p>
-  <p>You supply the name (and path) of the file, then the name of the function that you wish to define. Next you need to define the calling convention to be used (see the constants list below) as well as the type of result to be expected (also a constant, as listed below).</p>
-  <p>Finally you must give the number of arguments that the function can take (from 0 to 15) and for each of the arguments you must specify its type too. Please note that for functions with 4 or more arguments, all of them <i>must</i> be of type <span class="inline">ty_real</span>.</p>
-  <p class="note"><b>NOTE</b>: This is only for dll or dylib that have been added as &quot;Included Files&quot; to the <span data-keyref="GameMaker Name">GameMaker</span> IDE. It will not work with those files added as extensions, since those require that you define the functions in the extension package itself.</p>
+  <h1>esterno_definire</h1>
+  <p>Questa funzione può essere usata per definire una chiamata di funzione esterna a una specifica dll (per <span class="notranslate">Windows</span>) o dylib (per Mac). Questo file può essere un file incluso o parte di un <span class="notranslate">extension</span>.</p>
+  <p>Si fornisce il nome (e <span class="notranslate">path</span>) del file, poi il nome della funzione che si desidera definire. Poi dovete definire la convenzione di chiamata da usare (vedete l'elenco delle costanti qui sotto) e il tipo di risultato che ci si aspetta (anch'esso una costante, come elencato qui sotto).</p>
+  <p>Infine dovete dare il numero di argomenti che la funzione può prendere (da 0 a 15) e per ognuno degli argomenti dovete specificare anche il suo tipo. Notate che per le funzioni con 4 o più argomenti, tutti <i>devono</i> essere di tipo <span class="inline">ty_real</span>.</p>
+  <p class="note"><b>NOTA</b>: Questo è solo per dll o dylib che sono state aggiunte come &quot;Included Files&quot; a <span data-keyref="GameMaker Name">GameMaker</span> <span class="notranslate">IDE</span>. Non funzionerà con quei file aggiunti come <span class="notranslate">extensions</span>, poiché questi richiedono che si definiscano le funzioni nel pacchetto <span class="notranslate">extension</span> stesso.</p>
   <table>
     <colgroup>
       <col />
@@ -26,19 +26,19 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="2">External Call Type Constants</th>
+        <th colspan="2">Costanti di tipo di chiamata esterna</th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td><span class="inline">dll_cdecl</span></td>
-        <td>This is the default C, C++ call</td>
+        <td><span class="notranslate"><span class="inline">dll_cdecl</span></td>
+        <td>Questa è la chiamata predefinita C, C++</td>
       </tr>
       <tr>
-        <td><span class="inline">dll_stdcall</span></td>
-        <td>This is the standard WinAPI call (Windows <span class="inline">dll</span> only)</td>
+        <td><span class="notranslate"><span class="inline">dll_stdcall</span></td>
+        <td>Questa è la chiamata standard WinAPI (solo<span class="notranslate">Windows</span> <span class="inline">dll</span> )</td>
       </tr>
     </tbody>
   </table>
@@ -49,83 +49,83 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="2">External Data Type Constants</th>
+        <th colspan="2">Costanti esterne <span class="notranslate">Data Type</span> </th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td><span class="inline">ty_real</span></td>
-        <td>A real number argument</td>
+        <td><span class="notranslate"><span class="inline">ty_real</span></td>
+        <td>Un argomento numero reale</td>
       </tr>
       <tr>
-        <td><span class="inline">ty_string</span></td>
-        <td>A null-terminated string argument</td>
+        <td><span class="notranslate"><span class="inline">ty_string</span></td>
+        <td>Un argomento null-terminato <span class="notranslate">string</span> </td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">external_define(dll, name, calltype, restype, argnumb, argtype[0], argtype[1], ...argtype[10]);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>dll</td>
-        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../LINKGOESHERE">String</a></span></td>
-        <td>The name of the DLL file (string)</td>
+        <td><span class="notranslate">dll</span></td>
+        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../LINKGOESHERE">Stringa</a></span></td>
+        <td><span class="notranslate">The name of the DLL file (string)</span></td>
       </tr>
       <tr>
-        <td>name</td>
-        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../LINKGOESHERE">String</a></span></td>
-        <td>The name of the function (string)</td>
+        <td><span class="notranslate">name</span></td>
+        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../LINKGOESHERE">Stringa</a></span></td>
+        <td><span class="notranslate">The name of the function (string)</span></td>
       </tr>
       <tr>
-        <td>calltype</td>
-        <td><span data-keyref="Type_Constant_External_Call_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/OS_And_Compiler/external_define.htm">External Call Type Constant (dll_*)</a></span></td>
-        <td>The calling convention used</td>
+        <td><span class="notranslate">calltype</span></td>
+        <td><span data-keyref="Type_Constant_External_Call_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/OS_And_Compiler/external_define.htm">Costante di tipo di chiamata esterna (dll_*)</a></span></td>
+        <td><span class="notranslate">The calling convention used</span></td>
       </tr>
       <tr>
-        <td>restype</td>
-        <td><span data-keyref="Type_Constant_External_Argument_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/OS_And_Compiler/external_define.htm">External Data Type Constant (ty_*)</a></span></td>
-        <td>The type of the result to expect</td>
+        <td><span class="notranslate">restype</span></td>
+        <td><span data-keyref="Type_Constant_External_Argument_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/OS_And_Compiler/external_define.htm">Costante esterna <span class="notranslate">Data Type</span> (ty_*)</a></span></td>
+        <td><span class="notranslate">The type of the result to expect</span></td>
       </tr>
       <tr>
-        <td>argnumb</td>
+        <td><span class="notranslate">argnumb</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../LINKGOESHERE">Real</a></span></td>
-        <td>The number of arguments (0 - 10)</td>
+        <td><span class="notranslate">The number of arguments (0 - 10)</span></td>
       </tr>
       <tr>
-        <td>argtype[0 ... 10]</td>
-        <td><span data-keyref="Type_Constant_External_Argument_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/OS_And_Compiler/external_define.htm">External Data Type Constant (ty_*)</a></span></td>
-        <td>The types of the arguments being used</td>
+        <td><span class="notranslate">argtype[0 ... 10]</span></td>
+        <td><span data-keyref="Type_Constant_External_Argument_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/OS_And_Compiler/external_define.htm">Costante esterna <span class="notranslate">Data Type</span> (ty_*)</a></span></td>
+        <td><span class="notranslate">The types of the arguments being used</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Function_External"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/OS_And_Compiler/external_define.htm">External Function</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">my_funcion = external_define(&quot;MyDLL.dll&quot;, &quot;MyMin&quot;, dll_cdecl, ty_real, 2, ty_real, ty_real);</p>
-  <p>The above example code will define an external function called &quot;MyMin&quot; with two arguments.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice dell'esempio precedente definirà una funzione esterna chiamata &quot;MyMin&quot; con due argomenti.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="OS_And_Compiler.htm">OS And Compiler</a></div>
-        <div style="float:right">Next: <a href="external_call.htm">external_call</a></div>
+        <div style="float:left">Indietro: <a href="OS_And_Compiler.htm">Sistema operativo e compilatore</a></div>
+        <div style="float:right">Il prossimo: <a href="external_call.htm"><span class="notranslate">external_call</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 external_define

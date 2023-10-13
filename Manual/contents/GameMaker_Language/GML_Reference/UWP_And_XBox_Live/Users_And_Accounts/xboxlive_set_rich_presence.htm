@@ -6,7 +6,7 @@
   <title>xboxlive_set_rich_presence</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for xboxlive_set_rich_presence" />
   <meta name="rh-index-keywords" content="xboxlive_set_rich_presence" />
@@ -15,59 +15,59 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>xboxlive_set_rich_presence</h1>
-  <p>This function will set the rich presence string for the given user. A Rich Presence string shows a user&#39;s in-game activity after the name of the game that the user is playing, separated by a hyphen. This string is displayed under a player&#39;s Gamertag in the &quot;Friends &amp; Clubs&quot; list as well as in the player&#39;s Xbox Live user profile.</p>
-  <p>When using this function you need to supply the User ID pointer for the user, and then you can flag the user as currently active in the game or not (using <span class="inline">true</span>/<span class="inline">false</span>). If set to <span class="inline">false</span>, then the rich presence string will be appended with &quot;/afk&quot; or something appropriate. The next argument is the rich presence string ID to show, and then finally you can (optionally) supply a <span class="inline">service_config_id</span> string. This argument is optional, and when not supplied, it uses the SCID specified in the Xbox Game Options.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione imposterà la ricca presenza <span class="notranslate">string</span> per l'utente dato. Una Rich Presence <span class="notranslate">string</span> mostra l'attività di gioco di un utente dopo il nome del gioco a cui l'utente sta giocando, separato da un trattino. Questo <span class="notranslate">string</span> viene visualizzato sotto la Gamertag di un giocatore nella lista &quot;Friends &amp; Clubs&quot; così come nel profilo utente Xbox Live del giocatore.</p>
+  <p>Quando si usa questa funzione è necessario fornire il puntatore ID utente per l'utente, e poi si può segnalare l'utente come attualmente attivo nel gioco o no (usando <span class="inline">true</span>/<span class="inline">false</span>). Se impostato su <span class="inline">false</span>, allora la ricca presenza <span class="notranslate">string</span> sarà aggiunta con &quot;/afk&quot; o qualcosa di appropriato. L'argomento successivo è il rich presence <span class="notranslate">string</span> ID da mostrare, e poi finalmente si può (opzionalmente) fornire un <span class="inline">service_config_id</span> <span class="notranslate">string</span>. Questo argomento è opzionale, e quando non viene fornito, usa lo SCID specificato nelle Opzioni di gioco Xbox.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">xboxlive_set_rich_presence(user_id, is_user_active, rich_presence_string, [service_config_id]);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>user_id</td>
-        <td><span data-keyref="Type_ID_Xbox_User">Xbox User ID</span></td>
-        <td>The ID pointer of the user to check.</td>
+        <td><span class="notranslate">user_id</span></td>
+        <td><span data-keyref="Type_ID_Xbox_User">ID utente Xbox</span></td>
+        <td><span class="notranslate">The ID pointer of the user to check.</span></td>
       </tr>
       <tr>
-        <td>is_user_active</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td>Flag the user as active or not.</td>
+        <td><span class="notranslate">is_user_active</span></td>
+        <td><span data-keyref="Type_Bool">Booleano</span></td>
+        <td><span class="notranslate">Flag the user as active or not.</span></td>
       </tr>
       <tr>
-        <td>rich_presence_string</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The rich presence string ID to use (as defined in the Partner Center - max 50 characters)</td>
+        <td><span class="notranslate">rich_presence_string</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">The rich presence string ID to use (as defined in the Partner Center - max 50 characters)</span></td>
       </tr>
       <tr>
-        <td>service_config_id</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td><span class="optional">OPTIONAL</span> This is the config_id string for the game.</td>
+        <td><span class="notranslate">service_config_id</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Questo è il config_id <span class="notranslate">string</span> per il gioco.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var pad_uid = xboxlive_user_for_pad(0);<br />
     xboxlive_set_rich_presence(pad_uid, true, &quot;Playing_Challenge&quot;);</p>
-  <p>The above code gets the user ID pointer for the user assigned to the gamepad [0] slot, and then sets the rich presence string for that user.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra ottiene il puntatore ID utente per l'utente assegnato allo slot gamepad [0], e poi imposta la ricca presenza <span class="notranslate">string</span> per quell'utente.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Users_And_Accounts.htm">Users And Accounts</a></div>
-        <div style="float:right">Next: <a href="xboxlive_gamedisplayname_for_user.htm">xboxlive_gamedisplayname_for_user</a></div>
+        <div style="float:left">Indietro: <a href="Users_And_Accounts.htm">Utenti e account</a></div>
+        <div style="float:right">Il prossimo: <a href="xboxlive_gamedisplayname_for_user.htm"><span class="notranslate">xboxlive_gamedisplayname_for_user</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 xboxlive_set_rich_presence

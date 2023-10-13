@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>room_goto</title>
+  <title>camera_goto</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function room_goto" />
   <meta name="rh-index-keywords" content="room_goto" />
@@ -14,47 +14,47 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>room_goto</h1>
-  <p>This function permits you to go to any room in your game project, whether created using code or in the Asset Browser. You supply the room index (stored in the variable for the room name, or as a variable returned from the function <a href="room_add.htm"><span class="inline">room_add()</span></a>). Note that the room will not change until the end of the event where the function was called, so any code after this has been called will still run if in the same event. This function will also trigger the <b>Room End</b> event.</p>
+  <h1>camera_goto</h1>
+  <p>Questa funzione vi permette di andare a qualsiasi <span class="notranslate">room</span> nel vostro progetto di gioco, sia esso creato con il codice o nel Browser <span class="notranslate">Asset</span>. Si fornisce l'indice <span class="notranslate">room</span> (memorizzato nella variabile del nome <span class="notranslate">room</span>, o come variabile restituita dalla funzione <a href="room_add.htm"><span class="inline">room_add()</span></a>). Notate che il <span class="notranslate">room</span> non cambierà fino alla fine dell'evento in cui la funzione è stata chiamata, quindi qualsiasi codice dopo che questa è stata chiamata verrà comunque eseguito se nello stesso evento. Questa funzione attiverà anche l'evento <b>Room End</b>.</p>
   <div data-conref="../../../../assets/snippets/changing_room_stops_instance_creation.hts"> </div>
-  <p class="note"><span class="note">NOTE</span> Room IDs are not based on their order in the Asset Browser or the Room Manager, and so you should avoid supplying a number value directly. Instead, use the room <a class="glossterm" data-glossterm="constant" href="#">constant</a> for the asset you want to reference (which is simply its name) or retrieve it through a function.</p>
-  <h4>Syntax:</h4>
+  <p class="note"><span class="note">NOTA</span> <span class="notranslate">Room</span> Gli ID non sono basati sul loro ordine nel Browser <span class="notranslate">Asset</span> o nel Manager <span class="notranslate">Room</span>, e quindi si dovrebbe evitare di fornire direttamente un valore numerico. Invece, usate la <a class="glossterm" data-glossterm="costante" href="#">costante</a> di stanza per la <span class="notranslate">asset</span> a cui volete fare riferimento (che è semplicemente il suo nome) o recuperatela attraverso una funzione.</p>
+  <h4>Sintassi:</h4>
   <p class="code">room_goto(index);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>index</td><td><span data-keyref="Type_Asset_Room"></span></td>
-        <td>The index of the room to go to.</td>
+        <td><span class="notranslate">index</span></td><td><span data-keyref="Type_Asset_Room"></span></td>
+        <td><span class="notranslate">The index of the room to go to.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">switch (global.level)<br />
     {<br />
         case 0: room_goto(rm_level1); break;<br />
         case 1: room_goto(rm_level2); break;<br />
         case 2: room_goto(rm_level3); break;<br />
     }</p>
-  <p>The above code will check a global variable and change room based on the value that it holds.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controllerà una variabile globale e cambierà <span class="notranslate">room</span> in base al valore che contiene.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Rooms.htm">Rooms</a></div>
-        <div style="float:right">Next: <a href="room_goto_next.htm">room_goto_next</a></div>
+        <div style="float:left">Indietro: <a href="Rooms.htm">Camere</a></div>
+        <div style="float:right">Il prossimo: <a href="room_goto_next.htm"><span class="notranslate">room_goto_next</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 room_goto

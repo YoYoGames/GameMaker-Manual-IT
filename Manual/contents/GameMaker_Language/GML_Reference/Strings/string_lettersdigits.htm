@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>string_lettersdigits</title>
+  <title>cifre della stringa</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for string_lettersdigits" />
   <meta name="rh-index-keywords" content="string_lettersdigits" />
@@ -15,47 +15,45 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">string_lettersdigits</span></h1>
-  <p>This function will return a copy of a given string with everything but its letters and digits removed, which means it can be used to remove any unwanted characters (like &quot;#&quot; or &quot;?&quot;) from, for example, a login name or a password.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> This function only returns the 26 letter English alphabet from A - Z (upper or lower case) and the numbers 0 - 9.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>cifre della stringa</h1>
+  <p>Questa funzione restituisce una copia di un dato <span class="notranslate">string</span> con tutto tranne le lettere e le cifre rimosse, il che significa che può essere usato per rimuovere qualsiasi carattere indesiderato (come &quot;#&quot; o &quot;?&quot;) da, per esempio, un nome di login o una password.</p>
+  <p class="note"><span class="note">NOTA</span> Questa funzione restituisce solo le 26 lettere dell'alfabeto inglese dalla A alla Z (maiuscole o minuscole) e i numeri da 0 a 9.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">string_lettersdigits(string);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
+     </tr>
       <tr>
-        <td>string</td>
-        <td><span data-keyref="Type_String"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The string to convert to letters and digits.</td>
-      </tr>
+        <td><span class="notranslate">string</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The string to convert to letters and digits.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_String"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_String"></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (string_length(password) &gt; string_length(string_lettersdigits(password)))<br />
     {<br />
         draw_text(32,32, &quot;Invalid Password! Only Letters and numbers please!&quot;);<br />
     }</p>
-  <p>The above code will check the length of a string against the length of the same string, but with all symbols removed. If they are not the same a message is drawn on the screen.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controllerà la lunghezza di un <span class="notranslate">string</span> contro la lunghezza dello stesso <span class="notranslate">string</span>, ma con tutti i simboli rimossi. Se non sono uguali, un messaggio viene disegnato sullo schermo.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Strings.htm">Strings</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="string_lower.htm">string_lower</a></div>
+        <div style="float:left">Indietro: <a href="Strings.htm">Corde</a></div>
+        <div style="float:right">Il prossimo: <a href="string_lower.htm"><span class="notranslate">string_lower</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 string_lettersdigits

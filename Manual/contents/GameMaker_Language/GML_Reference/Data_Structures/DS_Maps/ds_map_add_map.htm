@@ -6,7 +6,7 @@
   <title>ds_map_add_map</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for ds_map_add_map" />
   <meta name="rh-index-keywords" content="ds_map_add_map" />
@@ -15,39 +15,39 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>ds_map_add_map</h1>
-  <p>With this function you can assign a (previously created) DS map to a key within the given DS map . This function is designed for creating JSON compatible maps which you would then encode using <a href="../../File_Handling/Encoding_And_Hashing/json_encode.htm"><span class="inline">json_encode()</span></a> and should only be used in conjunction with that functionality. If a DS map has another map added in this way, then destroying the parent map will also destroy the contained maps and free their memory, and calling <a href="ds_map_clear.htm"><span class="inline">ds_map_clear()</span></a> on the parent map will also destroy and clean up any flagged maps.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Con questa funzione potete assegnare una mappa DS (creata in precedenza) a una chiave all'interno della mappa DS data. Questa funzione è progettata per la creazione di mappe compatibili con JSON che verrebbero poi codificate usando <a href="../../File_Handling/Encoding_And_Hashing/json_encode.htm"><span class="inline">json_encode()</span></a> e dovrebbe essere usata solo insieme a questa funzionalità. Se una mappa DS ha un'altra mappa aggiunta in questo modo, allora distruggere la mappa padre distruggerà anche le mappe contenute e libererà la loro memoria, e chiamando <a href="ds_map_clear.htm"><span class="inline">ds_map_clear()</span></a> sulla mappa padre distruggerà e pulirà anche qualsiasi mappa contrassegnata.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">ds_map_add_map(id, key, value)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>id</td>
-        <td><span data-keyref="Type_ID_DS_Map">DS Map ID</span></td>
-        <td>The id of the map to use.</td>
+        <td><span class="notranslate">id</span></td>
+        <td><span data-keyref="Type_ID_DS_Map">ID della mappa DS</span></td>
+        <td><span class="notranslate">The id of the map to use.</span></td>
       </tr>
       <tr>
-        <td>key</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The key for the added map.</td>
+        <td><span class="notranslate">key</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">The key for the added map.</span></td>
       </tr>
       <tr>
-        <td>value</td>
-        <td><span data-keyref="Type_ID_DS_Map">DS Map ID</span></td>
-        <td>The id of the map to add.</td>
+        <td><span class="notranslate">value</span></td>
+        <td><span data-keyref="Type_ID_DS_Map">ID della mappa DS</span></td>
+        <td><span class="notranslate">The id of the map to add.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var j_map = ds_map_create();<br />
     var j_list = ds_list_create();<br />
     var sub_map = ds_map_create();<br />
@@ -56,18 +56,18 @@
     ds_map_add_map(j_map, &quot;map&quot;, sub_map);<br />
     var j = json_encode(j_map);<br />
     ds_map_destroy(j_map);</p>
-  <p>The above code will create two DS maps, and then populate one with a list and an array before adding it into the second, which is then encoded into a JSON string. The map is then destroyed to remove it, and any other maps or lists that it contains, from memory.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra creerà due mappe DS, e poi ne popolerà una con una lista e un array prima di aggiungerla nella seconda, che viene poi codificata in un JSON <span class="notranslate">string</span>. La mappa viene poi distrutta per rimuoverla, e qualsiasi altra mappa o lista che contiene, dalla memoria.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="DS_Maps.htm">DS Maps</a></div>
-        <div style="float:right">Next: <a href="ds_map_replace_list.htm">ds_map_replace_list</a></div>
+        <div style="float:left">Indietro: <a href="DS_Maps.htm">Mappe DS</a></div>
+        <div style="float:right">Il prossimo: <a href="ds_map_replace_list.htm"><span class="notranslate">ds_map_replace_list</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 ds_map_add_map

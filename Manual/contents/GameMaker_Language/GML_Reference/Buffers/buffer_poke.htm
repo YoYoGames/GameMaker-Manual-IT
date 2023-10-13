@@ -6,7 +6,7 @@
   <title>buffer_poke</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for buffer_poke" />
   <meta name="rh-index-keywords" content="buffer_poke,buffer_u8,buffer_s8,buffer_u16,buffer_s16,buffer_u32,buffer_s32,buffer_u64,buffer_f16,buffer_f32,buffer_f64,buffer_bool,buffer_string,buffer_text" />
@@ -15,57 +15,57 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>buffer_poke</h1>
-  <p>With the <a href="buffer_write.htm"><span class="inline">buffer_write()</span></a> function, you can write data to the given buffer at the current &quot;seek&quot; position, with each piece of data advancing this position by the bytes being written or read. However, it may be necessary for you to change a given piece of data without wanting to change the current seek position, and that&#39;s when you would use this function. You simply supply the function with a buffer index, and then the offset position from the buffer start (in bytes) within that buffer to write to, as well as the data type and the value to be written.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Con la funzione <a href="buffer_write.htm"><span class="inline">buffer_write()</span></a> potete scrivere dati sul dato <span class="notranslate">buffer</span> nella posizione di &quot;ricerca&quot; corrente, con ogni pezzo di dati che fa avanzare questa posizione dei byte scritti o letti. Tuttavia, potrebbe essere necessario per voi cambiare un dato pezzo di dati senza voler cambiare la posizione di ricerca corrente, ed è allora che usereste questa funzione. Dovete semplicemente fornire alla funzione un indice <span class="notranslate">buffer</span>, e poi la posizione di offset dall'inizio di <span class="notranslate">buffer</span> (in byte) all'interno di quel <span class="notranslate">buffer</span> su cui scrivere, così come <span class="notranslate">data type</span> e il valore da scrivere.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">buffer_poke(buffer, offset, type, value);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>buffer</td>
-        <td><span data-keyref="Type_ID_Buffer">Buffer ID</span></td>
-        <td>The index of the buffer to use.</td>
+        <td><span class="notranslate">buffer</span></td>
+        <td><span data-keyref="Type_ID_Buffer">ID del buffer</span></td>
+        <td><span class="notranslate">The index of the buffer to use.</span></td>
       </tr>
       <tr>
-        <td>offset</td>
+        <td><span class="notranslate">offset</span></td>
         <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The offset position (in bytes) within the buffer to write the given data to.</td>
+        <td><span class="notranslate">The offset position (in bytes) within the buffer to write the given data to.</span></td>
       </tr>
       <tr>
-        <td>type</td>
-        <td><span data-keyref="Type_Constant_Buffer_Data_Type">Buffer Data Type Constant</span></td>
-        <td>The type of data that is to be written to the buffer (see the list of constants <a href="buffer_write.htm">here</a>).</td>
+        <td><span class="notranslate">type</span></td>
+        <td><span data-keyref="Type_Constant_Buffer_Data_Type">Buffer <span class="notranslate">Data Type</span> Costante</span></td>
+        <td><span class="notranslate">The type of data that is to be written to the buffer (see the list of constants <a href="buffer_write.htm">here</a>).</span></td>
       </tr>
       <tr>
-        <td>value</td>
-        <td><span data-keyref="Type_Any">Variable</span></td>
-        <td>The data to add to the buffer, in accordance with the type specified.</td>
+        <td><span class="notranslate">value</span></td>
+        <td><span data-keyref="Type_Any">Variabile</span></td>
+        <td><span class="notranslate">The data to add to the buffer, in accordance with the type specified.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">buffer_poke(buff, 3, buffer_u8, colour_get_blue(image_blend));</p>
-  <p>The above code will add the blue component value of the colour used for the image blend into the buffer indexed in the variable &quot;buff&quot;, at the third position in the buffer and as an unsigned 8bit value.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra aggiungerà il valore della componente blu del colore usato per la fusione dell'immagine nel <span class="notranslate">buffer</span> indicizzato nella variabile &quot;buff&quot;, alla terza posizione nel <span class="notranslate">buffer</span> e come valore senza segno a 8 bit.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Buffers.htm">Buffers</a></div>
-        <div style="float:right">Next: <a href="buffer_save.htm">buffer_save</a></div>
+        <div style="float:left">Indietro: <a href="Buffers.htm">Buffer</a></div>
+        <div style="float:right">Il prossimo: <a href="buffer_save.htm"><span class="notranslate">buffer_save</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 buffer_poke

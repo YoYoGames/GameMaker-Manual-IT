@@ -6,7 +6,7 @@
   <title>gpu_set_blendmode_ext</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function gpu_set_blendmode_ext" />
   <meta name="rh-index-keywords" content="gpu_set_blendmode_ext,bm_zero,bm_one,bm_src_colour,bm_inv_src_colour,bm_src_alpha,bm_inv_src_alpha,bm_dest_alpha,bm_inv_dest_alpha,bm_dest_colour,bm_inv_dest_colour,bm_src_alpha_sat,bm_src_color,bm_inv_src_color,bm_dest_color,bm_inv_dest_colour" />
@@ -15,61 +15,61 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gpu_set_blendmode_ext</h1>
-  <p>When <span data-keyref="GameMaker Name">GameMaker</span> goes to draw a pixel there is a source colour (the colour of the pixel we&#39;re going to draw) and a destination colour (the colour that&#39;s already in the pixel we&#39;re drawing to), so when determining the new colour of the pixel, the source and destination colours are calculated according to the chosen blend mode. Each component of the colours is stored as a floating point value between 0 and 1, and the new colour is calculated by multiply each component of the source colour by some factor and by multiplying each component of destination colour by some other factor and then adding the results together component by component.</p>
-  <p>This function permits you to set the different component parts that should be factored together to create a custom blend mode. The source and destination both have a red, green, blue and alpha component, and in the following chart the source&#39;s RGBA are considered (Rs, Gs, Bs, As) while the destination&#39;s are (Rd, Gd, Bd, Ad). The eleven constants that are available for use can be either source or destination (or both) when used in this function.</p>
+  <p>Quando <span data-keyref="GameMaker Name">GameMaker</span> va a disegnare un pixel c'è un colore sorgente (il colore del pixel che stiamo per disegnare) e un colore destinazione (il colore che è già nel pixel che stiamo disegnando), quindi quando si determina il nuovo colore del pixel, i colori sorgente e destinazione sono calcolati secondo la modalità di fusione scelta. Ogni componente dei colori è memorizzato come un valore in virgola mobile tra 0 e 1, e il nuovo colore è calcolato moltiplicando ogni componente del colore sorgente per qualche fattore e moltiplicando ogni componente del colore destinazione per qualche altro fattore e poi sommando i risultati componente per componente.</p>
+  <p>Questa funzione permette di impostare i diversi componenti che devono essere fattorizzati insieme per creare una modalità di fusione personalizzata. La sorgente e la destinazione hanno entrambe una componente rossa, verde, blu e alfa, e nel grafico seguente gli RGBA della sorgente sono considerati (Rs, Gs, Bs, As) mentre quelli della destinazione sono (Rd, Gd, Bd, Ad). Le undici costanti disponibili per l'uso possono essere sia sorgente che destinazione (o entrambe) quando vengono usate in questa funzione.</p>
   <table>
     <tbody>
       <tr>
-        <th>Constant</th>
-        <th>Blend factor (Red, Green, Blue, Alpha)</th>
+        <th>Costante</th>
+        <th>Fattore di fusione (rosso, verde, blu, alfa)</th>
       </tr>
       <tr>
-        <td>bm_zero</td>
+        <td><span class="notranslate">bm_zero</span></td>
         <td>(0, 0, 0, 0)</td>
       </tr>
       <tr>
-        <td>bm_one</td>
+        <td><span class="notranslate">bm_one</span></td>
         <td>(1, 1, 1, 1)</td>
       </tr>
       <tr>
-        <td>bm_src_colour</td>
+        <td><span class="notranslate">bm_src_colour</span></td>
         <td>(Rs, Gs, Bs, As)</td>
       </tr>
       <tr>
-        <td>bm_inv_src_colour</td>
+        <td><span class="notranslate">bm_inv_src_colour</span></td>
         <td>(1-Rs, 1-Gs, 1-Bs, 1-As)</td>
       </tr>
       <tr>
-        <td>bm_src_alpha</td>
+        <td><span class="notranslate">bm_src_alpha</span></td>
         <td>(As, As, As, As)</td>
       </tr>
       <tr>
-        <td>bm_inv_src_alpha</td>
+        <td><span class="notranslate">bm_inv_src_alpha</span></td>
         <td>(1-As, 1-As, 1-As, 1-As)</td>
       </tr>
       <tr>
-        <td>bm_dest_alpha</td>
-        <td>(Ad, Ad, Ad, Ad)</td>
+        <td><span class="notranslate">bm_dest_alpha</span></td>
+        <td>(annuncio, annuncio, annuncio, annuncio)</td>
       </tr>
       <tr>
-        <td>bm_inv_dest_alpha</td>
-        <td>(1-Ad, 1-Ad, 1-Ad, 1-Ad)</td>
+        <td><span class="notranslate">bm_inv_dest_alpha</span></td>
+        <td>(1-Ad, 1-Ad, 1-Ad, 1-Ad, 1-Ad)</td>
       </tr>
       <tr>
-        <td>bm_dest_colour</td>
+        <td><span class="notranslate">bm_dest_colour</span></td>
         <td>(Rd, Gd, Bd, Ad)</td>
       </tr>
       <tr>
-        <td>bm_inv_dest_colour</td>
+        <td><span class="notranslate">bm_inv_dest_colour</span></td>
         <td>(1-Rd, 1-Gd, 1-Bd, 1-Ad)</td>
       </tr>
       <tr>
-        <td>bm_src_alpha_sat</td>
-        <td>(f, f, f, 1) where f = min(As, 1-Ad)</td>
+        <td><span class="notranslate">bm_src_alpha_sat</span></td>
+        <td>(f, f, f, 1) dove f = min(As, 1-Ad)</td>
       </tr>
     </tbody>
   </table>
-  <p class="note"><b>IMPORTANT!</b> HTML5 without WebGL enabled will <b>not</b> be able to display the following modes correctly:</p>
+  <p class="note"><b>IMPORTANTE!</b> HTML5 senza WebGL abilitato <b>non</b> sarà in grado di visualizzare correttamente le seguenti modalità:</p>
   <ul class="colour" style="padding-left: 120px">
     <li><span class="inline">bm_src_colour</span></li>
     <li><span class="inline">bm_inv_src_colour</span></li>
@@ -77,58 +77,58 @@
     <li><span class="inline">bm_inv_dest_colour</span></li>
     <li><span class="inline">bm_src_alpha_sat</span></li>
   </ul>
-  <p> </p>
-  <p>Note that you can either supply two individual arguments to this function or you can supply an array of arguments (as returned by the function <a href="gpu_get_blendmode_ext.htm"><span class="inline">gpu_get_blendmode_ext()</span></a> for example). If supplying an array it should have the following two elements:</p>
+  <p> </p>
+  <p>Notate che potete fornire due argomenti individuali a questa funzione o potete fornire un array di argomenti (come restituito dalla funzione <a href="gpu_get_blendmode_ext.htm"><span class="inline">gpu_get_blendmode_ext()</span></a> per esempio). Se fornite un array, esso dovrebbe avere i seguenti due elementi:</p>
   <ul class="colour">
-    <li>[0] = Source blend mode (default is <span class="inline">bm_src_alpha</span>)</li>
-    <li>[1] = Destination blend mode (default is <span class="inline">bm_inv_src_alpha</span>)</li>
+    <li>[0] = Modalità di fusione della sorgente (l'impostazione predefinita è <span class="inline">bm_src_alpha</span>)</li>
+    <li>[1] = Modalità di fusione della destinazione (l'impostazione predefinita è <span class="inline">bm_inv_src_alpha</span>)</li>
   </ul>
-  <p>To help you get the most from blend modes and to help understand how they work and how they affect the final image being drawn to the screen, we recommend that you read the following guide:</p>
+  <p>Per aiutarti a ottenere il massimo dalle modalità di fusione e per capire come funzionano e come influenzano l'immagine finale che viene disegnata sullo schermo, ti consigliamo di leggere la seguente guida:</p>
   <ul class="colour">
-    <li><a href="../../../../Additional_Information/Guide_To_Using_Blendmodes.htm">Guide To Using Blendmodes</a></li>
+    <li><a href="../../../../Additional_Information/Guide_To_Using_Blendmodes.htm">Guida all'uso di Blendmodes</a></li>
   </ul>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">gpu_set_blendmode(src, dest);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>src</td>
-        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Blend Mode Factor Constant</span></td>
-        <td>Source blend mode factor (see constants above).</td>
+        <td><span class="notranslate">src</span></td>
+        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Fattore di fusione costante</span></td>
+        <td><span class="notranslate">Source blend mode factor (see constants above).</span></td>
       </tr>
       <tr>
-        <td>dest</td>
-        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Blend Mode Factor Constant</span></td>
-        <td>Destination blend mode factor (see constants above)</td>
+        <td><span class="notranslate">dest</span></td>
+        <td><span data-keyref="Type_Constant_Draw_Blend_Mode_Factor">Fattore di fusione costante</span></td>
+        <td><span class="notranslate">Destination blend mode factor (see constants above)</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">gpu_set_blendmode_ext(bm_src_alpha, bm_one);<br />
     draw_circle_colour(100, 100, 50, c_white, c_black, 0);<br />
     gpu_set_blendmode(bm_normal);</p>
-  <p>This will turn the black into transparency, creating a &#39;glow&#39; effect from the white being strong on the outside and gradually weakening further from the circle centre. The blend mode is reset after the circle is drawn to ensure additive blending is not also applied to everything else after it.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Questo trasformerà il nero in trasparenza, creando un effetto 'glow' dal bianco che è forte all'esterno e gradualmente si indebolisce dal centro del cerchio. La modalità di fusione viene reimpostata dopo che il cerchio è stato disegnato per assicurarsi che la fusione additiva non venga applicata anche a tutto il resto dopo di esso.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="GPU_Control.htm">GPU Control</a></div>
-        <div style="float:right">Next: <a href="gpu_set_blendmode_ext_sepalpha.htm">gpu_set_blendmode_ext_sepalpha</a></div>
+        <div style="float:left">Indietro: <a href="GPU_Control.htm">Controllo GPU</a></div>
+        <div style="float:right">Il prossimo: <a href="gpu_set_blendmode_ext_sepalpha.htm"><span class="notranslate">gpu_set_blendmode_ext_sepalpha</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 gpu_set_blendmode_ext

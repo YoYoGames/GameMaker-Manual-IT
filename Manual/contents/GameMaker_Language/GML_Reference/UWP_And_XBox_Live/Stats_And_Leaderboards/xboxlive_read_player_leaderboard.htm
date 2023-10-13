@@ -6,7 +6,7 @@
   <title>xboxlive_read_player_leaderboard</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for xboxlive_read_player_leaderboard" />
   <meta name="rh-index-keywords" content="xboxlive_read_player_leaderboard,achievement_filter_all_players,achievement_filter_friends_only,achievement_filter_favorites_only,achievement_filter_friends_alt,achievement_filter_favorites_alt,achievement_leaderboard_info" />
@@ -15,99 +15,99 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>xboxlive_read_player_leaderboard</h1>
-  <p>The function will return leaderboard information for the given user name. The leaderboard must have been created previously on the XDP dashboard for your game, and callin the function will trigger a callback <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Social.htm">Social Asynchronous Event</a> which contains the <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> map populated with the relevant key/value pairs. The &quot;id&quot; key of this DS map is used to identify the correct callback (there can be more than one trigger function for any given asynchronous event), and IT will be paired with the constant <span class="inline">achievement_leaderboard_info</span> as well as a number of other key/value pairs. The exact contents of the map are shown below:</p>
+  <p>La funzione restituirà le informazioni della classifica per il nome utente dato. La classifica deve essere stata creata in precedenza sulla dashboard XDP per il vostro gioco, e chiamando la funzione si attiverà un callback <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Social.htm">Social Asynchronous Event</a> che contiene la <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> mappa popolata con le relative coppie chiave/valore. La chiave &quot;id&quot; di questa mappa DS è usata per identificare il callback corretto (ci può essere più di una funzione di trigger per ogni dato evento asincrono), e IT sarà accoppiata con la costante <span class="inline">achievement_leaderboard_info</span> così come una serie di altre coppie chiave/valore. Il contenuto esatto della mappa è mostrato di seguito:</p>
   <ul class="colour">
-    <li>&quot;<b>id</b>&quot; - For this function it should be <span class="inline">achievement_leaderboard_info</span><b></b></li>
-    <li>&quot;<b><b>leaderboardid</b></b>&quot; - The unique ID for the leaderboard as defined on the provider dashboard.</li>
-    <li>&quot;<b><b>numentries</b></b>&quot; - The number of entries in the leaderboard that you have received.</li>
-    <li>&quot;<b><b>PlayerN</b></b>&quot; - The name of the player, where &quot;N&quot; is an integer value corresponding to their position within the leaderboard entries list.</li>
-    <li>&quot;<b><b>PlayeridN</b></b>&quot; - The unique user id of the player, &quot;N&quot;.</li>
-    <li>&quot;<b><b>RankN</b></b>&quot; - The rank of the player &quot;N&quot; within the leaderboard.</li>
-    <li>&quot;<b><b>ScoreN</b></b>&quot; - The score of the player &quot;N&quot;.</li>
+    <li>&quot;<b>id</b>&quot; - Per questa funzione dovrebbe essere <span class="inline">achievement_leaderboard_info</span><b></b></li>
+    <li>&quot;<b><b>leaderboardid</b></b>&quot; - L'ID univoco per la leaderboard come definito nella dashboard del fornitore.</li>
+    <li>&quot;<b><b>numentries</b></b>&quot; - Il numero di voci nella classifica che hai ricevuto.</li>
+    <li>&quot;<b><b>PlayerN</b></b>&quot; - Il nome del giocatore, dove &quot;N&quot; è un valore intero corrispondente alla sua posizione nella lista delle voci della classifica.</li>
+    <li>&quot;<b><b>PlayeridN</b></b>&quot; - L'id utente unico del giocatore, &quot;N&quot;.</li>
+    <li>&quot;<b><b>RankN</b></b>&quot; - Il rango del giocatore &quot;N&quot; nella classifica.</li>
+    <li>&quot;<b><b>ScoreN</b></b>&quot; - Il punteggio del giocatore &quot;N&quot;.</li>
   </ul>
-  <p><b></b><br />
-    The function requires you to give one of the following constants to set the filter properties:</p>
+  <p><b></b><br>
+    La funzione richiede di dare una delle seguenti costanti per impostare le proprietà del filtro:</p>
   <table>
     <tbody>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td><span class="inline">xboxlive_achievement_filter_all_players</span></td>
-        <td>Get all scores.</td>
+        <td><span class="notranslate"><span class="inline">xboxlive_achievement_filter_all_players</span></td>
+        <td>Ottieni tutti i punteggi.</td>
       </tr>
       <tr>
-        <td><span class="inline">xboxlive_achievement_filter_friends_only</span></td>
-        <td>Get only friends scores, in ascending order.</td>
+        <td><span class="notranslate"><span class="inline">xboxlive_achievement_filter_friends_only</span></td>
+        <td>Ottieni solo i punteggi degli amici, in ordine crescente.</td>
       </tr>
       <tr>
-        <td><span class="inline">xboxlive_achievement_filter_favorites_only</span></td>
-        <td>Get only favorites scores, in ascending order</td>
+        <td><span class="notranslate"><span class="inline">xboxlive_achievement_filter_favorites_only</span></td>
+        <td>Ottieni solo i punteggi preferiti, in ordine crescente</td>
       </tr>
       <tr>
-        <td><span class="inline">xboxlive_achievement_filter_friends_alt</span></td>
-        <td>Get only friends scores in descending order.</td>
+        <td><span class="notranslate"><span class="inline">xboxlive_achievement_filter_friends_alt</span></td>
+        <td>Ottieni solo i punteggi degli amici in ordine decrescente.</td>
       </tr>
       <tr>
-        <td><span class="inline">xboxlive_achievement_filter_favorites_alt</span></td>
-        <td>Get only favorites scores in descending order.</td>
+        <td><span class="notranslate"><span class="inline">xboxlive_achievement_filter_favorites_alt</span></td>
+        <td>Ottieni solo i punteggi preferiti in ordine decrescente.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">xboxlive_read_player_leaderboard(leaderboard_name, user_name, num_items, friend_filter);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>leaderboard_name</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The name of the leaderboard to read, as set up on XDP.</td>
+        <td><span class="notranslate">leaderboard_name</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">The name of the leaderboard to read, as set up on XDP.</span></td>
       </tr>
       <tr>
-        <td>user_name</td>
-        <td><span data-keyref="Type_ID_Xbox_User">Xbox User ID</span></td>
-        <td>The ID of the user to read from.</td>
+        <td><span class="notranslate">user_name</span></td>
+        <td><span data-keyref="Type_ID_Xbox_User">ID utente Xbox</span></td>
+        <td><span class="notranslate">The ID of the user to read from.</span></td>
       </tr>
       <tr>
-        <td>num_items</td>
+        <td><span class="notranslate">num_items</span></td>
         <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The number of items to retrieve.</td>
+        <td><span class="notranslate">The number of items to retrieve.</span></td>
       </tr>
       <tr>
-        <td>friend_filter</td>
-        <td><span data-keyref="Type_Constant_Achievement_Filter">Xbox Live Achievement Filter Constant</span></td>
-        <td>One of the filter constants (see the description, above).</td>
+        <td><span class="notranslate">friend_filter</span></td>
+        <td><span data-keyref="Type_Constant_Achievement_Filter">Xbox Live Achievement filtro costante</span></td>
+        <td><span class="notranslate">One of the filter constants (see the description, above).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var _user = xboxlive_user_for_pad(0);<br />
     var _uid = xboxlive_user_id_for_user(_user);<br />
     xboxlive_read_player_leaderboard(&quot;MyLeaderboard&quot;, _uid, 10, achievement_filter_all_players);</p>
-  <p>The above code gets the user ID and then uses that to request all the player data for the first 10 places of the given leaderboard.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra ottiene l'ID utente e poi lo usa per richiedere tutti i dati dei giocatori per i primi 10 posti della classifica data.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Stats_And_Leaderboards.htm">Stats And Leaderboards</a></div>
-        <div style="float:right">Next: <a href="xboxlive_fire_event.htm">xboxlive_fire_event</a></div>
+        <div style="float:left">Indietro: <a href="Stats_And_Leaderboards.htm">Statistiche e classifiche</a></div>
+        <div style="float:right">Il prossimo: <a href="xboxlive_fire_event.htm"><span class="notranslate">xboxlive_fire_event</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 xboxlive_read_player_leaderboard

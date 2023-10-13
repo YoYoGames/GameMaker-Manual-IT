@@ -6,7 +6,7 @@
   <title>gpu_set_zfunc</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function gpu_set_zfunc" />
   <meta name="rh-index-keywords" content="gpu_set_zfunc,cmpfunc_never,cmpfunc_less,cmpfunc_equal,cmpfunc_lessequal,cmpfunc_greater,cmpfunc_notequal,cmpfunc_greaterequal,cmpfunc_always" />
@@ -15,7 +15,7 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gpu_set_zfunc</h1>
-  <p>This function can be used to set the z-buffer testing comparison mode (see <a href="gpu_set_ztestenable.htm"><span class="inline">gpu_set_ztestenable()</span></a> for more information). The values available for use are any of the following constants (the default value is <span class="inline">cmpfunc_lessequal</span>):</p>
+  <p>Questa funzione può essere usata per impostare la modalità di confronto del test dello z-buffer (vedere <a href="gpu_set_ztestenable.htm"><span class="inline">gpu_set_ztestenable()</span></a> per maggiori informazioni). I valori disponibili per l'uso sono una qualsiasi delle seguenti costanti (il valore predefinito è <span class="inline">cmpfunc_lessequal</span>):</p>
   <table>
     <colgroup>
       <col />
@@ -23,81 +23,81 @@
     </colgroup>
     <tbody>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td><span class="inline">cmpfunc_never</span></td>
-        <td>Never</td>
+        <td><span class="notranslate"><span class="inline">cmpfunc_never</span></td>
+        <td>Mai</td>
       </tr>
       <tr>
-        <td><span class="inline">cmpfunc_less</span></td>
-        <td>Less</td>
+        <td><span class="notranslate"><span class="inline">cmpfunc_less</span></td>
+        <td>Meno</td>
       </tr>
       <tr>
-        <td><span class="inline">cmpfunc_equal</span></td>
-        <td>Equal</td>
+        <td><span class="notranslate"><span class="inline">cmpfunc_equal</span></td>
+        <td>Uguale</td>
       </tr>
       <tr>
-        <td><span class="inline">cmpfunc_lessequal</span></td>
-        <td>Less or Equal</td>
+        <td><span class="notranslate"><span class="inline">cmpfunc_lessequal</span></td>
+        <td>Meno o uguale</td>
       </tr>
       <tr>
-        <td><span class="inline">cmpfunc_greater</span></td>
-        <td>Greater</td>
+        <td><span class="notranslate"><span class="inline">cmpfunc_greater</span></td>
+        <td>Maggiore</td>
       </tr>
       <tr>
-        <td><span class="inline">cmpfunc_notequal</span></td>
-        <td>Not Equal</td>
+        <td><span class="notranslate"><span class="inline">cmpfunc_notequal</span></td>
+        <td>Non uguale</td>
       </tr>
       <tr>
-        <td><span class="inline">cmpfunc_greaterequal</span></td>
-        <td>Greater or Equal</td>
+        <td><span class="notranslate"><span class="inline">cmpfunc_greaterequal</span></td>
+        <td>Maggiore o uguale</td>
       </tr>
       <tr>
-        <td><span class="inline">cmpfunc_always</span></td>
-        <td>Always</td>
+        <td><span class="notranslate"><span class="inline">cmpfunc_always</span></td>
+        <td>Sempre</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">gpu_set_zfunc(cmp_func);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>cmp_func</td>
-        <td><span data-keyref="Type_Constant_Draw_ZComparison"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">Comparison Function Constant</a></span></td>
-        <td>The comparison mode to use (see list above)</td>
+        <td><span class="notranslate">cmp_func</span></td>
+        <td><span data-keyref="Type_Constant_Draw_ZComparison"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">Funzione di confronto Costante</a></span></td>
+        <td><span class="notranslate">The comparison mode to use (see list above)</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"><a data-rhwidget="HyperlinkPopover" href="../../../../../LINKGOESHERE">N/A</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">gpu_set_ztestenable(true);<br />
     gpu_set_zfunc(cmpfunc_always);<br />
     draw_sprite(spr_Background, 0, 0, 0);<br />
     gpu_set_ztestenable(false);</p>
-  <p>The above code switches on z-buffer testing and sets its comparison mode before drawing a background sprite and then switches it back off again to continue drawing.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra attiva il test dello z-buffer e imposta la sua modalità di confronto prima di disegnare uno sfondo <span class="notranslate">sprite</span> e poi lo disattiva di nuovo per continuare a disegnare.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="GPU_Control.htm">GPU Control</a></div>
-        <div style="float:right">Next: <a href="gpu_set_zwriteenable.htm">gpu_set_zwriteenable</a></div>
+        <div style="float:left">Indietro: <a href="GPU_Control.htm">Controllo GPU</a></div>
+        <div style="float:right">Il prossimo: <a href="gpu_set_zwriteenable.htm"><span class="notranslate">gpu_set_zwriteenable</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 gpu_set_zfunc

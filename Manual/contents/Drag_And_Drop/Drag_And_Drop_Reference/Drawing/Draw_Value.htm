@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Draw Value</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Disegnare il valore</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Draw Value action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Draw Value" />
@@ -14,51 +14,55 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Draw Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Value.png" /> Draw Value</h1>
-  <p>With this action you can draw a string caption and/or a variable or value to the screen. The caption argument is a string that you wish to add preceding the value, and can be left blank if required but if you wish to include text it should be wrapped in quotes, and the value can be a variable, a fixed value, or another string - in which case it should be enclosed in quotes too - but it cannot be left blank. You then give the position where the string should be drawn, either as an absolute position or as a position relative to the instance drawing the text. Note that how the text will look when drawn will depend on the font used, the colour used, and the alignment. All these things can be changed before drawing, as shown in the example below.</p>
-  <div data-conref="../../../assets/snippets/Note_Action_Only_For_Draw_Events.hts"> </div>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Draw Value Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/a_Drawing_Draw_Value.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Disegnare il valore</h1>
+  <p>Con questa azione potete disegnare una didascalia <span class="notranslate">string</span> e/o una variabile o un valore sullo schermo. L'argomento della didascalia è un <span class="notranslate">string</span> che si desidera aggiungere prima del valore, e può essere lasciato vuoto se necessario, ma se si desidera includere del testo dovrebbe essere avvolto
+    tra virgolette, e il valore può essere una variabile, un valore fisso, o un altro <span class="notranslate">string</span> - nel qual caso dovrebbe essere anch'esso racchiuso tra virgolette - ma non può essere lasciato vuoto. Poi si dà la posizione in cui il <span class="notranslate">string</span> dovrebbe essere disegnato, sia come posizione assoluta
+    o come posizione relativa all'istanza che disegna il testo. Nota che il modo in cui il testo apparirà quando disegnato dipenderà dal <span class="notranslate">font</span> usato, dal colore usato e dall'allineamento. Tutte queste cose possono essere cambiate prima del disegno, come mostrato nell'esempio qui sotto.</p>
+  <p class="note"><b>NOTA</b>: Questa azione è solo per l'uso nei vari <a href="../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">eventi di disegno</a>, e non disegnerà nulla se usata altrove.</p>
+  <p> </p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="Draw Value Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/i_Drawing_Draw_Value.png" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Caption</td>
-        <td>The caption to draw (a string), can be left blank</td>
+        <td><span class="notranslate">Caption</span></td>
+        <td>La didascalia da disegnare (un <span class="notranslate">string</span>), può essere lasciata vuota</td>
       </tr>
       <tr>
-        <td>Value</td>
-        <td>The value to draw (real, variable or string)</td>
+        <td><span class="notranslate">Value</span></td>
+        <td>Il valore da disegnare (reale, variabile o <span class="notranslate">string</span>)</td>
       </tr>
       <tr>
-        <td>x</td>
-        <td>The x position to draw at</td>
+        <td><span class="notranslate">x</span></td>
+        <td>La posizione x a cui disegnare</td>
       </tr>
       <tr>
-        <td>y</td>
-        <td>The y position to draw at</td>
+        <td><span class="notranslate">y</span></td>
+        <td>La posizione y a cui disegnare</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Draw Value Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Drawing/e_Drawing_Draw_Value.png" />The above action block code sets a font, the font colour and then aligns the text to draw from the center before actually drawing the &quot;<span class="inline">level_num</span>&quot; value along with the caption &quot;Level: &quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione qui sopra imposta un <span class="notranslate">font</span>, il colore <span class="notranslate">font</span> e poi allinea il testo per disegnare dal
+    centro prima di disegnare effettivamente il valore &quot;<span class="inline">level_num</span>&quot; insieme alla didascalia &quot;Livello: &quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Drawing_Actions.htm">Drawing Actions</a></div>
-        <div style="float:right">Next: <a href="Draw_Transformed_Value.htm">Draw Transformed Value</a></div>
+        <div style="float:left">Indietro: <a href="Drawing_Actions.htm">Azioni di disegno</a></div>
+        <div style="float:right">Prossimo: <a href="Draw_Transformed_Value.htm">Disegnare il valore trasformato</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Draw Value

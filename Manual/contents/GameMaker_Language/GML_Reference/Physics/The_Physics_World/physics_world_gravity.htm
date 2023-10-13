@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>physics_world_gravity</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>fisica_mondo_gravità</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for physics_world_gravity" />
   <meta name="rh-index-keywords" content="physics_world_gravity" />
@@ -14,48 +14,51 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">physics_world_gravity</span></h1>
-  <p>As with all the physics functions, <span class="inline3_func"><span data-field="title" data-format="default">physics_world_gravity</span></span> will only work on an instance if the room has a physics world defined for it in <a data-xref="{title}" href="../../../../The_Asset_Editors/Rooms.htm">The Room Editor</a> or using <span class="inline3_func"><a data-xref="{title}" href="physics_world_create.htm">physics_world_create</a></span>. It will then use the 0,0 defining point of the physics world to calculate the direction and strength of gravity based on the vector calculated from the xg and yg inputs. Here are some images to illustrate...</p>
-  <p><img alt="Physics world gravity illustration" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Physics/physics_gravity_image.png" style="cursor: nesw-resize;" />As you can see, the xg,yg coordinates are relative to the position of 0,0 as defined for the physics world, and the gravity itself is calculated as a vector of those two components. So, the default values of 0,10 will give you a gravity direction of down (270 degrees) with an acceleration of 10 metres per second squared. Note the <i>metres per second squared</i>! Like all the physics functions, gravity is calculated using metres as a base measurement so the pixel to metre scale that you set in <span class="inline3_func"><a data-xref="{title}" href="physics_world_create.htm">physics_world_create</a></span> function is important here. Gravity is also <i>cumulative</i> on the object (but the exact amount depends on what you have set for the function <span class="inline3_func"><a data-xref="{title}" href="../Fixtures/physics_fixture_set_linear_damping.htm">physics_fixture_set_linear_damping</a></span>), meaning that in a game with a <a href="../../General_Game_Control/game_set_speed.htm">game speed</a> set to 60 FPS, with no damping, the instance will accelerate by 10 metres per second, every second - which, if you have a 0.1 pixel to metre scale is the same as saying it will accelerate to a speed of 100 pixels per second in 60 steps.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">physics_world_gravity</span>(xg, yg)</p>
+  <h1>fisica_mondo_gravità</h1>
+  <p>Come per tutte le funzioni fisiche, <span class="inline">physics_world_gravity()</span> funzionerà solo su un'istanza se <span class="notranslate">room</span> ha un mondo fisico definito per esso nell'editor <span class="notranslate">room</span> o usando <a href="physics_world_create.htm"><span class="inline">physics_world_create()</span></a>. Essa
+    allora userà il punto di definizione 0,0 del mondo fisico per calcolare la direzione e la forza di gravità in base al vettore calcolato dagli input xg e yg. Ecco alcune immagini per illustrare...</p>
+  <p><img>Come potete vedere, le coordinate xg,yg sono relative alla posizione di 0,0 come definito per
+    il mondo fisico, e la gravità stessa è calcolata come un vettore di queste due componenti. Quindi, i valori predefiniti di 0,10 vi daranno una direzione di gravità verso il basso (270 gradi) con un'accelerazione di 10 metri al secondo quadrato. Notate i metri al <i>secondo</i> quadrato!
+    Come tutte le funzioni fisiche, la gravità è calcolata usando i metri come misura di base, quindi la scala da pixel a metro che impostate nella funzione <span class="inline">physics_world_create</span> è importante qui. La gravità è anche <i>cumulativa</i> su <span class="notranslate">object</span> (ma la
+    esatto dipende da quello che avete impostato per la funzione <a href="../Fixtures/physics_fixture_set_linear_damping.htm"><span class="inline">physics_fixture_set_linear_damping()</span></a>), il che significa che in un <span class="notranslate">room</span> con una room_speed di 60, senza smorzamento, l'istanza
+    accelererà di 10 metri al secondo, ogni secondo - che, se avete una scala di 0.1 pixel al metro è lo stesso che dire che accelererà ad una velocità di 100 pixel al secondo in 60 passi.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
+  <p class="code">physics_world_gravity(xg, yg)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
+     </tr>
       <tr>
-        <td>xg</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x component of the gravity vector</td>
-      </tr>
+        <td><span class="notranslate">xg</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x component of the gravity vector</span></td>
+     </tr>
       <tr>
-        <td>yg</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y component of the gravity vector</td>
-      </tr>
+        <td><span class="notranslate">yg</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y component of the gravity vector</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code"><span data-field="title" data-format="default">physics_world_gravity</span>(-5, 0);</p>
-  <p>The above code will set gravity to be (assuming the room physics 0,0 is set to top left) to the right - 0 degrees - with an acceleration of 5 metres per second squared.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p class="code">physics_world_gravity(-5, 0);</p>
+  <p>Il codice qui sopra imposterà la gravità (assumendo che <span class="notranslate">room</span> physics 0,0 sia impostato in alto a sinistra) a destra - 0 gradi - con un'accelerazione di 5 metri al secondo quadrato.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="The_Physics_World.htm">The Physics World</a></div>
-        <div style="float:right">Next: <a href="physics_world_update_iterations.htm">physics_world_update_iterations</a></div>
+        <div style="float:left">Indietro: <a href="The_Physics_World.htm">Il mondo della fisica</a></div>
+        <div style="float:right">Il prossimo: <a href="physics_world_update_iterations.htm"><span class="notranslate">physics_world_update_iterations</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 physics_world_gravity

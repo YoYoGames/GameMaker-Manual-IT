@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>part_system_layer</title>
+  <title>strato_sistema_parte</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for part_system_layer" />
   <meta name="rh-index-keywords" content="part_system_layer" />
@@ -14,51 +14,51 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>part_system_layer</h1>
-  <p>This function can be used to switch a particle system from its current layer to a new one. You supply the particle system ID value (as returned by the function <a href="part_system_create_layer.htm"><span class="inline">part_system_create_layer()</span></a>) and then the unique layer ID (as returned by the function <a href="../../../Asset_Management/Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a> or the name of the layer to use as a string - for example &quot;instance_layer&quot; - as defined in the room editor), and the system will be moved to the new layer.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>strato_sistema_parte</h1>
+  <p>Questa funzione può essere utilizzata per <span class="notranslate">switch</span> un sistema di particelle dal suo livello corrente a uno nuovo. Si fornisce il valore dell'ID del sistema di particelle (come restituito dalla funzione <a href="part_system_create_layer.htm"><span class="inline">part_system_create_layer()</span></a>) e poi l'ID unico del livello (come restituito dalla funzione <a href="../../../Asset_Management/Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a> o il nome del livello da usare come <span class="notranslate">string</span> - per esempio &quot;instance_layer&quot; - come definito nell'editor <span class="notranslate">room</span> ), e il sistema sarà spostato nel nuovo livello.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">part_system_layer(ps, layer);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>ps</td>
-        <td><span data-keyref="Type_ID_PartSys">Particle System ID</span></td>
-        <td>The particle system ID</td>
+        <td><span class="notranslate">ps</span></td>
+        <td><span data-keyref="Type_ID_PartSys">ID del sistema di particelle</span></td>
+        <td><span class="notranslate">The particle system ID</span></td>
       </tr>
       <tr>
-        <td>layer</td>
-        <td><span data-keyref="Type_String">String</span> or <span data-keyref="Type_ID_Layer">Layer ID</span></td>
-        <td>The new layer ID</td>
+        <td><span class="notranslate">layer</span></td>
+        <td><span data-keyref="Type_String">Stringa</span> o <span data-keyref="Type_ID_Layer">ID del livello</span></td>
+        <td><span class="notranslate">The new layer ID</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (part_system_get_layer(global.p_sys) != &quot;effects_layer&quot;)<br />
     {<br />
         part_system_layer(global.p_sys, &quot;effects_layer&quot;;<br />
     }</p>
-  <p>The above code will check a particle system to see what layer it is on and if it is not on the given layer it will be changed.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controllerà un sistema di particelle per vedere su quale livello si trova e se non è sul livello dato verrà cambiato.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Particle_Systems.htm">Particle Systems</a></div>
-        <div style="float:right">Next: <a href="part_system_depth.htm">part_system_depth</a></div>
+        <div style="float:left">Indietro: <a href="Particle_Systems.htm">Sistemi di particelle</a></div>
+        <div style="float:right">Il prossimo: <a href="part_system_depth.htm"><span class="notranslate">part_system_depth</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 part_system_layer

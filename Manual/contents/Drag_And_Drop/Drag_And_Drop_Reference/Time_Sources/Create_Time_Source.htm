@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>Create Time Source</title>
+  <title>Creare una fonte di tempo</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../../assets/css/default.css" />
   <meta name="template" content="../../../assets/masterpages/Manual_Action_Page.htt" />
@@ -14,83 +14,83 @@
   <meta name="search-keywords" content="Create Time Source" />
 </head>
 <body>
-  <h1><img class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Time_Sources/Action_Icons/Create_Time_Source.png" /> Create Time Source</h1>
-  <p>This action creates a new <span data-keyref="Type_Resource_TimeSource">Time Source</span>, and stores it in the <span class="inline2">Target</span> variable. Read <a data-xref="{title}" href="../../../GameMaker_Language/GML_Reference/Time_Sources/Time_Sources.htm">Time Sources</a> for an overview.</p>
-  <p>This is based on the <a href="../../../GameMaker_Language/GML_Reference/Time_Sources/time_source_create.htm"><span class="inline">time_source_create()</span></a> function. Read its page for detailed information on the arguments.</p>
-  <p>You need to use <a data-xref="{title}" href="Start_Time_Source.htm">Start Time Source</a> to activate a <span data-keyref="Type_Resource_TimeSource">Time Source</span> after it&#39;s created.</p>
-  <p>You must destroy a <span data-keyref="Type_Resource_TimeSource">Time Source</span> using <a data-xref="{title}" href="Destroy_Time_Source.htm">Destroy Time Source</a> when you no longer need it.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Time_Sources/Action_Syntax/Create_Time_Source.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Creare una fonte di tempo</h1>
+  <p>Questa azione crea una nuova <span data-keyref="Type_Resource_TimeSource">origine temporale</span> e la memorizza nella variabile <span class="inline2">Target</span>. Per una panoramica sulle <a data-xref="{title}" href="../../../GameMaker_Language/GML_Reference/Time_Sources/Time_Sources.htm">sorgenti temporali</a>, leggere <a data-xref="{title}" href="../../../GameMaker_Language/GML_Reference/Time_Sources/Time_Sources.htm">Sorgenti temporali</a>.</p>
+  <p>Si basa sulla funzione <a href="../../../GameMaker_Language/GML_Reference/Time_Sources/time_source_create.htm"><span class="inline">time_source_create()</span></a> . Leggete la sua pagina per informazioni dettagliate sugli argomenti.</p>
+  <p>È necessario utilizzare <a data-xref="{title}" href="Start_Time_Source.htm">Avvia origine temporale</a> per attivare un'<span data-keyref="Type_Resource_TimeSource">origine temporale</span> dopo la sua creazione.</p>
+  <p>È necessario distruggere una <span data-keyref="Type_Resource_TimeSource">fonte di tempo</span> utilizzando <a data-xref="{title}" href="Destroy_Time_Source.htm">Distruggi fonte di tempo</a> quando non è più necessaria.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Time_Sources/Action_Icons/Create_Time_Source.png" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Target</td>
-        <td>The variable where the new <span data-keyref="Type_Resource_TimeSource">Time Source</span> will be stored</td>
+        <td><span class="notranslate">Target</span></td>
+        <td>La variabile in cui verrà memorizzata la nuova <span data-keyref="Type_Resource_TimeSource">sorgente temporale</span> </td>
       </tr>
       <tr>
-        <td>Parent</td>
-        <td>The parent <span data-keyref="Type_Resource_TimeSource">Time Source</span>: either a <a href="../../../GameMaker_Language/GML_Reference/Time_Sources/Built_In_Time_Sources.htm">built-in Time Source</a> or a custom one</td>
+        <td><span class="notranslate">Parent</span></td>
+        <td>La <span data-keyref="Type_Resource_TimeSource">sorgente temporale</span> padre: una <a href="../../../GameMaker_Language/GML_Reference/Time_Sources/Built_In_Time_Sources.htm">sorgente temporale incorporata</a> o una sorgente personalizzata.</td>
       </tr>
       <tr>
-        <td>Period</td>
-        <td>The period length of the <span data-keyref="Type_Resource_TimeSource">Time Source</span>, how long it takes to expire</td>
+        <td><span class="notranslate">Period</span></td>
+        <td>La durata del periodo della <span data-keyref="Type_Resource_TimeSource">fonte temporale</span>, quanto tempo impiega per scadere</td>
       </tr>
       <tr>
-        <td>Units</td>
-        <td>The <a href="../../../GameMaker_Language/GML_Reference/Time_Sources/Time_Source_Units.htm">units</a> that the period is expressed in (seconds or frames)</td>
+        <td><span class="notranslate">Units</span></td>
+        <td>L'<a href="../../../GameMaker_Language/GML_Reference/Time_Sources/Time_Source_Units.htm">unità di misura</a> in cui è espresso il periodo (secondi o fotogrammi)</td>
       </tr>
       <tr>
-        <td>Callback</td>
-        <td>The <a href="../../../GameMaker_Language/GML_Overview/Method_Variables.htm">method</a> or <a href="../../../GameMaker_Language/GML_Overview/Script_Functions.htm">script function</a> to call when the <span data-keyref="Type_Resource_TimeSource">Time Source</span> expires</td>
+        <td><span class="notranslate">Callback</span></td>
+        <td>La funzione <a href="../../../GameMaker_Language/GML_Overview/Method_Variables.htm"><span class="notranslate">method</span></a> o la <a href="../../../GameMaker_Language/GML_Overview/Script_Functions.htm">funzione di script</a> da richiamare quando la <span data-keyref="Type_Resource_TimeSource">Sorgente Tempo</span> scade</td>
       </tr>
       <tr>
-        <td>Arguments</td>
-        <td><span class="optional">OPTIONAL</span> An <a href="../../../GameMaker_Language/GML_Overview/Arrays.htm">array</a> containing the arguments to pass into the callback function</td>
+        <td><span class="notranslate">Arguments</span></td>
+        <td><span class="optional">OPZIONALE</span> Un <a href="../../../GameMaker_Language/GML_Overview/Arrays.htm">array</a> contenente gli argomenti da passare alla funzione di callback.</td>
       </tr>
       <tr>
-        <td>Repetitions</td>
-        <td><span class="optional">OPTIONAL</span> How many times the <span data-keyref="Type_Resource_TimeSource">Time Source</span> should run in total, or -1 for indefinite repetition</td>
+        <td><span class="notranslate">Repetitions</span></td>
+        <td><span class="optional">FACOLTATIVO</span> Quante volte la <span data-keyref="Type_Resource_TimeSource">sorgente temporale</span> deve essere eseguita in totale, o -1 per una ripetizione indefinita.</td>
       </tr>
       <tr>
-        <td>Expiry Type</td>
-        <td><span class="optional">OPTIONAL</span> The <a href="../../../GameMaker_Language/GML_Reference/Time_Sources/Time_Source_Expiry_Types.htm">expiry type</a> for the <span data-keyref="Type_Resource_TimeSource">Time Source</span></td>
+        <td><span class="notranslate">Expiry Type</span></td>
+        <td><span class="optional">OPZIONALE</span> Il <a href="../../../GameMaker_Language/GML_Reference/Time_Sources/Time_Source_Expiry_Types.htm">tipo di scadenza</a> per la <span data-keyref="Type_Resource_TimeSource">fonte temporale</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Time_Sources/Examples/Eg_Create_TS.png" />This code block does the following:</p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Questo blocco di codice esegue le seguenti operazioni:</p>
   <ul class="colour">
-    <li>It creates a new function, with the &quot;Temp&quot; option enabled. This creates a local method variable.
+    <li>Crea una nuova funzione, con l'opzione &quot;Temp&quot; abilitata. Crea una variabile locale del metodo.
       <ul>
-        <li> This method takes one argument, <span class="inline2">msg</span>, which it prints to the Output Log.</li>
+        <li> Questo metodo accetta un argomento, <span class="inline2">msg</span>, che viene stampato nel registro di output.</li>
       </ul>
     </li>
-    <li>It then creates a new <span data-keyref="Type_Resource_TimeSource">Time Source</span> with a 1-second period length.
+    <li>Viene quindi creata una nuova <span data-keyref="Type_Resource_TimeSource">sorgente di tempo</span> con un periodo della durata di 1 secondo.
       <ul>
-        <li>It specifies the <span class="inline2">callback_method</span> variable as the &quot;Callback&quot;, and an array with one argument for the function.</li>
-        <li>This <span data-keyref="Type_Resource_TimeSource">Time Source</span> is set to repeat indefinitely, as -1 is specified in &quot;Repetitions&quot;.</li>
+        <li>Specifica la variabile <span class="inline2">callback_method</span> come &quot;Callback&quot; e un array con un argomento per la funzione.</li>
+        <li>Questa <span data-keyref="Type_Resource_TimeSource">sorgente di tempo</span> è impostata per ripetersi all'infinito, dato che -1 è specificato in &quot;Ripetizioni&quot;.</li>
       </ul>
     </li>
-    <li>The <span data-keyref="Type_Resource_TimeSource">Time Source</span> is then started.</li>
+    <li>La <span data-keyref="Type_Resource_TimeSource">sorgente di tempo</span> viene quindi avviata.</li>
   </ul>
-  <p>This <span data-keyref="Type_Resource_TimeSource">Time Source</span> will execute its callback every second, printing <span class="inline2">&quot;A second has passed!&quot;</span> to the Output Log.</p>
-  <p> </p>
-  <p> </p>
+  <p>Questa <span data-keyref="Type_Resource_TimeSource">sorgente temporale</span> eseguirà la sua callback ogni secondo, stampando <span class="inline2">&quot;È passato un secondo!&quot;</span> nel registro di uscita.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="Time_Sources_(GML_Visual).htm">Time Source Actions</a></div>
-        <div>Next: <a data-xref="{title}" href="Destroy_Time_Source.htm">Destroy Time Source</a></div>
+        <div>Indietro: <a data-xref="{title}" href="Time_Sources_(GML_Visual).htm">Azioni di origine temporale</a></div>
+        <div>Successiva: <a data-xref="{title}" href="Destroy_Time_Source.htm">Distruggere la fonte del tempo</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Create Time Source

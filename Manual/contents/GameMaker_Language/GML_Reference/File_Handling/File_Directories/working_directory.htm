@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>working_directory</title>
+  <title>directory di lavoro</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for working_directory" />
   <meta name="rh-index-keywords" content="working_directory" />
@@ -14,38 +14,38 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>working_directory</h1>
-  <p><span class="inline">Working_directory</span> can actually return two different values depending on what you are using it for.</p>
-  <p>If you are writing a file to disk, <span class="inline">working_directory</span> points to the area of local storage that is reserved for your game on the target device (in Windows this is &quot;<span class="inline">%LOCALAPPDATA%/gamedir/</span>&quot; where the &quot;gamedir&quot; is the directory with the name of your game).</p>
-  <p>However, when reading from disk, <span class="inline">working_directory</span> can be <i>either</i> the local storage (<span class="inline"><a data-xref="{title}" href="../../General_Game_Control/game_save_id.htm">game_save_id</a></span>) <i>or</i> the area where the <a data-xref="{text}" href="../../../../Settings/Included_Files.htm#h">Included Files</a> are stored.</p>
-  <p class="note"><span class="note">NOTE</span> The <span class="inline">working_directory</span> variable will return the path <b>including</b> the final backslash.</p>
-  <p>For example, if you have a default <span class="inline">*.txt</span> file included with your game and read it into memory using <span class="inline">working_directory</span>, then that file will be taken from the area where the Included Files are stored. If you then choose to write that information to a text file using <span class="inline">working_directory</span>, this will write the file to the target platform&#39;s local storage, where it will be read from the next time unless you instruct <span data-keyref="GameMaker Name">GameMaker</span> to delete the file, in which case <span class="inline">working_directory</span> will once more point to the area where the Included Files are stored.</p>
-  <p>It is worth noting that <em>in general</em> you do not need to use this and simply specify the file name itself (plus any additional path information), which is sufficient. For example, this:</p>
+  <h1>directory di lavoro</h1>
+  <p><span class="inline">Working_directory</span> può effettivamente restituire due valori diversi a seconda dell'uso che se ne fa.</p>
+  <p>Se state scrivendo un file su disco, <span class="inline">working_directory</span> punta all'area di memoria locale che è riservata al vostro gioco sul dispositivo di destinazione (in <span class="notranslate">Windows</span> questo è &quot;<span class="inline">%LOCALAPPDATA%/gamedir/</span>&quot; dove &quot;gamedir&quot; è la directory con il nome del vostro gioco).</p>
+  <p>Tuttavia, quando si legge da disco, <span class="inline">working_directory</span> può essere <i>sia</i> la memoria locale (<span class="inline"><a data-xref="{title}" href="../../General_Game_Control/game_save_id.htm">game_save_id</a></span>) <i>o</i> l'area dove sono memorizzati i <a data-xref="{text}" href="../../../../Settings/Included_Files.htm#h">file inclusi</a>.</p>
+  <p class="note"><span class="note">NOTA</span> La variabile <span class="inline">working_directory</span> restituirà l'indirizzo <span class="notranslate">path</span> <b>compreso</b> il backslash finale.</p>
+  <p>Per esempio, se avete un file di default <span class="inline">*.txt</span> incluso nel vostro gioco e lo leggete in memoria usando <span class="inline">working_directory</span>, allora quel file sarà preso dall'area dove sono memorizzati i file inclusi. Se poi scegliete di scrivere quelle informazioni in un file di testo usando <span class="inline">working_directory</span>, questo scriverà il file nella memoria locale della piattaforma di destinazione, da dove sarà letto la volta successiva, a meno che non ordiniate a <span data-keyref="GameMaker Name">GameMaker</span> di cancellare il file, nel qual caso <span class="inline">working_directory</span> punterà ancora una volta all'area dove sono memorizzati i file inclusi.</p>
+  <p>Vale la pena notare che <em>in generale</em> non c'è bisogno di usare questo e semplicemente specificare il nome del file stesso (più qualsiasi informazione aggiuntiva <span class="notranslate">path</span> ), che è sufficiente. Per esempio, questo:</p>
   <p class="code">file_text_open_read(working_directory + &quot;my_file.txt&quot;);</p>
-  <p>would be better done as this:</p>
+  <p>sarebbe meglio fare così:</p>
   <p class="code">file_text_open_read(&quot;my_file.txt&quot;);</p>
-  <p class="note"><span class="warning">WARNING</span> This function may not work as you expect due to <span data-keyref="GameMaker Name">GameMaker</span> being sandboxed! Please see the section on the <a href="../../../../Additional_Information/The_File_System.htm">File System</a> for more information.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p class="note"><span class="warning">ATTENZIONE</span> Questa funzione potrebbe non funzionare come vi aspettate a causa della sandbox di <span data-keyref="GameMaker Name">GameMaker</span>! Si prega di vedere la sezione sul <a href="../../../../Additional_Information/The_File_System.htm">File System</a> per maggiori informazioni.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">working_directory</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">String</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">ini_open(working_directory + &quot;temp_ini.ini&quot;);</p>
-  <p>This will open an ini file from the working directory of the game (creating it if it does not already exist). This could be the local storage, or the area where the included files are depending on whether the file being looked for exists in either place.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Questo aprirà un file ini dalla directory di lavoro del gioco (creandolo se non esiste già). Questo potrebbe essere l'archivio locale o l'area in cui si trovano i file inclusi, a seconda che il file da cercare esista in uno dei due posti.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="File_Directories.htm">File Directories</a></div>
-        <div style="float:right">Next: <a href="program_directory.htm">program_directory</a></div>
+        <div style="float:left">Indietro: <a href="File_Directories.htm">Cartelle di file</a></div>
+        <div style="float:right">Il prossimo: <a href="program_directory.htm"><span class="notranslate">program_directory</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 working_directory

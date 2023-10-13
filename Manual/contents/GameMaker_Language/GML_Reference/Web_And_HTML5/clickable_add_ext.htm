@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>clickable_add_ext</title>
+  <title>aggiungi cliccabile</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for clickable_add_ext" />
   <meta name="rh-index-keywords" content="clickable_add_ext" />
@@ -15,80 +15,80 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>clickable_add_ext</h1>
-  <p>With this function you can create a custom, clickable, icon that acts as a &quot;button&quot; outside of the game canvas, but within the browser window itself. The function will return an ID value which must be stored in a variable to be used in all further button functions that reference the new clickable. This function is very useful to prevent the browser creating a pop-up window when clicking on the button as it is all done through <span data-keyref="GameMaker Name">GameMaker</span> itself.</p>
-  <p>This function works exactly the same as the <a href="clickable_add.htm"><span class="inline">clickable_add()</span></a> function, where you must set the position relative to the (0,0) of the browser window, give the texture page entry for the sprite you wish the button icon to have (see: <a href="../Asset_Management/Sprites/Sprite_Information/sprite_get_tpe.htm"><span class="inline">sprite_get_tpe()</span></a>), specify either a URL to open or a script (from the Asset Browser of <span data-keyref="GameMaker Name">GameMaker</span>) to be opened or run then set the target and parameters to use. However this function also has two additional options that permit you to set the icon alpha from 0 (fully transparent) to 1 (fully opaque) and the scale of the icon, which is a multiplier value applied to the sprite used. So a value of 1 is the default scale, while (for example) 0.5 would be half scale and 2 would be double.</p>
-  <p>It is also worth noting that if the URL argument you pass in is the name of a <a href="../../GML_Overview/Script_Functions.htm">script function</a> (ie: it doesn&#39;t start with &quot;http://&quot;) AND the script is called <span class="inline"><b>gmcallback_*</b></span> then you can get direct feeds into an html5 event. <span data-keyref="GameMaker Name">GameMaker</span> script function names are <i>not</i> obfuscated if they begin with <span class="inline">gmcallback_</span>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>aggiungi cliccabile</h1>
+  <p>Con questa funzione è possibile creare un'icona personalizzata, cliccabile, che agisce come un &quot;pulsante&quot; al di fuori della tela di gioco, ma all'interno della finestra del browser stesso. La funzione restituirà un valore ID che deve essere memorizzato in una variabile per essere utilizzato in tutte le ulteriori funzioni del pulsante che fanno riferimento al nuovo cliccabile. Questa funzione è molto utile per evitare che il browser crei una finestra pop-up quando si clicca sul pulsante, in quanto è tutto fatto attraverso <span data-keyref="GameMaker Name">GameMaker</span> stesso.</p>
+  <p>Questa funzione funziona esattamente come la funzione <a href="clickable_add.htm"><span class="inline">clickable_add()</span></a> dove si deve impostare la posizione relativa al (0,0) della finestra del browser, dare la voce della pagina <span class="notranslate">texture</span> per il <span class="notranslate">sprite</span> che si desidera che l'icona del pulsante abbia (vedi: <a href="../Asset_Management/Sprites/Sprite_Information/sprite_get_tpe.htm"><span class="inline">sprite_get_tpe()</span></a>), specificare o un URL da aprire o un <span class="notranslate">script</span> (dal Browser <span class="notranslate">Asset</span> di <span data-keyref="GameMaker Name">GameMaker</span>) da aprire o eseguire quindi impostare il target e i parametri da utilizzare. Tuttavia questa funzione ha anche due opzioni aggiuntive che permettono di impostare l'alfa dell'icona da 0 (completamente trasparente) a 1 (completamente opaca) e la scala dell'icona, che è un valore moltiplicatore applicato al <span class="notranslate">sprite</span> usato. Così un valore di 1 è la scala predefinita, mentre (per esempio) 0,5 sarebbe metà scala e 2 sarebbe il doppio.</p>
+  <p>Vale anche la pena notare che se l'argomento URL che passate è il nome di una <a href="../../GML_Overview/Script_Functions.htm">funzione di script</a> (cioè: non inizia con &quot;http://&quot;) E la <span class="notranslate">script</span> è chiamata <span class="inline"><b>gmcallback_*</b></span> allora potete ottenere un feed diretto in un evento html5. I nomi delle funzioni script di <span data-keyref="GameMaker Name">GameMaker</span> <i>non</i> sono offuscati se iniziano con <span class="inline">gmcallback_</span>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">clickable_add_ext(x, y, tpe, url, target, params, alpha, scale);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>x</td>
+        <td><span class="notranslate">x</span></td>
         <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The x position within the <i>window</i>.</td>
+        <td><span class="notranslate">The x position within the <i>window</i>.</span></td>
       </tr>
       <tr>
-        <td>y</td>
+        <td><span class="notranslate">y</span></td>
         <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The y position within the <i>window</i>.</td>
+        <td><span class="notranslate">The y position within the <i>window</i>.</span></td>
       </tr>
       <tr>
-        <td>tpe</td>
-        <td><span data-keyref="Type_TPE">Texture Page Entry</span></td>
-        <td>The texture page entry for the sprite to be used.</td>
+        <td><span class="notranslate">tpe</span></td>
+        <td><span data-keyref="Type_TPE">Inserimento pagina texture</span></td>
+        <td><span class="notranslate">The texture page entry for the sprite to be used.</span></td>
       </tr>
       <tr>
-        <td>url</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The URL (website address) to link to, or the script to be run.</td>
+        <td><span class="notranslate">url</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">The URL (website address) to link to, or the script to be run.</span></td>
       </tr>
       <tr>
-        <td>target</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>This is the target area to open the URL in (see description).</td>
+        <td><span class="notranslate">target</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">This is the target area to open the URL in (see description).</span></td>
       </tr>
       <tr>
-        <td>params</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The various parameters for the icon (see description).</td>
+        <td><span class="notranslate">params</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">The various parameters for the icon (see description).</span></td>
       </tr>
       <tr>
-        <td>alpha</td>
+        <td><span class="notranslate">alpha</span></td>
         <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The image alpha of the icon (default 1).</td>
+        <td><span class="notranslate">The image alpha of the icon (default 1).</span></td>
       </tr>
       <tr>
-        <td>scale</td>
+        <td><span class="notranslate">scale</span></td>
         <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The scale of the icon (default 1).</td>
+        <td><span class="notranslate">The scale of the icon (default 1).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_ID_Clickable">Clickable ID</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">home_but = clickable_add_ext(32, 32, sprite_get_tpe(spr_MS_Home, 0), &quot;http://macsweeney_games.com&quot;, &quot;_blank&quot;, &quot;width=700, height=500, menubar=0, toolbar=0, scrollbars=0&quot;, 1, 2);</p>
-  <p>The above code creates a clickable DOM icon at the position (32, 32) of the page that the game canvas is running on. The icon uses the sprite referenced from the texture page as &quot;spr_MS_Home&quot; and when clicked the icon will open a new window for the specified URL and with the defined properties for that window. the button will also be scaled to twice the original sprite size and half an image alpha of 1.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra crea un'icona DOM cliccabile nella posizione (32, 32) della pagina su cui sta girando il game canvas. L'icona usa il <span class="notranslate">sprite</span> referenziato dalla pagina <span class="notranslate">texture</span> come &quot;spr_MS_Home&quot; e quando viene cliccata l'icona aprirà una nuova finestra per l'URL specificato e con le proprietà definite per quella finestra. il pulsante sarà anche scalato al doppio della dimensione originale <span class="notranslate">sprite</span> e a metà di un'immagine alfa di 1.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Web_And_HTML5.htm">Web And HTML5</a></div>
-        <div style="float:right">Next: <a href="clickable_change.htm">clickable_change</a></div>
+        <div style="float:left">Indietro: <a href="Web_And_HTML5.htm">Web e HTML5</a></div>
+        <div style="float:right">Il prossimo: <a href="clickable_change.htm"><span class="notranslate">clickable_change</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 clickable_add_ext

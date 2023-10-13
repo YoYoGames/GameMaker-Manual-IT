@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Set Audio Position</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Imposta posizione audio</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Set Audio Position action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Set Audio Position" />
@@ -14,45 +14,47 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Set Audio Position Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/i_Audio_Set_Audio_Position.png" /> Set Audio Position</h1>
-  <p>With this action you can set a sound to start from a specific time.</p>
-  <p>You give the sound to play, and the time to start it from, but this action will <i>not</i> play the sound for you, it will simply set the play position for the sound. To use this action you must <i>first</i> set the position <i>then</i> play the sound using the action <a href="Play_Audio.htm">Play Audio</a>, otherwise you will here no change in position until the next time you play the same sound resource (which will start at the new position).</p>
-  <p>The position is set in seconds - you can use decimal values - and you can get the total sound length using the action <a href="Get_Audio_Length.htm">Get Audio Length</a>.</p>
-  <p>Values beyond the end of the sound are clamped to its length.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Set Audio Position Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/a_Audio_Set_Audio_Position.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Imposta posizione audio</h1>
+  <p>Con questa azione potete impostare un suono da riprodurre in un momento specifico. Voi date il suono da riprodurre e il tempo da cui farlo partire, ma questa azione <i>non</i> riprodurrà il suono per voi, semplicemente imposterà la posizione di riproduzione del suono. Per usare questa azione
+    devi <i>prima</i> impostare la posizione <i>e poi</i> riprodurre il suono usando l'azione <a href="Play_Audio.htm">Play Audio</a>, altrimenti non cambierai la posizione fino alla prossima volta che riprodurrai la stessa risorsa sonora (che inizierà nella
+    nuova posizione). La posizione è impostata in secondi - puoi usare valori decimali - e puoi ottenere la lunghezza totale del suono usando l'azione <a href="Get_Audio_Length.htm">Get Audio Length</a>, anche se se fornisci un valore maggiore della lunghezza del
+    suono desiderato, questo verrà avvolto, quindi se il suono è lungo 10 secondi e si danno 12 secondi come posizione di partenza, il suono inizierà a 2 secondi dopo.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="Set Audio Position Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/i_Audio_Set_Audio_Position.png" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Sound</td>
-        <td>The sound resource to set the play position of</td>
+        <td><span class="notranslate">Sound</span></td>
+        <td>La risorsa sonora per impostare la posizione di riproduzione di</td>
       </tr>
       <tr>
-        <td>Time</td>
-        <td>The time to set (in seconds)</td>
+        <td><span class="notranslate">Time</span></td>
+        <td>Il tempo da impostare (in secondi)</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Set Audio Position Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/e_Audio_Get_Audio_Length.png" />The above action block code gets the playing length of the given sound resource and stores it in a temporary local variable. This is then used to generate a random value between 0 and the length of the sound, which is then stored in a different temporary local variable. This new random value is then used to set the start position for the sound and the sound is then played.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione di cui sopra ottiene la lunghezza di riproduzione della risorsa sonora data e la memorizza
+    in una variabile locale temporanea. Questo viene poi usato per generare un valore casuale tra 0 e la lunghezza del suono, che viene poi memorizzato in un'altra variabile locale temporanea. Questo nuovo valore casuale viene quindi utilizzato per impostare la posizione iniziale del
+    e il suono viene quindi riprodotto.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Audio_Actions.htm">Audio Actions</a></div>
-        <div style="float:right">Next: <a href="Get_Audio_Length.htm">Get Audio Length</a></div>
+        <div style="float:left">Indietro: <a href="Audio_Actions.htm">Azioni audio</a></div>
+        <div style="float:right">Prossimo: <a href="Get_Audio_Length.htm">Ottenere la lunghezza dell'audio</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Set Audio Position

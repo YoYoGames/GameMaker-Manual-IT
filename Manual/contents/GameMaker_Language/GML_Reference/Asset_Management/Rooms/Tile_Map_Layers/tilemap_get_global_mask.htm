@@ -6,7 +6,7 @@
   <title>tilemap_get_global_mask</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function tilemap_get_global_mask" />
   <meta name="rh-index-keywords" content="tilemap_get_global_mask" />
@@ -16,33 +16,33 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>tilemap_get_global_mask</h1>
-  <p>This function can be used to retrieve the bit mask value for <i>all</i> tile maps, returning the current mask value or -1 if there is an error or 0 if no mask is specified. For further information on global tile map bit masks, see the function <a href="tilemap_set_global_mask.htm"><span class="inline">tilemap_set_global_mask()</span></a>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione può essere usata per recuperare il valore della maschera di bit per <i>tutte le</i> mappe <span class="notranslate">tile</span>, restituendo il valore corrente della maschera o -1 se c'è un errore o 0 se non è specificata alcuna maschera. Per ulteriori informazioni sulle maschere di bit della mappa globale <span class="notranslate">tile</span>, vedere la funzione <a href="tilemap_set_global_mask.htm"><span class="inline">tilemap_set_global_mask()</span></a>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">tilemap_get_global_mask();</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Real"></span> (0 for no mask, -1 for an error, mask value otherwise)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var mask = tilemap_get_global_mask(map_id);<br />
     var new_mask = tile_mirror | tile_flip | tile_rotate | 255;<br />
     if mask != new_mask<br />
     {<br />
         tilemap_set_global_mask(new_mask);<br />
     }</p>
-  <p>The above code gets the global mask value associated with all tile maps. If it is not the same as the value defined in the variable &quot;new_mask&quot;, then it is set to that value.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra ottiene il valore globale della maschera associata a tutte le mappe <span class="notranslate">tile</span>. Se non è uguale al valore definito nella variabile &quot;new_mask&quot;, allora viene impostato a quel valore.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Tile_Map_Layers.htm">Tile Map Layers</a></div>
-        <div style="float:right">Next: <a href="tilemap_get_tileset.htm">tilemap_get_tileset</a></div>
+        <div style="float:left">Indietro: <a href="Tile_Map_Layers.htm">Livelli di mappa a mattonelle</a></div>
+        <div style="float:right">Il prossimo: <a href="tilemap_get_tileset.htm"><span class="notranslate">tilemap_get_tileset</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 tilemap_get_global_mask

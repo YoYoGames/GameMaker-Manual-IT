@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>player_local</title>
+  <title>giocatore_locale</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../../../assets/css/default.css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="template" content="../../../../assets/masterpages/Manual_Keyword_Page.htt" />
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="condition-tags" content="Export:Beta" />
@@ -15,34 +15,34 @@
   <meta name="search-keywords" content="player_local" />
 </head>
 <body>
-  <h1>player_local</h1>
-  <p>When you use <a href="../Rollback_Functions/rollback_define_player.htm"><span class="inline">rollback_define_player()</span></a> to define a player object, the system automatically creates an instance of that object for each player. Each instance of that object gets the <span class="inline">player_local</span> variable, which tells whether that player instance is local or not.</p>
-  <p>If you do not use <span class="inline">rollback_define_player()</span>, then this variable will not be created for any objects.</p>
-  <p>You can use this variable for showing which player is local. It&#39;s not recommended to use this variable in a way that affects your game logic, which should be the same for local and remote players.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>giocatore_locale</h1>
+  <p>Quando si usa <a href="../Rollback_Functions/rollback_define_player.htm"><span class="inline">rollback_define_player()</span></a> per definire un giocatore <span class="notranslate">object</span>, il sistema crea automaticamente un'istanza di quel <span class="notranslate">object</span> per ogni giocatore. Ogni istanza di <span class="notranslate">object</span> riceve la variabile <span class="inline">player_local</span>, che indica se l'istanza del giocatore è locale o meno.</p>
+  <p>Se non si usa <span class="inline">rollback_define_player()</span>, questa variabile non verrà creata per nessun <span class="notranslate">objects</span>.</p>
+  <p>È possibile utilizzare questa variabile per mostrare quale giocatore è locale. Non è consigliabile utilizzare questa variabile in modo da influenzare la logica di gioco, che deve essere la stessa per i giocatori locali e remoti.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">player_local;</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Restituzione:</h4>
   <p class="code"><span data-keyref="Type_Bool"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">// Draw event<br />
     if (player_local)<br />
     {<br />
         draw_sprite(spr_arrow, 0, x, y - 60);<br />
     }</p>
-  <p>The code above runs in the Draw event, and checks if the player instance is local. In that case, it draws an arrow sprite above the instance, telling the player which instance they are controlling.</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra viene eseguito nell'evento Draw e controlla se l'istanza del giocatore è locale. In tal caso, disegna una freccia <span class="notranslate">sprite</span> sopra l'istanza, indicando al giocatore quale istanza sta controllando.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="Rollback_Variables.htm">Rollback Variables</a></div>
-        <div>Next: <a data-xref="{title}" href="player_.htm">player_name</a></div>
+        <div>Indietro: <a data-xref="{title}" href="Rollback_Variables.htm">Variabili di rollback</a></div>
+        <div>Avanti: <a data-xref="{title}" href="player_.htm">nome_giocatore</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 player_local

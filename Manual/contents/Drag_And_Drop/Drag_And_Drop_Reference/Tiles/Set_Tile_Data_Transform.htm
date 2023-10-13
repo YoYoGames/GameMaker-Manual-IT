@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Set Tile Data Transform</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Impostare la trasformazione dei dati Tile</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Set Tile Data Transform action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Set Tile Data Transform" />
@@ -14,45 +14,50 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Set Tile Data Transform Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Tiles/i_Tiles_Set_Tile_Data_Transform.png" /> Set Tile Data Transform</h1>
-  <p>With this action you can change one of three tile transforms in the tile data. You supply the variable that holds the tile data for the tile, then select the transform to change. Clicking the &quot;Apply&quot; check-box will apply that transform and un-checking it will remove it. The tile data is simply a value that reflects the index of the tile along with the transforms applied as well as any custom tile masks that you have used, and this action permits you to change three of those values: Flip, mirror and rotate. Note that you will normally want to get the tile data first using either <a href="Get_Tile_Data_In_Cell.htm">Get Tile Data In Cell</a> or <a href="Get_Tile_Data_At_Pixel.htm">Get Tile Data At Pixel</a>, then apply the required transform(s) and then set the tile in the tile map again using <a href="Set_Tile_Data_In_Cell.htm">Set Tile Data In Cell</a> or <a href="Set_Tile_Data_At_Pixel.htm">Set Tile Data At Pixel</a>, since this action <i>only sets a value but does not apply it to the tile it was taken from</i>. For more information on tile data, please see the GML section on <a href="../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Tile_Map_Layers/Tile_Map_Layers.htm">Tile Map Functions</a>.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Set Tile Data Transform Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Tiles/a_Tiles_Set_Tile_Data_Transform.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Imposta <span class="notranslate">Tile</span> Trasformazione dei dati</h1>
+  <p>Con questa azione potete cambiare una delle tre trasformazioni di <span class="notranslate">tile</span> nei dati di <span class="notranslate">tile</span>. Si fornisce la variabile che contiene i dati di <span class="notranslate">tile</span> per <span class="notranslate">tile</span>, poi si seleziona la trasformazione da cambiare. Facendo clic sulla casella di controllo &quot;Apply&quot; si applica quella trasformazione e
+    togliendo la spunta la si rimuove. I dati di <span class="notranslate">tile</span> sono semplicemente un valore che riflette l'indice di <span class="notranslate">tile</span> insieme alle trasformazioni applicate e a qualsiasi maschera personalizzata di <span class="notranslate">tile</span> che avete usato, e questa azione vi permette di cambiare tre di questi valori:
+    Flip, mirror e rotate. Notate che normalmente vorrete prima ottenere i dati di <span class="notranslate">tile</span> usando <a href="Get_Tile_Data_In_Cell.htm">Get <span class="notranslate">Tile</span> Data In Cell</a> o <a href="Get_Tile_Data_At_Pixel.htm">Get <span class="notranslate">Tile</span> Data At Pixel</a>, poi applicare la trasformazione o le trasformazioni richieste e poi impostare il
+    trasformare e poi impostare di nuovo il <span class="notranslate">tile</span> nella mappa <span class="notranslate">tile</span> usando <a href="Set_Tile_Data_In_Cell.htm">Set <span class="notranslate">Tile</span> Data In Cell</a> o <a href="Set_Tile_Data_At_Pixel.htm">Set <span class="notranslate">Tile</span> Data At Pixel</a>, poiché questa azione <i>imposta solo un valore ma non lo applica al <span class="notranslate">tile</span> da cui è stato preso</i>.
+    Per maggiori informazioni sui dati <span class="notranslate">tile</span>, si veda la sezione <span class="notranslate">GML</span> sulle <a href="../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Tile_Map_Layers/Tile_Map_Layers.htm">funzioni di Tile Map</a>.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="Set Tile Data Transform Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Tiles/i_Tiles_Set_Tile_Data_Transform.png" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Tile</td>
-        <td>The tile data for the tile to change</td>
+        <td><span class="notranslate">Tile</span></td>
+        <td>I dati di <span class="notranslate">tile</span> per il <span class="notranslate">tile</span> per cambiare</td>
       </tr>
       <tr>
-        <td>Transform</td>
-        <td>The transform to apply/remove</td>
+        <td><span class="notranslate">Transform</span></td>
+        <td>La trasformazione da applicare/rimuovere</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Set Tile Data Transform Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Tiles/e_Tiles_Set_Tile_Data_Transform.png" />The above action block code gets the tile data at the mouse position and then checks to see if the tile has had a rotation transform applied to it. If it has then the transform is reset and the tile data sets the tile at the position again.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione di cui sopra ottiene i dati di <span class="notranslate">tile</span> nella posizione del mouse e poi
+    controlla per vedere se a <span class="notranslate">tile</span> è stata applicata una trasformazione di rotazione. Se lo ha fatto, allora la trasformazione viene resettata e i dati di <span class="notranslate">tile</span> impostano nuovamente <span class="notranslate">tile</span> nella posizione.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Tile_Actions.htm">Tile Actions</a></div>
-        <div style="float:right">Next: <a href="Get_Tile_Data_Transform.htm">Get Tile Data Transform</a></div>
+        <div style="float:left">Indietro: <a href="Tile_Actions.htm">Azioni delle mattonelle</a></div>
+        <div style="float:right">Avanti: <a href="Get_Tile_Data_Transform.htm">Ottenere <span class="notranslate">Tile</span> Trasformazione dei dati</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
-Action - Set Tile Data Transform
+Action - Set <span class="notranslate">Tile</span> Data Transform
 -->
   <!-- TAGS
 action_tile_set_transform

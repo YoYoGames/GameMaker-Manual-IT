@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>instance_create_layer</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>istanza_creata_strato</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function instance_create_layer" />
   <meta name="rh-index-keywords" content="instance_create_layer" />
@@ -14,88 +14,88 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>instance_create_layer</h1>
-  <p>With this function you can create a new instance of the specified object at any given point within the room and on the layer specified. The layer can be identified using the layer ID value (as returned by the function <a href="../Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a>) or by the name of the layer (as a string, for example &quot;instance_layer&quot;) as defined in the <a href="../../../../The_Asset_Editors/Rooms.htm">room editor</a>.</p>
-  <p>This function returns the <a href="Instance_Variables/id.htm"><span class="inline">id</span></a> of the new instance which can then be stored in a variable and used to access that instance. Note that this function will also call the <a href="../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">Create Event</a> of the instance being created <i>before</i> continuing with the code or actions for the event that called the function.</p>
-  <div data-conref="../../../../assets/snippets/Note_layer_depth_range.hts"> </div>
-  <h2>Optional Struct</h2>
-  <p>The last argument, <span class="inline2">var_struct</span>, is optional and takes a struct containing additional variables for the new instance.</p>
-  <p>Variables from this struct are applied to the new instance <em>before</em> its Create event runs, but <em>after</em> its <a href="../../../../The_Asset_Editors/Object_Properties/Object_Variables.htm">Variable Definitions</a> are set.</p>
-  <p>This means that the values from that struct are readable in the Create event of the new instance. See <strong>Example 2</strong> at the bottom.</p>
-  <p>Values applied to the new instance through this struct can be of any type, including <a href="../../../GML_Overview/Method_Variables.htm">method</a> variables. <a href="Instance_Variables/Instance_Variables.htm">Built-in variables</a> can be changed as well.</p>
-  <p class="note"><span class="note">NOTE</span> Variables from the struct are &quot;shallow-copied&quot; to the new instance, meaning any arrays, structs, and other resources are copied by reference and not duplicated.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>istanza_creata_strato</h1>
+  <p>Con questa funzione è possibile creare una nuova istanza del sito <span class="notranslate">object</span> specificato in un punto qualsiasi del sito <span class="notranslate">room</span> e sul layer specificato. Il livello può essere identificato utilizzando il valore dell'ID del livello (restituito dalla funzione <a href="../Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a>) o con il nome del layer (come <span class="notranslate">string</span>, ad esempio &quot;instance_layer&quot;) definito nell'<a href="../../../../The_Asset_Editors/Rooms.htm">editor della stanza</a>.</p>
+  <p>Questa funzione restituisce il valore <a href="Instance_Variables/id.htm"><span class="inline">id</span></a> della nuova istanza, che può essere memorizzata in una variabile e utilizzata per accedere a tale istanza. Si noti che questa funzione richiamerà anche l'<a href="../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">evento Create</a> dell'istanza creata <i>prima di</i> continuare con il codice o le azioni per l'evento che ha chiamato la funzione.</p>
+  <p class="note"><span class="important">IMPORTANTE</span> Esiste una profondità minima e massima dei livelli compresa tra -16000 e 16000. Tutto ciò che viene posizionato su un livello al di fuori di questo intervallo <b>non verrà disegnato</b>, anche se tutti gli eventi continueranno a svolgersi normalmente.</p>
+  <h2>Struttura opzionale</h2>
+  <p>L'ultimo parametro, <span class="inline2">var_struct</span>, è opzionale e accetta un <span class="notranslate">struct</span> contenente variabili aggiuntive per la nuova istanza.</p>
+  <p>Le variabili di questo <span class="notranslate">struct</span> vengono applicate alla nuova istanza <em>prima dell'</em> esecuzione dell'evento Create, ma <em>dopo l'</em> impostazione delle <a href="../../../../The_Asset_Editors/Object_Properties/Object_Variables.htm">Definizioni di variabile</a>.</p>
+  <p>Ciò significa che i valori di <span class="notranslate">struct</span> sono leggibili nell'evento Create della nuova istanza. Vedere l'<strong>esempio 2</strong> in fondo.</p>
+  <p>I valori applicati alla nuova istanza tramite questo <span class="notranslate">struct</span> possono essere di qualsiasi tipo, comprese le variabili. <a href="../../../GML_Overview/Method_Variables.htm"><span class="notranslate">method</span></a> variabili. Anche le <a href="Instance_Variables/Instance_Variables.htm">variabili incorporate</a> possono essere modificate.</p>
+  <p class="note"><span class="note">NOTA</span> Le variabili di <span class="notranslate">struct</span> vengono &quot;copiate&quot; nella nuova istanza, il che significa che array, <span class="notranslate">structs</span> e altre risorse vengono copiate per riferimento e non duplicate.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">instance_create_layer(x, y, layer_id, obj);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>x</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x position the object will be created at</td>
+        <td><span class="notranslate">x</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Reale</a></span></td>
+        <td><span class="notranslate">The x position the object will be created at</span></td>
       </tr>
       <tr>
-        <td>y</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y position the object will be created at</td>
+        <td><span class="notranslate">y</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Reale</a></span></td>
+        <td><span class="notranslate">The y position the object will be created at</span></td>
       </tr>
       <tr>
-        <td>layer_id</td>
-        <td><span data-keyref="Type_ID_Layer"><a href="GameMaker_Language/GML_Reference/Asset_Management/Rooms/General_Layer_Functions/layer_get_id.htm" target="_blank">Layer ID</a></span> or <span data-keyref="Type_String"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The layer ID (or name) to assign the created instance to</td>
+        <td><span class="notranslate">layer_id</span></td>
+        <td><span data-keyref="Type_ID_Layer"><a href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/General_Layer_Functions/layer_get_id.htm" target="_blank">ID strato</a></span> o <span data-keyref="Type_String"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Stringa</a></span></td>
+        <td><span class="notranslate">The layer ID (or name) to assign the created instance to</span></td>
       </tr>
       <tr>
-        <td>obj</td>
-        <td><span data-keyref="Type_Asset_Object"><a href="The_Asset_Editors/Objects.htm" target="_blank">Object Asset</a></span></td>
-        <td>The object index of the object to create an instance of</td>
+        <td><span class="notranslate">obj</span></td>
+        <td><span data-keyref="Type_Asset_Object"><a href="../../../../../The_Asset_Editors/Objects.htm" target="_blank">Oggetto Attività</a></span></td>
+        <td><span class="notranslate">The object index of the object to create an instance of</span></td>
       </tr>
       <tr>
-        <td>var_struct</td>
-        <td><span data-keyref="Type_Struct"><a href="GameMaker_Language/GML_Overview/Structs.htm" target="_blank">Struct</a></span></td>
-        <td><span class="optional">OPTIONAL</span> A struct with variables to assign to the new instance</td>
+        <td><span class="notranslate">var_struct</span></td>
+        <td><span data-keyref="Type_Struct"><a href="../../../../../GameMaker_Language/GML_Overview/Structs.htm" target="_blank">Struttura</a></span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Una struct con le variabili da assegnare alla nuova istanza</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_ID_Instance"><a href="GameMaker_Language/GML_Reference/Asset_Management/Instances/Instance_Variables/id.htm" target="_blank">Instance ID</a></span></p>
-  <p> </p>
-  <h4>Example 1:</h4>
+  <p> </p>
+  <h4>Restituzione:</h4>
+  <p class="code"><span data-keyref="Type_ID_Instance"><a href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Instances/Instance_Variables/id.htm" target="_blank">Instance ID</a></span></p>
+  <p> </p>
+  <h4>Esempio 1:</h4>
   <p class="code">var inst = instance_create_layer(x, y, &quot;Instances&quot;, obj_bullet);<br />
     with (inst)<br />
     {<br />
         speed = other.shoot_speed;<br />
         direction = other.image_angle;<br />
     }</p>
-  <p>The above code creates a new instance of the object <span class="inline2">obj_bullet</span> in the &quot;Instances&quot; layer, and stores the instance ID in a variable. This variable is then used to assign <span class="inline">speed</span> and <span class="inline">direction</span> to the new instance.</p>
-  <p>This will first create the instance, run its Create event, and <em>then</em> assign values to its variables.</p>
-  <p>If you want to assign some variables <em>before</em> the Create event runs, see the example below.</p>
-  <p> </p>
-  <h4>Example 2:</h4>
+  <p>Il codice precedente crea una nuova istanza di <span class="notranslate">object</span> <span class="inline2">obj_bullet</span> nel livello &quot;Instances&quot; e memorizza l'ID dell'istanza in una variabile. Questa variabile viene poi utilizzata per assegnare <span class="inline">speed</span> e <span class="inline">direction</span> alla nuova istanza.</p>
+  <p>Questo creerà prima l'istanza, eseguirà l'evento Create e <em>quindi</em> assegnerà i valori alle sue variabili.</p>
+  <p>Se si desidera assegnare alcune variabili <em>prima dell'</em> esecuzione dell'evento Create, vedere l'esempio seguente.</p>
+  <p> </p>
+  <h4>Esempio 2:</h4>
   <p class="code">var inst = instance_create_layer(x, y, &quot;Instances&quot;, obj_bullet,<br />
     {<br />
         speed : shoot_speed,<br />
         direction : image_angle<br />
     });</p>
-  <p>The above code creates an instance of <span class="inline2">obj_bullet</span>, and passes in a struct as the last argument.</p>
-  <p>That struct has variables for the speed and direction. It pulls its values from the calling instance, without the need to use <span class="inline2">other</span>.</p>
-  <p>These variables are applied to the new instance before its Create event runs.</p>
-  <p>You&#39;re not limited to a struct literal, as you can also pass in a variable that stores an existing struct, or create a <a href="../../../GML_Overview/Language_Features/new.htm">new</a> struct from a <a href="../../../GML_Overview/Structs.htm#constr">constructor</a>.</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente crea un'istanza di <span class="inline2">obj_bullet</span> e passa un <span class="notranslate">struct</span> come ultimo parametro.</p>
+  <p>Questo <span class="notranslate">struct</span> ha variabili per la velocità e la direzione. Prende i valori dall'istanza chiamante, senza bisogno di usarne <span class="inline2">altre</span>.</p>
+  <p>Queste variabili vengono applicate alla nuova istanza prima dell'esecuzione dell'evento Create.</p>
+  <p>Non ci si limita a un letterale <span class="notranslate">struct</span>, perché si può anche passare una variabile che memorizza un <span class="notranslate">struct</span> esistente, o creare una struttura da . <a href="../../../GML_Overview/Language_Features/new.htm"><span class="notranslate">new</span></a> da un oggetto <a href="../../../GML_Overview/Structs.htm#constr"><span class="notranslate">constructor</span></a>.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instances.htm">Instances</a></div>
-        <div style="float:right">Next: <a href="instance_create_depth.htm">instance_create_depth</a></div>
+        <div style="float:left">Indietro: <a href="Instances.htm">Istanze</a></div>
+        <div style="float:right">Il prossimo: <a href="instance_create_depth.htm"><span class="notranslate">instance_create_depth</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 instance_create_layer

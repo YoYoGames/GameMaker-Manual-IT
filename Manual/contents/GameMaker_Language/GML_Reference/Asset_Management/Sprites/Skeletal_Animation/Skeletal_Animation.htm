@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Skeletal Animation</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Animazione scheletrica</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the different Skeletal Animation functions" />
   <meta name="rh-index-keywords" content="" />
@@ -14,23 +14,22 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Skeletal Animation Sprites</h1>
-  <p>The functions found in this section are <i>only</i> for use with sprites that have been imported from a skeletal animation file (specifically, the JSON files that <a href="http://es.esotericsoftware.com/"><b>Spine</b></a> exports) and can be used to get information about an animation asset in your game, as well as for setting certain properties within an animation. These functions can to be used along with the regular sprite functions and variables, permitting you to (for example) mix two skeleton animations using these special functions while setting the image scale using the normal sprite instance variables (for more information on the sprite instance variables see <a href="../Sprite_Instance_Variables/Sprite_Instance_Variables.htm">here</a>).</p>
-  <p class="note"><span data-conref="../../../../../assets/snippets/Tag_important.hts"> </span> Most of the skeletal sprite functions <strong>do not</strong> take a sprite or instance reference, as they assume the skeletal sprite is assigned to the current instance (via the IDE or by setting the <span class="inline2"><a data-xref="{title}" href="../Sprite_Instance_Variables/sprite_index.htm">sprite_index</a></span>). This means that running such functions under a different context (e.g. a global script, or in a constructor) will result in an error, as the current <span class="inline2"><a href="../../../../GML_Overview/Instance_Keywords.htm">self</a></span> will not have a skeletal sprite in such cases.</p>
-  <p class="note"><span class="note">NOTE</span> For further information on importing skeletal animation sprites made with Spine, please see the section <a href="../../../../../Settings/Texture_Information/Non-Bitmap_Sprites.htm">Importing Non-Bitmap Sprites</a>.</p>
-  <p>You can find out more about the functions for these kinds of sprites from the sections below:</p>
+  <h1>Animazione scheletrica Sprites</h1>
+  <p>Le funzioni che si trovano in questa sezione sono <i>solo</i> per l'uso con <span class="notranslate">sprites</span> che sono stati importati da un file di animazione skeletal (in particolare, i file JSON che <a href="http://es.esotericsoftware.com/"><b>Spine</b></a> esporta) e possono essere utilizzate per ottenere informazioni su un'animazione <span class="notranslate">asset</span> nel vostro gioco, così come per impostare alcune proprietà all'interno di un'animazione. Queste funzioni possono essere utilizzate insieme alle normali funzioni e variabili di <span class="notranslate">sprite</span>, permettendovi (per esempio) di mescolare due animazioni skeleton usando queste funzioni speciali mentre impostate la scala dell'immagine usando le normali variabili di istanza di <span class="notranslate">sprite</span> (per maggiori informazioni sulle variabili di istanza di <span class="notranslate">sprite</span> vedere <a href="../Sprite_Instance_Variables/Sprite_Instance_Variables.htm">qui</a>).</p>
+  <p class="note"><span class="note">NOTA</span> Per ulteriori informazioni sull'importazione dell'animazione scheletrica <span class="notranslate">sprites</span> fatta con <span class="notranslate">Spine</span>, si veda la sezione <a href="../../../../../Settings/Texture_Information/Non-Bitmap_Sprites.htm">Importare sprites non bitmap</a>.</p>
+  <p>Potete scoprire di più sulle funzioni di questi tipi di <span class="notranslate">sprites</span> nelle sezioni seguenti:</p>
   <ul class="colour">
-    <li><a href="Animation/Animation.htm"><label for="a">Animation</label></a></li>
-    <li><a href="Skins/Skins.htm"><label for="b">Skins</label></a></li>
-    <li><a href="Attachments/Attachments.htm"><label for="c">Attachments</label></a></li>
-    <li><a href="Bones/Bones.htm"><label for="d">Bones</label></a></li>
-    <li><a href="Slots/Slots.htm"><label for="f">Slots</label></a></li>
-    <li><a href="Drawing_And_Miscellaneous/Drawing_And_Miscellaneous.htm"><label for="e">Drawing and Miscellaneous</label></a></li>
+    <li><a href="Animation/Animation.htm"><label for="a">Animazione</label></a></li>
+    <li><a href="Skins/Skins.htm"><label for="b">Pelli</label></a></li>
+    <li><a href="Attachments/Attachments.htm"><label for="c">Allegati</label></a></li>
+    <li><a href="Bones/Bones.htm"><label for="d">Ossa</label></a></li>
+    <li><a href="Slots/Slots.htm"><label for="f">Slot</label></a></li>
+    <li><a href="Drawing_And_Miscellaneous/Drawing_And_Miscellaneous.htm"><label for="e">Disegno e Varie</label></a></li>
   </ul>
-  <p> </p>
+  <p> </p>
   <h2>Tint Black Support</h2>
-  <p>This feature allows the dark areas of Spine sprite slots to be tinted differently to the light areas (this is a Spine IDE feature, see the <b>Tint black</b> section <a href="http://esotericsoftware.com/spine-attachments" target="_blank">here</a> more details). Currently, in order to make use of this feature in <span data-keyref="GameMaker Name">GameMaker</span>, you are required to use a custom <a href="../../../../../The_Asset_Editors/Shaders.htm">shader</a> when drawing a Spine sprite that uses it. This shader contains a global uniform variable called &quot;<span class="inline">gm_SpineTintBlackColour</span>&quot; which the runner fills with the current tint-black colour, retrieved from the Spine data automatically. The shader required is shown below:</p>
-  <p>The Vertex Shader (this is the same as the default passthrough vertex shader)</p>
+  <p>Questa caratteristica permette alle aree scure degli slot <span class="notranslate">Spine</span> <span class="notranslate">sprite</span> di essere colorate diversamente dalle aree chiare (questa è una caratteristica di <span class="notranslate">Spine</span> <span class="notranslate">IDE</span>, vedi la sezione <b>Tint black</b> <a href="http://esotericsoftware.com/spine-attachments" target="_blank">qui</a> per maggiori dettagli). Attualmente, per fare uso di questa caratteristica in <span data-keyref="GameMaker Name">GameMaker</span>, è necessario utilizzare uno <a href="../../../../../The_Asset_Editors/Shaders.htm">shader</a> personalizzato quando si disegna un <span class="notranslate">Spine</span> <span class="notranslate">sprite</span> che la utilizza. Questo <span class="notranslate">shader</span> contiene una variabile globale uniforme chiamata &quot;<span class="inline">gm_SpineTintBlackColour</span>&quot; che il runner riempie con il colore nero tinta corrente, recuperato dai dati di <span class="notranslate">Spine</span> automaticamente. Il <span class="notranslate">shader</span> richiesto è mostrato qui sotto:</p>
+  <p>Il vertice <span class="notranslate">Shader</span> (questo è lo stesso del vertice passthrough di default <span class="notranslate">shader</span>)</p>
   <p class="code">attribute vec3 in_Position; // (x,y,z)<br />
     attribute vec4 in_Colour; // (r,g,b,a)<br />
     attribute vec2 in_TextureCoord; // (u,v)<br />
@@ -46,7 +45,7 @@
         v_vTexcoord = in_TextureCoord;<br />
     }
   </p>
-  <p>The Fragment Shader:</p>
+  <p>Il Fragment Shader:</p>
   <p class="code">varying vec2 v_vTexcoord;<br />
     varying vec4 v_vColour;<br />
     <br />
@@ -63,21 +62,21 @@
         gl_FragColor = outcol;<br />
     }
   </p>
-  <p>You would use this by first calling the shader, then drawing the sprite, then resetting the shader, something like this:</p>
+  <p>Lo usereste chiamando prima il <span class="notranslate">shader</span>, poi disegnando il <span class="notranslate">sprite</span>, poi resettando il <span class="notranslate">shader</span>, qualcosa del genere:</p>
   <p class="code">shader_set(shd_spine_tint_black);<br />
     draw_self();<br />
     shader_reset();</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Sprites.htm">Sprites</a></div>
-        <div style="float:right">Next: <a href="../Sprite_Information/Sprite_Information.htm"><label for="three">Sprite Information</label></a></div>
+        <div style="float:left">Indietro: <a href="../Sprites.htm">Sprites</a></div>
+        <div style="float:right">Prossimo: <a href="../Sprite_Information/Sprite_Information.htm"><label for="three">Informazioni sugli sprite</label></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Spine Sprites

@@ -6,7 +6,7 @@
   <title>audio_destroy_stream</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function audio_destroy_stream" />
   <meta name="rh-index-keywords" content="audio_destroy_stream" />
@@ -14,46 +14,44 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">audio_destroy_stream</span></h1>
-  <p>If you have previously created an audio stream from a file using the function <span class="inline2"><a data-xref="{title}" href="audio_create_stream.htm">audio_create_stream</a></span>
-    <font face="menlo, consolas, monospace"><span style="font-size: 17px;"> </span></font>and no longer need that sound, you can call this function to delete it from memory. Any further calls to the sound index after it has been destroyed will give an error.
-  </p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> This will free up the stream but on the target platform this may not show up in a memory manager. This is because <span data-keyref="GameMaker Name">GameMaker</span> pools memory resources to prevent memory allocation overhead, and so the memory will remain allocated until required for something else or re-used for a new stream.</p>
-  <p class="note"><b><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> </b>This functionality is not available for the HTML5 target platform.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">audio_destroy_stream</span>(filename);</p>
+  <h1>audio_destroy_stream</h1>
+  <p>Se avete precedentemente creato un flusso audio da un file usando la funzione <a href="audio_create_stream.htm"><span class="inline">audio_create_stream()</span></a> e non avete più bisogno di quel suono, potete chiamare questa funzione per cancellarlo dalla memoria. Qualsiasi ulteriore chiamata all'indice del suono dopo che è stato distrutto darà un errore. Va notato che questo libererà il flusso, ma sulla piattaforma di destinazione questo potrebbe non apparire in un gestore di memoria. Questo perché <span data-keyref="GameMaker Name">GameMaker</span> raggruppa le risorse di memoria per prevenire l'overhead di allocazione della memoria, e quindi la memoria rimarrà allocata fino a quando non sarà necessaria per qualcos'altro o riutilizzata per un nuovo flusso.</p>
+  <p class="note"><b>NOTA</b>: Questa funzionalità non è disponibile per la piattaforma di destinazione HTML5.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
+  <p class="code">audio_destroy_stream(filename);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>filename</td>
-        <td><span data-keyref="Type_String"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>Path to the audio file that was streamed.</td>
+        <td><span class="notranslate">filename</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">Path to the audio file that was streamed.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code"><span data-field="title" data-format="default">audio_destroy_stream</span>(snd);</p>
-  <p>The above code removes the sound indexed in the variable &quot;snd&quot; from memory.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p class="code">audio_destroy_stream(snd);</p>
+  <p>Il codice qui sopra rimuove dalla memoria il suono indicizzato nella variabile &quot;snd&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Audio.htm">Audio</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="audio_exists.htm">audio_exists</a></div>
+        <div style="float:left">Indietro: <a href="Audio.htm">Audio</a></div>
+        <div style="float:right">Il prossimo: <a href="audio_sound_set_track_position.htm"><span class="notranslate">audio_sound_set_track_position</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 audio_destroy_stream

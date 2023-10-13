@@ -6,7 +6,7 @@
   <title>skeleton_animation_get_event_frames</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function skeleton_animation_get_event_frames" />
   <meta name="rh-index-keywords" content="skeleton_animation_get_event_frames" />
@@ -16,35 +16,35 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>skeleton_animation_get_event_frames</h1>
-  <p>This function can be used to retrieve all the frames for the given event, in the given animation. You supply the skeleton animation name (as a string, as defined in the program used to make the animation, or as returned by using the function <span class="inline"><a href="skeleton_animation_get.htm">skeleton_animation_get()</a></span>) and an event name. The function returns an array with the frames for that event.</p>
-  <p>If the specified event name does not exist, the function will return an array with <strong>-1</strong> as its first (and only) element.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione può essere utilizzata per recuperare tutti i fotogrammi dell'evento dato, nell'animazione data. Si fornisce il nome dello scheletro dell'animazione (come <span class="notranslate">string</span>, come definito nel programma usato per creare l'animazione, o come restituito dalla funzione <span class="inline"><a href="skeleton_animation_get.htm">skeleton_animation_get()</a></span>) e il nome dell'evento. La funzione restituisce un array con i fotogrammi dell'evento.</p>
+  <p>Se il nome dell'evento specificato non esiste, la funzione restituirà un array con <strong>-1</strong> come primo (e unico) elemento.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">skeleton_animation_get_event_frames(anim_name, event_name);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>anim_name</td>
-        <td><span data-keyref="Type_String"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The animation name to get the frames of.</td>
+        <td><span class="notranslate">anim_name</span></td>
+        <td><span data-keyref="Type_String"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Stringa</a></span></td>
+        <td><span class="notranslate">The animation name to get the frames of.</span></td>
       </tr>
       <tr>
-        <td>event_name</td>
-        <td><span data-keyref="Type_String"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The event name to get the frames for.</td>
+        <td><span class="notranslate">event_name</span></td>
+        <td><span data-keyref="Type_String"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Stringa</a></span></td>
+        <td><span class="notranslate">The event name to get the frames for.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Restituzione:</h4>
   <p class="code"><span data-keyref="Type_Array"><a href="../../../../../../../GameMaker_Language/GML_Overview/Arrays.htm" target="_blank">Array</a></span> of <span data-keyref="Type_Real"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span>s</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var _frames = skeleton_animation_get_event_frames(skeleton_animation_get(), &quot;Footstep&quot;);<br />
     <br />
     if (_frames[0] != -1)<br />
@@ -62,18 +62,18 @@
         }<br />
     }
   </p>
-  <p>The above code gets the frames for the <span class="inline2">&quot;Footstep&quot;</span> event. If it returned an array with the valid frames, it loops through it, and checks if the current frame is equal to any of the frames in the array. In that case it plays the footstep sound effect and breaks (stops) the loop.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente ottiene i fotogrammi per l'evento <span class="inline2">&quot;Passo&quot;</span>. Se viene restituito un array con i fotogrammi validi, <span class="notranslate">loops</span> lo attraversa e controlla se il fotogramma corrente è uguale a uno qualsiasi dei fotogrammi dell'array. In tal caso, riproduce l'effetto sonoro del passo e interrompe <span class="notranslate">loop</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Animation.htm">Animation</a></div>
-        <div style="float:right">Next: <a href="skeleton_animation_is_looping.htm">skeleton_animation_is_looping</a></div>
+        <div style="float:left">Indietro: <a href="Animation.htm">Animazione</a></div>
+        <div style="float:right">Successiva: <a href="skeleton_animation_is_looping.htm">skeleton_animation_is_looping</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_animation_get_event_frames

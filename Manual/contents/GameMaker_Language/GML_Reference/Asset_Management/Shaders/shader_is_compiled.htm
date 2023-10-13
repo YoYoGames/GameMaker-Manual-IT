@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>shader_is_compiled</title>
+  <title>shader_è_compilato</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function shader_is_compiled" />
   <meta name="rh-index-keywords" content="shader_is_compiled" />
@@ -15,46 +15,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>shader_is_compiled</h1>
-  <p>This function will check a shader at run-time to make sure that it has been successfully compiled. If it has then the function returns <span class="inline">true</span> otherwise it returns <span class="inline">false</span>. This function should be used at the start of the game to make sure that the platform running your game has successfully compiled any shaders used (particularly on Windows where some computers may be using DX9 with Shader Level 2.0 and not a later version using shader level 3.0).</p>
-  <p>If your shader has <i>NOT</i> been compiled and you call <a href="shader_set.htm"><span class="inline">shader_set()</span></a> the game will crash, so it is worth while having some sort of check whenever you are using anything other than simple GLSL ES shaders.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>shader_è_compilato</h1>
+  <p>Questa funzione controllerà un <span class="notranslate">shader</span> a tempo di esecuzione per assicurarsi che sia stato compilato con successo. Se lo è, la funzione restituisce <span class="inline">true</span> altrimenti restituisce <span class="inline">false</span>. Questa funzione dovrebbe essere usata all'inizio del gioco per assicurarsi che la piattaforma che esegue il gioco abbia compilato con successo qualsiasi <span class="notranslate">shaders</span> usato (in particolare su <span class="notranslate">Windows</span> dove alcuni computer potrebbero usare DX9 con <span class="notranslate">Shader</span> livello 2.0 e non una versione successiva che usa <span class="notranslate">shader</span> livello 3.0).</p>
+  <p>Se il vostro <span class="notranslate">shader</span> <i>NON</i> è stato compilato e chiamate <a href="shader_set.htm"><span class="inline">shader_set()</span></a> il gioco andrà in crash, quindi vale la pena avere una sorta di controllo ogni volta che si utilizza qualcosa di diverso dalla semplice GLSL ES <span class="notranslate">shaders</span>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">shader_is_compiled(shader);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>shader</td><td><span data-keyref="Type_Asset_Shader"></span></td>
-        <td>The shader to check.</td>
+        <td><span class="notranslate">shader</span></td><td><span data-keyref="Type_Asset_Shader"></span></td>
+        <td><span class="notranslate">The shader to check.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Bool">Boolean</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">global.GFX = false;<br />
     if (shader_is_compiled(sh_glass) &amp;&amp; shader_is_compiled(sh_warp))<br />
     {<br />
         global.GFX = true;<br />
     }</p>
-  <p>The above code will set a global variable to <span class="inline">false</span>, and then if both the shaders being checked have compiled correctly, it will be set to <span class="inline">true</span>.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra imposterà una variabile globale su <span class="inline">false</span>, e poi se entrambi i <span class="notranslate">shaders</span> controllati sono stati compilati correttamente, sarà impostata su <span class="inline">true</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Shaders.htm">Shaders</a></div>
-        <div style="float:right">Next: <a href="shaders_are_supported.htm">shaders_are_supported</a></div>
+        <div style="float:left">Indietro: <a href="Shaders.htm">Shaders</a></div>
+        <div style="float:right">Il prossimo: <a href="shaders_are_supported.htm"><span class="notranslate">shaders_are_supported</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 shader_is_compiled

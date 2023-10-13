@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>animcurve_point_new</title>
+  <title>punto animato nuovo</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function animcurve_point_new" />
   <meta name="rh-index-keywords" content="animcurve_point_new" />
@@ -15,9 +15,8 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>animcurve_point_new</h1>
-  <p>This function creates a new points <a href="../../../GML_Overview/Structs.htm">struct</a> (posx, value) to be added to an animation curve channel.</p>
-  <p>When created a points struct is empty and you need to set the following variables to generate the point data:</p>
+  <h1>punto animato nuovo</h1>
+  <p>Questa funzione può essere usata per creare una nuova <a href="../../../GML_Overview/Structs.htm">struct</a> di punti da aggiungere a un canale <span class="notranslate">animation curve</span>. Quando viene creato un punto <span class="notranslate">struct</span> è vuoto ed è necessario impostare le seguenti variabili per generare i dati dei punti:</p>
   <table>
     <colgroup>
       <col />
@@ -26,34 +25,34 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="3"><span data-keyref="Type_Struct_AnimCurve_Point"><a href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Animation_Curves/animcurve_point_new.htm" target="_blank">Animation Curve Point Struct</a></span></th>
+        <th colspan="3"><span data-keyref="Type_Struct_AnimCurve_Point"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Animation_Curves/animcurve_point_new.htm">Animazione Curve Point Struct</a></span></th>
       </tr>
       <tr>
-        <th>Variable Name</th>
-        <th>Data Type</th>
-        <th>Description</th>
+        <th>Nome della variabile</th>
+        <th>Tipo di dati</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
         <td><span class="inline">posx</span></td>
-        <td>real</td>
-        <td>The position in time (normalised from 0 to 1) of the point.</td>
+        <td>vero</td>
+        <td>La posizione nel tempo (normalizzata da 0 a 1) del punto.</td>
       </tr>
       <tr>
         <td><span class="inline">value</span></td>
-        <td>real</td>
-        <td>The value of the point.</td>
+        <td>vero</td>
+        <td>Il valore del punto.</td>
       </tr>
     </tbody>
   </table>
-  <p>Each point struct that you create should be added to an <a href="../../../GML_Overview/Arrays.htm">array</a> and this is the array that is added to the animation curve channel struct &quot;channels&quot; variable (as shown in the example below).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Ogni punto <span class="notranslate">struct</span> che si crea dovrebbe essere aggiunto a un <a href="../../../GML_Overview/Arrays.htm">array</a> e questo è l'array che viene aggiunto al canale <span class="notranslate">animation curve</span> <span class="notranslate">struct</span> variabile &quot;channels&quot; (come mostrato nell'esempio qui sotto).</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">animcurve_point_new();</p>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Struct_AnimCurve_Point"><a href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Animation_Curves/animcurve_point_new.htm" target="_blank">Animation Curve Point Struct</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Struct_AnimCurve_Point"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Animation_Curves/animcurve_point_new.htm">Animation Curve Point Struct</a></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">my_curve = animcurve_create();<br />
     my_curve.name = &quot;My_Curve&quot;;<br />
     var _channels = array_create(1);<br />
@@ -73,18 +72,18 @@
     _points[2].value = 0;<br />
     _channels[0].points = _points;<br />
     my_curve.channels = _channels;</p>
-  <p>The above code creates a new animation curve struct and stores it in the variable &quot;my_curve&quot;. This struct is then populated with a name and a channel array. The channel array contains a single channel with three points.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente crea un nuovo <span class="notranslate">animation curve</span> <span class="notranslate">struct</span> e lo memorizza nella variabile &quot;my_curve&quot;. Questo <span class="notranslate">struct</span> è poi popolato con un nome e un array di canali. L'array di canali contiene un singolo canale con tre punti.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Animation_Curves.htm">Animation Curves</a></div>
-        <div style="float:right">Next: <a href="animcurve_destroy.htm">animcurve_destroy</a></div>
+        <div style="float:left">Indietro: <a href="Animation_Curves.htm">Curve di animazione</a></div>
+        <div style="float:right">Il prossimo: <a href="animcurve_destroy.htm"><span class="notranslate">animcurve_destroy</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 animcurve_point_new

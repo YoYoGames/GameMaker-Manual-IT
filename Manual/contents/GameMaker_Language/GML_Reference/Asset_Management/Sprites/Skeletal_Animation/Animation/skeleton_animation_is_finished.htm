@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>skeleton_animation_is_finished</title>
+  <title>scheletro_animazione_è_finito</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Bart Teunis" />
   <meta name="topic-comment" content="Page explaining the function skeleton_animation_is_finished" />
   <meta name="rh-index-keywords" content="skeleton_animation_is_finished" />
@@ -16,48 +16,47 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">skeleton_animation_is_finished</span></h1>
-  <p>With this function you can check if the current skeletal animation has finished playing on the given track.</p>
-  <p class="note"><span data-conref="../../../../../../assets/snippets/Tag_note.hts"> </span> This function will always return <span class="inline2">false</span> if the animation is set to loop (<span class="inline3_func"><a data-xref="{title}" href="skeleton_animation_is_looping.htm">skeleton_animation_is_looping</a></span>), as an animation cannot have finished if it is still looping.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1><span data-field="title" data-format="default">scheletro_animazione_è_finito</span></h1>
+  <p>Con questa funzione è possibile verificare se l'animazione scheletrica corrente non in loop ha terminato la riproduzione sulla traccia indicata.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code"><span data-field="title" data-format="default">skeleton_animation_is_finished</span>(track);</p>
   <div>
     <table>
       <tbody>
         <tr>
-          <th style="">Argument</th>
-          <th>Data Type</th>
-          <th style="">Description</th>
+          <th style="">Argomento</th>
+          <th>Tipo di dati</th>
+          <th style="">Descrizione</th>
         </tr>
         <tr>
-          <td style=""><b>track</b></td>
-          <td><span data-keyref="Type_Real"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-          <td style="">The index of the animation track</td>
+          <td style=""><b>traccia</b></td>
+          <td><span data-keyref="Type_Real"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Reale</a></span></td>
+          <td style="">L'indice della traccia di animazione</td>
         </tr>
       </tbody>
     </table>
   </div>
-  <h4>Returns:</h4>
+  <h4>Restituzione:</h4>
   <p class="code"><span data-keyref="Type_Bool"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var _finished = <span data-field="title" data-format="default">skeleton_animation_is_finished</span>(1);<br />
     if _finished<br />
     {<br />
         show_debug_message(&quot;The animation has finished playing&quot;);<br />
     }</p>
-  <p>The above code first checks if the animation on track 1 has finished playing and stores the result in a local variable <span class="inline2">_finished</span>. It then shows a debug message in case the animation did finish playing.</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controlla innanzitutto se l'animazione sulla traccia 1 ha terminato la riproduzione e memorizza il risultato in una variabile locale <span class="inline">_finished</span>. Poi mostra un messaggio di debug nel caso in cui l'animazione abbia terminato la riproduzione.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Animation.htm">Animation</a></div>
-        <div style="float:right">Next: <a href="../Skins/skeleton_skin_get.htm">skeleton_skin_get</a></div>
+        <div style="float:left">Indietro: <a href="Animation.htm">Animazione</a></div>
+        <div style="float:right">Il prossimo: <a href="../Skins/skeleton_skin_get.htm"><span class="notranslate">skeleton_skin_get</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_animation_is_finished

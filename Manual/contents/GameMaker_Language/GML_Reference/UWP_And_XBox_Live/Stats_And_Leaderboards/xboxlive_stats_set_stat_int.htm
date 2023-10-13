@@ -6,7 +6,7 @@
   <title>xboxlive_stats_set_stat_int</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for xboxlive_stats_set_stat_int" />
   <meta name="rh-index-keywords" content="xboxlive_stats_set_stat_int" />
@@ -15,52 +15,52 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>xboxlive_stats_set_stat_int</h1>
-  <p>This function can be used to set the value of a stat for the given user ID. You supply the user ID as returned by (for example) the function <a href="../Users_And_Accounts/xboxlive_get_user.htm"><span class="inline">xboxlive_get_user()</span></a>, then the stat string
-    to set (<b>if the stat string does not already exist then a new stat will be created and set to the given value</b>) and a value (an integer) to set the stat to. Note that the stat name must be alphanumeric only, with no symbols or spaces.</p>
-  <p>When setting the stat value, any previous value will be overridden, therefore it is up to you to determine if the stat value should be updated or not (ie. check that the high score is actually the highest) by comparing to the current stat value with
-    the new one before setting it.</p>
-  <p>The function will will return -1 if there was an error or the user ID is invalid, or any other value if the function was successfully called.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione può essere usata per impostare il valore di una stat per l'ID utente dato. Si fornisce l'ID utente come restituito (per esempio) dalla funzione <a href="../Users_And_Accounts/xboxlive_get_user.htm"><span class="inline">xboxlive_get_user()</span></a>poi la stringa di stat
+    da impostare<b>(se la stat <span class="notranslate">string</span> non esiste già, verrà creata una nuova stat e impostata al valore dato</b>) e un valore (un intero) a cui impostare la stat. Si noti che il nome della stat deve essere solo alfanumerico, senza simboli o spazi.</p>
+  <p>Quando si imposta il valore della statistica, qualsiasi valore precedente sarà sovrascritto, quindi sta a voi determinare se il valore della statistica deve essere aggiornato o meno (cioè controllare che il punteggio più alto sia effettivamente il più alto) confrontando il valore attuale della statistica con
+    quello nuovo prima di impostarlo.</p>
+  <p>La funzione restituirà -1 se c'è stato un errore o l'ID utente non è valido, o qualsiasi altro valore se la funzione è stata chiamata con successo.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">xboxlive_stats_set_stat_int(user_id, stat, value);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>user_id</td><td><span data-keyref="Type_ID_Xbox_User"></span></td>
-        <td>The user ID pointer to set the stat for</td>
+        <td><span class="notranslate">user_id</span></td><td><span data-keyref="Type_ID_Xbox_User"></span></td>
+        <td><span class="notranslate">The user ID pointer to set the stat for</span></td>
      </tr>
       <tr>
-        <td>stat</td><td><span data-keyref="Type_String"></span></td>
-        <td>The statistic to set (a string)</td>
+        <td><span class="notranslate">stat</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The statistic to set (a string)</span></td>
      </tr>
       <tr>
-        <td>value</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The value to set the stat to (an integer)</td>
+        <td><span class="notranslate">value</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The value to set the stat to (an integer)</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Real"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var _val = xboxlive_stats_get_stat(p_user_id, &quot;GamesPlayed&quot;);<br/> xboxlive_stats_set_stat_int(p_user_id, &quot;GamesPlayed&quot;, ++_val);</p>
-  <p>The above code retrieves the value for the stat &quot;GamesPlayed&quot;, then sets the same stat to that value plus 1.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra recupera il valore della statistica &quot;GamesPlayed&quot;, poi imposta la stessa statistica a quel valore più 1.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Stats_And_Leaderboards.htm">Stats And Leaderboards</a></div>
-        <div style="float:right">Next: <a href="xboxlive_stats_set_stat_string.htm">xboxlive_stats_set_stat_string</a></div>
+        <div style="float:left">Indietro: <a href="Stats_And_Leaderboards.htm">Statistiche e classifiche</a></div>
+        <div style="float:right">Il prossimo: <a href="xboxlive_stats_set_stat_string.htm"><span class="notranslate">xboxlive_stats_set_stat_string</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 xboxlive_stats_set_stat_int

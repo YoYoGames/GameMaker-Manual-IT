@@ -4,10 +4,10 @@
 <head>
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>point_distance</title>
+  <title>distanza_punto</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for point_distance" />
   <meta name="rh-index-keywords" content="point_distance" />
@@ -16,41 +16,41 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>point_distance</h1>
-  <p>This function returns the length of a vector formed by the specified components [x1,y1] and [x2,y2]. For example, in the image below if we want to get the distance between the player ship position and the enemy position so that we can calculate if the enemy is close enough to shoot at then we would use this function (the exact code is in the example below the image):</p>
+  <h1>distanza_punto</h1>
+  <p>Questa funzione restituisce la lunghezza di un vettore formato dalle componenti specificate [x1,y1] e [x2,y2]. Per esempio, nell'immagine qui sotto, se vogliamo ottenere la distanza tra la posizione della nave del giocatore e la posizione del nemico in modo da poter calcolare se il nemico è abbastanza vicino per sparargli, allora useremo questa funzione (il codice esatto è nell'esempio sotto l'immagine):</p>
   <p><img alt="Point distance example" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Maths/point_distance.png" /></p>
-  <p> </p>
-  <h4><b>Syntax:</b></h4>
+  <p> </p>
+  <h4><b>Sintassi:</b></h4>
   <p class="code">point_distance(x1, y1, x2, y2);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>x1</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The x coordinate of the first component of the vector</td>
+        <td><span class="notranslate">x1</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x coordinate of the first component of the vector</span></td>
      </tr>
       <tr>
-        <td>y1</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The y coordinate of the first component of the vector</td>
+        <td><span class="notranslate">y1</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y coordinate of the first component of the vector</span></td>
      </tr>
       <tr>
-        <td>x2</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The x coordinate of the second component of the vector</td>
+        <td><span class="notranslate">x2</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x coordinate of the second component of the vector</span></td>
      </tr>
       <tr>
-        <td>y2</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The y coordinate of the second component of the vector</td>
+        <td><span class="notranslate">y2</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y coordinate of the second component of the vector</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Real"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var ex, ey;<br />
     ex = instance_nearest(x, y, enemy).x;<br />
     ey = instance_nearest(x, y, enemy).y;<br />
@@ -58,18 +58,18 @@
     {<br />
         instance_create_layer(x, y, &quot;Bullets&quot;, obj_Missile)<br />
     }</p>
-  <p>The above code will get the x and y coordinates of the nearest enemy and then use them to check the distance (length) of the vector formed by them and the player coordinates. If the value is less than 200, the player object will create an instance of &quot;obj_Missile&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra otterrà le coordinate x e y del nemico più vicino e poi le userà per controllare la distanza (lunghezza) del vettore formato da esse e le coordinate del giocatore. Se il valore è inferiore a 200, il giocatore <span class="notranslate">object</span> creerà un'istanza di &quot;obj_Missile&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Angles_And_Distance.htm">Angles And Distance</a></div>
-        <div style="float:right">Next: <a href="point_distance_3d.htm">point_distance_3d</a></div>
+        <div style="float:left">Indietro: <a href="Angles_And_Distance.htm">Angoli e distanze</a></div>
+        <div style="float:right">Il prossimo: <a href="point_distance_3d.htm"><span class="notranslate">point_distance_3d</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 point_distance

@@ -1,58 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>median</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>mediana</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for median" />
   <meta name="rh-index-keywords" content="median" />
   <meta name="search-keywords" content="median" />
   <meta name="is_pure" content="true" />
 </head>
+
 <body>
+
+
+
+
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>median</h1>
-  <p>This function returns the median of the input values, that is, the middle value. When the number of arguments is even, the larger of the two middle values is returned and the function can have as many arguments as required (note that more arguments will mean that the function will be slower to parse) which must all be real values. This means that, for example, <span class="inline">median(43, 12, 25, 19, 6)</span> would return 19 as it is the middle value between all the rest.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>mediana</h1>
+  <p>Questa funzione restituisce la mediana dei valori di input, cioè il valore medio. Quando il numero di argomenti è pari, viene restituito il più piccolo dei due valori mediani e la funzione può avere tanti argomenti quanti sono necessari (si noti che più argomenti
+    significa che la funzione sarà più lenta da analizzare) che devono essere tutti valori reali. Questo significa che, per esempio, <span class="inline">median(43, 12, 25, 19, 6)</span> restituirebbe 19 perché è il valore medio tra tutti gli altri.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">median(val1, val2, ... max_val);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
+     </tr>
       <tr>
-        <td>val0 ... max_val</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The values to compare.</td>
-      </tr>
+        <td><span class="notranslate">val0 ... max_val</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The values to compare.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">x = median(0, x, room_width);<br />
-    y = median(0, y, room_height);</p>
-  <p>This will stop the player from exiting any side of the room, by using median as a clamp. If the player, for instance, moves to the left of the room boundary, its x will be smaller than 0. This will mean the middle number of the first of the medians will be 0, so the player will be jumped to (0,y).</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Real"></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p class="code">x = median( 0, x, room_width );<br/> y = median( 0, y, room_height );</p>
+  <p>Questo impedirà al giocatore di uscire da qualsiasi lato di <span class="notranslate">room</span>, usando la mediana come morsetto. Se il giocatore, per esempio, si muove a sinistra del confine di <span class="notranslate">room</span>, la sua x sarà più piccola di 0. Questo significa che il numero medio della prima delle mediane
+    sarà 0, quindi il giocatore sarà saltato a (0,y).</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Number_Functions.htm">Number Functions</a></div>
-        <div style="float:right">Next: <a href="min.htm">min</a></div>
+        <div style="float:left">Indietro: <a href="Number_Functions.htm">Funzioni di numero</a></div>
+        <div style="float:right">Il prossimo: <a href="min.htm"><span class="notranslate">min</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 median
@@ -60,5 +64,5 @@ median
   <!-- TAGS
 median
 -->
-</body>
-</html>
+
+</body></html>

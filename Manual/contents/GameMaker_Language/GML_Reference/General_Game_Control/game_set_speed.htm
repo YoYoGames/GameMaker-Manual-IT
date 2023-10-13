@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>game_set_speed</title>
+  <title>imposta_gioco_velocità</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="This page outlines the function game_set_speed" />
   <meta name="rh-index-keywords" content="game_set_speed,gamespeed_fps,gamespeed_microseconds" />
@@ -14,55 +14,55 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>game_set_speed</h1>
-  <p>This function can be used to set the game speed. You can set this in one of two ways - as either game frames per second (FPS) or as microseconds per game frame (MPF) - using one of the following two constants:</p>
+  <h1>imposta_gioco_velocità</h1>
+  <p>Questa funzione può essere usata per impostare la velocità di gioco. Potete impostarla in uno dei due modi - come fotogrammi di gioco al secondo (FPS) o come microsecondi per fotogramma di gioco (MPF) - usando una delle seguenti due costanti:</p>
   <table>
     <tbody>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td><span class="inline">gamespeed_fps</span></td>
-        <td>Sets the game speed using frames per second.</td>
+        <td><span class="notranslate"><span class="inline">gamespeed_fps</span></td>
+        <td>Imposta la velocità di gioco usando i fotogrammi al secondo.</td>
       </tr>
       <tr>
-        <td><span class="inline">gamespeed_microseconds</span></td>
-        <td>Sets the game speed using microseconds per frame.</td>
+        <td><span class="notranslate"><span class="inline">gamespeed_microseconds</span></td>
+        <td>Imposta la velocità di gioco usando microsecondi per fotogramma.</td>
       </tr>
     </tbody>
   </table>
-  <p>So, for example, a game speed of 30 frames per second would be 33333 microseconds per game game frame, which would then be expressed by this function as either:</p>
+  <p>Così, per esempio, una velocità di gioco di 30 fotogrammi al secondo sarebbe 33333 microsecondi per fotogramma di gioco, che sarebbe poi espresso da questa funzione come:</p>
   <p class="code">game_set_speed(30, gamespeed_fps);</p>
-  <p>or:</p>
+  <p>oppure:</p>
   <p class="code">game_set_speed(33333, gamespeed_microseconds);</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">game_set_speed(speed, type);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>speed</td>
+        <td><span class="notranslate">speed</span></td>
         <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The new game speed (as either FPS or MPF).</td>
+        <td><span class="notranslate">The new game speed (as either FPS or MPF).</span></td>
       </tr>
       <tr>
-        <td>type</td>
-        <td><span data-keyref="Type_Constant_GameSpeed">Game Speed Constant</span></td>
-        <td>The type of method used to set the game speed (see the constants above).</td>
+        <td><span class="notranslate">type</span></td>
+        <td><span data-keyref="Type_Constant_GameSpeed">Velocità di gioco costante</span></td>
+        <td><span class="notranslate">The type of method used to set the game speed (see the constants above).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if os_browser == browser_not_a_browser<br />
     {<br />
         game_set_speed(60, gamespeed_fps);<br />
@@ -71,18 +71,18 @@
     {<br />
         game_set_speed(30, gamespeed_fps);<br />
     }</p>
-  <p>The above code checks to see if the game is running in a browser and sets the game speed accordingly as an FPS value.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controlla se il gioco è in esecuzione in un browser e imposta la velocità di gioco di conseguenza come valore FPS.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="General_Game_Control.htm">General Game Control</a></div>
-        <div style="float:right">Next: <a href="highscore_add.htm">highscore_add</a></div>
+        <div style="float:left">Indietro: <a href="General_Game_Control.htm">Controllo generale del gioco</a></div>
+        <div style="float:right">Il prossimo: <a href="highscore_add.htm"><span class="notranslate">highscore_add</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 game_set_speed

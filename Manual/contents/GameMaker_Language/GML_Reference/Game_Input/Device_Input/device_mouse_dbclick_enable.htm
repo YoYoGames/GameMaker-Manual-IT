@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>device_mouse_dbclick_enable</title>
+  <title>dispositivo_mouse_dbclick_enable</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for device_mouse_dbclick_enable" />
   <meta name="rh-index-keywords" content="device_mouse_dbclick_enable" />
@@ -14,47 +14,47 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>device_mouse_dbclick_enable</h1>
-  <p>This function can be used to set the device to detect a double tap of the <span class="inline">mb_left</span> (left mouse button) as an <span class="inline">mb_right</span> (right mouse button) input.</p>
-  <p>By default this is set to <span class="inline">true</span>, meaning that every time the user taps the device screen twice quickly and consecutively, the return value is the same as if the right mouse button had been clicked. When this is on, the first tap will be detected as <span class="inline">mb_left</span>, and the second as <span class="inline">mb_right</span>, so make sure that any code you use takes this into account.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>dispositivo_mouse_dbclick_enable</h1>
+  <p>Questa funzione può essere usata per impostare il dispositivo per rilevare un doppio tocco di <span class="inline">mb_left</span> (pulsante sinistro del mouse) come un input <span class="inline">mb_right</span> (pulsante destro del mouse).</p>
+  <p>Per impostazione predefinita questo è impostato su <span class="inline">true</span>, il che significa che ogni volta che l'utente tocca lo schermo del dispositivo due volte velocemente e consecutivamente, il valore di ritorno è lo stesso come se il tasto destro del mouse fosse stato cliccato. Quando questo è attivo, il primo tocco sarà rilevato come <span class="inline">mb_left</span>, e il secondo come <span class="inline">mb_right</span>, quindi assicuratevi che ogni codice che usate ne tenga conto.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">device_mouse_dbclick_enable(bool);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>bool</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td>Set double-click detection on (<span class="inline">true</span>) or off (<span class="inline">false</span>).</td>
+        <td><span class="notranslate">bool</span></td>
+        <td><span data-keyref="Type_Bool">Booleano</span></td>
+        <td><span class="notranslate">Set double-click detection on (<span class="inline">true</span>) o off (<span class="inline">false</span>).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Bool">Boolean</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if os_type == os_windows || os_type == os_mac<br />
     {<br />
         device_mouse_dbclick_enable(false);<br />
     }</p>
-  <p>The above code checks to see if the device running the game is a Windows PC or a Mac and if it is either of them, it disables the double tap function.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra controlla se il dispositivo che esegue il gioco è un PC <span class="notranslate">Windows</span> o un Mac e se è uno dei due, disabilita la funzione del doppio tocco.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Device_Input.htm">Device Input</a></div>
-        <div style="float:right">Next: <a href="device_mouse_x.htm">device_mouse_x</a></div>
+        <div style="float:left">Indietro: <a href="Device_Input.htm">Ingresso dispositivo</a></div>
+        <div style="float:right">Il prossimo: <a href="device_mouse_x.htm"><span class="notranslate">device_mouse_x</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 device_mouse_dbclick_enable

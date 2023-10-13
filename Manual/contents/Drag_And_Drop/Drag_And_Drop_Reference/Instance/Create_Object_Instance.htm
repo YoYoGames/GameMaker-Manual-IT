@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Create Object Instance</title>
+  <title>Creare l'istanza dell'oggetto</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Create Object Instance acton" />
   <meta name="rh-index-keywords" content="GML Visual Action - Create Object Instance" />
@@ -14,61 +14,61 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Create Object INstance Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/i_Instance_Create.png" /> Create Object Instance</h1>
-  <p>With this action you can create an instance of any object from the Asset Browser. You give the name of the object and an x/y position within the room where it is to be created as well as the name of the layer to create the instance on (it must be an
-    <b>Instance Layer</b>). You can tick the &quot;relative&quot; flags to position the instance relative to the instance running the action code blocks. Whenever you create an instance in the game, it is given a unique ID value with which you can then
-    identify the instance in further actions, therefore this action permits you to define a &quot;target&quot; variable to hold this ID value (as shown in the example below). Note that the target can be flagged as a temporary (local) variable, which will
-    be created for the action and can be used in all subsequent actions.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Create Object Instance Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/a_Instance_Create.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Creare <span class="notranslate">Object</span> Istanza</h1>
+  <p>Con questa azione si può creare un'istanza di qualsiasi <span class="notranslate">object</span> dal Browser di <span class="notranslate">Asset</span>. Si dà il nome del <span class="notranslate">object</span> e una posizione x/y all'interno del <span class="notranslate">room</span> dove deve essere creato, così come il nome del livello su cui creare l'istanza (deve essere un
+   <b>Instance Layer</b>). Puoi spuntare le bandiere &quot;relative&quot; per posizionare l'istanza rispetto all'istanza che esegue i blocchi di codice dell'azione. Ogni volta che crei un'istanza nel gioco, le viene assegnato un valore ID unico con il quale puoi poi
+    identificare l'istanza in ulteriori azioni, quindi questa azione vi permette di definire una variabile &quot;target&quot; per contenere questo valore ID (come mostrato nell'esempio qui sotto). Si noti che il target può essere contrassegnato come una variabile temporanea (locale), che sarà
+    creata per l'azione e può essere usata in tutte le azioni successive.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="Create Object INstance Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/i_Instance_Create.png" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Object</td>
-        <td>The name of the object to create an instance of.</td>
+        <td><span class="notranslate">Object</span></td>
+        <td>Il nome del <span class="notranslate">object</span> di cui creare un'istanza.</td>
       </tr>
       <tr>
-        <td>x</td>
-        <td>The x position in the room to create the instance (can be relative to the calling instance).</td>
+        <td><span class="notranslate">x</span></td>
+        <td>La posizione x in <span class="notranslate">room</span> per creare l'istanza (può essere relativa all'istanza chiamante).</td>
       </tr>
       <tr>
-        <td>y</td>
-        <td>The y position in the room to create the instance (can be relative to the calling instance).</td>
+        <td><span class="notranslate">y</span></td>
+        <td>La posizione y in <span class="notranslate">room</span> per creare l'istanza (può essere relativa all'istanza chiamante).</td>
       </tr>
       <tr>
-        <td>Layer</td>
-        <td>The name (a string) of the instance layer to create the instance on.</td>
+        <td><span class="notranslate">Layer</span></td>
+        <td>Il nome (un <span class="notranslate">string</span>) del livello di istanza su cui creare l'istanza.</td>
       </tr>
       <tr>
-        <td>Target</td>
-        <td>The variable to target for the return value.</td>
+        <td><span class="notranslate">Target</span></td>
+        <td>La variabile a cui puntare per il valore di ritorno.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Create Object Instance Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Instance/e_Instance_Create.png" />The above action block code creates a new instance and stores its unique ID value in a
-    temporary variable. This variable is then used in the <a href="../Common/Apply_To...htm">Applies To...</a> action to set some properties of the instance created.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione di cui sopra crea una nuova istanza e memorizza il suo valore ID unico in una
+    variabile temporanea. Questa variabile viene poi utilizzata nell'azione <a href="../Common/Apply_To...htm">Applies To</a>... per impostare alcune proprietà dell'istanza creata.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instance_Actions_Library.htm">Instance Actions</a></div>
-        <div style="float:right">Next: <a href="Destroy_Object_Instance.htm">Destroy Object Instance</a></div>
+        <div style="float:left">Indietro: <a href="Instance_Actions_Library.htm">Azioni dell'istanza</a></div>
+        <div style="float:right">Avanti: <a href="Destroy_Object_Instance.htm">Distruggere <span class="notranslate">Object</span> Istanza</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
-Action - Create Object Instance
+Action - Create <span class="notranslate">Object</span> Instance
 -->
   <!-- TAGS
 action_create_instance

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>draw_enable_drawevent</title>
+  <title>disegna_abilita_dravviamento</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function draw_enable_drawevent" />
   <meta name="rh-index-keywords" content="draw_enable_drawevent" />
@@ -14,29 +14,29 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_enable_drawevent</h1>
-  <p>With this function you can choose to enable (<span class="inline">true</span>) or disable (<span class="inline">false</span>) the draw event for <b>all instances in the game</b>, thus giving you control over how and when things are drawn, which is useful if you wish to implement a &quot;frame skip&quot; technique. Note that this doesn&#39;t just prevent instances drawing to the screen, it suppresses the draw event completely meaning that care should be taken since any game logic that is present in that event will not be run either.</p>
-  <p>One important thing to understand about this function is that if you call it right at the start of the game, before the initial frame is rendered (i.e.: the Create Event of the first object in the first room of the game), then the game window <b>will not be rendered</b>. This could be useful for multiplayer projects that require a dedicated server which doesn&#39;t need to render anything, however keep in mind that this does <strong>not</strong> make it headless as GameMaker does not support that -- so you will not be able to run it on a server that does not have a graphical interface.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>disegna_abilita_dravviamento</h1>
+  <p>Con questa funzione potete scegliere di abilitare (<span class="inline">true</span>) o disabilitare (<span class="inline">false</span>) l'evento draw per <b>tutte le istanze del gioco</b>, dandovi così il controllo su come e quando le cose vengono disegnate, il che è utile se volete implementare una tecnica di &quot;salto di frame&quot;. Notate che questo non solo impedisce alle istanze di disegnare sullo schermo, ma sopprime completamente l'evento draw, il che significa che bisogna fare attenzione perché qualsiasi logica di gioco che è presente in quell'evento non sarà nemmeno eseguita.</p>
+  <p>Una cosa importante da capire su questa funzione è che se la chiamate proprio all'inizio del gioco, prima che il frame iniziale venga renderizzato (cioè: l'evento Create del primo <span class="notranslate">object</span> nel primo <span class="notranslate">room</span> del gioco), allora la finestra di gioco <b>non verrà renderizzata</b>. Questo potrebbe essere utile per progetti multiplayer che richiedono un <span class="notranslate">server</span> dedicato che non ha bisogno di renderizzare nulla, tuttavia tenete a mente che questo <strong>non</strong> lo rende headless in quanto <span class="notranslate">GameMaker</span> non lo supporta -- quindi non sarete in grado di eseguirlo su un <span class="notranslate">server</span> che non ha un'interfaccia grafica.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">draw_enable_drawevent(enable);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>Enable</td><td><span data-keyref="Type_Bool"></span></td>
-        <td>Set to <span class="inline">true</span> or <span class="inline">false</span>.</td>
+        <td><span class="notranslate">Enable</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">Set to <span class="inline">true</span> o <span class="inline">false</span>.</td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">frame_skip ++;<br />
     if (frame_skip mod 5) == 0<br />
     {<br />
@@ -46,18 +46,18 @@
     {<br />
         draw_enable_drawevent(false);<br />
     }</p>
-  <p>The above code checks a variable and if it returns <span class="inline">true</span>, it enables the draw event, otherwise the draw event is disabled.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controlla una variabile e se ritorna <span class="inline">true</span>, abilita l'evento draw, altrimenti l'evento draw è disabilitato.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Drawing.htm">Drawing</a></div>
-        <div style="float:right">Next: <a href="draw_flush.htm">draw_flush</a></div>
+        <div style="float:left">Indietro: <a href="Drawing.htm">Disegno</a></div>
+        <div style="float:right">Il prossimo: <a href="draw_flush.htm"><span class="notranslate">draw_flush</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 draw_enable_drawevent

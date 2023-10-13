@@ -6,7 +6,7 @@
   <title>skeleton_animation_set_ext</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function skeleton_animation_set_ext" />
   <meta name="rh-index-keywords" content="skeleton_animation_set_ext" />
@@ -15,41 +15,41 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1><span data-field="title" data-format="default">skeleton_animation_set_ext</span></h1>
-  <p>When you set an animation set for your skeletal animation sprite, it is assigned <i>track 0</i> internally. However, you can assign further sets to further tracks (1 and above) and in this way have your sprite play two (or more) animations at the same time. Note that the sprite should have been designed in your animation program with this in mind, such that the &quot;base&quot; animation in track 0 only has keyframes for certain bones, while the next tracks have keyframes for the others. For example, if you have a &quot;walk&quot; animation and its keyframes only affect the legs of the sprite, you can then have a set of head animations and arm animations which you can set in tracks 1 and 2 respectively, permitting you to have a base movement and adapt on it in real-time while the game is being played.<br />
-    The animation plays looped, which is the default.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Quando si imposta un set di animazione per l'animazione scheletrica <span class="notranslate">sprite</span>, gli viene assegnata la <i>traccia 0</i> internamente. Tuttavia, è possibile assegnare altri set ad altre tracce (1 e oltre) e in questo modo far sì che <span class="notranslate">sprite</span> riproduca due (o più) animazioni contemporaneamente. Si noti che <span class="notranslate">sprite</span> dovrebbe essere stato progettato nel programma di animazione tenendo presente questo aspetto, in modo che l'animazione &quot;base&quot; nella traccia 0 abbia <span class="notranslate">keyframes</span> solo per alcune ossa, mentre le tracce successive abbiano <span class="notranslate">keyframes</span> per le altre. Ad esempio, se si dispone di un'animazione di &quot;camminata&quot; e le sue <span class="notranslate">keyframes</span> influiscono solo sulle gambe <span class="notranslate">sprite</span>, si può avere una serie di animazioni della testa e delle braccia che si possono impostare rispettivamente nelle tracce 1 e 2, consentendo di avere un movimento di base e di adattarlo in tempo reale durante il gioco.<br>
+    L'animazione viene riprodotta in loop, come da impostazione predefinita.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code"><span data-field="title" data-format="default">skeleton_animation_set_ext</span>(animname, track, [loop]);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>animname</td>
-        <td><span data-keyref="Type_String"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The name (a string) of the animation set to use.</td>
+        <td><span class="notranslate">animname</span></td>
+        <td><span data-keyref="Type_String"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Stringa</a></span></td>
+        <td><span class="notranslate">The name (a string) of the animation set to use.</span></td>
       </tr>
       <tr>
-        <td>track</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The track for the animation set to use.</td>
+        <td><span class="notranslate">track</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Reale</a></span></td>
+        <td><span class="notranslate">The track for the animation set to use.</span></td>
       </tr>
       <tr>
-        <td>loop</td>
-        <td><span data-keyref="Type_Bool"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td><span data-conref="../../../../../../assets/snippets/Tag_optional.hts"> </span> Whether the animation should loop or not (default is <span class="inline2"><span class="inline">true</span></span>)</td>
+        <td><span class="notranslate">loop</span></td>
+        <td><span data-keyref="Type_Bool"><a href="../../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Booleano</a></span></td>
+        <td><span class="notranslate"><span data-conref="../../../../../../assets/snippets/Tag_optional.hts"> </span> Se l'animazione deve essere <span class="notranslate">loop</span> o meno (il valore predefinito è <span class="inline2"><span class="inline">true</span></span>)</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <p> </p>
+  <h4>Restituzione:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if mouse_check_button(mb_left)<br />
     {<br />
         <span data-field="title" data-format="default">skeleton_animation_set_ext</span>(&quot;bodyfight&quot;, 1);<br />
@@ -58,18 +58,18 @@
     {<br />
         <span data-field="title" data-format="default">skeleton_animation_set_ext</span>(&quot;bodywalk&quot;, 1);<br />
     }</p>
-  <p>The above code will change the animation set being used by track 1 to the &quot;bodyfight&quot; set or the &quot;bodywalk&quot; set when the left mouse button is pressed.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice sopra riportato cambierà il set di animazione utilizzato dalla traccia 1 nel set &quot;bodyfight&quot; o nel set &quot;bodywalk&quot; quando si preme il pulsante sinistro del mouse.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Animation.htm">Animation</a></div>
-        <div style="float:right">Next: <a href="skeleton_animation_get_duration.htm">skeleton_animation_get_duration</a></div>
+        <div style="float:left">Indietro: <a href="Animation.htm">Animazione</a></div>
+        <div style="float:right">Il prossimo: <a href="skeleton_animation_get_duration.htm"><span class="notranslate">skeleton_animation_get_duration</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_animation_set_ext

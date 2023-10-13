@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Get Gamepad Axis</title>
+  <title>Ottieni l'asse del gamepad</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Get Gamepad Axis action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Get Gamepad Axis" />
@@ -14,52 +14,52 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt=" Gamepad Get Axis Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Gamepad/i_GamePad_Get_Axis.png" /> Get Gamepad Axis</h1>
-  <p>You can use this action to get the value of the different axes from a given gamepad. You supply the gamepad index (this is the number of &quot;slot&quot; that a gamepad occupies) and select the axis to check from either the left or right stick, horizontal
-    or vertical. The value returned will be between -1 and 1 for each of the available horizontal and vertical axes: -1 is left and 1 is right for horizontal axis, and -1 is up and 1 is down for the vertical axis. This returned value will be stored in
-    the target variable that you supply for future use, which you can flag as a &quot;Temp&quot; variable, meaning that the action will create a new temporary (local) variable to hold the return value for you, as shown in the example below.</p>
-  <p>It is worth noting that <a href="Set_Gamepad_Axis_Deadzone.htm">setting the deadzone</a> for the stick axis will <em>not</em> affect the returned value, which will always be between -1 and 1. For example, setting the deadzone to 0.2 will mean that pushing
-    the stick right will only start returning a value from 0 - 1 when the <em>raw</em> axis value is over 0.2 - so when the raw value is 0.2, the return value will be 0, when the raw value is at 0.5, the return value will be 0.375, or if the raw value
-    is 0.9, then the return value would be 0.875.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Get Gamepad Axis Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Gamepad/a_GamePad_Get_Axis.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Ottieni l'asse del gamepad</h1>
+  <p>Potete usare questa azione per ottenere il valore dei diversi assi da un dato gamepad. Si fornisce l'indice del gamepad (questo è il numero di &quot;slot&quot; che un gamepad occupa) e si seleziona l'asse da controllare dalla levetta sinistra o destra, orizzontale
+    o verticale. Il valore restituito sarà compreso tra -1 e 1 per ciascuno degli assi orizzontali e verticali disponibili: -1 è sinistra e 1 è destra per l'asse orizzontale, e -1 è su e 1 è giù per l'asse verticale. Questo valore restituito sarà memorizzato in
+    la variabile di destinazione che fornite per un uso futuro, che potete contrassegnare come una variabile &quot;Temp&quot;, il che significa che l'azione creerà una nuova variabile temporanea (locale) per contenere il valore di ritorno per voi, come mostrato nell'esempio qui sotto.</p>
+  <p>Vale la pena notare che l'<a href="Set_Gamepad_Axis_Deadzone.htm">impostazione della deadzone</a> per l'asse dello stick <em>non</em> influenzerà il valore restituito, che sarà sempre compreso tra -1 e 1. Per esempio, impostando la deadzone a 0,2, significa che spingendo
+    lo stick a destra inizierà a restituire un valore da 0 a 1 solo quando il valore <em>grezzo</em> dell'asse è superiore a 0,2 - quindi quando il valore grezzo è 0,2, il valore di ritorno sarà 0, quando il valore grezzo è a 0,5, il valore di ritorno sarà 0,375, o se il valore grezzo
+    è 0,9, allora il valore di ritorno sarà 0,875.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt=" Gamepad Get Axis Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Gamepad/i_GamePad_Get_Axis.png" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Gamepad</td>
-        <td>The gamepad index.</td>
+        <td><span class="notranslate">Gamepad</span></td>
+        <td>L'indice del gamepad.</td>
       </tr>
       <tr>
-        <td>Axis</td>
-        <td>The axis to check (left stick/right stick, horizontal/vertical)</td>
+        <td><span class="notranslate">Axis</span></td>
+        <td>L'asse da controllare (stick sinistro/stick destro, orizzontale/verticale)</td>
       </tr>
       <tr>
-        <td>Target</td>
-        <td>The target variable to store the returned value in.</td>
+        <td><span class="notranslate">Target</span></td>
+        <td>La variabile di destinazione in cui memorizzare il valore restituito.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Get Gamepad Axis Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Gamepad/e_GamePad_Get_Axis.png" />The above action block code creates two local (temporary) variables and then stores the current
-    values for the horizontal and vertical axis of the gamepad left stick. These values are then used to set the direction of the instance.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione qui sopra crea due variabili locali (temporanee) e poi memorizza i valori attuali
+    per l'asse orizzontale e verticale della levetta sinistra del gamepad. Questi valori sono poi utilizzati per impostare la direzione dell'istanza.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Gamepad_Actions.htm">Gamepad Actions</a></div>
-        <div style="float:right">Next: <a href="Get_Gamepad_Trigger.htm">Gamepad Get Trigger</a></div>
+        <div style="float:left">Indietro: <a href="Gamepad_Actions.htm">Azioni del gamepad</a></div>
+        <div style="float:right">Prossimo: <a href="Get_Gamepad_Trigger.htm">Gamepad Get Trigger</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Gamepad Get Axis

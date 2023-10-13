@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>sha1_string_utf8</title>
+  <title>sha1_stringa_utf8</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for sha1_string_utf8" />
   <meta name="rh-index-keywords" content="sha1_string_utf8" />
@@ -15,49 +15,49 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sha1_string_utf8</h1>
-  <p>In cryptography, SHA-1 is a cryptographic hash function designed by the United States <i>National Security Agency</i> and is employed in several widely used applications and protocols like the popular <b>Git</b> where it is used to check for file changes.
-    This function will take an input UTF-8 string (which has a variable number of bytes per character) and returns a 160 bit message digest in ASCII format, for example:</p>
+  <h1>sha1_stringa_utf8</h1>
+  <p>In crittografia, SHA-1 è una funzione di hash crittografica progettata dalla United States <i>National Security Agency</i> ed è impiegata in diverse applicazioni e protocolli ampiamente utilizzati come il popolare <b>Git</b> dove è usato per controllare le modifiche ai file.
+    Questa funzione prenderà un input UTF-8 <span class="notranslate">string</span> (che ha un numero variabile di byte per carattere) e restituisce un message digest a 160 bit in formato ASCII, per esempio:</p>
   <p class="code">sha1 input string = &quot;The quick brown fox jumps over the lazy dog&quot;<br/> sha1 output hash = &quot;2fd4e1c6 7a2d28fc ed849ee1 bb76e739 1b93eb12&quot;</p>
-  <p>In this way you can generate a secure key which can be stored and used to check the integrity of the information being sent to (or received from) an external server (for example).</p>
-  <p class="note"><b>NOTE</b>: There are two formats for the sha1 encoding, UTF-8 and unicode. Both are provided to facilitate communication with different server setups, but the most common to use is unicode.</p>
-  <p class="note"><strong>NOTE</strong>: SHA-1 is not completely secure and can be broken. See <a href="https://en.wikipedia.org/wiki/SHA-1">this page</a> for more info.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>In questo modo è possibile generare una chiave sicura che può essere memorizzata e utilizzata per controllare l'integrità delle informazioni inviate a (o ricevute da) un <span class="notranslate">server</span> esterno (per esempio).</p>
+  <p class="note"><b>NOTA</b>: Ci sono due formati per la codifica sha1, UTF-8 e unicode. Entrambi sono forniti per facilitare la comunicazione con diverse impostazioni <span class="notranslate">server</span>, ma il più comune da usare è l'unicode.</p>
+  <p class="note"><strong>NOTA</strong>: SHA-1 non è completamente sicuro e può essere rotto. Vedi <a href="https://en.wikipedia.org/wiki/SHA-1">questa pagina</a> per maggiori informazioni.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">sha1_string_utf8(string)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>string</td><td><span data-keyref="Type_String"></span></td>
-        <td>The string to hash.</td>
+        <td><span class="notranslate">string</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The string to hash.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_String"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var hash, str;<br/> str = json_encode(hiscore_map);<br/> hash = sha1_string_utf8(str);<br/> ini_open(&quot;local.ini&quot;);
     <br/> ini_write_string(&quot;info&quot;, &quot;0&quot;, hash);<br/> ini_close();
     <br/> get[0] = http_post_string(&quot;http://www.MacSweeney Games.com/CatchTheHaggis?game_hiscores=&quot; + string(global.game_id), str)</p>
-  <p>The above code will encode a DS map into a JSON string. A sha1 hash is then generated and stored in an ini file so that this can later be used to check the integrity of the JSON should the same information be received later form the server. The JSON
-    is then sent.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente codificherà una mappa DS in un JSON <span class="notranslate">string</span>. Un hash sha1 viene poi generato e memorizzato in un file ini in modo che questo possa essere usato in seguito per controllare l'integrità del JSON se le stesse informazioni dovessero essere ricevute in seguito da <span class="notranslate">server</span>. Il JSON
+    viene poi inviato.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Encoding_And_Hashing.htm">File Encoding</a></div>
-        <div style="float:right">Next: <a href="sha1_string_unicode.htm">sha1_string_unicode</a></div>
+        <div style="float:left">Indietro: <a href="Encoding_And_Hashing.htm">Codifica dei file</a></div>
+        <div style="float:right">Il prossimo: <a href="sha1_string_unicode.htm"><span class="notranslate">sha1_string_unicode</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 sha1_string_utf8

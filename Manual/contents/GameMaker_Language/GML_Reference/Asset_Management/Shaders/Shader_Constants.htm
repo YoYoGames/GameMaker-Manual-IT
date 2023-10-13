@@ -3,143 +3,131 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Shader Uniforms</title>
+  <title>Costanti dello shader</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
-  <meta name="topic-comment" content="Page outlining the built-in Shader Uniforms" />
+  <meta name="topic-comment" content="Page outlining the different Shader Constants" />
   <meta name="rh-index-keywords" content="gm_Matrices,MATRIX_VIEW,MATRIX_PROJECTION,MATRIX_WORLD,MATRIX_WORLD_VIEW,MATRIX_WORLD_VIEW_PROJECTION,MATRIX_MAX,MAX_VS_LIGHTS,gm_BaseTexture,gm_LightingEnabled,gm_FogStart,gm_RcpFogRange,gm_PS_FogEnabled,gm_FogColour,gm_VS_FogEnabled,gm_AlphaTestEnabled,gm_AlphaRefValue" />
   <meta name="search-keywords" content="Shader Constants,gm_Matrices,MATRIX_VIEW,MATRIX_PROJECTION,MATRIX_WORLD,MATRIX_WORLD_VIEW,MATRIX_WORLD_VIEW_PROJECTION,MATRIX_MAX,MAX_VS_LIGHTS,gm_BaseTexture,gm_LightingEnabled,gm_FogStart,gm_RcpFogRange,gm_PS_FogEnabled,gm_FogColour,gm_VS_FogEnabled,gm_AlphaTestEnabled,gm_AlphaRefValue" />
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Shader Constants</h1>
-  <p>Apart from the shader functions and constants defined in the OpenGL ES Shading Language (GLSL ES) <a href="http://www.khronos.org/registry/gles/specs/2.0/GLSL_ES_Specification_1.0.17.pdf" target="_blank">Reference Pages</a>, there are also a number of shader uniforms available to you that are unique to <span data-keyref="GameMaker Name">GameMaker</span>.</p>
-  <p>The following display matrix constants can be used as array indices when using the shader array constant <span class="inline">gm_Matrices</span>:</p>
+  <h1>Costanti dello shader</h1>
+  <p>Oltre alle funzioni <span class="notranslate">shader</span> e alle costanti definite nelle <a href="http://www.khronos.org/registry/gles/specs/2.0/GLSL_ES_Specification_1.0.17.pdf" target="_blank">pagine di riferimento</a> del linguaggio di ombreggiatura OpenGL ES (GLSL ES), ci sono anche un certo numero di costanti <span class="notranslate">shader</span> disponibili per voi che sono uniche per <span data-keyref="GameMaker Name">GameMaker</span>.</p>
+  <p>Le seguenti costanti della matrice di visualizzazione possono essere usate come indici di matrice quando si usa la costante di matrice <span class="notranslate">shader</span> <span class="inline">gm_Matrices</span> :</p>
   <table>
     <tbody>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td><span class="inline">MATRIX_VIEW</span></td>
-        <td>This array index constant holds the index to the current view matrix. The index returned would be used as an array value when calling the <span class="inline">gm_Matrices</span> constant within the shader code.</td>
+        <td><span class="notranslate"><span class="inline">MATRIX_VIEW</span></td>
+        <td>Questa costante di indice dell'array contiene l'indice della matrice della vista corrente. L'indice restituito verrebbe utilizzato come valore di array quando si chiama la costante <span class="inline">gm_Matrices</span> all'interno del codice <span class="notranslate">shader</span>.</td>
       </tr>
       <tr>
-        <td><span class="inline">MATRIX_PROJECTION</span></td>
-        <td>This array index constant holds the index to the current projection matrix. The index returned would be used as an array value when calling the <span class="inline">gm_Matrices</span> constant within the shader code.</td>
+        <td><span class="notranslate"><span class="inline">MATRIX_PROJECTION</span></td>
+        <td>Questa costante di indice dell'array contiene l'indice della matrice di proiezione corrente. L'indice restituito verrebbe usato come valore di array quando si chiama la costante <span class="inline">gm_Matrices</span> all'interno del codice <span class="notranslate">shader</span>.</td>
       </tr>
       <tr>
-        <td><span class="inline">MATRIX_WORLD</span></td>
-        <td>This array index constant holds the index to the current world matrix. This can be used for things like lighting if you have light information in world-space. The index returned would be used as an array value when calling the <span class="inline">gm_Matrices</span> constant within the shader code.</td>
+        <td><span class="notranslate"><span class="inline">MATRIX_WORLD</span></td>
+        <td>Questa costante di indice dell'array contiene l'indice della matrice del mondo corrente. Questo può essere usato per cose come l'illuminazione se si hanno informazioni sulla luce nello spazio-mondo. L'indice restituito verrebbe usato come valore di array quando si chiama la costante <span class="inline">gm_Matrices</span> all'interno del codice <span class="notranslate">shader</span>.</td>
       </tr>
       <tr>
-        <td><span class="inline">MATRIX_WORLD_VIEW</span></td>
-        <td>This array index constant holds the index to the result of the world and view matrices multiplied together. This is often used for things like fog. The index returned would be used as an array value when calling the <span class="inline">gm_Matrices</span> constant within the shader code.</td>
+        <td><span class="notranslate"><span class="inline">MATRIX_WORLD_VIEW</span></td>
+        <td>Questa costante di indice dell'array contiene l'indice del risultato delle matrici del mondo e della vista moltiplicate insieme. Questo è spesso usato per cose come la nebbia. L'indice restituito verrebbe usato come un valore di array quando si chiama la costante <span class="inline">gm_Matrices</span> all'interno del codice <span class="notranslate">shader</span>.</td>
       </tr>
       <tr>
-        <td><span class="inline">MATRIX_WORLD_VIEW_PROJECTION</span></td>
-        <td>This array index constant holds the index to the result of the world, view and projection matrices multiplied together. This is the normal transformation matrix used for vertex positions. The index returned would be used as an array value when calling the <span class="inline">gm_Matrices</span> constant within the shader code.</td>
+        <td><span class="notranslate"><span class="inline">MATRIX_WORLD_VIEW_PROJECTION</span></td>
+        <td>Questa costante di indice dell'array contiene l'indice del risultato delle matrici mondo, vista e proiezione moltiplicate insieme. Questa è la normale matrice di trasformazione usata per le posizioni dei vertici. L'indice restituito verrebbe utilizzato come valore di array quando si chiama la costante <span class="inline">gm_Matrices</span> all'interno del codice <span class="notranslate">shader</span>.</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate"><span class="inline">MATRIX_MAX</span></td>
+        <td>Questo non è un indice di matrice, ma piuttosto restituisce la dimensione della matrice nel vertice <span class="notranslate">shader</span>.</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate"><span class="inline">MAX_VS_LIGHTS</span></td>
+        <td>Questo non è un indice di array, ma piuttosto restituisce il numero delle luci nel vertice <span class="notranslate">shader</span>.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p>The following constants are also available:</p>
+  <p> </p>
+  <p>La seguente costante è disponibile anche per l'illuminazione:</p>
   <table>
     <tbody>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td><span class="inline">MATRIX_MAX</span></td>
-        <td>The size of the matrix array (<span class="inline2">gm_Matrices</span>) in the vertex shader.</td>
-      </tr>
-      <tr>
-        <td><span class="inline">MAX_VS_LIGHTS</span></td>
-        <td>The maximum number of point and directional lights available in the shader.</td>
+        <td><span class="notranslate"><span class="inline">MAX_VS_LIGHTS</span></td>
+        <td>Il numero massimo di luci puntuali e direzionali disponibili nello shader</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p>The following pre-defined matrix uniforms and constants can be used in your shader to access <span data-keyref="GameMaker Name">GameMaker</span> specific values:</p>
+  <p> </p>
+  <p>Le seguenti uniformi e costanti di matrice predefinite possono essere utilizzate nel vostro <span class="notranslate">shader</span> per accedere a valori specifici di <span data-keyref="GameMaker Name">GameMaker</span>:</p>
   <table>
     <tbody>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td><span class="inline">gm_Matrices[matrix]</span></td>
-        <td>This array constant returns a transform matrix and is one of the available pre-defined uniforms that <span data-keyref="GameMaker Name">GameMaker</span> creates for you to use within the shader code editor. The array index is chosen from one of the above listed constants.</td>
+        <td><span class="notranslate"><span class="inline">gm_Matrices[matrix]</span></td>
+        <td>Questa costante di matrice restituisce una matrice di trasformazione ed è una delle uniformi predefinite disponibili che <span data-keyref="GameMaker Name">GameMaker</span> crea per voi da usare all'interno dell'editor di codice <span class="notranslate">shader</span>. L'indice dell'array è scelto da una delle costanti sopra elencate.</td>
       </tr>
       <tr>
-        <td><span class="inline">gm_BaseTexture</span></td>
-        <td>This is a 2D sampler constant that returns the texture of the current object, as set by <span data-keyref="GameMaker Name">GameMaker</span>. So it would be the current sprite, surface or texture that would normally be used when drawing without the shader being called.</td>
+        <td><span class="notranslate"><span class="inline">gm_BaseTexture</span></td>
+        <td>Questa è una costante del campionatore 2D che restituisce il <span class="notranslate">texture</span> del corrente <span class="notranslate">object</span>, come impostato da <span data-keyref="GameMaker Name">GameMaker</span>. Quindi sarebbe l'attuale <span class="notranslate">sprite</span>, superficie o <span class="notranslate">texture</span> che verrebbe normalmente utilizzato quando si disegna senza che il <span class="notranslate">shader</span> venga chiamato.</td>
       </tr>
       <tr>
-        <td><span class="inline">gm_LightingEnabled</span></td>
-        <td>This can be used to get or set the <span data-keyref="GameMaker Name">GameMaker</span> lighting when using 3D.</td>
+        <td><span class="notranslate"><span class="inline">gm_LightingEnabled</span></td>
+        <td>Questo può essere usato per ottenere o impostare l'illuminazione di <span data-keyref="GameMaker Name">GameMaker</span> quando si usa il 3D.</td>
       </tr>
       <tr>
-        <td><span class="inline">gm_Lights_Direction[]</span></td>
-        <td>This is an array of vec4s, each vec4 contains a light&#39;s normalised direction vector (X, Y, Z) and a fourth dimension (W) which is 1 when the light is enabled, and 0 when disabled</td>
+        <td><span class="notranslate"><span class="inline">gm_FogStart</span></td>
+        <td>Questo può essere usato per ottenere la distanza in cui i poligoni iniziano ad essere mescolati con il colore della nebbia.</td>
       </tr>
       <tr>
-        <td><span class="inline">gm_Lights_PosRange[]</span></td>
-        <td>This is an array of vec4s, each vec4 contains a light&#39;s position (X, Y, Z) and a fourth dimension (W) which is the light&#39;s range, which is 0 when that light is disabled</td>
+        <td><span class="notranslate"><span class="inline">gm_RcpFogRange</span></td>
+        <td>Questo può essere usato per ottenere la distanza alla quale la nebbia è massima e non si vede più nulla.</td>
       </tr>
       <tr>
-        <td><span class="inline">gm_Lights_Colour</span></td>
-        <td>This is an array of vec4s, each vec4 contains a light&#39;s colour (R, G, B), with the alpha channel (A) always being 1</td>
+        <td><span class="notranslate"><span class="inline">gm_PS_FogEnabled</span></td>
+        <td>Questo restituirà <span class="inline">true</span> o <span class="inline">false</span> se la GPU ha abilitato o meno la nebbia di pixel.</td>
       </tr>
       <tr>
-        <td><span class="inline">gm_AmbientColour</span></td>
-        <td>This is a vec4 containing the colour of the ambient light as set in <a href="../../Drawing/Lighting/draw_light_define_ambient.htm"><span class="inline">draw_light_define_ambient()</span></a></td>
+        <td><span class="notranslate"><span class="inline">gm_FogColour</span></td>
+        <td>Questo può essere usato per ottenere il colore della nebbia usato da <span data-keyref="GameMaker Name">GameMaker</span>.</td>
       </tr>
       <tr>
-        <td><span class="inline">gm_FogStart</span></td>
-        <td>This can be used to get the distance where polygons start to be blended with the fog colour.</td>
+        <td><span class="notranslate"><span class="inline">gm_VS_FogEnabled</span></td>
+        <td>Questo restituirà <span class="inline">true</span> o <span class="inline">false</span> se la GPU ha abilitato o meno la nebbia dei vertici.</td>
       </tr>
       <tr>
-        <td><span class="inline">gm_RcpFogRange</span></td>
-        <td>This can be used to get the distance at which fog is maximal and nothing can be seen anymore.</td>
+        <td><span class="notranslate"><span class="inline">gm_AlphaTestEnabled</span></td>
+        <td>Questo può essere usato per ottenere l'alpha testing in <span class="notranslate">shader</span>. Vedere <a href="../../Drawing/GPU_Control/gpu_set_alphatestenable.htm"><span class="inline">gpu_set_alphatestenable()</span></a> per maggiori informazioni sull'alpha testing.</td>
       </tr>
       <tr>
-        <td><span class="inline">gm_PS_FogEnabled</span></td>
-        <td>This will return <span class="inline">true</span> or <span class="inline">false</span> if the GPU has pixel fog enabled or not.</td>
-      </tr>
-      <tr>
-        <td><span class="inline">gm_FogColour</span></td>
-        <td>This can be used to get the fog colour used by <span data-keyref="GameMaker Name">GameMaker</span>.</td>
-      </tr>
-      <tr>
-        <td><span class="inline">gm_VS_FogEnabled</span></td>
-        <td>This will return <span class="inline">true</span> or <span class="inline">false</span> if the GPU has vertex fog enabled or not.</td>
-      </tr>
-      <tr>
-        <td><span class="inline">gm_AlphaTestEnabled</span></td>
-        <td>This can be used to get alpha testing in the shader. See <a href="../../Drawing/GPU_Control/gpu_set_alphatestenable.htm"><span class="inline">gpu_set_alphatestenable()</span></a> for more information on alpha testing.</td>
-      </tr>
-      <tr>
-        <td><span class="inline">gm_AlphaRefValue</span></td>
-        <td>This can be used to get the current alpha testing reference value. See <a href="../../Drawing/GPU_Control/gpu_set_alphatestref.htm"><span class="inline">gpu_set_alphatestref()</span></a> for more information on the alpha test reference.</td>
+        <td><span class="notranslate"><span class="inline">gm_AlphaRefValue</span></td>
+        <td>Questo può essere usato per ottenere l'attuale valore di riferimento del test alfa. Vedere <a href="../../Drawing/GPU_Control/gpu_set_alphatestref.htm"><span class="inline">gpu_set_alphatestref()</span></a> per maggiori informazioni sul riferimento al test alfa.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Shaders.htm">Shaders</a></div>
+        <div style="float:left">Indietro: <a href="Shaders.htm">Shaders</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Shader Constants

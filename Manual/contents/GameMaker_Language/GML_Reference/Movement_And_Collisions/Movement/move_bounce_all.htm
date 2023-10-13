@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>move_bounce_all</title>
+  <title>spostare_rimbalzo_tutto</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="This page outlines the function move_bounce_all" />
   <meta name="rh-index-keywords" content="move_bounce_all" />
@@ -14,44 +14,44 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>move_bounce_all</h1>
-  <p>With this function you can command an instance to bounce off <b>all</b> instances within the room, with the only exception being those that have no sprite or mask index assigned to them. You can also tell it to use precise collision checking when enabled, but be aware that this requires all instances to have precise masks enabled and will greatly slow down your game when many instances are involved due to the amount of processing that has to be done. This should normally go in the step event of an instance, but can be used selectively in a collision event too, as illustrated by the code example below.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>spostare_rimbalzo_tutto</h1>
+  <p>Con questa funzione potete comandare a un'istanza di rimbalzare contro <b>tutte le</b> istanze all'interno di <span class="notranslate">room</span>, con l'unica eccezione di quelle che non hanno <span class="notranslate">sprite</span> o indice di maschera assegnato loro. Potete anche dirgli di usare un controllo preciso delle collisioni quando è abilitato, ma siate consapevoli che questo richiede che tutte le istanze abbiano maschere precise abilitate e rallenterà notevolmente il vostro gioco quando sono coinvolte molte istanze a causa della quantità di elaborazione che deve essere fatta. Questo dovrebbe normalmente andare nell'evento step di un'istanza, ma può essere usato selettivamente anche in un evento di collisione, come illustrato dall'esempio di codice qui sotto.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">move_bounce_all( adv );</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>adv</td><td><span data-keyref="Type_Bool"></span></td>
-        <td>Whether to enable advanced bouncing (true) or not (false).</td>
+        <td><span class="notranslate">adv</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">Whether to enable advanced bouncing (true) or not (false).</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if other.visible<br />
     {<br />
         move_bounce_all(false);<br />
     }</p>
-  <p>The above code would be placed in a collision event with another object. It first checks to see if the object is visible and if it is it then performs the <span class="inline">move_bounce_all()</span> action. Note that in this case the bounce is selective and will only be calculated for this collision, rather than for every instance, every step.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra verrebbe inserito in un evento di collisione con un altro <span class="notranslate">object</span>. Prima controlla per vedere se il <span class="notranslate">object</span> è visibile e se lo è esegue l'azione <span class="inline">move_bounce_all()</span>. Si noti che in questo caso il rimbalzo è selettivo e sarà calcolato solo per questa collisione, piuttosto che per ogni istanza, ogni passo.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Movement.htm">Movement</a></div>
-        <div style="float:right">Next: <a href="move_bounce_solid.htm">move_bounce_solid</a></div>
+        <div style="float:left">Indietro: <a href="Movement.htm">Movimento</a></div>
+        <div style="float:right">Il prossimo: <a href="move_bounce_solid.htm"><span class="notranslate">move_bounce_solid</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 move_bounce_all

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>fx_create</title>
+  <title>fx_creare</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="topic-comment" content="Page outlining the function fx_create" />
   <meta name="rh-index-keywords" content="fx_create" />
@@ -14,57 +14,57 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>fx_create</h1>
-  <p>This function is used to create a new FX Struct for a given effect type, which can then be <a href="layer_set_fx.htm">applied to a layer</a>.</p>
-  <p>The names of the Filters/Effects that you can pass into this function are listed on this page: <a data-xref="{title}" href="../../../../../The_Asset_Editors/Room_Properties/FX/All_Filter_Effect_Types.htm">All Filter/Effect Types</a>.</p>
-  <h2>Usage</h2>
-  <p>You can read the parameters for the created effect by calling <a href="fx_get_parameter.htm"><span class="inline">fx_get_parameter</span></a>/<a href="fx_get_parameters.htm"><span class="inline">s</span></a> on the returned struct, and assign new values to them by calling <span class="inline"><a href="fx_set_parameter.htm">fx_set_parameter</a></span>/<span class="inline"><a href="fx_set_parameters.htm">s</a></span>.</p>
-  <p>Note that the struct returned by this function will contain no visible members and can only be modified through one of the <a href="Filter_Effect_Functions.htm">Filter/Effect Functions</a>.</p>
-  <h2>Function Failures</h2>
-  <p>The function will return -1 if the struct failed to create for any reason; this may happen if the specified FX name was wrong or the FX was not loaded into the game package.</p>
-  <p>To ensure that this function works properly, make sure the FX you need is loaded into your game package, as explained on the <a data-xref="{title}" href="Filter_Effect_Functions.htm">Filter and Effect Functions</a> page:</p>
+  <h1>fx_creare</h1>
+  <p>Questa funzione è usata per creare un nuovo FX <span class="notranslate">Struct</span> per un dato tipo di effetto, che può poi essere <a href="layer_set_fx.htm">applicato a un livello</a>.</p>
+  <p>I nomi dei Filtri/Effetti che potete passare in questa funzione sono elencati in questa pagina: <a data-xref="{title}" href="../../../../../The_Asset_Editors/Room_Properties/FX/All_Filter_Effect_Types.htm">Tutti i tipi di filtro/effetto</a>.</p>
+  <h2>Uso</h2>
+  <p>Potete leggere i parametri per l'effetto creato chiamando <a href="fx_get_parameter.htm"><span class="inline">fx_get_parameter</span></a>/<a href="fx_get_parameters.htm"><span class="inline">s</span></a> sul <span class="notranslate">struct</span> restituito, e assegnare loro nuovi valori chiamando <span class="inline"><a href="fx_set_parameter.htm">fx_set_parameter</a></span>/<span class="inline"><a href="fx_set_parameters.htm">s</a></span>.</p>
+  <p>Notate che il <span class="notranslate">struct</span> restituito da questa funzione non conterrà membri visibili e può essere modificato solo attraverso una delle <a href="Filter_Effect_Functions.htm">funzioni Filter/Effect</a>.</p>
+  <h2>Fallimenti di funzione</h2>
+  <p>La funzione restituirà -1 se <span class="notranslate">struct</span> non è riuscito a creare per qualsiasi motivo; questo può accadere se il nome dell'FX specificato era sbagliato o l'FX non è stato caricato nel pacchetto del gioco.</p>
+  <p>Per assicurarti che questa funzione funzioni correttamente, assicurati che l'FX di cui hai bisogno sia caricato nel tuo pacchetto di gioco, come spiegato nella pagina <a data-xref="{title}" href="Filter_Effect_Functions.htm">Funzioni di filtri ed effetti</a>:</p>
   <div class="snippet_quote">
     <div data-conref="../../../../../assets/snippets/FX_only_added_through_IDE.hts"> </div>
   </div>
-  <p>If these conditions are not fulfilled, i.e. you are not passing in a string literal <em>and</em> the filter/effect is not present in any rooms, then the function will not be able to load that filter/effect and will return -1.</p>
-  <p> </p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Se queste condizioni non sono soddisfatte, cioè non state passando un letterale <span class="notranslate">string</span> <em>e</em> il filtro/effetto non è presente in nessun <span class="notranslate">rooms</span>, allora la funzione non sarà in grado di caricare quel filtro/effetto e restituirà -1.</p>
+  <p> </p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">fx_create(filter_or_effect_name);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>filter_or_effect_name</td>
-        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">String</a></span></td>
-        <td>The name of the filter/effect to create (get them from <a data-xref="{title}" href="../../../../../The_Asset_Editors/Room_Properties/FX/All_Filter_Effect_Types.htm">All Filter/Effect Types</a>).</td>
+        <td><span class="notranslate">filter_or_effect_name</span></td>
+        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Stringa</a></span></td>
+        <td><span class="notranslate">The name of the filter/effect to create (get them from <a data-xref="{title}" href="../../../../../The_Asset_Editors/Room_Properties/FX/All_Filter_Effect_Types.htm">All Filter/Effect Types</a>).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Struct_FX"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Filter_Effect_Layers/fx_create.htm">FX Struct</a></span> or -1 (on failure)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var _fx_tint = fx_create(&quot;_filter_tintfilter&quot;);<br />
     fx_set_parameter(_fx_tint, &quot;g_TintCol&quot;, [1, 0, 0, 1]);<br />
     layer_set_fx(&quot;EffectLayer&quot;, _fx_tint);</p>
-  <p>The above code creates a new FX struct from the <span class="inline2">&quot;_filter_tintfilter&quot;</span> effect, which is the &quot;Colour Tint&quot; filter found in the Room Editor. It assigns a value to its <span class="inline2">&quot;g_TintCol&quot;</span> parameter which is the colour of the tint, and as it&#39;s a <span class="inline">vec4</span> internally, it takes an array containing four values (corresponding to its red, green, blue and alpha values). The FX struct for the tint is then applied to an FX layer.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra crea un nuovo FX <span class="notranslate">struct</span> dall'effetto <span class="inline2">&quot;_filter_tintfilter&quot;</span>, che è il filtro &quot;Colour Tint&quot; trovato in <span class="notranslate">Room</span> Editor. Assegna un valore al suo parametro <span class="inline2">&quot;g_TintCol&quot;</span> che è il colore della tinta, e poiché è un <span class="inline">vec4</span> internamente, prende un array contenente quattro valori (corrispondenti ai suoi valori rosso, verde, blu e alfa). L'FX <span class="notranslate">struct</span> per la tinta viene poi applicato ad un livello FX.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Filter_Effect_Functions.htm">Filter and Effect Functions</a></div>
-        <div style="float:right">Next: <a href="fx_get_parameter.htm">fx_get_parameter</a></div>
+        <div style="float:left">Indietro: <a href="Filter_Effect_Functions.htm">Funzioni di filtro e di effetto</a></div>
+        <div style="float:right">Dopo: <a href="fx_get_parameter.htm">fx_get_parameter</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 fx_create

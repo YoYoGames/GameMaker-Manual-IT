@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>instance_change</title>
+  <title>cambio d'istanza</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function instance_change" />
   <meta name="rh-index-keywords" content="instance_change" />
@@ -15,54 +15,54 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>instance_change</h1>
-  <p>You can use this function to change one instance of an object into another instance of a different object, and while doing so decide whether to perform the initial instances Destroy and Clean Up Events and the new instances Create Event. In this way, you can have (for example) a bomb change into an explosion - in which case the &quot;perf&quot; argument would probably be true as you would want the bomb to perform its Destroy Event and Clean Up Event, as well as the explosion to perform its Create Event - or you could have your player character change into a different one - in which case the &quot;perf&quot; argument would probably be false as you do not want the instances to perform their Create and Destroy/Clean Up events.</p>
-  <p>It is worth noting that changing the instance means that you should perform no further actions with that instance until the next step, in particular trying to access variables etc... as that will cause an error. Basically, you change the instance but it is not actually available until the end of the current step, so to access any of the variables it contains directly (for example, calling <span class="inline">obj_Changed.x</span>) will not work.</p>
-  <p class="note"><b>WARNING!</b> When changing a physics enabled instance, the physical properties <b>will not be carried over</b> to the new instance being changed into. Therefore you should have code in place to &quot;transfer&quot; the physics state of the current instance over to the new instance, or have defined the new instances physical properties in its Create Event, or in the object editor. For this reason it is recommended that you not use this function with physics enabled instances, but rather use a combination of <span style="font-size:1px;"><span class="inline">instance_destroy()</span></span> and <span><span style="font-size:1px;"><span class="inline">instance_create_layer()</span></span>.</span></p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>cambio d'istanza</h1>
+  <p>Potete usare questa funzione per cambiare un'istanza di un <span class="notranslate">object</span> in un'altra istanza di un diverso <span class="notranslate">object</span>, e mentre lo fate decidere se eseguire gli eventi Destroy e Clean Up delle istanze iniziali e l'evento Create delle nuove istanze. In questo modo, potete avere (per esempio) una bomba che si trasforma in un'esplosione - nel qual caso l'argomento &quot;perf&quot; sarebbe probabilmente vero poiché vorreste che la bomba eseguisse i suoi eventi Destroy e Clean Up, e che l'esplosione eseguisse il suo evento Create - o potreste avere il vostro personaggio giocatore che si trasforma in un altro - nel qual caso l'argomento &quot;perf&quot; sarebbe probabilmente falso poiché non volete che le istanze eseguano i loro eventi Create e Destroy/Clean Up.</p>
+  <p>Vale la pena notare che cambiare l'istanza significa che non si dovrebbero eseguire ulteriori azioni con quell'istanza fino al passo successivo, in particolare cercando di accedere a variabili ecc... poiché ciò causerà un errore. Fondamentalmente, si cambia l'istanza ma non è effettivamente disponibile fino alla fine del passo corrente, quindi per accedere a qualsiasi variabile che contiene direttamente (per esempio, chiamando <span class="inline">obj_Changed.x</span>) non funzionerà.</p>
+  <p class="note"><b>ATTENZIONE!</b> Quando si cambia un'istanza abilitata alla fisica, le proprietà fisiche <b>non saranno trasferite</b> alla nuova istanza in cui si cambia. Pertanto dovreste avere del codice in atto per &quot;trasferire&quot; lo stato fisico dell'istanza corrente alla nuova istanza, o aver definito le proprietà fisiche della nuova istanza nel suo evento Create, o nell'editor <span class="notranslate">object</span>. Per questo motivo si raccomanda di non usare questa funzione con istanze abilitate alla fisica, ma piuttosto di usare una combinazione di <span style="font-size:1px;"><span class="inline">instance_destroy()</span></span> e <span><span style="font-size:1px;"><span class="inline">instance_create_layer()</span></span></span>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">instance_change(obj, perf);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>obj</td>
-        <td><span data-keyref="Type_Asset_Object">Object Asset</span></td>
-        <td>The new object the calling object will change into.</td>
+        <td><span class="notranslate">obj</span></td>
+        <td><span data-keyref="Type_Asset_Object">Oggetto Attività</span></td>
+        <td><span class="notranslate">The new object the calling object will change into.</span></td>
       </tr>
       <tr>
-        <td>perf</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td>Whether to perform that new object&#39;s Create and Destroy events (true) or not (false).</td>
+        <td><span class="notranslate">perf</span></td>
+        <td><span data-keyref="Type_Bool">Booleano</span></td>
+        <td><span class="notranslate">Whether to perform that new object&#39;s Create and Destroy events (true) or not (false).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if keyboard_check(vk_enter)<br />
     {<br />
         instance_change(obj_Player_Swimming, false);<br />
         exit;<br />
     }</p>
-  <p>The above code will change the calling instance into an instance of &quot;obj_Player_Swimming&quot; without performing the original instances destroy event nor the new instances create event when the user presses the &quot;Enter&quot; key, exiting the code block when done.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra cambierà l'istanza chiamante in un'istanza di &quot;obj_Player_Swimming&quot; senza eseguire l'evento di distruzione dell'istanza originale né l'evento di creazione della nuova istanza quando l'utente preme il tasto &quot;Enter&quot;, uscendo dal blocco di codice al termine.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instances.htm">Instances</a></div>
-        <div style="float:right">Next: <a href="instance_copy.htm">instance_copy</a></div>
+        <div style="float:left">Indietro: <a href="Instances.htm">Istanze</a></div>
+        <div style="float:right">Il prossimo: <a href="instance_copy.htm"><span class="notranslate">instance_copy</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 instance_change

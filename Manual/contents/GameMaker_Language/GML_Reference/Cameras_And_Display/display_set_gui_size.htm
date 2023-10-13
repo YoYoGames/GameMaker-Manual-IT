@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>display_set_gui_size</title>
+  <title>imposta dimensione gui</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference section for display_set_gui_size" />
   <meta name="rh-index-keywords" content="display_set_gui_size" />
@@ -14,51 +14,51 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>display_set_gui_size</h1>
-  <p>This function will only affect things drawn in the <a href="../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">Draw GUI Event</a> and can be used to set a specific width and height for all GUI components in that event, and no matter what
-    size of display or window is used to display the GUI, it will be scaled to fit correctly. Where the GUI is positioned (ie: the (0,0) position) will depend on whether you have used the function <a href="display_set_gui_maximise.htm"><span class="inline">display_set_gui_maximise()</span></a>    or not. If you do not use this function (the default setting) then the GUI layer will be positioned with its (0,0) point at the same position as that for the application surface (the area where your game is being drawn) and the width and height will
-    be stretched to fit the this surface, such that setting a GUI width of 256px with this function when the application surface is 512px would stretch those 256 pixels to fit, effectively making the pixels twice as large. This is ideal for those games
-    that have aspect ratio correction set in the global Game Settings.</p>
-  <p>If you have used the <span class="inline">display_set_gui_maximise()</span> function then the (0,0) position for the GUI layer will default to the top left corner of the game window, or display (when in fullscreen or on devices), with the scaling factor set by that function,
-    and the width and height set by this one. You can reset the GUI layer at any time to the default configuration by calling this function using -1 as both the width and height - this will set the (0, 0) position to the application surface and the width
-    and height will be reset to 1:1 with the surface too.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>imposta dimensione gui</h1>
+  <p>Questa funzione influenzerà solo le cose disegnate nell'<a href="../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">evento Draw GUI</a> e può essere usata per impostare una larghezza e un'altezza specifiche per tutti i componenti della GUI in quell'evento, e non importa quale
+    dimensione del display o della finestra utilizzata per visualizzare la GUI, questa verrà scalata per adattarsi correttamente. Dove la GUI è posizionata (cioè: la posizione (0,0)) dipenderà dal fatto che tu abbia usato la funzione <a href="display_set_gui_maximise.htm"><span class="inline">display_set_gui_maximise()</span></a>    o meno. Se non usi questa funzione (l'impostazione predefinita) allora il livello della GUI sarà posizionato con il suo punto (0,0) nella stessa posizione della superficie dell'applicazione (l'area dove il tuo gioco viene disegnato) e la larghezza e l'altezza saranno
+    saranno allungate per adattarsi a questa superficie, così che impostando una larghezza della GUI di 256px con questa funzione quando la superficie dell'applicazione è di 512px, quei 256 pixel saranno allungati per adattarsi, rendendo effettivamente i pixel due volte più grandi. Questo è ideale per quei giochi
+    che hanno la correzione delle proporzioni impostata nelle impostazioni globali del gioco.</p>
+  <p>Se avete usato la funzione <span class="inline">display_set_gui_maximise()</span> allora la posizione (0,0) per il livello GUI sarà predefinita all'angolo superiore sinistro della finestra di gioco, o del display (quando è a schermo intero o su dispositivi), con il fattore di scala impostato da quella funzione,
+    e la larghezza e l'altezza impostate da questa. Puoi resettare il livello GUI in qualsiasi momento alla configurazione predefinita chiamando questa funzione usando -1 come larghezza e altezza - questo imposterà la posizione (0, 0) alla superficie dell'applicazione e la larghezza
+    e l'altezza saranno anch'esse resettate a 1:1 con la superficie.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">display_set_gui_size(width, height);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>width</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The width of the GUI</td>
+        <td><span class="notranslate">width</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The width of the GUI</span></td>
      </tr>
       <tr>
-        <td>height</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The height of the GUI</td>
+        <td><span class="notranslate">height</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The height of the GUI</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">display_set_gui_size(768, 1024);</p>
-  <p>The above code will lock the draw GUI event to the given width and height, scaling all components to fit either the application surface, or the display, using that proportion.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra bloccherà l'evento draw GUI alla larghezza e all'altezza date, scalando tutti i componenti per adattarli alla superficie dell'applicazione o al display, usando quella proporzione.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Cameras_And_Display.htm">Cameras And Display</a></div>
-        <div style="float:right">Next: <a href="display_set_gui_maximise.htm">display_set_gui_maximise</a></div>
+        <div style="float:left">Indietro: <a href="Cameras_And_Display.htm">Telecamere e display</a></div>
+        <div style="float:right">Il prossimo: <a href="display_set_gui_maximise.htm"><span class="notranslate">display_set_gui_maximise</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 display_set_gui_size

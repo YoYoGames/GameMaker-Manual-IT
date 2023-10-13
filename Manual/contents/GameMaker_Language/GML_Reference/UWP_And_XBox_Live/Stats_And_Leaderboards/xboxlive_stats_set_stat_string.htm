@@ -6,7 +6,7 @@
   <title>xboxlive_stats_set_stat_string</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for xboxlive_stats_set_stat_string" />
   <meta name="rh-index-keywords" content="xboxlive_stats_set_stat_string" />
@@ -15,54 +15,54 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>xboxlive_stats_set_stat_string</h1>
-  <p>This function can be used to set a stat to a string for the given user ID. You supply the user ID as returned by (for example) the function <a href="../Users_And_Accounts/xboxlive_get_user.htm"><span class="inline">xboxlive_get_user()</span></a>, then the stat string to set (<b>if the stat string does not already exist then a new stat will be created and set to the given value</b>) and then the string to set the stat to. Note that the stat name must be alphanumeric only, with no symbols or spaces, but the string value you are setting can have spaces and special characters.</p>
-  <p>When setting the stat string, any previous string will be overridden, therefore it is up to you to determine if the stat string should be updated or not by comparing to the current stat string with the new one before setting it.</p>
-  <p>The function will will return -1 if there was an error or the user ID is invalid, or any other value if the function was successfully called.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione può essere usata per impostare una stat su <span class="notranslate">string</span> per l'ID utente dato. Si fornisce l'ID utente come restituito (per esempio) dalla funzione <a href="../Users_And_Accounts/xboxlive_get_user.htm"><span class="inline">xboxlive_get_user()</span></a>poi la stat <span class="notranslate">string</span> da impostare<b>(se la stat <span class="notranslate">string</span> non esiste già, verrà creata una nuova stat e impostata al valore dato</b>) e poi la stat <span class="notranslate">string</span> su cui impostare la stat. Notate che il nome della stat deve essere solo alfanumerico, senza simboli o spazi, ma il valore <span class="notranslate">string</span> che state impostando può avere spazi e caratteri speciali.</p>
+  <p>Quando si imposta la stat <span class="notranslate">string</span>, qualsiasi <span class="notranslate">string</span> precedente sarà sovrascritto, quindi sta a voi determinare se la stat <span class="notranslate">string</span> deve essere aggiornata o meno confrontando la stat corrente <span class="notranslate">string</span> con quella nuova prima di impostarla.</p>
+  <p>La funzione restituirà -1 se c'è stato un errore o l'ID utente non è valido, o qualsiasi altro valore se la funzione è stata chiamata con successo.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">xboxlive_stats_set_stat_string(user_id, stat, value);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>user_id</td>
-        <td><span data-keyref="Type_ID_Xbox_User">Xbox User ID</span></td>
-        <td>The user ID pointer to set the stat for</td>
+        <td><span class="notranslate">user_id</span></td>
+        <td><span data-keyref="Type_ID_Xbox_User">ID utente Xbox</span></td>
+        <td><span class="notranslate">The user ID pointer to set the stat for</span></td>
       </tr>
       <tr>
-        <td>stat</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The statistic to set (a string)</td>
+        <td><span class="notranslate">stat</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">The statistic to set (a string)</span></td>
       </tr>
       <tr>
-        <td>value</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The value to set the stat to (a string)</td>
+        <td><span class="notranslate">value</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">The value to set the stat to (a string)</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">xboxlive_stats_set_stat_string(p_user_id, &quot;LevelName&quot;, global.LevelName);</p>
-  <p>The above code sets the stat &quot;LevelName&quot; to the string stored in the given global variable. </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente imposta la stat &quot;LevelName&quot; al <span class="notranslate">string</span> memorizzato nella variabile globale data. </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Stats_And_Leaderboards.htm">Stats And Leaderboards</a></div>
-        <div style="float:right">Next: <a href="xboxlive_stats_delete_stat.htm">xboxlive_stats_delete_stat</a></div>
+        <div style="float:left">Indietro: <a href="Stats_And_Leaderboards.htm">Statistiche e classifiche</a></div>
+        <div style="float:right">Il prossimo: <a href="xboxlive_stats_delete_stat.htm"><span class="notranslate">xboxlive_stats_delete_stat</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 xboxlive_stats_set_stat_string

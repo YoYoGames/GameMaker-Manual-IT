@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>skeleton_attachment_get</title>
+  <title>attacco_scheletro_get</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function skeleton_attachment_get" />
   <meta name="rh-index-keywords" content="skeleton_attachment_get" />
@@ -15,46 +15,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>skeleton_attachment_get</h1>
-  <p>A skeletal animation sprite may have other sprites added as attachments, with these sprites being added to a named slot (the name is given when you create the attachment slot in your animation program) and they will be drawn along with the animation of the current sprite. With this function you can get the name (as a string) of the attachment for the given slot of the currently assigned sprite. Note that attached sprites are referenced through their <i>name string</i> as assigned in Spine, or when you called <a href="skeleton_attachment_create.htm"><span class="inline">skeleton_attachment_create()</span></a>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>attacco_scheletro_get</h1>
+  <p>Un'animazione scheletrica <span class="notranslate">sprite</span> può avere altri <span class="notranslate">sprites</span> aggiunti come allegati, con questi <span class="notranslate">sprites</span> aggiunti ad uno slot nominato (il nome è dato quando si crea lo slot dell'allegato nel vostro programma di animazione) e saranno disegnati insieme all'animazione dell'attuale <span class="notranslate">sprite</span>. Con questa funzione è possibile ottenere il nome (come <span class="notranslate">string</span>) dell'allegato per il dato slot dell'attuale <span class="notranslate">sprite</span> assegnato. Notate che gli allegati <span class="notranslate">sprites</span> sono referenziati attraverso la loro <i>stringa di nome</i> come assegnata in <span class="notranslate">Spine</span>, o quando avete chiamato <a href="skeleton_attachment_create.htm"><span class="inline">skeleton_attachment_create()</span></a>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">skeleton_attachment_get(slot);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>slot</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The slot name (a string) to get the attachment of.</td>
+        <td><span class="notranslate">slot</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">The slot name (a string) to get the attachment of.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_String">String</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if skeleton_attachment_get(&quot;slot_leftHand&quot;) == &quot;&quot;<br />
     {<br />
         skeleton_attachment_set(&quot;slot_leftHand&quot;, choose(&quot;sword&quot;, &quot;spear&quot;, &quot;knife&quot;));<br />
     }</p>
-  <p>The above code would check the currently assigned attachment name for the slot named &quot;slot_leftHand&quot; and if an empty string is returned, a new sprite is attached.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra controllerebbe il nome dell'allegato attualmente assegnato per lo slot chiamato &quot;slot_leftHand&quot; e se viene restituito un <span class="notranslate">string</span> vuoto, viene allegato un nuovo <span class="notranslate">sprite</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Attachments.htm">Attachments</a></div>
-        <div style="float:right">Next: <a href="skeleton_attachment_set.htm">skeleton_attachment_set</a></div>
+        <div style="float:left">Indietro: <a href="Attachments.htm">Allegati</a></div>
+        <div style="float:right">Il prossimo: <a href="skeleton_attachment_set.htm"><span class="notranslate">skeleton_attachment_set</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_attachment_get

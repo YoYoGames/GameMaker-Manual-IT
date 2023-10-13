@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>new</title>
+  <title>nuovo</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the new function" />
   <meta name="rh-index-keywords" content="new" />
@@ -14,32 +14,32 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>new</h1>
-  <p>The <span class="inline">new</span> operator can be used to create a struct with a function which is called with the given arguments. The function can then populate the struct with variables from the arguments - much like the create event of an instance will set the initial variables for the instance - and then the <span class="inline">new</span> operator will return the struct. Before using this operator it is important to note that the function given <i>must be flagged as a <span class="inline">constructor</span> function</i> otherwise the <span class="inline">new</span> operator will not create the struct (the code example below shows this, and for more information, please see the page on <a href="../Structs.htm">Structs</a>).</p>
-  <p class="note"><span class="note">NOTE</span> You can check a struct to find out which function was used to create it using the runtime function <a href="../../GML_Reference/Variable_Functions/instanceof.htm"><span class="inline">instanceof()</span></a>.</p>
-  <p>This operator has the following syntax:</p>
+  <h1>nuovo</h1>
+  <p>L'operatore <span class="inline">new</span> può essere usato per creare un <span class="notranslate">struct</span> con una funzione che viene chiamata con gli argomenti dati. La funzione può quindi popolare <span class="notranslate">struct</span> con le variabili degli argomenti - come l'evento create di un'istanza imposterà le variabili iniziali dell'istanza - e quindi l'operatore <span class="inline">new</span> restituirà <span class="notranslate">struct</span>. Prima di usare questo operatore, è importante notare che la funzione data <i>deve essere contrassegnata come funzione <span class="inline">constructor</span> </i>, altrimenti l'operatore <span class="inline">new</span> non creerà <span class="notranslate">struct</span> (l'esempio di codice qui sotto lo mostra e per ulteriori informazioni, si veda la pagina sulle <a href="../Structs.htm">strutture</a>).</p>
+  <p class="note"><span class="note">NOTA</span> È possibile controllare un sito <span class="notranslate">struct</span> per scoprire quale funzione è stata usata per crearlo, usando la funzione <span class="notranslate">runtime</span>. <a href="../../GML_Reference/Variable_Functions/instanceof.htm"><span class="inline">instanceof()</span></a>.</p>
+  <p>Questo operatore ha la seguente sintassi:</p>
   <p class="code"><span>&lt;variable&gt; = </span>new &lt;function&gt; (&lt;argument&gt;, &lt;argument&gt;, ...);</p>
-  <p>When you use the new operator along with a function, it will return a struct reference which is stored in the given variable, permitting you to access the struct and any variables that were created within it by the function.</p>
-  <p>The following example shows a function that has been defined to use as a constructor:</p>
+  <p>Quando si utilizza l'operatore new insieme a una funzione, viene restituito un riferimento a <span class="notranslate">struct</span> che viene memorizzato nella variabile data, consentendo di accedere a <span class="notranslate">struct</span> e a qualsiasi variabile creata al suo interno dalla funzione.</p>
+  <p>L'esempio seguente mostra una funzione definita per essere utilizzata come costruttore:</p>
   <p class="code">function init_struct(_a, _b, _c) constructor<br />
     {<br />
         a = _a;<br />
         b = _b;<br />
         c = _c;<br />
     }</p>
-  <p>This function can then be used along with the <span class="inline">new</span> operator to create a struct and populate it with the variables set to the values of the arguments used in the function, like this:</p>
+  <p>Questa funzione può essere usata insieme all'operatore <span class="inline">new</span> per creare un <span class="notranslate">struct</span> e popolarlo con le variabili impostate sui valori degli argomenti usati nella funzione, come in questo caso:</p>
   <p class="code">mystruct = new init_struct(10, 100, &quot;Hello World&quot;);</p>
-  <p>It is important to note that calling new on any function that has <em>not</em> been flagged as a constructor will cause a <a href="../../../Additional_Information/Errors/Runner_Errors.htm">runtime exception</a>.</p>
-  <p> </p>
-  <p> </p>
+  <p>È importante notare che la chiamata a new su qualsiasi funzione che <em>non sia</em> stata segnalata come costruttore causerà un'<a href="../../../Additional_Information/Errors/Runner_Errors.htm">eccezione di runtime</a>.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Language_Features.htm">Language Features</a></div>
-        <div style="float:right">Next: <a href="delete.htm">delete</a></div>
+        <div style="float:left">Indietro: <a href="../Language_Features.htm">Caratteristiche della lingua</a></div>
+        <div style="float:right">Il prossimo: <a href="delete.htm"><span class="notranslate">delete</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 new

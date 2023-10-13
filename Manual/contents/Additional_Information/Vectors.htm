@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Vectors</title>
+  <title>Vettori</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains how vectors work" />
   <meta name="rh-index-keywords" content="Vectors" />
@@ -14,30 +14,30 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Vectors</span></h1>
-  <p>At some point when creating a game of any complexity you will probably have to deal with <strong>vectors</strong>. They are used in physics, in AI, in trigonometry and many other situations, but what is a vector? Well, to put it simply, a vector is a <em>directed quantity</em>. Let&#39;s start by looking at a 1 dimensional vector - which is just the same as a single number - by drawing a numbered line with an arrow starting at zero and ending at 5. This is the vector &quot;a&quot; which is equal to 5 and if we draw another arrow starting at the 5 and ending at the 8 we have vector &quot;b&quot; which is equal to 3:</p>
-  <p><img alt="1D Vector Example" class="center" src="../assets/Images/Scripting_Reference/Additional_Information/Vector_Image_1D.png" />You should realise that it doesn&#39;t matter where a vector starts, all that matters is how long it is and what direction it goes in. So vector &quot;b&quot; starts at 5, is 3 units long and points to the &quot;right&quot;, making it identical to a vector starting at 0 and going to 3. Now, you can also add these vectors together, by putting the two vectors &quot;a&quot; and &quot;b&quot; end to end to get the vector &quot;c&quot; which is equal to 8. What about negative numbers? Well, if, in the above image, a vector that points to the &quot;right&quot; corresponds to a positive number, you can see that a vector pointing to the &quot;left&quot; would correspond to a negative number, making a one-dimensional vector nothing more than a signed (+/-) number. This explains the essential concept of a vector: only <em>length</em> and <em>direction</em> (&quot;left&quot; or &quot;right&quot; in this case) count, not position.</p>
-  <p>So, what about 2 dimensional vectors? Well, we can think of them as consisting not just of &quot;left&quot; and &quot;right, but &quot;up&quot; and &quot;down&quot; too:</p>
-  <p><img alt="Various 2D Vectors" class="center" height="310" src="../assets/Images/Scripting_Reference/Additional_Information/Vector_Image_Various.png" width="406" />Now, those are not actually vectors yet as we still have to reduce them down using their start and end coordinates. Looking at vector &quot;a&quot; we can see it has a start coordinate of [2,2] and an end coordinate of [4,3] and so to get the vector from this we need to reduce it down by subtracting the end coordinates from the start coordinates like this:</p>
+  <h1>Vettori</h1>
+  <p>Ad un certo punto, quando si crea un gioco di qualsiasi complessità, si avrà probabilmente a che fare con i <strong>vettori</strong>. Sono usati in fisica, in IA, in trigonometria e in molte altre situazioni, ma cos'è un vettore? Beh, per dirla semplicemente, un vettore è una <em>quantità diretta</em>. Cominciamo a guardare un vettore a 1 dimensione - che equivale a un singolo numero - disegnando una linea numerata con una freccia che parte da zero e finisce a 5. Questo è il vettore &quot;a&quot; che è uguale a 5 e se disegniamo un'altra freccia che parte da 5 e finisce a 8 abbiamo il vettore &quot;b&quot; che è uguale a 3:</p>
+  <p><img>Dovresti renderti conto che non importa dove inizia un vettore, tutto ciò che conta è quanto è lungo e in che direzione va. Quindi il vettore &quot;b&quot; inizia a 5, è lungo 3 unità e punta a &quot;destra&quot;, il che lo rende identico a un vettore che inizia a 0 e va a 3. Ora, puoi anche sommare questi vettori, mettendo i due vettori &quot;a&quot; e &quot;b&quot; uno di fronte all'altro per ottenere il vettore &quot;c&quot; che è uguale a 8. E i numeri negativi? Bene, se, nell'immagine qui sopra, un vettore che punta a &quot;destra&quot; corrisponde ad un numero positivo, potete vedere che un vettore che punta a &quot;sinistra&quot; corrisponderebbe ad un numero negativo, rendendo un vettore unidimensionale nient'altro che un numero firmato (+/-). Questo spiega il concetto essenziale di un vettore: contano solo la <em>lunghezza</em> e la <em>direzione</em> (&quot;sinistra&quot; o &quot;destra&quot; in questo caso), non la posizione.</p>
+  <p>Allora, che dire dei vettori bidimensionali? Beh, possiamo pensare a loro come composti non solo da &quot;sinistra&quot; e &quot;destra, ma anche da &quot;su&quot; e &quot;giù&quot;:</p>
+  <p><img>Ora, questi non sono ancora vettori effettivi perché dobbiamo ancora ridurli usando le loro coordinate iniziali e finali. Guardando il vettore &quot;a&quot; possiamo vedere che ha una coordinata iniziale di [2,2] e una coordinata finale di [4,3] e quindi per ottenere il vettore da questo dobbiamo ridurlo sottraendo le coordinate finali dalle coordinate iniziali in questo modo:</p>
   <p class="code">a = [(x2-x1), (y2-y1)] = [(4-2), (3-2)] = [2,1]</p>
-  <p>Let&#39;s do the same for vector b now:</p>
+  <p>Facciamo ora lo stesso per il vettore b:</p>
   <p class="code">b = [(-1.2 -(-3.2)) ,(2.1 - 1.1)] = [2 ,1]</p>
-  <p>Notice something? Those two vectors are the same! This is yet another demonstration that a vector has no position, only direction and length, and we can draw those vectors relative to each other around a local [0,0] axis:</p>
-  <p><img alt="2D Vectors aroun [0, 0]" class="center" src="../assets/Images/Scripting_Reference/Additional_Information/Vector_Image_2D.png" />This means that a 2D vector is defined by two values, an &quot;x&quot; and a &quot;y&quot; position relative to the local [0,0] axis. And what about 3D vectors? Well, they have the added dimension of &quot;depth&quot; to contend with and would be calculated as positions &quot;x&quot;, &quot;y&quot; and &quot;z&quot; around a local axis something like this:</p>
-  <p><img alt="3D Vectors" class="center" src="../assets/Images/Scripting_Reference/Additional_Information/Vector_Image_3D.png" />A good example of a vector used in <span data-keyref="GameMaker Name">GameMaker</span> is the physics <strong>gravity</strong> property in the room editor. The gravity is calculated as a vector around a [0,0] position. So, if you define gravity as [x0, y10], the gravity would be <em>down</em> with a force of 10.</p>
-  <p>Ordinarily, vectors can be used in many situations but sometimes you want to constrain their value (like when dealing with angles) which is why we <strong>normalise </strong>them. This is essentially a mathematical trick that is used to convert a vector of length <em>n</em> to a vector of length 1, meaning that the vector components get <em>normalised </em>to be between 0 and 1. These vectors are also called <strong>unit vectors</strong>:</p>
-  <p><img alt="Unit Vector example" class="center" src="../assets/Images/Scripting_Reference/Additional_Information/Vector_Image_Normalised_1D.png" />To calculate a normalised vector, we must first have the original vector components, then use them to get the length of the vector. We then divide each of the vector components by this length to get the normalised vector components which form the normalised vector in which the <strong>sum of the squares of all coordinates is equal to 1</strong>. Here&#39;s how:</p>
-  <p><img alt="Vector Normalisation" class="center" src="../assets/Images/Scripting_Reference/Additional_Information/Vector_Image_Normalised_1.png" />First we take the coordinates of the vector and get the components:</p>
-  <p class="code">vx = (x2 - x1); // = (7 - 1) = 6<br />
-    vy = (y2 - y1); // = (4 - 1) = 3</p>
-  <p>We then use these values to calculate the length of the vector:</p>
-  <p class="code">len = sqrt(sqr(vx) + sqr(vy)); // = sqrt(36 + 9) = sqrt(45) = 6.708203932499369</p>
-  <p>Now, that gives us the exact length of the vector &quot;a&quot;, so let&#39;s use that to normalise the two vector components <span class="inline">vx</span> and <span class="inline">vy</span>:</p>
+  <p>Notate qualcosa? Quei due vettori sono uguali! Questa è un'altra dimostrazione che un vettore non ha posizione, solo direzione e lunghezza, e possiamo disegnare questi vettori uno rispetto all'altro intorno a un asse locale [0,0]:</p>
+  <p><img>Ciò significa che un vettore 2D è definito da due valori, una posizione &quot;x&quot; e una &quot;y&quot; rispetto all'asse locale [0,0]. E i vettori 3D? Beh, hanno la dimensione aggiunta della &quot;profondità&quot; con cui fare i conti e verrebbero calcolati come posizioni &quot;x&quot;, &quot;y&quot; e &quot;z&quot; intorno a un asse locale come questo:</p>
+  <p><img>Un buon esempio di un vettore usato in <span data-keyref="GameMaker Name">GameMaker</span> è la proprietà fisica di <strong>gravità</strong> nell'editor <span class="notranslate">room</span>. La gravità è calcolata come un vettore intorno ad una posizione [0,0]. Quindi, se si definisce la gravità come [x0, y10], la gravità sarebbe <em>giù</em> con una forza di 10.</p>
+  <p>Ordinariamente, i vettori possono essere usati in molte situazioni, ma a volte si vuole vincolare il loro valore (come quando si tratta di angoli) ed è per questo che li <strong>normalizziamo </strong>. Questo è essenzialmente un trucco matematico che viene utilizzato per convertire un vettore di lunghezza <em>n</em> in un vettore di lunghezza 1, il che significa che le componenti del vettore vengono <em>normalizzate </em>per essere tra 0 e 1. Questi vettori sono anche chiamati <strong>vettori unitari</strong>:</p>
+  <p><img>Per calcolare un vettore normalizzato, dobbiamo prima avere le componenti originali del vettore, poi usarle per ottenere la lunghezza del vettore. Poi dividiamo ogni componente del vettore per questa lunghezza per ottenere le componenti vettoriali normalizzate che formano il vettore normalizzato in cui la <strong>somma dei quadrati di tutte le coordinate è uguale a 1</strong>. Ecco come:</p>
+  <p><img>Prima prendiamo le coordinate del vettore e otteniamo le componenti:</p>
+  <p class="code">vx = (x2 - x1) = (7 - 1) = 6<br />
+    vy = (y2 - y1) = (4 - 1) = 3</p>
+  <p>Usiamo poi questi valori per calcolare la lunghezza del vettore:</p>
+  <p class="code">len = sqr(vx2 + vy2); // = sqr(36 + 9) = sqr(45) = 6.708203932499369</p>
+  <p>Ora, questo ci dà la lunghezza esatta del vettore &quot;a&quot;, quindi usiamola per normalizzare le due componenti vettoriali <span class="inline">vx</span> e <span class="inline">vy</span>:</p>
   <p class="code">vx = (vx/len); // = (6 / 6.708203932499369) = 0.8944271909999159<br />
     vy = (vy/len); // = (3 / 6.708203932499369) = 0.4472135954999579</p>
-  <p>Great! We have now normalised the components of the vector! But of what practical use is that in the context of <span data-keyref="GameMaker Name">GameMaker</span>? Okay, let&#39;s give you a practical example...</p>
-  <p>Say you have a game where the player has to shoot at an enemy and you need to know how much the bullet object has to move along the x and y axis each step to hit it:</p>
-  <p><img alt="Vector Game Example" class="center" src="../assets/Images/Scripting_Reference/Additional_Information/Vector_Image_Normalised_2.png" />For this you would use the player and enemy coordinates to get the vector components and the length, then you would normalise them to get a value between 0 and 1 which you would finally multiply by the speed you wish the bullet to travel at each step. These final two values you would then store and add onto the starting x and y coordinates each step. Sounds complicated? It&#39;s not, look (values have been rounded to one decimal place for simplicity):</p>
+  <p>Grande! Ora abbiamo normalizzato le componenti del vettore! Ma che utilità pratica ha nel contesto di <span data-keyref="GameMaker Name">GameMaker</span>? Ok, facciamo un esempio pratico...</p>
+  <p>Diciamo che avete un gioco in cui il giocatore deve sparare a un nemico e avete bisogno di sapere quanto il proiettile <span class="notranslate">object</span> deve muoversi lungo l'asse x e y ogni passo per colpirlo:</p>
+  <p><img>Per questo usereste le coordinate del giocatore e del nemico per ottenere le componenti vettoriali e la lunghezza, poi le normalizzereste per ottenere un valore tra 0 e 1 che infine moltiplichereste per la velocità che desiderate che il proiettile viaggi ad ogni passo. Questi due valori finali verrebbero poi memorizzati e aggiunti alle coordinate x e y di partenza ad ogni passo. Sembra complicato? Non lo è, guarda (i valori sono stati arrotondati ad un decimale per semplicità):</p>
   <p class="code">px = 100;<br />
     py = 425;<br />
     ex = 356;<br />
@@ -47,7 +47,7 @@
     vx = (ex - px); // = 256<br />
     vy = (ey - py); // = -342<br />
     <br />
-    len = sqrt(sqr(vx) + sqr(vy)); // = sqrt(65536 + 116964) = 427.2<br />
+    len = sqrt(vx2 + vy2); // = sqrt(65536 + 116964) = 427.2<br />
     <br />
     vx = vx / len; // = 0.6<br />
     vy = vy / len; // = 0.8<br />
@@ -55,17 +55,18 @@
     speed_x = vx * bullet_speed; // = 3<br />
     speed_y = vy * bullet_speed; // = 4
   </p>
-  <p>So, to hit the target we need to add 3 to the bullets x coordinate and 4 to its y coordinate every step.</p>
-  <p> </p>
-  <p> </p>
+  <p>Quindi, per colpire il bersaglio dobbiamo aggiungere 3 alla coordinata x del proiettile e 4 alla sua coordinata y ad ogni passo.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Additional_Information.htm">Additional Information</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="Guide_To_Using_Buffers.htm">Guide To Using Buffers</a></div>
+        <div style="float:left">Indietro: <a href="Additional_Information.htm">Informazioni aggiuntive</a></div>
+        <div style="float:right">Prossimo: <a href="Guide_To_Using_Buffers.htm">Guida all'uso dei buffer</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Vectors

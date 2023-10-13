@@ -7,7 +7,7 @@
   <title>player_avatar_sprite</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../../../assets/css/default.css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="template" content="../../../../assets/masterpages/Manual_Keyword_Page.htt" />
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="condition-tags" content="Export:Beta" />
@@ -16,30 +16,30 @@
 </head>
 <body>
   <h1>player_avatar_sprite</h1>
-  <p>This variable stores the sprite of the current player instance.</p>
-  <p>This variable only exists in player instances created by <a href="../Rollback_Functions/rollback_define_player.htm"><span class="inline">rollback_define_player()</span></a>, and is different for each player.</p>
-  <p><a href="player_type.htm">Guest players</a> will display a placeholder sprite.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa variabile memorizza l'indirizzo <span class="notranslate">sprite</span> dell'istanza del giocatore corrente.</p>
+  <p>Questa variabile esiste solo nelle istanze di giocatore create da <a href="../Rollback_Functions/rollback_define_player.htm"><span class="inline">rollback_define_player()</span></a>ed è diversa per ogni giocatore.</p>
+  <p>I<a href="player_type.htm">giocatori ospiti</a> visualizzeranno un segnaposto <span class="notranslate">sprite</span>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">player_avatar_sprite;</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Restituzione:</h4>
   <p class="code"><span data-keyref="Type_Asset_Sprite"><a href="../../../../../The_Asset_Editors/Sprites.htm" target="_blank">Sprite Asset</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">// Draw event<br />
     draw_sprite_stretched(player_avatar_sprite, 0, x, y - 256, 64, 64);</p>
-  <p>This displays the avatar of the player instance running the code, in a 64x64 area, 256px above the instance.</p>
-  <p> </p>
-  <p> </p>
+  <p>Visualizza l'avatar dell'istanza del giocatore che esegue il codice, in un'area 64x64, 256px sopra l'istanza.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="Rollback_Variables.htm">Rollback Variables</a></div>
-        <div>Next: <a data-xref="{title}" href="player_avatar_url.htm">player_avatar_url</a></div>
+        <div>Indietro: <a data-xref="{title}" href="Rollback_Variables.htm">Variabili di rollback</a></div>
+        <div>Avanti: <a data-xref="{title}" href="player_avatar_url.htm">player_avatar_url</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 player_avatar_sprite

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>distance_to_object</title>
+  <title>distanza dall'oggetto</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for distance_to_object" />
   <meta name="rh-index-keywords" content="distance_to_object" />
@@ -15,46 +15,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>distance_to_object</h1>
-  <p>This function calculates the distance from the edge of the bounding box of the calling instance to the nearest edge of the nearest instance of the object specified. The object can be an object index or a specific instance ID as well as the <a href="../../../GML_Overview/Instance_Keywords.htm"><i>keyword</i></a> <b>other</b>, and the distance is returned in pixels. Note that if either of the objects have no sprite or no mask defined, the results will be incorrect.</p>
-  <p> </p>
-  <h4><b>Syntax:</b></h4>
+  <h1>distanza dall'oggetto</h1>
+  <p>Questa funzione calcola la distanza dal bordo del rettangolo di delimitazione dell'istanza chiamante al bordo più vicino dell'istanza più vicina di <span class="notranslate">object</span> specificata. L'indirizzo <span class="notranslate">object</span> può essere un indice <span class="notranslate">object</span> o un ID di un'istanza specifica così come <a href="../../../GML_Overview/Instance_Keywords.htm"><i>parola chiave</i></a> l'<b>altro</b>, e la distanza viene restituita in pixel. Si noti che se uno dei due <span class="notranslate">objects</span> non ha nessun <span class="notranslate">sprite</span> o nessuna maschera definita, i risultati non saranno corretti.</p>
+  <p> </p>
+  <h4><b>Sintassi:</b></h4>
   <p class="code">distance_to_object(obj);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>obj</td>
-        <td><span data-keyref="Type_Asset_Object">Object Asset</span> or <span data-keyref="Type_ID_Instance">Instance ID</span></td>
-        <td>The object to check for.</td>
+        <td><span class="notranslate">obj</span></td>
+        <td> <span data-keyref="Type_ID_Instance">ID dell</span>'<span data-keyref="Type_Asset_Object">asset dell'oggetto</span> o dell'<span data-keyref="Type_ID_Instance">istanza</span></td>
+        <td><span class="notranslate">The object to check for.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (distance_to_object(obj_Player) &lt; range)<br />
     {<br />
         canshoot = true;<br />
     }</p>
-  <p>The above code will check for the distance to the player object and if it is less than the value stored in the variable &quot;range&quot; the variable &quot;canshoot&quot; is set to true.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra controllerà la distanza dal giocatore <span class="notranslate">object</span> e se è inferiore al valore memorizzato nella variabile &quot;range&quot; la variabile &quot;canshoot&quot; è impostata su true.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Angles_And_Distance.htm">Angles And Distance</a></div>
-        <div style="float:right">Next: <a href="distance_to_point.htm">distance_to_point</a></div>
+        <div style="float:left">Indietro: <a href="Angles_And_Distance.htm">Angoli e distanze</a></div>
+        <div style="float:right">Il prossimo: <a href="distance_to_point.htm"><span class="notranslate">distance_to_point</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 distance_to_object

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>os_lock_orientation</title>
+  <title>orientamento del blocco di sicurezza</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for os_lock_orientation" />
   <meta name="rh-index-keywords" content="os_lock_orientation" />
@@ -14,46 +14,44 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>os_lock_orientation</h1>
-  <p>With this function you can &quot;lock&quot; your device to the current orientation until such time as you &quot;free&quot; it to allow all <a href="../../../Settings/Game_Options.htm">Game Options</a> enabled orientations again for that target platform. Note that you likely want to confirm the orientation is as desired before locking.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>orientamento del blocco di sicurezza</h1>
+  <p>Con questa funzione puoi &quot;bloccare&quot; il tuo dispositivo all'orientamento corrente fino al momento in cui lo &quot;liberi&quot; per permettere di nuovo tutti gli orientamenti abilitati dalle <a href="../../../Settings/Game_Options.htm">Opzioni di gioco</a> per quella piattaforma di destinazione. Nota che probabilmente vorrai confermare che l'orientamento è quello desiderato prima di bloccarlo.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">os_lock_orientation(flag)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
+     </tr>
       <tr>
-        <td>flag</td>
-        <td><span data-keyref="Type_Bool"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Set to <span class="inline2">true</span> or <span class="inline2">false</span> to enable or disable orientation locking.</td>
-      </tr>
+        <td><span class="notranslate">flag</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">Set to <span class="inline">true</span> o <span class="inline">false</span> per abilitare o disabilitare il blocco dell'orientamento.</td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (os_type == os_android) || (os_type == os_ios)<br />
     {<br />
         os_lock_orientation(true);<br />
     }</p>
-  <p>The above code checks the OS type and if it is either Android or an iOS then the orientation locking is flagged as <span class="inline">true</span>.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra controlla il tipo di SO e se è o <span class="notranslate">Android</span> o un <span class="notranslate">iOS</span> allora il bloccaggio dell'orientamento è segnalato come <span class="inline">true</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="OS_And_Compiler.htm">OS And Compiler</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="os_set_orientation_lock.htm">os_set_orientation_lock</a></div>
+        <div style="float:left">Indietro: <a href="OS_And_Compiler.htm">Sistema operativo e compilatore</a></div>
+        <div style="float:right">Il prossimo: <a href="os_check_permission.htm"><span class="notranslate">os_check_permission</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 os_lock_orientation

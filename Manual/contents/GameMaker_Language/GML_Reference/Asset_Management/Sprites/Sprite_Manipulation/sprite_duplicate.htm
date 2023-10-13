@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>sprite_duplicate</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function sprite_duplicate" />
   <meta name="rh-index-keywords" content="sprite_duplicate" />
@@ -15,43 +15,41 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>sprite_duplicate</h1>
-  <p>This function will return the index of a newly created sprite that is a duplicate (copy) of the one input as the &quot;index&quot; argument. If the function fails, -1 is returned. This function <i>must</i> be used to copy any sprites from the original assets before any transformations can be done on them. For example, if you wish to change the bounding box for a sprite, or set its alpha from another sprite, you must first duplicate it, then perform the operation on the duplicated sprite and use that. A duplicated sprite will be places on its own unique texture page when created, meaning that duplicating multiple sprites will create multiple texture pages and have an impact on performance, so use this function only when necessary.</p>
-  <p class="note"><b><span data-conref="../../../../../assets/snippets/Tag_note.hts"> </span></b> When you duplicate a sprite in <span data-keyref="GameMaker Name">GameMaker</span> you must remember to remove it again (with <span style="font-size:1px;"><a href="sprite_delete.htm"><span class="inline">sprite_delete()</span></a></span>) when no longer needed, otherwise there is risk of a memory leak which will slow down and eventually crash your game.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione restituisce l'indice di un <span class="notranslate">sprite</span> appena creato che è un duplicato (copia) di quello inserito come argomento &quot;index&quot;. Se la funzione fallisce, viene restituito -1. Questa funzione <i>deve</i> essere usata per copiare qualsiasi <span class="notranslate">sprites</span> dall'originale <span class="notranslate">assets</span> prima che qualsiasi trasformazione possa essere fatta su di esso. Per esempio, se si desidera cambiare il riquadro di delimitazione di un <span class="notranslate">sprite</span>, o impostare la sua alfa da un altro <span class="notranslate">sprite</span>, è necessario prima duplicarlo, poi eseguire l'operazione sul duplicato <span class="notranslate">sprite</span> e utilizzare quello. Un <span class="notranslate">sprite</span> duplicato sarà posto nella sua pagina unica <span class="notranslate">texture</span> quando viene creato, il che significa che duplicare più <span class="notranslate">sprites</span> creerà più pagine <span class="notranslate">texture</span> e avrà un impatto sulle prestazioni, quindi usate questa funzione solo se necessario.</p>
+  <p class="note"><b>NOTA</b>: Quando duplicate un <span class="notranslate">sprite</span> in <span data-keyref="GameMaker Name">GameMaker</span> dovete ricordarvi di rimuoverlo di nuovo (con <span style="font-size:1px;"><a href="sprite_delete.htm"><span class="inline">sprite_delete()</span></a></span>) quando non è più necessario, altrimenti c'è il rischio di una perdita di memoria che rallenterà ed eventualmente bloccherà il vostro gioco.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">sprite_duplicate(index);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
+     </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Asset_Sprite"><a href="The_Asset_Editors/Sprites.htm" target="_blank">Sprite Asset</a></span></td>
-        <td>The index of the sprite to duplicate.</td>
-      </tr>
+        <td><span class="notranslate">index</span></td><td><span data-keyref="Type_Asset_Sprite"></span></td>
+        <td><span class="notranslate">The index of the sprite to duplicate.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns</h4>
-  <p class="code"><span data-keyref="Type_Asset_Sprite"><a href="The_Asset_Editors/Sprites.htm" target="_blank">Sprite Asset</a></span> or -1</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Restituisce</h4>
+  <p class="code"><span data-keyref="Type_Asset_Sprite">Sprite Asset</span> or -1</p>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">new_spr = sprite_duplicate(sprite_index)</p>
-  <p>The above code duplicates the sprite currently being used as the sprite index of the instance and stores the index for this new sprite in the variable &quot;new_spr&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente duplica il <span class="notranslate">sprite</span> attualmente utilizzato come indice <span class="notranslate">sprite</span> dell'istanza e memorizza l'indice per questo nuovo <span class="notranslate">sprite</span> nella variabile &quot;new_spr&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Manipulation.htm">Sprite Manipulation</a></div>
-        <div style="float:right">Next: <a href="sprite_assign.htm">sprite_assign</a></div>
+        <div style="float:left">Indietro: <a href="Sprite_Manipulation.htm">Manipolazione degli sprite</a></div>
+        <div style="float:right">Il prossimo: <a href="sprite_assign.htm"><span class="notranslate">sprite_assign</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 sprite_duplicate

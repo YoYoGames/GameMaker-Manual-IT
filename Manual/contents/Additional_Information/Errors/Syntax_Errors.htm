@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Syntax Errors (Feather Messages)</title>
+  <title>Errori di sintassi (messaggi Feather)</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the various syntax errors" />
   <meta name="rh-index-keywords" content="Syntax Errors" />
@@ -14,253 +14,253 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Syntax Errors (Feather Messages)</span></h1>
-  <p>The first level of error reporting when programming your games in <span data-keyref="GameMaker Name">GameMaker</span> is in the code or GML Visual editor, and it&#39;s the <a class="glossterm" data-glossterm="syntax" href="#">syntax</a> checker. As you write your code - or add your actions - <span data-keyref="GameMaker Name">GameMaker</span> will check that it follows the established syntax for the language, and flag any issues that it finds so you can fix them before it comes to running the game or compiling an executable.</p>
-  <p>Syntax error checking happens differently depending on whether you have enabled <a href="../../The_Asset_Editors/Code_Editor_Properties/Feather_Features.htm">Feather</a> in the <a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm">Feather Settings</a>.</p>
-  <h2>Syntax Errors (Feather disabled)</h2>
+  <h1><span data-field="title" data-format="default">Errori di sintassi (messaggi Feather)</span></h1>
+  <p>Il primo livello di segnalazione degli errori durante la programmazione dei giochi in <span data-keyref="GameMaker Name">GameMaker</span> si trova nell'editor di codice o <span class="notranslate">GML</span> Visual, ed è il controllore <a class="glossterm" data-glossterm="sintassi" href="#">della sintassi</a>. Mentre scrivete il codice o aggiungete le azioni, <span data-keyref="GameMaker Name">GameMaker</span> controllerà che segua la sintassi stabilita per il linguaggio e segnalerà i problemi riscontrati, in modo da poterli correggere prima di eseguire il gioco o compilare un eseguibile.</p>
+  <p>Il controllo degli errori di sintassi avviene in modo diverso a seconda che si sia abilitato <a href="../../The_Asset_Editors/Code_Editor_Properties/Feather_Features.htm">Feather</a> nelle <a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm">Impostazioni di Feather</a>.</p>
+  <h2>Errori di sintassi (Feather disabilitato)</h2>
   <p><img alt="Syntax Errors Example" class="center" src="../../assets/Images/Scripting_Reference/Additional_Information/Errors_Syntax_Example.png" /></p>
-  <p>These errors fall into two main categories:</p>
+  <p>Questi errori rientrano in due categorie principali:</p>
   <ul class="colour">
-    <li><img alt="Syntax Warning Icon" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxWarning.png" /> <strong>Warnings</strong>: These are shown for things that may be an error, but may not be, and probably won&#39;t stop the game from compiling, but might provoke runtime errors. The most common causes of these warnings is when a variable is used in an expression and it hasn&#39;t been defined yet anywhere else, or when a variable has been defined but hasn&#39;t been used.</li>
-    <li><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /> <strong>Errors</strong>: These are problems that will not permit the game to compile, let alone run. These should be fixed before doing anything further with the code. The table below shows the most common causes of these.</li>
+    <li><img> <strong>Avvertenze</strong>: Vengono mostrati per cose che potrebbero essere un errore, ma che potrebbero non esserlo, e che probabilmente non impediranno la compilazione del gioco, ma potrebbero provocare errori <span class="notranslate">runtime</span>. Le cause più comuni di questi avvisi sono quando una variabile viene usata in un'espressione e non è ancora stata definita da nessun'altra parte, oppure quando una variabile è stata definita ma non è stata usata.</li>
+    <li><img> <strong>Errori</strong>: Si tratta di problemi che non permettono al gioco di essere compilato e tanto meno di essere eseguito. Questi problemi devono essere risolti prima di procedere con il codice. La tabella seguente mostra le cause più comuni di questi errori.</li>
   </ul>
-  <p>Syntax errors will update as you write your code (there will be a short pause between typing something and any errors appearing in this window to prevent errors being reported for unfinished code), and will follow the format:</p>
+  <p>Gli errori di sintassi si aggiornano man mano che si scrive il codice (ci sarà una breve pausa tra la digitazione di qualcosa e la comparsa degli errori in questa finestra, per evitare che vengano segnalati errori per codice non completato) e seguiranno il formato:</p>
   <p class="code">[object] - [event] - [Line Number] - [Position In Line]: [error string]</p>
-  <p>Or if the error is in a script, it will be:</p>
+  <p>Oppure, se l'errore è in un sito <span class="notranslate">script</span>, lo sarà:</p>
   <p class="code">[script] - [Line Number] - [Position in line]: [error string]</p>
-  <p>Double clicking <img alt="Icon LMB" class="icon" height="24" src="../../assets/Images/Icons/Icon_LMB.png" width="21" /> on any of the errors shown in the output console will take you to the line in the object event or script that has the error so you can edit it.</p>
-  <p>It should be noted that some of these errors will be shown at specific places in your code, but the actual error may be cause by something elsewhere, or one single issue may provoke multiple error messages:</p>
-  <p><img alt="Multiple Syntax Errors" class="center" src="../../assets/Images/Scripting_Reference/Additional_Information/Error_MultipleSyntaxErrors.png" />In the above image, all three <img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /> errors have been provoked  by a single mistake - the use of a semi colon &quot;<span class="inline">;</span>&quot; instead of a comma &quot;<span class="inline">,</span>&quot; at line 220 for the function <span class="inline">variable_instance_exists()</span>.</p>
-  <h3>Syntax Error List</h3>
-  <p>The table below lists the different syntax errors and their main causes:</p>
-  <p> </p>
+  <p>Facendo doppio clic su <img> su uno qualsiasi degli errori mostrati nella console di output, si accede alla riga dell'evento <span class="notranslate">object</span> o <span class="notranslate">script</span> che presenta l'errore, in modo da poterlo modificare.</p>
+  <p>Va notato che alcuni di questi errori verranno mostrati in punti specifici del codice, ma l'errore vero e proprio potrebbe essere causato da qualcosa di diverso, oppure un singolo problema potrebbe provocare più messaggi di errore:</p>
+  <p><img>Nell'immagine qui sopra, tutti e tre gli errori di <img> sono stati causati da un unico errore: l'uso di un punto e virgola &quot;<span class="inline">;</span>&quot; invece di una virgola &quot;<span class="inline">,</span>&quot; alla riga 220 per la funzione <span class="inline">variable_instance_exists()</span>.</p>
+  <h3>Elenco degli errori di sintassi</h3>
+  <p>La tabella seguente elenca i diversi errori di sintassi e le loro cause principali:</p>
+  <p> </p>
   <table>
     <tbody>
       <tr>
-        <th>Error</th>
-        <th> Type </th>
-        <th>Description</th>
+        <th>Errore</th>
+        <th> Tipo </th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Malformed reference [val]</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This means there is an internal AST Validation Error (you should never see this error, but if you do please consider filing a bug report from the <a href="../../IDE_Navigation/Menus/The_Help_Menu.htm">Help Menu</a>) </td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Riferimento malformato [val]</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Warning Icon" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxWarning.png" /></td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo significa che c'è un errore interno di convalida dell'AST (non si dovrebbe mai vedere questo errore, ma se lo si vede si può prendere in considerazione la possibilità di segnalare un bug dal <a href="../../IDE_Navigation/Menus/The_Help_Menu.htm">menu Aiuto</a>). </td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Malformed hexadecimal character escape sequence </td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Sequenza di escape di caratteri esadecimali malformati </td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This can happen when you have used the hexadecimal value for an escape character in a string and this has the wrong format.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo può accadere quando si è utilizzato il valore esadecimale per un carattere di escape in <span class="notranslate">string</span> e questo ha un formato sbagliato.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Unexpected node [val]</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This means there is an internal AST Validation Error (you should never see this error, but if you do please consider filing a bug report from the <a href="../../IDE_Navigation/Menus/The_Help_Menu.htm">Help Menu</a>) </td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Nodo inatteso [val]</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Icon LMB" class="icon" height="24" src="../../assets/Images/Icons/Icon_LMB.png" width="21" /></td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo significa che c'è un errore interno di convalida dell'AST (non si dovrebbe mai vedere questo errore, ma se lo si vede si può prendere in considerazione la possibilità di segnalare un bug dal <a href="../../IDE_Navigation/Menus/The_Help_Menu.htm">menu Aiuto</a>). </td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Exception while parsing [val]</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This means there is an internal AST Validation Error (you should never see this error, but if you do please consider filing a bug report from the <a href="../../IDE_Navigation/Menus/The_Help_Menu.htm">Help Menu</a>) </td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Eccezione durante l'analisi di [val]</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Multiple Syntax Errors" class="center" src="../../assets/Images/Scripting_Reference/Additional_Information/Error_MultipleSyntaxErrors.png" /></td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo significa che c'è un errore interno di convalida dell'AST (non si dovrebbe mai vedere questo errore, ma se lo si vede si può prendere in considerazione la possibilità di segnalare un bug dal <a href="../../IDE_Navigation/Menus/The_Help_Menu.htm">menu Aiuto</a>). </td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Malformed id reference [val]</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Riferimento id malformato [val]</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"> </td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"> </td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Unnecessary expression [val] used as a statement</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Espressione non necessaria [val] usata come affermazione</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error occurs when the syntax checker detects an expression (shown in [val]) where it was expecting a statement. For example, the following code will throw the error as it&#39;s expecting the ternary operator ? but encounters 32:<br />
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore si verifica quando il controllore della sintassi rileva un'espressione (mostrata in [val]) dove si aspettava un'affermazione. Ad esempio, il codice seguente darà l'errore perché si aspetta l'operatore ternario ? ma trova 32:<br>
           <span class="inline">temp_x = x &lt; (room_width / 2)  32: room_width - 32;</span>
         </td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Malformed array reference [val]</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Riferimento all'array malformato [val]</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This means you have tried to reference an array in an incorrect way, and [val] will show the reference.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ciò significa che si è cercato di fare riferimento a un array in modo errato e [val] mostrerà il riferimento.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Unexpected binary operator [val]</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Operatore binario inatteso [val]</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error occurs when you use one of the bitwise operators in a place where it shouldn&#39;t be getting used, with [val] showing where.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore si verifica quando si utilizza uno degli operatori bitwise in un punto in cui non dovrebbe essere utilizzato, con [val] che mostra dove.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Unterminated string literal</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Non terminato <span class="notranslate">string</span> letterale</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error will occur when you open a string using <span class="inline">@“</span> or <span class="inline">“</span> but you do not close it before the end of code.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore si verifica quando si apre un <span class="notranslate">string</span> utilizzando <span class="inline">@“</span> o <span class="inline">“</span> ma non lo si chiude prima della fine del codice.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Single quotes no longer allowed for string</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Gli apici singoli non sono più ammessi per le stringhe</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error occurs when you try to use strings wrapped in single quotes, eg: &#39;Hello World&#39;, instead of double quotes, eg: &quot;Hello World&quot;.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore si verifica quando si tenta di utilizzare <span class="notranslate">strings</span> racchiuso tra apici singoli, ad esempio &quot;Hello World&quot;, invece di doppi apici, ad esempio &quot;Hello World&quot;.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Unexpected syntax error</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Errore di sintassi inatteso</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error denotes a syntax error which the parser is not able to identify more specifically.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore denota un errore di sintassi che il parser non è in grado di identificare in modo più specifico.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Got &quot;[val1]&quot;, expected &quot;[val2]&quot;</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ottenuto &quot;[val1]&quot;, atteso &quot;[val2]&quot;.</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This happens when the syntax checker expects some value or symbol but gets a different one, where [val1] is the current symbol or value, and [val2] is the expected symbol or value. For example:<br />
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo accade quando il verificatore di sintassi si aspetta un valore o un simbolo ma ne ottiene uno diverso, dove [val1] è il simbolo o il valore corrente e [val2] è il simbolo o il valore atteso. Ad esempio:<br>
           <span class="inline">Got &quot;{&quot;, expected &quot;(&quot;</span>
         </td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Got &quot;[val1]&quot;, expected &quot;[val2]&quot; or &quot;[val3]&quot;</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ottenuto &quot;[val1]&quot;, ci si aspettava &quot;[val2]&quot; o &quot;[val3]&quot;.</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">As above, but for when there are multiple possible expected symbols.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Come sopra, ma per i casi in cui esistono più simboli attesi.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Expected expression</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Espressione prevista</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error occurs when the syntax checker expects an expression but one isn&#39;t given.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore si verifica quando il controllore della sintassi si aspetta un'espressione, ma questa non viene fornita.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Empty [val] statement</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Dichiarazione [val] vuota</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This happens when you terminate a statement and leave it empty. For example, the following code will give the error (note the terminating semi-colon):<br />
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo accade quando si termina un'istruzione lasciandola vuota. Ad esempio, il codice seguente darà l'errore (notare il punto e virgola finale):<br>
           <span class="inline">if (x &lt; 0);</span>
         </td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Nested function calls are not allowed</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Le chiamate a funzioni annidate non sono consentite</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This can happen when you are trying to nest function calls within a statement, eg:<br />
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo può accadere quando si cerca di annidare le chiamate di funzione all'interno di una dichiarazione, ad esempio:<br>
           <span class="inline">ds_list_find_value(list, 0)).sprite_index</span>
         </td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Number of arguments for function [val1] expected [val2] got val[3]</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Numero di argomenti per la funzione [val1] atteso [val2] ottenuto val[3]</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error tells you that you have not supplied the correct number of arguments to the function shown for [val1], which expects the number shown in [val2] but got those shown in [val3].</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore indica che non è stato fornito il numero corretto di argomenti alla funzione indicata per [val1], che si aspetta il numero indicato in [val2] ma ha ottenuto quelli indicati in [val3].</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Number of arguments for function [val1] expected [val2] - [val3] got [val4]</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Numero di argomenti per la funzione [val1] atteso [val2] - [val3] ottenuto [val4]</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">As above only for a range of arguments.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Come sopra, solo per una serie di argomenti.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Duplicate enum entry found</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Trovata una voce enum duplicata</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error tells you that you have duplicated an enum variable entry name </td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore indica che è stato duplicato il nome di una variabile enum </td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Duplicate enum found</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Trovato un enum duplicato</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error tells you that you have defined two or more enums with the same name.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore indica che sono stati definiti due o più enum con lo stesso nome.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Missing variable name in globalvar</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Nome di variabile mancante in globalvar</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This tells you that you have used the <span class="inline">globalvar</span> declaration but omitted to supply a variable name.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo indica che è stata utilizzata la dichiarazione <span class="inline">globalvar</span>, ma si è omesso di fornire il nome della variabile.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Missing variable name in var</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Nome di variabile mancante in var</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This tells you that you have used the <span class="inline">var</span> declaration but omitted to supply a variable name.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo indica che è stata utilizzata la dichiarazione <span class="inline">var</span>, ma si è omesso di fornire il nome della variabile.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">No matching #region found for #endregion</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Non è stata trovata nessuna #regione corrispondente per #endregion</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error means you have declared an end region in your code, without defining a start region.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore significa che nel codice è stata dichiarata una regione finale, senza definire una regione iniziale.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Unclosed #region found at end of script</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Trovato un #region non chiuso alla fine dello script</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error means you have declared a region somewhere in the code but have not defined an end region anywhere for it.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore significa che è stata dichiarata una regione da qualche parte nel codice, ma non è stata definita una regione finale per essa.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Unexpected terminal operator [val]</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Operatore terminale inatteso [val]</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This means there is an internal AST Validation Error (you should never see this error, but if you do please consider filing a bug report from the <a href="../../IDE_Navigation/Menus/The_Help_Menu.htm">Help Menu</a>) </td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo significa che c'è un errore interno di convalida dell'AST (non si dovrebbe mai vedere questo errore, ma se lo si vede si può prendere in considerazione la possibilità di segnalare un bug dal <a href="../../IDE_Navigation/Menus/The_Help_Menu.htm">menu Aiuto</a>). </td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Unexpected unary operator [val]</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Operatore unario inatteso [val]</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This happens when a unary operator (like +, -, =, etc...) has been found in your code at a place when it isn&#39;t expected, where [val] will show you the operator.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo accade quando un operatore unario (come +, -, =, ecc.) viene trovato nel codice in un punto non previsto, dove [val] mostrerà l'operatore.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Unexpected ternary operator [val]</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Operatore ternario inatteso [val]</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error means you have used one of the parts of the ternary operator incorrectly somewhere in your code, where [val] shows the part that is in error.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore significa che avete usato una delle parti dell'operatore ternario in modo errato da qualche parte nel vostro codice, dove [val] indica la parte in errore.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Try needs to have catch or finally clause</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Try deve avere una clausola catch o finally</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error means you have called the <span class="inline">try</span> function but have omitted to include a <span class="inline">catch</span> or <span class="inline">finally</span> clause.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore significa che è stata richiamata la funzione <span class="inline">try</span> ma si è omesso di includere una clausola <span class="inline">catch</span> o <span class="inline">finally</span>.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Macro [val] already exists</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">La macro [val] esiste già</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">You can get this error when you try to define a macro [val] with the same name as one that has been previously defined.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Si può ottenere questo errore quando si cerca di definire una macro [val] con lo stesso nome di una definita in precedenza.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Malformed variable reference, got [val]</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Riferimento variabile malformato, ottenuto [val].</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This means there is an internal AST Validation Error (you should never see this error, but if you do please consider filing a bug report from the <a href="../../IDE_Navigation/Menus/The_Help_Menu.htm">Help Menu</a>) </td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo significa che c'è un errore interno di convalida dell'AST (non si dovrebbe mai vedere questo errore, ma se lo si vede si può prendere in considerazione la possibilità di segnalare un bug dal <a href="../../IDE_Navigation/Menus/The_Help_Menu.htm">menu Aiuto</a>). </td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Assignment to multi-relational-equality expression - GML does not support multiple assignments in an expression</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Assegnazione a un'espressione di uguaglianza multirelazionale - <span class="notranslate">GML</span> non supporta assegnazioni multiple in un'espressione.</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error tells you there is an issue with a multi-operator assignment (also called a compound assignment) which is not supported by the GameMaker Language. This includes things like &quot;<span class="inline">*=</span>&quot; or &quot;<span class="inline">/=</span>&quot;, etc...</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore indica che c'è un problema con un'assegnazione multi-operatore (chiamata anche assegnazione composta) che non è supportata da <span class="notranslate">GameMaker Language</span>. Questo include cose come &quot;<span class="inline">*=</span>&quot; o &quot;<span class="inline">/=</span>&quot;, ecc...</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Macro [val] is unused</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">La macro [val] è inutilizzata</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo accade quando la macro [val] è inutilizzata in qualsiasi punto del codice.</td>
+      </tr>
+      <tr>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Variabile [val] referenziata una sola volta</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ciò significa che la variabile data [val] è referenziata una sola volta nel codice.</td>
+      </tr>
+      <tr>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Riferimento alla variabile non assegnata [val]</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ciò significa che la variabile [val] è stata citata nel codice, ma non le è stato assegnato un valore in precedenza.</td>
+      </tr>
+      <tr>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Solo le funzioni dichiarate come costruttori possono utilizzare l'ereditarietà.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore indica che si è cercato di usare l'ereditarietà su una funzione che non è stata dichiarata come costruttore.</td>
+      </tr>
+      <tr>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Attributo di funzione sconosciuto [val]</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore significa che si è cercato di usare un modificatore di funzione non valido o non identificato ([val]) quando si dichiara una funzione in-kine (un modificatore di funzione è qualcosa di simile alla parola chiave <span class="inline">constructor</span>, che è supportata). </td>
+      </tr>
+      <tr>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">L'argomento ereditato \&quot;[val]\&quot; non è tra gli argomenti della funzione.</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Warning Icon" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxWarning.png" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This happens when the macro [val] is unused anywhere in your code.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Questo errore si verifica quando si cerca di fare riferimento a un argomento in una funzione ereditata che non è stato dichiarato nella definizione della funzione padre.</td>
       </tr>
       <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Variable [val] only referenced once</td>
+        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">[Codice di creazione</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Warning Icon" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxWarning.png" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This means that the given variable [val] is only referenced once in your code.</td>
-      </tr>
-      <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Unassigned variable [val] referenced</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Warning Icon" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxWarning.png" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This means that the variable [val] has been referenced in your code, but has not been assigned a value anywhere previously.</td>
-      </tr>
-      <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Only functions that are declared as constructors can use inheritance</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error tells you that you have tried to use inheritance on a function which has not been declared as a constructor.</td>
-      </tr>
-      <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Unknown function attribute [val]</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error means that you have tried to use an invalid or unidentified function modifier ([val]) when declaring an in-kine function (a function modifier is something like the <span class="inline">constructor</span> keyword, which is supported). </td>
-      </tr>
-      <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Inherited argument \&quot;[val]\&quot; is not in function arguments</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This error happens when you try to reference an argument in an inherited function that has not been declared in the parent function definition.</td>
-      </tr>
-      <tr>
-        <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">[val] Creation Code</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px;text-align: center"><img alt="Syntax Error Icon" height="12" src="../../assets/Images/Scripting_Reference/Additional_Information/i_Error_SyntaxError.png" width="14" /></td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">This happens when you have an error [val] in the room creation code somewhere.</td>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Ciò accade quando si verifica un errore [val] nel codice di creazione di <span class="notranslate">room</span>.</td>
       </tr>
     </tbody>
   </table>
-  <h2 id="h">Feather Messages (Feather enabled)</h2>
-  <p>When Feather is enabled the Syntax Errors window is replaced by the Feather Messages window: </p>
-  <p><img class="center" src="../../assets/Images/Scripting_Reference/Additional_Information/Output_Feather_Searchable_Sortable.png" />The Feather Messages window lists the errors and warnings that Feather encounters in your code, as well as the suggestions that it gives when it finds certain specific code patterns. Which types of errors are shown here depends on the profile that you define in the <a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm">Feather Settings</a> under Message Severity.</p>
-  <p>In this window the list of messages can be sorted ascending or descending by message code, by message text (alphabetically) or by resource (alphabetically by resource name). You can also search using the search box in the top right corner of the window.</p>
-  <p>Feather messages fall into three categories:</p>
+  <h2 id="h">Messaggi Feather (abilitato Feather)</h2>
+  <p>Quando Feather è abilitato, la finestra Errori di sintassi è sostituita dalla finestra Messaggi di Feather: </p>
+  <p><img>La finestra Messaggi di Feather elenca gli errori e le avvertenze che Feather incontra nel codice, nonché i suggerimenti che fornisce quando trova alcuni modelli di codice specifici. I tipi di errori mostrati dipendono dal profilo definito nelle <a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm">impostazioni</a> di <a href="../../Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm">Feather</a> alla voce Message Severity.</p>
+  <p>In questa finestra l'elenco dei messaggi può essere ordinato in modo crescente o decrescente per codice del messaggio, per testo del messaggio (in ordine alfabetico) o per risorsa (in ordine alfabetico per nome della risorsa). È anche possibile effettuare una ricerca utilizzando la casella di ricerca nell'angolo in alto a destra della finestra.</p>
+  <p>I messaggi delle piume si dividono in tre categorie:</p>
   <ul class="colour">
-    <li><img src="../../assets/Images/Scripting_Reference/Additional_Information/i_Feather_Warning.png" /> <strong>Warnings</strong>: These are shown for possible errors, which, in most cases, won&#39;t stop the game from compiling, but might provoke runtime errors. The most common causes of these warnings is when a variable is used in an expression and it hasn&#39;t been defined yet anywhere else, or when a variable has been defined but hasn&#39;t been used.</li>
-    <li><img src="../../assets/Images/Scripting_Reference/Additional_Information/i_Feather_Error.png" /> <strong>Errors</strong>: These are problems that will not permit the game to compile, let alone run. These should be fixed before doing anything further with the code.</li>
-    <li><img src="../../assets/Images/Scripting_Reference/Additional_Information/i_Feather_Suggestion.png" /> <strong>Suggestions</strong>: These are suggestions for possible improvements to the code, related to a variety of things.</li>
+    <li><img> <strong>Avvertenze</strong>: Vengono mostrati i possibili errori che, nella maggior parte dei casi, non impediscono la compilazione del gioco, ma che potrebbero causare errori a <span class="notranslate">runtime</span>. Le cause più comuni di questi avvisi sono quando una variabile viene usata in un'espressione e non è ancora stata definita da nessun'altra parte, oppure quando una variabile è stata definita ma non è stata usata.</li>
+    <li><img> <strong>Errori</strong>: Si tratta di problemi che non permettono al gioco di essere compilato e tanto meno di essere eseguito. Questi problemi devono essere risolti prima di procedere con il codice.</li>
+    <li><img> <strong>Suggerimenti</strong>: Si tratta di suggerimenti per possibili miglioramenti del codice, relativi a diversi aspetti.</li>
   </ul>
-  <h3> </h3>
-  <p> </p>
+  <h3> </h3>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Error_Reporting.htm">Error Reporting</a></div>
-        <div style="float:right">Next: <a href="Compiler_Errors.htm">Compiler Errors</a></div>
+        <div style="float:left">Indietro: <a href="../Error_Reporting.htm">Segnalazione degli errori</a></div>
+        <div style="float:right">Avanti: <a href="Compiler_Errors.htm">Errori del compilatore</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Syntax Errors

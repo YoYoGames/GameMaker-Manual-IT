@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Free Data Structure</title>
+  <title>Struttura dati libera</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Free Data Structure action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Free Data Structure" />
@@ -14,47 +14,47 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Free Data Structure Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Free_Data_Structure.png" /> Free Data Structure</h1>
-  <p>This action will free the data structure from memory and should be called whenever a data structure is no longer required, for example in the Destroy even of an instance or the Room End event, etc... Freeing a data structure means that no further actions
-    can be used to reference it as it will no longer exist, although you can also check for this using the action <a href="If_Data_Structure_Exists.htm">If Data Structure Exists</a>.</p>
-  <p>Note that unless the data structure has an index assigned to a global scope variable, it will not be carried across from one room to another. For example, if you create a player instance and a list data structure is assigned to a variable in that instance,
-    the list will need to be freed if the player is destroyed <i>or</i> if the room changes with the player instance in it (unless the player instance is flagged as persistent), so the player instance would have two Free Data Structure actions in it for
-    both those events. It is important that all created data structures are destroyed in this way when no longer required to prevent memory leaks which can cause performance issues or even crash your game.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Free Data Structure Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/a_DS_Free_Data_Structure.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Struttura dati libera</h1>
+  <p>Questa azione libererà la struttura dati dalla memoria e dovrebbe essere chiamata ogni volta che una struttura dati non è più necessaria, per esempio nel Destroy anche di un'istanza o nell'evento <span class="notranslate">Room</span> End, ecc. Liberare una struttura di dati significa che non è possibile
+    può essere utilizzata per fare riferimento ad essa, in quanto non esisterà più, anche se è possibile controllare questo utilizzando l'azione <a href="If_Data_Structure_Exists.htm">If Data Structure Exists</a>.</p>
+  <p>Notate che, a meno che la struttura di dati non abbia un indice assegnato a una variabile di ambito globale, non sarà trasportata da un <span class="notranslate">room</span> all'altro. Per esempio, se si crea un'istanza di un giocatore e una struttura dati di lista è assegnata a una variabile in quell'istanza,
+    l'elenco dovrà essere liberato se il giocatore viene distrutto <i>o</i> se <span class="notranslate">room</span> cambia con l'istanza del giocatore al suo interno (a meno che l'istanza del giocatore sia contrassegnata come persistente), quindi l'istanza del giocatore avrà due azioni Free Data Structure per
+    entrambi questi eventi. È importante che tutte le strutture dati create siano distrutte in questo modo quando non sono più necessarie, per evitare perdite di memoria che possono causare problemi di prestazioni o anche crash del gioco.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="Free Data Structure Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/i_DS_Free_Data_Structure.png" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Type</td>
-        <td>The type of data structure you are freeing (List, Map, Grid or Stack)</td>
+        <td><span class="notranslate">Type</span></td>
+        <td>Il tipo di struttura di dati che si sta liberando (Lista, Mappa, Griglia o Pila)</td>
       </tr>
       <tr>
-        <td>Variable</td>
-        <td>The variable holding the index of the data structure to free</td>
+        <td><span class="notranslate">Variable</span></td>
+        <td>La variabile che contiene l'indice della struttura di dati da liberare</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Free Data Structure Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Structures/e_DS_Free_Data_Structure.png" />The above action block code gets the size of the list referenced in the global
-    variable and then uses a for loop to loop through it and destroy the instances with the IDs stored in the list. After the loop is finished, the list is freed from memory.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione di cui sopra ottiene la dimensione della lista referenziata nella variabile globale
+    e poi usa un for <span class="notranslate">loop</span> per <span class="notranslate">loop</span> attraverso di essa e distruggere le istanze con gli ID memorizzati nella lista. Dopo che <span class="notranslate">loop</span> ha finito, la lista viene liberata dalla memoria.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Data_Structure_Actions.htm">Data Structure Actions</a></div>
-        <div style="float:right">Next: <a href="Add_To_List.htm">Add To List</a></div>
+        <div style="float:left">Indietro: <a href="Data_Structure_Actions.htm">Azioni della struttura dei dati</a></div>
+        <div style="float:right">Prossimo: <a href="Add_To_List.htm">Aggiungi alla lista</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Free Data Structure

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Motion Planning</title>
+  <title>Pianificazione del movimento</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference section for Motion Planning functions and variables" />
   <meta name="rh-index-keywords" content="" />
@@ -14,59 +14,59 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Motion Planning</span></h1>
-  <p>In many games you want opponents, NPC&#39;s, enemies, etc. to interact with the player and show certain intelligence when moving around, i.e. you want them to avoid obstacles, plan routes and generally not bump into everything in their path! To aid in this <span data-keyref="GameMaker Name">GameMaker</span> has a series of functions that deal with motion planning. Note that while these are designed for things like game enemies, they can be used for all sorts of things like creating a smooth way to introduce text, or to create transitions, etc. However, whatever you choose to use from the list below in your game, it should be noted that in many situations a single function set will not give you a perfect solution and that you will have to &quot;mix and match&quot; the functions, using one or the other depending on the situation within your game.</p>
-  <p>Motion planning in <span data-keyref="GameMaker Name">GameMaker</span> is dealt with by the <span class="inline2">mp_*</span> functions, which themselves are split into the following three groups:</p>
-  <h2><label for="one">Linear Functions</label></h2>
-  <p>This kind of function tries to compute a collision-free path for the instance. Once this path has been computed you can assign it to the instance to move towards the goal. The computation of the path will take some time but after that the execution of the path will be fast. Of course this is only valid if the situation has not changed in the meantime. For example, if obstacles change you possibly will need to recompute the path. Again notice that these functions might fail and that no path may be found for the instance.</p>
+  <h1>Pianificazione del movimento</h1>
+  <p>In molti giochi si vuole che gli avversari, i PNG, i nemici ecc... interagiscano con il giocatore e mostrino una certa intelligenza quando si muovono, cioè: si vuole che evitino gli ostacoli, pianifichino i percorsi e in generale non sbattano contro tutto ciò che si trova nel loro <span class="notranslate">path</span>! Per aiutare in questo <span data-keyref="GameMaker Name">GameMaker</span> ha una serie di funzioni che si occupano della pianificazione del movimento. Notate che mentre queste sono progettate per cose come i nemici del gioco, possono essere usate per ogni sorta di cose come creare un modo fluido per introdurre il testo, o per creare transizioni ecc... Comunque, qualunque cosa scegliate di usare dalla lista qui sotto nel vostro gioco, va notato che in molte situazioni un singolo set di funzioni non vi darà una soluzione perfetta e che dovrete &quot;mescolare e abbinare&quot; le funzioni, usando una o l'altra a seconda della situazione nel vostro gioco.</p>
+  <p>La pianificazione del movimento in <span data-keyref="GameMaker Name">GameMaker</span> è gestita dalle funzioni <b>mp_</b>, che sono suddivise nei seguenti tre gruppi:</p>
+  <h2><label for="one">Funzioni lineari</label></h2>
+  <p>Questo tipo di funzione cerca di calcolare un <span class="notranslate">path</span> senza collisioni per l'istanza. Una volta che questo <span class="notranslate">path</span> è stato calcolato è possibile assegnarlo all'istanza per muoversi verso l'obiettivo. Il calcolo di <span class="notranslate">path</span> richiederà un po' di tempo, ma poi l'esecuzione di <span class="notranslate">path</span> sarà veloce. Naturalmente questo è valido solo se la situazione non è cambiata nel frattempo. Per esempio, se gli ostacoli cambiano è possibile che sia necessario ricomputare <span class="notranslate">path</span>. Notate ancora una volta che queste funzioni potrebbero fallire e che nessun <span class="notranslate">path</span> potrebbe essere trovato per l'istanza.</p>
   <ul class="colour">
-    <li><a href="mp_linear_step.htm">mp_linear_step</a></li>
-    <li><a href="mp_linear_step_object.htm">mp_linear_step_object</a></li>
-    <li><a href="mp_linear_path.htm">mp_linear_path</a></li>
-    <li><a href="mp_linear_path_object.htm">mp_linear_path_object</a></li>
+    <li><a href="mp_linear_step.htm"><span class="notranslate">mp_linear_step</span></a></li>
+    <li><a href="mp_linear_step_object.htm"><span class="notranslate">mp_linear_step_object</span></a></li>
+    <li><a href="mp_linear_path.htm"><span class="notranslate">mp_linear_path</span></a></li>
+    <li><a href="mp_linear_path_object.htm"><span class="notranslate">mp_linear_path_object</span></a></li>
   </ul>
-  <p> </p>
-  <h2><label for="three">Potential Functions</label></h2>
-  <p>These are the basic avoidance functions and good for simple AI. They work by making an instance take a step towards a particular goal position while trying to go straight if possible but taking a different direction if required. These functions should be used in the <b>Step Event</b> of an instance.</p>
+  <p> </p>
+  <h2><label for="three">Funzioni potenziali</label></h2>
+  <p>Queste sono le funzioni di evitamento di base e vanno bene per l'IA semplice. Funzionano facendo fare a un'istanza un passo verso una particolare posizione dell'obiettivo, cercando di andare dritto se possibile, ma prendendo una direzione diversa se necessario. Queste funzioni dovrebbero essere usate nell'<b>evento Step</b> di un'istanza.</p>
   <ul class="colour">
-    <li><a href="mp_potential_settings.htm">mp_potential_settings</a></li>
-    <li><a href="mp_potential_step.htm">mp_potential_step</a></li>
-    <li><a href="mp_potential_step_object.htm">mp_potential_step_object</a></li>
-    <li><a href="mp_potential_path.htm">mp_potential_path</a></li>
-    <li><a href="mp_potential_path_object.htm">mp_potential_path_object</a></li>
+    <li><a href="mp_potential_settings.htm"><span class="notranslate">mp_potential_settings</span></a></li>
+    <li><a href="mp_potential_step.htm"><span class="notranslate">mp_potential_step</span></a></li>
+    <li><a href="mp_potential_step_object.htm"><span class="notranslate">mp_potential_step_object</span></a></li>
+    <li><a href="mp_potential_path.htm"><span class="notranslate">mp_potential_path</span></a></li>
+    <li><a href="mp_potential_path_object.htm"><span class="notranslate">mp_potential_path_object</span></a></li>
   </ul>
-  <p> </p>
-  <h2><label for="two">Grid Functions</label></h2>
-  <p>The final type of function use a much more complex mechanism based on a grid-based approach (sometimes called an A* algorithm). It will be much more successful in finding paths (although it still might fail) and will find the shortest paths possible but it requires more work on your side to set it up.</p>
-  <p>The global idea is as follows - First of all we create a grid that covers the room (or the relevant part of it). You can choose to use a fine grid, which will be slower, or a coarse grid, but both of them should be based on the resolution of the room so that the path-finding is as accurate as possible. For example, if you have a room that is 400x200 pixels, you can have a grid resolution of 40, or 20, or 10... it all depends on how accurate you need the path to be and how much processing you want <span data-keyref="GameMaker Name">GameMaker</span> to do to generate it.</p>
-  <p>Next, for all relevant objects that we want to avoid we need to determine the grid cells they overlap (based either on their bounding boxes or their precise sprite) and mark these cells as being forbidden. So a cell will be marked totally forbidden, even if an obstacle is only partially overlapping.</p>
-  <p>Finally we specify a start position and a goal position, both of which <i>must</i> lie in free cells, and the function then computes the shortest path possible between these two positions. The path will run between the centers of all free cells, so if the cells are large enough so that the instance placed at its center will lie completely inside it this will be successful. This path is then assigned to the instance to follow using the <a href="../../Asset_Management/Paths/Paths.htm"><span class="inline">path_*</span></a> functions. You should realise how important cell size is for this as the cells must be large enough so that the moving object placed with its origin on the center of a cell will lie <i>completely</i> inside the cell. (Be careful about the position of the origin of the object. Also realize that you can shift the path if the origin of the object is not in its center!) On the other hand, the smaller the cells the more possible paths exist. If you make cells too large, openings between obstacles may get closed because all cells intersect an obstacle.</p>
+  <p> </p>
+  <h2><label for="two">Funzioni della griglia</label></h2>
+  <p>L'ultimo tipo di funzione usa un meccanismo molto più complesso basato su un approccio a griglia (talvolta chiamato algoritmo A*). Avrà molto più successo nel trovare <span class="notranslate">paths</span> (anche se potrebbe ancora fallire) e troverà il più breve <span class="notranslate">paths</span> possibile, ma richiede più lavoro da parte vostra per impostarlo.</p>
+  <p>L'idea globale è la seguente - Prima di tutto creiamo una griglia che copre il <span class="notranslate">room</span> (o la parte rilevante di esso). Puoi scegliere di usare una griglia fine, che sarà più lenta, o una griglia grossolana, ma entrambe dovrebbero essere basate sulla risoluzione di <span class="notranslate">room</span> in modo che il path-finding sia il più accurato possibile. Per esempio, se hai un <span class="notranslate">room</span> che è 400x200 pixel, puoi avere una risoluzione della griglia di 40, o 20, o 10... tutto dipende da quanto accurato hai bisogno che il <span class="notranslate">path</span> sia e quanta elaborazione vuoi che <span class="notranslate">GameMaker</span> faccia per generarlo.</p>
+  <p>In seguito, per tutti i <span class="notranslate">objects</span> rilevanti che vogliamo evitare, dobbiamo determinare le celle della griglia che si sovrappongono (basandoci sui loro riquadri di delimitazione o sul loro preciso <span class="notranslate">sprite</span>) e contrassegnare queste celle come vietate. Così una cella sarà marcata come totalmente proibita, anche se un ostacolo è solo parzialmente sovrapposto.</p>
+  <p>Infine specifichiamo una posizione di partenza e una posizione di arrivo, che <i>devono</i> trovarsi entrambe in celle libere, e la funzione calcola quindi il più breve <span class="notranslate">path</span> possibile tra queste due posizioni. Il <span class="notranslate">path</span> correrà tra i centri di tutte le celle libere, quindi se le celle sono abbastanza grandi in modo che l'istanza posta al suo centro giaccia completamente al suo interno, questo avrà successo. Questo <span class="notranslate">path</span> viene poi assegnato all'istanza da seguire usando le funzioni <a href="../../Asset_Management/Paths/Paths.htm"><span class="inline">path_*</span></a> funzioni. Dovreste rendervi conto di quanto sia importante la dimensione delle celle per questo, poiché le celle devono essere abbastanza grandi in modo che l'istanza mobile <span class="notranslate">object</span> posta con la sua origine al centro di una cella si trovi <i>completamente</i> all'interno della cella. (Fate attenzione alla posizione dell'origine del <span class="notranslate">object</span>. Rendetevi anche conto che potete spostare il <span class="notranslate">path</span> se l'origine del <span class="notranslate">object</span> non è nel suo centro!) D'altra parte, più le celle sono piccole e più sono possibili <span class="notranslate">paths</span>. Se si fanno celle troppo grandi, le aperture tra gli ostacoli possono chiudersi perché tutte le celle intersecano un ostacolo.</p>
   <ul class="colour">
-    <li><a href="mp_grid_create.htm">mp_grid_create</a></li>
-    <li><a href="mp_grid_destroy.htm">mp_grid_destroy</a></li>
-    <li><a href="mp_grid_path.htm">mp_grid_path</a></li>
-    <li><a href="mp_grid_add_cell.htm">mp_grid_add_cell</a></li>
-    <li><a href="mp_grid_add_instances.htm">mp_grid_add_instances</a></li>
-    <li><a href="mp_grid_add_rectangle.htm">mp_grid_add_rectangle</a></li>
-    <li><a href="mp_grid_get_cell.htm">mp_grid_get_cell</a></li>
-    <li><a href="mp_grid_clear_all.htm">mp_grid_clear_all</a></li>
-    <li><a href="mp_grid_clear_cell.htm">mp_grid_clear_cell</a></li>
-    <li><a href="mp_grid_clear_rectangle.htm">mp_grid_clear_rectangle</a></li>
-    <li><a href="mp_grid_to_ds_grid.htm">mp_grid_to_ds_grid</a> / <a data-xref="{title}" href="../../Data_Structures/DS_Grids/ds_grid_to_mp_grid.htm">ds_grid_to_mp_grid</a></li>
-    <li><a href="mp_grid_draw.htm">mp_grid_draw</a></li>
+    <li><a href="mp_grid_create.htm"><span class="notranslate">mp_grid_create</span></a></li>
+    <li><a href="mp_grid_destroy.htm"><span class="notranslate">mp_grid_destroy</span></a></li>
+    <li><a href="mp_grid_path.htm"><span class="notranslate">mp_grid_path</span></a></li>
+    <li><a href="mp_grid_add_cell.htm"><span class="notranslate">mp_grid_add_cell</span></a></li>
+    <li><a href="mp_grid_add_instances.htm"><span class="notranslate">mp_grid_add_instances</span></a></li>
+    <li><a href="mp_grid_add_rectangle.htm"><span class="notranslate">mp_grid_add_rectangle</span></a></li>
+    <li><a href="mp_grid_get_cell.htm"><span class="notranslate">mp_grid_get_cell</span></a></li>
+    <li><a href="mp_grid_clear_all.htm"><span class="notranslate">mp_grid_clear_all</span></a></li>
+    <li><a href="mp_grid_clear_cell.htm"><span class="notranslate">mp_grid_clear_cell</span></a></li>
+    <li><a href="mp_grid_clear_rectangle.htm"><span class="notranslate">mp_grid_clear_rectangle</span></a></li>
+    <li><a href="mp_grid_to_ds_grid.htm"><span class="notranslate">mp_grid_to_ds_grid</span></a></li>
+    <li><a href="mp_grid_draw.htm"><span class="notranslate">mp_grid_draw</span></a></li>
   </ul>
-  <p> </p>
-  <p>The grid-based approach is very powerful (and is used in many professional games) but it requires that you do some careful thinking as you must determine which area and cell size are good enough for solving the game. Also, you must determine which objects must be avoided and whether precise checking is important. All these parameters strongly influence the efficiency of the approach. You must also decide whether it is actually necessary as maybe one of the less costly <span class="inline2">mp_*</span> functions can do the job just as well.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p>L'approccio basato sulla griglia è molto potente (ed è usato in molti giochi professionali), ma richiede un'attenta riflessione in quanto si deve determinare quale area e dimensione delle celle sono sufficienti per risolvere il gioco. Inoltre, è necessario determinare quali <span class="notranslate">objects</span> devono essere evitati e se è importante un controllo preciso. Tutti questi parametri influenzano fortemente l'efficienza dell'approccio. Dovete anche decidere se è effettivamente necessario, dato che forse una delle funzioni meno costose di <span class="inline">mp_*</span> può fare il lavoro altrettanto bene.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Movement_And_Collisions.htm">Movement And Collisions</a></div>
-        <div style="float:right">Next: <a href="../Collisions/Collisions.htm">Collisions</a></div>
+        <div style="float:left">Indietro: <a href="../Movement_And_Collisions.htm">Movimento e collisioni</a></div>
+        <div style="float:right">Il prossimo: <a href="../Collisions/Collisions.htm">Collisioni</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Motion Planning

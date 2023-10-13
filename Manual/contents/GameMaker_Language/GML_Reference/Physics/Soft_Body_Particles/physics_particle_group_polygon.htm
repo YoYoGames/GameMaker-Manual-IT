@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>physics_particle_group_polygon</title>
+  <title>gruppo_fisico_poligono</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for physics_particle_group_polygon" />
   <meta name="rh-index-keywords" content="physics_particle_group_polygon" />
@@ -14,34 +14,34 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>physics_particle_group_polygon</h1>
-  <p>This function will set the shape of the particle group that is being created. You must first have begun the group definition using the function <a href="physics_particle_group_begin.htm"><span class="inline">physics_particle_group_begin()</span></a>, and then you would
-    use this function to tell <span data-keyref="GameMaker Name">GameMaker</span> that you are going to add in the approximate points that will be used to define the polygon shape - approximate because the exact shape will depend on the size of the base particles, as defined by
-    the <a href="physics_particle_set_radius.htm"><span class="inline">physics_particle_set_radius()</span></a> function, as the physics simulation tries to &quot;fit&quot; as many of the particles as possible into the defined shape.</p>
-  <p>You would then define the points of the polygon calling the function <a href="physics_particle_group_add_point.htm"><span class="inline">physics_particle_group_add_point()</span></a>, setting the x/y position in the room for each one (minimum of 3, maximum of 8, and they
-    can be defined as concave but the points inside the shape will be ignored). Finally you need to call <a href="physics_particle_group_end.htm"><span class="inline">physics_particle_group_end()</span></a> to create the group of particles in the room.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>gruppo_fisico_di_particelle_poligono</h1>
+  <p>Questa funzione imposta la forma del gruppo di particelle che si sta creando. Dovete prima aver iniziato la definizione del gruppo utilizzando la funzione <a href="physics_particle_group_begin.htm"><span class="inline">physics_particle_group_begin()</span></a>e poi dovrete
+    utilizzare questa funzione per dire a <span data-keyref="GameMaker Name">GameMaker</span> che stai per aggiungere i punti approssimativi che saranno utilizzati per definire la forma del poligono - approssimativi perché la forma esatta dipenderà dalla dimensione delle particelle di base, come definito da
+    la funzione <a href="physics_particle_set_radius.htm"><span class="inline">physics_particle_set_radius()</span></a> poiché la simulazione fisica cerca di &quot;inserire&quot; il maggior numero possibile di particelle nella forma definita.</p>
+  <p>Definireste quindi i punti del poligono chiamando la funzione <a href="physics_particle_group_add_point.htm"><span class="inline">physics_particle_group_add_point()</span></a>impostando la posizione x/y in <span class="notranslate">room</span> per ognuno di essi (minimo 3, massimo 8, e possono essere
+    possono essere definiti come concavi ma i punti all'interno della forma saranno ignorati). Infine è necessario chiamare <a href="physics_particle_group_end.htm"><span class="inline">physics_particle_group_end()</span></a> per creare il gruppo di particelle in <span class="notranslate">room</span>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">physics_particle_group_polygon()</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var flags = phy_particle_flag_water | phy_particle_flag_viscous | phy_particle_flag_tensile;<br/> var groupflags = phy_particle_group_flag_solid;<br/> physics_particle_group_begin(flags, groupflags, mouse_x, mouse_y, 0, 0, 0, 0, c_white, 1, 1, 2);<br/>    physics_particle_group_polygon();
     <br/> physics_particle_group_add_point(200, 200);<br/> physics_particle_group_add_point(300, 300);<br/> physics_particle_group_add_point(100, 300);<br/> mLastGroup = physics_particle_group_end();</p>
-  <p>The above code stores the flags for the particle type and the particle group properties in variables then uses these to create a polygon particle group of three sides at the mouse position.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra memorizza le bandiere per il tipo di particella e le proprietà del gruppo di particelle in variabili, poi le usa per creare un gruppo di particelle poligonali di tre lati nella posizione del mouse.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Soft_Body_Particles.htm">Soft Body Particles</a></div>
-        <div style="float:right">Next: <a href="physics_particle_group_add_point.htm">physics_particle_group_add_point</a></div>
+        <div style="float:left">Indietro: <a href="Soft_Body_Particles.htm">Particelle del corpo morbido</a></div>
+        <div style="float:right">Il prossimo: <a href="physics_particle_group_add_point.htm"><span class="notranslate">physics_particle_group_add_point</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 physics_particle_group_polygon

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>path_set_kind</title>
+  <title>percorso_set_kind</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function path_set_kind" />
   <meta name="rh-index-keywords" content="path_set_kind" />
@@ -14,50 +14,50 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>path_set_kind</h1>
-  <p>This function can be used to set the kind of path that you wish the specified resource to be. This can be either a straight line path (set to 0) or a smoothed path (set to 1) in which case the path precision has to be taken into account too (the precision
-    can be set too using <a href="path_set_precision.htm"><span class="inline">path_set_precision()</span></a>). This function changes the actual path resource, and so will permanently affect how the path is used by all instances in the game from the moment
-    the function is used until the end of the game.If this is not what you require, then you should use a function like <span class="inline"><a href="path_duplicate.htm">path_duplicate()</a></span> to create a copy of the path first, then call this function
-    on the duplicated asset (don&#39;t forget to call <span class="inline"><a href="path_delete.htm">path_delete()</a></span> on the asset when it is no longer required).</p>
+  <h1>percorso_set_kind</h1>
+  <p>Questa funzione può essere usata per impostare il tipo di <span class="notranslate">path</span> che si desidera che la risorsa specificata sia. Questa può essere sia una linea retta <span class="notranslate">path</span> (impostata a 0) o una <span class="notranslate">path</span> smussata (impostata a 1), nel qual caso deve essere presa in considerazione anche la precisione di <span class="notranslate">path</span> (la precisione
+    può essere impostata anche utilizzando <a href="path_set_precision.htm"><span class="inline">path_set_precision()</span></a>). Questa funzione cambia l'attuale risorsa <span class="notranslate">path</span>, e quindi influenzerà permanentemente il modo in cui <span class="notranslate">path</span> è usato da tutte le istanze del gioco dal momento in cui
+    Se questo non è ciò di cui avete bisogno, allora dovreste usare una funzione come <span class="inline"><a href="path_duplicate.htm">path_duplicate()</a></span> per creare prima una copia di <span class="notranslate">path</span>, poi chiamare questa funzione
+    sul <span class="notranslate">asset</span> duplicato (non dimenticate di chiamare <span class="inline"><a href="path_delete.htm">path_delete()</a></span> sul <span class="notranslate">asset</span> quando non è più necessario).</p>
   <p><img alt="Path kind example" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Paths/setkind.png" /></p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">path_set_kind(index, val);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>index</td><td><span data-keyref="Type_Asset_Path"></span></td>
-        <td>The index of the path to change.</td>
+        <td><span class="notranslate">index</span></td><td><span data-keyref="Type_Asset_Path"></span></td>
+        <td><span class="notranslate">The index of the path to change.</span></td>
      </tr>
       <tr>
-        <td>val</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The kind of the path, 0 for straight or 1 for smooth.</td>
+        <td><span class="notranslate">val</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The kind of the path, 0 for straight or 1 for smooth.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">path_set_kind(pth_Patrol, true);</p>
-  <p>This will set the given path to be a &quot;smooth&quot; path.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Questo imposterà il dato <span class="notranslate">path</span> per essere un &quot;liscio&quot; <span class="notranslate">path</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Path_Manipulation.htm">Path Manipulation</a></div>
-        <div style="float:right">Next: <a href="path_set_precision.htm">path_set_precision</a></div>
+        <div style="float:left">Indietro: <a href="Path_Manipulation.htm">Manipolazione del percorso</a></div>
+        <div style="float:right">Il prossimo: <a href="path_set_precision.htm"><span class="notranslate">path_set_precision</span></a></div>
         
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 path_set_kind
