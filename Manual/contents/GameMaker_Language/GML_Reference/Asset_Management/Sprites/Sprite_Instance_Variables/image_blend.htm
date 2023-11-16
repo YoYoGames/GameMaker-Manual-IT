@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>image_blend</title>
+  <title>miscela_immagine</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the variable image_blend" />
   <meta name="rh-index-keywords" content="image_blend" />
@@ -14,31 +14,31 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>image_blend</h1>
-  <p>This variable controls the &quot;tinting&quot; of the instance sprite and the default value is -1 (but can also be <span class="inline">c_white</span>). Any other value (including internal colour constants like <span class="inline">c_red</span>, or <span class="inline">c_aqua</span>) will blend the specified colour with the original sprite. Please note that for changes in this variable to be visible, the instance should have either <i>no</i> draw event (and so <span data-keyref="GameMaker Name">GameMaker</span> will default draw the sprite) or be drawn using one of the extended drawing functions like <a href="../../../Drawing/Sprites_And_Tiles/draw_self.htm"><span class="inline">draw_self()</span></a> or <a href="../../../Drawing/Sprites_And_Tiles/draw_sprite_ext.htm"><span class="inline">draw_sprite_ext()</span></a>.</p>
+  <h1>miscela_immagine</h1>
+  <p>Questa variabile controlla la &quot;tinta&quot; dell'istanza <span class="notranslate">sprite</span> e il valore predefinito è -1 (ma può anche essere <span class="inline">c_white</span>). Qualsiasi altro valore (incluse le costanti di colore interne come <span class="inline">c_red</span>, o <span class="inline">c_aqua</span>) mescolerà il colore specificato con quello originale <span class="notranslate">sprite</span>. Si prega di notare che per i cambiamenti in questa variabile per essere visibili, l'istanza dovrebbe avere o <i>nessun</i> evento di disegno (e quindi <span data-keyref="GameMaker Name">GameMaker</span> disegnerà di default il <span class="notranslate">sprite</span>) o essere disegnata utilizzando una delle funzioni di disegno esteso come <a href="../../../Drawing/Sprites_And_Tiles/draw_self.htm"><span class="inline">draw_self()</span></a> o <a href="../../../Drawing/Sprites_And_Tiles/draw_sprite_ext.htm"><span class="inline">draw_sprite_ext()</span></a>.</p>
   <p><img alt="image_blend Example" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Sprites/blend_image.png" /></p>
-  <p>Please note that you should try to limit blending on the HTML5 platform (unless using WebGL), as each blended sprite has to be cached separately and so having many blended sprites may adversely affect performance (you can also set the cache size using the function <a href="../Sprite_Manipulation/sprite_set_cache_size.htm"><span class="inline">sprite_set_cache_size()</span></a>).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Si prega di notare che si dovrebbe cercare di limitare il blending sulla piattaforma HTML5 (a meno che non si usi WebGL), poiché ogni <span class="notranslate">sprite</span> mescolato deve essere memorizzato nella cache separatamente e quindi avere molti <span class="notranslate">sprites</span> mescolati può influire negativamente sulle prestazioni (si può anche impostare la dimensione di <span class="notranslate">cache</span> usando la funzione <a href="../Sprite_Manipulation/sprite_set_cache_size.htm"><span class="inline">sprite_set_cache_size()</span></a>).</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">image_blend;</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Constant_Colour">Colour Constant</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">image_blend = make_colour_hsv(255, 255, random(255));</p>
-  <p>The above code will set the image_blend of the sprite defined for the instance to a random colour.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra imposterà l'image_blend di <span class="notranslate">sprite</span> definito per l'istanza ad un colore casuale.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Instance_Variables.htm">Sprite Instance Variables</a></div>
-        <div style="float:right">Next: <a href="image_index.htm">image_index</a></div>
+        <div style="float:left">Indietro: <a href="Sprite_Instance_Variables.htm">Variabili di istanza dello sprite</a></div>
+        <div style="float:right">Il prossimo: <a href="image_index.htm"><span class="notranslate">image_index</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 image_blend

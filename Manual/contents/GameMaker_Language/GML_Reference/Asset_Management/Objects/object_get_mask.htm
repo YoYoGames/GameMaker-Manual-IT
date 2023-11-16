@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>object_get_mask</title>
+  <title>oggetto_get_mask</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function object_get_mask" />
   <meta name="rh-index-keywords" content="object_get_mask" />
@@ -15,44 +15,44 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>object_get_mask</h1>
-  <p>This function will tell you whether the object you are checking has a mask index or not, and if it does then it will return the index of that mask (which is a sprite asset), or -1 if it does not. Please note that this is not an instance function! You can have an object with no mask while an instance of that same object can have one and vice-versa, or they can even have different masks. You can set an individual instances mask index using the <a href="../Sprites/Sprite_Instance_Variables/mask_index.htm"><span class="inline">mask_index</span></a> instance variable.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>oggetto_get_mask</h1>
+  <p>Questa funzione vi dirà se <span class="notranslate">object</span> che state controllando ha un indice di maschera o no, e se ce l'ha allora restituirà l'indice di quella maschera (che è un <span class="notranslate">sprite</span> <span class="notranslate">asset</span>), o -1 se non ce l'ha. Notate che questa non è una funzione di istanza! Potete avere un <span class="notranslate">object</span> senza maschera mentre un'istanza dello stesso <span class="notranslate">object</span> può averne una e viceversa, o possono anche avere maschere diverse. Potete impostare l'indice della maschera di una singola istanza usando la variabile <a href="../Sprites/Sprite_Instance_Variables/mask_index.htm"><span class="inline">mask_index</span></a> variabile di istanza.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">object_get_mask(obj);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>obj</td><td><span data-keyref="Type_Asset_Object"></span></td>
-        <td>The index of the object to check</td>
+        <td><span class="notranslate">obj</span></td><td><span data-keyref="Type_Asset_Object"></span></td>
+        <td><span class="notranslate">The index of the object to check</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Asset_Sprite">Sprite Asset</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (mask_index != object_get_mask(object_index))<br />
     {<br />
         mask_index = object_get_mask(object_index);<br />
     }</p>
-  <p>The above example will check the mask index of the instance against the mask of the object_index of the instance. If they are not the same, then it will assign the same mask as the one the object index has to the instance.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>L'esempio precedente controllerà l'indice della maschera dell'istanza contro la maschera dell'indice_oggetto dell'istanza. Se non sono uguali, allora assegnerà all'istanza la stessa maschera che ha l'indice <span class="notranslate">object</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Objects.htm">Objects</a></div>
-        <div style="float:right">Next: <a href="object_get_parent.htm">object_get_parent</a></div>
+        <div style="float:left">Indietro: <a href="Objects.htm">Oggetti</a></div>
+        <div style="float:right">Il prossimo: <a href="object_get_parent.htm"><span class="notranslate">object_get_parent</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 object_get_mask

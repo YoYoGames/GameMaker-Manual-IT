@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Execute Script</title>
+  <title>Eseguire lo script</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section detailing Execute Script" />
   <meta name="rh-index-keywords" content="GML Visual Action - Execute Script" />
@@ -14,52 +14,52 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Execute Script Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/i_Common_Execute_Script.png" /> Execute Script</h1>
-  <p>This action can be used to call a script function or <a href="Declare_A_New_Function.htm">user-defined function</a>. In general, this action would only be used for legacy support and shouldn&#39;t really be used in current or new projects. To use the
-    action, you give the script asset to call - or the user-defined function variable name to call - and then supply any <i>arguments</i> that it requires, ie: any values (strings, integers, resource indices, etc...) that you wish to input into the script
-    or function so that it can use them. You can add additional arguments as required by clicking the plus icon <span><img src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Icon_Expand_Arguments.png"/> </span>beside the action.</p>
-  <p>Some scripts and user-defined functions can also return a value for later use in the action block list, and so you can specify the <b>target variable</b> that should store this return value. This can have been created previously or can be a new temporary
-    local one (if you check the &quot;<strong>Temp</strong>&quot; check-box). Both the target and the argument fields can be left blank if they are not required.</p>
-  <p>Note that you are generally better off using the action <a href="Function_Call.htm">Function Call</a> to call user-defined functions, and shouldn&#39;t generally need to use this action, or call a script asset directly in code.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Execute Script Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/a_Common_Execute_Script.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Eseguire lo script</h1>
+  <p>Questa azione può essere usata per chiamare una funzione <span class="notranslate">script</span> o una <a href="Declare_A_New_Function.htm">funzione definita dall'utente</a>. In generale, questa azione verrebbe usata solo per il supporto legacy e non dovrebbe essere usata in progetti attuali o nuovi. Per usare l'azione
+    si dà l'indirizzo <span class="notranslate">script</span> <span class="notranslate">asset</span> da chiamare - o il nome della funzione definita dall'utente da chiamare - e poi si forniscono tutti gli <i>argomenti</i> che richiede, cioè: qualsiasi valore (<span class="notranslate">strings</span>, interi, indici di risorse, ecc...) che si desidera inserire nello script
+    o funzione in modo che possa utilizzarli. Puoi aggiungere altri argomenti come richiesto cliccando sull'icona più <span><img> </span>accanto all'azione.</p>
+  <p>Alcune <span class="notranslate">scripts</span> e funzioni definite dall'utente possono anche restituire un valore per un uso successivo nell'elenco dei blocchi d'azione, e quindi è possibile specificare la <b>variabile di destinazione</b> che dovrebbe memorizzare questo valore di ritorno. Questa può essere stata creata in precedenza o può essere una nuova variabile temporanea
+    temporanea locale (se si seleziona la casella di controllo &quot;<strong>Temp</strong>&quot;). Sia il campo target che quello dell'argomento possono essere lasciati vuoti se non sono richiesti.</p>
+  <p>Notate che generalmente è meglio usare l'azione <a href="Function_Call.htm">Function Call</a> per chiamare funzioni definite dall'utente, e non dovreste generalmente aver bisogno di usare questa azione, o chiamare un <span class="notranslate">script</span> <span class="notranslate">asset</span> direttamente nel codice.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="Execute Script Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/i_Common_Execute_Script.png" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Script</td>
-        <td>The name of the script or user-defined function to call.</td>
+        <td><span class="notranslate">Script</span></td>
+        <td>Il nome della funzione <span class="notranslate">script</span> o definita dall'utente da chiamare.</td>
       </tr>
       <tr>
-        <td>Argument0 ... Argument3</td>
-        <td>The different arguments (values) that are to be passed to the script or function (unused arguments can be left blank)</td>
+        <td><span class="notranslate">Argument0 ... Argument3</span></td>
+        <td>I diversi argomenti (valori) che devono essere passati a <span class="notranslate">script</span> o alla funzione (gli argomenti inutilizzati possono essere lasciati vuoti)</td>
       </tr>
       <tr>
-        <td>Target</td>
-        <td>The name of the variable that is to be targeted for any returned values (can be left blank)</td>
+        <td><span class="notranslate">Target</span></td>
+        <td>Il nome della variabile che deve essere presa di mira per qualsiasi valore restituito (può essere lasciato vuoto)</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Execute Script Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Common/e_Common_Execute_Script.png" />The above action block code calls a user-defined function, passing in two arguments for a
-    random position within the room. It does not return anything.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione qui sopra chiama una funzione definita dall'utente, passando due argomenti per una posizione casuale all'interno di  .
+    posizione casuale all'interno di <span class="notranslate">room</span>. Non restituisce nulla.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Common_Actions_Library.htm">Common Actions</a></div>
-        <div style="float:right">Next: <a href="New.htm">New</a></div>
+        <div style="float:left">Indietro: <a href="Common_Actions_Library.htm">Azioni comuni</a></div>
+        <div style="float:right">Il prossimo: <a href="New.htm">Nuovo</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Execute Script

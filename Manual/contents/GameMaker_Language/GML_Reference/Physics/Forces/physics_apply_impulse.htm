@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>physics_apply_impulse</title>
+  <title>fisica_applica_impulso</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for physics_apply_impulse" />
   <meta name="rh-index-keywords" content="physics_apply_impulse" />
@@ -14,42 +14,42 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>physics_apply_impulse</h1>
-  <p>Not only can you apply force and gravity to an object with the physics in <span data-keyref="GameMaker Name">GameMaker</span> but you can also apply an impulse. This is slightly different to a force in that when it is applied it will <i>immediately </i>affect the speed, and, potentially the torque (or &quot;spin&quot;) of the object, particularly if the point chosen to apply the impulse is not aligned with the center of mass (note: the center of mass is <i>not necessarily</i> the same as the origin!). Here is an illustration:</p>
-  <p><img alt="Apply physics impulse illustration" class="center" src="../../../../assets/Images/Scripting_Reference/GML/Reference/Physics/physics_apply_impulse_image.png" />As you can see, the player has clicked on the ball and this has given it an impulse to move to the upper right, spinning as it goes. The exact impulse is defined by the vector we get from the components ximpulse/yimpulse in relation to the xpos/ypos coordinates - which simply means that the impulse is calculated as the distance from xpos/ypos to ximpulse/yimpulse in Newtons, and the direction is the angle that we get from xpos/ypos to ximpulse/yimpulse.</p>
-  <p class="note"><b>NOTE</b>: The physics world uses meters for all its calculations, and the ratio of pixels per meter is defined in the room editor or using <span style="font-size:1px;"><a href="../The_Physics_World/physics_world_create.htm"><span class="inline">physics_world_create()</span></a></span>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>fisica_applica_impulso</h1>
+  <p>Non solo è possibile applicare forza e gravità a un <span class="notranslate">object</span> con la fisica in <span data-keyref="GameMaker Name">GameMaker</span>, ma è anche possibile applicare un impulso. Questo è leggermente diverso da una forza in quanto quando viene applicato influenzerà <i>immediatamente </i>la velocità, e, potenzialmente la coppia (o &quot;spin&quot;) del <span class="notranslate">object</span>, in particolare se il punto scelto per applicare l'impulso non è allineato con il centro di massa (nota: il centro di massa <i>non è necessariamente</i> lo stesso dell'origine!) Ecco un'illustrazione:</p>
+  <p><img>Come potete vedere, il giocatore ha cliccato sulla palla e questo gli ha dato un impulso a muoversi verso l'alto a destra, girando mentre va. L'impulso esatto è definito dal vettore che otteniamo dalle componenti ximpulso/yimpulse in relazione alle coordinate xpos/ypos - che significa semplicemente che l'impulso è calcolato come la distanza da xpos/ypos a ximpulso/yimpulse in Newton, e la direzione è l'angolo che otteniamo da xpos/ypos a ximpulso/yimpulse.</p>
+  <p class="note"><b>NOTA</b>: Il mondo fisico usa i metri per tutti i suoi calcoli, e il rapporto di pixel per metro è definito nell'editor <span class="notranslate">room</span> o usando <span style="font-size:1px;"><a href="../The_Physics_World/physics_world_create.htm"><span class="inline">physics_world_create()</span></a></span>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">physics_apply_impulse(xpos, ypos, ximpulse, yimpulse)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>xpos</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The x coordinate <i>in the room</i> where the impulse will be applied</td>
+        <td><span class="notranslate">xpos</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x coordinate <i>in the room</i> where the impulse will be applied</span></td>
      </tr>
       <tr>
-        <td>ypos</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The y coordinate <i>in the room</i> where the impulse will be applied</td>
+        <td><span class="notranslate">ypos</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y coordinate <i>in the room</i> where the impulse will be applied</span></td>
      </tr>
       <tr>
-        <td>ximpulse</td><td><span data-keyref="Type_Real"></span></td>
-        <td>the x component of the impulse vector</td>
+        <td><span class="notranslate">ximpulse</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">the x component of the impulse vector</span></td>
      </tr>
       <tr>
-        <td>yimpulse</td><td><span data-keyref="Type_Real"></span></td>
-        <td>the y component of the impulse vector</td>
+        <td><span class="notranslate">yimpulse</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">the y component of the impulse vector</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if mouse_check_button_pressed(mb_left)<br />
     {<br />
         with (place_meeting(mouse_x, mouse_y, all))<br />
@@ -57,18 +57,18 @@
             physics_apply_impulse(mouse_x, mouse_y, -10 + irandom(20), -10 + irandom(20));<br />
         }<br />
     }</p>
-  <p>The code above will apply an impulse with a random vector to an instance that is at the mouse position when the left button is pressed.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra applicherà un impulso con un vettore casuale a un'istanza che si trova nella posizione del mouse quando viene premuto il pulsante sinistro.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Forces.htm">Forces</a></div>
-        <div style="float:right">Next: <a href="physics_apply_local_force.htm">physics_apply_local_force</a></div>
+        <div style="float:left">Indietro: <a href="Forces.htm">Forze</a></div>
+        <div style="float:right">Il prossimo: <a href="physics_apply_local_force.htm"><span class="notranslate">physics_apply_local_force</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 physics_apply_impulse

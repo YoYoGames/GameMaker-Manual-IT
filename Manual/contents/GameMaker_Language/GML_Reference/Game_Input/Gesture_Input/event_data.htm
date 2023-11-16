@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>event_data</title>
+  <title>dati_evento</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for event_data" />
   <meta name="rh-index-keywords" content="event_data" />
@@ -14,16 +14,16 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>event_data</h1>
-  <p>This variable is <b>global</b> in scope and is used to hold a <a href="../../Data_Structures/DS_Maps/DS_Maps.htm">DS Map</a> when used in the appropriate event (e.g. <a href="../../../../The_Asset_Editors/Object_Properties/Gesture_Events.htm">Gesture Events</a> and <a href="../../../../The_Asset_Editors/Sequence_Properties/Broadcast_Messages.htm">Broadcast Messages</a>), and -1 at all other times. The actual contents of the DS map will depend on the type of event that triggered it, so refer to the individual sections for those events.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>dati_evento</h1>
+  <p>Questa variabile ha uno scopo <b>globale</b> e viene usata per contenere una <a href="../../Data_Structures/DS_Maps/DS_Maps.htm">mappa DS</a> quando viene usata nell'evento appropriato (ad es. <a href="../../../../The_Asset_Editors/Object_Properties/Gesture_Events.htm">eventi gestuali</a> e <a href="../../../../The_Asset_Editors/Sequence_Properties/Broadcast_Messages.htm">messaggi broadcast</a>), e -1 in tutte le altre occasioni. Il contenuto effettivo della mappa DS dipenderà dal tipo di evento che l'ha attivata, quindi fate riferimento alle singole sezioni per quegli eventi.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">event_data;</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_ID_DS_Map">DS Map ID</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">isFlick = event_data[?&quot;isflick&quot;];<br />
     <br />
     if (isFlick)<br />
@@ -37,18 +37,18 @@
         flickVelY = 0;<br />
     }
   </p>
-  <p>The above code is taken from the <b>Drag End</b> gesture event and checks to see if the vent is a &quot;flick&quot; event, and if it is it extracts the required data from the <span class="inline">event_data</span> DS map and uses it to set some variables. If a &quot;flick&quot; event is not detected, then the same variables are set to 0.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra è preso dall'evento del gesto <b>Drag End</b> e controlla se lo sfogo è un evento &quot;flick&quot;, e se lo è estrae i dati richiesti dalla mappa <span class="inline">event_data</span> DS e li usa per impostare alcune variabili. Se non viene rilevato un evento &quot;flick&quot;, allora le stesse variabili vengono impostate a 0.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="../../../GML_Overview/Variables/Global_Variables.htm">Global Variables</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="../../../GML_Overview/Variables/Builtin_Global_Variables/score.htm">score</a></div>
+        <div style="float:left">Indietro: <a data-xref="{title}" href="../../../GML_Overview/Variables/Global_Variables.htm">Variabili globali</a></div>
+        <div style="float:right">Dopo: <a data-xref="{title}" href="../../../GML_Overview/Variables/Builtin_Global_Variables/score.htm">punteggio</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 event_data

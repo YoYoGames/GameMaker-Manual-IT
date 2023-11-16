@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>application_get_position</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>applicazione_get_position</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for application_get_position" />
   <meta name="rh-index-keywords" content="application_get_position" />
@@ -15,33 +15,33 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">application_get_position</span></h1>
-  <p>When you have &quot;maintain aspect ratio&quot; ticked in the Game Options for a target platform, <span data-keyref="GameMaker Name">GameMaker</span> will automatically set the draw position for the application surface so that it is displayed correctly centered and scaled on the given display. However, if you are manipulating this surface and wish to draw it yourself, then this function gives you an easy way to find exactly <i>where</i> within the display or window that the surface was being drawn so that you can then draw it there yourself, or align GUI images or post draw images to it.</p>
-  <p>The function returns an <a href="../../../GML_Overview/Arrays.htm">array</a> with four keys, where key 0 and 1 are the (x, y) position of the top left-hand corner of the surface, and keys 2 and 3 are the x and y of the bottom right-hand corner of the surface, all relative to the size of the display or window.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">application_get_position</span>();</p>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Array"><a href="../../../../../GameMaker_Language/GML_Overview/Arrays.htm" target="_blank">Array</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">var a = <span data-field="title" data-format="default">application_get_position</span>();<br />
-    xx = a[0];<br />
-    yy = a[1];<br />
-    ww = a[2] - a[0];<br />
-    hh = a[3] - a[1];</p>
-  <p>The above code will get the position of the application surface, as well as the absolute width and height in relation to the display window, and store them in four variables for future use.</p>
-  <p> </p>
-  <p> </p>
+  <h1>applicazione_get_position</h1>
+  <p>Quando avete spuntato &quot;mantenere le proporzioni&quot; nelle opzioni di gioco per una piattaforma di destinazione, <span data-keyref="GameMaker Name">GameMaker</span> imposterà automaticamente la posizione di disegno per la superficie dell'applicazione in modo che venga visualizzata correttamente centrata e scalata su
+    il display dato. Tuttavia, se state manipolando questa superficie e desiderate disegnarla voi stessi, allora questa funzione vi dà un modo semplice per trovare esattamente <i>dove</i>, all'interno del display o della finestra, la superficie è stata disegnata in modo che possiate
+    disegnarla lì da soli, o allineare immagini GUI o immagini post disegnate su di essa.</p>
+  <p>La funzione restituirà un <a href="../../../GML_Overview/Arrays.htm">array</a> con quattro chiavi, dove le chiavi 0 e 1 sono la posizione x e y dell'angolo superiore sinistro della superficie, e le chiavi 2 e 3 sono la x e y dell'angolo inferiore destro della
+    della superficie, tutte relative alla dimensione del display o della finestra.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
+  <p class="code">application_get_position();</p>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Array"></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p class="code">var a = application_get_position();<br/> xx = a[0];<br/> yy = a[1];<br/> ww = a[2] - a[0];<br/> hh = a[3] - a[1];</p>
+  <p>Il codice qui sopra otterrà la posizione della superficie dell'applicazione, così come la larghezza e l'altezza assolute in relazione alla finestra di visualizzazione, e le memorizzerà in quattro variabili per uso futuro.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Surfaces.htm">Surfaces</a></div>
-        <div style="float:right">Next: <a href="application_surface_draw_enable.htm">application_surface_draw_enable</a></div>
+        <div style="float:left">Indietro: <a href="Surfaces.htm">Superfici</a></div>
+        <div style="float:right">Il prossimo: <a href="application_surface_draw_enable.htm"><span class="notranslate">application_surface_draw_enable</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 application_get_position

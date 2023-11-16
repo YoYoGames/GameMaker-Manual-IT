@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>Text in Sequences</title>
+  <title>Testo in sequenze</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
   <meta name="template" content="../../assets/masterpages/Manual_Page.htt" />
@@ -14,76 +14,76 @@
   <meta name="search-keywords" content="Text in Sequences, animate text" />
 </head>
 <body>
-  <h1>Text in Sequences</h1>
-  <p>Text tracks can be added to a Sequence through the editor. This is done by selecting the <img class="icon" height="24" src="../../assets/Images/Icons/Icon_TextButton.png" width="24" /> <strong>Add a Text Track</strong> button from the Canvas Toolbox, and then clicking (and optionally dragging) in the Canvas to create a text track.</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextOverview.png" /></p>
-  <p>This page covers the following topics:</p>
+  <h1>Testo in sequenze</h1>
+  <p>Le tracce di testo possono essere aggiunte a un <span class="notranslate">Sequence</span> attraverso l'editor. Questo viene fatto selezionando il pulsante <img> <strong>Add a Text Track</strong> dal Canvas Toolbox, e poi cliccando (e opzionalmente trascinando) nella Tela per creare una traccia di testo.</p>
+  <p><img class="icon" height="24" src="../../assets/Images/Icons/Icon_TextButton.png" width="24" /></p>
+  <p>Questa pagina copre i seguenti argomenti:</p>
   <ol class="Decimal">
-    <li><a href="#s1">Creating Text</a></li>
-    <li><a href="#s2">Modifying Text</a></li>
+    <li><a href="#s1">Creazione di testo</a></li>
+    <li><a href="#s2">Modifica del testo</a></li>
     <li><a href="#s3">Font Assets</a></li>
-    <li><a href="#s4">Parameters</a></li>
-    <li><a href="#s5">Inspector</a></li>
+    <li><a href="#s4">Parametri</a></li>
+    <li><a href="#s5">Ispettore</a></li>
   </ol>
-  <h2 id="s1">Creating Text</h2>
-  <p>There are two ways of creating a text track. After selecting the <img class="icon" height="24" src="../../assets/Images/Icons/Icon_TextButton.png" width="24" /> <strong>Text</strong> tool from the Toolbox, you can:</p>
+  <h2 id="s1">Creazione di testo</h2>
+  <p>Ci sono due modi per creare una traccia di testo. Dopo aver selezionato lo strumento <img> <strong>Text</strong> dal Toolbox, è possibile:</p>
   <ul class="colour">
-    <li><strong>Click once in the canvas</strong>: This creates an &quot;unwrapped&quot; text track. This means the text can be as long as you want and it will stay on one line. Wrapping can easily be enabled later through the <a href="../../IDE_Tools/The_Inspector.htm">Inspector</a>.<br />
+    <li><strong>Clicca una volta nella tela</strong>: Questo crea un tracciato di testo &quot;non avvolto&quot;. Questo significa che il testo può essere lungo quanto vuoi e rimarrà su una linea. L'avvolgimento può essere facilmente abilitato in seguito attraverso l'<a href="../../IDE_Tools/The_Inspector.htm">Ispettore</a>.<br>
       <video class="center" src="../../assets/Videos/AssetEditors/SeqTextUnwrapped.mp4" width="700" height="330" controls=""></video>
     </li>
-    <li><strong>Click and drag in the canvas</strong>: This creates a &quot;wrapped&quot; text track, meaning the text only displays inside a frame. The size of this frame is set by dragging while creating the text track. Its size can also be changed later via parameter tracks or the Inspector. <video class="center" src="../../assets/Videos/AssetEditors/SeqTextWrapped.mp4" width="700" height="330" controls=""></video> It is recommended to use wrapped text tracks as it makes it much easier to align your text and get consistent results while animating.</li>
+    <li><strong>Clicca e trascina nella tela</strong>: Questo crea una traccia di testo &quot;avvolta&quot;, cioè il testo viene visualizzato solo all'interno di una cornice. La dimensione di questa cornice viene impostata trascinandola mentre si crea la traccia di testo. La sua dimensione può anche essere cambiata in seguito tramite le tracce dei parametri o l'Ispettore. <video class="center" src="../../assets/Videos/AssetEditors/SeqTextWrapped.mp4" width="700" height="330" controls=""></video> Si raccomanda di usare tracce di testo avvolte perché rende molto più facile allineare il testo e ottenere risultati coerenti durante l'animazione.</li>
   </ul>
-  <h2 id="s2">Modifying Text</h2>
-  <p>When you create a new text track, GameMaker opens the <a href="../../IDE_Tools/The_Inspector.htm">Inspector</a> and automatically selects the <strong>Text</strong> field, allowing you to start writing your text.</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextEditFromInspector.png" />To edit the text for a track at any time, simply select that track, go into the Inspector and modify the <strong>Text</strong> field again.</p>
-  <p class="note_heading">Resize Behaviour</p>
-  <p class="note">Resizing your text track in the Canvas will work differently depending on whether your text track is <strong>wrapped</strong> or <strong>unwrapped</strong>.<br />
-    <br />
-    If unwrapped, your text track will be scaled, similar to how you scale sprites and objects. However, resizing a <strong>wrapped</strong> text track modifies its <strong>frame size</strong> instead of modifying its scale values.<br />
-    <img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextResizeBehaviour.png" />To scale a wrapped text track, use <a data-height="650" data-rhwidget="HyperlinkPopover" data-width="360" href="The_Sequence_Canvas.htm#gizmos">Gizmos</a> instead, or edit the values in the Scale parameter track manually.
+  <h2 id="s2">Modifica del testo</h2>
+  <p>Quando crei una nuova traccia di testo, <span class="notranslate">GameMaker</span> apre l'<a href="../../IDE_Tools/The_Inspector.htm">Ispettore</a> e seleziona automaticamente il campo <strong>Testo</strong>, permettendoti di iniziare a scrivere il tuo testo.</p>
+  <p><img>Per modificare il testo di una traccia in qualsiasi momento, seleziona semplicemente quella traccia, vai nell'Ispettore e modifica di nuovo il campo <strong>Testo</strong>.</p>
+  <p class="note_heading">Comportamento di ridimensionamento</p>
+  <p class="note">Il ridimensionamento della traccia di testo nella Tela funzionerà in modo diverso a seconda che la traccia di testo sia <strong>avvolta</strong> o <strong>non avvolta</strong>.<br>
+    <br>
+    Se non avvolta, la tua traccia di testo sarà scalata, in modo simile a come si scala <span class="notranslate">sprites</span> e <span class="notranslate">objects</span>. Tuttavia, il ridimensionamento di una traccia di testo <strong>avvolta</strong> modifica la <strong>dimensione del</strong> suo <strong>fotogramma</strong> invece di modificare i suoi valori di scala.<br>
+    <img>Per scalare una traccia di testo avvolta, usa invece <a data-height="650" data-rhwidget="HyperlinkPopover" data-width="360" href="The_Sequence_Canvas.htm#gizmos">Gizmos</a>, o modifica manualmente i valori nella traccia del parametro Scale.
   </p>
   <h2 id="s3">Font Assets</h2>
-  <p>Text tracks are tied to <a href="../Fonts.htm">Font assets</a>. When you create a new text track, it will look for a font asset within your project, and use the one that was last added. If your project has no fonts, it will automatically create a new font asset.</p>
-  <p>When you delete a font, all text tracks that use that font are deleted as well, so ensure you don&#39;t accidentally delete font assets that are used in Sequences.</p>
-  <h2 id="s4">Parameters</h2>
-  <p>You can modify and animate all the usual parameters that are provided for a sprite track, like Position, Rotation, Scale, Origin and Colour Multiply. Using these parameters you can move and rotate your text, make it bigger or smaller, and change its colour and alpha.</p>
-  <p>There are some text-specific parameters provided as well, which can also be animated:<img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextParameters.png" /></p>
+  <p>Le tracce di testo sono legate alle <a href="../Fonts.htm">risorse Font</a>. Quando crei una nuova traccia di testo, cercherà un <span class="notranslate">font</span> <span class="notranslate">asset</span> all'interno del tuo progetto e userà quello che è stato aggiunto per ultimo. Se il tuo progetto non ha <span class="notranslate">fonts</span>, creerà automaticamente un nuovo <span class="notranslate">font</span> <span class="notranslate">asset</span>.</p>
+  <p>Quando cancellate un <span class="notranslate">font</span>, vengono cancellate anche tutte le tracce di testo che usano quel <span class="notranslate">font</span>, quindi assicuratevi di non cancellare accidentalmente <span class="notranslate">font</span> <span class="notranslate">assets</span> che sono usate in <span class="notranslate">Sequences</span>.</p>
+  <h2 id="s4">Parametri</h2>
+  <p>Potete modificare e animare tutti i soliti parametri che sono forniti per una traccia <span class="notranslate">sprite</span>, come Posizione, Rotazione, Scala, Origine e Moltiplicazione del colore. Usando questi parametri puoi spostare e ruotare il tuo testo, renderlo più grande o più piccolo, e cambiare il suo colore e l'alfa.</p>
+  <p>Ci sono anche alcuni parametri specifici per il testo, che possono anche essere animati:<img></p>
   <ul class="colour">
-    <li><strong>Character Spacing</strong>: This is the space between each character (in pixels).<br />
-      <img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextCharacterSpacing.png" />
+    <li><strong>Spaziatura dei caratteri</strong>: Questo è lo spazio tra ogni carattere (in pixel).<br>
+      <img>
     </li>
-    <li><strong>Line Spacing</strong>: This is the space between each line of text (in pixels).<br />
-      <img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextLineSpacing.png" />
+    <li><strong>Interlinea</strong>: Questo è lo spazio tra ogni riga di testo (in pixel).<br>
+      <img>
     </li>
-    <li><strong>Paragraph Scaling</strong>: This is the space between each paragraph of text (in pixels). A new paragraph starts when you add a line break manually by pressing <img class="icon" height="20" src="../../assets/Images/Icons/Icon_Enter.png" width="55" />.<br />
-      <img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextParagraphSpacing.png" />
+    <li><strong>Scalatura del paragrafo</strong>: Questo è lo spazio tra ogni paragrafo di testo (in pixel). Un nuovo paragrafo inizia quando si aggiunge manualmente un'interruzione di riga premendo <img>.<br>
+      <img>
     </li>
-    <li><strong>Frame Size</strong>: This is the size of the text&#39;s frame, and is only used when <strong>Wrap</strong> is enabled in the Inspector (see its section below for more information).</li>
+    <li><strong>Dimensione</strong> della cornice: Questa è la dimensione della cornice del testo, ed è usata solo quando <strong>Wrap</strong> è abilitato nell'Ispettore (vedi la sua sezione sotto per maggiori informazioni).</li>
   </ul>
-  <p> </p>
-  <h2 id="s5">Inspector</h2>
-  <p>There are some properties that can only be changed through the Inspector. Such properties cannot be animated as they are not parameter tracks, but simple options that apply to the whole track.</p>
-  <p>The Inspector shows you the following properties when a text track is selected:</p>
-  <p class="note"><span class="note">NOTE</span> The Inspector should open automatically when you create or select a text track, but if your Inspector is closed, you can open it manually from the <a href="../../IDE_Navigation/Menus/The_Windows_Menu.htm">Windows</a> menu at the top.</p>
-  <p><img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextInspector.png" /></p>
-  <p>Some of the parameter tracks (such as <strong>Colour</strong>, <strong>Character Spacing</strong>, <strong>Line Spacing</strong>, etc.) are included here, and changing them will create a keyframe at the playhead if <img class="icon" src="../../assets/Images/Icons/Icon_Seq_Record.png" /> <strong>Automatically record changes</strong> is enabled, or modify the selected keyframe. The rest of the options are &quot;static&quot; (as they cannot be animated) and are as follows:</p>
+  <p> </p>
+  <h2 id="s5">Ispettore</h2>
+  <p>Ci sono alcune proprietà che possono essere modificate solo attraverso l'Ispettore. Queste proprietà non possono essere animate perché non sono tracce di parametri, ma semplici opzioni che si applicano a tutta la traccia.</p>
+  <p>L'Ispettore mostra le seguenti proprietà quando una traccia di testo è selezionata:</p>
+  <p class="note"><span class="note">NOTA</span> L'Ispettore dovrebbe aprirsi automaticamente quando crei o selezioni una traccia di testo, ma se l'Ispettore è chiuso, puoi aprirlo manualmente dal menu <a href="../../IDE_Navigation/Menus/The_Windows_Menu.htm">Windows</a> in alto.</p>
+  <p><img class="center" src="../../assets/Images/Asset_Editors/Sequences_Text/SeqTextOverview.png" /></p>
+  <p>Alcune delle tracce dei parametri (come <strong>Colore</strong>, <strong>Spaziatura caratteri</strong>, <strong>Interlinea</strong>, ecc.) sono incluse qui, e cambiarle creerà un <span class="notranslate">keyframe</span> al playhead se <img> <strong>Registra automaticamente le modifiche</strong> è abilitato, o modificare il <span class="notranslate">keyframe</span> selezionato. Il resto delle opzioni sono &quot;statiche&quot; (poiché non possono essere animate) e sono le seguenti:</p>
   <ul class="colour">
-    <li>At the top it shows you the font asset that is selected. You can use this option to select an existing font asset, or create a new one and assign it to the selected text track.</li>
-    <li><strong>Text</strong>: This is the text that is displayed on your text track. You can enter multiple lines here, however empty lines will not be displayed.</li>
-    <li><strong>Alignment</strong>: Here you can change how your text is aligned within the frame horizontally (left, centre, right, justified) and vertically (bottom, top, middle). This only applies when the <strong>Wrap</strong> option is enabled.</li>
-    <li><strong>Wrap</strong>: This controls whether the text should automatically wrap within the defined frame. When this is enabled, your text will automatically move to the next line when it hits the end of the frame, and will always be cut off if the text happens to be longer than the height of the frame. When this is disabled, all of your text will be displayed on a single line, and the frame will not be displayed in the canvas anymore.</li>
+    <li>In alto vi mostra il <span class="notranslate">font</span> <span class="notranslate">asset</span> che è selezionato. Puoi usare questa opzione per selezionare un <span class="notranslate">font</span> <span class="notranslate">asset</span> esistente, o crearne uno nuovo e assegnarlo alla traccia di testo selezionata.</li>
+    <li><strong>Testo</strong>: Questo è il testo che viene visualizzato sulla tua traccia di testo. Puoi inserire più righe qui, tuttavia le righe vuote non saranno visualizzate.</li>
+    <li><strong>Allineamento</strong>: Qui puoi cambiare come il tuo testo è allineato all'interno della cornice orizzontalmente (sinistra, centro, destra, giustificato) e verticalmente (in basso, in alto, al centro). Questo si applica solo quando l'opzione <strong>Wrap</strong> è abilitata.</li>
+    <li><strong>A</strong> capo: Questo controlla se il testo deve automaticamente avvolgersi all'interno della cornice definita. Quando questo è abilitato, il tuo testo si sposterà automaticamente alla riga successiva quando raggiunge la fine della cornice, e sarà sempre tagliato se il testo è più lungo dell'altezza della cornice. Quando questo è disabilitato, tutto il tuo testo sarà visualizzato su una singola linea, e la cornice non sarà più visualizzata nel canvas.</li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="../Sequences.htm">Sequences</a></div>
-        <div>Next: <a data-xref="{title}" href="Clipping_Masks.htm">Clipping Masks</a></div>
+        <div>Indietro: <a data-xref="{title}" href="../Sequences.htm">Sequenze</a></div>
+        <div>Successivo: <a data-xref="{title}" href="Clipping_Masks.htm">Maschere di ritaglio</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
 </body>
 </html>

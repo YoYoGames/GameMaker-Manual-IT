@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Instance Variables</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Variabili di istanza</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the different instance variables" />
   <meta name="rh-index-keywords" content="" />
@@ -14,124 +14,120 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Instance Variables</h1>
-  <p>When you create a new object, it will come with certain variables already initialised with default values. These variables we call <b>instance variables</b>, since they will be created for every instance you place of the object in your game rooms, and once an instance is created the values of these variables are unique to that instance and <i>only</i> that instance. Some of these variables you will use a lot, like <span class="inline">x</span> and <span class="inline">y</span>, while others are required less depending on what you want to do, but in general they are very useful and where possible you should be looking to use them rather than creating your own custom variables.</p>
-  <p>Most instance variables can be set as well as read, permitting you to change the properties and behaviour of an instance simply by tweaking the value of a certain variable - you can prevent an instance from drawing, for example, by simply setting the <span class="inline">visible</span> built-in variable to <span class="inline">false</span>. Below you can find the different variables that are initialised for all instances of all objects in your game.</p>
-  <p class="note"><span class="optional">IMPORTANT</span> If an instance is in a <a href="../../../../../The_Asset_Editors/Sequences.htm">sequence</a> then some of these variables - like <span class="inline"><span style="font-size:14px;">image_xscale</span></span>  / <span class="inline"><span style="font-size:14px;">image_yscale</span></span> / <span class="inline"><span style="font-size:14px;">image_angle</span></span> / <span class="inline"><span style="font-size:14px;">x</span></span> / <span class="inline"><span style="font-size:14px;">y</span></span> - will be overwritten when the sequence updates each step after starting to be played.</p>
-  <p> </p>
-  <h2><label for="one">General Variables</label></h2>
-  <p>These variables deal with general instance properties:</p>
+  <h1>Variabili di istanza</h1>
+  <p>Quando si crea un nuovo <span class="notranslate">object</span>, esso verrà fornito con alcune variabili già inizializzate con valori predefiniti. Queste variabili le chiamiamo <b>variabili di istanza</b>, poiché saranno create per ogni istanza che mettete di <span class="notranslate">object</span> nel vostro gioco <span class="notranslate">rooms</span>, e una volta che un'istanza è creata i valori di queste variabili sono unici per quell'istanza e <i>solo</i> per quell'istanza. Alcune di queste variabili le userete molto, come <span class="inline">x</span> e <span class="inline">y</span>, mentre altre sono richieste meno a seconda di quello che volete fare, ma in generale sono molto utili e dove possibile dovreste cercare di usarle piuttosto che creare le vostre variabili personalizzate.</p>
+  <p>La maggior parte delle variabili di istanza possono essere impostate e lette, permettendovi di cambiare le proprietà e il comportamento di un'istanza semplicemente modificando il valore di una certa variabile - potete impedire a un'istanza di disegnare, per esempio, semplicemente impostando la variabile incorporata <span class="inline">visible</span> su <span class="inline">false</span>. Qui sotto potete trovare le diverse variabili che sono inizializzate per tutte le istanze di tutti i <span class="notranslate">objects</span> nel vostro gioco.</p>
+  <p class="note"><span class="optional">IMPORTANTE</span> Se un'istanza è in un <a href="../../../../../The_Asset_Editors/Sequences.htm"><span class="notranslate">sequence</span></a> allora alcune di queste variabili - come <span class="inline"><span style="font-size:14px;">image_xscale</span> / <span class="inline"><span style="font-size:14px;">image_yscale</span> / <span class="inline"><span style="font-size:14px;">image_angle</span> / <span class="inline"><span style="font-size:14px;">x</span> / <span class="inline"><span style="font-size:14px;">y</span> - saranno sovrascritte quando <span class="notranslate">sequence</span> aggiorna ogni passo dopo aver iniziato a suonare.</p>
+  <p> </p>
+  <h2><label for="one">Variabili generali</label></h2>
+  <p>Queste variabili trattano le proprietà generali dell'istanza:</p>
   <ul class="colour">
-    <li><a href="id.htm">id</a></li>
-    <li><a href="visible.htm">visible</a></li>
-    <li><a href="solid.htm">solid</a></li>
-    <li><a href="persistent.htm">persistent</a></li>
-    <li><a href="depth.htm">depth</a></li>
-    <li><a href="layer.htm">layer</a></li>
-    <li><a href="alarm.htm">alarm</a></li>
+    <li><a href="id.htm"><span class="notranslate">id</span></a></li>
+    <li><a href="visible.htm"><span class="notranslate">visible</span></a></li>
+    <li><a href="solid.htm"><span class="notranslate">solid</span></a></li>
+    <li><a href="persistent.htm"><span class="notranslate">persistent</span></a></li>
+    <li><a href="depth.htm"><span class="notranslate">depth</span></a></li>
+    <li><a href="layer.htm"><span class="notranslate">layer</span></a></li>
+    <li><a href="alarm.htm"><span class="notranslate">alarm</span></a></li>
   </ul>
-  <p>Instances also have one general variable, or rather <a href="../../../../GML_Overview/Method_Variables.htm">method</a>, that can be defined to change how this instance is converted to <a href="../../../Strings/Strings.htm">string</a>: <br />
-     </p>
-  <ul class="Disc">
-    <li> </li>
-  </ul>
-  <h2><label for="four">Movement And Position</label></h2>
-  <p>These variables deal with the instance position and movement:</p>
+  <p> </p>
+  <h2><label for="four">Movimento e posizione</label></h2>
+  <p>Queste variabili riguardano la posizione e il movimento dell'istanza:</p>
   <ul class="colour">
-    <li><a href="direction.htm">direction</a></li>
-    <li><a href="friction.htm">friction</a></li>
-    <li><a href="gravity.htm">gravity</a></li>
-    <li><a href="gravity_direction.htm">gravity_direction</a></li>
-    <li><a href="hspeed.htm">hspeed</a></li>
-    <li><a href="vspeed.htm">vspeed</a></li>
-    <li><a href="speed.htm">speed</a></li>
-    <li><a href="xstart.htm">xstart</a></li>
-    <li><a href="ystart.htm">ystart</a></li>
-    <li><a href="x.htm">x</a></li>
-    <li><a href="y.htm">y</a></li>
-    <li><a href="xprevious.htm">xprevious</a></li>
-    <li><a href="yprevious.htm">yprevious</a></li>
+    <li><a href="direction.htm"><span class="notranslate">direction</span></a></li>
+    <li><a href="friction.htm"><span class="notranslate">friction</span></a></li>
+    <li><a href="gravity.htm"><span class="notranslate">gravity</span></a></li>
+    <li><a href="gravity_direction.htm"><span class="notranslate">gravity_direction</span></a></li>
+    <li><a href="hspeed.htm"><span class="notranslate">hspeed</span></a></li>
+    <li><a href="vspeed.htm"><span class="notranslate">vspeed</span></a></li>
+    <li><a href="speed.htm"><span class="notranslate">speed</span></a></li>
+    <li><a href="xstart.htm"><span class="notranslate">xstart</span></a></li>
+    <li><a href="ystart.htm"><span class="notranslate">ystart</span></a></li>
+    <li><a href="x.htm"><span class="notranslate">x</span></a></li>
+    <li><a href="y.htm"><span class="notranslate">y</span></a></li>
+    <li><a href="xprevious.htm"><span class="notranslate">xprevious</span></a></li>
+    <li><a href="yprevious.htm"><span class="notranslate">yprevious</span></a></li>
   </ul>
-  <p> </p>
-  <h2>Object Properties</h2>
-  <p>The following variable holds the unique index ID of the object that the instance was created from:</p>
+  <p> </p>
+  <h2>Proprietà dell'oggetto</h2>
+  <p>La seguente variabile contiene l'ID unico dell'indice di <span class="notranslate">object</span> da cui è stata creata l'istanza:</p>
   <ul class="colour">
-    <li><a href="../../Objects/object_index.htm">object_index</a></li>
+    <li><a href="../../Objects/object_index.htm"><span class="notranslate">object_index</span></a></li>
   </ul>
-  <p> </p>
-  <h2><label for="two">Sprite Properties</label></h2>
-  <p>These variables are all related to the sprite assigned to the instance and can be used to change what is drawn and how:</p>
+  <p> </p>
+  <h2><label for="two">Proprietà degli sprite</label></h2>
+  <p>Queste variabili sono tutte legate al <span class="notranslate">sprite</span> assegnato all'istanza e possono essere usate per cambiare ciò che viene disegnato e come:</p>
   <ul class="colour">
-    <li><a href="../../Sprites/Sprite_Instance_Variables/sprite_index.htm">sprite_index</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/sprite_width.htm">sprite_width</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/sprite_height.htm">sprite_height</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/sprite_xoffset.htm">sprite_xoffset</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/sprite_yoffset.htm">sprite_yoffset</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/image_alpha.htm">image_alpha</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/image_angle.htm">image_angle</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/image_blend.htm">image_blend</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/image_index.htm">image_index</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/image_number.htm">image_number</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/image_speed.htm">image_speed</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/image_xscale.htm">image_xscale</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/image_yscale.htm">image_yscale</a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/sprite_index.htm"><span class="notranslate">sprite_index</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/sprite_width.htm"><span class="notranslate">sprite_width</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/sprite_height.htm"><span class="notranslate">sprite_height</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/sprite_xoffset.htm"><span class="notranslate">sprite_xoffset</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/sprite_yoffset.htm"><span class="notranslate">sprite_yoffset</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/image_alpha.htm"><span class="notranslate">image_alpha</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/image_angle.htm"><span class="notranslate">image_angle</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/image_blend.htm"><span class="notranslate">image_blend</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/image_index.htm"><span class="notranslate">image_index</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/image_number.htm"><span class="notranslate">image_number</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/image_speed.htm"><span class="notranslate">image_speed</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/image_xscale.htm"><span class="notranslate">image_xscale</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/image_yscale.htm"><span class="notranslate">image_yscale</span></a></li>
   </ul>
-  <p> </p>
-  <h2><label for="three">Mask And Bounding Box</label></h2>
-  <p>These variables deal with the collision mask:</p>
+  <p> </p>
+  <h2><label for="three">Maschera e scatola di delimitazione</label></h2>
+  <p>Queste variabili si occupano della maschera di collisione:</p>
   <ul class="colour">
-    <li><a href="../../Sprites/Sprite_Instance_Variables/mask_index.htm">mask_index</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/bbox_bottom.htm">bbox_bottom</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/bbox_left.htm">bbox_left</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/bbox_right.htm">bbox_right</a></li>
-    <li><a href="../../Sprites/Sprite_Instance_Variables/bbox_top.htm">bbox_top</a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/mask_index.htm"><span class="notranslate">mask_index</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/bbox_bottom.htm"><span class="notranslate">bbox_bottom</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/bbox_left.htm"><span class="notranslate">bbox_left</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/bbox_right.htm"><span class="notranslate">bbox_right</span></a></li>
+    <li><a href="../../Sprites/Sprite_Instance_Variables/bbox_top.htm"><span class="notranslate">bbox_top</span></a></li>
   </ul>
-  <p> </p>
-  <h2><label for="five">Paths</label></h2>
-  <p>These variables are related to paths and how the instance interacts with one, if assigned:</p>
+  <p> </p>
+  <h2><label for="five">Percorsi</label></h2>
+  <p>Queste variabili sono legate a <span class="notranslate">paths</span> e a come l'istanza interagisce con una, se assegnata:</p>
   <ul class="colour">
-    <li><a href="../../Paths/Path_Variables/path_index.htm">path_index</a></li>
-    <li><a href="../../Paths/Path_Variables/path_position.htm">path_position</a></li>
-    <li><a href="../../Paths/Path_Variables/path_positionprevious.htm">path_positionprevious</a></li>
-    <li><a href="../../Paths/Path_Variables/path_speed.htm">path_speed</a></li>
-    <li><a href="../../Paths/Path_Variables/path_scale.htm">path_scale</a></li>
-    <li><a href="../../Paths/Path_Variables/path_orientation.htm">path_orientation</a></li>
-    <li><a href="../../Paths/Path_Variables/path_endaction.htm">path_endaction</a></li>
+    <li><a href="../../Paths/Path_Variables/path_index.htm"><span class="notranslate">path_index</span></a></li>
+    <li><a href="../../Paths/Path_Variables/path_position.htm"><span class="notranslate">path_position</span></a></li>
+    <li><a href="../../Paths/Path_Variables/path_positionprevious.htm"><span class="notranslate">path_positionprevious</span></a></li>
+    <li><a href="../../Paths/Path_Variables/path_speed.htm"><span class="notranslate">path_speed</span></a></li>
+    <li><a href="../../Paths/Path_Variables/path_scale.htm"><span class="notranslate">path_scale</span></a></li>
+    <li><a href="../../Paths/Path_Variables/path_orientation.htm"><span class="notranslate">path_orientation</span></a></li>
+    <li><a href="../../Paths/Path_Variables/path_endaction.htm"><span class="notranslate">path_endaction</span></a></li>
   </ul>
-  <p> </p>
-  <h2><label for="six">Timelines</label></h2>
-  <p>These variables are for setting an instance to use a timeline:</p>
+  <p> </p>
+  <h2><label for="six">Linee temporali</label></h2>
+  <p>Queste variabili servono a impostare un'istanza per utilizzare una linea temporale:</p>
   <ul class="colour">
-    <li><a href="../../Timelines/timeline_index.htm">timeline_index</a></li>
-    <li><a href="../../Timelines/timeline_running.htm">timeline_running</a></li>
-    <li><a href="../../Timelines/timeline_speed.htm">timeline_speed</a></li>
-    <li><a href="../../Timelines/timeline_position.htm">timeline_position</a></li>
-    <li><a href="../../Timelines/timeline_loop.htm">timeline_loop</a></li>
+    <li><a href="../../Timelines/timeline_index.htm"><span class="notranslate">timeline_index</span></a></li>
+    <li><a href="../../Timelines/timeline_running.htm"><span class="notranslate">timeline_running</span></a></li>
+    <li><a href="../../Timelines/timeline_speed.htm"><span class="notranslate">timeline_speed</span></a></li>
+    <li><a href="../../Timelines/timeline_position.htm"><span class="notranslate">timeline_position</span></a></li>
+    <li><a href="../../Timelines/timeline_loop.htm"><span class="notranslate">timeline_loop</span></a></li>
   </ul>
-  <p> </p>
-  <h2>Sequences</h2>
-  <p>The following variables store information regarding the Sequence that may be controlling the instance at any given time:</p>
+  <p> </p>
+  <h2>Sequenze</h2>
+  <p>Le seguenti variabili memorizzano informazioni riguardanti il sito <span class="notranslate">Sequence</span> che può controllare l'istanza in un dato momento:</p>
   <ul class="colour">
-    <li><a href="../../Sequences/in_sequence.htm">in_sequence</a></li>
-    <li><a href="../../Sequences/sequence_instance.htm">sequence_instance</a></li>
+    <li><a href="../../Sequences/in_sequence.htm"><span class="notranslate">in_sequence</span></a></li>
+    <li><a href="../../Sequences/sequence_instance.htm"><span class="notranslate">sequence_instance</span></a></li>
   </ul>
-  <p> </p>
-  <h2><label for="seven">Physics</label></h2>
-  <p>There are a great number of built in variables for use with the physics functions of <span data-keyref="GameMaker Name">GameMaker</span>, and so to keep things clearer, they can be found in the section of the manual that covers everything related to the physics simulation:</p>
+  <p> </p>
+  <h2><label for="seven">Fisica</label></h2>
+  <p>Ci sono un gran numero di variabili incorporate da usare con le funzioni fisiche di <span data-keyref="GameMaker Name">GameMaker</span>, e quindi per mantenere le cose più chiare, si possono trovare nella sezione del manuale che copre tutto ciò che riguarda la simulazione fisica:</p>
   <ul class="colour">
-    <li><a href="../../../Physics/Physics.htm">Physics</a></li>
+    <li><a href="../../../Physics/Physics.htm">Fisica</a></li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Instances.htm">Instances</a></div>
-        <div style="float:right">Next: <a href="../Deactivating_Instances/Deactivating_Instances.htm">Deactivating Instances</a></div>
+        <div style="float:left">Indietro: <a href="../Instances.htm">Istanze</a></div>
+        <div style="float:right">Successivo: <a href="../Deactivating_Instances/Deactivating_Instances.htm">Disattivare le istanze</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Instance Variables

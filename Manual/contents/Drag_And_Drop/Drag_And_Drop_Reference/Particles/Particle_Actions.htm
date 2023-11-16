@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Particle Actions</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Azioni delle particelle</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section detailing all the Particle actions" />
   <meta name="rh-index-keywords" content="GML Visual Overview - Particle Actions Library" />
@@ -14,186 +14,179 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Particle Action Library</h1>
-  <p><img alt="Particle Action Library" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/Lib_Particles.png" />For complex things in <span data-keyref="GameMaker Name">GameMaker</span> you would normally have an <i>object</i> and then create <i>instances</i> of that object within the <i>room</i>. However, for graphics effects, this can be expensive as every instance comes with a &quot;cost&quot; in processing due to the variables it contains and the codes it has in the different events. You can reduce this cost by turning to tiles for drawing your graphics, or even using the <i>asset layer</i> in the room editor, but both of those are generally only used for drawing simple graphics that maintain the same position over time and have few special effects. However, there is one other option for drawing fast yet versatile graphics effects in your games, and that is to use particles.</p>
-  <p>Particles are graphic resources with certain properties which are defined within a <b>particle system</b>. These properties cannot be manipulated directly for individual particles, but are changed through the actions that are used to define the individual <b>particle types</b> within the system. They are very useful for creating beautiful and flashy effects (or subtle and discreet ones!) like explosions, decals, rain, snow, star fields and debris in a game without the CPU or GPU overhead that using instances and/or tiles and assets have.</p>
-  <p>The basic setup for a particle system follows three steps:</p>
+  <h1>Libreria di azioni particellari</h1>
+  <p><img>Per le cose complesse in <span data-keyref="GameMaker Name">GameMaker</span> si dovrebbe normalmente avere un <i>oggetto</i> e poi creare <i>istanze</i> di questo <span class="notranslate">object</span> all'interno della <i>stanza</i>. Tuttavia, per gli effetti grafici, questo può essere costoso, poiché ogni istanza ha un &quot;costo&quot; di elaborazione a causa delle variabili che contiene e dei codici che ha nei diversi eventi. È possibile ridurre questo costo rivolgendosi a <span class="notranslate">tiles</span> per disegnare la grafica, o anche utilizzando il <i>livello asset</i> nell'editor di <span class="notranslate">room</span>, ma entrambi sono generalmente utilizzati solo per disegnare grafica semplice che mantiene la stessa posizione nel tempo e ha pochi effetti speciali. Tuttavia, esiste un'altra opzione per disegnare effetti grafici veloci e versatili nei giochi: l'uso delle particelle.</p>
+  <p>Le particelle sono risorse grafiche con determinate proprietà definite all'interno di un <b>sistema di particelle</b>. Queste proprietà non possono essere manipolate direttamente per le singole particelle, ma vengono modificate attraverso le azioni utilizzate per definire i singoli <b>tipi di particelle</b> all'interno del sistema. Sono molto utili per creare effetti belli e appariscenti (o sottili e discreti!) come esplosioni, decalcomanie, pioggia, neve, campi stellari e detriti in un gioco senza il sovraccarico della CPU o della GPU dovuto all'uso di istanze e/o <span class="notranslate">tiles</span> e <span class="notranslate">assets</span>.</p>
+  <p>L'impostazione di base di un sistema di particelle segue tre fasi:</p>
   <ul class="colour">
-    <li><b>Create a Particle System</b>: The particle system is like a container that we will use to hold our different particle emitters as we use them. We use actions to define a series of visual aspects and behaviours for our particles, and then we use them from an emitter that has been placed in the &quot;container&quot; (the particle system) so that they can be seen.</li>
-    <li><b>Create Particle Types</b>: Particle &quot;types&quot; are the definition of the graphic effect itself. You can have many different particle types, each with their own range of colours, alphas, sizes and movements, but its important to note <i>that you do not have control over individual particles</i>. You define a series of parameters and the particle will be created to have a random spread of behaviours chosen from them.</li>
-    <li><b>Create Particle Emitters</b>: Emitters are used to burst or stream particles from within very clearly defined limits, and can be given special parameters to define exactly <i>how</i> a given particle effect should be created. Emitters can be optional, as you can use the action <a href="Burst_Particles.htm">Burst Particles</a> to emulate many of the effects of an emitter, with the added bonus of not needing to worry about cleaning up the emitter later. Note, that emitters, unlike particles, must belong to a system for any particles being created to be seen.</li>
+    <li><b>Creare un sistema di particelle</b>: Il sistema di particelle è come un contenitore che useremo per contenere i diversi emettitori di particelle che utilizziamo. Usiamo le azioni per definire una serie di aspetti visivi e di comportamenti per le nostre particelle, e poi le usiamo da un emettitore che è stato collocato nel &quot;contenitore&quot; (il sistema di particelle) in modo che possano essere viste.</li>
+    <li><b>Creare tipi di particelle</b>: I &quot;tipi&quot; di particelle sono la definizione dell'effetto grafico stesso. È possibile avere molti tipi di particelle diverse, ognuna con la propria gamma di colori, alfa, dimensioni e movimenti, ma è importante notare <i>che non si ha il controllo sulle singole particelle</i>. Si definisce una serie di parametri e la particella verrà creata con una serie casuale di comportamenti scelti tra questi.</li>
+    <li><b>Creare emettitori di particelle</b>: Gli emettitori sono usati per far esplodere o scorrere le particelle entro limiti ben definiti e possono essere dotati di parametri speciali per definire esattamente <i>il modo in cui</i> deve essere creato un determinato effetto particellare. Gli emettitori possono essere opzionali, in quanto è possibile utilizzare l'azione <a href="Burst_Particles.htm">Scoppio di particelle</a> per emulare molti degli effetti di un emettitore, con il vantaggio di non doversi preoccupare di ripulire l'emettitore in seguito. Si noti che gli emettitori, a differenza delle particelle, devono appartenere a un sistema per poter vedere le particelle create.</li>
   </ul>
-  <p>You can get a more in-depth guide to setting up and using particles from the following page of the manual:</p>
+  <p>Per una guida più approfondita all'impostazione e all'uso delle particelle, consultare la pagina seguente del manuale:</p>
   <ul class="colour">
-    <li><a href="../../../Additional_Information/Guide_To_Using_Particles.htm">Guide To Using Particles</a></li>
+    <li><a href="../../../Additional_Information/Guide_To_Using_Particles.htm">Guida all'uso delle particelle</a></li>
   </ul>
-  <p>Although particles are an excellent tool for creating effects, they do come with certain restrictions and rules of good practice which need to be followed unless you want your game to have issues:</p>
+  <p>Sebbene le particelle siano uno strumento eccellente per la creazione di effetti, esse comportano alcune restrizioni e regole di buona pratica che devono essere seguite se non si vuole che il gioco abbia problemi:</p>
   <ul class="colour">
-    <li>The particle system, particle types and particle emitters all take up <i>memory</i> and as such you should be very careful how you use them as it is very easy to cause a memory leak which will slow down and eventually crash your game, so each particle type and emitter (and possibly the system itself) should be destroyed the moment it is not needed.</li>
-    <li>Particles may be fast and light on the CPU and GPU, but they still require some processing and so you shouldn&#39;t have 40,000 of them bursting across the screen at a time. Limit them to those that are necessary to achieve a specific effect and no more.</li>
-    <li>If you define your own particle sprite instead of using one of the 14 included sprites, you should try to keep them as small as possible to achieve the effect you require.</li>
-    <li>Particles do <i>not</i> interact with anything. Should you need them to have any type of interaction with the user or any other instances in your game, you should be looking at using instances instead as particles are purely graphic.</li>
-    <li>Even though there is no technical limit to the amount of emitters and particles you can create in one game, you should try and limit everything to the minimum number possible to keep memory use as low as possible.</li>
-    <li>On mobile devices, take care with particles as drawing them can be slow if they cover a large area of the screen (over-draw on mobile devices is one of the main causes of slowdown).</li>
-    <li>When targeting the HTML5 platform, note that unless you have WebGL enabled, you cannot have colour blending either (only the first of the particle colours will be used on non-WebGL canvas).</li>
+    <li>Il sistema di particelle, i tipi di particelle e gli emettitori di particelle occupano <i>memoria</i> e quindi bisogna fare molta attenzione a come li si usa, perché è molto facile causare una perdita di memoria che rallenterà e alla fine farà crashare il gioco, quindi ogni tipo di particella ed emettitore (e possibilmente il sistema stesso) dovrebbe essere distrutto nel momento in cui non è necessario.</li>
+    <li>Le particelle possono essere veloci e leggere per la CPU e la GPU, ma richiedono comunque una certa elaborazione e quindi non si dovrebbero avere 40.000 particelle alla volta che attraversano lo schermo. Limitatele a quelle necessarie per ottenere un effetto specifico e non di più.</li>
+    <li>Se si definiscono le proprie particelle <span class="notranslate">sprite</span> invece di usare una delle 14 incluse <span class="notranslate">sprites</span>, si deve cercare di mantenerle il più piccole possibile per ottenere l'effetto desiderato.</li>
+    <li>Le particelle <i>non</i> interagiscono con nulla. Se si desidera che abbiano un qualsiasi tipo di interazione con l'utente o con altre istanze del gioco, è necessario utilizzare le istanze, poiché le particelle sono puramente grafiche.</li>
+    <li>Anche se non esiste un limite tecnico alla quantità di emettitori e particelle che si possono creare in un gioco, si dovrebbe cercare di limitare tutto al numero minimo possibile per mantenere il consumo di memoria il più basso possibile.</li>
+    <li>Sui dispositivi mobili, fate attenzione alle particelle, perché il loro disegno può essere lento se coprono un'ampia area dello schermo (l'over-draw sui dispositivi mobili è una delle principali cause di rallentamento).</li>
+    <li>Quando si utilizza la piattaforma HTML5, si noti che, a meno che non si abbia WebGL abilitato, non è possibile avere nemmeno la fusione dei colori (solo il primo dei colori delle particelle verrà utilizzato su canvas non WebGL).</li>
   </ul>
-  <p>The following sections cover all actions for making your own particle systems:</p>
+  <p>Le sezioni seguenti trattano tutte le azioni per creare i propri sistemi di particelle:</p>
   <table class="dnd" style="text-align: left;margin-left:">
     <tbody>
-      <tr>
-        <td class="icons" style="margin-left: 16px;"> </td>
-        <td class="dnd"> </td>
-      </tr>
       <tr style="height: 1px;">
+        <td class="icons" style="margin-left: 16px;"> </td>
+        <td class="dnd"> </td>
+      </tr>
+      <tr>
+        <td class="dnd_icons" style="margin-left: 16px;"><img alt="Particle Action Library" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/Lib_Particles.png" /></td>
+        <td class="dnd"><a href="Create_Particle_System.htm">Creare un sistema di particelle</a></td>
+      </tr>
+      <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Create Particle System Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Create_Particle_System.png" /></td>
-        <td class="dnd"><a href="Create_Particle_System.htm">Create Particle System</a></td>
+        <td class="dnd"><a href="Destroy_Particle_System.htm">Distruggere il sistema di particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Destroy Particle System Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Destroy_Particle_System.png" width="32" /></td>
-        <td class="dnd"><a href="Destroy_Particle_System.htm">Destroy Particle System</a></td>
+        <td class="dnd"><a href="Clear_Particle_System.htm">Sistema di particelle trasparenti</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Clear Particle System Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Clear_Particle_System.png" width="32" /></td>
-        <td class="dnd"><a href="Clear_Particle_System.htm">Clear Particle System</a></td>
+        <td class="dnd"><a href="Pause_Particle_System.htm">Sistema di particelle di pausa</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Pause Particle System Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Pause_Particle_System.png" /></td>
-        <td class="dnd"><a href="Pause_Particle_System.htm">Pause Particle System</a></td>
+        <td class="dnd"><a href="Update_Particle_System.htm">Aggiornamento del sistema di particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Update Particle System Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Update_Particle_System.png" /></td>
-        <td class="dnd"><a href="Update_Particle_System.htm">Update Particle System</a></td>
+        <td class="dnd"><a href="Create_Particle_Type.htm">Crea tipo di particella</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Create Particle Type Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Create_Particle_Type.png" /></td>
-        <td class="dnd"><a href="Create_Particle_Type.htm">Create Particle Type</a></td>
+        <td class="dnd" style=""><a href="Destroy_Particle_Type.htm">Distruggere il tipo di particella</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Destroy Particle Type Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Destroy_Particle_Type.png" /></td>
-        <td class="dnd" style=""><a href="Destroy_Particle_Type.htm">Destroy Particle Type</a></td>
+        <td class="dnd"><span style="display: none;"> </span><span style="display: none;"> </span><span style="display: none;"> </span><span style="display: none;"> </span><span style="display: none;"> </span><span style="display: none;"> </span><span style="display: none;"> </span> <a href="Set_Particle_Size.htm">Impostazione della dimensione delle particelle</a><span style="display: none;"> </span></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Particle Size Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Size.png" /></td>
-        <td class="dnd"><span style="display: none;"> </span><span style="display: none;"> </span><span style="display: none;"> </span><span style="display: none;"> </span><span style="display: none;"> </span><span style="display: none;"> </span><span style="display: none;"> </span> <a href="Set_Particle_Size.htm">Set Particle Size</a><span style="display: none;"> </span></td>
+        <td class="dnd"><a href="Set_Particle_Sprite.htm">Imposta sprite di particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Particle Sprite Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Sprite.png" /></td>
-        <td class="dnd"><a href="Set_Particle_Sprite.htm">Set Particle Sprite</a></td>
+        <td class="dnd"><a href="Set_Particle_Shape.htm">Impostare la forma delle particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Particle Shape Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Shape.png" /></td>
-        <td class="dnd"><a href="Set_Particle_Shape.htm">Set Particle Shape</a></td>
+        <td class="dnd"><a href="Set_Particle_Colour.htm">Impostare il colore delle particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Particle Colour Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Colour.png" /></td>
-        <td class="dnd"><a href="Set_Particle_Colour.htm">Set Particle Colour</a></td>
+        <td class="dnd"><a href="Set_Particle_Alpha.htm">Impostare l'alfa delle particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Particle Alpha Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Alpha.png" /></td>
-        <td class="dnd"><a href="Set_Particle_Alpha.htm">Set Particle Alpha</a></td>
+        <td class="dnd"><a href="Set_Particle_Life.htm">Impostare la durata delle particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Particle Life Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Life.png" width="32" /></td>
-        <td class="dnd"><a href="Set_Particle_Life.htm">Set Particle Life</a></td>
+        <td class="dnd"><a href="Set_Particle_Speed.htm">Impostare la velocità delle particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Particle Speed Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Speed.png" /></td>
-        <td class="dnd"><a href="Set_Particle_Speed.htm">Set Particle Speed</a></td>
+        <td class="dnd"><a href="Set_Particle_Direction.htm">Impostare la direzione delle particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Particle Direction Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Direction.png" /></td>
-        <td class="dnd"><a href="Set_Particle_Direction.htm">Set Particle Direction</a></td>
+        <td class="dnd"><a href="Set_Particle_Orientation.htm">Impostare l'orientamento delle particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Particle Orientation Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Orientation.png" /></td>
-        <td class="dnd"><a href="Set_Particle_Orientation.htm">Set Particle Orientation</a></td>
+        <td class="dnd"><a href="Set_Particle_Gravity.htm">Impostare la gravità delle particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Particle Gravity Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Particle_Gravity.png" /></td>
-        <td class="dnd"><a href="Set_Particle_Gravity.htm">Set Particle Gravity</a></td>
+        <td class="dnd"><a href="Set_Secondary_Particles.htm">Imposta particelle secondarie</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Secondary Particles Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Secondary_Particles.png" /></td>
-        <td class="dnd"><a href="Set_Secondary_Particles.htm">Set Secondary Particles</a></td>
+        <td class="dnd"><a href="Burst_Particles.htm">Esplosione di particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Burst Particles Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Burst_Particles.png" /></td>
-        <td class="dnd"><a href="Burst_Particles.htm">Burst Particles</a></td>
+        <td class="dnd"><a href="Create_Particle_Emitter.htm">Creare emettitore di particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Create Particle Emitter Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Create_Particle_Emitter.png" /></td>
-        <td class="dnd"><a href="Create_Particle_Emitter.htm">Create Particle Emitter</a></td>
+        <td class="dnd"><a href="Destroy_Particle_Emitter.htm">Distruggere l'emettitore di particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Destroy Particle Emitter Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Destroy_Particle_Emitter.png" width="32" /></td>
-        <td class="dnd"><a href="Destroy_Particle_Emitter.htm">Destroy Particle Emitter</a></td>
+        <td class="dnd"><a href="Emit_Particles.htm">Emettere particelle</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Emit Particles Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Emit_Particles.png" /></td>
-        <td class="dnd"><a href="Emit_Particles.htm">Emit Particles</a></td>
+        <td class="dnd"><a href="Set_Emitter_Region.htm">Impostare la regione dell'emettitore</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Set Emitter Region Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Set_Emitter_Region.png" /></td>
-        <td class="dnd"><a href="Set_Emitter_Region.htm">Set Emitter Region</a></td>
-      </tr>
-      <tr>
-        <td class="dnd_icons" style="margin-left: 16px;"><img alt="Do Effect Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Do_Effect.png" /></td>
-        <td class="dnd"><a href="Do_Effect.htm">Do Effect</a></td>
+        <td class="dnd"><a href="Do_Effect.htm">Effetto Do</a></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../DnD_Reference.htm">Index</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="../Time_Sources/Time_Sources_(GML_Visual).htm">Time Source Actions</a></div>
+        <div style="float:left">Indietro: <a href="../DnD_Reference.htm">Indice</a></div>
+        <div style="float:right">Avanti: <a data-xref="{title}" href="../Time_Sources/Time_Sources_(GML_Visual).htm">Fonti di tempo (<span class="notranslate">GML</span> Visual)</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
-  <p> </p>
   <!-- KEYWORDS
 GML Visual Miscellaneous Actions
 Miscellaneous Actions

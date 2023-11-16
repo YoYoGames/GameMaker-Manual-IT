@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>Time Sources</title>
+  <title>Fonti di tempo</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../../assets/css/default.css" />
   <meta name="template" content="../../../assets/masterpages/Manual_Page.htt" />
@@ -14,51 +14,50 @@
   <meta name="search-keywords" content="Time Sources" />
 </head>
 <body>
-  <h1><span data-field="title" data-format="default">Time Sources</span></h1>
-  <p>A &quot;<span data-keyref="Type_Resource_TimeSource">Time Source</span>&quot; is a custom timer you create. It runs for a given period of time, and at the end, it expires.</p>
-  <p>A <span data-keyref="Type_Resource_TimeSource">Time Source</span> (TS) has the ability to call a custom method (&quot;callback&quot;) on expiring.</p>
-  <p><img class="center" src="../../../assets/Images/Scripting_Reference/GML/Reference/Time_Sources/time_sources_flow.png" />It&#39;s also able to repeat a certain of amount of times, or forever. Each repetition of a <span data-keyref="Type_Resource_TimeSource">Time Source</span> is known as a &quot;rep&quot;.</p>
-  <h2>How to Use Time Sources?</h2>
-  <p>Create and start a <span data-keyref="Type_Resource_TimeSource">Time Source</span> that calls a custom method:</p>
+  <h1>Fonti di tempo</h1>
+  <p>Una &quot;<span data-keyref="Type_Resource_TimeSource">Sorgente di tempo</span>&quot; è un timer personalizzato creato dall'utente. Funziona per un determinato periodo di tempo e alla fine scade.</p>
+  <p>Una <span data-keyref="Type_Resource_TimeSource">sorgente temporale</span> (TS) ha la possibilità di chiamare un metodo personalizzato (&quot;callback&quot;) alla scadenza.</p>
+  <p><img>È anche in grado di ripetersi per un certo numero di volte, o per sempre. Ogni ripetizione di una <span data-keyref="Type_Resource_TimeSource">Sorgente di tempo</span> è nota come &quot;ripetizione&quot;.</p>
+  <h2>Come utilizzare le fonti di tempo?</h2>
+  <p>Creare e avviare un'<span data-keyref="Type_Resource_TimeSource">origine temporale</span> che richiama un metodo personalizzato:</p>
   <ul class="colour">
-    <li>Call <a href="time_source_create.htm"><span class="inline">time_source_create()</span></a> / <a data-xref="{title}" href="../../../Drag_And_Drop/Drag_And_Drop_Reference/Time_Sources/Create_Time_Source.htm">Create Time Source</a> to create a <span data-keyref="Type_Resource_TimeSource">Time Source</span>
+    <li>Chiamata <a href="time_source_create.htm"><span class="inline">time_source_create()</span></a> / <a data-xref="{title}" href="../../../Drag_And_Drop/Drag_And_Drop_Reference/Time_Sources/Create_Time_Source.htm">Crea origine tempo</a> per creare un'<span data-keyref="Type_Resource_TimeSource">origine tempo</span>
       <ul>
-        <li>Specify whether this inherits from the Global <span data-keyref="Type_Resource_TimeSource">Time Source</span>, the Game <span data-keyref="Type_Resource_TimeSource">Time Source</span> or a custom <span data-keyref="Type_Resource_TimeSource">Time Source</span></li>
-        <li>Specify the period of time it runs for, and the units used (seconds or frames)</li>
-        <li>Specify a custom method or script function, with an argument array to pass into that method</li>
-        <li>Optionally, specify the number of times it should repeat
+        <li>Specificare se <span class="notranslate">inherits</span> proviene dall'<span data-keyref="Type_Resource_TimeSource">origine tempo</span> globale, dall'<span data-keyref="Type_Resource_TimeSource">origine tempo</span> del gioco o da un'<span data-keyref="Type_Resource_TimeSource">origine tempo</span> personalizzata.</li>
+        <li>Specificare il periodo di tempo per il quale viene eseguito e le unità di misura utilizzate (secondi o fotogrammi).</li>
+        <li>Specificare un metodo personalizzato o una funzione di <span class="notranslate">script</span>, con un array di argomenti da passare al metodo.</li>
+        <li>Opzionalmente, specificare il numero di volte che deve essere ripetuto
           <ul>
-            <li>By default it runs only once</li>
+            <li>Per impostazione predefinita, viene eseguito solo una volta</li>
           </ul>
         </li>
       </ul>
     </li>
-    <li>Call <a href="time_source_start.htm"><span class="inline">time_source_start()</span></a> / <a data-xref="{title}" href="../../../Drag_And_Drop/Drag_And_Drop_Reference/Time_Sources/Start_Time_Source.htm">Start Time Source</a> to start that <span data-keyref="Type_Resource_TimeSource">Time Source</span> immediately, or call it later when you need it to start</li>
+    <li>Chiamata <a href="time_source_start.htm"><span class="inline">time_source_start()</span></a> / <a data-xref="{title}" href="../../../Drag_And_Drop/Drag_And_Drop_Reference/Time_Sources/Start_Time_Source.htm">Avvia sorgente temporale</a> per avviare immediatamente quella <span data-keyref="Type_Resource_TimeSource">sorgente temporale</span>, oppure per richiamarla in un secondo momento quando è necessario avviarla.</li>
   </ul>
-  <p>Doing this will cause the <span data-keyref="Type_Resource_TimeSource">Time Source</span> to run, and after the specified period, it will expire and call your specified method.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_important.hts"> </span> Even though <span data-field="title" data-format="default">Time Sources</span> can expire at any moment, <span data-keyref="GameMaker Name">GameMaker</span> will only &quot;know&quot; about this when the <span data-field="title" data-format="default">Time Sources</span> are updated/&quot;ticked&quot;, which happens between the Begin Step and Step event for all <span data-field="title" data-format="default">Time Sources</span>. At this moment the callback functions will also be executed for those <span data-field="title" data-format="default">Time Sources</span> that have expired or are about to expire (depending on their <a href="Time_Source_Expiry_Types.htm">expiry type</a>). See <a data-xref="{title}" href="../../../The_Asset_Editors/Object_Properties/Event_Order.htm">Event Order</a> for more details.</p>
-  <h2>Built-In Time Sources</h2>
-  <p>A <span data-keyref="Type_Resource_TimeSource">Time Source</span> can inherit from either of the two built-in <span data-keyref="Type_Resource_TimeSource">Time Source</span>s, or from a custom <span data-keyref="Type_Resource_TimeSource">Time Source</span>.</p>
-  <p>See: <a data-xref="{title}" href="Built_In_Time_Sources.htm">Built-In Time Sources</a></p>
-  <h2 id="h">Simple Timers</h2>
-  <p>While setting up a time source doesn&#39;t take many lines of code, it can be convenient to quickly set up and manage a timer using a single function.</p>
-  <p>The following two functions provide a simpler, shorthand way of creating a <span data-keyref="Type_Resource_TimeSource">Time Source</span> and stopping it: </p>
+  <p>In questo modo, la <span data-keyref="Type_Resource_TimeSource">sorgente temporale</span> viene eseguita e, dopo il periodo specificato, scade e richiama il metodo specificato.</p>
+  <h2>Fonti di tempo integrate</h2>
+  <p>Una <span data-keyref="Type_Resource_TimeSource">fonte di tempo</span> può essere <span class="notranslate">inherit</span> da una delle due <span data-keyref="Type_Resource_TimeSource">fonti di tempo</span>integrate o da una <span data-keyref="Type_Resource_TimeSource">fonte di tempo</span> personalizzata.</p>
+  <p>Vedere: <a data-xref="{title}" href="Built_In_Time_Sources.htm">Fonti di tempo integrate</a></p>
+  <h2 id="h">Timer semplici</h2>
+  <p>Sebbene l'impostazione di una sorgente temporale non richieda molte righe di codice, può essere comodo impostare e gestire rapidamente un timer utilizzando una singola funzione.</p>
+  <p>Le due funzioni seguenti forniscono un modo più semplice e abbreviato per creare una <span data-keyref="Type_Resource_TimeSource">sorgente temporale</span> e fermarla: </p>
   <ul class="Disc">
-    <li><a data-xref="{title}" href="call_later.htm">call_later</a></li>
-    <li><a data-xref="{title}" href="call_cancel.htm">call_cancel</a></li>
+    <li><a data-xref="{title}" href="call_later.htm">chiamata_più_tardi</a></li>
+    <li><a data-xref="{title}" href="call_cancel.htm">annullamento della chiamata</a></li>
   </ul>
-  <p class="note"><span class="note">NOTE</span> You cannot use the <span data-keyref="Type_Resource_TimeSource">Time Source</span> functions with the <span data-keyref="Type_Resource_TimeSource">Time Source</span> IDs used by these functions. See <a href="call_later.htm">call_later</a> for more information.</p>
-  <h2>Function List</h2>
-  <p>The following functions are used to create and modify <span data-keyref="Type_Resource_TimeSource">Time Source</span>s:</p>
+  <p class="note"><span class="note">NOTA</span> Non è possibile utilizzare le funzioni di <span data-keyref="Type_Resource_TimeSource">origine temporale</span> con gli ID di <span data-keyref="Type_Resource_TimeSource">origine temporale</span> utilizzati da queste funzioni. Per ulteriori informazioni, vedere <a href="call_later.htm">call_later</a>.</p>
+  <h2>Elenco delle funzioni</h2>
+  <p>Le seguenti funzioni sono utilizzate per creare e modificare le <span data-keyref="Type_Resource_TimeSource">Sorgenti temporali</span>:</p>
   <ul class="colour">
-    <li><a data-xref="{title}" href="time_source_create.htm">time_source_create</a></li>
-    <li><a data-xref="{title}" href="time_source_destroy.htm">time_source_destroy</a></li>
-    <li><a data-xref="{title}" href="time_source_start.htm">time_source_start</a></li>
-    <li><a data-xref="{title}" href="time_source_stop.htm">time_source_stop</a></li>
-    <li><a data-xref="{title}" href="time_source_pause.htm">time_source_pause</a></li>
-    <li><a data-xref="{title}" href="time_source_resume.htm">time_source_resume</a></li>
-    <li><a data-xref="{title}" href="time_source_reconfigure.htm">time_source_reconfigure</a></li>
-    <li><a data-xref="{title}" href="time_source_reset.htm">time_source_reset</a></li>
+    <li><a data-xref="{title}" href="time_source_create.htm">sorgente_tempo_creata</a></li>
+    <li><a data-xref="{title}" href="time_source_destroy.htm">tempo_fonte_distruzione</a></li>
+    <li><a data-xref="{title}" href="time_source_start.htm">tempo_fonte_inizio</a></li>
+    <li><a data-xref="{title}" href="time_source_stop.htm">tempo_sorgente_arresto</a></li>
+    <li><a data-xref="{title}" href="time_source_pause.htm">tempo_fonte_pausa</a></li>
+    <li><a data-xref="{title}" href="time_source_resume.htm">tempo_fonte_ripresa</a></li>
+    <li><a data-xref="{title}" href="time_source_reconfigure.htm">fonte_tempo_riconfigura</a></li>
+    <li><a data-xref="{title}" href="time_source_reset.htm">tempo_fonte_reset</a></li>
     <li><a data-xref="{title}" href="time_source_get_children.htm">time_source_get_children</a></li>
     <li><a data-xref="{title}" href="time_source_get_parent.htm">time_source_get_parent</a></li>
     <li><a data-xref="{title}" href="time_source_get_period.htm">time_source_get_period</a></li>
@@ -69,31 +68,31 @@
     <li><a data-xref="{title}" href="time_source_get_units.htm">time_source_get_units</a></li>
     <li><a data-xref="{title}" href="time_source_exists.htm">time_source_exists</a></li>
   </ul>
-  <p>Each <span class="inline2">get_*</span> function will return <span class="inline2">undefined</span> if the specified <span data-keyref="Type_Resource_TimeSource">Time Source</span> doesn&#39;t exist.</p>
-  <p>The following helper functions are provided for converting time periods:</p>
+  <p>Ogni funzione <span class="inline2">get_*</span> restituisce <span class="inline2">undefined</span> se la <span data-keyref="Type_Resource_TimeSource">sorgente temporale</span> specificata non esiste.</p>
+  <p>Per la conversione dei periodi di tempo sono disponibili le seguenti funzioni ausiliarie:</p>
   <ul class="colour">
-    <li><a data-xref="{title}" href="time_seconds_to_bpm.htm">time_seconds_to_bpm</a></li>
-    <li><a data-xref="{title}" href="time_bpm_to_seconds.htm">time_bpm_to_seconds</a></li>
+    <li><a data-xref="{title}" href="time_seconds_to_bpm.htm">tempo_secondi_a_bpm</a></li>
+    <li><a data-xref="{title}" href="time_bpm_to_seconds.htm">tempo_bpm_a_secondi</a></li>
   </ul>
-  <p> </p>
-  <p>Also see: <a href="../../../Drag_And_Drop/Drag_And_Drop_Reference/Time_Sources/Time_Sources_(GML_Visual).htm">GML Visual - Time Sources</a></p>
-  <h2>Constants</h2>
-  <p>The following constants are used with <span data-keyref="Type_Resource_TimeSource">Time Source</span> functions:</p>
+  <p> </p>
+  <p>Vedere anche: <a href="../../../Drag_And_Drop/Drag_And_Drop_Reference/Time_Sources/Time_Sources_(GML_Visual).htm">GML Visual - Fonti temporali</a></p>
+  <h2>Costanti</h2>
+  <p>Le seguenti costanti vengono utilizzate con le funzioni di <span data-keyref="Type_Resource_TimeSource">origine temporale</span>:</p>
   <ul class="colour">
-    <li><a data-xref="{title}" href="Built_In_Time_Sources.htm">Built-In Time Sources</a></li>
-    <li><a data-xref="{title}" href="Time_Source_Units.htm">Time Source Units</a></li>
-    <li><a data-xref="{title}" href="Time_Source_Expiry_Types.htm">Time Source Expiry Types</a></li>
-    <li><a data-xref="{title}" href="Time_Source_States.htm">Time Source States</a></li>
+    <li><a data-xref="{title}" href="Built_In_Time_Sources.htm">Fonti di tempo integrate</a></li>
+    <li><a data-xref="{title}" href="Time_Source_Units.htm">Unità di origine del tempo</a></li>
+    <li><a data-xref="{title}" href="Time_Source_Expiry_Types.htm">Tipi di scadenza delle sorgenti temporali</a></li>
+    <li><a data-xref="{title}" href="Time_Source_States.htm">Stati fonte di tempo</a></li>
   </ul>
-  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="../GML_Reference.htm">GML Code Reference</a></div>
-        <div>Next: <a data-xref="{title}" href="../Physics/Physics.htm">Physics</a></div>
+        <div>Indietro: <a data-xref="{title}" href="../GML_Reference.htm">Riferimento al codice GML</a></div>
+        <div>Avanti: <a data-xref="{title}" href="../Physics/Physics.htm">Fisica</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
 </body>
 </html>

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>The Font Editor</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Font</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page detailing how the font editor works" />
   <meta name="rh-index-keywords" content="Font Editor" />
@@ -14,106 +14,113 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">The Font Editor</span></h1>
+  <h1>Il <span class="notranslate">Font</span> Editore</h1>
   <p><img alt="The Font Editor" class="center" src="../assets/Images/Asset_Editors/Editor_Fonts.png" /></p>
-  <p>When you want to draw text in your game this text is drawn in a standard Arial 12-point <a class="glossterm" data-glossterm="font" href="#">font</a>, but to make more interesting or unique looking texts you will probably want to use different fonts. So, to use different fonts that you have on your computer you must create a <strong>font asset</strong> in <span data-keyref="GameMaker Name">GameMaker</span>. This is done by right clicking <img alt="RMB Icon" class="icon" height="24" src="../assets/Images/Icons/Icon_RMB.png" width="21" /> on the <a href="../Introduction/The_Asset_Browser.htm">Asset Browser</a> and selecting &quot;<em>Create&quot; -</em>&gt;<em> &quot;Font</em>&quot;. For each font asset you create you specify a particular type of font from your computer which can then be used in your game using the action or code to set a font for drawing.</p>
-  <p>Fonts in GameMaker can make use of SDF rendering so text stays sharp as it&#39;s scaled up. Enable it under Rendering Options (listed below), or run <span class="inline3_func"><a data-xref="{title}" href="../GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_enable_sdf.htm">font_enable_sdf</a></span> on the font at runtime.</p>
-  <p>Once SDF is enabled, you can apply various <a href="../GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_enable_effects.htm">effects</a> to your font at runtime.</p>
-  <p>The Font Editor window contains the following options:</p>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Details</a></p>
+  <p>Quando volete disegnare del testo nel vostro gioco questo testo è disegnato in un <a class="glossterm" data-glossterm="font" href="#">font</a> standard Arial 12 punti, ma per fare testi più interessanti o dall'aspetto unico probabilmente vorrete usare diversi <span class="notranslate">fonts</span>. Quindi, per utilizzare diversi <span class="notranslate">fonts</span> che avete sul vostro computer è necessario creare una <strong>risorsa font</strong> in <span data-keyref="GameMaker Name">GameMaker</span>. Questo viene fatto cliccando con il tasto destro del mouse su <img> nel <a href="../Introduction/The_Asset_Browser.htm">Browser delle risorse</a> e selezionando &quot;<em>Create&quot; -&gt;</em><em> &quot;Font</em>&quot;. Per ogni <span class="notranslate">font</span> <span class="notranslate">asset</span> che create, specificate un particolare tipo di <span class="notranslate">font</span> dal vostro computer che può poi essere usato nel vostro gioco usando l'azione o il codice per impostare un <span class="notranslate">font</span> per il disegno.</p>
+  <p>Quando si crea per la prima volta una risorsa <span class="notranslate">font</span> la finestra dell'editor <span class="notranslate">font</span> si aprirà con le seguenti opzioni:</p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Dettagli</a></p>
   <div class="droptext" data-targetname="drop-down">
-    <p class="dropspot">Here you can give your font a unique name (alpha numeric characters and the &quot;_&quot; under-bar symbol only), as well as choose the font to use. The font must be installed on your machine and due to licensing issues, <span data-keyref="GameMaker Name">GameMaker</span> does not store the actual font files with the project file by default, but rather the font is <a class="glossterm" data-glossterm="rendered" href="#">rendered</a> to a <a href="../Settings/Texture_Information/Texture_Pages.htm">texture page</a> as a series of bitmap glyphs. The texture page will be assigned to a <a href="../Settings/Texture_Groups.htm">texture group</a>, which you can choose from the <strong>Group</strong> option here too.</p>
-    <p class="dropspot">If you want to distribute the actual font file (<span class="inline">*.ttf</span> or <span class="inline">*.otf</span> only) along with the project when making a Marketplace asset or for any other reason, you can check the option <strong>Copy To Project</strong>. This will open the file explorer where you can select the font file and it will then be added to the files bundled with the project.</p>
-    <p class="note"><span data-conref="../assets/snippets/Tag_important.hts"> </span> You should only use fonts that you are <strong>legally permitted and licensed to redistribute or use in your project</strong>.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Qui potete dare al vostro <span class="notranslate">font</span> un nome unico (solo caratteri alfa numerici e il simbolo &quot;_&quot; sotto la barra), così come scegliere il <span class="notranslate">font</span> da usare. Il <span class="notranslate">font</span> deve essere installato sulla vostra macchina e a causa di problemi di licenza, <span data-keyref="GameMaker Name">GameMaker</span> non
+      memorizza i file <span class="notranslate">font</span> effettivi con il file di progetto per impostazione predefinita, ma piuttosto il <span class="notranslate">font</span> è <a class="glossterm" data-glossterm="reso" href="#">reso</a> in una <a href="../Settings/Texture_Information/Texture_Pages.htm">pagina di texture</a> come una serie
+      di glifi bitmap. La pagina <span class="notranslate">texture</span> sarà assegnata a un <a href="../Settings/Texture_Groups.htm">gruppo di texture</a>, che potete scegliere anche qui dall'opzione <strong>Gruppo</strong>.</p>
+    <p class="dropspot">Se vuoi distribuire l'attuale file <span class="notranslate">font</span> (solo <span class="inline">*.ttf</span> o <span class="inline">*.otf</span> ) insieme al progetto quando fai un <span class="notranslate">Marketplace</span> <span class="notranslate">asset</span> o per qualsiasi altra ragione, puoi selezionare l'opzione <strong>Copy To Project</strong>. Questo
+      aprirà il file explorer dove puoi selezionare il file <span class="notranslate">font</span> e sarà aggiunto ai file in bundle con il progetto.</p>
+    <p class="note"><strong>IMPORTANTE!</strong> Dovresti usare solo <span class="notranslate">fonts</span> che ti è <strong>permesso legalmente e con licenza di ridistribuire o usare nel tuo progetto</strong>.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">Rendering Options</a></p>
-  <div class="droptext" data-targetname="drop-down7">
-    <p class="dropspot">This section contains two options:</p>
-    <ul class="colour">
-      <li class="dropspot"><strong>Enable SDF</strong>: Whether SDF rendering is enabled for this font. See <a data-xref="{text}" href="../GameMaker_Language/GML_Reference/Asset_Management/Fonts/Fonts.htm#h">SDF Rendering</a>.</li>
-      <li class="dropspot"><strong>SDF spread</strong>: The SDF <a href="../GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_sdf_spread.htm">spread value</a>. This limits how much <a href="../GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_enable_effects.htm">font effects</a> can spread from a glyph&#39;s edge.</li>
-    </ul>
-    <p class="dropspot"> </p>
-  </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Presets</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Preset</a></p>
   <div class="droptext" data-targetname="drop-down1">
-    <p class="dropspot">In this section you can set the size (in points - default is 12pt) and whether the font should be drawn as bold or italic or have <a class="glossterm" data-glossterm="anti-aliasing" href="#">anti-aliasing</a> applied. The preview window on the right will show you the text approximately as it will look in your game with the size and transforms you have specified.</p>
-    <p class="dropspot"> </p>
-  </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Range Controls</a></p>
-  <div class="droptext" data-targetname="drop-down2">
-    <p class="dropspot">When creating a font resource it&#39;s rare that you&#39;ll want to include every single glyph for the font. This is why <span data-keyref="GameMaker Name">GameMaker</span> defaults to using only the characters from 32 till 127 of the chosen font as this gives us the numbers and the small and capital letters along with certain punctuation marks. You can, however, change the character range used to help optimise your games ie: if you only need the numbers from a specific font, then <em>only </em>select the numbers. To do this, you should first click the <strong>Delete </strong>button to clear the current range (you may need to select the range for this to work by clicking <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> on it in the preview window) and then click on the <strong>Add </strong>button to add a new range. This will open the following chained window:</p>
-    <p class="dropspot"><img alt="Font Range Editor" class="center" src="../assets/Images/Asset_Editors/Editor_Fonts_Range.png" />This window has some buttons to help you establish a standard range for your font:</p>
-    <p class="dropspot">   - The <em>Normal </em>range from 32 till 127<br />
-      <br />
-         - The <em>ASCII </em>range from 0 till 255<br />
-      <br />
-         - The <em>Digits </em>range that only contains the 10 digits<br />
-      <br />
-         - The <em>Letters </em>range that contains all upper-case and lower-case letters only
+    <p class="dropspot">In questa sezione puoi impostare la dimensione (in punti - l'impostazione predefinita è 12pt) e se <span class="notranslate">font</span> deve essere disegnato come grassetto o corsivo o avere l'<a class="glossterm" data-glossterm="anti-aliasing" href="#">anti-aliasing</a> applicato. La finestra di anteprima sulla destra
+      ti mostrerà il testo approssimativamente come apparirà nel tuo gioco con le dimensioni e le trasformazioni che hai specificato.</p>
+    <p class="dropspot"><br />
     </p>
-    <p class="dropspot">Other ranges can be used by typing in the first and last character index of the range you wish to set in the character range input boxes (if a character does not lie in the range it is replaced by a space). Apart from these buttons and input boxes, you also have two further options which are especially useful:</p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Controlli di gamma</a></p>
+  <div class="droptext" data-targetname="drop-down2">
+    <p class="dropspot">Quando si crea una risorsa <span class="notranslate">font</span> è raro che si voglia includere ogni singolo glifo per il <span class="notranslate">font</span>. Questo è il motivo per cui <span data-keyref="GameMaker Name">GameMaker</span> utilizza di default solo i caratteri da 32 a 127 del <span class="notranslate">font</span> scelto, poiché questo ci dà i numeri e le lettere maiuscole insieme ad alcuni segni di punteggiatura.
+      le lettere piccole e maiuscole insieme a certi segni di punteggiatura. Potete, comunque, cambiare la gamma di caratteri usati per aiutare ad ottimizzare i vostri giochi, ad esempio: se avete bisogno solo dei numeri di uno specifico <span class="notranslate">font</span>, allora selezionate <em>solo </em>i numeri. Per fare
+      questo, dovresti prima cliccare sul pulsante <strong>Cancella </strong>per cancellare l'intervallo corrente (potresti aver bisogno di selezionare l'intervallo per farlo funzionare cliccando <img> su di esso nella
+      finestra di anteprima) e poi fare clic sul pulsante <strong>Aggiungi </strong>per aggiungere un nuovo intervallo. Questo aprirà la seguente finestra concatenata:<br>
+    </p>
+    <p class="dropspot"><img>Questa finestra ha alcuni pulsanti che ti aiutano a stabilire un intervallo standard per il tuo font:</p>
+    <p class="dropspot">   - La gamma <em>normale </em>da 32 a 127<br>
+      <br>    - L'intervallo <em>ASCII </em>da 0 a 255<br>
+      <br>    - L'intervallo <em>Cifre </em>che contiene solo le 10 cifre<br>
+      <br>    - <em>L </em>'intervallo <em>Lettere </em>che contiene solo tutte le lettere maiuscole e minuscole<br>
+    </p>
+    <p class="dropspot">Altri intervalli possono essere utilizzati digitando l'indice del primo e dell'ultimo carattere dell'intervallo che si desidera impostare nelle caselle di immissione dell'intervallo di caratteri (se un carattere non si trova nell'intervallo viene sostituito da uno spazio). Oltre a questi pulsanti e caselle di input,
+      avete anche due ulteriori opzioni che sono particolarmente utili:<br>
+    </p>
     <ul class="dropspotlist">
-      <li class="dropspot"><strong>From Code</strong>: if you click on this button and then click OK, <span data-keyref="GameMaker Name">GameMaker</span> will automatically parse your game code for strings and then create different character ranges to cover all the text in your game. Note that it looks for all strings (either within &quot;&quot; or &#39;&#39;) and so may also include file names in the character ranges.</li>
-      <li class="dropspot"><strong>From File</strong>: this works similarly to the &quot;from code&quot; option explained above. If you click on it, you will be asked to supply a file, and then once that is done you should click on OK. <span data-keyref="GameMaker Name">GameMaker</span> will then parse the file and create character ranges for the text found within it.</li>
-    </ul>
-    <p class="dropspot">Note that you can manually edit the text range by adding or deleting text glyphs into the preview window directly.</p>
-    <p class="dropspot">The <a href="../IDE_Tools/The_Inspector.htm">Inspector</a> contains a &quot;<strong>Select Glyphs</strong>&quot; option that you can use to select glyphs visually:</p>
-    <p class="dropspot"><img src="../assets/Images/Asset_Editors/Editor_Fonts_Inspector_GlyphSelector.png" class="center" /> </p>
-  </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">Texture Controls</a></p>
-  <div class="droptext" data-targetname="drop-down3">
-    <p class="dropspot">As mentioned above (in the section on <strong>Font Details</strong>) by default all font glyphs will be <a class="glossterm" data-glossterm="rendered" href="#">rendered</a> to a texture page as part of a texture group to convert them into graphical resources, and when the game is compiled the font will be added to a temporary texture to create a single image with all the required font glyphs and then this will be added to the main texture group for exporting. The buttons here are for tweaking how the font texture is generated or for regenerating a new font texture.</p>
-    <p class="dropspot">The <strong>Options </strong>button will open up the advanced font texture options:</p>
-    <p class="dropspot"><img alt="Font Options Editor" class="center" height="343" src="../assets/Images/Asset_Editors/Editor_Fonts_Options.png" width="485" />These options can, sometimes radically, alter how a font will be displayed in the game, and not all fonts will require the same settings. The following options are designed to give you the greatest customisation possible for your font:</p>
-    <ul class="colour">
-      <li class="dropspot"><strong>Hinting</strong>: Font hinting (also known as instructing) is the use of mathematical instructions to adjust the display of an outline font so that it lines up with a rasterized grid. At low screen resolutions, hinting is critical for producing clear, legible text, and here you can select from different hinting algorithms to get the best result possible. Default is &quot;normal&quot;.</li>
-      <li class="dropspot"><strong>Glyph Options</strong>: These options can be used to change how the glyphs are loaded by enabling/disabling different operations. These are:
-        <ol>
-          <li><em>Disable Hinting</em>: This will disable the fonts native hinting and the auto-hinter.</li>
-          <li><em>Disable Auto-Hinter</em>: This will disable the auto-hinter and instead use the fonts native hinter (if it has one). Note that this overrides the &quot;Prefer Auto-hinter&quot; option.</li>
-          <li><em>Prefer Auto-Hinter</em>: This will tell <span data-keyref="GameMaker Name">GameMaker</span> to prefer using the auto-hinter over any native hinting that the font may have. Note that this is overriden by the &quot;Disable Auto-hinter&quot; and &quot;Disable Hinting&quot; options.</li>
-          <li><em>Warping</em>: Enabling this will slightly warp glyphs to improve grid alignment. Note that this requires the auto-hinter and a &quot;Normal&quot; hinting mode.</li>
-          <li><em>No Scale</em>: When this option is checked it will keep glyphs in font units and ignore the requested size. This implies hinting is disabled.</li>
-        </ol>
-        The default state for all the above options is <strong>disabled</strong>.
+      <li class="dropspot"><strong>From Code</strong>: se cliccate su questo pulsante e poi cliccate su OK, <span data-keyref="GameMaker Name">GameMaker</span> analizzerà automaticamente il vostro codice di gioco per <span class="notranslate">strings</span> e poi creerà diversi intervalli di caratteri per coprire tutto il testo nel vostro gioco. Notate che cerca
+        tutti i <span class="notranslate">strings</span> (sia all'interno di &quot;&quot; che di '') e quindi può anche includere nomi di file negli intervalli di caratteri.<br>
       </li>
-      <li class="dropspot"><strong>Interpreter</strong>: Here you can select the <em>TrueType</em> version that <span data-keyref="GameMaker Name">GameMaker</span> should use for font rendering. Default is <em>TrueType v40</em>.</li>
-      <li class="dropspot"><strong>Rounding</strong>: This option is for setting the rounding method when converting from a fixed point decimal size to an integer. Default is &quot;floor&quot;.</li>
-      <li class="dropspot"><strong>Apply Kerning</strong>: This controls whether kerning data from the font file is used for rendering it in-game. This should be disabled if the kerning data for the source font is incorrect and results in the font not displaying correctly.</li>
+      <li class="dropspot"><strong>From File</strong>: questo funziona in modo simile all'opzione &quot;from code&quot; spiegata sopra. Se cliccate su di essa, vi verrà chiesto di fornire un file, e una volta fatto ciò dovrete cliccare su OK. <span data-keyref="GameMaker Name">GameMaker</span> analizzerà il file
+        e creerà intervalli di caratteri per il testo che si trova al suo interno.</li>
     </ul>
-    <p class="dropspot">The <strong>Regenerate </strong>button can be used to regenerate the font texture. This is required if you want to update any changes you&#39;ve made to an existing font, or if you have created a new font and you want to see how it looks in the Preview Window. Note that you can also regenerate fonts from the right button <img alt="RMB Icon" class="icon" src="../assets/Images/Icons/Icon_RMB.png" /> menu for the font (or fonts) in the Asset Browser.</p>
-    <p class="dropspot"><img alt="Regenerate Fonts RMB Menu Option" class="center" src="../assets/Images/Asset_Editors/Editor_Fonts_MenuRegenerate.png" />It is important to note that when you first create a new font, if you don&#39;t regenerate the texture in the editor, then the texture will be created the first time you run or test your game, but that is the only time that it will be automatically generated. This means that once a font has a generated texture, any changes made to the font resource will require that the font is regenerated for the changes to be visible in the game, otherwise the &quot;old&quot; font texture will still be used.</p>
-    <p class="dropspot"><span data-keyref="GameMaker Name">GameMaker</span> will render the generated font texture as a <span class="inline">PNG </span>file along with the rest of the project files, and should you load the project and the base font is not found, then the game will still display text correctly using the stored texture. A missing font will mean, however, that you can no longer change any of its properties, other than its name, font family and texture group (from the <a href="../Settings/Texture_Groups.htm">Texture Group Editor</a>).</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Si noti che è possibile modificare manualmente l'intervallo di testo aggiungendo o eliminando i glifi di testo direttamente nella finestra di anteprima.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Preview Mode</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">Controlli di texture</a></p>
+  <div class="droptext" data-targetname="drop-down3">
+    <p class="dropspot">Come menzionato sopra (nella sezione sui <strong>dettagli dei font</strong>) di default tutti i glifi <span class="notranslate">font</span> saranno <a class="glossterm" data-glossterm="reso" href="#">resi</a> in una pagina <span class="notranslate">texture</span> come parte di un gruppo <span class="notranslate">texture</span> per convertirli in risorse grafiche, e quando il gioco è compilato il <span class="notranslate">font</span> sarà aggiunto ad un <span class="notranslate">texture</span> temporaneo per creare una singola immagine con tutti i glifi richiesti <span class="notranslate">font</span> e poi questo sarà aggiunto al gruppo principale <span class="notranslate">texture</span> per l'esportazione. I pulsanti qui sono per modificare il modo in cui viene generato <span class="notranslate">font</span> <span class="notranslate">texture</span> o per rigenerare un nuovo <span class="notranslate">font</span> <span class="notranslate">texture</span>.</p>
+    <p class="dropspot">Il pulsante <strong>Opzioni </strong>apre le opzioni avanzate di <span class="notranslate">font</span> <span class="notranslate">texture</span>:</p>
+    <p class="dropspot"><img>Queste opzioni possono, a volte radicalmente, alterare il modo in cui un <span class="notranslate">font</span> sarà visualizzato nel gioco, e non tutti i <span class="notranslate">fonts</span> richiederanno le stesse impostazioni. Le seguenti opzioni sono progettate per darvi la massima personalizzazione possibile per il vostro font:</p>
+    <ul class="colour">
+      <li class="dropspot"><strong>Hinting</strong>: <span class="notranslate">Font</span> hinting (conosciuto anche come instructing) è l'uso di istruzioni matematiche per regolare la visualizzazione di un contorno <span class="notranslate">font</span> in modo che si allinei con una griglia rasterizzata. A basse risoluzioni dello schermo, il suggerimento è fondamentale per produrre un testo chiaro e leggibile, e qui puoi scegliere tra diversi algoritmi di suggerimento per ottenere il miglior risultato possibile. L'impostazione predefinita è &quot;normale&quot;.</li>
+      <li class="dropspot"><strong>Opzioni glifo</strong>: Queste opzioni possono essere usate per cambiare il modo in cui i glifi sono caricati abilitando/disabilitando diverse operazioni. Queste sono:
+        <ol>
+          <li><em>Disabilita il suggerimento</em>: Questo disabiliterà il hinting nativo di <span class="notranslate">fonts</span> e l'auto-hinter.</li>
+          <li><em>Disable Auto-Hinter</em>: Questo disabiliterà l'auto-hinter e userà invece l'hinter nativo di <span class="notranslate">fonts</span> (se ne ha uno). Nota che questo sovrascrive l'opzione &quot;Preferisci l'auto-hinter&quot;.</li>
+          <li>Preferisci l'<em>auto-hinter</em>: Questo dirà a <span data-keyref="GameMaker Name">GameMaker</span> di preferire l'uso dell'auto-hinter rispetto a qualsiasi hinting nativo che <span class="notranslate">font</span> può avere. Si noti che questo è sovrascritto dalle opzioni &quot;Disable Auto-hinter&quot; e &quot;Disable Hinting&quot;.</li>
+          <li><em>Deformazione</em>: Abilitando questa opzione i glifi verranno leggermente deformati per migliorare l'allineamento della griglia. Nota che questo richiede l'auto-hinter e una modalità di suggerimento &quot;Normale&quot;.</li>
+          <li><em>No Scale</em>: Quando questa opzione è selezionata manterrà i glifi in unità <span class="notranslate">font</span> e ignorerà la dimensione richiesta. Questo implica che i suggerimenti sono disabilitati.</li>
+        </ol>
+        Lo stato predefinito per tutte le opzioni di cui sopra è <strong>disabilitato</strong>.
+      </li>
+      <li class="dropspot"><strong>Interprete</strong>: qui è possibile selezionare la versione <em>TrueType</em> che <span data-keyref="GameMaker Name">GameMaker</span> dovrebbe utilizzare per il rendering di <span class="notranslate">font</span>. L'impostazione predefinita è <em>TrueType v40</em>.</li>
+      <li class="dropspot"><strong>Arrotondamento</strong>: Questa opzione serve per impostare il metodo di arrotondamento quando si converte da un decimale a punto fisso a un intero. Il valore predefinito è &quot;floor&quot;.</li>
+      <li class="dropspot"><strong>Applica Kerning</strong>: Questo controlla se i dati di kerning dal file <span class="notranslate">font</span> sono usati per il rendering in gioco. Questo dovrebbe essere disabilitato se i dati di kerning per il sorgente <span class="notranslate">font</span> non sono corretti e il risultato è che <span class="notranslate">font</span> non viene visualizzato correttamente.</li>
+    </ul>
+    <p class="dropspot">Il pulsante <strong>Regenerate </strong>può essere usato per rigenerare il sito <span class="notranslate">font</span> <span class="notranslate">texture</span>. Questo è necessario se volete aggiornare le modifiche che avete fatto a un <span class="notranslate">font</span> esistente, o se avete creato un nuovo <span class="notranslate">font</span> e volete vedere come appare nella finestra di anteprima. Notate che potete anche rigenerare <span class="notranslate">fonts</span> dal menu del pulsante destro <img> per il <span class="notranslate">font</span> (o <span class="notranslate">fonts</span>) nel Browser <span class="notranslate">Asset</span>.</p>
+    <p class="dropspot"><img>E' importante notare che quando si crea per la prima volta un nuovo <span class="notranslate">font</span>, se non si rigenera il <span class="notranslate">texture</span> nell'editor, allora il <span class="notranslate">texture</span> sarà creato la prima volta che si esegue o si testa il gioco, ma quella è l'unica volta che sarà generato automaticamente. Questo significa che una volta che un <span class="notranslate">font</span> ha un <span class="notranslate">texture</span> generato, qualsiasi modifica fatta alla risorsa <span class="notranslate">font</span> richiederà che il <span class="notranslate">font</span> sia rigenerato perché le modifiche siano visibili nel gioco, altrimenti il &quot;vecchio&quot; <span class="notranslate">font</span> <span class="notranslate">texture</span> sarà ancora usato.</p>
+    <p class="dropspot"><span data-keyref="GameMaker Name">GameMaker</span> renderà il <span class="notranslate">font</span> <span class="notranslate">texture</span> generato come un file <span class="inline">PNG </span>insieme al resto dei file del progetto, e se si carica il progetto e la base <span class="notranslate">font</span> non viene trovata, allora il gioco visualizzerà ancora il testo correttamente usando il <span class="notranslate">texture</span> memorizzato. Un <span class="notranslate">font</span> mancante significherà, tuttavia, che non potrete più cambiare nessuna delle sue proprietà, a parte il nome, la famiglia <span class="notranslate">font</span> e il gruppo <span class="notranslate">texture</span> (dal <a href="../Settings/Texture_Groups.htm">Texture Group Editor</a>).</p>
+    <p class="dropspot"> </p>
+  </div>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Modalità di anteprima</a></p>
   <div class="droptext" data-targetname="drop-down4">
-    <p class="dropspot">In this section you can choose to have the Preview Window show either some sample text of the font selected, or the rendered texture image that has been generated for the font.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">In questa sezione potete scegliere che la finestra di anteprima mostri o un testo campione del <span class="notranslate">font</span> selezionato, o l'immagine renderizzata di <span class="notranslate">texture</span> che è stata generata per il <span class="notranslate">font</span>.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Preview</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Anteprima</a></p>
   <div class="droptext" data-targetname="drop-down5">
-    <p class="dropspot">The <strong>Preview Window</strong> is where you can see a preview of the font, either as a sample of text, or as a texture. When the <strong>Preview Mode </strong>is set to <em>Sample</em>, you can type in any text that you want to test directly into the preview window to see how it looks, while selecting <em>Game Preview </em>will show the rendered texture image that was generated for the font. If no image is present, then you should click the <strong>Regenerate </strong>button to generate the texture.</p>
-    <p class="dropspot">Note that the texture image can be different to the sample, since the texture will <em>not</em> be regenerated unless explicitly told to. This means that after you have initially generated a font texture, changes made to the font resource will not be carried over to the game unless the texture is regenerated.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Il
+      La <strong>finestra di anteprima</strong> è dove si può vedere un'anteprima di <span class="notranslate">font</span>, sia come un campione di testo, sia come un <span class="notranslate">texture</span>. Quando la
+     <strong>Modalità di anteprima </strong>è impostata su
+     <em>Sample</em>, potete digitare qualsiasi testo che volete testare direttamente nella finestra di anteprima per vedere come appare, mentre selezionando
+     <em>Game Preview </em>mostrerà l'immagine renderizzata di <span class="notranslate">texture</span> che è stata generata per il <span class="notranslate">font</span>. Se non è presente alcuna immagine, allora si dovrebbe cliccare il pulsante
+     <strong>Regenerate </strong>per generare il <span class="notranslate">texture</span>.
+    </p>
+    <p class="dropspot">Si noti che l'immagine <span class="notranslate">texture</span> può essere diversa da quella del campione, poiché <span class="notranslate">texture</span> non
+     <em>non</em> verrà rigenerata a meno che non venga detto esplicitamente di farlo. Questo significa che dopo aver generato inizialmente un <span class="notranslate">font</span> <span class="notranslate">texture</span>, le modifiche apportate alla risorsa <span class="notranslate">font</span> non saranno riportate nel gioco a meno che non venga rigenerato il <span class="notranslate">texture</span>.
+    </p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#">Range Preview</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#">Anteprima della gamma</a></p>
   <div class="droptext" data-targetname="drop-down6">
-    <p class="dropspot">Here the different character ranges that you have added for the font will be listed. The range values are shown on the left and the range glyphs that correspond to those values are shown on the right.</p>
+    <p class="dropspot">Qui saranno elencati i diversi intervalli di caratteri che hai aggiunto per <span class="notranslate">font</span>. I valori della gamma sono mostrati sulla sinistra e i glifi della gamma che corrispondono a quei valori sono mostrati sulla destra.</p>
   </div>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="The_Asset_Editors.htm">The Asset Editors</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="Notes.htm">The Note Editor</a></div>
+        <div style="float:left">Indietro: <a href="The_Asset_Editors.htm">I redattori delle risorse</a></div>
+        <div style="float:right">Il prossimo: <a href="Notes.htm">Note</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Font Editor

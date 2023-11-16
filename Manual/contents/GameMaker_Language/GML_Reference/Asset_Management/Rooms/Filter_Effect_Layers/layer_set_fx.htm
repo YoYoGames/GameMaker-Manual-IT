@@ -6,7 +6,7 @@
   <title>layer_set_fx</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="topic-comment" content="Page outlining the function layer_set_fx" />
   <meta name="rh-index-keywords" content="layer_set_fx" />
@@ -15,52 +15,52 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>layer_set_fx</h1>
-  <p>This function is used to assign an FX struct to a Room Layer. You specify either the ID or the name of the layer you want to modify, and then an FX struct (as returned from <span class="inline"><a href="fx_create.htm">fx_create()</a></span> or <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>) which will be applied to the specified layer, making the effect visible in the room.</p>
-  <p>If you specify a layer that is not a Filter/Effect Layer but is of another type (such as an Instance Layer, Asset Layer, Tile Layer, etc.) then the effect will be applied to the contents of that layer as well as to any layers below it.</p>
-  <p>If the specified layer already has an FX struct assigned to it, it will be replaced by the new one.</p>
-  <p class="note"><span class="note">NOTE</span> Calling this function at the root level of a script will do nothing, as scripts are executed before the first room loads. You can set a <a href="../General_Layer_Functions/layer_set_target_room.htm">target room</a> first and then call this function.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione serve ad assegnare un FX <span class="notranslate">struct</span> a un <span class="notranslate">Room</span> livello. Si specifica l'ID o il nome del livello che si desidera modificare, quindi un FX <span class="notranslate">struct</span> (come restituito da <span class="inline"><a href="fx_create.htm">fx_create()</a></span> o <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>) che verrà applicato al livello specificato, rendendo l'effetto visibile in <span class="notranslate">room</span>.</p>
+  <p>Se si specifica un livello che non è un livello filtro/effetto ma è di un altro tipo (come un livello istanza, <span class="notranslate">Asset</span>, <span class="notranslate">Tile</span>, ecc.), l'effetto verrà applicato al contenuto di quel livello e a tutti i livelli sottostanti.</p>
+  <p>Se al layer specificato è già assegnato un FX <span class="notranslate">struct</span>, questo verrà sostituito dal nuovo.</p>
+  <p class="note"><span class="note">NOTA</span> La chiamata di questa funzione al livello principale di un <span class="notranslate">script</span> non avrà alcun effetto, poiché <span class="notranslate">scripts</span> viene eseguito prima del caricamento del primo <span class="notranslate">room</span>. È possibile impostare prima una <a href="../General_Layer_Functions/layer_set_target_room.htm">stanza di destinazione</a> e poi chiamare questa funzione.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">layer_set_fx(layer_name_or_id, filter_or_effect);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>layer_name_or_id</td>
-        <td><span data-keyref="Type_String"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span> or <span data-keyref="Type_ID_Layer"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/General_Layer_Functions/layer_get_id.htm" target="_blank">Layer ID</a></span></td>
-        <td>The name or ID of the layer to modify</td>
+        <td><span class="notranslate">layer_name_or_id</span></td>
+        <td><span data-keyref="Type_String"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Stringa</a></span> o <span data-keyref="Type_ID_Layer"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/General_Layer_Functions/layer_get_id.htm" target="_blank">ID del livello</a></span></td>
+        <td><span class="notranslate">The name or ID of the layer to modify</span></td>
       </tr>
       <tr>
-        <td>filter_or_effect</td>
-        <td><span data-keyref="Type_Struct_FX"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Filter_Effect_Layers/fx_create.htm" target="_blank">FX Struct</a></span></td>
-        <td>The FX struct to apply to the layer</td>
+        <td><span class="notranslate">filter_or_effect</span></td>
+        <td><span data-keyref="Type_Struct_FX"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Filter_Effect_Layers/fx_create.htm" target="_blank">Struttura FX</a></span></td>
+        <td><span class="notranslate">The FX struct to apply to the layer</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Restituzione:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var _fx_tint = fx_create(&quot;_filter_tintfilter&quot;);<br />
     fx_set_parameter(_fx_tint, &quot;g_TintCol&quot;, [1, 0, 0, 1]);<br />
     layer_set_fx(&quot;EffectLayer&quot;, _fx_tint);</p>
-  <p>The above code creates a new FX struct from the <span class="inline2">&quot;_filter_tintfilter&quot;</span> effect, which is the &quot;Colour Tint&quot; filter found in the Room Editor. It assigns a value to its <span class="inline2">&quot;g_TintCol&quot;</span> parameter which is the colour of the tint, and as it&#39;s a <span class="inline">vec4</span> internally, it takes an array containing four values (corresponding to its red, green, blue and alpha values). The FX struct for the tint is then applied to an FX layer.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra crea un nuovo FX <span class="notranslate">struct</span> dall'effetto <span class="inline2">&quot;_filter_tintfilter&quot;</span>, che è il filtro &quot;Colour Tint&quot; che si trova nell'editor <span class="notranslate">Room</span>. Assegna al suo parametro <span class="inline2">&quot;g_TintCol&quot;</span> un valore che è il colore della tinta e, poiché internamente è un <span class="inline">vec4</span>, prende un array contenente quattro valori (corrispondenti ai valori di rosso, verde, blu e alfa). L'FX <span class="notranslate">struct</span> per la tinta viene quindi applicato a un livello FX.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Filter_Effect_Functions.htm">Filter and Effect Functions</a></div>
-        <div style="float:right">Next: <a href="layer_get_fx.htm">layer_get_fx</a></div>
+        <div style="float:left">Indietro: <a href="Filter_Effect_Functions.htm">Funzioni di filtro e di effetto</a></div>
+        <div style="float:right">Avanti: <a href="layer_get_fx.htm">layer_get_fx</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 layer_set_fx

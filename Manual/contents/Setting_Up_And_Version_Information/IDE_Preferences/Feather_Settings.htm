@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Feather</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Piuma</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="topic-comment" content="The Feather Preferences" />
   <meta name="rh-index-keywords" content="Prefs - Feather Settings" />
@@ -14,99 +14,93 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Feather</span></h1>
-  <p>Feather provides intelligent code completion and improved syntax checking in your <a href="../../GameMaker_Language/GameMaker_Language_Index.htm">GML Code</a> scripts, along with smart refactoring options.</p>
-  <p>This page contains information on the following parts of Feather:</p>
-  <div class="minitoc" data-minitoc-targetid="drop-down" data-type="minitoc" style="">
-    <p class="minitoc-caption" data-close-text="" data-expanded="true" data-open-text="Contents" data-type="minitoc-caption" href="#" style="">Mini TOC (placeholder)</p>
-    <ol class="minitoc-list" data-from-selector="h2" data-to-selector="h4" data-type="minitoc-list" style="">
-      <li>Heading</li>
-    </ol>
-  </div>
+  <h1>Piuma</h1>
+  <p>Feather offre un completamento intelligente del codice e un controllo migliorato della sintassi nel <a href="../../GameMaker_Language/GameMaker_Language_Index.htm">codice GML</a> <span class="notranslate">scripts</span>, oltre a opzioni di refactoring intelligenti.</p>
+  <p>Questa pagina contiene informazioni sulle seguenti parti di Feather:</p>
+  <ul class="colour">
+    <li><a href="#s1">Opzioni di base</a></li>
+    <li><a href="#s2">Evidenziazione</a></li>
+    <li><a href="#s3">Gravità del messaggio</a> (regole &quot;GMXXXX&quot;)</li>
+    <li><a href="#s4">Regole di denominazione</a> (per <span class="notranslate">assets</span>, variabili, ecc.)</li>
+  </ul>
   <div class="seealso" data-type="seealso" style="">
-    <p class="seealso-caption" data-close-text="" data-expanded="true" data-open-text="See Also" data-type="seealso-caption" style="">See Also (placeholder)</p>
+    <p class="seealso-caption" data-close-text="" data-expanded="true" data-open-text="See Also" data-type="seealso-caption" style="">Vedi anche (segnaposto)</p>
     <ol class="seealso-list" data-keywords="" data-type="seealso-list" style="">
-      <li><a class="seealso-list-item" href="#">Topic List</a></li>
+      <li><a class="seealso-list-item" href="#">Elenco argomenti</a></li>
     </ol>
   </div>
-  <h2 id="s1">Base Options</h2>
-  <p><img class="center" src="../../assets/Images/Setup_And_Version/Preferences/Feather/FeatherPrefs_Base.png" />The base Feather Settings contain the following options:</p>
+  <h2 id="s1">Opzioni di base</h2>
+  <p><img>Le impostazioni di base della piuma contengono le seguenti opzioni:</p>
   <ul class="colour">
-    <li><strong>Enable Strict Type mode</strong>: When this is enabled, Feather is stricter about ensuring you use the correct data types in your code.</li>
-    <li><strong>Do not analyze project for Room Instances with auto-generated names</strong>: Enabling this will make Feather not analyse the project for newly added instances. Feather will however analyse your project again when you rename a room instance to a name that&#39;s different from its original auto-generated name.</li>
-    <li><strong>Do not analyze Room Instances</strong>: When this is enabled, Feather will never analyse any Instance Creation Code or reparse the project for new room instances, even when you rename them.</li>
-    <li><strong>Enable Feather</strong>: Enable or disable Feather here. When disabled, no Feather features will be available throughout the IDE.</li>
-    <li><strong>Document Parse Delay</strong>: The amount of time Feather waits to check your script after you make a change to it.</li>
-    <li><strong>Compact Tooltips</strong>: Enabling this will remove certain tooltip information that appears when hovering over keywords, such as parameter descriptions for functions, ultimately making your tooltips smaller.</li>
-    <li><strong>The maximum number of struct fields that are displayed by tooltips</strong>: When you hover over a struct reference, a tooltip displays the variables inside that struct, up to the number entered here.</li>
-    <li><strong>Refactor references to asset name when asset is renamed in Asset Browser</strong>: Enabling this will ensure that when you rename an asset in your Asset Browser, any mentions of it in your code are also edited so those references don&#39;t break.</li>
-    <li><strong>Prefer multiline JSDoc comment style when creating from Quick Fix</strong>: When you generate JSDoc comments for a function through the <a data-xref="{text}" href="../../The_Asset_Editors/Code_Editor_Properties/Feather_Features.htm#h1">Quick Fixes</a> menu, the generated JSDoc will either use single-line or multi-line <a href="../../GameMaker_Language/GML_Overview/Commenting_Code.htm">comments</a>, depending on this option.</li>
+    <li><strong>Abilitare Feather</strong>: Attivare o disattivare Feather. Quando è disabilitato, nessuna funzione di Feather sarà disponibile in <span class="notranslate">IDE</span>.</li>
+    <li><strong>Ritardo di analisi del documento</strong>: Il tempo che Feather attende per controllare il documento <span class="notranslate">script</span> dopo avervi apportato una modifica.</li>
+    <li><strong>Tooltip compatti</strong>: Abilitando questa opzione, si rimuovono alcune informazioni che appaiono quando si passa il mouse sulle parole chiave, come le descrizioni dei parametri delle funzioni, rendendo così i tooltip più piccoli.</li>
+    <li><strong>Il numero massimo di campi <span class="notranslate">struct</span> che vengono visualizzati dai tooltip</strong>: Quando si passa il mouse su un riferimento a <span class="notranslate">struct</span>, un tooltip visualizza le variabili contenute in <span class="notranslate">struct</span>, fino al numero qui inserito.</li>
+    <li><strong>Riformula i riferimenti al nome <span class="notranslate">asset</span> quando <span class="notranslate">asset</span> viene rinominato nel Browser <span class="notranslate">Asset</span>:</strong> Abilitando questa opzione, si assicura che quando si rinomina un nome <span class="notranslate">asset</span> nel browser <span class="notranslate">Asset</span>, anche qualsiasi riferimento ad esso nel codice venga modificato, in modo che i riferimenti non si interrompano.</li>
+    <li><strong>Preferisci lo stile di commento JSDoc multilinea quando si crea da Quick Fix</strong>: Quando si generano commenti JSDoc per una funzione attraverso il menu <a data-xref="{text}" href="../../The_Asset_Editors/Code_Editor_Properties/Feather_Features.htm#h1">Quick Fixes</a>, il JSDoc generato userà <a href="../../GameMaker_Language/GML_Overview/Commenting_Code.htm">commenti</a> a riga singola o a più righe, a seconda di questa opzione.</li>
+    <li><strong>Abilita la modalità Strict Type</strong>: Quando questa opzione è attivata, Feather è più rigoroso nel garantire l'uso del corretto <span class="notranslate">data types</span> nel codice.</li>
   </ul>
-  <h2 id="s2">Highlighting</h2>
-  <p><img class="center" src="../../assets/Images/Setup_And_Version/Preferences/Feather/FeatherPrefs_Highlighting.png" style="cursor: nesw-resize;" /></p>
-  <p>This section contains settings for changing the colours used for underlining part of your code to mark an error, warning or suggestion:</p>
+  <h2 id="s2">Evidenziazione</h2>
+  <p><img class="center" src="../../assets/Images/Setup_And_Version/Preferences/Feather/FeatherPrefs_Base.png" /></p>
+  <p>Questa sezione contiene le impostazioni per modificare i colori utilizzati per sottolineare una parte del codice per segnalare un errore, un avviso o un suggerimento:</p>
   <ul class="colour">
-    <li><strong>Error Colour</strong>: The colour used for errors.</li>
-    <li><strong>Warning Colour</strong>: The colour used for warnings.</li>
-    <li><strong>Suggestion Colour</strong>: The colour used for suggestions.</li>
+    <li><strong>Colore degli errori</strong>: il colore utilizzato per gli errori.</li>
+    <li><strong>Colore degli avvisi</strong>: il colore utilizzato per gli avvisi.</li>
+    <li><strong>Colore dei suggerimenti</strong>: il colore utilizzato per i suggerimenti.</li>
   </ul>
-  <h2 id="s3">Message Severity</h2>
-  <p><img class="center" src="../../assets/Images/Setup_And_Version/Preferences/Feather/FeatherPrefs_Severity.png" />This section contains all the rules Feather uses for checking your code, and lets you adjust the severity of each rule.</p>
-  <h3 id="message_severity_profile">Profile</h3>
-  <p>In this dropdown box you can choose between a couple of presets for the syntax checker. The following profiles are available: </p>
+  <h2 id="s3">Gravità del messaggio</h2>
+  <p><img>Questa sezione contiene tutte le regole che Feather utilizza per controllare il codice e consente di regolare la gravità di ciascuna regola.</p>
+  <h3>Profilo</h3>
+  <p>In questa casella a discesa è possibile scegliere tra un paio di preimpostazioni per le <a data-xref="{text}" href="Feather_Settings.htm#h">regole GM*</a>. Sono disponibili i seguenti profili: </p>
   <ul class="Disc">
-    <li><strong>None</strong>: This profile will show no error messages.</li>
-    <li><strong>SyntaxErrors</strong>: If you use this profile, syntax errors will be shown, together with what is shown in the <strong>None</strong> profile.</li>
-    <li><strong>TypeErrors</strong>: This profile also shows type errors in addition to the <strong>SyntaxErrors </strong>profile.</li>
-    <li><strong>All</strong>: This profile shows everything that Feather can analyze.</li>
+    <li><strong>Nessuno</strong>: Questo profilo non mostrerà alcun messaggio di errore.</li>
+    <li><strong>SyntaxErrors</strong>: Se si usa questo profilo, verranno mostrati gli errori di sintassi, oltre a quelli mostrati nel profilo <strong>Nessuno</strong>.</li>
+    <li><strong>Errori di tipo</strong>: Questo profilo mostra anche gli errori di tipo, oltre al profilo <strong>SyntaxErrors </strong>.</li>
+    <li><strong>Tutti</strong>: questo profilo mostra tutto ciò che Feather può analizzare.</li>
   </ul>
-  <h3 id="message_severity_gm_rules">GM* Rules</h3>
-  <p>You can set a rule as an &quot;<strong>Error</strong>&quot;, &quot;<strong>Warn</strong>&quot; or &quot;<strong>Suggestion</strong>&quot;, which affects the way that rule-breaking code is reported to you in the Code Editor and the Feather Messages window.</p>
-  <p>You can set a rule to &quot;<strong>Ignore</strong>&quot; which will ignore all instances of that rule being broken.</p>
-  <p>All rules starting from &quot;<strong>GM1000</strong>&quot; check your syntax for possible fatal errors, and those starting from &quot;<strong>GM2000</strong>&quot; are best-practice rules that help you prevent bugs in your game.</p>
-  <h2 id="s4">Naming Rules</h2>
-  <p><img class="center" src="../../assets/Images/Setup_And_Version/Preferences/Feather/FeatherPrefs_NamingRules.png" />This section allows you to set naming rules for assets, variables and various other parts of GML Code.</p>
-  <p>The GM2017 rule under &quot;Message Severity&quot; must be enabled for naming rules to take effect. By default, it&#39;s disabled.</p>
-  <p>The settings in this section are as follows:</p>
+  <h3 id="h">Regole GM*</h3>
+  <p>È possibile impostare una regola come &quot;<strong>Errore</strong>&quot;, &quot;<strong>Avviso&quot;</strong> o &quot;<strong>Suggerimento</strong>&quot;, il che influisce sul modo in cui il codice che viola la regola viene segnalato nell'Editor codice e nella finestra Messaggi di Feather.</p>
+  <p>È possibile impostare una regola su &quot;<strong>Ignora</strong>&quot; per ignorare tutti i casi di violazione della regola stessa.</p>
+  <p>Tutte le regole che iniziano con &quot;<strong>GM1000</strong>&quot; controllano la sintassi per individuare eventuali errori fatali, mentre quelle che iniziano con &quot;<strong>GM2000</strong>&quot; sono regole di buona pratica che aiutano a prevenire i bug nel gioco.</p>
+  <h2 id="s4">Regole di denominazione</h2>
+  <p><img>Questa sezione consente di impostare le regole di denominazione per <span class="notranslate">assets</span>, le variabili e varie altre parti del codice <span class="notranslate">GML</span>.</p>
+  <p>La regola GM2017 in &quot;Message Severity&quot; deve essere attivata affinché le regole di denominazione abbiano effetto. Per impostazione predefinita, è disattivata.</p>
+  <p>Le impostazioni di questa sezione sono le seguenti:</p>
   <ul class="colour">
-    <li><strong>Identifier Blocklist</strong>: This is a space-separated list of identifiers that will be ignored for all naming rules.<br />
-      <br />
-      For example, say you have a rule to use <span class="inline2">obj_</span> as a prefix for objects, but you want your objects <span class="inline2">manager</span> and <span class="inline2">network</span> to remain as-is and not use the <span class="inline2">obj_</span> prefix.<br />
-      <br />
-      In that case, you would write <span class="inline2">manager network</span> into the <strong>Identifier Blocklist</strong> field. Feather will ignore those objects <em>and</em> any other identifiers (variables, enums, parameters, etc.) with the same names.
+    <li><strong>Elenco di blocco degli identificatori</strong>: È un elenco separato da spazi di identificatori che saranno ignorati per tutte le regole di denominazione.<br>
+      <br>
+      Ad esempio, se si ha una regola che prevede l'uso di <span class="inline2">obj_</span> come prefisso per <span class="notranslate">objects</span>, ma si vuole che il <span class="inline2">gestore</span> e la <span class="inline2">rete</span> <span class="notranslate">objects</span> rimangano invariati e non utilizzino il prefisso <span class="inline2">obj_</span>.<br>
+      <br>
+      In questo caso, si dovrebbe scrivere <span class="inline2">manager network</span> nel campo <strong>Indentifier Blocklist</strong>. Feather ignorerà <span class="notranslate">objects</span> <em>e</em> qualsiasi altro identificatore (variabili, enum, parametri, ecc.) con gli stessi nomi.
     </li>
-    <li><strong>&lt;identifier&gt; Naming Rule</strong>: You can set naming rules for each type of identifier in the list, such as assets, macros, enums, function parameters, variables, etc.<br />
-      <br />
-      Each naming rule drop-down has the following options:
+    <li><strong>&lt;identificatore&gt; Regola di denominazione</strong>: è possibile impostare regole di denominazione per ogni tipo di identificatore dell'elenco, come <span class="notranslate">assets</span>, macro, enum, parametri di funzione, variabili, ecc.<br>
+      <br>
+      Ciascuna regola di denominazione ha le seguenti opzioni:
       <ul>
-        <li><strong>Naming Style</strong>: Choose the naming style for the identifier. Your options are:
+        <li><strong>Prefisso</strong>: Il testo che deve apparire prima del nome dell'identificatore, che può essere <span class="inline2">obj_</span> per <span class="notranslate">objects</span>, <span class="inline2">_</span> per le variabili locali, ecc.</li>
+        <li><strong>Suffisso</strong>: Testo che deve apparire dopo il nome dell'identificatore.</li>
+        <li><strong>Stile di denominazione</strong>: Scegliere lo stile di denominazione dell'identificatore. Le opzioni sono:
           <ul>
-            <li><strong>Unconstrained</strong>: No formatting is forced on this type of identifier.</li>
-            <li><strong>UpperCamelCase</strong>: <em>MyHealth, ObjGrappleHook</em></li>
-            <li><strong>lowerCamelCase</strong>: <em>myHealth, objGrappleHook</em></li>
-            <li><strong>ALL_UPPER</strong>: <em>MY_HEALTH, OBJ_GRAPPLE_HOOK</em></li>
-            <li><strong>all_lower</strong>: <em>my_health, obj_grapple_hook</em></li>
+            <li><strong>Senza vincoli</strong>: Questo tipo di identificatore non è soggetto a formattazione.</li>
+            <li><strong>Maiuscolo</strong>: <em>MyHealth, ObjGrappleHook, MaxInventoryItemsAllowed, ecc.</em></li>
+            <li><strong>lowerCamelCase</strong>: <em>myHealth, objGrappleHook, maxInventoryItemsAllowed, ecc.</em></li>
+            <li><strong>ALL_UPPER</strong>: <em>MY_HEALTH, OBJ_GRAPPLE_HOOK, MAX_INVENTORY_ITEMS_ALLOWED, ecc</em>.</li>
+            <li><strong>all_lower</strong>: <em>my_health, obj_grapple_hook, max_inventory_items_allowed, ecc</em>.</li>
           </ul>
-        </li>
-        <li><strong>Prefix</strong>: Text that should appear before the identifier name, which may be <span class="inline2">obj_</span> for objects, <span class="inline2">_</span> for local variables, etc. depending on your preferences.</li>
-        <li><strong>Suffix</strong>: Text that should appear after the identifier name.</li>
-        <li><strong>Preserve trailing and leading underscores</strong>: If enabled, preserves underscores around your asset&#39;s name even after suggestions.<br />
-          <br />
-          With this, you can use asset names such as <span class="inline2">__objCamera</span>, keeping any leading and trailing underscores where they are.
         </li>
       </ul>
     </li>
   </ul>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../IDE_Preferences.htm">IDE Preferences</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="Marketplace_Preferences.htm">Marketplace Preferences</a></div>
+        <div style="float:left">Indietro: <a href="../IDE_Preferences.htm">Preferenze IDE</a></div>
+        <div style="float:right">Avanti: <a data-xref="{title}" href="Marketplace_Preferences.htm">Preferenze del mercato</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Preferences - Feather Settings

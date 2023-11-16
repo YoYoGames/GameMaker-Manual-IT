@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Global Variables</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Variabili globali</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining global variables" />
   <meta name="rh-index-keywords" content="global,globalvar,Global Variables" />
@@ -14,55 +14,56 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Global Variables</h1>
-  <p>A basic description of a <strong><a id="global"></a>global </strong>variable is one that, once declared, it belongs to no instance in particular and yet can be accessed by all. Just like <a href="Local_Variables.htm">local variables</a>, global variables must be declared using an identifier, but unlike a local variable, a global variable remains in memory <em>until the end of the game</em>. So, you can create a global variable to keep track of (for example) the number of bullets that the player has and then just update this variable at different points in the game, form any instance or function and at any time. Essentially, a global variable does not belong to any specific instance and can be accessed, changed and used by all instances, and any changes made to the variable are &quot;global&quot;, in that all instances using the variable will be affected by the change. Let&#39;s have a look at an example:</p>
+  <h1>Variabili globali</h1>
+  <p>Una descrizione di base di una variabile <strong>globale </strong>è quella che, una volta dichiarata, non appartiene a nessuna istanza in particolare e tuttavia è accessibile a tutti. Proprio come le <a href="Local_Variables.htm">variabili locali</a>, le variabili globali devono essere dichiarate utilizzando un identificatore, ma a differenza di una variabile locale, una variabile globale rimane in memoria <em>fino alla fine del gioco</em>. Così, è possibile creare una variabile globale per tenere traccia (per esempio) del numero di proiettili che il giocatore ha e poi semplicemente aggiornare questa variabile in diversi punti del gioco, da qualsiasi istanza o funzione e in qualsiasi momento. Essenzialmente, una variabile globale non appartiene a nessuna istanza specifica e può essere accessibile, modificata e utilizzata da tutte le istanze, e qualsiasi modifica apportata alla variabile è &quot;globale&quot;, nel senso che tutte le istanze che utilizzano la variabile saranno interessate dal cambiamento. Diamo un'occhiata ad un esempio:</p>
   <p class="code">global.food = 5;</p>
-  <p>We declare the &quot;<span class="inline">food</span>&quot; variable by first writing &quot;<span class="inline">global</span>&quot; and then a &quot;<span class="inline">.</span>&quot; to tell <span data-keyref="GameMaker Name">GameMaker</span> that this variable is now global scope. We will need to use this form from now on any time we are required to access or to change this variable in any way. So, we have created a new variable called &quot;<span class="inline">food</span>&quot; and we have declared it as global. Now, any instance or function can use and change this variable in any way and all other instances will &quot;see&quot; this. For example we could have a different food object that the player collides with and in the collision event we have:</p>
+  <p>Dichiariamo la variabile &quot;<span class="inline">food</span>&quot; scrivendo prima &quot;<span class="inline">global</span>&quot; e poi un &quot;<span class="inline">.</span>&quot; per dire a <span data-keyref="GameMaker Name">GameMaker</span> che questa variabile è ora di portata globale. Avremo bisogno di usare questa forma d'ora in poi ogni volta che ci sarà richiesto di accedere o modificare questa variabile in qualsiasi modo. Quindi, abbiamo creato una nuova variabile chiamata &quot;<span class="inline">food</span>&quot; e l'abbiamo dichiarata come globale. Ora, qualsiasi istanza o funzione può usare e cambiare questa variabile in qualsiasi modo e tutte le altre istanze la &quot;vedranno&quot;. Per esempio potremmo avere un diverso cibo <span class="notranslate">object</span> con cui il giocatore si scontra e nell'evento di collisione abbiamo:</p>
   <p class="code">global.food +=1;</p>
-  <p>We also have another object that draws this value like this:</p>
+  <p>Abbiamo anche un altro <span class="notranslate">object</span> che disegna questo valore in questo modo:</p>
   <p class="code">draw_text(32, 32, &quot;food = &quot; + string(global.food));</p>
-  <p>With global variables we can change values and see those changes reflected in all instances of the objects that reference this variable. As with <i>local</i> variables you have to take care not to name your global variables the same as any instance variables as that may cause you problems and make bugs creep into your games due to variable overlap, which can be a difficult issue to debug sometimes. In general you should have a single object that declares all your global variables at the very start of the game (for example, in the <a href="../../../The_Asset_Editors/Object_Properties/Other_Events.htm">Room Start Event</a> of the first object instance placed in the first room of the game) or a single <a href="../Script_Functions.htm">script function</a> that declares them all together, as this gives you a handy place to go back and reference everything at once should you need to check a variable name or edit a value.</p>
-  <p><span data-keyref="GameMaker Name">GameMaker</span> has a collection of &quot;built in&quot; global variables too, so you should be aware of them as you may name one of your instance variables the same or wish to have your own global variable with the same name and wonder why you are getting errors! They are easy to spot, however, as they are shown in a different colour in the code editor and also come up in the auto-complete bar at the bottom. The majority of built-in global variables have very specific uses are listed in the appropriate sections of the manual - however there are two important ones that are used frequently and aren&#39;t listed elsewhere:</p>
+  <p>Con le variabili globali possiamo cambiare i valori e vedere questi cambiamenti riflessi in tutte le istanze di <span class="notranslate">objects</span> che fanno riferimento a questa variabile. Come per le variabili <i>locali</i>, dovete fare attenzione a non nominare le vostre variabili globali con lo stesso nome delle variabili di istanza, poiché ciò potrebbe causarvi problemi e far insinuare bug nei vostri giochi a causa della sovrapposizione delle variabili, che può essere un problema difficile da risolvere a volte. In generale dovreste avere un singolo <span class="notranslate">object</span> che dichiari tutte le vostre variabili globali all'inizio del gioco (per esempio, nell'<a href="../../../The_Asset_Editors/Object_Properties/Other_Events.htm">evento di inizio della stanza</a> della prima istanza dell'oggetto posto nel primo <span class="notranslate">room</span> del gioco) o una singola <a href="../Script_Functions.htm">funzione di script</a> che le dichiari tutte insieme, poiché questo vi dà un posto comodo per tornare indietro e fare riferimento a tutto in una volta se avete bisogno di controllare un nome di variabile o modificare un valore.</p>
+  <p><span data-keyref="GameMaker Name">GameMaker</span> ha anche una collezione di variabili globali &quot;incorporate&quot;, quindi dovreste esserne consapevoli perché potreste nominare una delle vostre variabili di istanza allo stesso modo o desiderare di avere una vostra variabile globale con lo stesso nome e chiedervi perché state ottenendo errori! Sono facili da individuare, comunque, poiché sono mostrate in un colore diverso nell'editor di codice e appaiono anche nella barra di completamento automatico in basso. La maggior parte delle variabili globali incorporate hanno usi molto specifici e sono elencate nelle sezioni appropriate del manuale - tuttavia ce ne sono due importanti che sono usate frequentemente e non sono elencate altrove:</p>
   <ul class="colour">
     <li><a href="Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a></li>
     <li><span class="inline"><a data-xref="{title}" href="../../GML_Reference/Game_Input/Gesture_Input/event_data.htm">event_data</a></span></li>
   </ul>
-  <p>There are also three <b>deprecated</b> built in global variables which you should be aware of (these variables are only designed to support legacy projects from previous versions of GameMaker and should <b><i>not be used in new projects</i></b>):</p>
+  <p>Ci sono anche tre variabili globali <b>deprecate</b> che dovresti conoscere (queste variabili sono progettate solo per supportare progetti legacy di versioni precedenti di <span class="notranslate">GameMaker</span> e dovrebbero <b><i>non essere usato in nuovi progetti</i></b>):</p>
   <ul class="colour">
     <li><a href="Builtin_Global_Variables/score.htm"><span class="inline">score</span></a></li>
     <li><a href="Builtin_Global_Variables/health.htm"><span class="inline">health</span></a></li>
     <li><a href="Builtin_Global_Variables/lives.htm"><span class="inline">lives</span></a></li>
   </ul>
-  <p>Finally, there are two variables that can be used for script functions and methods:</p>
+  <p>Infine, ci sono due variabili che possono essere utilizzate per <span class="notranslate">script</span> funzioni e metodi:</p>
   <ul class="colour">
     <li><span class="inline"><a href="Builtin_Global_Variables/argument.htm">argument</a></span></li>
     <li><span class="inline"><a href="Builtin_Global_Variables/argument_count.htm">argument_count</a></span></li>
   </ul>
-  <p>The following form can also be used to declare global variables, but it is <i><b>only included for backwards compatibility</b></i>, and it is not recommended that you use this form for new projects as future versions of GameMaker may not support it.</p>
-  <p>The second form for creating global variables is to declare them as such using the <span class="inline">globalvar</span> declaration, much as you would a local variable using the <span class="inline">var</span> declaration.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_important.hts"> </span> The <span class="inline">globalvar</span> declaration is <b>deprecated</b> and only supported for legacy purposes. You should <b>always</b> use the <span class="inline">global.</span> identifier to mark global variables.</p>
-  <p>This (deprecated) declaration would be used as follows:</p>
+  <p>La seguente forma può anche essere usata per dichiarare variabili globali, ma è <i><b>incluso solo per la compatibilità all'indietro</b></i>e non è raccomandato l'uso di questo modulo per i nuovi progetti, poiché le versioni future di <span class="notranslate">GameMaker</span> potrebbero non supportarlo.</p>
+  <p>La seconda forma per creare variabili globali è di dichiararle come tali usando la dichiarazione <span class="inline">globalvar</span>, proprio come fareste con una variabile locale usando la dichiarazione <span class="inline">var</span>.</p>
+  <p class="note"><b>IMPORTANTE!</b> La dichiarazione <span class="inline">globalvar</span> è <b>deprecata</b> e supportata solo per scopi legacy. Dovresti <b>sempre</b> usare l'identificatore <span class="inline">global.</span> per marcare le variabili globali.</p>
+  <p>Questa dichiarazione (deprecata) verrebbe usata come segue:</p>
   <p class="code">globalvar food;<br />
     food = 5;</p>
-  <p>Once declared in this way that variable &quot;food&quot; is now considered global and requires no <span class="inline">global.</span> prefix - which also means that it&#39;s a lot harder to identify global variables in your code and it&#39;s also much easier to get variable overlap as you use the same variable name in different objects or from extensions that you&#39;ve installed. Once declared in this way the global variable is accessed as follows:</p>
+  <p>Una volta dichiarata in questo modo la variabile &quot;food&quot; è ora considerata globale e non richiede alcun prefisso <span class="inline">global.</span> - il che significa anche che è molto più difficile identificare le variabili globali nel vostro codice ed è anche molto più facile ottenere una sovrapposizione di variabili quando usate lo stesso nome di variabile in diversi <span class="notranslate">objects</span> o da <span class="notranslate">extensions</span> che avete installato. Una volta dichiarata in questo modo la variabile globale è accessibile come segue:</p>
   <p class="code">food += 2;</p>
-  <p>or:</p>
+  <p>oppure:</p>
   <p class="code">draw_text(32, 32, &quot;food = &quot; + string(food));</p>
-  <p>As you can see, with nothing to show that the variable is global in scope you are potentially setting yourself up for many subtle problems to arise in your game, which is why this declaration should be avoided.</p>
-  <p>There are a few functions designed to help you when dealing with global variables, which you can find on the following page:</p>
+  <p>Come potete vedere, senza nulla che mostri che la variabile è globale, vi state potenzialmente preparando a molti problemi sottili che sorgeranno nel vostro gioco, ed è per questo che questa dichiarazione dovrebbe essere evitata.</p>
+  <p>Ci sono alcune funzioni progettate per aiutarvi quando avete a che fare con le variabili globali, che potete trovare nella pagina seguente:</p>
   <ul class="colour">
-    <li><a href="../../GML_Reference/Variable_Functions/Variable_Functions.htm">Variable Functions</a></li>
+    <li><a href="../../GML_Reference/Variable_Functions/Variable_Functions.htm">Funzioni variabili</a></li>
   </ul>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Variables_And_Variable_Scope.htm">Variables And Variables Scope</a></div>
-        <div style="float:right">Next: <a href="Constants.htm">Constants</a></div>
+        <div style="float:left">Indietro: <a href="../Variables_And_Variable_Scope.htm">Variabili e ambito delle variabili</a></div>
+        <div style="float:right">Il prossimo: <a href="Constants.htm">Costanti</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 global

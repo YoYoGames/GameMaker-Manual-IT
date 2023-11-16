@@ -6,7 +6,7 @@
   <title>ds_grid_read</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for ds_grid_read" />
   <meta name="rh-index-keywords" content="ds_grid_read" />
@@ -15,56 +15,56 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>ds_grid_read</h1>
-  <p>This function can be used to convert a string which has been created previously by the function <a href="ds_grid_write.htm"><span class="inline">ds_grid_write()</span></a> back into a DS grid. The DS grid must have been created previously (see the example below).</p>
-  <p>Note that if the specified DS string was written by the GameMaker: Studio 1.2.x runtime (or older), you should specify the optional argument &quot;legacy&quot;, setting it to <span class="inline">true</span> as the string format changed after that.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione può essere usata per convertire un <span class="notranslate">string</span> che è stato creato precedentemente dalla funzione <a href="ds_grid_write.htm"><span class="inline">ds_grid_write()</span></a> in una griglia DS. La griglia DS deve essere stata creata in precedenza (vedi l'esempio qui sotto).</p>
+  <p>Notate che se il DS specificato <span class="notranslate">string</span> è stato scritto da GameMaker: Studio 1.2.x <span class="notranslate">runtime</span> (o più vecchio), dovreste specificare l'argomento opzionale &quot;legacy&quot;, impostandolo su <span class="inline">true</span> poiché il formato <span class="notranslate">string</span> è cambiato dopo.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">ds_grid_read(index, string [, legacy]);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_ID_DS_Grid">DS Grid ID</span></td>
-        <td>The index of the grid to read.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_ID_DS_Grid">ID griglia DS</span></td>
+        <td><span class="notranslate">The index of the grid to read.</span></td>
       </tr>
       <tr>
-        <td>string</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The string to read into the DS grid.</td>
+        <td><span class="notranslate">string</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">The string to read into the DS grid.</span></td>
       </tr>
       <tr>
-        <td>legacy</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td><span class="optional">OPTIONAL</span> Can be either <span class="inline">true</span> or <span class="inline">false</span> or omitted completely.</td>
+        <td><span class="notranslate">legacy</span></td>
+        <td><span data-keyref="Type_Bool">Booleano</span></td>
+        <td><span class="notranslate"><span class="optional">OPTIONAL</span> Può essere <span class="inline">true</span> o <span class="inline">false</span> o omesso completamente.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">grid = ds_grid_create(room_width div 32, room_height div 32);<br />
     ini_open(&quot;Save.ini&quot;);<br />
     ds_grid_read(grid, ini_read_string(&quot;Save&quot;, &quot;0&quot;, &quot;&quot;));<br />
     ini_close();</p>
-  <p>The above code creates a DS grid based on the size of the room (each 32x32 square of pixels represents one grid cell) and then reads a previously saved set of grid data from an ini file into the new DS grid.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra crea una griglia DS basata sulla dimensione di <span class="notranslate">room</span> (ogni quadrato di pixel 32x32 rappresenta una cella della griglia) e poi legge un set di dati della griglia precedentemente salvato da un file ini nella nuova griglia DS.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="DS_Grids.htm">DS Grids</a></div>
-        <div style="float:right">Next: <a href="ds_grid_write.htm">ds_grid_write</a></div>
+        <div style="float:left">Indietro: <a href="DS_Grids.htm">Griglie DS</a></div>
+        <div style="float:right">Il prossimo: <a href="ds_grid_write.htm"><span class="notranslate">ds_grid_write</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 ds_grid_read

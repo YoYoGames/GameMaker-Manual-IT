@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>move_contact_solid</title>
+  <title>sposta_contatto_solido</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="This page outlines the function move_contact_solid" />
   <meta name="rh-index-keywords" content="move_contact_solid" />
@@ -14,48 +14,48 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>move_contact_solid</h1>
-  <p>This function will move the instance running the code a set number of pixels in the specified direction until it meets an instance with <a href="../../Asset_Management/Instances/Instance_Variables/solid.htm"><b>solid</b></a> flagged as true. You can use -1 or 0 for the maxdist being a default 1000px, ie: <span data-keyref="GameMaker Name">GameMaker</span> will move the instance continually up 1000 pixels until it is out of collision.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>sposta_contatto_solido</h1>
+  <p>Questa funzione sposterà l'istanza che esegue il codice di un certo numero di pixel nella direzione specificata fino a quando non incontra un'istanza con <a href="../../Asset_Management/Instances/Instance_Variables/solid.htm"><b>solido</b></a> segnalata come vera. Potete usare -1 o 0 per il maxdist essendo un default di 1000px, cioè: <span data-keyref="GameMaker Name">GameMaker</span> muoverà l'istanza continuamente su 1000 pixel fino a quando non sarà fuori dalla collisione.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">move_contact_solid( dir, maxdist );</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>dir</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The direction to move in.</td>
+        <td><span class="notranslate">dir</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The direction to move in.</span></td>
      </tr>
       <tr>
-        <td>maxdist</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The maximum distance the object can travel (-1 or 0 a default value of 1000 pixels).</td>
+        <td><span class="notranslate">maxdist</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The maximum distance the object can travel (-1 or 0 a default value of 1000 pixels).</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if !place_meeting(x, y + 1, obj_Floor)<br />
     {<br />
         move_contact_solid(270, -1);<br />
     }</p>
-  <p>The above code will check beneath the instance for a collision with &quot;obj_Floor&quot;, and if there is none, then it will move it down until there is a collision, or 1000 pixels have been covered.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra controllerà sotto l'istanza per una collisione con &quot;obj_Floor&quot;, e se non ce n'è nessuna, allora la sposterà in basso fino a quando non ci sarà una collisione, o saranno stati coperti 1000 pixel.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Movement.htm">Movement</a></div>
-        <div style="float:right">Next: <a href="move_outside_all.htm">move_outside_all</a></div>
+        <div style="float:left">Indietro: <a href="Movement.htm">Movimento</a></div>
+        <div style="float:right">Il prossimo: <a href="move_outside_all.htm"><span class="notranslate">move_outside_all</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 move_contact_solid

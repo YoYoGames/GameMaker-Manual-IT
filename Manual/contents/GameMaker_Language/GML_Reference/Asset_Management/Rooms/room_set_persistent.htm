@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>room_set_persistent</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>stanza_set_persistente</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function room_set_persistent" />
   <meta name="rh-index-keywords" content="room_set_persistent" />
@@ -14,52 +14,52 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">room_set_persistent</span></h1>
-  <p>This function changes (or sets) the persistence of any room in your game <i>except the current one</i>.</p>
-  <p>A room with persistence flagged as <span class="inline2">true</span> will maintain the state of all instances within that room if the player leaves and then returns, whereas if persistence is flagged as <span class="inline2">false</span> it will be reset to the initial state every time. You should note that a persistent room uses considerably more memory than a normal room and it is not recommended to have too many of them in your game.</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> This function will <b>NOT</b> work to switch off persistence if the room has already been visited! A persistent room, once visited, is held in memory and to switch off persistence you should go to that room and set the <span class="inline2"><a data-xref="{title}" href="room_persistent.htm">room_persistent</a></span> variable to <span class="inline2">false</span> and then exit the room again.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">room_set_persistent</span>(index, val);</p>
+  <h1>stanza_set_persistente</h1>
+  <p>Con questa funzione potete cambiare (o impostare) la persistenza di qualsiasi <span class="notranslate">room</span> nel vostro gioco <i>tranne quella corrente</i>. Un <span class="notranslate">room</span> con persistenza contrassegnata come <span class="inline">true</span> manterrà lo stato di tutte le istanze all'interno di quel <span class="notranslate">room</span> se il giocatore se ne va e poi ritorna, mentre se la persistenza è contrassegnata come <span class="inline">false</span> sarà resettato allo stato iniziale ogni volta. Dovreste notare che un <span class="notranslate">room</span> persistente usa molta più memoria di un normale <span class="notranslate">room</span> e non è raccomandato averne troppi nel vostro gioco.</p>
+  <p class="note"><b>NOTA</b>: Questa funzione <b>NON</b> funziona per <span class="notranslate">switch</span> disattivare la persistenza se il sito <span class="notranslate">room</span> è già stato visitato! Un <span class="notranslate">room</span> persistente, una volta visitato, è tenuto in memoria e per <span class="notranslate">switch</span> disattivare la persistenza si deve andare su quel <span class="notranslate">room</span> e impostare la <span style="font-size:1px;"><a href="room_persistent.htm"><span class="inline">room_persistent</span></a></span> variabile a <span class="inline">false</span> e poi uscire di nuovo da <span class="notranslate">room</span>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
+  <p class="code">room_set_persistent(index, val);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Asset_Room"><a href="../../../../The_Asset_Editors/Rooms.htm" target="_blank">Room Asset</a></span></td>
-        <td>The room to set the persistence of.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Asset_Room">Camera Asset</span></td>
+        <td><span class="notranslate">The index of the room to set the persistence of.</span></td>
       </tr>
       <tr>
-        <td>val</td>
-        <td><span data-keyref="Type_Bool"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Whether the room should be persistent (<span class="inline2">true</span>) or not (<span class="inline2">false</span>).</td>
+        <td><span class="notranslate">val</span></td>
+        <td><span data-keyref="Type_Bool">Booleano</span></td>
+        <td><span class="notranslate">Whether the room should be persistent (<span class="inline">true</span>) o no (<span class="inline">false</span>).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">global.myroom = room_add();<br />
     room_set_width(global.myroom, 640);<br />
     room_set_height(global.myroom, 480);<br />
     room_set_persistent(global.myroom, true);</p>
-  <p>This will create a new room and store its index in the variable <span class="inline2">global.myroom</span>. It will then set its width to 640 pixels, its height to 480 pixels and its persistence to <span class="inline2">true</span>.</p>
-  <p> </p>
-  <p> </p>
+  <p>Questo creerà un nuovo <span class="notranslate">room</span> e memorizzerà il suo indice nella variabile &quot;global.myroom&quot;. Imposterà poi la sua larghezza a 640 pixel, la sua altezza a 480 pixel, la sua didascalia a "Game Room" e la sua persistenza a "true".</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Rooms.htm">Rooms</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="room_set_view_enabled.htm">room_set_view_enabled</a></div>
+        <div style="float:left">Indietro: <a href="Rooms.htm">Camere</a></div>
+        <div style="float:right">Il prossimo: <a href="room_set_view_enabled.htm"><span class="notranslate">room_set_view_enabled</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 room_set_persistent

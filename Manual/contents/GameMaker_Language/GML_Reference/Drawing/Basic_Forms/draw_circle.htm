@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>draw_circle</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>disegnare_circolo</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function draw_circle" />
   <meta name="rh-index-keywords" content="draw_circle" />
@@ -15,60 +15,60 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>draw_circle</h1>
-  <p>With this function you can draw either an outline of a circle or a filled circle. You can define how precise the drawing is with the function <a href="draw_set_circle_precision.htm"><span class="inline">draw_set_circle_precision()</span></a>.</p>
-  <div data-conref="../../../../assets/snippets/Note_Shape_Shader_Attributes_Are_Different.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>disegnare_circolo</h1>
+  <p>Con questa funzione potete disegnare il contorno di un cerchio o un cerchio pieno. Potete definire la precisione del disegno con la funzione <a href="draw_set_circle_precision.htm"><span class="inline">draw_set_circle_precision()</span></a>.</p>
+  <p class="note"><b>NOTA</b>: Se volete disegnare una forma usando un <span class="notranslate">shader</span>, dovete sapere che la maggior parte di <span class="notranslate">shaders</span> si aspetta i seguenti input: vertex, <span class="notranslate">texture</span>, Colour. Tuttavia, quando si usa questa funzione, vengono passati solo i dati del vertice e del colore, e quindi <span class="notranslate">shader</span> potrebbe non disegnare nulla (o disegnare qualcosa ma non correttamente). Se avete bisogno di disegnare forme in questo modo, allora <span class="notranslate">shader</span> dovrebbe essere personalizzato con questo in mente.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">draw_circle(x, y, r, outline);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>x</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The x coordinate of the center of the circle.</td>
+        <td><span class="notranslate">x</span></td>
+        <td><span data-keyref="Type_Real">Real</span></td>
+        <td><span class="notranslate">The x coordinate of the center of the circle.</span></td>
       </tr>
       <tr>
-        <td>y</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The y coordinate of the center of the circle.</td>
+        <td><span class="notranslate">y</span></td>
+        <td><span data-keyref="Type_Real">Real</span></td>
+        <td><span class="notranslate">The y coordinate of the center of the circle.</span></td>
       </tr>
       <tr>
-        <td>r</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The circle&#39;s radius (length from its center to its edge)</td>
+        <td><span class="notranslate">r</span></td>
+        <td><span data-keyref="Type_Real">Real</span></td>
+        <td><span class="notranslate">The circle&#39;s radius (length from its center to its edge)</span></td>
       </tr>
       <tr>
-        <td>outline</td>
-        <td><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td>Whether the circle is drawn filled (<span class="inline">false</span>) or as a one pixel wide outline (<span class="inline">true</span>).</td>
+        <td><span class="notranslate">outline</span></td>
+        <td><span data-keyref="Type_Bool">Booleano</span></td>
+        <td><span class="notranslate">Whether the circle is drawn filled (<span class="inline">false</span>) o come contorno largo un pixel (<span class="inline">true</span>).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">draw_set_colour(c_white);<br />
     draw_circle(100, 100, 50, true);</p>
-  <p>This will draw a one pixel wide white circle outline with a radius of 50 pixels.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Questo disegnerà un contorno di cerchio bianco largo un pixel con un raggio di 50 pixel.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Basic_Forms.htm">Basic Forms</a></div>
-        <div style="float:right">Next: <a href="draw_circle_colour.htm">draw_circle_colour</a></div>
+        <div style="float:left">Indietro: <a href="Basic_Forms.htm">Moduli di base</a></div>
+        <div style="float:right">Il prossimo: <a href="draw_circle_colour.htm"><span class="notranslate">draw_circle_colour</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 draw_circle

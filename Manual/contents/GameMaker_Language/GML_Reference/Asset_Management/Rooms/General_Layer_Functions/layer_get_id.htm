@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>layer_get_id</title>
+  <title>ottenere l'ID del livello</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_get_id" />
   <meta name="rh-index-keywords" content="layer_get_id" />
@@ -15,43 +15,43 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_get_id</h1>
-  <p>This function can be used to get the unique ID value for a given <b>layer</b>. In the IDE, all layers have a name and a type, and to be able to edit or change them through code you must give the <b>layer ID</b> value. This function is used to retrieve this ID by using the name (a string) of the layer (as written in the IDE). If you create a new layer through code using the function <a href="layer_create.htm"><span class="inline">layer_create()</span></a> then that function will return the unique ID value instead (dynamical created layers do not get names). Note that if you give the name of a layer that does not exist in the current room, then you will get an error and the project will crash.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>ottenere l'ID del livello</h1>
+  <p>Questa funzione può essere usata per ottenere il valore ID unico di un dato <b>livello</b>. In <span class="notranslate">IDE</span>, tutti i livelli hanno un nome e un tipo, e per essere in grado di modificarli o cambiarli attraverso il codice è necessario dare il valore <b>ID del livello</b>. Questa funzione è usata per recuperare questo ID usando il nome (a <span class="notranslate">string</span>) del livello (come scritto in <span class="notranslate">IDE</span>). Se si crea un nuovo livello attraverso il codice usando la funzione <a href="layer_create.htm"><span class="inline">layer_create()</span></a> allora quella funzione restituirà invece il valore unico dell'ID (i livelli creati dinamicamente non ottengono nomi). Si noti che se si dà il nome di un livello che non esiste nel corrente <span class="notranslate">room</span>, allora si otterrà un errore e il progetto andrà in crash.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">layer_get_id(layer_name)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>layer_name</td><td><span data-keyref="Type_String"></span></td>
-        <td>The name of the layer (a string)</td>
+        <td><span class="notranslate">layer_name</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The name of the layer (a string)</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_ID_Layer">Layer ID</span> or -1 (if the layer specified doesn&#39;t exist)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var near = instance_nearest(x, y, obj_Tree);<br />
     var layer_id = layer_get_id(&quot;Instances Front&quot;);<br />
     layer_add_instance(layer_id, near);</p>
-  <p>The above code will first get the index of the nearest instance to the given x/y position and store it in a local variable. It then gets the unique instance layer ID for the layer named &quot;Instances Front&quot;, and moves the found instance onto that layer.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra otterrà prima l'indice dell'istanza più vicina alla posizione x/y data e lo memorizzerà in una variabile locale. Poi ottiene l'ID univoco del livello di istanza per il livello chiamato &quot;Instances Front&quot;, e sposta l'istanza trovata su quel livello.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="General_Layer_Functions.htm">General Layer Functions</a></div>
-        <div style="float:right">Next: <a href="layer_get_depth.htm">layer_get_depth</a></div>
+        <div style="float:left">Indietro: <a href="General_Layer_Functions.htm">Funzioni generali del livello</a></div>
+        <div style="float:right">Il prossimo: <a href="layer_get_depth.htm"><span class="notranslate">layer_get_depth</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 layer_get_id

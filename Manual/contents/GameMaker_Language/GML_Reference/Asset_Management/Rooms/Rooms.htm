@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Rooms</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Camere</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the different functions and variables associated with Rooms" />
   <meta name="rh-index-keywords" content="" />
@@ -14,79 +14,73 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">Rooms</span></h1>
-  <p>Rooms are created in <a data-xref="{title}" href="../../../../The_Asset_Editors/Rooms.htm">The Room Editor</a> in <span data-keyref="GameMaker Name">GameMaker</span><span> and </span>are where everything happens in your game. You must have at least one room in any game for it to run, but you may need many more depending on the type of game and how you structure your project. This section has all the general GML functions and variables related to rooms and for getting information about them as well as for setting certain properties within them.</p>
-  <h2 id="func_ref">Function Reference</h2>
-  <h3 id="global">Global</h3>
-  <p>The following <a href="../../../GML_Overview/Variables/Global_Variables.htm">global variables</a> and functions can be used for getting basic information about any given room:</p>
+  <h1>Camere</h1>
+  <p>Le stanze vengono create nell'<a href="../../../../The_Asset_Editors/Rooms.htm">Editor di stanze</a> di <span data-keyref="GameMaker Name">GameMaker</span><span> e </span>sono il luogo in cui tutto avviene nel gioco. È necessario avere almeno una <span class="notranslate">room</span> in un gioco per farlo funzionare, ma potrebbero essercene molte altre a seconda del tipo di gioco e di come si struttura il progetto. Questa sezione contiene tutte le funzioni e le variabili generali di <span class="notranslate">GML</span> relative a <span class="notranslate">rooms</span> e per ottenere informazioni su di esse, nonché per impostare alcune proprietà al loro interno.</p>
+  <p>Le seguenti <a href="../../../GML_Overview/Variables/Global_Variables.htm">variabili</a> e funzioni <a href="../../../GML_Overview/Variables/Global_Variables.htm">globali</a> possono essere utilizzate per ottenere informazioni di base su qualsiasi stanza:</p>
   <ul class="colour">
-    <li><a data-xref="{title}" href="room_first.htm">room_first</a></li>
-    <li><a data-xref="{title}" href="room_last.htm">room_last</a></li>
-    <li><a data-xref="{title}" href="room_next.htm">room_next</a></li>
-    <li><a data-xref="{title}" href="room_previous.htm">room_previous</a></li>
-    <li><a data-xref="{title}" href="room.htm">room</a></li>
-    <li><a data-xref="{title}" href="room_speed.htm">room_speed</a> <span data-conref="../../../../assets/snippets/Tag_deprecated.hts"> </span></li>
-    <li><a data-xref="{title}" href="room_height.htm">room_height</a></li>
-    <li><a data-xref="{title}" href="room_width.htm">room_width</a></li>
-    <li><a data-xref="{title}" href="room_persistent.htm">room_persistent</a></li>
+    <li><a href="room_first.htm"><span class="notranslate">room_first</span></a></li>
+    <li><a href="room_last.htm"><span class="notranslate">room_last</span></a></li>
+    <li><a href="room_next.htm"><span class="notranslate">room_next</span></a></li>
+    <li><a href="room_previous.htm"><span class="notranslate">room_previous</span></a></li>
+    <li><a href="room.htm"><span class="notranslate">room</span></a></li>
+    <li><a href="room_speed.htm"><span class="notranslate">room_speed</span></a></li>
+    <li><a href="room_height.htm"><span class="notranslate">room_height</span></a></li>
+    <li><a href="room_width.htm"><span class="notranslate">room_width</span></a></li>
+    <li><a href="room_persistent.htm"><span class="notranslate">room_persistent</span></a></li>
   </ul>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> The variables listed above will not be valid in a script, as scripts are executed before the first room is loaded.<br />
-    <br />
-    This only applies to code written at the root of a script, but not to functions created inside scripts, as those functions can be executed at any time during the game.
+  <p class="note"><span class="note">NOTA</span> Le variabili sopra elencate non saranno valide in un <span class="notranslate">script</span>, poiché <span class="notranslate">scripts</span> viene eseguito prima che venga caricato il primo <span class="notranslate">room</span>.<br>
+    <br>
+    Questo vale solo per il codice scritto alla radice di <span class="notranslate">script</span>, ma non per le funzioni create all'interno di <span class="notranslate">scripts</span>, poiché tali funzioni possono essere eseguite in qualsiasi momento del gioco.
   </p>
-  <h3 id="information">Information</h3>
-  <p>You can also use the following functions to find out if a room exists, get its name (as defined in <a data-xref="{title}" href="../../../../Introduction/The_Asset_Browser.htm">The Asset Browser</a>) and general inf<span>o: </span></p>
+  <p>È inoltre possibile utilizzare le seguenti funzioni per ottenere il nome del sito <span class="notranslate">room</span> corrente (come definito nell'<a href="../../../../Introduction/The_Asset_Browser.htm">Asset Browser</a>) e per spostarsi tra le stanze:</p>
   <ul class="colour">
-    <li><a data-xref="{title}" href="room_exists.htm">room_exists</a></li>
-    <li><a data-xref="{title}" href="room_get_name.htm">room_get_name</a></li>
-    <li><a data-xref="{title}" href="room_get_info.htm">room_get_info</a></li>
+    <li><a href="room_get_name.htm"><span class="notranslate">room_get_name</span></a></li>
+    <li><a href="room_goto.htm"><span class="notranslate">room_goto</span></a></li>
+    <li><a href="room_goto_next.htm"><span class="notranslate">room_goto_next</span></a></li>
+    <li><a href="room_goto_previous.htm"><span class="notranslate">room_goto_previous</span></a></li>
+    <li><a href="room_restart.htm"><span class="notranslate">room_restart</span></a></li>
   </ul>
-  <h3 id="switching_rooms">Switching Rooms</h3>
+  <p> </p>
+  <p>Poi, abbiamo una serie di funzioni che possono essere usate per modificare <span class="notranslate">rooms</span> e il suo contenuto o anche per creare nuovi <span class="notranslate">rooms</span> e aggiungerli. Va notato che queste funzioni <i>non devono mai essere eseguite dall'interno del sito <span class="notranslate">room</span> che si desidera modificare</i>, ma devono essere eseguite prima da un'istanza di un altro sito <span class="notranslate">room</span>. Si noti anche che se si modifica un <span class="notranslate">room</span> <span class="notranslate">asset</span> in questo modo, la modifica è <strong>permanente</strong> e sarà mantenuta per tutta la durata del gioco, anche se si chiama la funzione room_restart() (la chiusura e il riavvio del gioco resetteranno però le proprietà di <span class="notranslate">room</span> ).</p>
   <ul class="colour">
-    <li><a data-xref="{title}" href="room_goto.htm">room_goto</a></li>
-    <li><a data-xref="{title}" href="room_goto_next.htm">room_goto_next</a></li>
-    <li><a data-xref="{title}" href="room_goto_previous.htm">room_goto_previous</a></li>
-    <li><a data-xref="{title}" href="room_restart.htm">room_restart</a></li>
+    <li><a href="room_exists.htm"><span class="notranslate">room_exists</span></a></li>
+    <li><a href="room_add.htm"><span class="notranslate">room_add</span></a></li>
+    <li><a href="room_duplicate.htm"><span class="notranslate">room_duplicate</span></a></li>
+    <li><a href="room_assign.htm"><span class="notranslate">room_assign</span></a></li>
+    <li><a href="room_instance_add.htm"><span class="notranslate">room_instance_add</span></a></li>
+    <li><a href="room_instance_clear.htm"><span class="notranslate">room_instance_clear</span></a></li>
+    <li><a href="room_set_height.htm"><span class="notranslate">room_set_height</span></a></li>
+    <li><a href="room_set_width.htm"><span class="notranslate">room_set_width</span></a></li>
+    <li><a href="room_set_persistent.htm"><span class="notranslate">room_set_persistent</span></a></li>
+    <li><a href="room_set_view_enabled.htm"><span class="notranslate">room_set_view_enabled</span></a></li>
+    <li><a href="room_set_viewport.htm"><span class="notranslate">room_set_viewport</span></a></li>
+    <li><a href="room_get_viewport.htm"><span class="notranslate">room_get_viewport</span></a></li>
+    <li><a href="room_set_camera.htm"><span class="notranslate">room_set_camera</span></a></li>
+    <li><a href="room_get_camera.htm"><span class="notranslate">room_get_camera</span></a></li>
   </ul>
-  <h3 id="modifying_rooms">Modifying Rooms</h3>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> These functions should <i>never be run from within the room that you wish to change</i>, but rather be run from an instance in another room first.</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> If you change any room asset in this way, the change is <strong>permanent</strong> and will be maintained for the entire duration of the game, even if you call the <span class="inline3_func"><a data-xref="{title}" href="room_restart.htm">room_restart</a></span> function (closing and restarting the game will reset the room properties though).</p>
+  <p> </p>
+  <p>Esistono anche diverse funzioni relative alla creazione e alla manipolazione dei diversi tipi di elementi che possono essere collocati sui layer in <span class="notranslate">room</span>. Queste funzioni sono elencate nelle sezioni appropriate per ciascun tipo di elemento elencato di seguito:</p>
   <ul class="colour">
-    <li><a data-xref="{title}" href="room_add.htm">room_add</a></li>
-    <li><a data-xref="{title}" href="room_duplicate.htm">room_duplicate</a></li>
-    <li><a data-xref="{title}" href="room_assign.htm">room_assign</a></li>
-    <li><a data-xref="{title}" href="room_instance_add.htm">room_instance_add</a></li>
-    <li><a data-xref="{title}" href="room_instance_clear.htm">room_instance_clear</a></li>
-    <li><a data-xref="{title}" href="room_set_height.htm">room_set_height</a></li>
-    <li><a data-xref="{title}" href="room_set_width.htm">room_set_width</a></li>
-    <li><a data-xref="{title}" href="room_set_persistent.htm">room_set_persistent</a></li>
-    <li><a data-xref="{title}" href="room_set_view_enabled.htm">room_set_view_enabled</a></li>
-    <li><a data-xref="{title}" href="room_set_viewport.htm">room_set_viewport</a></li>
-    <li><a data-xref="{title}" href="room_get_viewport.htm">room_get_viewport</a></li>
-    <li><a data-xref="{title}" href="room_set_camera.htm">room_set_camera</a></li>
-    <li><a data-xref="{title}" href="room_get_camera.htm">room_get_camera</a></li>
+    <li><a href="General_Layer_Functions/General_Layer_Functions.htm">Funzioni generali del livello</a></li>
+    <li><a href="Tile_Map_Layers/Tile_Map_Layers.htm">Livelli di mappa a piastrelle</a></li>
+    <li><a href="Background_Layers/Background_Layers.htm">Livelli di sfondo</a></li>
+    <li><a href="Sprite_Layers/Sprite_Layers.htm">Livelli di sprite</a></li>
+    <li><a href="Sequence_Layers/Sequence_Layers.htm">Livelli di sequenza</a></li>
+    <li><a href="Filter_Effect_Layers/Filter_Effect_Functions.htm">Funzioni di filtro e di effetto</a></li>
   </ul>
-  <h3 id="room_layers_elements">Room Layers &amp; Elements</h3>
-  <p>There are also a number of different functions related to creating and manipulating the different types of elements that can be placed on layers in the room. These functions are listed in the appropriate sections for each element type listed below:</p>
-  <ul class="colour">
-    <li><a href="General_Layer_Functions/General_Layer_Functions.htm">General Layer Functions</a></li>
-    <li><a href="Tile_Map_Layers/Tile_Map_Layers.htm">Tile Map Layers</a></li>
-    <li><a href="Background_Layers/Background_Layers.htm">Background Layers</a></li>
-    <li><a href="Sprite_Layers/Sprite_Layers.htm">Sprite Layers</a></li>
-    <li><a href="Sequence_Layers/Sequence_Layers.htm">Sequence Layers</a></li>
-    <li><a href="Filter_Effect_Layers/Filter_Effect_Functions.htm">Filter and Effect Functions</a></li>
-  </ul>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_important.hts"> </span> When creating room layers <i>you can have multiple different element types on one layer</i>. So, for example, you may have a layer for enemies, and on that layer have the enemy instances as well as certain sprite assets that are only related to that enemy. Or you could have a background element with a tile map element to create the look of a room. This is not permitted in <a data-xref="{title}" href="../../../../The_Asset_Editors/Rooms.htm">The Room Editor</a>, but when creating things dynamically you can do this, which is why functions like <span class="inline3_func"><a data-xref="{title}" href="General_Layer_Functions/layer_get_all_elements.htm">layer_get_all_elements</a></span> exist.</p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p>Una cosa importante da notare quando si creano i livelli di <span class="notranslate">room</span> è che <i>si possono avere più tipi di elementi diversi su un unico livello</i>. Ad esempio, si può avere un livello per i nemici e su questo livello ci sono le istanze dei nemici e alcuni <span class="notranslate">sprite</span> <span class="notranslate">assets</span> elementi che riguardano solo quel nemico. Oppure si può avere un elemento di sfondo con un elemento di mappa <span class="notranslate">tile</span> per creare l'aspetto di un <span class="notranslate">room</span>. Questo non è permesso nell'editor <span class="notranslate">room</span>, ma quando si creano cose dinamicamente si può fare, ed è per questo che esistono funzioni come <a href="General_Layer_Functions/layer_get_all_elements.htm"><span class="inline">layer_get_all_elements()</span></a> esistono.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="../Asset_Management.htm">Asset Management</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="../Extensions/Extensions.htm">Extensions</a></div>
+        <div style="float:left">Indietro: <a href="../Asset_Management.htm">Gestione delle attività</a></div>
+        <div style="float:right">Avanti: <a data-xref="{title}" href="../Extensions/Extensions.htm">Estensioni</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Rooms

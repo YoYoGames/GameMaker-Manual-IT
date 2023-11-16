@@ -6,7 +6,7 @@
   <title>Debugging</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Debugging Projects In GameMaker" />
   <meta name="rh-index-keywords" content="Debugging" />
@@ -15,54 +15,54 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>Debugging</h1>
-  <p>When programming your game, whether using <span data-keyref="GML_Code">GML Code</span> or <span data-keyref="GML_Visual">GML Visual</span>, it can be very easy to make mistakes - using the wrong variables, passing the wrong arguments, or using the wrong functions are just some of the most common errors we all make - and these mistakes are not always detected by the <a class="glossterm" data-glossterm="syntax" href="#">syntax</a> checker that is included with the script/action editor. That means that these mistakes will only become apparent when you actually run or compile your game, and even then it can sometimes be difficult to know exactly what is going wrong. It can therefore be of vital importance to know how your game is performing on the chosen device, as well as see what instances are in the room, what global variables have been created and a whole host of other details. Checking these things is called &quot;<strong>debugging your code</strong>&quot;, and any errors or issues you may find are called &quot;<strong>bugs</strong>&quot;.</p>
-  <p>Now, you can check a lot of these things yourself by adding in so-called &quot;debug code&quot; to your games to display on the screen the information you require, or you can have it that it shows messages when there is an error, but this is often a lot of work and if you aren&#39;t sure where the problem is in the first place then it can be a time consuming case of trial and error to track down your bug. For that, <span data-keyref="GameMaker Name">GameMaker</span> has a special test mode called <strong>Debug Mode</strong> which will start the <strong>Debug Module</strong>, and there is also a comprehensive <strong>error reporting system</strong> which displays messages on <a class="glossterm" data-glossterm="Compiling" href="#">Compiling</a> to help you track down any problems with your game.</p>
-  <p>The sections below cover the different ways that you can debug your game:</p>
-  <p> </p>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down6" href="#">Error Reporting</a></p>
+  <p>Quando programmate il vostro gioco, sia usando <span data-keyref="GML_Code">GML Code</span> che <span data-keyref="GML_Visual">GML Visual</span>, può essere molto facile fare degli errori - usare le variabili sbagliate, passare gli argomenti sbagliati, o usare le funzioni sbagliate sono solo alcuni degli errori più comuni che tutti noi facciamo - e questi errori non sono sempre rilevati dal controllo della <a class="glossterm" data-glossterm="sintassi" href="#">sintassi</a> che è incluso nello script/action editor. Ciò significa che questi errori diventano evidenti solo quando si esegue o si compila il gioco, e anche allora può essere difficile sapere esattamente cosa sta andando storto. Può quindi essere di vitale importanza sapere come il vostro gioco si sta comportando sul dispositivo scelto, così come vedere quali istanze sono nel <span class="notranslate">room</span>, quali variabili globali sono state create e tutta una serie di altri dettagli. Controllare queste cose si chiama &quot;<strong>debugging del vostro codice</strong>&quot;, e qualsiasi errore o problema che potete trovare si chiama &quot;<strong>bug</strong>&quot;.</p>
+  <p>Ora, potete controllare molte di queste cose da soli aggiungendo il cosiddetto &quot;codice di debug&quot; ai vostri giochi per visualizzare sullo schermo le informazioni richieste, o potete fare in modo che mostri dei messaggi quando c'è un errore, ma questo è spesso un sacco di lavoro e se non siete sicuri di dove sia il problema in primo luogo, allora può essere un caso di prova ed errore che richiede tempo per rintracciare il vostro bug. Per questo, <span data-keyref="GameMaker Name">GameMaker</span> ha una speciale modalità di test chiamata <strong>Debug Mode</strong> che avvierà il <strong>modulo di debug</strong>, e c'è anche un <strong>sistema</strong> completo di <strong>segnalazione degli errori</strong> che mostra messaggi durante la <a class="glossterm" data-glossterm="Compilazione di" href="#">compilazione</a> per aiutarvi a rintracciare qualsiasi problema con il vostro gioco.</p>
+  <p>Le sezioni che seguono coprono i diversi modi in cui potete eseguire il debug del vostro gioco:</p>
+  <p> </p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down6" href="#">Segnalazione di errori</a></p>
   <div class="droptext" data-targetname="drop_down6">
-    <p class="dropspot">When an error occurs during the compiling and execution of a project this is reported with a message in the <a href="The_Output_Window.htm">Compile Errors Output Window</a>, much like the one shown below:</p>
-    <p class="dropspot"><img alt="Compile Errors" class="center" src="../assets/Images/Introduction/QS_Debug_CompileError.png" />Most compiler error messages follow the same outline, with a message stating the object that the error has occurred in, then the Event along with the line number, and then finally a short description of the error itself. This type of information being provided by the error reporting is very important as it detects and reports the syntax and language related bugs that are going to cause your finished game to crash, but it won&#39;t report more subtle bugs, nor does it give feedback on performance. For those types of things you should use Debug Mode (explained below).</p>
-    <p class="dropspot">Apart from these compile errors, you can also get syntax errors. These will be detected as you add your GML Visual actions or code and are shown in the <a href="The_Output_Window.htm">Syntax Errors Output Window</a>, similar to the image shown below:</p>
-    <p class="dropspot"><img alt="Syntax Errors" class="center" src="../assets/Images/Introduction/QS_Debug_SyntaxError.png" />As with the compiler errors, the syntax errors window will direct you to the object, the event and the specific lines that are giving the issue, and will often be shown with a brief explanation of what the error is.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Quando si verifica un errore durante la compilazione e l'esecuzione di un progetto, questo viene riportato con un messaggio nella <a href="The_Output_Window.htm">finestra di output degli errori di compilazione</a>, molto simile a quello mostrato qui sotto:</p>
+    <p class="dropspot"><img>La maggior parte dei messaggi di errore del compilatore seguono lo stesso schema, con un messaggio che indica il <span class="notranslate">object</span> in cui si è verificato l'errore, poi l'evento insieme al numero di riga, e infine una breve descrizione dell'errore stesso. Questo tipo di informazioni fornite dalla segnalazione degli errori è molto importante in quanto rileva e segnala i bug relativi alla sintassi e al linguaggio che causeranno il crash del gioco finito, ma non segnala bug più sottili, né dà un feedback sulle prestazioni. Per questo tipo di cose dovreste usare la modalità Debug (spiegata di seguito).</p>
+    <p class="dropspot">Oltre a questi errori di compilazione, puoi anche ottenere errori di sintassi. Questi saranno rilevati mentre si aggiungono le azioni o il codice di <span class="notranslate">GML</span> Visual e sono mostrati nella <a href="The_Output_Window.htm">Syntax Errors Output Window</a>, simile all'immagine mostrata qui sotto:</p>
+    <p class="dropspot"><img>Come per gli errori del compilatore, la finestra degli errori di sintassi vi indirizzerà a <span class="notranslate">object</span>, l'evento e le linee specifiche che danno il problema, e spesso sarà mostrato con una breve spiegazione di cosa sia l'errore.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down7" href="#">Debug Mode</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down7" href="#">Modalità di debug</a></p>
   <div class="droptext" data-targetname="drop_down7">
-    <p class="dropspot">If you need to check things more carefully, you can run the game in <strong>Debug Mode</strong> by clicking the debug run button <img alt="Debug Icon" class="icon" src="../assets/Images/Icons/Icon_Debug.png" />. When you do, the <strong>Debug Module</strong> will open along with your game. This module permits you to monitor how everything is working in your game, from the global performance, right down to the values of individual variables in individual instances. You can find out further information about the Debug Module and its possibilities and how to use it from the following page:</p>
+    <p class="dropspot">Se hai bisogno di controllare le cose più attentamente, puoi eseguire il gioco in <strong>modalità Debug</strong> cliccando sul pulsante di esecuzione debug <img>. Quando lo fai, il <strong>modulo di debug</strong> si aprirà insieme al tuo gioco. Questo modulo ti permette di monitorare come tutto sta funzionando nel tuo gioco, dalla performance globale, fino ai valori delle singole variabili nelle singole istanze. Puoi trovare ulteriori informazioni sul Modulo di Debug, sulle sue possibilità e su come usarlo nella pagina seguente:</p>
     <ul class="dropspotlist">
-      <li class="dropspot"><a href="../IDE_Tools/The_Debugger.htm">The Debugger</a></li>
+      <li class="dropspot"><a href="../IDE_Tools/The_Debugger.htm">Il Debugger</a></li>
     </ul>
-    <p class="dropspot">Note that when you use the Debug Module, you can also add <strong>Breakpoints </strong>to your code or GML Visual. A breakpoint is a point in the game loop where you want the debug module to pause and let you step through the actual game code a line at a time. You can add breakpoints using the key &quot;F9&quot;, and they will be shown in the <a href="The_Output_Window.htm">Output Window</a> where you can enable/disable them as required.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Notate che quando usate il modulo di debug, potete anche aggiungere <strong>punti di interruzione </strong>al vostro codice o <span class="notranslate">GML</span> Visual. Un <span class="notranslate">breakpoint</span> è un punto nel gioco <span class="notranslate">loop</span> in cui vuoi che il modulo di debug si fermi e ti permetta di scorrere il codice di gioco attuale una linea alla volta. Potete aggiungere <span class="notranslate">breakpoints</span> usando il tasto &quot;F9&quot;, e saranno mostrati nella <a href="The_Output_Window.htm">Finestra di Output</a> dove potete abilitarli/disabilitarli come richiesto.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down8" href="#">Additional Tools</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop_down8" href="#">Strumenti aggiuntivi</a></p>
   <div class="droptext" data-targetname="drop_down8">
-    <p class="dropspot">As an additional tool for debugging compiled games, there are certain <strong>command line parameters</strong> that can be used when you run the final game package on Windows. For information on how this works please see <a href="../Settings/Command_Line_Parameters.htm">here</a>.</p>
-    <p class="dropspot">You can also generate a <strong>debug overlay</strong> when you are test running your game which will show additional debug information about the performance of your game as it is being run, and you can also output <strong>debug messages</strong> to the compile console where you can supply your own text to help debug the behaviour of your games. For more information see the following pages: <span class="inline"></span></p>
+    <p class="dropspot">Come strumento aggiuntivo per <span class="notranslate">debugging</span> giochi compilati, ci sono alcuni <strong>parametri della linea di comando</strong> che possono essere utilizzati quando si esegue il pacchetto finale del gioco su <span class="notranslate">Windows</span>. Per informazioni su come funziona si veda <a href="../Settings/Command_Line_Parameters.htm">qui</a>.</p>
+    <p class="dropspot">Puoi anche generare un <strong>overlay di debug</strong> quando stai testando il tuo gioco che mostrerà ulteriori informazioni di debug sulle prestazioni del tuo gioco mentre viene eseguito, e puoi anche inviare <strong>messaggi di debug</strong> alla console di compilazione dove puoi fornire il tuo testo per aiutare il debug del comportamento dei tuoi giochi. Per maggiori informazioni consultate le pagine seguenti: <span class="inline"></span></p>
     <ul class="dropspotlist">
       <li class="dropspot"><a href="../GameMaker_Language/GML_Reference/Debugging/show_debug_overlay.htm"><span class="inline">show_debug_overlay</span></a></li>
       <li class="dropspot"><a href="../GameMaker_Language/GML_Reference/Debugging/show_debug_message.htm"><span class="inline">show_debug_message</span></a></li>
       <li class="dropspot"><span class="inline"><a href="../GameMaker_Language/GML_Reference/Debugging/debug_event.htm">debug_event</a></span></li>
     </ul>
-    <p> </p>
+    <p> </p>
   </div>
-  <p> </p>
-  <p>There are also a set of preferences related to debugging and using the debug tools. You can find more information from the following page:</p>
+  <p> </p>
+  <p>Ci sono anche una serie di preferenze relative a <span class="notranslate">debugging</span> e all'utilizzo degli strumenti di debug. Puoi trovare maggiori informazioni nella pagina seguente:</p>
   <ul class="colour">
-    <li><a href="Debugging.htm">Debugging Preferences</a></li>
+    <li><a href="Debugging.htm">Preferenze di debug</a></li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Introduction_To_GameMaker_Studio_2.htm">Introduction To <span data-keyref="GameMaker Name">GameMaker</span></a></div>
-        <div style="float:right">Next: <a href="The_Output_Window.htm">The Output Window</a></div>
+        <div style="float:left">Indietro: <a href="Introduction_To_GameMaker_Studio_2.htm">Introduzione a <span data-keyref="GameMaker Name">GameMaker</span></a></div>
+        <div style="float:right">Avanti: <a href="The_Output_Window.htm">La finestra di uscita</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Debugging

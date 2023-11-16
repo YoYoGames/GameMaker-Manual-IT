@@ -6,7 +6,7 @@
   <title>sprite_get_speed</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function sprite_get_speed" />
   <meta name="rh-index-keywords" content="sprite_get_speed" />
@@ -16,50 +16,50 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>sprite_get_speed</h1>
-  <p>This function can be used to retrieve the sprite speed as defined for the sprite resource in the <a href="../../../../../The_Asset_Editors/Sprites.htm">Sprite Editor</a>. The value returned can then be used, for example, to calculate how
-    many frames may be drawn for different <a href="../Sprite_Instance_Variables/image_speed.htm"><span class="inline">image_speed</span></a>. Note that the return value will be very different depending on the <i>type</i> of speed
-    that was applied in the Sprite Editor, either <i>Frames Per Second</i>, or <i>Frames Per Game Frame</i>. The following two examples illustrate this:</p>
+  <p>Questa funzione può essere utilizzata per recuperare la velocità <span class="notranslate">sprite</span> come definita per la risorsa <span class="notranslate">sprite</span> nell'<a href="../../../../../The_Asset_Editors/Sprites.htm">Editor di Sprite</a>. Il valore restituito può quindi essere usato, per esempio, per calcolare quanti
+    quanti fotogrammi possono essere disegnati per diversi <a href="../Sprite_Instance_Variables/image_speed.htm"><span class="inline">image_speed</span></a>. Si noti che il valore restituito sarà molto diverso a seconda del <i>tipo</i> di velocità
+    che è stata applicata nell'Editor di <span class="notranslate">Sprite</span>, sia <i>Frames Per Second</i>, o <i>Frames Per Game Frame</i>. I seguenti due esempi illustrano questo:</p>
   <ul class="colour">
-    <li>If you have a sprite that draws 1 frame per <i>second</i> and set the image speed to 0.5 it will draw at 0.5 frames per second. If your game frame rate is 60 frames per second then the sprite will draw 1 frame for every 120
-      game frames.</li>
-    <li>If you have a sprite that draws 1 frame per <i>game frame</i> and set the image speed to 0.5 it will draw 0.5 frames per game frame. If your game frame rate is 60 frames per second then the sprite will draw 30 frames for
-      every 60 game frames.</li>
+    <li>Se avete un <span class="notranslate">sprite</span> che disegna 1 fotogramma al <i>secondo</i> e impostate la velocità dell'immagine a 0.5, esso disegnerà a 0.5 fotogrammi al secondo. Se il vostro frame rate di gioco è di 60 frame al secondo, allora <span class="notranslate">sprite</span> disegnerà 1 frame ogni 120
+      fotogrammi di gioco.</li>
+    <li>Se avete un <span class="notranslate">sprite</span> che disegna 1 fotogramma per <i>fotogramma di gioco</i> e impostate la velocità dell'immagine a 0.5, esso disegnerà 0.5 fotogrammi per fotogramma di gioco. Se il vostro frame rate di gioco è di 60 frame al secondo allora <span class="notranslate">sprite</span> disegnerà 30 frame per
+      ogni 60 fotogrammi di gioco.</li>
   </ul>
-  <p>You can find out what the type of animation speed was used when defining the sprite using the function <a href="sprite_get_speed_type.htm"><span class="inline">sprite_get_speed_type()</span></a>, and you can set the animation speed <i>and</i> type
-    using the function <a href="../Sprite_Manipulation/sprite_set_speed.htm"><span class="inline">sprite_set_speed()</span></a>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Potete scoprire quale tipo di velocità di animazione è stato usato quando avete definito <span class="notranslate">sprite</span> usando la funzione <a href="sprite_get_speed_type.htm"><span class="inline">sprite_get_speed_type()</span></a>e potete impostare la velocità <i>e il</i> tipo di animazione
+    utilizzando la funzione <a href="../Sprite_Manipulation/sprite_set_speed.htm"><span class="inline">sprite_set_speed()</span></a>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">sprite_get_speed(index)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>index</td><td><span data-keyref="Type_Asset_Sprite"></span></td>
-        <td>The index of the sprite to get the speed of</td>
+        <td><span class="notranslate">index</span></td><td><span data-keyref="Type_Asset_Sprite"></span></td>
+        <td><span class="notranslate">The index of the sprite to get the speed of</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Real"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">s_speed = sprite_get_speed(sprite_index);<br/> s_type = sprite_get_speed_type(sprite_index);</p>
-  <p>The above code gets the sprite speed and the sprite animation type and stores them in instance variables for future use.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra ottiene la velocità <span class="notranslate">sprite</span> e il tipo di animazione <span class="notranslate">sprite</span> e li memorizza in variabili di istanza per uso futuro.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Information.htm">Sprite Information</a></div>
-        <div style="float:right">Next: <a href="sprite_get_speed_type.htm">sprite_get_speed_type</a></div>
+        <div style="float:left">Indietro: <a href="Sprite_Information.htm">Informazioni Sprite</a></div>
+        <div style="float:right">Il prossimo: <a href="sprite_get_speed_type.htm"><span class="notranslate">sprite_get_speed_type</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 sprite_get_speed

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>path_rotate</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>percorso_rotate</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function path_rotate" />
   <meta name="rh-index-keywords" content="path_rotate" />
@@ -14,50 +14,50 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>path_rotate</h1>
-  <p>You can use this function to rotate a given path around its center. Remember that in <span data-keyref="GameMaker Name">GameMaker</span> (unless you are using physics) the angles are calculated counter-clockwise, so rotating the path by 90 degrees would rotate the path to the <i>left</i>. <strong>This function changes the actual path resource</strong>, and so will permanently affect how the path is used by all instances in the game from the moment the function is used until the end of the game. If this is not what you require, then you should use a function like <span class="inline"><a href="path_duplicate.htm">path_duplicate()</a></span> to create a copy of the path first, then call this function on the duplicated asset (don&#39;t forget to call <span class="inline"><a href="path_delete.htm">path_delete()</a></span> on the asset when it is no longer required).</p>
+  <h1>percorso_rotate</h1>
+  <p>Potete usare questa funzione per ruotare un dato <span class="notranslate">path</span> intorno al suo centro. Ricordate che in <span data-keyref="GameMaker Name">GameMaker</span> (a meno che non stiate usando la fisica) gli angoli sono calcolati in senso antiorario, quindi ruotando il <span class="notranslate">path</span> di 90 gradi ruoterebbe il <span class="notranslate">path</span> a <i>sinistra</i>. <strong>Questa funzione cambia l'attuale risorsa <span class="notranslate">path</span> </strong>, e quindi influenzerà permanentemente il modo in cui <span class="notranslate">path</span> è usato da tutte le istanze del gioco dal momento in cui la funzione viene usata fino alla fine del gioco. Se questo non è ciò di cui avete bisogno, allora dovreste usare una funzione come <span class="inline"><a href="path_duplicate.htm">path_duplicate()</a></span> per creare prima una copia di <span class="notranslate">path</span>, poi chiamare questa funzione sul duplicato <span class="notranslate">asset</span> (non dimenticate di chiamare <span class="inline"><a href="path_delete.htm">path_delete()</a></span> su <span class="notranslate">asset</span> quando non è più necessario).</p>
   <p><img alt="Rotate path example" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Paths/pathrotated.png" /></p>
-  <p class="note"><span data-conref="../../../../../assets/snippets/Tag_note.hts"> </span> Once a path has been assigned to an instance using the <span style="font-size:1px;"><span class="inline"><a href="../path_start.htm" style="font-size: 14px">path_start()</a></span></span> function, you can use the <span class="inline"><a href="../Path_Variables/path_orientation.htm" style="font-size: 14px">path_orientation</a></span> variable to change the path rotation too.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p class="note"><strong>NOTA</strong>: Una volta che un <span class="notranslate">path</span> è stato assegnato a un'istanza usando la <span style="font-size:1px;"><span class="inline"><a href="../path_start.htm" style="font-size: 14px">path_start()</a></span></span> si può usare la variabile <span class="inline"><a href="../Path_Variables/path_orientation.htm" style="font-size: 14px">path_orientation</a></span> per cambiare anche la rotazione di <span class="notranslate">path</span>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">path_rotate(index, angle);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>index</td>
-        <td><span data-keyref="Type_Asset_Path"><a href="The_Asset_Editors/Paths.htm" target="_blank">Path Asset</a></span></td>
-        <td>The index of the path to flip.</td>
+        <td><span class="notranslate">index</span></td>
+        <td><span data-keyref="Type_Asset_Path">Percorso patrimoniale</span></td>
+        <td><span class="notranslate">The index of the path to flip.</span></td>
       </tr>
       <tr>
-        <td>angle</td>
-        <td><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The angle of rotation degrees.</td>
+        <td><span class="notranslate">angle</span></td>
+        <td><span data-keyref="Type_Real">Real</span></td>
+        <td><span class="notranslate">The angle of rotation degrees.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">path_rotate(pth_Patrol, 90);</p>
-  <p>This would rotate the given 90 degrees counterclockwise.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Questo ruoterebbe il dato di 90 gradi in senso antiorario.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Path_Manipulation.htm">Path Manipulation</a></div>
-        <div style="float:right">Next: <a href="path_rescale.htm">path_rescale</a></div>
+        <div style="float:left">Indietro: <a href="Path_Manipulation.htm">Manipolazione del percorso</a></div>
+        <div style="float:right">Il prossimo: <a href="path_rescale.htm"><span class="notranslate">path_rescale</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 path_rotate

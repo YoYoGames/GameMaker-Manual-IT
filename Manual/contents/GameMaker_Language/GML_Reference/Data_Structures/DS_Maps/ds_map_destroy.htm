@@ -2,60 +2,60 @@
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>ds_map_destroy</title>
-  <meta name="generator" content="Adobe RoboHelp 2019"/>
-  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css"/>
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
-  <meta name="rh-authors" content="Mark Alexander"/>
-  <meta name="topic-comment" content="Reference page for ds_map_destroy"/>
-  <meta name="rh-index-keywords" content="ds_map_destroy"/>
-  <meta name="search-keywords" content="ds_map_destroy"/>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
+  <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
+  <script src="../../../../assets/scripts/main_script.js"></script>
+  <meta name="rh-authors" content="Mark Alexander" />
+  <meta name="topic-comment" content="Reference page for ds_map_destroy" />
+  <meta name="rh-index-keywords" content="ds_map_destroy" />
+  <meta name="search-keywords" content="ds_map_destroy" />
 </head>
 
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>ds_map_destroy</h1>
-  <p>DS maps take up space in memory, which is allocated to them when they are created. This means that you also need to free this memory when the DS map is not needed to prevent errors, memory leaks and loss of performance when running your game. This function
-    does just that. Note that destroying a map will de-reference any data structures stored in the map giving a memory leak, so you would need to go through the map and destroy all data structure items manually before destroying it to prevent this. The
-    only time this is not required is when you have flagged any items in the map as a <a href="../DS_Lists/DS_Lists.htm">DS list</a> or as another <a href="DS_Maps.htm">DS map</a>, in which case these items will be destroyed and their memory cleaned up
-    automatically as well.</p>
-  <p class="note"><b>IMPORTANT!</b> When you create a data structure, the index value to identify it is an integer value starting at 0. This means that data structures of different types can have the <b>same</b> index value, so if in doubt you should be using the
-    <span style="font-size:1px;"><a href="../ds_exists.htm"><span class="inline">ds_exists()</span></a></span> function before accessing them. Also note that indices are re-used, so a destroyed data structure index value may be used by a newly created one afterwards so we recommend
-      always setting the variable that held the DS index to -1 after destroying.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Le mappe DS occupano spazio in memoria, che viene assegnata loro quando vengono create. Ciò significa che è anche necessario liberare questa memoria quando la mappa DS non è necessaria per evitare errori, perdite di memoria e perdita di prestazioni durante l'esecuzione del gioco. Questa funzione
+    fa proprio questo. Notate che la distruzione di una mappa de-referenzia qualsiasi struttura dati memorizzata nella mappa, causando una perdita di memoria, quindi dovreste passare attraverso la mappa e distruggere tutti gli elementi della struttura dati manualmente prima di distruggerla per evitare questo. Il
+    unica volta che questo non è necessario è quando hai contrassegnato qualsiasi elemento nella mappa come una <a href="../DS_Lists/DS_Lists.htm">lista DS</a> o come un'altra <a href="DS_Maps.htm">mappa DS</a>, nel qual caso questi elementi saranno distrutti e la loro memoria ripulita
+    automaticamente.</p>
+  <p class="note"><b>IMPORTANTE!</b> Quando si crea una struttura di dati, il valore dell'indice per identificarla è un valore intero che inizia con 0. Questo significa che strutture di dati di tipi diversi possono avere lo <b>stesso</b> valore di indice, quindi in caso di dubbio si dovrebbe usare l'opzione
+    <span style="font-size:1px;"><a href="../ds_exists.htm"><span class="inline">ds_exists()</span></a></span> prima di accedervi. Notate anche che gli indici vengono riutilizzati, quindi un valore di indice di una struttura di dati distrutta può essere usato da una nuova struttura creata in seguito, quindi raccomandiamo
+      sempre di impostare la variabile che conteneva l'indice DS a -1 dopo la distruzione.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">ds_map_destroy(id);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>id</td><td><span data-keyref="Type_ID_DS_Map"></span></td>
-        <td>The id of the map to destroy.</td>
+        <td><span class="notranslate">id</span></td><td><span data-keyref="Type_ID_DS_Map"></span></td>
+        <td><span class="notranslate">The id of the map to destroy.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">ds_map_destroy(inventory);<br/> inventory = -1;</p>
-  <p>The above code will destroy the DS map with the id indexed in the variable &quot;inventory&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra distruggerà la mappa DS con l'id indicizzato nella variabile &quot;inventario&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="DS_Maps.htm">DS Maps</a></div>
-        <div style="float:right">Next: <a href="ds_map_secure_save.htm">ds_map_secure_save</a></div>
+        <div style="float:left">Indietro: <a href="DS_Maps.htm">Mappe DS</a></div>
+        <div style="float:right">Il prossimo: <a href="ds_map_secure_save.htm"><span class="notranslate">ds_map_secure_save</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 ds_map_destroy

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>layer_sequence_angle</title>
+  <title>angolo_di_sequenza</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_sequence_angle" />
   <meta name="rh-index-keywords" content="layer_sequence_y" />
@@ -14,53 +14,53 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_sequence_angle</h1>
-  <p>With this function you can set the angle of rotation for the given sequence element. You supply the sequence element ID as returned by <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> or by one of the <a href="../General_Layer_Functions/General_Layer_Functions.htm">layer element functions</a> along with the new angle to set and the sequence will be rotated about its origin to the new position. Angles in GameMaker are calculated with 0º to the right, and go anti-clockwise - so 90º is up, 180º is left and 270º is down - and the default angle for a sequence would be 0º.</p>
-  <p>Note that you shouldn&#39;t change the <span class="inline">image_xscale</span> \ <span class="inline">image_yscale</span> \ <span class="inline">image_angle</span> \ <span class="inline">x</span> \ <span class="inline">y</span> variables for any instances in a sequence that uses this function as they will be overwritten as soon as the sequence updates after calling the function.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>angolo_di_sequenza</h1>
+  <p>Con questa funzione puoi impostare l'angolo di rotazione per l'elemento dato <span class="notranslate">sequence</span>. Si fornisce l'ID dell'elemento <span class="notranslate">sequence</span> come restituito da <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> o da una delle <a href="../General_Layer_Functions/General_Layer_Functions.htm">funzioni degli elementi di livello</a> insieme al nuovo angolo da impostare e <span class="notranslate">sequence</span> sarà ruotato intorno alla sua origine nella nuova posizione. Gli angoli in <span class="notranslate">GameMaker</span> sono calcolati con 0º a destra, e vanno in senso antiorario - quindi 90º è in alto, 180º è a sinistra e 270º è in basso - e l'angolo predefinito per un <span class="notranslate">sequence</span> sarebbe 0º.</p>
+  <p>Notate che non dovreste cambiare le variabili <span class="inline">image_xscale</span> \ <span class="inline">image_yscale</span> \ <span class="inline">image_angle</span> \ <span class="inline">x</span> \ <span class="inline">y</span> per qualsiasi istanza in un <span class="notranslate">sequence</span> che usa questa funzione, poiché saranno sovrascritte non appena il <span class="notranslate">sequence</span> si aggiorna dopo aver chiamato la funzione.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">layer_sequence_angle(sequence_element_id, angle)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>sequence_element_id</td>
-        <td><span data-keyref="Type_ID_Element_Sequence">Sequence Element ID</span></td>
-        <td>The unique ID value of the sequence element to target</td>
+        <td><span class="notranslate">sequence_element_id</span></td>
+        <td><span data-keyref="Type_ID_Element_Sequence">ID dell'elemento di sequenza</span></td>
+        <td><span class="notranslate">The unique ID value of the sequence element to target</span></td>
       </tr>
       <tr>
-        <td>angle</td>
+        <td><span class="notranslate">angle</span></td>
         <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The new angle to rotate the sequence element to</td>
+        <td><span class="notranslate">The new angle to rotate the sequence element to</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if current_angle &lt; 90<br />
     {<br />
         current_angle += 1;<br />
         layer_sequence_angle(my_seq, current_angle);<br />
     }</p>
-  <p>The above code checks the value held in the <span class="inline">current_angle</span> variable, and if it is less than 90 then it adds to it then uses the value to set the angle of the sequence element referenced in the variable <span class="inline">my_seq</span>.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controlla il valore tenuto nella variabile <span class="inline">current_angle</span>, e se è inferiore a 90 allora lo aggiunge e poi usa il valore per impostare l'angolo dell'elemento <span class="notranslate">sequence</span> a cui si fa riferimento nella variabile <span class="inline">my_seq</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sequence_Layers.htm">Sequence Layers</a></div>
-        <div style="float:right">Next: <a href="layer_sequence_xscale.htm">layer_sequence_xscale</a></div>
+        <div style="float:left">Indietro: <a href="Sequence_Layers.htm">Strati di sequenza</a></div>
+        <div style="float:right">Il prossimo: <a href="layer_sequence_xscale.htm"><span class="notranslate">layer_sequence_xscale</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 layer_sequence_angle

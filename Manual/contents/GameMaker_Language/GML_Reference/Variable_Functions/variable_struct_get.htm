@@ -3,68 +3,65 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>struct_get</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>variabile_struttura_get</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function variable_struct_get" />
-  <meta name="rh-index-keywords" content="variable_struct_get,struct_get" />
-  <meta name="search-keywords" content="variable_struct_get,struct_get" />
+  <meta name="rh-index-keywords" content="variable_struct_get" />
+  <meta name="search-keywords" content="variable_struct_get" />
   <meta name="is_pure" content="true" />
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">struct_get</span></h1>
-  <p>This function gets the value from a given named variable within a struct.</p>
-  <p>You supply the struct reference as well as the name of the variable to get the value of <i>as a string</i> (see example code below). The function will return the value held by the variable or <span class="inline2">undefined</span> if the named variable does not exist.<b></b></p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_important.hts"> </span> If the variable you are getting does not exist then the function will return the keyword <span class="inline2">undefined</span> and you may get errors that will stop the game from functioning, so if in doubt use the function <span class="inline3_func"><a data-xref="{title}" href="variable_struct_exists.htm">struct_exists</a></span> first.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">struct_get</span>(struct, name);</p>
+  <h1>variabile_struttura_get</h1>
+  <p>Con questa funzione potete ottenere il valore di una data variabile nominata all'interno di un <span class="notranslate">struct</span>. Voi fornite il riferimento <span class="notranslate">struct</span> così come il nome della variabile di cui ottenere il valore <i>come una stringa</i> (vedete il codice di esempio qui sotto). La funzione restituirà il valore della variabile o <span class="inline">undefined</span> se la variabile nominata non esiste.<b></b></p>
+  <p class="note"><b>IMPORTANTE!</b> Se la variabile che state ottenendo non esiste, allora la funzione restituirà la parola chiave <span class="inline">undefined</span> e potreste ottenere degli errori che impediranno al gioco di funzionare, quindi se avete dei dubbi usate la funzione <a href="variable_struct_exists.htm"><span class="inline">variable_struct_exists()</span></a> prima.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
+  <p class="code">variable_struct_get(struct, name);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
+     </tr>
       <tr>
-        <td>struct</td>
-        <td><span data-keyref="Type_Struct"><a href="../../../../GameMaker_Language/GML_Overview/Structs.htm" target="_blank">Struct</a></span></td>
-        <td>The struct reference to use</td>
-      </tr>
+        <td><span class="notranslate">struct</span></td><td><span data-keyref="Type_Struct"></span></td>
+        <td><span class="notranslate">The struct reference to use</span></td>
+     </tr>
       <tr>
-        <td>name</td>
-        <td><span data-keyref="Type_String"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The name of the variable to get (as a string)</td>
-      </tr>
+        <td><span class="notranslate">name</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The name of the variable to get (as a string)</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Any"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm#variable" target="_blank">Any</a></span> (any data type) or <span data-keyref="Type_Undefined"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">undefined</a></span> (if the named variable does not exist)<span class="inline"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">if struct_exists(mystruct, &quot;shields&quot;)<br />
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Any">Variable</span> (any data type) or <span data-keyref="Type_Undefined">undefined</span> (if the named variable does not exist)<span class="inline"></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p class="code">if variable_struct_exists(mystruct, &quot;shields&quot;)<br />
     {<br />
-        var ss = <span data-field="title" data-format="default">struct_get</span>(mystruct, &quot;shields&quot;);<br />
+        var ss = variable_struct_get(mystruct, &quot;shields&quot;);<br />
     }<br />
     else<br />
     {<br />
         var ss = -1;<br />
     }</p>
-  <p>The above code will check to see if a variable exists in the given struct and if it does then the value it holds is retrieved and stored in a local variable. If it does not exist, the local variable is set to -1.</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controllerà per vedere se una variabile esiste nel dato <span class="notranslate">struct</span> e se esiste allora il valore che contiene viene recuperato e memorizzato in una variabile locale. Se non esiste, la variabile locale viene impostata a -1.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Variable_Functions.htm">Variable Functions</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="variable_struct_set.htm">struct_set</a></div>
+        <div style="float:left">Indietro: <a href="Variable_Functions.htm">Funzioni variabili</a></div>
+        <div style="float:right">Il prossimo: <a href="variable_struct_set.htm"><span class="notranslate">variable_struct_set</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 variable_struct_get

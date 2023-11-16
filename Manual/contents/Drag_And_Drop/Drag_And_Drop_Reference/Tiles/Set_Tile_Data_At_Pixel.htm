@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Set Tile Data At Pixel</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Impostare i dati delle mattonelle al pixel</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Set Tile Data At Pixel action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Set Tile Data At Pixel" />
@@ -14,58 +13,62 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Set Tile Data At Pixel Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Tiles/i_Tiles_Set_Tile_Data_At_Pixel.png" /> Set Tile Data At Pixel</h1>
-  <p>With this action you can set the tile data for a tile cell found at a specific position on a <a class="glossterm" data-glossterm="tile map" href="#">tile map</a> layer. The tile data is simply a value that reflects the index of the tile along with the flip, mirror, and rotate values, as well as any custom tile masks that you have used. With this action you first supply the layer to target using the name of the layer (a string) as defined in the room editor, and then the x and y axis in the room to set the tile data for. Note that the tile data will be set for the tile map &quot;cell&quot; in which the given position lands. For example, if your tile set tiles are 16x16, then the tile map layer will hold tiles in cells of 16x16 pixels, so if you use this action to target the room position (8, 8), you will be changing the tile in the cell (0, 0) of the tile map.<b></b></p>
-  <div data-conref="../../../assets/snippets/Note_Selected_Layer_Must_Be_Tile_Map_Layer.hts"> </div>
-  <p>The final argument for the action is the tile data itself. You would normally retrieve the tile data for the tile map cell using the action <a href="Set_Tile_Data_At_Pixel.htm">Get Tile Data At Pixel</a> and then manipulate it using the action <a href="Set_Tile_Data_Transform.htm">Set Tile Data Transform</a> before setting it again with this action. For more information on tile data, please see the GML section on <a href="../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Tile_Map_Layers/Tile_Map_Layers.htm">Tile Map Functions</a>.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Set Tile Data At Pixel Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Tiles/a_Tiles_Set_Tile_Data_At_Pixel.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Imposta <span class="notranslate">Tile</span> Dati al pixel</h1>
+  <p>Con questa azione è possibile impostare i dati di <span class="notranslate">tile</span> per una cella di <span class="notranslate">tile</span> che si trova in una posizione specifica su un livello di <a class="glossterm" data-glossterm="mappa delle piastrelle" href="#">mappa a mattonelle</a>. I dati di <span class="notranslate">tile</span> sono semplicemente un valore che riflette l'indice di <span class="notranslate">tile</span> insieme ai valori di
+    valori di flip, mirror e rotate, così come qualsiasi maschera personalizzata di <span class="notranslate">tile</span> che hai usato. Con questa azione si fornisce prima il livello a cui puntare usando il nome del livello (un <span class="notranslate">string</span>) come definito nell'editor <span class="notranslate">room</span>, e poi l'asse x e y nella stanza
+    per cui impostare i dati di <span class="notranslate">tile</span>. Si noti che i dati di <span class="notranslate">tile</span> saranno impostati per la &quot;cella&quot; della mappa <span class="notranslate">tile</span> in cui si trova la posizione data. Per esempio, se il tuo <span class="notranslate">tile set</span> <span class="notranslate">tiles</span> è 16x16, allora il livello della mappa <span class="notranslate">tile</span> conterrà <span class="notranslate">tiles</span> in celle di 16x16 pixel, quindi
+    se usate questa azione per puntare alla posizione <span class="notranslate">room</span> (8, 8), cambierete il <span class="notranslate">tile</span> nella cella (0, 0) della mappa <span class="notranslate">tile</span>.<b></b></p>
+  <p class="note"><b>NOTA</b>: Il layer selezionato <i>deve</i> essere stato definito come un <span class="notranslate">Tile</span> Map Layer nell'editor di <span class="notranslate">room</span>, altrimenti si potrebbero avere degli errori.</p>
+  <p>L'argomento finale dell'azione sono i dati <span class="notranslate">tile</span> stessi. Normalmente si recuperano i dati <span class="notranslate">tile</span> per la cella della mappa <span class="notranslate">tile</span> usando l'azione <a href="Set_Tile_Data_At_Pixel.htm">Get <span class="notranslate">Tile</span> Data At Pixel</a> e poi si manipolano usando l'azione <a href="Set_Tile_Data_Transform.htm">Set <span class="notranslate">Tile</span> Data Transform</a> prima di impostarli nuovamente con questa azione. Per maggiori informazioni sui dati <span class="notranslate">tile</span>, si veda la sezione <span class="notranslate">GML</span> sulle <a href="../../../GameMaker_Language/GML_Reference/Asset_Management/Rooms/Tile_Map_Layers/Tile_Map_Layers.htm">funzioni di Tile Map</a>.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="Set Tile Data At Pixel Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Tiles/i_Tiles_Set_Tile_Data_At_Pixel.png"/></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Layer</td>
-        <td>The layer with the tile map to target</td>
+        <td><span class="notranslate">Layer</span></td>
+        <td>Il livello con la mappa <span class="notranslate">tile</span> a cui puntare</td>
       </tr>
       <tr>
-        <td>X</td>
-        <td>The position along the horizontal (X) axis to set the tile-data for</td>
+        <td><span class="notranslate">X</span></td>
+        <td>La posizione lungo l'asse orizzontale (X) per impostare il tile-data per</td>
       </tr>
       <tr>
-        <td>Y</td>
-        <td>The position along the vertical (Y) axis to set the tile-data</td>
+        <td><span class="notranslate">Y</span></td>
+        <td>La posizione lungo l'asse verticale (Y) per impostare il tile-data</td>
       </tr>
       <tr>
-        <td>Data</td>
-        <td>The tile-data to use for setting the cell at the position</td>
+        <td><span class="notranslate">Data</span></td>
+        <td>Il tile-data da usare per impostare la cella nella posizione</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Set Tile Data At Pixel Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Tiles/e_Tiles_Set_Tile_Data_At_Pixel.png" />The above action block code tests for a mouse click and when one is received it retrieves the tile-data for the cell that coincides with the mouse position. This data is then modified and returned to the tile map layer, rotating the tile in that cell.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione di cui sopra verifica la presenza di un clic del mouse e quando lo riceve
+    recupera il tile-data per la cella che coincide con la posizione del mouse. Questi dati vengono poi modificati e restituiti al livello della mappa <span class="notranslate">tile</span>, ruotando il <span class="notranslate">tile</span> in quella cella.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Tile_Actions.htm">Tile Actions</a></div>
-        <div style="float:right">Next: <a href="Get_Tile_Data_At_Pixel.htm">Get Tile Data At Pixel</a></div>
+        <div style="float:left">Indietro: <a href="Tile_Actions.htm">Azioni delle mattonelle</a></div>
+        <div style="float:right">Prossimo: <a href="Get_Tile_Data_At_Pixel.htm">Ottenere <span class="notranslate">Tile</span> dati su Pixel</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
-Action - Set Tile Data At Pixel
+Action - Set <span class="notranslate">Tile</span> Data At Pixel
 -->
   <!-- TAGS
 action_tile_set_data_at_pixel
 -->
-</body>
-</html>
+
+</body></html>

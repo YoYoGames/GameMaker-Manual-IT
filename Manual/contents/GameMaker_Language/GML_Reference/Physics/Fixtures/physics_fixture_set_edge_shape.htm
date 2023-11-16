@@ -6,7 +6,7 @@
   <title>physics_fixture_set_edge_shape</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for physics_fixture_set_edge_shape" />
   <meta name="rh-index-keywords" content="physics_fixture_set_edge_shape" />
@@ -15,43 +15,43 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>physics_fixture_set_edge_shape</h1>
-  <p>This function defines an &quot;edge&quot; fixture shape. An edge shape is simply a line that will generate a collision when other fixtures over lap it, and can be very useful for generating (for example) terrain, or for creating borders around a room. The position of the edge is defined using <i>local</i> space, ie: the x/y position of the instance is considered (0,0), so this should be taken into consideration when creating them (in the code example below, the instance would have been placed at (0,0) in the room to avoid complications).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione definisce una forma di fixture &quot;bordo&quot;. Una forma di bordo è semplicemente una linea che genererà una collisione quando altre fixture la superano, e può essere molto utile per generare (per esempio) un terreno, o per creare bordi intorno a un <span class="notranslate">room</span>. La posizione del bordo è definita usando lo spazio <i>locale</i>, cioè: la posizione x/y dell'istanza è considerata (0,0), quindi questo dovrebbe essere preso in considerazione quando si creano (nell'esempio di codice qui sotto, l'istanza sarebbe stata posta a (0,0) in <span class="notranslate">room</span> per evitare complicazioni).</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">physics_fixture_set_edge_shape(fixture, local_x1, local_y1, local_x2, local_y2)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>fixture</td><td><span data-keyref="Type_ID_PhyFixture"></span></td>
-        <td>the index of the fixture</td>
+        <td><span class="notranslate">fixture</span></td><td><span data-keyref="Type_ID_PhyFixture"></span></td>
+        <td><span class="notranslate">the index of the fixture</span></td>
      </tr>
       <tr>
-        <td>local_x1</td><td><span data-keyref="Type_Real"></span></td>
-        <td>start x position for the edge</td>
+        <td><span class="notranslate">local_x1</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">start x position for the edge</span></td>
      </tr>
       <tr>
-        <td>local_y1</td><td><span data-keyref="Type_Real"></span></td>
-        <td>start y position for the edge</td>
+        <td><span class="notranslate">local_y1</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">start y position for the edge</span></td>
      </tr>
       <tr>
-        <td>local_x2</td><td><span data-keyref="Type_Real"></span></td>
-        <td>end x position for the edge</td>
+        <td><span class="notranslate">local_x2</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">end x position for the edge</span></td>
      </tr>
       <tr>
-        <td>local_y2</td><td><span data-keyref="Type_Real"></span></td>
-        <td>end y position for the edge</td>
+        <td><span class="notranslate">local_y2</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">end y position for the edge</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var xx = 0;<br />
     var y1 = room_height - 100;<br />
     var y2 = room_height - 50 - irandom(100);<br />
@@ -65,18 +65,18 @@
         y1 = y2;<br />
         y2 = room_height - 50 - irandom(100);<br />
     }</p>
-  <p>The above code will create a line of &quot;edge&quot; fixtures with a variety of heights over the length of the room.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra creerà una linea di apparecchi &quot;bordo&quot; con una varietà di altezze sulla lunghezza del <span class="notranslate">room</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Fixtures.htm">Fixtures</a></div>
-        <div style="float:right">Next: <a href="physics_fixture_set_chain_shape.htm">physics_fixture_set_chain_shape</a></div>
+        <div style="float:left">Indietro: <a href="Fixtures.htm">Infissi</a></div>
+        <div style="float:right">Il prossimo: <a href="physics_fixture_set_chain_shape.htm"><span class="notranslate">physics_fixture_set_chain_shape</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 physics_fixture_set_edge_shape

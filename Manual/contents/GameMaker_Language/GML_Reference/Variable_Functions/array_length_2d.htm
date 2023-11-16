@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>array_length_2d</title>
+  <title>lunghezza dell'array_2d</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function array_length_2d" />
   <meta name="rh-index-keywords" content="array_length_2d (Deprecated)" />
@@ -15,36 +15,36 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>array_length_2d <span data-conref="../../../assets/snippets/Tag_deprecated.hts"> </span></h1>
-  <p class="note"><b>WARNING!</b> This function is deprecated (and replaced by <span class="inline"><a href="array_length.htm">array_length()</a></span>) as arrays are no longer limited to only 1 or 2 dimensions, and as such this function is only supplied for support of legacy projects. All new projects should use the current way of creating and accessing multi-dimension arrays (see <a href="../../GML_Overview/Arrays.htm">here</a> for more information).</p>
-  <p>With this function you can get the length (number of entries) of a the second dimension of an array. You supply the entry number for the first dimension and the function will return the number of second dimension entries that the array has (to find the length of the first dimension use the function <a href="array_height_2d.htm"><span class="inline">array_height_2D()</span></a>). The function will return 0 if the variable given is not an array or 1 if the variable is a 1D array (as there is still 1 row).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>array_length_2d <span class="warning">DEPRECATO</span></h1>
+  <p class="note"><b>ATTENZIONE!</b> Questa funzione è deprecata (e sostituita da <span class="inline"><a href="array_length.htm">array_length()</a></span>) poiché gli array non sono più limitati a solo 1 o 2 dimensioni, e come tale questa funzione è fornita solo per il supporto dei progetti legacy. Tutti i nuovi progetti dovrebbero usare il modo attuale di creare e accedere agli array multidimensionali (vedere <a href="../../GML_Overview/Arrays.htm">qui</a> per maggiori informazioni).</p>
+  <p>Con questa funzione potete ottenere la lunghezza (numero di voci) della seconda dimensione di un array. Fornite il numero di entrata per la prima dimensione e la funzione restituirà il numero di entrate della seconda dimensione che la matrice ha (per trovare la lunghezza della prima dimensione usate la funzione <a href="array_height_2d.htm"><span class="inline">array_height_2D()</span></a>). La funzione restituirà 0 se la variabile fornita non è una matrice o 1 se la variabile è una matrice 1D (poiché c'è ancora 1 riga).</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">array_length_2d(array_index, n);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>array_index</td>
-        <td><span data-keyref="Type_Array"><a href="../../../../GameMaker_Language/GML_Overview/Arrays.htm" target="_blank">Array</a></span></td>
-        <td>The index of the array to check.</td>
+        <td><span class="notranslate">array_index</span></td>
+        <td><span data-keyref="Type_Array">Array</span></td>
+        <td><span class="notranslate">The index of the array to check.</span></td>
       </tr>
       <tr>
-        <td>n</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The entry of the array to get the length of.</td>
+        <td><span class="notranslate">n</span></td>
+        <td><span data-keyref="Type_Real">Real</span></td>
+        <td><span class="notranslate">The entry of the array to get the length of.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Real">Real</span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">for (var i = 0; i &lt; array_height_2d(a); ++i;)<br />
     {<br />
         for (var j = 0; j &lt; array_length_2d(a, i); ++j;)<br />
@@ -52,18 +52,18 @@
             a[i, j] = -1;<br />
         }<br />
     }</p>
-  <p>The above code will loop through a 2D array and set each entry to -1.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra <span class="notranslate">loop</span> attraverso un array 2D e imposta ogni voce a -1.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Array_Functions.htm">Array Functions</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="array_height_2d.htm">array_height_2d</a></div>
+        <div style="float:left">Indietro: <a href="Variable_Functions.htm">Funzioni variabili</a></div>
+        <div style="float:right">Il prossimo: <a href="array_height_2d.htm"><span class="notranslate">array_height_2d</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 array_length_2d (deprecated)

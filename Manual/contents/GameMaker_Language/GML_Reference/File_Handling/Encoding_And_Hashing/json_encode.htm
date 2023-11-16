@@ -6,7 +6,7 @@
   <title>json_encode</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for json_encode" />
   <meta name="rh-index-keywords" content="json_encode" />
@@ -16,44 +16,38 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>json_encode</h1>
-  <h3><strong>IMPORTANT!</strong> This function - while still valid - has been superseded by the function <span class="inline"><a href="json_stringify.htm">json_stringify()</a></span>, and we recommend that you only use this function for legacy support.</h3>
-  <p>JSON (JavaScript Object Notation) is a lightweight data-interchange format which is easy for to read and write, for both people and machines. It is built on two basic structures:</p>
+  <h3><strong>IMPORTANTE!</strong> Questa funzione - anche se ancora valida - è stata sostituita dalla funzione <span class="inline"><a href="json_stringify.htm">json_stringify()</a></span>, e si consiglia di utilizzare questa funzione solo per il supporto legacy.</h3>
+  <p>JSON (JavaScript <span class="notranslate">Object</span> Notation) è un formato leggero per lo scambio di dati che è facile da leggere e scrivere, sia per le persone che per le macchine. È costruito su due strutture di base:</p>
   <ul class="colour">
-    <li>A collection of name/value pairs, called a <a href="../../Data_Structures/DS_Maps/DS_Maps.htm"><span class="inline">DS Map</span></a> in <span data-keyref="GameMaker Name">GameMaker</span> but also known as a &quot;dictionary&quot; or &quot;object&quot; in other programming languages.</li>
-    <li>An ordered list of values, called a <a href="../../Data_Structures/DS_Lists/DS_Lists.htm"><span class="inline">DS </span><span class="inline">List</span></a> in <span data-keyref="GameMaker Name">GameMaker</span> but this can also be called an &quot;array&quot; or &quot;sequence&quot; in other programming languages.</li>
+    <li>Un insieme di coppie nome/valore, chiamato <a href="../../Data_Structures/DS_Maps/DS_Maps.htm"><span class="inline">DS Map</span></a> in <span data-keyref="GameMaker Name">GameMaker</span> ma anche conosciuto come &quot;dizionario&quot; o &quot;oggetto&quot; in altri linguaggi di programmazione.</li>
+    <li>Un elenco ordinato di valori, chiamato <a href="../../Data_Structures/DS_Lists/DS_Lists.htm"><span class="inline">DS </span><span class="inline">List</span></a> in <span data-keyref="GameMaker Name">GameMaker</span>, ma può anche essere chiamato &quot;array&quot; o &quot;sequenza&quot; in altri linguaggi di programmazione.</li>
   </ul>
-  <p><span class="inline">json_encode()</span> takes a DS map or array that you have previously created and encodes it as a JSON string which you can then use as (for example) part of an <a href="../../Asynchronous_Functions/HTTP/http_post_string.htm"><span class="inline">http_post_string()</span></a> call, or - so it can be stored externally - it can be written to a file. If using an array as the top level structure, then the array can only contain valid values or other arrays, and <em>not</em> data structures. For that you should use the appropriate DS functions.</p>
-  <p class="note"><strong>IMPORTANT!</strong> JSON is agnostic about numbers. In any programming language, there can be a variety of number types of various capacities and complements, fixed or floating, binary or decimal. That can make interchange between different programming languages difficult. JSON instead offers only the representation of numbers that humans use: a sequence of digits. All programming languages know how to make sense of digit sequences even if they disagree on internal representations. For more information see the <a href="http://www.ecma-international.org/publications/standards/Ecma-404.htm">ECMA JSON Standard</a>.</p>
-  <p>When using this function there are some important things to note:</p>
-  <ul class="colour">
-    <li>Note that care should be taken when writing JSON to an ini file, as the ini specifications can cause issues when using quotes and escape characters. See the function <a href="../Ini_Files/ini_write_string.htm"><span class="inline2">ini_write_string()</span></a> for more information.</li>
-    <li>If the provided map contains any circular references, such as references back to the main map itself (forming an infinite loop) or references to maps within the main map forming such infinite loops, such references will be serialised only on the first level where they&#39;re encountered, and converted to <span class="inline2">&quot;null&quot;</span> for deeper references.</li>
-    <li>If you encode an int64 to JSON it will write it as an <i>int</i> if it is in the valid range for an int32, as a <i>double</i> if it can do so without losing precision or (if neither of those cases is applicable) as a <i>string</i> with an identifier &quot;<span class="inline">@i64@</span>&quot; before it and &quot;<span class="inline">$i64$</span>&quot; after it. When you come to decode the JSON to a map again <span data-keyref="GameMaker Name">GameMaker</span> will pick these identifiers up and re-convert the value to an int64. This does mean that if the JSON is intended for a server or some other non-GameMaker target, these values will not be appropriate and so should be avoided.</li>
-    <li><a href="../../../GML_Overview/Data_Types.htm"><span class="inline2">infinity</span></a> and <a href="../../../GML_Overview/Data_Types.htm"><span class="inline2">NaN</span></a> will be written into the JSON as <span class="inline2">&quot;@@infinity$$&quot;</span> (<span class="inline2">&quot;@@-infinity$$&quot;</span> for negative) and <span class="inline2">&quot;@@nan$$&quot;</span> respectively. These values will be correctly loaded back into memory when the JSON is loaded with <span class="inline3_func"><a data-xref="{title}" href="json_decode.htm">json_decode</a></span>.</li>
-  </ul>
-  <p class="note"><b>NOTE</b>: The hierarchical functionality of JSON is available through special DS map and DS list functions (for example <span class="inline"><a href="../../Data_Structures/DS_Maps/ds_map_add_list.htm" style="font-size: 14px">ds_map_add_list()</a></span> or <span class="inline"><a href="../../Data_Structures/DS_Lists/ds_list_mark_as_map.htm" style="font-size: 14px">ds_list_mark_as_map()</a></span>), so you are able to encode sub-lists and maps.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p><span class="inline">json_encode()</span> prende una mappa o un array DS che avete precedentemente creato e lo codifica come JSON <span class="notranslate">string</span> che potete poi usare (per esempio) come parte di una chiamata <a href="../../Asynchronous_Functions/HTTP/http_post_string.htm"><span class="inline">http_post_string()</span></a> oppure, per essere memorizzato esternamente, può essere scritto in un file. Se usi un array come struttura di primo livello, allora l'array può contenere solo valori validi o altri array, e <em>non</em> strutture di dati. Per questo dovreste usare le funzioni DS appropriate.</p>
+  <p class="note"><strong>IMPORTANTE!</strong> JSON è agnostico riguardo ai numeri. In qualsiasi linguaggio di programmazione, ci può essere una varietà di tipi di numeri di varie capacità e complementi, fissi o fluttuanti, binari o decimali. Questo può rendere difficile l'interscambio tra diversi linguaggi di programmazione. JSON invece offre solo la rappresentazione dei numeri che gli umani usano: un <span class="notranslate">sequence</span> di cifre. Tutti i linguaggi di programmazione sanno come dare un senso alle cifre <span class="notranslate">sequences</span> anche se non sono d'accordo sulle rappresentazioni interne. Per maggiori informazioni vedi lo <a href="http://www.ecma-international.org/publications/standards/Ecma-404.htm">standard ECMA JSON</a>.</p>
+  <p>Si noti che si dovrebbe fare attenzione quando si scrive JSON in un file ini, poiché le specifiche ini possono causare problemi quando si usano virgolette e caratteri di escape. Vedere la funzione <a href="../Ini_Files/ini_write_string.htm"><span class="inline">ini_write_string()</span></a> per maggiori informazioni. Nota anche che se codifichi un int64 in JSON lo scriverà come un <i>int</i> se è nell'intervallo valido per un int32, come un <i>doppio</i> se può farlo senza perdere precisione o (se nessuno di questi casi è applicabile) come una <i>stringa</i> con un identificatore &quot;<span class="inline">@i64@</span>&quot; prima e &quot;<span class="inline">$i64$</span>&quot; dopo. Quando si arriva a decodificare il JSON in una mappa di nuovo <span data-keyref="GameMaker Name">GameMaker</span> prenderà questi identificatori e riconvertirà il valore in un int64. Questo significa che se il JSON è destinato a <span class="notranslate">server</span> o a qualche altro target non-GameMaker, questi valori non saranno appropriati e quindi dovrebbero essere evitati.</p>
+  <p class="note"><b>NOTA</b>: La funzionalità gerarchica di JSON è disponibile attraverso le funzioni speciali DS map e DS list (per esempio <span class="inline"><a href="../../Data_Structures/DS_Maps/ds_map_add_list.htm" style="font-size: 14px">ds_map_add_list()</a></span> o <span class="inline"><a href="../../Data_Structures/DS_Lists/ds_list_mark_as_map.htm" style="font-size: 14px">ds_list_mark_as_map()</a></span>), quindi siete in grado di codificare sottoelenchi e mappe.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">json_encode(map)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>map</td>
-        <td><span data-keyref="Type_ID_DS_Map"><a href="../../../../../GameMaker_Language/GML_Reference/Data_Structures/DS_Maps/ds_map_create.htm" target="_blank">DS Map ID</a></span></td>
-        <td>A DS map with the information to encode (or an array)</td>
+        <td><span class="notranslate">map</span></td>
+        <td><span data-keyref="Type_ID_DS_Map">ID della mappa DS</span></td>
+        <td><span class="notranslate">A DS map with the information to encode (or an array)</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_String"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_String">String</span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var hiscore_map, i, str;<br />
     hiscore_map = ds_map_create();<br />
     for (i = 0; i &lt; 10; i ++;)<br />
@@ -63,18 +57,18 @@
     str = json_encode(hiscore_map);<br />
     get[0] = http_post_string(&quot;http://www.angusgames.com/game?game_id=&quot; + string(global.game_id), str)<br />
     ds_map_destroy(hiscore_map);</p>
-  <p>The above code creates a DS map and then loops through the name and score arrays, adding each key/value pair to the new map. Next, this map is encoded using <span class="inline">json_encode()</span> and stored as a string in the variable &quot;str&quot;. This string is then sent to a web server using <span class="inline">http_post_string()</span> and the DS map is destroyed to prevent a memory leak as it is no-longer needed.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente crea una mappa DS e poi <span class="notranslate">loops</span> attraverso gli array di nomi e punteggi, aggiungendo ogni coppia chiave/valore alla nuova mappa. Successivamente, questa mappa viene codificata usando <span class="inline">json_encode()</span> e memorizzata come <span class="notranslate">string</span> nella variabile &quot;str&quot;. Questo <span class="notranslate">string</span> viene poi inviato a un web <span class="notranslate">server</span> usando <span class="inline">http_post_string()</span> e la mappa DS viene distrutta per prevenire una perdita di memoria, dato che non è più necessaria.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Encoding_And_Hashing.htm">File Encoding</a></div>
-        <div style="float:right">Next: <a href="json_decode.htm">json_decode</a></div>
+        <div style="float:left">Indietro: <a href="Encoding_And_Hashing.htm">Codifica dei file</a></div>
+        <div style="float:right">Il prossimo: <a href="json_decode.htm"><span class="notranslate">json_decode</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 json_encode

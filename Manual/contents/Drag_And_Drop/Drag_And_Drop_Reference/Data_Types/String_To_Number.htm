@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>String To Number</title>
+  <title>Da stringa a numero</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the String To Number action" />
   <meta name="rh-index-keywords" content="GML Visual Action - String To Number" />
@@ -14,78 +14,78 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="String To Number Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Types/i_Types_String_To_Number.png" /> String To Number</h1>
-  <p>This action can convert a string into a number. You provide the string to change and then give a target variable to return the real number back to (this variable can be flagged as a temporary local variable). Note that if the string has any characters
-    other than numbers and a decimal point, it will <i>not</i> be converted, although if the string <i>starts</i> with a number then those will be converted and the rest of the string excluded. It is important to note that when passing decimals into this
-    action, the returned string will be rounded to <i>two</i> decimal places only. Below is a table of input values and what you&#39;d expect returned</p>
+  <h1><img> Da stringa a numero</h1>
+  <p>Questa azione può convertire un <span class="notranslate">string</span> in un numero. Tu fornisci il <span class="notranslate">string</span> da cambiare e poi dai una variabile di destinazione a cui restituire il numero reale (questa variabile può essere contrassegnata come una variabile locale temporanea). Notate che se <span class="notranslate">string</span> ha dei caratteri
+    che non siano numeri e un punto decimale, <i>non</i> sarà convertito, anche se se <span class="notranslate">string</span> <i>inizia</i> con un numero allora questi saranno convertiti e il resto di <span class="notranslate">string</span> escluso. È importante notare che quando si passano i decimali in questa azione
+    azione, il <span class="notranslate">string</span> restituito sarà arrotondato solo a <i>due</i> cifre decimali. Di seguito è riportata una tabella dei valori di input e di ciò che ci si aspetta che venga restituito</p>
   <table>
     <tbody>
       <tr>
-        <th>String</th>
-        <th>Returned Value</th>
+        <th>Stringa</th>
+        <th>Valore restituito</th>
       </tr>
       <tr>
-        <td>&quot;123&quot;</td>
+        <td><span class="notranslate">&quot;123&quot;</span></td>
         <td>123</td>
       </tr>
       <tr>
-        <td>&quot;123 Hello World&quot;</td>
+        <td><span class="notranslate">&quot;123 Hello World&quot;</span></td>
         <td>123</td>
       </tr>
       <tr>
-        <td>&quot;Hello World&quot;</td>
-        <td>0 (by default if the string can&#39;t be converted, 0 will be returned)</td>
+        <td><span class="notranslate">&quot;Hello World&quot;</span></td>
+        <td>0 (per impostazione predefinita, se <span class="notranslate">string</span> non può essere convertito, verrà restituito 0)</td>
       </tr>
       <tr>
-        <td>&quot;Hello World 123&quot;</td>
+        <td><span class="notranslate">&quot;Hello World 123&quot;</span></td>
         <td>0</td>
       </tr>
       <tr>
-        <td>&quot;123.45678&quot;</td>
+        <td><span class="notranslate">&quot;123.45678&quot;</span></td>
         <td>123.46</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="String To Number Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Types/a_Types_String_To_Number.png" /></p>
-  <h4>Arguments:</h4>
-  <p> </p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="String To Number Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Types/i_Types_String_To_Number.png" /></p>
+  <h4>Argomenti:</h4>
+  <p> </p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Value</td>
-        <td>The string to convert</td>
+        <td><span class="notranslate">Value</span></td>
+        <td>Il <span class="notranslate">string</span> per convertire</td>
       </tr>
       <tr>
-        <td>Target</td>
-        <td>The target variable to hold the returned value</td>
+        <td><span class="notranslate">Target</span></td>
+        <td>La variabile di destinazione che contiene il valore restituito</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="String To Number Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Data_Types/e_Types_String_To_Number.png" />The above action block code initialises a global variable and then loads a file with
-    a buffer saved in it. Two strings are read from the buffer and stored in a temporary local variables before one of them is converted into a real number and stored in another temporary local variable. These are then assigned to global variables, and
-    the buffer is deleted.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione qui sopra inizializza una variabile globale e poi carica un file con
+    un <span class="notranslate">buffer</span> salvato in esso. Due <span class="notranslate">strings</span> vengono letti da <span class="notranslate">buffer</span> e memorizzati in una variabile locale temporanea prima che uno di essi venga convertito in un numero reale e memorizzato in un'altra variabile locale temporanea. Questi vengono poi assegnati a variabili globali, e
+    il sito <span class="notranslate">buffer</span> viene cancellato.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Data_Type_Actions.htm">Data Type Actions</a></div>
-        <div style="float:right">Next: <a href="Number_To_String.htm">Number To String</a></div>
+        <div style="float:left">Indietro: <a href="Data_Type_Actions.htm">Azioni sul tipo di dati</a></div>
+        <div style="float:right">Prossimo: <a href="Number_To_String.htm">Da numero a stringa</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
-Action - String To Number
+Action - <span class="notranslate">String</span> To Number
 -->
   <!-- TAGS
 action_string_to_number

@@ -6,7 +6,7 @@
   <title>os_get_language</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for os_get_language" />
   <meta name="rh-index-keywords" content="os_get_language" />
@@ -16,86 +16,86 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>os_get_language</h1>
-  <p>This function returns a string with the two letter Language Code for the OS that is running the game, as set by the <a href="http://en.wikipedia.org/wiki/ISO_639" target="_blank">ISO639</a> standard. If the information is not available, it will hold simply an empty string &quot;&quot;, or &quot;en&quot; for &quot;English&quot; language. Note that some languages also have a relevant Regional Code too, so to distinguish between different regions of the same country use the function <a href="os_get_region.htm"><span class="inline">os_get_region()</span></a>.</p>
-  <p>The following table shows example of some of the main two letter language codes as defined by ISO 639:</p>
+  <p>Questa funzione restituisce un <span class="notranslate">string</span> con il Codice Lingua di due lettere per il sistema operativo che sta eseguendo il gioco, come stabilito dallo standard <a href="http://en.wikipedia.org/wiki/ISO_639" target="_blank">ISO639</a>. Se l'informazione non è disponibile, terrà semplicemente un <span class="notranslate">string</span> vuoto &quot;&quot;, o &quot;en&quot; per la lingua &quot;inglese&quot;. Notate che alcune lingue hanno anche un codice regionale pertinente, quindi per distinguere tra diverse regioni dello stesso paese usate la funzione <a href="os_get_region.htm"><span class="inline">os_get_region()</span></a>.</p>
+  <p>La tabella seguente mostra un esempio di alcuni dei principali codici linguistici a due lettere definiti da ISO 639:</p>
   <table>
     <tbody>
       <tr>
-        <th>Language</th>
-        <th>Code</th>
+        <th>Lingua</th>
+        <th>Codice</th>
       </tr>
       <tr>
-        <td>Arabic</td>
+        <td>Arabo</td>
         <td>ar</td>
       </tr>
       <tr>
-        <td>Chinese</td>
+        <td>Cinese</td>
         <td>zh</td>
       </tr>
       <tr>
-        <td>Danish</td>
+        <td>Danese</td>
         <td>da</td>
       </tr>
       <tr>
-        <td>English</td>
-        <td>en</td>
-      </tr>
-      <tr>
-        <td>French</td>
-        <td>fr</td>
-      </tr>
-      <tr>
-        <td>German</td>
-        <td>de</td>
-      </tr>
-      <tr>
-        <td>Greek</td>
-        <td>el</td>
-      </tr>
-      <tr>
-        <td>Italian</td>
+        <td>Inglese</td>
         <td>it</td>
       </tr>
       <tr>
-        <td>Japanese</td>
+        <td>Francese</td>
+        <td>fr</td>
+      </tr>
+      <tr>
+        <td>Tedesco</td>
+        <td>de</td>
+      </tr>
+      <tr>
+        <td>Greco</td>
+        <td>el</td>
+      </tr>
+      <tr>
+        <td>Italiano</td>
+        <td>it</td>
+      </tr>
+      <tr>
+        <td>Giapponese</td>
         <td>ja</td>
       </tr>
       <tr>
-        <td>Norwegian</td>
+        <td>Norvegese</td>
         <td>no</td>
       </tr>
       <tr>
-        <td>Polish</td>
+        <td>Polacco</td>
         <td>pl</td>
       </tr>
       <tr>
-        <td>Portuguese</td>
+        <td>Portoghese</td>
         <td>pt</td>
       </tr>
       <tr>
-        <td>Russian</td>
+        <td>Russo</td>
         <td>ru</td>
       </tr>
       <tr>
-        <td>Spanish</td>
+        <td>Spagnolo</td>
         <td>es</td>
       </tr>
       <tr>
-        <td>Swedish</td>
+        <td>Svedese</td>
         <td>sv</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p class="note"><b>NOTE</b>: This is not the location country code that is returned, but the language code of the OS.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <p class="note"><b>NOTA</b>: questo non è il codice del paese della località che viene restituito, ma il codice della lingua del sistema operativo.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">os_get_language()</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_String"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">switch (os_get_language())<br />
     {<br />
         case &quot;es&quot;: ini_open(&quot;spanish.ini&quot;); break;<br />
@@ -103,18 +103,18 @@
         case &quot;it&quot;: ini_open(&quot;italian.ini&quot;); break;<br />
         default: ini_open(&quot;english.ini&quot;); break;<br />
     }</p>
-  <p>The above code checks the OS language and opens a different <span class="inline">*.ini</span> file depending on the returned value.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controlla la lingua del sistema operativo e apre un diverso file <span class="inline">*.ini</span> a seconda del valore restituito.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="OS_And_Compiler.htm">OS And Compiler</a></div>
-        <div style="float:right">Next: <a href="os_get_region.htm">os_get_region</a></div>
+        <div style="float:left">Indietro: <a href="OS_And_Compiler.htm">Sistema operativo e compilatore</a></div>
+        <div style="float:right">Il prossimo: <a href="os_get_region.htm"><span class="notranslate">os_get_region</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 os_get_language

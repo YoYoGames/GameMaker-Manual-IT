@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>timeline_max_moment</title>
+  <title>tempo_max_momento</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function timeline_max_moment" />
   <meta name="rh-index-keywords" content="timeline_max_moment" />
@@ -15,44 +15,44 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>timeline_max_moment</h1>
-  <p>This function will return the value of the moment in which the timeline performs its final action. So, if you have a timeline with 8 different actions placed 20 moments apart, this function would return the moment value of the last action in that timeline, which would be 160. This function is a good way to test whether a timeline has passed the last active moment when running, since the timeline position will continue incrementing every step of the game whether there are further actions or not.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>tempo_max_momento</h1>
+  <p>Questa funzione restituirà il valore del momento in cui <span class="notranslate">timeline</span> esegue la sua azione finale. Così, se avete un <span class="notranslate">timeline</span> con 8 azioni diverse poste a 20 istanti l'una dall'altra, questa funzione restituirà il valore del momento dell'ultima azione in quel <span class="notranslate">timeline</span>, che sarebbe 160. Questa funzione è un buon modo per testare se un <span class="notranslate">timeline</span> ha superato l'ultimo momento attivo durante l'esecuzione, poiché la posizione di <span class="notranslate">timeline</span> continuerà ad aumentare ad ogni passo del gioco, che ci siano ulteriori azioni o meno.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">timeline_max_moment(ind);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>ind</td><td><span data-keyref="Type_Asset_Timeline"></span></td>
-        <td>The index of the timeline to get the last moment of.</td>
+        <td><span class="notranslate">ind</span></td><td><span data-keyref="Type_Asset_Timeline"></span></td>
+        <td><span class="notranslate">The index of the timeline to get the last moment of.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if timeline_position &gt; timeline_max_moment(timeline_index)<br />
     {<br />
         timeline_running = false;<br />
     }</p>
-  <p>The above code will check the current timeline position against the maximum active moment, and if it is greater the timeline will be stopped.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra controllerà la posizione corrente <span class="notranslate">timeline</span> rispetto al momento attivo massimo, e se è maggiore il <span class="notranslate">timeline</span> sarà fermato.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Timelines.htm">Timelines</a></div>
-        <div style="float:right">Next: <a href="timeline_index.htm">timeline_index</a></div>
+        <div style="float:left">Indietro: <a href="Timelines.htm">Linee temporali</a></div>
+        <div style="float:right">Il prossimo: <a href="timeline_index.htm"><span class="notranslate">timeline_index</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 timeline_max_moment

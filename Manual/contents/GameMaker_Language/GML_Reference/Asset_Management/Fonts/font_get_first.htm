@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>font_get_first</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function font_get_first" />
   <meta name="rh-index-keywords" content="font_get_first" />
@@ -14,45 +14,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>font_get_first <span data-conref="../../../../assets/snippets/Tag_deprecated.hts"> </span></h1>
-  <p>When defining a font in <span data-keyref="GameMaker Name">GameMaker</span>, you can define a range of characters to include. This is because the font itself is not actually included with your game (for legal reasons) but an <i>image</i> of the font is included on a texture page and that is what your game will use (just like any other graphics asset). This means that you will want to keep the number of characters that you use to a minimum and specify only the range of characters that your game will need so as to keep texture memory as optimised as possible. This function can be used to find the starting character (as an ASCII value) that was used when your font asset was added to your game.</p>
-  <p class="note"><b><span class="note">NOTE</span> </b>Due to changes in the way fonts are handled, this function will <b>always</b> return 32, as <span data-keyref="GameMaker Name">GameMaker</span> enforces the space character (32) into the font and doesn&#39;t allow characters with codes lower than 32 either. New functions to do similar tasks will be added in a future update.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>font_get_first (deprecato)</h1>
+  <p>Quando si definisce un <span class="notranslate">font</span> in <span data-keyref="GameMaker Name">GameMaker</span>, è possibile definire una gamma di caratteri da includere. Questo perché il <span class="notranslate">font</span> stesso non è effettivamente incluso nel vostro gioco (per motivi legali) ma un'<i>immagine</i> di
+    <span class="notranslate">font</span> è inclusa in una pagina <span class="notranslate">texture</span> e questo è ciò che il vostro gioco userà (proprio come qualsiasi altra grafica <span class="notranslate">asset</span>). Questo significa che vorrete mantenere il numero di caratteri che usate al minimo e specificare solo la gamma di caratteri che
+    il vostro gioco avrà bisogno in modo da mantenere la memoria di <span class="notranslate">texture</span> il più ottimizzata possibile. Questa funzione può essere usata per trovare il carattere iniziale (come valore ASCII) che è stato usato quando il vostro <span class="notranslate">font</span> <span class="notranslate">asset</span> è stato aggiunto al vostro gioco.</p>
+  <p class="note"><b><span class="note">NOTA</span> </b>A causa dei cambiamenti nel modo in cui <span class="notranslate">fonts</span> è gestito, questa funzione restituirà <b>sempre</b> 32, poiché <span data-keyref="GameMaker Name">GameMaker</span> impone il carattere spazio (32) in <span class="notranslate">font</span> e non
+    permette caratteri con codici inferiori a 32. Nuove funzioni per svolgere compiti simili saranno aggiunte in un futuro aggiornamento.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">font_get_first(ind);</p>
-  <p> </p>
+  <p> </p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
+     </tr>
       <tr>
-        <td>ind</td>
-        <td><span data-keyref="Type_Asset_Font"><a href="../../../../../The_Asset_Editors/Fonts.htm" target="_blank">Font Asset</a></span></td>
-        <td>Index of the font to check.</td>
-      </tr>
+        <td><span class="notranslate">ind</span></td><td><span data-keyref="Type_Asset_Font"></span></td>
+        <td><span class="notranslate">Index of the font to check.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Real"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Real"></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">num = font_get_first(fnt_Main);</p>
-  <p>The above code will store the ASCII value of the first letter of the font range for the font indexed in &quot;fnt_Main&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra memorizzerà il valore ASCII della prima lettera dell'intervallo <span class="notranslate">font</span> per il <span class="notranslate">font</span> indicizzato in &quot;fnt_Main&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Fonts.htm">Fonts</a></div>
-        <div style="float:right">Next: <a href="font_get_last.htm">font_get_last</a></div>
+        <div style="float:left">Indietro: <a href="Fonts.htm">Font</a></div>
+        <div style="float:right">Il prossimo: <a href="font_get_last.htm"><span class="notranslate">font_get_last</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 font_get_first

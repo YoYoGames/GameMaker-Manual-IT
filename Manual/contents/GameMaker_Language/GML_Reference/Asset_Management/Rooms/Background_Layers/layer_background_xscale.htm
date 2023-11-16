@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>layer_background_xscale</title>
+  <title>scala_di_sfondo_x</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_background_xscale" />
   <meta name="rh-index-keywords" content="layer_background_xscale" />
@@ -15,47 +15,47 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_background_xscale</h1>
-  <p>This function can be used to set the scale along the x-axis of a background element. You give the background element ID (which you get when you create a background element using <a href="layer_background_create.htm"><span class="inline">layer_background_create()</span></a>    or when you use the function <a href="layer_background_get_id.htm"><span class="inline">layer_background_get_id()</span></a>), and then set the scale value. The scale value you give is a multiplier that will be used to change the way the background element is displayed,
-    where a value of 0.5 would display the element at half scale, and a value of 2 would display at double scale. Note that negative values are valid, and will &quot;flip&quot; the element around the (0,0) position, so an x scale of -1 would show the
-    image reversed.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>scala_di_sfondo_x</h1>
+  <p>Questa funzione può essere usata per impostare la scala lungo l'asse x di un elemento di sfondo. Si dà l'ID dell'elemento di sfondo (che si ottiene quando si crea un elemento di sfondo usando <a href="layer_background_create.htm"><span class="inline">layer_background_create()</span></a>    o quando usi la funzione <a href="layer_background_get_id.htm"><span class="inline">layer_background_get_id()</span></a>), e poi imposti il valore di scala. Il valore di scala che dai è un moltiplicatore che verrà usato per cambiare il modo in cui l'elemento di sfondo viene visualizzato,
+    dove un valore di 0,5 visualizzerebbe l'elemento a metà scala, e un valore di 2 lo visualizzerebbe a scala doppia. Nota che i valori negativi sono validi, e &quot;capovolgeranno&quot; l'elemento intorno alla posizione (0,0), quindi una scala x di -1 mostrerà l
+    immagine invertita.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">layer_background_xscale(background_element_id, xscale);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>background_element_id</td><td><span data-keyref="Type_ID_Element_Background"></span></td>
-        <td>The unique ID value of the background element to change</td>
+        <td><span class="notranslate">background_element_id</span></td><td><span data-keyref="Type_ID_Element_Background"></span></td>
+        <td><span class="notranslate">The unique ID value of the background element to change</span></td>
      </tr>
       <tr>
-        <td>xscale</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The scale value to use (1 is no scaling)</td>
+        <td><span class="notranslate">xscale</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The scale value to use (1 is no scaling)</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var lay_id = layer_get_id(&quot;Background_water&quot;);<br/> var back_id = layer_background_get_id(lay_id);<br/> layer_background_xscale(back_id, -1);</p>
-  <p>The above code will get the layer ID for the layer named &quot;Background_water&quot; and then use that to get the ID of the background element on that layer. This ID is then used to change the element xscale.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra otterrà l'ID del livello chiamato &quot;Background_water&quot; e poi lo userà per ottenere l'ID dell'elemento di sfondo su quel livello. Questo ID viene poi usato per cambiare la scala x dell'elemento.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Background_Layers.htm">Background Layers</a></div>
-        <div style="float:right">Next: <a href="layer_background_get_yscale.htm">layer_background_yscale</a></div>
+        <div style="float:left">Indietro: <a href="Background_Layers.htm">Livelli di sfondo</a></div>
+        <div style="float:right">Il prossimo: <a href="layer_background_get_yscale.htm"><span class="notranslate">layer_background_yscale</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 layer_background_xscale

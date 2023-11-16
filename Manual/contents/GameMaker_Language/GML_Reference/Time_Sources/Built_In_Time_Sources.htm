@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>Built-In Time Sources</title>
+  <title>Fonti di tempo integrate</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../../assets/css/default.css" />
   <meta name="template" content="../../../assets/masterpages/Manual_Page.htt" />
@@ -14,48 +14,47 @@
   <meta name="search-keywords" content="Time Sources, Game Time Source, Global Time Source, time_source_global, time_source_game" />
 </head>
 <body>
-  <h1><span data-field="title" data-format="default">Built-In Time Sources</span></h1>
+  <h1>Fonti di tempo integrate</h1>
   <table>
     <tbody>
       <tr>
-        <th colspan="3"><span data-keyref="Type_Constant_TimeSource_BuiltIn"><a href="../../../../GameMaker_Language/GML_Reference/Time_Sources/Built_In_Time_Sources.htm" target="_blank">Time Source Constant</a></span></th>
+        <th colspan="3"><span data-keyref="Type_Constant_TimeSource_BuiltIn"><a href="../../../../GameMaker_Language/GML_Reference/Time_Sources/Built_In_Time_Sources.htm" target="_blank">Sorgente di tempo costante</a></span></th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
-        <th>Value</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
+        <th>Valore</th>
       </tr>
       <tr>
-        <td><span class="inline">time_source_global</span><span class="inline"></span></td>
-        <td>The Global <span data-keyref="Type_Resource_TimeSource">Time Source</span></td>
-        <td>0</td>
+        <td><span class="notranslate"><span class="inline">time_source_global</span><span class="inline"></span></td>
+        <td>La <span data-keyref="Type_Resource_TimeSource">fonte del tempo</span>globale</td>
+        <td><span class="notranslate">0</span></td>
       </tr>
       <tr>
-        <td><span class="inline">time_source_game</span></td>
-        <td>The Game <span data-keyref="Type_Resource_TimeSource">Time Source</span></td>
-        <td>1</td>
+        <td><span class="notranslate"><span class="inline">time_source_game</span></td>
+        <td>La <span data-keyref="Type_Resource_TimeSource">fonte del tempo di</span>gioco</td>
+        <td><span class="notranslate">1</span></td>
       </tr>
     </tbody>
   </table>
-  <p>You can use the <strong>Global <span data-keyref="Type_Resource_TimeSource">Time Source</span></strong> or the <strong>Game <span data-keyref="Type_Resource_TimeSource">Time Source</span></strong> as a parent for your custom <span data-keyref="Type_Resource_TimeSource">Time Source</span>. Both <span data-keyref="Type_Resource_TimeSource">Time Source</span>s are globally available.</p>
-  <p>The Global <span data-keyref="Type_Resource_TimeSource">Time Source</span> runs outside the main game loop, while the Game <span data-keyref="Type_Resource_TimeSource">Time Source</span> runs as part of the game loop.</p>
-  <p>The choice between Global/Game doesn&#39;t affect whether <span data-keyref="Type_Resource_TimeSource">Time Source</span>s are affected by your game&#39;s framerate; that will depend on the <a href="Time_Source_Units.htm">unit</a> you use.</p>
-  <h2>Order</h2>
-  <p><span data-keyref="Type_Resource_TimeSource">Time Source</span>s inheriting from the Global <span data-keyref="Type_Resource_TimeSource">Time Source</span> are processed <strong>before</strong> the Game <span data-keyref="Type_Resource_TimeSource">Time Source</span>.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> See <a data-xref="{title}" href="../../../The_Asset_Editors/Object_Properties/Event_Order.htm">Event Order</a> for more details.</p>
-  <h2>States</h2>
-  <p>The Game <span data-keyref="Type_Resource_TimeSource">Time Source</span> has <a href="Time_Source_States.htm">states</a>, meaning it can be <a href="time_source_pause.htm">paused</a>. The Global <span data-keyref="Type_Resource_TimeSource">Time Source</span> doesn&#39;t have states and can&#39;t be paused.</p>
-  <p>You can use the Global <span data-keyref="Type_Resource_TimeSource">Time Source</span> for timers that should run regardless of the game state, and the Game <span data-keyref="Type_Resource_TimeSource">Time Source</span> for timers that are tied to your main game loop. You can then pause all of your game-related timers by pausing the Game <span data-keyref="Type_Resource_TimeSource">Time Source</span>.</p>
-  <p> </p>
-  <p> </p>
+  <p>È possibile utilizzare l'<strong> <span data-keyref="Type_Resource_TimeSource">origine tempo</span></strong> globale o l'<strong> <span data-keyref="Type_Resource_TimeSource">origine tempo</span></strong> del gioco come genitore per l'<span data-keyref="Type_Resource_TimeSource">origine tempo</span> personalizzata. Entrambe le <span data-keyref="Type_Resource_TimeSource">sorgenti temporali</span>sono disponibili a livello globale.</p>
+  <p>La Global <span data-keyref="Type_Resource_TimeSource">Time Source</span> viene eseguita al di fuori del gioco principale <span class="notranslate">loop</span>, mentre la Game <span data-keyref="Type_Resource_TimeSource">Time Source</span> viene eseguita come parte del gioco <span class="notranslate">loop</span>.</p>
+  <p>La scelta tra Globale/Gioco non influisce sul fatto che le <span data-keyref="Type_Resource_TimeSource">Sorgenti di tempo</span>siano influenzate dal framerate del gioco; ciò dipende dall'<a href="Time_Source_Units.htm">unità</a> utilizzata.</p>
+  <h2>Ordine</h2>
+  <p>Le<span data-keyref="Type_Resource_TimeSource">fonti di tempo</span>che ereditano dalla <span data-keyref="Type_Resource_TimeSource">fonte di tempo</span> globale vengono elaborate <strong>prima</strong> della <span data-keyref="Type_Resource_TimeSource">fonte di tempo</span> del gioco.</p>
+  <h2>Stati</h2>
+  <p>La <span data-keyref="Type_Resource_TimeSource">Fonte del tempo di</span> gioco ha degli <a href="Time_Source_States.htm">stati</a>, il che significa che può essere <a href="time_source_pause.htm"><span class="notranslate">paused</span></a>. L'<span data-keyref="Type_Resource_TimeSource">origine tempo</span> globale non ha stati e non può essere messa in pausa.</p>
+  <p>È possibile utilizzare l'<span data-keyref="Type_Resource_TimeSource">origine tempo</span> globale per i timer che devono essere eseguiti indipendentemente dallo stato del gioco e l'<span data-keyref="Type_Resource_TimeSource">origine tempo</span> di gioco per i timer legati al gioco principale <span class="notranslate">loop</span>. È possibile mettere in pausa tutti i timer legati al gioco mettendo in pausa l'<span data-keyref="Type_Resource_TimeSource">origine tempo</span> del gioco.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="Time_Sources.htm">Time Sources</a> </div>
-        <div>Next: <a data-xref="{title}" href="Time_Source_Units.htm">Time Source Units</a></div>
+        <div>Indietro: <a data-xref="{title}" href="Time_Sources.htm">Fonti di tempo</a> </div>
+        <div>Avanti: <a data-xref="{title}" href="Time_Source_Units.htm">Unità di origine del tempo</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 time_source_global

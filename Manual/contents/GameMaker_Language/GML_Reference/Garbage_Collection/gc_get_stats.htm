@@ -6,7 +6,7 @@
   <title>gc_get_stats</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for gc_get_stats" />
   <meta name="rh-index-keywords" content="gc_get_stats" />
@@ -16,7 +16,7 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gc_get_stats</h1>
-  <p>With this function you can retrieve information about the current state of the garbage collector. The function will return a <a href="../../GML_Overview/Structs.htm">struct</a> which will have the following member variables (note that &quot;objects&quot; here refers to anything that can be garbage collected and <i>not</i> general object instances as defined in the Asset Browser):</p>
+  <p>Con questa funzione potete recuperare informazioni sullo stato attuale del garbage collector. La funzione restituirà una <a href="../../GML_Overview/Structs.htm">struct</a> che avrà le seguenti variabili membro (si noti che &quot;oggetti&quot; qui si riferisce a qualsiasi cosa che può essere oggetto di garbage collector e <i>non</i> a istanze generali di <span class="notranslate">object</span> come definito nel browser <span class="notranslate">Asset</span> ):</p>
   <table>
     <colgroup>
       <col />
@@ -25,65 +25,65 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="3"><span data-keyref="Type_Struct_GCStats"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/Garbage_Collection/gc_get_stats.htm">GC Stats Struct</a></span></th>
+        <th colspan="3"><span data-keyref="Type_Struct_GCStats"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/Garbage_Collection/gc_get_stats.htm">Strutture GC Stats</a></span></th>
       </tr>
       <tr>
-        <th>Variable</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Variabile</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
         <td><span class="inline">objects_touched</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>This is the number of active objects the garbage collector found in the previous frame. This will vary depending on which generation was collected.</td>
+        <td>Questo è il numero di <span class="notranslate">objects</span> attivi che il garbage collector ha trovato nel frame precedente. Questo varia a seconda di quale generazione è stata raccolta.</td>
       </tr>
       <tr>
         <td><span class="inline">objects_collected</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>The number of objects which the garbage collector determined weren&#39;t active in the previous frame, and which could therefore be deleted.</td>
+        <td>Il numero di <span class="notranslate">objects</span> che il garbage collector ha determinato che non erano attivi nel frame precedente, e che quindi possono essere cancellati.</td>
       </tr>
       <tr>
         <td><span class="inline">traversal_time</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>This is the time in microseconds (on the main thread) which the garbage collector took to figure out which objects were active.</td>
+        <td>Questo è il tempo in microsecondi (sul thread principale) che il garbage collector ha impiegato per capire quali <span class="notranslate">objects</span> erano attivi.</td>
       </tr>
       <tr>
         <td><span class="inline">collection_time</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>This is the time in microseconds (on a separate thread) which the garbage collector took to clean up the objects deemed inactive.</td>
+        <td>Questo è il tempo in microsecondi (su un thread separato) che il garbage collector ha impiegato per ripulire <span class="notranslate">objects</span> ritenuto inattivo.</td>
       </tr>
       <tr>
         <td><span class="inline">gc_frame</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>This is a counter which is incremented every time a garbage collection pass occurs. If garbage collection is disabled this will not increase.</td>
+        <td>Questo è un contatore che viene incrementato ogni volta che si verifica un passaggio di garbage collection. Se la garbage collection è disabilitata, questo non aumenta.</td>
       </tr>
       <tr>
         <td><span class="inline">generation_collected</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>This is the index of the generation that was collected last. 0 is the youngest generation and 3 is currently the oldest.</td>
+        <td>Questo è l'indice della generazione che è stata raccolta per ultima. 0 è la generazione più giovane e 3 è attualmente la più vecchia.</td>
       </tr>
       <tr>
         <td><span class="inline">num_generations</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>This is the total number of garbage collection generations.</td>
+        <td>Questo è il numero totale di generazioni di garbage collection.</td>
       </tr>
       <tr>
         <td><span class="inline">num_objects_in_generation</span></td>
-        <td><span data-keyref="Type_Array"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Arrays.htm">Array</a></span> of <span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span>s</td>
-        <td>This is an array (of size <span class="inline">num_generations</span>) containing the number of objects in each generation.</td>
+        <td><span data-keyref="Type_Array"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Arrays.htm">Array</a></span> di <span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Reale</a></span>s</td>
+        <td>Questo è un array (di dimensione <span class="inline">num_generations</span>) che contiene il numero di <span class="notranslate">objects</span> in ogni generazione.</td>
       </tr>
     </tbody>
   </table>
-  <p class="note"><b>NOTE</b>: On the HTML5 target platform garbage collection is handled by the JavaScript engine and therefore the member variables in the above struct will all return 0 if this function is used on that platform.</p>
-  <p>When using this function, please note that the information shown for the objects <em>is only updated when a full generation is finished processing</em>, which may take several frames depending on frame time setting (see <a href="gc_target_frame_time.htm">here</a> for more information on frame timing).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p class="note"><b>NOTA</b>: sulla piattaforma di destinazione HTML5 la garbage collection è gestita dal motore JavaScript e quindi le variabili membro nel precedente <span class="notranslate">struct</span> restituiranno tutte 0 se questa funzione è usata su quella piattaforma.</p>
+  <p>Quando si usa questa funzione, si prega di notare che le informazioni mostrate per <span class="notranslate">objects</span> <em>sono aggiornate solo quando un'intera generazione ha finito di essere elaborata</em>, il che può richiedere diversi fotogrammi a seconda dell'impostazione del tempo di frame (vedere <a href="gc_target_frame_time.htm">qui</a> per maggiori informazioni sul tempo di frame).</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">gc_get_stats();</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Struct_GCStats"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/Garbage_Collection/gc_get_stats.htm">GC Stats Struct</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (global.debug == true)<br />
     {<br />
         var _s = gc_get_stats();<br />
@@ -92,18 +92,18 @@
         show_debug_message(&quot;Traversal time = &quot; + string(_t))<br />
         show_debug_message(&quot;Collection time = &quot; + string(_c))<br />
     }</p>
-  <p>The above code checks a global variable and if it is <span class="inline">true</span> it gets information from the garabge collector and outputs it to the console as debug messages.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controlla una variabile globale e se è <span class="inline">true</span> ottiene informazioni dal garabge collector e le invia alla console come messaggi di debug.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Garbage_Collection.htm">Garbage Collection</a></div>
-        <div style="float:right">Next: <a href="gc_enable.htm">gc_enable</a></div>
+        <div style="float:left">Indietro: <a href="Garbage_Collection.htm">Raccolta della spazzatura</a></div>
+        <div style="float:right">Il prossimo: <a href="gc_enable.htm"><span class="notranslate">gc_enable</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 gc_get_stats

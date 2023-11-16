@@ -3,127 +3,130 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Other Events</title>
+  <title>Altri eventi</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page detailing the other events." />
   <meta name="rh-index-keywords" content="Objects - Other Events" />
   <meta name="search-keywords" content="other events,outside room,intersect boundary,view events,room start event,room end event,game start event,game end event,path ended,user events,broadcast message,animation end,animation update,animation event" />
   <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>The <span data-field="title" data-format="default">Other Events</span></h1>
+  <h1>Gli altri eventi</h1>
   <p><img alt="The Other Events" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_OtherEvents.png" /></p>
-  <p>This page explains each of the different events that are collected under the <strong>Other</strong> events category in <a data-xref="{title}" href="../Objects.htm">The Object Editor</a>:</p>
-  <p> </p>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Outside Room</a> </p>
+  <p>In questa pagina vengono illustrati i diversi eventi raccolti nella categoria <strong>Altri</strong> eventi dell'Editor <span class="notranslate">Object</span>:</p>
+  <p> </p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Camera esterna</a> </p>
   <div class="droptext" data-targetname="drop-down">
-    <p class="dropspot">This event is triggered when an instance goes outside the room, and is based on a check done against the assigned sprite (and its properties) of the instance, so that even if you have set the image x or y scale to a value other than one, this event
-      will only be triggered when the whole sprite would be out the screen. If the instance has no sprite, then the position of the instance is used and the moment its x or y position is outside of the room then it will trigger the event too. This event
-      is typically used for things like bullets, where they are destroyed once they leave the room so you don&#39;t end up with millions of bullets flying away infinitely and causing your game to slow down. Note that this event is only triggered once
-      when the instance leaves the room initially.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Questo evento viene attivato quando un'istanza esce dal sito <span class="notranslate">room</span> e si basa su un controllo effettuato rispetto al sito <span class="notranslate">sprite</span> assegnato (e alle sue proprietà) dell'istanza, in modo che anche se si è impostata la scala x o y dell'immagine su un valore diverso da uno, questo evento verrà attivato solo quando l'intero sarà fuori dallo schermo.
+      verrà attivato solo quando l'intero <span class="notranslate">sprite</span> sarà fuori dallo schermo. Se l'istanza non ha <span class="notranslate">sprite</span>, viene utilizzata la posizione dell'istanza e nel momento in cui la sua posizione x o y è al di fuori di <span class="notranslate">room</span> si attiverà l'evento. Questo evento
+      è tipicamente usato per cose come i proiettili, che vengono distrutti una volta usciti da <span class="notranslate">room</span>, in modo da non ritrovarsi con milioni di proiettili che volano via all'infinito e causano un rallentamento del gioco. Si noti che questo evento viene attivato solo una volta
+      quando l'istanza lascia inizialmente il sito <span class="notranslate">room</span>.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Intersect Boundary</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Intersecare il confine</a></p>
   <div class="droptext" data-targetname="drop-down1">
-    <p class="dropspot">This event is triggered when an instance &quot;touches&quot; the inside edge of the room, and, like the outside room event, is based on a check done against the assigned sprite of the instance, so that even if you have set the image x or y scale to
-      a value other than one, this event still be triggered the moment a part of the sprite intersects the room boundary. If the instance has <em>no </em>sprite, then the position of the instance is used and the moment its x or y position intersects the
-      room boundary then it will trigger the event too. You can use this event to do things like tell an instance to &quot;bounce&quot; back in towards the room again rather than go outside.</p>
-    <p> </p>
+    <p class="dropspot">Questo evento viene attivato quando un'istanza &quot;tocca&quot; il bordo interno di <span class="notranslate">room</span> e, come l'evento esterno a <span class="notranslate">room</span>, si basa su un controllo effettuato rispetto al <span class="notranslate">sprite</span> assegnato all'istanza, in modo che anche se si è impostata la scala x o y dell'immagine su
+      un valore diverso da uno, questo evento verrà comunque attivato nel momento in cui una parte di <span class="notranslate">sprite</span> interseca il confine di <span class="notranslate">room</span>. Se l'istanza <em>non ha uno </em>sprite, viene utilizzata la posizione dell'istanza e nel momento in cui la sua posizione x o y interseca il confine
+      <span class="notranslate">room</span> confine, allora si attiverà anche l'evento. Si può usare questo evento per fare cose come dire a un'istanza di &quot;rimbalzare&quot; di nuovo verso <span class="notranslate">room</span> piuttosto che uscire.</p>
+    <p> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Views</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">Visualizzazioni</a></p>
   <div class="droptext" data-targetname="drop-down2">
-    <p class="dropspot">Camera views are normally defined in the room editor and used to show only a small area of a large room at any one time. This event category has two seperate sub-categories (<strong>Outside View</strong> and <strong>Intersect Boundary</strong>), with
-      eight different events in each corresponding to the eight available view ports. These two categories function exactly the same as the respective room events, only taking the boundary of the camera view as the thing for the instance to check against
-      rather than the room.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Le viste della telecamera sono normalmente definite nell'editor di <span class="notranslate">room</span> e utilizzate per mostrare solo una piccola area di un grande <span class="notranslate">room</span> in qualsiasi momento. Questa categoria di eventi ha due sottocategorie distinte<strong>(Vista esterna</strong> e <strong>Confine intersecato</strong>), con otto eventi diversi in ciascuna di esse, corrispondenti alle otto porte di visualizzazione disponibili.
+      otto eventi diversi in ciascuna di esse, corrispondenti alle otto porte di visualizzazione disponibili. Queste due categorie funzionano esattamente come i rispettivi eventi di <span class="notranslate">room</span>, solo che prendono in considerazione il confine della vista della telecamera come elemento da verificare per l'istanza
+      invece di <span class="notranslate">room</span>.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">Game Start</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down3" href="#">Inizio del gioco</a></p>
   <div class="droptext" data-targetname="drop-down3">
-    <p class="dropspot">This special event is triggered only once in the whole game and only for those instances with actions or code placed in the event. These instances must be present in the first room of the game and have been placed there in the room editor, rather
-      than have been created dynamically using code or actions. It should be noted that this event happens <em>after </em>the create event of all instances and so can contain code or actions with variables that have been previously defined in that event.
-      This event is typically defined in only one &quot;controller&quot; object and is typically used to initialize global variables, start music, read from files and any other thing that is usually only done once at the start of a game.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Questo evento speciale si attiva una sola volta in tutto il gioco e solo per le istanze con azioni o codice inserite nell'evento. Queste istanze devono essere presenti nel primo <span class="notranslate">room</span> del gioco e devono essere state inserite nell'editor di <span class="notranslate">room</span>, anziché essere state create dinamicamente con codice o azioni.
+      piuttosto che essere state create dinamicamente utilizzando codice o azioni. Si noti che questo evento avviene <em>dopo l </em>'evento di creazione di tutte le istanze e quindi può contenere codice o azioni con variabili che sono state precedentemente definite in quell'evento.
+      Questo evento è tipicamente definito in un solo &quot;controllore&quot; <span class="notranslate">object</span> ed è tipicamente usato per inizializzare le variabili globali, avviare la musica, leggere dai file e qualsiasi altra cosa che di solito viene fatta solo una volta all'inizio di un gioco.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Game End</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Fine del gioco</a></p>
   <div class="droptext" data-targetname="drop-down4">
-    <p class="dropspot">Similar to the above mentioned Game Start event, this event is only triggered once in the whole game and that is just before the game window actually closes. Again, for an instance with this event to actually do anything it has to be in the room as
-      the game is closed. Please note that this event in really only viable for <strong>Windows</strong>, <strong>Ubuntu </strong>(Linux) and <strong>macOS</strong> games as mobile devices may just close the game without giving <span data-keyref="GameMaker Name">GameMaker</span> the
-      chance to call this event. For browser games made with the HTML5 module, this event should work when the game tab or browser is closed, but not all browsers support this feature (Firefox, Chrome and Safari do at the time of writing) so care must
-      be taken when using it. Typically you would use this event to save data.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Simile all'evento di avvio del gioco di cui sopra, questo evento viene attivato solo una volta in tutto il gioco, poco prima della chiusura della finestra di gioco. Anche in questo caso, perché un'istanza con questo evento faccia effettivamente qualcosa, deve trovarsi nel sito <span class="notranslate">room</span> mentre
+      la chiusura del gioco. Si noti che questo evento è utilizzabile solo per i giochi <strong>Windows</strong>, <strong>Ubuntu ( </strong><span class="notranslate">Linux</span>) e <strong>macOS</strong>, poiché i dispositivi mobili possono chiudere il gioco senza dare a <span data-keyref="GameMaker Name">GameMaker</span> la possibilità di chiamare questo evento.
+      GameMaker di chiamare questo evento. Per i giochi per browser realizzati con il modulo HTML5, questo evento dovrebbe funzionare quando la scheda di gioco o il browser vengono chiusi, ma non tutti i browser supportano questa funzione (Firefox, Chrome e Safari sì, al momento in cui scriviamo), quindi bisogna fare attenzione quando lo si usa.
+      fare attenzione quando lo si usa. In genere si usa questo evento per salvare i dati.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p id="p"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Room Start</a></p>
+  <p id="p"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down5" href="#">Inizio camera</a></p>
   <div class="droptext" data-targetname="drop-down5">
-    <p class="dropspot">This event happens for all instances initially in a room when the room starts. Please note that it happens <em>after </em>the creation event and so can depend on variables and things defined previously in that event.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Questo evento si verifica per tutte le istanze presenti inizialmente in un <span class="notranslate">room</span> all'avvio del sito <span class="notranslate">room</span>. Si noti che avviene <em>dopo l </em>'evento di creazione e quindi può dipendere da variabili e cose definite in precedenza in quell'evento.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p id="p1"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#">Room End</a></p>
+  <p id="p1"><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down6" href="#">Fine della stanza</a></p>
   <div class="droptext" data-targetname="drop-down6">
-    <p class="dropspot">This event happens to all instances that are in the room when the room ends. This event is very useful for &quot;cleaning up&quot; after a level has ended, for example you can delete loaded resources here, or remove a particle system to prevent memory
-      leaks etc...</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Questo evento si verifica per tutte le istanze che si trovano nel sito <span class="notranslate">room</span> quando termina <span class="notranslate">room</span>. Questo evento è molto utile per &quot;ripulire&quot; dopo la fine di un livello, ad esempio si possono cancellare le risorse caricate, o rimuovere un sistema di particelle per evitare perdite di memoria, ecc.
+      per evitare perdite di memoria, ecc.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">Animation End</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down7" href="#">Fine dell'animazione</a></p>
   <div class="droptext" data-targetname="drop-down7">
-    <p class="dropspot">In <span data-keyref="GameMaker Name">GameMaker</span> sprites are not static things as they can have sub-images and be animated at different speeds. Each frame of an animation (called a sub-image) has its own number, starting at 0, which can be checked in code or through actions,
-      but sometimes all you really need to know is when the animation has ended. That&#39;s when this event is triggered, right at the end of the animation when the sub image index shows that the last frame has been reached. This event is really useful
-      for many things, for example an explosion object where you can set the instance to destroy itself when the last frame of the animation is reached.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">In <span data-keyref="GameMaker Name">GameMaker</span> <span class="notranslate">sprites</span> non è un oggetto statico, poiché può avere sotto-immagini ed essere animato a velocità diverse. Ogni fotogramma di un'animazione (chiamato sottoimmagine) ha un proprio numero, a partire da 0, che può essere controllato nel codice o attraverso le azioni,
+      ma a volte è sufficiente sapere quando l'animazione è terminata. Questo evento viene attivato proprio alla fine dell'animazione, quando l'indice dell'immagine secondaria indica che è stato raggiunto l'ultimo fotogramma. Questo evento è molto utile
+      per molte cose, ad esempio per un'esplosione <span class="notranslate">object</span>, dove è possibile impostare l'istanza in modo che si distrugga quando viene raggiunto l'ultimo fotogramma dell'animazione.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#">Animation Update</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down8" href="#">Aggiornamento sull'animazione</a></p>
   <div class="droptext" data-targetname="drop-down8">
-    <p class="dropspot">This event is designed only for use with the <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Skeletal_Animation/Skeletal_Animation.htm">Skeletal Animation Functions</a>. It is a special event that is triggered every step in
-      an instance that uses a skeletal animation sprite, and is designed to &quot;intercept&quot; the bone data after the orientation of the bones has been calculated for the current animation state but before this data is committed to use for drawing.
-      This allows you to make modifications to the bone data using the appropriate functions.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Questo evento è stato progettato solo per essere utilizzato con le <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Skeletal_Animation/Skeletal_Animation.htm">Funzioni di animazione scheletrica</a>. Si tratta di un evento speciale che viene attivato a ogni passo in un'istanza che utilizza un'animazione scheletrica
+      un'istanza che utilizza un'animazione scheletrica <span class="notranslate">sprite</span> ed è progettato per &quot;intercettare&quot; i dati delle ossa dopo che l'orientamento delle ossa è stato calcolato per lo stato di animazione corrente, ma prima che questi dati siano impegnati per il disegno.
+      Ciò consente di apportare modifiche ai dati ossei utilizzando le funzioni appropriate.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down9" href="#">Animation Event</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down9" href="#">Evento di animazione</a></p>
   <div class="droptext" data-targetname="drop-down9">
-    <p class="dropspot"><strong></strong>This event is designed only for use with the <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Skeletal_Animation/Skeletal_Animation.htm">Skeletal Animation Functions</a>. This event is triggered in an object which has a skeletal animation sprite assigned to it, and where the object is using the default draw for the assigned sprite, or the sprite is being drawn via draw_self(). It currently won&#39;t trigger on skeleton animation sprites drawn any other way. The event is designed to capture and transmit data that has been assigned to particular events in the sprite animation as defined in the editor used to make them.</p>
-    <p class="dropspot">When the Animation Event is triggered, a special <a href="../../GameMaker_Language/GML_Reference/Data_Structures/DS_Maps/DS_Maps.htm">DS Map</a> will be created called the event_data map (much the same as we have the async_load map for an async event). This map will have all of the following key/value pairs that you can parse to get information about the event:</p>
+    <p class="dropspot"><strong></strong>Questo evento è progettato solo per essere utilizzato con le <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Skeletal_Animation/Skeletal_Animation.htm">Funzioni di animazione scheletrica</a>. Questo evento viene attivato in un oggetto
+      a cui è assegnata un'animazione scheletrica <span class="notranslate">sprite</span> e in cui <span class="notranslate">object</span> sta usando il disegno predefinito per l'animazione <span class="notranslate">sprite</span> assegnata, oppure <span class="notranslate">sprite</span> viene disegnata tramite draw_self(). Al momento non si attiva sull'animazione scheletrica <span class="notranslate">sprites</span> disegnata in altro modo.
+      altro modo. L'evento è progettato per catturare e trasmettere i dati che sono stati assegnati a particolari eventi dell'animazione <span class="notranslate">sprite</span> come definiti nell'editor utilizzato per realizzarli.</p>
+    <p class="dropspot">Quando l'evento di animazione viene attivato, viene creata una <a href="../../GameMaker_Language/GML_Reference/Data_Structures/DS_Maps/DS_Maps.htm">mappa DS</a> speciale, chiamata mappa event_data (più o meno come la mappa async_load per un evento async).
+      Questa mappa conterrà tutte le seguenti coppie chiave/valore, che possono essere analizzate per ottenere informazioni sull'evento:</p>
     <ul class="dropspotlist">
-      <li>&quot;<span class="inline">name</span>&quot;: the name of the event (as defined in the animation program)</li>
-      <li>&quot;<span class="inline">track</span>&quot;: the index of the track the animation is playing on (default is 0)</li>
-      <li>&quot;<span class="inline">integer</span>&quot;: an integer value associated with the event (as defined in the animation program, default is 0)</li>
-      <li>&quot;<span class="inline">float</span>&quot;: a float value associated with the event (as defined in the animation program, default is 0.0)</li>
-      <li>&quot;<span class="inline">string</span>&quot;: a string value associated with the event (as defined in the animation program, default is an empty string &quot;&quot;)</li>
+      <li>&quot;<span class="inline">name</span>&quot;: il nome dell'evento (come definito nel programma di animazione)</li>
+      <li>&quot;<span class="inline">track</span>&quot;: l'indice della traccia su cui viene riprodotta l'animazione (l'impostazione predefinita è 0)</li>
+      <li>&quot;<span class="inline">integer</span>&quot;: un valore intero associato all'evento (come definito nel programma di animazione, l'impostazione predefinita è 0)</li>
+      <li>&quot;<span class="inline">float</span>&quot;: un valore float associato all'evento (come definito nel programma di animazione, l'impostazione predefinita è 0,0)</li>
+      <li>&quot;<span class="inline">string</span>&quot;: un valore <span class="notranslate">string</span> associato all'evento (come definito nel programma di animazione, il valore predefinito è un <span class="notranslate">string</span> vuoto &quot;&quot;)</li>
     </ul>
-    <p> </p>
+    <p> </p>
     <p><strong></strong></p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down10" href="#">Path Ended</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down10" href="#">Percorso Terminato</a></p>
   <div class="droptext" data-targetname="drop-down10">
-    <p class="dropspot"><a href="../Paths.htm">Paths</a> can be an important part of making any game, whether it is for a tower defence type game, or a shoot-em-up or whatever, and it&#39;s often really important that an instance does some particular action when it reaches the end of its path. This event detects this and is triggered when it happens allowing you to add in code or actions to deal with the circumstances, for example in a tower defence game you would use this to destroy the instance and remove a health point from the goal object.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">I<a href="../Paths.htm">percorsi</a> possono essere una parte importante della creazione di qualsiasi gioco, che si tratti di un gioco di difesa della torre, di uno sparatutto o di qualsiasi altra cosa, e spesso è davvero importante che un'istanza compia qualche azione particolare quando raggiunge la fine del suo percorso.
+      la fine del suo <span class="notranslate">path</span>. Questo evento lo rileva e viene attivato quando si verifica, consentendo di aggiungere codice o azioni per affrontare le circostanze, ad esempio in un gioco di difesa della torre si potrebbe usare questo evento per distruggere l'istanza e rimuovere un punto salute dall'obiettivo  .
+      dall'obiettivo <span class="notranslate">object</span>.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down11" href="#">User Events</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down11" href="#">Eventi dell'utente</a></p>
   <div class="droptext" data-targetname="drop-down11">
-    <p class="dropspot">These are special events that are not triggered by <span data-keyref="GameMaker Name">GameMaker</span> automatically, but have to be <em>implicitly </em>called by you using code or actions while the game is running. There are 12 user events in total and they can contain code or actions and they can be called at any time in the game loop, making them very useful for creating your own events that happen when <em>you </em>decide.</p>
-    <p class="dropspot"> </p>
+    <p class="dropspot">Si tratta di eventi speciali che non vengono attivati automaticamente da <span data-keyref="GameMaker Name">GameMaker</span>, ma che devono essere richiamati <em>implicitamente </em>dall'utente tramite codice o azioni durante l'esecuzione del gioco. Esistono 12 eventi utente in totale, che possono contenere codice o azioni e possono essere richiamati in qualsiasi momento del gioco.
+      e possono essere richiamati in qualsiasi momento del gioco <span class="notranslate">loop</span>, il che li rende molto utili per creare eventi personalizzati che si verificano quando lo decidete <em>voi </em>.</p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down12" href="#">Broadcast Message</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down12" href="#">Messaggio di trasmissione</a></p>
   <div class="droptext" data-targetname="drop-down12">
-    <p class="dropspot">This event is triggered whenever a sprite or a sequence generates a broadcast message string. For more information please see the page on <a href="../Sequence_Properties/Broadcast_Messages.htm">Broadcast Messages</a>.</p>
+    <p class="dropspot">Questo evento viene attivato ogni volta che un <span class="notranslate">sprite</span> o un <span class="notranslate">sequence</span> genera un messaggio broadcast <span class="notranslate">string</span>. Per ulteriori informazioni, consultare la pagina sui <a href="../Sequence_Properties/Broadcast_Messages.htm">messaggi broadcast</a>.</p>
+    <p> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down13" href="#">Wallpaper Config</a></p>
-  <div class="droptext" data-targetname="drop-down13">
-    <p class="dropspot">This event is triggered by the Wallpaper Companion App. For more information, see the page on the <a data-xref="{title}" href="Wallpaper_Config_Event.htm">Wallpaper Config Event</a>.</p>
-  </div>
-  <p> </p>
-  <p><span data-condition="Export:Beta">This event list also contains the <a data-xref="{title}" href="../../GameMaker_Language/GML_Reference/Rollback/Rollback_Events.htm">Rollback Events</a>.</span></p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p><span data-condition="Export:Beta">Questo elenco di eventi contiene anche gli <a data-xref="{title}" href="../../GameMaker_Language/GML_Reference/Rollback/Rollback_Events.htm">eventi di rollback</a>.</span></p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Object_Events.htm">Object Events</a></div>
-        <div style="float:right">Next: <a href="Draw_Events.htm">Draw Events</a></div>
+        <div style="float:left">Indietro: <a href="Object_Events.htm">Eventi oggetto</a></div>
+        <div style="float:right">Avanti: <a href="Draw_Events.htm">Disegnare gli eventi</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Other Events

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>network_send_broadcast</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>rete_invio_diffusione</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for network_send_broadcast" />
   <meta name="rh-index-keywords" content="network_send_broadcast" />
@@ -14,62 +14,62 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">network_send_broadcast</span></h1>
-  <p>This function broadcasts the data from a buffer locally to a range of IP addresses (for more information on buffers see <a href="../Buffers/Buffers.htm">Reference - Buffers</a>).</p>
-  <p>The range is limited to that of the device running the server, such that if the device has an IP of 92.168.11.130, then the data will be broadcast over the range 92.168.11.*. The function will return the number of bytes of data sent, or a number less than 0 if the send has failed.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> This function will only work when used with UDP - your server needs to be TCP and your client needs to have a UDP client socket created with <span class="inline3_func"><a data-xref="{title}" href="network_create_socket_ext.htm">network_create_socket_ext</a></span> in order to receive any broadcasts sent from the server.</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> This function will not work when used in a project running on the HTML5 target.</p>
+  <h1>rete_invio_diffusione</h1>
+  <p>Con questa funzione è possibile trasmettere localmente i dati di un <span class="notranslate">buffer</span> a un intervallo di indirizzi IP (per ulteriori informazioni su <span class="notranslate">buffers</span> vedere <a href="../Buffers/Buffers.htm">Riferimento - Buffer</a>). L'intervallo è limitato a quello del dispositivo che esegue <span class="notranslate">server</span>, per cui se il dispositivo ha un IP di 92.168.11.130, i dati saranno trasmessi nell'intervallo 92.168.11.*. La funzione restituisce il numero di byte di dati inviati o un numero inferiore a 0 se l'invio non è riuscito.</p>
+  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> Questa funzione funziona solo se usata con UDP: il vostro <span class="notranslate">server</span> deve essere TCP e il vostro client deve avere un socket client UDP creato con <span style="font-size:1px;"><a href="network_create_socket_ext.htm"><span class="inline">network_create_socket_ext()</span></a></span> per poter ricevere qualsiasi trasmissione inviata da <span class="notranslate">server</span>.</p>
+  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> Questa funzione non funziona se utilizzata in un progetto che gira sul target HTML5.</p>
   <div data-conref="../../../assets/snippets/iOS_14_IP_Multicast_Permissions.hts"> </div>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">network_send_broadcast</span>(socket, port, bufferid, size);</p>
+  <h4>Sintassi:</h4>
+  <p class="code">network_send_broadcast(socket, port, bufferid, size);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>socket</td>
-        <td><span data-keyref="Type_ID_Network_Socket"><a href="../../../../GameMaker_Language/GML_Reference/Networking/network_create_socket.htm" target="_blank">Network Socket ID</a></span></td>
-        <td>The id of the socket to use.</td>
+        <td><span class="notranslate">socket</span></td>
+        <td><span data-keyref="Type_ID_Network_Socket"><a href="../../../../GameMaker_Language/GML_Reference/Networking/network_create_socket.htm" target="_blank">ID della presa di rete</a></span></td>
+        <td><span class="notranslate">The id of the socket to use.</span></td>
       </tr>
       <tr>
-        <td>port</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The port that the server will use.</td>
+        <td><span class="notranslate">port</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Reale</a></span></td>
+        <td><span class="notranslate">The port that the server will use.</span></td>
       </tr>
       <tr>
-        <td>bufferid</td>
-        <td><span data-keyref="Type_ID_Buffer"><a href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">Buffer</a></span></td>
-        <td>The buffer to get the data from.</td>
+        <td><span class="notranslate">bufferid</span></td>
+        <td><span data-keyref="Type_ID_Buffer"><a href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">ID buffer</a></span></td>
+        <td><span class="notranslate">The id of the buffer to get the data from.</span></td>
       </tr>
       <tr>
-        <td>size</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The size (in bytes) of the data.</td>
+        <td><span class="notranslate">size</span></td>
+        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Reale</a></span></td>
+        <td><span class="notranslate">The size (in bytes) of the data.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Restituzione:</h4>
   <p class="code"><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">buffer_seek(broadcast_buffer, buffer_seek_start, 0);<br />
     buffer_write(broadcast_buffer, buffer_string, global.ServerName);<br />
     network_send_broadcast(server, 6511, broadcast_buffer, buffer_tell(broadcast_buffer));</p>
-  <p>The above code writes the name string of the current server (stored in <span class="inline2">global.ServerName</span>), then writes it to a buffer stored in <span class="inline2">broadcast_buffer</span>. This data is then broadcast locally to a range of IPs (the device IP is currently implied as the broadcast base range) to port 6511.</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente scrive il nome <span class="notranslate">string</span> dell'attuale <span class="notranslate">server</span> (memorizzato in &quot;global.ServerName&quot;), quindi lo scrive in un <span class="notranslate">buffer</span> binario con l'id &quot;broadcast_buffer&quot;. Questi dati vengono quindi trasmessi localmente a un intervallo di IP (l'IP del dispositivo è attualmente implicito come intervallo di base del broadcast) alla porta 6511.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Networking.htm">Networking</a></div>
-        <div style="float:right">Next: <a href="network_send_packet.htm">network_send_packet</a></div>
+        <div style="float:left">Indietro: <a href="Networking.htm">Collegamento in rete</a></div>
+        <div style="float:right">Il prossimo: <a href="network_send_packet.htm"><span class="notranslate">network_send_packet</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 network_send_broadcast

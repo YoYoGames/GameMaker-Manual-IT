@@ -3,20 +3,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>The Sequence Object Struct</title>
+  <title>La struttura dell'oggetto sequenza</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining The Sequence Object Struct" />
-  <meta name="rh-index-keywords" content="Sequence Object Struct,seqplay_oneshot,seqplay_loop,seqplay_pingpong" />
+  <meta name="rh-index-keywords" content="Sequence Object Struct" />
   <meta name="search-keywords" content="The Sequence Object Struct,seqplay_oneshot,seqplay_loop,seqplay_pingpong,spritespeed_framespersecond,spritespeed_framespergameframe,name,loopmode,playbackSpeed,playbackSpeedType,length,volume,xorigin,yorigin,messageEventKeyframes,momentKeyframes,tracks" />
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Sequence Object Struct</h1>
-  <p>A <span data-keyref="Type_Struct_Sequence_Object"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Sequence_Object_Struct.htm" target="_blank">Sequence Object Struct</a></span> is the name given to the struct retrieved from a Sequence asset. All the data for a Sequence is stored in this struct at runtime, and is referenced by any elements of the Sequence that are created in a room. This means that if any variables in this struct (or inside any of its nested structs) are modified, the original Sequence will change (until the game is closed and re-opened) and any of its existing Sequence elements will be affected.</p>
-  <p>This <a href="../../../../GML_Overview/Structs.htm">struct</a> will have the following properties that can be changed:</p>
+  <h1>Sequenza <span class="notranslate">Object</span> Struttura</h1>
+  <p>A <span data-keyref="Type_Struct_Sequence_Object"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Sequence_Object_Struct.htm">Sequenza <span class="notranslate">Object</span> Struttura</a></span> è il nome dato al <span class="notranslate">struct</span> recuperato da un <span class="notranslate">Sequence</span> <span class="notranslate">asset</span>. Tutti i dati per un <span class="notranslate">Sequence</span> sono memorizzati in questo <span class="notranslate">struct</span> a <span class="notranslate">runtime</span>, e sono referenziati da qualsiasi elemento del <span class="notranslate">Sequence</span> che viene creato in un <span class="notranslate">room</span>. Questo significa che se qualsiasi variabile in questa struct (o all'interno di uno qualsiasi dei suoi annidati <span class="notranslate">structs</span>) viene modificata, il <span class="notranslate">Sequence</span> originale cambierà (fino a quando il gioco viene chiuso e riaperto) e qualsiasi dei suoi elementi <span class="notranslate">Sequence</span> esistenti sarà influenzato.</p>
+  <p>Questa <a href="../../../../GML_Overview/Structs.htm">struct</a> avrà le seguenti proprietà che possono essere modificate:</p>
   <table>
     <colgroup>
       <col />
@@ -25,72 +25,72 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="3"><span data-keyref="Type_Struct_Sequence_Object"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Sequence_Object_Struct.htm" target="_blank">Sequence Object Struct</a></span></th>
+        <th colspan="3"><span data-keyref="Type_Struct_Sequence_Object"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Sequence_Object_Struct.htm">Sequenza <span class="notranslate">Object</span> Struttura</a></span></th>
       </tr>
       <tr>
-        <th>Variable</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Variabile</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
         <td><span class="inline">name</span></td>
-        <td><span data-keyref="Type_String"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>This is the name of the sequence as a string and you can get or set this value as required. Note that sequences created using the function <a href="../sequence_create.htm"><span class="inline">sequence_create()</span></a> will not have a name and this will simply be an empty string &quot;&quot;.</td>
+        <td><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Stringa</a></span></td>
+        <td>Questo è il nome del <span class="notranslate">sequence</span> come <span class="notranslate">string</span> e si può ottenere o impostare questo valore come richiesto. Si noti che <span class="notranslate">sequences</span> creato utilizzando la funzione <a href="../sequence_create.htm"><span class="inline">sequence_create()</span></a> non avrà un nome e questo sarà semplicemente un <span class="notranslate">string</span> vuoto &quot;&quot;.</td>
       </tr>
       <tr>
         <td><span class="inline">loopmode</span></td>
-        <td><span data-keyref="Type_Constant_Sequence_Play_Mode"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Sequence_Object_Struct.htm" target="_blank">Sequence Play Mode Constant</a></span></td>
-        <td>This is the playback mode of the sequence object and can be get or set. This can be any one of the constants shown in the table below this one.</td>
+        <td><span data-keyref="Type_Constant_Sequence_Play_Mode"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Sequence_Object_Struct.htm">Modalità di riproduzione della sequenza Costante</a></span></td>
+        <td>Questa è la modalità di riproduzione di <span class="notranslate">sequence</span> <span class="notranslate">object</span> e può essere ottenuta o impostata. Può essere una qualsiasi delle costanti mostrate nella tabella sotto questa.</td>
       </tr>
       <tr>
         <td><span class="inline">playbackSpeed</span></td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>This specifies the playback speed of the sequence, which is interpreted as either frames-per-second or frames-per-game-frame depending on the <span class="inline">playbackSpeedType</span> (see below). You can get or set this value.</td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
+        <td>Questo specifica la velocità di riproduzione di <span class="notranslate">sequence</span>, che è interpretata come frames-per-second o frames-per-game-frame a seconda di <span class="inline">playbackSpeedType</span> (vedi sotto). È possibile ottenere o impostare questo valore.</td>
       </tr>
       <tr>
         <td><span class="inline">playbackSpeedType</span></td>
-        <td><span data-keyref="Type_Constant_Sprite_Speed"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Sprite_Information/sprite_get_speed_type.htm" target="_blank">Sprite Speed Constant</a></span></td>
-        <td>This specifies how the <span class="inline">playbackSpeed</span> should be interpreted and you can get or set this value.</td>
+        <td><span data-keyref="Type_Constant_Sprite_Speed"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Sprite_Information/sprite_get_speed_type.htm">Costante di velocità dello sprite</a></span></td>
+        <td>Questo specifica come il <span class="inline">playbackSpeed</span> dovrebbe essere interpretato e si può ottenere o impostare questo valore.</td>
       </tr>
       <tr>
         <td><span class="inline">length</span></td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The length of the sequence in frames. You can get or set this value, but note that making a sequence shorter may cause issues if a sequence instance referencing this sequence has its playhead set to past the new length.</td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
+        <td>La lunghezza del <span class="notranslate">sequence</span> in fotogrammi. Puoi ottenere o impostare questo valore, ma nota che rendere un <span class="notranslate">sequence</span> più corto può causare problemi se un'istanza di <span class="notranslate">sequence</span> che fa riferimento a questo <span class="notranslate">sequence</span> ha il suo playhead impostato oltre la nuova lunghezza.</td>
       </tr>
       <tr>
         <td><span class="inline">volume</span></td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>This is a scalar value from 0 to 1 that is used to scale the volume of all audio tracks in the sequence. You can get or set this value and it will modify the global audio output for all tracks - for example, if you have an audio track with a volume of 0.8 and then set the sequence volume property to 0.5, the audio track will have a final volume of 0.4.</td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
+        <td>Questo è un valore scalare da 0 a 1 che è usato per scalare il volume di tutte le tracce audio in <span class="notranslate">sequence</span>. Potete ottenere o impostare questo valore e modificherà l'uscita audio globale per tutte le tracce - per esempio, se avete una traccia audio con un volume di 0.8 e poi impostate la proprietà <span class="notranslate">sequence</span> volume a 0.5, la traccia audio avrà un volume finale di 0.4.</td>
       </tr>
       <tr>
         <td><span class="inline">xorigin</span></td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>This is the origin of the sequence along the X axis.</td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
+        <td>Questa è l'origine di <span class="notranslate">sequence</span> lungo l'asse X.</td>
       </tr>
       <tr>
         <td><span class="inline">yorigin</span></td>
-        <td><span data-keyref="Type_Real"><a href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>This is the origin of the sequence along the Y axis.</td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
+        <td>Questa è l'origine di <span class="notranslate">sequence</span> lungo l'asse Y.</td>
       </tr>
       <tr>
         <td><span class="inline">messageEventKeyframes</span></td>
-        <td><span data-keyref="Type_Array"><a href="../../../../../../GameMaker_Language/GML_Overview/Arrays.htm" target="_blank">Array</a></span> of <span data-keyref="Type_Struct_Sequence_Keyframe"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Keyframe_Struct.htm" target="_blank">Sequence Keyframe Struct</a></span>s</td>
-        <td>This allows access to the message event keyframes for the sequence. You can get or set these message events, and when getting this property an array of keyframe structs is returned, and for setting the property you should supply an array of keyframe structs. For more information, please see the page on <a href="../Sequence_Events_Moments_Broadcast.htm">Sequence Events and Moments</a>.</td>
+        <td><span data-keyref="Type_Array"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Arrays.htm">Array</a></span> di <span data-keyref="Type_Struct_Sequence_Keyframe"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Keyframe_Struct.htm">Sequenza <span class="notranslate">Keyframe</span> Struttura</a></span>s</td>
+        <td>Questo permette l'accesso all'evento messaggio <span class="notranslate">keyframes</span> per il <span class="notranslate">sequence</span>. Si possono ottenere o impostare questi eventi messaggio, e quando si ottiene questa proprietà viene restituito un array di <span class="notranslate">keyframe</span> <span class="notranslate">structs</span>, e per impostare la proprietà si dovrebbe fornire un array di <span class="notranslate">keyframe</span> <span class="notranslate">structs</span>. Per ulteriori informazioni, si prega di vedere la pagina su <a href="../Sequence_Events_Moments_Broadcast.htm">Sequence Events and Moments</a>.</td>
       </tr>
       <tr>
         <td><span class="inline">momentKeyframes</span></td>
-        <td><span data-keyref="Type_Array"><a href="../../../../../../GameMaker_Language/GML_Overview/Arrays.htm" target="_blank">Array</a></span> of <span data-keyref="Type_Struct_Sequence_Keyframe"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Keyframe_Struct.htm" target="_blank">Sequence Keyframe Struct</a></span>s</td>
-        <td>This allows access to the moment event keyframes for the sequence. You can get or set these moment events, and when getting this property an array of keyframe structs is returned, and for setting the property you should supply an array of keyframe structs. For more information, please see the page on <a href="../Sequence_Events_Moments_Broadcast.htm">Sequence Events and Moments</a>.</td>
+        <td><span data-keyref="Type_Array"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Arrays.htm">Array</a></span> di <span data-keyref="Type_Struct_Sequence_Keyframe"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Keyframe_Struct.htm">Sequenza <span class="notranslate">Keyframe</span> Struttura</a></span>s</td>
+        <td>Questo permette l'accesso all'evento momento <span class="notranslate">keyframes</span> per il <span class="notranslate">sequence</span>. È possibile ottenere o impostare questi eventi momento, e quando si ottiene questa proprietà viene restituito un array di <span class="notranslate">keyframe</span> <span class="notranslate">structs</span>, e per impostare la proprietà si dovrebbe fornire un array di <span class="notranslate">keyframe</span> <span class="notranslate">structs</span>. Per ulteriori informazioni, si prega di vedere la pagina su <a href="../Sequence_Events_Moments_Broadcast.htm">Sequence Events and Moments</a>.</td>
       </tr>
       <tr>
         <td><span class="inline">tracks</span></td>
-        <td><span data-keyref="Type_Array"><a href="../../../../../../GameMaker_Language/GML_Overview/Arrays.htm" target="_blank">Array</a></span> of <span data-keyref="Type_Struct_Sequence_Track"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Track_Struct.htm" target="_blank">Sequence Track Struct</a></span>s</td>
-        <td>This allows access to the list of <b>asset tracks</b> on the top level of the sequence. You can get or set this property, and when getting this property an array of track structs is returned, and for setting the property you should supply an array of track structs. For more information, please see the section on <a href="The_Track_Struct.htm"><b>Track Structs</b></a>.</td>
+        <td><span data-keyref="Type_Array"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Overview/Arrays.htm">Array</a></span> di <span data-keyref="Type_Struct_Sequence_Track"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Track_Struct.htm">Sequenza traccia struttura</a></span>s</td>
+        <td>Questo permette di accedere all'elenco delle <b>tracce delle risorse</b> nel livello superiore di <span class="notranslate">sequence</span>. È possibile ottenere o impostare questa proprietà, e quando si ottiene questa proprietà viene restituito un array di tracce <span class="notranslate">structs</span>, e per impostare la proprietà si dovrebbe fornire un array di tracce <span class="notranslate">structs</span>. Per maggiori informazioni, si veda la sezione <a href="The_Track_Struct.htm"><b>Strutture di traccia</b></a>.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p><span class="inline">loopMode</span> can be any one of the following constants:</p>
+  <p> </p>
+  <p><span class="inline">loopMode</span> può essere una qualsiasi delle seguenti costanti:</p>
   <table>
     <colgroup>
       <col />
@@ -99,48 +99,48 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="3"><span data-keyref="Type_Constant_Sequence_Play_Mode"><a href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Sequence_Object_Struct.htm" target="_blank">Sequence Play Mode Constant</a></span></th>
+        <th colspan="3"><span data-keyref="Type_Constant_Sequence_Play_Mode"><a data-rhwidget="HyperlinkPopover" href="../../../../../../GameMaker_Language/GML_Reference/Asset_Management/Sequences/Sequence_Structs/The_Sequence_Object_Struct.htm">Modalità di riproduzione della sequenza Costante</a></span></th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
-        <th>Value</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
+        <th>Valore</th>
       </tr>
       <tr>
-        <td><span class="inline">seqplay_oneshot</span></td>
-        <td>The sequence will play once then stop when finished.</td>
-        <td>0</td>
+        <td><span class="notranslate"><span class="inline">seqplay_oneshot</span></td>
+        <td>Il sito <span class="notranslate">sequence</span> suonerà una volta e si fermerà quando avrà finito.</td>
+        <td><span class="notranslate">0</span></td>
       </tr>
       <tr>
-        <td><span class="inline">seqplay_loop</span></td>
-        <td>The sequence will loop, with the playhead going back to the start when it reaches the end of the playback region.</td>
-        <td>1</td>
+        <td><span class="notranslate"><span class="inline">seqplay_loop</span></td>
+        <td>Il sito <span class="notranslate">sequence</span> sarà <span class="notranslate">loop</span>, con la testina che torna all'inizio quando raggiunge la fine della regione di riproduzione.</td>
+        <td><span class="notranslate">1</span></td>
       </tr>
       <tr>
-        <td><span class="inline">seqplay_pingpong</span></td>
-        <td>The sequence will loop, with the playhead reversing direction when it reaches the end of the playback region.</td>
-        <td>2</td>
+        <td><span class="notranslate"><span class="inline">seqplay_pingpong</span></td>
+        <td>Il sito <span class="notranslate">sequence</span> sarà <span class="notranslate">loop</span>, con la testina che inverte la direzione quando raggiunge la fine della regione di riproduzione.</td>
+        <td><span class="notranslate">2</span></td>
       </tr>
     </tbody>
   </table>
   <p><br />
-     </p>
-  <h2>Remarks</h2>
-  <p>Note that if you want to access the properties of a sequence that has been created in the asset browser, you must first call the function <a href="../sequence_get.htm"><span class="inline">sequence_get()</span></a> on the asset index to retrieve the sequence object struct. Also note that any changes made to this sequence struct will mean that all further instances of this sequence asset will also have these changes, and they will be maintained as long as the game is running, even if you call the <span class="inline">game_restart()</span> function.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+     </p>
+  <h2>Osservazioni</h2>
+  <p>Notate che se volete accedere alle proprietà di un <span class="notranslate">sequence</span> che è stato creato nel browser <span class="notranslate">asset</span>, dovete prima chiamare la funzione <a href="../sequence_get.htm"><span class="inline">sequence_get()</span></a> sull'indice <span class="notranslate">asset</span> per recuperare il <span class="notranslate">sequence</span> <span class="notranslate">object</span> <span class="notranslate">struct</span> . Notate anche che qualsiasi modifica apportata a questo <span class="notranslate">sequence</span> <span class="notranslate">struct</span> significherà che tutte le ulteriori istanze di questo <span class="notranslate">sequence</span> <span class="notranslate">asset</span> avranno anche queste modifiche, e saranno mantenute finché il gioco è in esecuzione, anche se si chiama la funzione <span class="inline">game_restart()</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Sequences.htm">Sequences</a></div>
-        <div style="float:right">Next: <a href="The_Sequence_Instance_Struct.htm">The Sequence Instance Struct</a></div>
+        <div style="float:left">Indietro: <a href="../Sequences.htm">Sequenze</a></div>
+        <div style="float:right">Prossimo: <a href="The_Sequence_Instance_Struct.htm">La struttura dell'istanza della sequenza</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
-The Sequence Object Struct
+The Sequence <span class="notranslate">Object</span> Struct
 seqplay_oneshot
 seqplay_loop
 seqplay_pingpong

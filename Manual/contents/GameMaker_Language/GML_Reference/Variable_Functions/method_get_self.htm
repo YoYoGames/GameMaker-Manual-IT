@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>method_get_self</title>
+  <title>metodo_get_self</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function method_get_self" />
   <meta name="rh-index-keywords" content="method_get_self" />
@@ -15,42 +15,42 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>method_get_self</h1>
-  <p>With this function you can retrieve the instance ID or struct reference which is the <a href="../../GML_Overview/Instance_Keywords.htm"><span class="inline">self</span></a> context used when the method is called. If the variable is <i>not</i> a method then the function will return <span class="inline">undefined</span>. Please note that the function may also return the constant <span class="inline">pointer_null</span>, in which case the current self is being used at the time of the call.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>metodo_get_self</h1>
+  <p>Con questa funzione potete recuperare l'ID dell'istanza o il riferimento <span class="notranslate">struct</span> che è il <a href="../../GML_Overview/Instance_Keywords.htm"><span class="inline">self</span></a> contesto usato quando il metodo viene chiamato. Se la variabile <i>non</i> è un metodo, allora la funzione restituirà <span class="inline">undefined</span>. Notate che la funzione può anche restituire la costante <span class="inline">pointer_null</span>, nel qual caso viene utilizzato il sé corrente al momento della chiamata.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">method_get_self(method);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>method</td><td><span data-keyref="Type_Method"></span></td>
-        <td>The method variable to check.</td>
+        <td><span class="notranslate">method</span></td><td><span data-keyref="Type_Method"></span></td>
+        <td><span class="notranslate">The method variable to check.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_ID_Instance">Instance ID</span>, <span data-keyref="Type_Struct">Struct</span>, <span data-keyref="Type_Undefined">undefined</span>, or <span data-keyref="Type_Pointer_Null">pointer_null</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var _self = method_get_self(light_properties);<br />
     show_debug_message(string(_self));</p>
-  <p>The above code gets the self context for the given method variable and outputs it to the console.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra ottiene il self context per la variabile del metodo dato e lo invia alla console.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Variable_Functions.htm">Variable Functions</a></div>
-        <div style="float:right">Next: <a href="method_get_index.htm">method_get_index</a></div>
+        <div style="float:left">Indietro: <a href="Variable_Functions.htm">Funzioni variabili</a></div>
+        <div style="float:right">Il prossimo: <a href="method_get_index.htm"><span class="notranslate">method_get_index</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 method_get_self

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Write Buffer</title>
+  <title>Buffer di scrittura</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Write Buffer action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Write Buffer" />
@@ -14,46 +14,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Write Buffer Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Write_Buffer.png" width="32" /> Write Buffer</h1>
-  <p>This action can be used to write data to a buffer. You supply the unique buffer ID to write to (as returned by the action <a href="Create_Buffer.htm">Create Buffer</a>) and then the value to write, which can be either a real or a string, but note that
-    <b>all values are stored as strings</b> so when you read from the buffer (using <a href="Read_Buffer.htm">Read Buffer</a>) you may need to use one of the <a href="../Data_Types/Data_Type_Actions.htm">Data Type Actions</a> to convert it from a string
-    back to the original value. Keep in mind too that buffers are read and written to <i>sequentially</i> and so writing to a buffer will move the &quot;seek&quot; position along one, meaning that to write various pieces of data you simply call this action
-    the number of times required.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Write Buffer Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/a_Buffers_Write_Buffer.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Buffer di scrittura</h1>
+  <p>Questa azione può essere usata per scrivere dati su un <span class="notranslate">buffer</span>. Si fornisce l'ID unico di <span class="notranslate">buffer</span> su cui scrivere (come restituito dall'azione <a href="Create_Buffer.htm">Create Buffer</a>) e poi il valore da scrivere, che può essere un reale o un <span class="notranslate">string</span>, ma si noti che
+   <b>tutti i valori sono memorizzati come stringhe</b>, quindi quando si legge da <span class="notranslate">buffer</span> (usando <a href="Read_Buffer.htm">Read Buffer</a>) potrebbe essere necessario utilizzare una delle <a href="../Data_Types/Data_Type_Actions.htm">azioni Data Type</a> per convertirlo da una stringa
+    al valore originale. Tenete anche a mente che <span class="notranslate">buffers</span> sono letti e scritti in <i>modo sequenziale</i> e quindi scrivere su un <span class="notranslate">buffer</span> sposterà la posizione di &quot;ricerca&quot; lungo una, il che significa che per scrivere vari pezzi di dati dovete semplicemente chiamare questa azione
+    il numero di volte richiesto.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="Write Buffer Icon" class="icon" height="32" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Write_Buffer.png" width="32" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>Buffer</td>
-        <td>The buffer index (stored in a variable)</td>
+        <td><span class="notranslate">Buffer</span></td>
+        <td>L'indice <span class="notranslate">buffer</span> (memorizzato in una variabile)</td>
       </tr>
       <tr>
-        <td>Value</td>
-        <td>The value to add into the buffer</td>
+        <td><span class="notranslate">Value</span></td>
+        <td>Il valore da aggiungere nel buffer</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Write Buffer Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/e_Buffers_Create_Buffer.png" />The above action block code creates a global variable and then a buffer, assigning the unique
-    buffer ID to the variable. This buffer than has two pieces of data written to it.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione di cui sopra crea una variabile globale e poi un <span class="notranslate">buffer</span>, assegnando l'unico
+    <span class="notranslate">buffer</span> ID alla variabile. Questo <span class="notranslate">buffer</span> ha poi due dati scritti in esso.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Buffer_Actions.htm">Buffer Actions</a></div>
-        <div style="float:right">Next: <a href="Get_Buffer_Size.htm">Seek Buffer</a></div>
+        <div style="float:left">Indietro: <a href="Buffer_Actions.htm">Azioni del buffer</a></div>
+        <div style="float:right">Il prossimo: <a href="Get_Buffer_Size.htm">Cercare il buffer</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Write Buffer

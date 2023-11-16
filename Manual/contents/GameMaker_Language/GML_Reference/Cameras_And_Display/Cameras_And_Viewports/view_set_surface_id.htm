@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>view_set_surface_id</title>
+  <title>imposta_superficie_id</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for view_set_surface_id" />
   <meta name="rh-index-keywords" content="view_set_surface_id" />
@@ -14,55 +14,55 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>view_set_surface_id</h1>
-  <p>With this variable you can set the contents of a view port to draw to a surface. When working with surfaces, it is often required to capture the <i>whole</i> visible region of the screen to the surface, and so you would assign it to a view port using this function. This means that everything that is shown in the chosen view port will now be drawn to the assigned surface and the contents of that view port will no longer be displayed, meaning that you will need to either:</p>
+  <h1>imposta_superficie_id</h1>
+  <p>Con questa variabile potete impostare il contenuto di una porta di vista da disegnare su una superficie. Quando si lavora con le superfici, è spesso richiesto di catturare l'<i>intera</i> regione visibile dello schermo alla superficie, e quindi la si assegnerebbe a una view port usando questa funzione. Questo significa che tutto ciò che viene mostrato nella porta di vista scelta sarà ora disegnato sulla superficie assegnata e il contenuto di quella porta di vista non sarà più visualizzato, il che significa che dovrete o:</p>
   <ul class="colour">
-    <li>Enable a new view and draw the surface only in that view (using <a href="view_current.htm"><span class="inline">view_current</span></a> to check which view is being drawn)</li>
-    <li>Draw the surface in the Draw GUI or Post Draw event of an instance, since these events are independent of views.</li>
+    <li>Abilitare una nuova vista e disegnare la superficie solo in quella vista (usando <a href="view_current.htm"><span class="inline">view_current</span></a> per controllare quale vista viene disegnata)</li>
+    <li>Disegna la superficie nell'evento Draw GUI o Post Draw di un'istanza, poiché questi eventi sono indipendenti dalle viste.</li>
   </ul>
-  <p>When using this function you give the view port index (from 0 to 7) and a surface index (either the <a href="../../Drawing/Surfaces/application_surface.htm"><span class="inline">application_surface</span></a> or the unique index value returned by the function <a href="../../Drawing/Surfaces/surface_create.htm"><span class="inline">surface_create()</span></a>) or, if a surface has previously been assigned and you want to remove it, a value of -1. For more examples on setting the view port to a surface see the variable <a href="view_surface_id.htm"><span class="inline">view_surface_id</span></a>.</p>
+  <p>Quando si usa questa funzione si dà l'indice della porta della vista (da 0 a 7) e un indice di superficie (o il <a href="../../Drawing/Surfaces/application_surface.htm"><span class="inline">application_surface</span></a> o il valore di indice unico restituito dalla funzione <a href="../../Drawing/Surfaces/surface_create.htm"><span class="inline">surface_create()</span></a>) o, se una superficie è stata precedentemente assegnata e si desidera rimuoverla, un valore di -1. Per ulteriori esempi sull'impostazione della porta della vista su una superficie, vedere la variabile <a href="view_surface_id.htm"><span class="inline">view_surface_id</span></a>.</p>
   <div data-conref="../../../../assets/snippets/Recursive_Surface_Draw_Error.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">view_set_surface_id(view_port, surf)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>view_port</td>
+        <td><span class="notranslate">view_port</span></td>
         <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The view port to target (0 - 7)</td>
+        <td><span class="notranslate">The view port to target (0 - 7)</span></td>
       </tr>
       <tr>
-        <td>surf</td>
-        <td><span data-keyref="Type_ID_Surface">Surface ID</span></td>
-        <td>The surface to apply to the view</td>
+        <td><span class="notranslate">surf</span></td>
+        <td><span data-keyref="Type_ID_Surface">ID superficie</span></td>
+        <td><span class="notranslate">The surface to apply to the view</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Real">Real</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if view_get_surface_id(0) == -1<br />
     {<br />
         view_set_surface_id(0, global.vSurf);<br />
     }</p>
-  <p>The above code will check to see if a surface has been assigned to the view port[0] and if it has not then one is assigned.</p>
-  <p> </p>
+  <p>Il codice di cui sopra controllerà per vedere se una superficie è stata assegnata alla porta della vista[0] e se non lo è, allora ne viene assegnata una.</p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Cameras_And_View_Ports.htm">Cameras And View Ports</a></div>
-        <div style="float:right">Next: <a href="camera_create.htm">camera_create</a></div>
+        <div style="float:left">Indietro: <a href="Cameras_And_View_Ports.htm">Telecamere e porte di visualizzazione</a></div>
+        <div style="float:right">Il prossimo: <a href="camera_create.htm"><span class="notranslate">camera_create</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 view_set_surface_id

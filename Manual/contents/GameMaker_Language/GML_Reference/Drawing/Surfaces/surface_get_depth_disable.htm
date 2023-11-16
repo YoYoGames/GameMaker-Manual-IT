@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>surface_get_depth_disable</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>superficie_get_depth_disable</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for surface_get_depth_disable" />
   <meta name="rh-index-keywords" content="surface_get_depth_disable" />
@@ -15,36 +15,36 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">surface_get_depth_disable</span></h1>
-  <p>This function checks to see if the automatic depth buffer generation for surfaces is enabled.</p>
-  <p>Normally all surfaces have depth buffers so if you draw 3D objects to them then it&#39;ll sort them properly by depth, however allocating depth buffers essentially doubles the size of surfaces, which could be an excessive and unnecessary overhead especially if your game is very memory intensive or predominantly 2D. In these cases you can check this using this function and disable the depth buffer for surfaces if required using the function <span class="inline3_func"><a data-xref="{title}" href="surface_depth_disable.htm">surface_depth_disable</a></span>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">surface_get_depth_disable</span>();</p>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Bool"><a href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <h1>superficie_get_depth_disable</h1>
+  <p>Questa funzione controlla se la generazione automatica della profondità <span class="notranslate">buffer</span> per le superfici è abilitata. Normalmente tutte le superfici hanno profondità <span class="notranslate">buffers</span> così se disegnate 3D <span class="notranslate">objects</span> su di esse allora le ordinerà correttamente in base alla profondità, tuttavia allocare la profondità <span class="notranslate">buffers</span> essenzialmente raddoppia la dimensione delle superfici, il che potrebbe essere un overhead eccessivo e non necessario specialmente se il vostro gioco è molto intensivo di memoria o prevalentemente 2D. In questi casi potete controllare la cosa usando questa funzione e disabilitare la profondità <span class="notranslate">buffer</span> per le superfici se necessario usando la funzione <a href="surface_depth_disable.htm"><span class="inline">surface_depth_disable()</span></a>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
+  <p class="code">surface_get_depth_disable();</p>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Bool"></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (!surface_exists(surf))<br />
     {<br />
-        if <span data-field="title" data-format="default">surface_get_depth_disable</span>() == false<br />
+        if surface_get_depth_disable() == false<br />
         {<br />
             surface_depth_disable(true);<br />
         }<br />
         surf = surface_create(room_width, room_height);<br />
     }</p>
-  <p>The above code will check to see if the given surface exists, and if it does not, then it checks the current state of the surface depth buffer and if it is enabled, it will disable it instead, before finally creating the surface.</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controllerà per vedere se la superficie data esiste, e se non esiste, allora controlla lo stato attuale della profondità della superficie <span class="notranslate">buffer</span> e se è abilitata, la disabiliterà invece, prima di creare finalmente la superficie.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Surfaces.htm">Surfaces</a></div>
-        <div style="float:right">Next: <a href="surface_getpixel.htm">surface_getpixel</a></div>
+        <div style="float:left">Indietro: <a href="Surfaces.htm">Superfici</a></div>
+        <div style="float:right">Il prossimo: <a href="surface_getpixel.htm"><span class="notranslate">surface_getpixel</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 surface_get_depth_disable

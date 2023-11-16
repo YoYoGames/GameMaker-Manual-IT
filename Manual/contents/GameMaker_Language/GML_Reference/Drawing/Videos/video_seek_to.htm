@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="generator" content="Adobe RoboHelp 2020" />
-  <title>video_seek_to</title>
+  <title>cerca video a</title>
   <meta name="topic-status" content="Draft" />
   <link rel="stylesheet" type="text/css" href="../../../../assets/css/default.css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="template" content="../../../../assets/masterpages/Manual_Keyword_Page.htt" />
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="topic-comment" content="Reference page for video_seek_to" />
@@ -16,31 +16,31 @@
   <meta name="condition-tags" content="" />
 </head>
 <body>
-  <h1>video_seek_to</h1>
-  <p>This function allows you to seek to the given position in the currently loaded video. You specify the <span class="inline2">time</span> value to seek to, which is in milliseconds.</p>
-  <p>This function works best when the video is paused, and the distance from the current position to the new seek position is not too small.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>cerca video a</h1>
+  <p>Questa funzione permette di cercare la posizione data nel video attualmente caricato. Si specifica il valore <span class="inline2">temporale</span> a cui cercare, che è in millisecondi.</p>
+  <p>Questa funzione funziona meglio quando il video è in pausa e la distanza dalla posizione corrente alla nuova posizione di ricerca non è troppo piccola.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">video_seek_to(time);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>time</td>
+        <td><span class="notranslate">time</span></td>
         <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
-        <td>The time to seek to (in milliseconds).</td>
+        <td><span class="notranslate">The time to seek to (in milliseconds).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (keyboard_check_pressed(vk_right))<br />
     {<br />
         var _video_position = video_get_position();<br />
@@ -56,18 +56,18 @@
         }<br />
     }
   </p>
-  <p>The above code moves the playing video 2 seconds ahead, when the right arrow key is pressed, and the new position is smaller than the video&#39;s duration. However if it&#39;s not within the duration, the video is closed.</p>
-  <p>In this example, <span class="inline">video_seek_to()</span> is used to seek the video to the new position.</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra sposta il video in riproduzione 2 secondi avanti, quando viene premuto il tasto freccia destra, e la nuova posizione è più piccola della durata del video. Tuttavia, se non è all'interno della durata, il video viene chiuso.</p>
+  <p>In questo esempio, <span class="inline">video_seek_to()</span> è usato per cercare il video nella nuova posizione.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="Videos.htm">Videos</a></div>
-        <div>Next: <a data-xref="{title}" href="video_is_looping.htm">video_is_looping</a></div>
+        <div>Indietro: <a data-xref="{title}" href="Videos.htm">Video</a></div>
+        <div>Dopo: <a data-xref="{title}" href="video_is_looping.htm">video_is_looping</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 video_seek_to

@@ -15,56 +15,56 @@
 </head>
 <body>
   <h1>fx_set_single_layer</h1>
-  <p>This function is used to enable or disable &quot;Single Layer&quot; mode for a filter/effect. By default, a filter/effect is applied to the layer that it is <a href="layer_set_fx.htm">assigned to</a> and all layers below that layer, however you can enable Single Layer mode on an FX struct to make sure that it&#39;s only applied to the layer that it is assigned to.</p>
-  <p>You specify an FX struct (as returned from <span class="inline"><a href="fx_create.htm">fx_create()</a></span> or <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>) and a <a class="glossterm" data-glossterm="boolean" href="#">boolean</a> value to enable (<span class="inline">true</span>) or disable (<span class="inline">false</span>) Single Layer mode.</p>
-  <p>The following visual shows a filter being used with Single Layer mode disabled (which is the default behaviour for all FX layers) and the same filter with Single Layer mode enabled:</p>
+  <p>Questa funzione è usata per abilitare o disabilitare la modalità &quot;Single Layer&quot; per un filtro/effetto. Per impostazione predefinita, un filtro/effetto viene applicato al livello <a href="layer_set_fx.htm">a cui</a> è <a href="layer_set_fx.htm">assegnato</a> e a tutti i livelli sotto quel livello, tuttavia è possibile abilitare la modalità Single Layer su un FX <span class="notranslate">struct</span> per assicurarsi che venga applicato solo al livello a cui è assegnato.</p>
+  <p>Si specifica un FX <span class="notranslate">struct</span> (come restituito da <span class="inline"><a href="fx_create.htm">fx_create()</a></span> o <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>) e un valore <a class="glossterm" data-glossterm="booleano" href="#">booleano</a> per abilitare (<span class="inline">true</span>) o disabilitare (<span class="inline">false</span>) la modalità Single Layer.</p>
+  <p>La seguente immagine mostra un filtro usato con la modalità Single Layer disabilitata (che è il comportamento predefinito per tutti i livelli FX) e lo stesso filtro con la modalità Single Layer abilitata:</p>
   <div class="image_columns">
     <figure><img alt="Fire Jump man is woozy with the universe" class="center_shadow" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Rooms/FX_single_layer_off.png" title="Fire Jump man is woozy with the universe" />
-      <figcaption>Single Layer Mode OFF</figcaption>
+      <figcaption>Modalità a strato singolo OFF</figcaption>
     </figure>
     <figure><img alt="Fire Jump man is woozy... alone" class="center_shadow" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Rooms/FX_single_layer_on.png" style="cursor: nesw-resize;" title="Fire Jump man is woozy... alone" />
-      <figcaption>Single Layer Mode ON</figcaption>
+      <figcaption>Modalità a strato singolo ON</figcaption>
     </figure>
   </div>
-  <p class="note"><span class="note">NOTE</span> When you enable Single Layer mode for an FX, make sure that you apply it to a layer that is not an <a href="../../../../../The_Asset_Editors/Room_Properties/Filters_and_Effects.htm">FX layer</a>, because an FX layer by itself contains nothing and so no filter/effect will be visible.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p class="note"><span class="note">NOTA</span> Quando abiliti la modalità Single Layer per un FX, assicurati di applicarla a un livello che non sia un <a href="../../../../../The_Asset_Editors/Room_Properties/Filters_and_Effects.htm">livello FX</a>, perché un livello FX da solo non contiene nulla e quindi nessun filtro/effetto sarà visibile.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">fx_set_single_layer(filter_or_effect, enable);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>filter_or_effect</td><td><span data-keyref="Type_Struct_FX"></span></td>
-        <td>The FX struct to modify</td>
+        <td><span class="notranslate">filter_or_effect</span></td><td><span data-keyref="Type_Struct_FX"></span></td>
+        <td><span class="notranslate">The FX struct to modify</span></td>
      </tr>
       <tr>
-        <td>enable</td><td><span data-keyref="Type_Bool"></span></td>
-        <td>A <a class="glossterm" data-glossterm="boolean" href="#">boolean</a> value to enable (<span class="inline">true</span>) or disable (<span class="inline">false</span>) Single Layer Mode</td>
+        <td><span class="notranslate">enable</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">A <a class="glossterm" data-glossterm="booleano" href="#">boolean</a> value to enable (<span class="inline">true</span>) o disabilitare (<span class="inline">false</span>) la modalità a strato singolo</td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">shake_fx = fx_create(&quot;_filter_screenshake&quot;);<br />
     fx_set_single_layer(shake_fx, true);<br />
     layer_set_fx(&quot;ShakeyThings&quot;, shake_fx);</p>
-  <p>The above code creates a new screenshake FX, enables Single Layer mode on it and then applies it to a room layer. This means that the screenshake filter will only be applied to the <span class="inline2">&quot;ShakeyThings&quot;</span> layer.</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra crea un nuovo FX screenshake, abilita la modalità Single Layer su di esso e poi lo applica ad un livello <span class="notranslate">room</span>. Questo significa che il filtro screenshake sarà applicato solo al livello <span class="inline2">&quot;ShakeyThings&quot;</span>.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div>Back: <a data-xref="{title}" href="Filter_Effect_Functions.htm">Filter and Effect Functions</a></div>
-        <div>Next: <a data-xref="{title}" href="layer_set_fx.htm">layer_set_fx</a></div>
+        <div>Indietro: <a data-xref="{title}" href="Filter_Effect_Functions.htm">Funzioni di filtro e di effetto</a></div>
+        <div>Dopo: <a data-xref="{title}" href="layer_set_fx.htm">layer_set_fx</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 fx_set_single_layer

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>part_type_blend</title>
+  <title>tipo_parte_miscela</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for part_type_blend" />
   <meta name="rh-index-keywords" content="part_type_blend" />
@@ -14,48 +14,48 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>part_type_blend</h1>
-  <p>With this function you can make your particles be drawn with an additive blend mode (<span class="inline">true</span>) or not (<span class="inline">false</span>). Additive blending is a special blend mode that adds the luminosity values of each particle as they overlap, so that light colours will gradually get brighter (until they appear white) as they overlap, and dark colours become more and more transparent with black being almost invisible. This function can give some beautiful particle effects but may not always be necessary. For example, a smoke trail would have additive blending off to keep the effect gray, but a flame effect would probably have it on to make the particles more translucent and brighter.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>tipo_parte_miscela</h1>
+  <p>Con questa funzione puoi fare in modo che le tue particelle siano disegnate con una modalità di fusione additiva (<span class="inline">true</span>) o no (<span class="inline">false</span>). La fusione additiva è una speciale modalità di fusione che aggiunge i valori di luminosità di ogni particella man mano che si sovrappongono, in modo che i colori chiari diventino gradualmente più luminosi (fino a sembrare bianchi) man mano che si sovrappongono, e i colori scuri diventino sempre più trasparenti con il nero quasi invisibile. Questa funzione può dare dei bellissimi effetti di particelle, ma potrebbe non essere sempre necessaria. Per esempio, una scia di fumo avrebbe l'additive blending disattivato per mantenere l'effetto grigio, ma un effetto fiamma lo avrebbe probabilmente attivato per rendere le particelle più traslucide e più luminose.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">part_type_blend(ind, additive);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>ind</td>
-        <td><span data-keyref="Type_ID_PartType">Particle Type ID</span></td>
-        <td>The index of the particle type to change.</td>
+        <td><span class="notranslate">ind</span></td>
+        <td><span data-keyref="Type_ID_PartType">Tipo di particella ID</span></td>
+        <td><span class="notranslate">The index of the particle type to change.</span></td>
       </tr>
       <tr>
-        <td>additive</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td>Whether the particles should be blended additively (true) or normally (false).</td>
+        <td><span class="notranslate">additive</span></td>
+        <td><span data-keyref="Type_Bool">Booleano</span></td>
+        <td><span class="notranslate">Whether the particles should be blended additively (true) or normally (false).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">part_type_blend(part_Fire, true);</p>
-  <p>The above code will set all particles created of the particle type indexed in the variable &quot;part_Fire&quot; to have an additive blend mode.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra imposterà tutte le particelle create del tipo di particella indicizzata nella variabile &quot;part_Fire&quot; per avere una modalità di fusione additiva.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Particle_Types.htm">Particle Types</a></div>
-        <div style="float:right">Next: <a href="part_type_life.htm">part_type_life</a></div>
+        <div style="float:left">Indietro: <a href="Particle_Types.htm">Tipi di particelle</a></div>
+        <div style="float:right">Il prossimo: <a href="part_type_life.htm"><span class="notranslate">part_type_life</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 part_type_blend

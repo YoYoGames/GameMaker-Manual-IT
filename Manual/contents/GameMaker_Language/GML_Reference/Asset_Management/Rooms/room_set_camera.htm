@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>room_set_camera</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>camera_set_camera</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function room_set_camera" />
   <meta name="rh-index-keywords" content="room_set_camera" />
@@ -14,54 +14,54 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">room_set_camera</span></h1>
-  <p>This function assigns a camera to a specific viewport in a room other than the current one.</p>
-  <p>You supply the room index, the view index (from 0 to 7) and then the index of the camera to use.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">room_set_camera</span>(rm, vind, camera);</p>
+  <h1>camera_set_camera</h1>
+  <p>Con questa funzione è possibile assegnare una telecamera a una specifica viewport in un <span class="notranslate">room</span> diverso da quello corrente. Si fornisce l'indice <span class="notranslate">room</span>, l'indice della vista (da 0 a 7) e poi l'indice della telecamera da utilizzare.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
+  <p class="code">room_set_camera(rm, vind, camera);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>rm</td>
-        <td><span data-keyref="Type_Asset_Room"><a href="../../../../The_Asset_Editors/Rooms.htm" target="_blank">Room Asset</a></span></td>
-        <td>The room to set the view camera of</td>
+        <td><span class="notranslate">rm</span></td>
+        <td><span data-keyref="Type_Asset_Room">Camera Asset</span></td>
+        <td><span class="notranslate">The index of the room to set the view camera of</span></td>
       </tr>
       <tr>
-        <td>vind</td>
-        <td><span data-keyref="Type_Real"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The index of the view port to assign the camera to</td>
+        <td><span class="notranslate">vind</span></td>
+        <td><span data-keyref="Type_Real">Real</span></td>
+        <td><span class="notranslate">The index of the view port to assign the camera to</span></td>
       </tr>
       <tr>
-        <td>camera</td>
-        <td><span data-keyref="Type_ID_Camera"><a href="../../Cameras_And_Display/Cameras_And_Viewports/camera_create.htm" target="_blank">Camera ID</a></span></td>
-        <td>The index of the camera to assign</td>
+        <td><span class="notranslate">camera</span></td>
+        <td><span data-keyref="Type_ID_Camera">ID della macchina fotografica</span></td>
+        <td><span class="notranslate">The index of the camera to assign</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">global.myroom = room_add();<br />
     room_set_camera(global.myroom, 0, global.MainCam);</p>
-  <p>The above code assigns a camera in a newly created room to view port [0].</p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra assegna una telecamera in un <span class="notranslate">room</span> appena creato alla porta di visualizzazione [0].</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Rooms.htm">Rooms</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="room_get_camera.htm">room_get_camera</a></div>
+        <div style="float:left">Indietro: <a href="Rooms.htm">Camere</a></div>
+        <div style="float:right">Il prossimo: <a href="room_get_camera.htm"><span class="notranslate">room_get_camera</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 room_set_camera

@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>physics_fixture_set_kinematic</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for physics_fixture_set_kinematic" />
   <meta name="rh-index-keywords" content="physics_fixture_set_kinematic" />
@@ -15,42 +15,44 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>physics_fixture_set_kinematic</h1>
-  <p>There will be certain instances in a physics based game which you want to move around but do not wish to be acted on by forces such as gravity, nor forces incurred by collisions with dynamic objects (think of moving platforms in a platform game, for example). For such objects simply setting the density of a fixture to 0 will mean that the physics will assume that the object is intended to be static. However, should you set the <span class="inline2"><a data-xref="{title}" href="../Physics_Variables/phy_speed_x.htm">phy_speed_x</a></span>, <span class="inline2"><a data-xref="{title}" href="../Physics_Variables/phy_speed_y.htm">phy_speed_y</a></span> or <span class="inline2"><a data-xref="{title}" href="../Physics_Variables/phy_angular_velocity.htm">phy_angular_velocity</a></span> variables for an instance that has had such a fixture bound to it, it will be converted into a kinematic object and begin movement. Change the instance from static to kinematic mid-simulation can be expensive in terms of processing (depending on the state of the instances in the physics world) and therefore it is recommended to set the fixture to be kinematic using this function prior to binding it to an instance, so that it will be unaffected by collisions and forces (such as gravity) but may move with constant linear and/or angular velocity.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Ci saranno alcuni casi in un gioco basato sulla fisica in cui ci si vuole muovere, ma non si vuole essere influenzati da forze come la gravità, né da forze sostenute da collisioni con <span class="notranslate">objects</span> dinamiche (pensate alle piattaforme in movimento in un gioco di piattaforme, per
+    esempio). Per tali <span class="notranslate">objects</span> semplicemente impostando la densità di un dispositivo a 0, la fisica assumerà che il <span class="notranslate">object</span> sia inteso come statico. Tuttavia, se impostate la <a href="../Physics_Variables/phy_speed_x.htm"><span class="inline">phy_speed_x</span></a>,
+    <a href="../Physics_Variables/phy_speed_y.htm"><span class="inline">phy_speed_y</span></a> o <a href="../Physics_Variables/phy_angular_velocity.htm"><span class="inline">phy_angular_velocity</span></a> per un'istanza che ha avuto un tale dispositivo legato ad esso, sarà convertito
+    in un cinematico <span class="notranslate">object</span> e inizierà il movimento. Cambiare l'istanza da statica a cinematica a metà simulazione può essere costoso in termini di elaborazione (a seconda dello stato delle istanze nel mondo fisico) e quindi si raccomanda di impostare la
+    kinematic usando questa funzione prima di legarla ad un'istanza, in modo che non sia influenzata dalle collisioni e dalle forze (come la gravità) ma possa muoversi con velocità lineare e/o angolare costante.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">physics_fixture_set_kinematic(fixture)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
+     </tr>
       <tr>
-        <td>fixture</td>
-        <td><span data-keyref="Type_ID_PhyFixture"><a href="../../../../../GameMaker_Language/GML_Reference/Physics/Fixtures/physics_fixture_create.htm" target="_blank">Physics Fixture ID</a></span></td>
-        <td>the index of the fixture</td>
-      </tr>
+        <td><span class="notranslate">fixture</span></td><td><span data-keyref="Type_ID_PhyFixture"></span></td>
+        <td><span class="notranslate">the index of the fixture</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Void"></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">physics_fixture_set_kinematic(fix_Cloud);</p>
-  <p>The code above will indicate that the fixture indexed in &quot;fix_Cloud&quot; should be marked as kinematic.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra indicherà che l'apparecchio indicizzato in &quot;fix_Cloud&quot; dovrebbe essere segnato come cinematico.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Fixtures.htm">Fixtures</a></div>
-        <div style="float:right">Next: <a href="physics_fixture_set_awake.htm">physics_fixture_set_awake</a></div>
+        <div style="float:left">Indietro: <a href="Fixtures.htm">Infissi</a></div>
+        <div style="float:right">Il prossimo: <a href="physics_fixture_set_awake.htm"><span class="notranslate">physics_fixture_set_awake</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 physics_fixture_set_kinematic

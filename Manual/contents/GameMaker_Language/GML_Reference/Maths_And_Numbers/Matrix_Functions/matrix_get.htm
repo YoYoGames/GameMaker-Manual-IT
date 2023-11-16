@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>matrix_get</title>
+  <title>matrice_get</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for matrix_get" />
   <meta name="rh-index-keywords" content="matrix_get,matrix_view,matrix_projection,matrix_world" />
@@ -15,8 +15,8 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>matrix_get</h1>
-  <p>This function returns an <a href="../../../GML_Overview/Arrays.htm">array</a> of 16 values, corresponding to the given 4x4 matrix type, where row 1 is elements [0 - 3], row 2 is elements [4 -7], etc... (see the image on the <a href="Matrix_Functions.htm">main page</a>). The available matrices are <i>view</i>, <i>projection</i> and <i>world</i>, for which you would use one of the following constants:</p>
+  <h1>matrice_get</h1>
+  <p>Questa funzione restituisce un <a href="../../../GML_Overview/Arrays.htm">array</a> di 16 valori, corrispondenti al tipo di matrice 4x4 data, dove la riga 1 è costituita da elementi [0 - 3], la riga 2 da elementi [4 -7], ecc. (vedere l'immagine nella <a href="Matrix_Functions.htm">pagina principale</a>). Le matrici disponibili sono <i>view</i>, <i>projection</i> e <i>world</i>, per le quali usereste una delle seguenti costanti:</p>
   <table>
     <colgroup>
       <col />
@@ -24,61 +24,61 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="2"><span data-keyref="Type_Constant_Matrix_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Maths_And_Numbers/Matrix_Functions/matrix_get.htm">Matrix Type Constant</a></span></th>
+        <th colspan="2"><span data-keyref="Type_Constant_Matrix_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Maths_And_Numbers/Matrix_Functions/matrix_get.htm">Costante del tipo di matrice</a></span></th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td><span class="inline">matrix_view</span></td>
-        <td>The current view matrix</td>
+        <td><span class="notranslate"><span class="inline">matrix_view</span></td>
+        <td>La matrice della vista corrente</td>
       </tr>
       <tr>
-        <td><span class="inline">matrix_projection</span></td>
-        <td>The current projection matrix</td>
+        <td><span class="notranslate"><span class="inline">matrix_projection</span></td>
+        <td>La matrice di proiezione corrente</td>
       </tr>
       <tr>
-        <td><span class="inline">matrix_world</span></td>
-        <td>The current world matrix</td>
+        <td><span class="notranslate"><span class="inline">matrix_world</span></td>
+        <td>La matrice del mondo attuale</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">matrix_get(type);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>type</td>
-        <td><span data-keyref="Type_Constant_Matrix_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Maths_And_Numbers/Matrix_Functions/matrix_get.htm">Matrix Type Constant</a></span></td>
-        <td>The type of matrix to get (see the <i>constants</i> listed above)</td>
+        <td><span class="notranslate">type</span></td>
+        <td><span data-keyref="Type_Constant_Matrix_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Maths_And_Numbers/Matrix_Functions/matrix_get.htm">Costante del tipo di matrice</a></span></td>
+        <td><span class="notranslate">The type of matrix to get (see the <i>constants</i> listed above)</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Array_Matrix"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Maths_And_Numbers/Matrix_Functions/Matrix_Functions.htm">Matrix Array</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">v_array = matrix_get(matrix_view);</p>
-  <p>The above code will get the values of the current view matrix and populate the array &quot;v_array&quot; with them.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente otterrà i valori della matrice della vista corrente e popolerà l'array &quot;v_array&quot; con essi.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Matrix_Functions.htm">Matrix Functions</a></div>
-        <div style="float:right">Next: <a href="matrix_set.htm">matrix_set</a></div>
+        <div style="float:left">Indietro: <a href="Matrix_Functions.htm">Funzioni di matrice</a></div>
+        <div style="float:right">Il prossimo: <a href="matrix_set.htm"><span class="notranslate">matrix_set</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 matrix_get

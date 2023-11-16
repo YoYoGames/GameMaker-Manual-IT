@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>buffer_create</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>creare un buffer</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for buffer_create" />
   <meta name="rh-index-keywords" content="buffer_create,buffer_fixed,buffer_grow,buffer_wrap,buffer_fast,buffer_vbuffer" />
@@ -15,67 +15,100 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">buffer_create</span></h1>
-  <p>This function creates a new buffer and returns it.</p>
-  <p>The function allocates a portion of memory f<span>or the </span>buffer, which can then be used to store different types of data (specified when you write to the buffer using the <span class="inline3_func"><a data-xref="{title}" href="buffer_write.htm">buffer_write</a></span>, <span class="inline3_func"><a data-xref="{title}" href="buffer_poke.htm">buffer_poke</a></span> or <span class="inline3_func"><a data-xref="{title}" href="buffer_fill.htm">buffer_fill</a></span> function).</p>
-  <p>The following constants can be used to define the buffer type:</p>
-  <div data-conref="../../../assets/snippets/Table_Buffer_Type_Constant.hts"> </div>
-  <p>Apart from the buffer type, you will also have to set the <i>byte alignment</i> for the buffer. This value will vary depending on the data that you wish to store in the buffer, and in most cases a value of 1 is perfectly fine. However, be aware that for some operations a specific alignment is <i>essential</i>, and an incorrect alignment may cause errors (for further details on alignment see <a href="../../../Additional_Information/Guide_To_Using_Buffers.htm">Buffers</a>). The following is a general guide to show which values are most appropriate for each data type (when in doubt, use an alignment of 1):</p>
-  <ul class="colour">
-    <li>Strings should be aligned to 1 byte.</li>
-    <li>Signed or unsigned 8bit integers can be aligned to any value, but note that for a fast buffer (see <span class="inline3_func"><a data-xref="{title}" href="buffer_write.htm">buffer_write</a></span>) it <i>must</i> be aligned to 1.</li>
-    <li>Signed or unsigned 16bit integers should be aligned to 2 bytes.</li>
-    <li>Signed or unsigned 32bit integers should be aligned to 4 bytes.</li>
-    <li>Floats of up to 16bits should be aligned to 2 bytes.</li>
-    <li>Floats of up to 32bits should be aligned to 4 bytes.</li>
-    <li>Floats of up to 64bits should be aligned to 8 bytes.</li>
-  </ul>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> Byte alignment can be very important as the wrong choice may adversely affect performance.</p>
-  <div data-conref="../../../assets/snippets/Note_Buffer_Delete_Dynamic.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">buffer_create</span>(size, type, alignment)</p>
+  <h1>creare un buffer</h1>
+  <p>Usate questa funzione per allocare una porzione di memoria come <span class="notranslate">buffer</span> nel vostro gioco, con la funzione che restituisce l'<i>id</i> unico del <i>buffer</i> che dovrebbe essere memorizzato in una variabile e utilizzato per tutte le ulteriori chiamate di funzione a <span class="notranslate">buffer</span>. Il <span class="notranslate">buffer</span> può quindi essere utilizzato per memorizzare diversi tipi di dati (specificati quando si scrive sul <span class="notranslate">buffer</span> usando la funzione <a href="buffer_write.htm"><span class="inline">buffer_write()</span></a> con le seguenti costanti per definire il tipo <span class="notranslate">buffer</span>:</p>
   <table>
+    <colgroup>
+      <col />
+      <col />
+    </colgroup>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th colspan="2"><span data-keyref="Type_Constant_Buffer_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm">Costante del tipo di buffer</a></span></th>
       </tr>
       <tr>
-        <td>size</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The size (in bytes) of the buffer.</td>
+        <th>Costante</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>type</td>
-        <td><span data-keyref="Type_Constant_Buffer_Type"><a href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">Buffer Type Constant</a></span></td>
-        <td>The type of buffer to create (see the constants list above).</td>
+        <td><span class="notranslate"><span class="inline">buffer_fixed</span></td>
+        <td>Un <span class="notranslate">buffer</span> di dimensioni fisse.</td>
       </tr>
       <tr>
-        <td>alignment</td>
-        <td><span data-keyref="Type_Real"><a href="../../../../GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td>The byte alignment for the buffer</td>
+        <td><span class="notranslate"><span class="inline">buffer_grow</span></td>
+        <td>Un <span class="notranslate">buffer</span> che &quot;crescerà&quot; dinamicamente con l'aggiunta di dati</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate"><span class="inline">buffer_wrap</span></td>
+        <td>Un <span class="notranslate">buffer</span> dove i dati saranno &quot;avvolti&quot;. Quando i dati aggiunti raggiungono il limite della dimensione di <span class="notranslate">buffer</span>, la sovrascrittura sarà rimessa all'inizio di <span class="notranslate">buffer</span>, e la scrittura continuerà da quel punto.</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate"><span class="inline">buffer_fast</span></td>
+        <td>Speciale &quot;spogliato&quot; <span class="notranslate">buffer</span> che è estremamente veloce da leggere/scrivere. Può essere usato solo con i <a href="buffer_read.htm">tipi di dati</a> <span class="inline">buffer_u8</span> e <i>deve</i> essere allineato a 1 byte.</td>
+      </tr>
+      <tr>
+        <td><span class="notranslate"><span class="inline">buffer_vbuffer</span></td>
+        <td>Questo tipo di <span class="notranslate">buffer</span> deve essere usato solo come vertice <span class="notranslate">buffer</span>.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_ID_Buffer"><a href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm" target="_blank">Buffer</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">player_buffer = <span data-field="title" data-format="default">buffer_create</span>(16384, buffer_fixed, 2);</p>
-  <p>The above code allocates 16384 bytes of memory to a buffer and returns the buffer, storing the reference to it in the variable <span class="inline2">player_buffer</span> for future use. The buffer is aligned to a two byte boundary.</p>
-  <p> </p>
-  <p> </p>
+  <p>Oltre al tipo <span class="notranslate">buffer</span>, dovrete anche impostare l'<i>allineamento dei byte</i> per <span class="notranslate">buffer</span>. Questo valore varia a seconda dei dati che volete memorizzare in <span class="notranslate">buffer</span>, e nella maggior parte dei casi un valore di 1 va benissimo. Tuttavia, siate consapevoli che per alcune operazioni un allineamento specifico è <i>essenziale</i>, e un allineamento errato può causare errori (per ulteriori dettagli sull'allineamento vedete <a href="../../../Additional_Information/Guide_To_Using_Buffers.htm">Buffers</a>). La seguente è una guida generale per mostrare quali valori sono più appropriati per ogni <span class="notranslate">data type</span> (in caso di dubbio, usate un allineamento di 1):</p>
+  <ul class="colour">
+    <li>Le stringhe dovrebbero essere allineate a 1 byte.</li>
+    <li>Gli interi a 8 bit con segno o senza segno possono essere allineati a qualsiasi valore, ma si noti che per un veloce <span class="notranslate">buffer</span> (vedi <a href="buffer_write.htm"><span class="inline">buffer_write()</span></a>) <i>devono</i> essere allineati a 1.</li>
+    <li>Gli interi a 16 bit con segno o senza segno dovrebbero essere allineati a 2 byte.</li>
+    <li>Gli interi a 32 bit con segno o senza segno dovrebbero essere allineati a 4 byte</li>
+    <li>I float fino a 16 bit dovrebbero essere allineati a 2 byte. <i>(Attualmente non supportato!)</i></li>
+    <li>I float fino a 32 bit dovrebbero essere allineati a 4 byte.</li>
+    <li>I float fino a 64 bit dovrebbero essere allineati a 8 byte.</li>
+  </ul>
+  <p class="note"><b>NOTA</b>: l'allineamento dei byte può essere molto importante, poiché una scelta sbagliata può influire negativamente sulle prestazioni.</p>
+  <p class="note"><b>NOTA</b>: è importante che rimuoviate qualsiasi risorsa creata dinamicamente come questa dalla memoria quando non ne avete più bisogno per evitare perdite di memoria, quindi quando avete finito con il <span class="notranslate">buffer</span> che avete creato dovreste liberarlo di nuovo usando <span style="font-size:1px;"><a href="buffer_delete.htm"><span class="inline">buffer_delete()</span></a></span>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
+  <p class="code">buffer_create(size, type, alignment)</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
+      </tr>
+      <tr>
+        <td><span class="notranslate">size</span></td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../LINKGOESHERE">Real</a></span></td>
+        <td><span class="notranslate">The size (in bytes) of the buffer.</span></td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">type</span></td>
+        <td><span data-keyref="Type_Constant_Buffer_Type"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/Buffers/buffer_create.htm">Costante del tipo di buffer</a></span></td>
+        <td><span class="notranslate">The type of buffer to create (see the constants list above).</span></td>
+      </tr>
+      <tr>
+        <td><span class="notranslate">alignment</span></td>
+        <td><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../LINKGOESHERE">Real</a></span></td>
+        <td><span class="notranslate">The byte alignment for the buffer</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_ID_Buffer"><a data-rhwidget="HyperlinkPopover" href="../../../../LINKGOESHERE">Buffer ID</a></span></p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p class="code">player_buffer = buffer_create(16384, buffer_fixed, 2);</p>
+  <p>Il codice qui sopra alloca 16384 byte di memoria a un <span class="notranslate">buffer</span> e restituisce l'indice di quel <span class="notranslate">buffer</span>, che è memorizzato nella variabile &quot;player_buffer&quot;, per uso futuro. Il <span class="notranslate">buffer</span> è allineato a un confine di due byte.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Buffers.htm">Buffers</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="buffer_create_from_vertex_buffer.htm">buffer_create_from_vertex_buffer</a></div>
+        <div style="float:left">Indietro: <a href="Buffers.htm">Buffer</a></div>
+        <div style="float:right">Il prossimo: <a href="buffer_create_from_vertex_buffer.htm"><span class="notranslate">buffer_create_from_vertex_buffer</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 buffer_create

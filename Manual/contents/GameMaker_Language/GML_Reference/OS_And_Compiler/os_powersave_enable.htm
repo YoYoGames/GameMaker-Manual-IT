@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>os_powersave_enable</title>
+  <title>salva-persona_automatico</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for os_powersave_enable" />
   <meta name="rh-index-keywords" content="os_powersave_enable" />
@@ -15,45 +15,45 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>os_powersave_enable</h1>
-  <p>With this function you can turn on or off the power saving features of the device. This is important as certain games (for example those that use the tilt functions) may not generate events that the OS can interpret as being user input and so shut down the screen or exit the game. By setting this function to <span class="inline">false</span> you can disable the power saving features and ensure that the screen (and game) are always functioning.</p>
-  <p class="note"><b>NOTE</b>: This is limited to iOS and Android targets.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>salva-persona_automatico</h1>
+  <p>Con questa funzione potete attivare o disattivare le funzioni di risparmio energetico del dispositivo. Questo è importante perché alcuni giochi (per esempio quelli che usano le funzioni di inclinazione) potrebbero non generare eventi che il sistema operativo possa interpretare come input dell'utente e quindi spegnere lo schermo o uscire dal gioco. Impostando questa funzione su <span class="inline">false</span> è possibile disabilitare le funzioni di risparmio energetico e garantire che lo schermo (e il gioco) siano sempre funzionanti.</p>
+  <p class="note"><b>NOTA</b>: Questo è limitato agli obiettivi <span class="notranslate">iOS</span> e <span class="notranslate">Android</span>.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">os_powersave_enable(flag)</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>flag</td><td><span data-keyref="Type_Bool"></span></td>
-        <td>Set to <span class="inline">true</span> or <span class="inline">false</span> to enable or disable powersave functions.</td>
+        <td><span class="notranslate">flag</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">Set to <span class="inline">true</span> o <span class="inline">false</span> per abilitare o disabilitare le funzioni di risparmio energetico.</td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (os_type == os_android) || (os_type == os_ios)<br />
     {<br />
         os_powersave_enable(false);<br />
     }</p>
-  <p>The above code checks the OS type and if it is either Android or an iOS then power saving features are deactivated.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra controlla il tipo di sistema operativo e se è o <span class="notranslate">Android</span> o un <span class="notranslate">iOS</span> allora le funzioni di risparmio energetico sono disattivate.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="OS_And_Compiler.htm">OS And Compiler</a></div>
-        <div style="float:right">Next: <a href="os_lock_orientation.htm">os_lock_orientation</a></div>
+        <div style="float:left">Indietro: <a href="OS_And_Compiler.htm">Sistema operativo e compilatore</a></div>
+        <div style="float:right">Il prossimo: <a href="os_lock_orientation.htm"><span class="notranslate">os_lock_orientation</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 os_powersave_enable

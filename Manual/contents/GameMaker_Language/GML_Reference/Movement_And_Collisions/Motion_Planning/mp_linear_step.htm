@@ -6,7 +6,7 @@
   <title>mp_linear_step</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="This page outlines the function mp_linear_step" />
   <meta name="rh-index-keywords" content="mp_linear_step" />
@@ -16,57 +16,57 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>mp_linear_step</h1>
-  <p>With this function you tell an instance to take a &quot;step&quot; towards a specific point, specified by the xgoal and ygoal values. The size of the step (which is how many pixels the instance should move each step) is indicated by the stepsize, and if the instance is already at the position it will stop and not move any further, contrary to other, simpler functions like <a href="../Movement/move_towards_point.htm"><span class="inline">move_towards_point()</span></a>. The stepsize is also the distance &quot;ahead&quot; that the object will check each step for a collision, and you can choose whether the instance stops at a collision with <i>any</i> instance or only those that are flagged as solid. The function will return whether it has reached the goal position (true) or if it has failed (false).</p>
-  <p class="note"><span class="note"><b>NOTE</b></span> This function does not try to make detours if it meets an obstacle, it simply fails and stops moving.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Con questa funzione dite a un'istanza di fare un &quot;passo&quot; verso un punto specifico, specificato dai valori xgoal e ygoal. La dimensione del passo (che è quanti pixel l'istanza dovrebbe muovere ad ogni passo) è indicata da stepsize, e se l'istanza è già nella posizione si fermerà e non si muoverà ulteriormente, contrariamente ad altre funzioni più semplici come <a href="../Movement/move_towards_point.htm"><span class="inline">move_towards_point()</span></a>. Lo stepsize è anche la distanza &quot;avanti&quot; che <span class="notranslate">object</span> controllerà ad ogni passo per una collisione, ed è possibile scegliere se l'istanza si ferma ad una collisione con <i>qualsiasi</i> istanza o solo con quelle che sono contrassegnate come solide. La funzione restituirà se ha raggiunto la posizione dell'obiettivo (true) o se ha fallito (false).</p>
+  <p class="note"><span class="note"><b>NOTA</b></span> Questa funzione non cerca di fare deviazioni se incontra un ostacolo, semplicemente fallisce e smette di muoversi.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">mp_linear_step(xgoal, ygoal, stepsize, checkall);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>xgoal</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The target x position.</td>
+        <td><span class="notranslate">xgoal</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The target x position.</span></td>
      </tr>
       <tr>
-        <td>ygoal</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The target y position.</td>
+        <td><span class="notranslate">ygoal</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The target y position.</span></td>
      </tr>
       <tr>
-        <td>stepsize</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The speed the instance moves in pixels per step.</td>
+        <td><span class="notranslate">stepsize</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The speed the instance moves in pixels per step.</span></td>
      </tr>
       <tr>
-        <td>checkall</td><td><span data-keyref="Type_Bool"></span></td>
-        <td>Whether to check all instances (true) or just solid ones (false).</td>
+        <td><span class="notranslate">checkall</span></td><td><span data-keyref="Type_Bool"></span></td>
+        <td><span class="notranslate">Whether to check all instances (true) or just solid ones (false).</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Bool"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if mp_linear_step(mouse_x, mouse_y, 5, 0)<br />
     {<br />
         instance_create_layer(x, y, &quot;Effects&quot;, obj_Explosion);<br />
         instance_destroy();<br />
     }</p>
-  <p>The above code will make the object move towards the mouse at a speed of 5 pixels per step. Once it reaches the mouse position it will create an object &quot;obj_Explosion&quot; and destroy itself.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra farà muovere <span class="notranslate">object</span> verso il mouse ad una velocità di 5 pixel per passo. Una volta raggiunta la posizione del mouse, creerà un <span class="notranslate">object</span> &quot;obj_Explosion&quot; e si distruggerà.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Motion_Planning.htm">Motion Planning</a></div>
-        <div style="float:right">Next: <a href="mp_linear_step_object.htm">mp_linear_step_object</a></div>
+        <div style="float:left">Indietro: <a href="Motion_Planning.htm">Pianificazione del movimento</a></div>
+        <div style="float:right">Il prossimo: <a href="mp_linear_step_object.htm"><span class="notranslate">mp_linear_step_object</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 mp_linear_step

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>layer_background_vtiled</title>
+  <title>strato_sfondo_vtiled</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function layer_background_vtiled" />
   <meta name="rh-index-keywords" content="layer_background_vtiled" />
@@ -15,53 +15,53 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_background_vtiled</h1>
-  <p>Using this function you can change whether the given background element on a layer should be tiled vertically or not. You give the background element ID (which you get when you create a background element using <a href="layer_background_create.htm"><span class="inline">layer_background_create()</span></a> or when you use the function <a href="layer_background_get_id.htm"><span class="inline">layer_background_get_id()</span></a>), and then set the tiling value. If set to <span class="inline">true</span> then the element will be displayed tiled vertically down the room, and when set to <span class="inline">false</span>, the element will not be tiled. This function is for 2D projects only, and will not work correctly when a 3D camera projection is used.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>strato_sfondo_vtiled</h1>
+  <p>Usando questa funzione puoi cambiare se l'elemento di sfondo dato su un livello deve essere piastrellato verticalmente o no. Si dà l'ID dell'elemento di sfondo (che si ottiene quando si crea un elemento di sfondo usando <a href="layer_background_create.htm"><span class="inline">layer_background_create()</span></a> o quando usi la funzione <a href="layer_background_get_id.htm"><span class="inline">layer_background_get_id()</span></a>), e poi imposti il valore di tiling. Se impostato su <span class="inline">true</span> allora l'elemento sarà visualizzato affiancato verticalmente lungo il <span class="notranslate">room</span>, e quando impostato su <span class="inline">false</span>, l'elemento non sarà affiancato. Questa funzione è solo per progetti 2D, e non funzionerà correttamente quando si usa una proiezione con telecamera 3D.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">layer_background_vtiled(background_element_id, tiled);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>background_element_id</td>
-        <td><span data-keyref="Type_ID_Element_Background">Background Element ID</span></td>
-        <td>The unique ID value of the background element to change</td>
+        <td><span class="notranslate">background_element_id</span></td>
+        <td><span data-keyref="Type_ID_Element_Background">ID dell'elemento di sfondo</span></td>
+        <td><span class="notranslate">The unique ID value of the background element to change</span></td>
       </tr>
       <tr>
-        <td>tiled</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td>The vertical tiling toggle, which can be <span class="inline">true</span> or <span class="inline">false</span></td>
+        <td><span class="notranslate">tiled</span></td>
+        <td><span data-keyref="Type_Bool">Booleano</span></td>
+        <td><span class="notranslate">The vertical tiling toggle, which can be <span class="inline">true</span> o <span class="inline">false</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var back = layer_background_get_id(layer);<br />
     if !layer_background_get_htiled(back) || !layer_background_get_vtiled(back)<br />
     {<br />
         layer_background_htiled(back, true);<br />
         layer_background_vtiled(back, true);<br />
     }</p>
-  <p>The above code will check the background element assigned to the layer the instance running the code is on and if it is not tiled in either direction it will set it to tile vertically and horizontally.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra controllerà l'elemento di sfondo assegnato al livello su cui si trova l'istanza che esegue il codice e se non è piastrellato in entrambe le direzioni lo imposterà su <span class="notranslate">tile</span> in verticale e in orizzontale.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Background_Layers.htm">Background Layers</a></div>
-        <div style="float:right">Next: <a href="layer_background_stretch.htm">layer_background_stretch</a></div>
+        <div style="float:left">Indietro: <a href="Background_Layers.htm">Livelli di sfondo</a></div>
+        <div style="float:right">Il prossimo: <a href="layer_background_stretch.htm"><span class="notranslate">layer_background_stretch</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 layer_background_vtiled

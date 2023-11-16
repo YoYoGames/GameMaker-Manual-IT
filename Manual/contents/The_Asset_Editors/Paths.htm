@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>The Path Editor</title>
+  <title>Percorsi</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page detailing how the path editor works" />
   <meta name="rh-index-keywords" content="Path Editor" />
@@ -14,66 +14,77 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">The Path Editor</span></h1>
-  <p><img alt="The Path Editor" class="center" height="576" src="../assets/Images/Asset_Editors/Editor_Paths.png" width="1280" />At some point while creating your games you may need one of your instances to follow a path through a level. Now, this can be done in code by simply creating an array of positions within the room and then having an instance move between them, but that can be a chore to set up and is difficult to change, test and adapt for different instances. For this reason <span data-keyref="GameMaker Name">GameMaker</span> has path resources and a dedicated path editor.</p>
-  <p>The basic idea is rather simple - you define a path by drawing it in the path editor, then you can place an action (or code) in the creation event of an object to tell the instance to follow that particular path. You can also set the speed to follow the path and a number of other actions relating to the position and orientation of the path within the room. When you first create a path resource the path editor window will open with the following options:</p>
-  <p> </p>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Path Properties</a></p>
+  <h1>Il <span class="notranslate">Path</span> Editore</h1>
+  <p><img>Ad un certo punto, mentre create i vostri giochi, potreste aver bisogno che una delle vostre istanze segua un <span class="notranslate">path</span> attraverso un livello. Ora, questo può essere fatto nel codice semplicemente creando un array di posizioni all'interno di <span class="notranslate">room</span> e poi facendo muovere un'istanza tra di esse, ma questo può essere un lavoraccio da impostare ed è difficile da cambiare, testare e adattare per diverse istanze. Per questo motivo <span data-keyref="GameMaker Name">GameMaker</span> ha risorse <span class="notranslate">path</span> e un editor dedicato <span class="notranslate">path</span>.</p>
+  <p>L'idea di base è piuttosto semplice - si definisce un <span class="notranslate">path</span> disegnandolo nell'editor <span class="notranslate">path</span>, poi si può inserire un'azione (o codice) nell'evento di creazione di un <span class="notranslate">object</span> per dire all'istanza di seguire quel particolare <span class="notranslate">path</span>. Si può anche impostare la velocità per seguire il <span class="notranslate">path</span> e una serie di altre azioni relative alla posizione e all'orientamento del <span class="notranslate">path</span> all'interno del <span class="notranslate">room</span>. Quando si crea per la prima volta una risorsa <span class="notranslate">path</span> la finestra dell'editor <span class="notranslate">path</span> si aprirà con le seguenti opzioni:</p>
+  <p> </p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Proprietà del percorso</a></p>
   <div class="droptext" data-targetname="drop-down">
-    <p class="dropspot">As with all resources in <span data-keyref="GameMaker Name">GameMaker</span> you should give your new path a unique name as this is what will be used to identify it throughout the game you are making, and a good system that a lot of people use is to prefix (or suffix) the resource for easy recognition in code or actions (eg: <span class="inline">path_Enemy_1</span> or <span class="inline">PowerUp_path</span>).</p>
-    <p class="dropspot">Once you have named the path, you can start to define it by placing points in the main editor on the right, with each point being added to the list here along with its position and speed. The speed value for path points is defined by a percentage of the speed at which you make the instance move along the path (default is 100%). So if you start an instance at a speed of 2 (2 pixels per step) along a path and then one of the path points has a speed value of 50%, the instance will reduce speed as it approaches this points to a speed of 1 (50% of the path speed). Equally, you can set the speed to 150% and the instance will accelerate as it reaches the point. In this way you can create some nice dynamic looking movement without any code whatsoever.</p>
-    <p class="dropspot">It is worth noting that you can fast double click <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> on any of the defined points in the list to pan the editor to the selected point, or slow double click <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> on one of the values to edit it manually (x, y, or speed).</p>
-    <p class="dropspot">You can also specify the connection kind for the whole path and whether the path should be closed or not (a closed path will connect the last point on the path with the first). The connection kind can be either <strong>straight line</strong> or <strong>smooth, </strong>where a straight line connect simply connects the points of a path in a linear basis, with angular changes at each point, while a smooth connection will create a much softer path that may not pass directly through any of the points, but rather take an approximate line, creating nice curves using <a class="glossterm" data-glossterm="smooth interpolation" href="#">smooth interpolation</a>. You can also specify the precision for the curves (default is 4) which can be from 1 to 8 with 8 being the smoothest. The image below shows an example of how these options affect the path:</p>
-    <p class="dropspot"><img alt="Path Editor Examples" class="center" src="../assets/Images/Asset_Editors/Editor_Paths_Examples.png" /></p>
+    <p class="dropspot">Come per tutte le risorse in <span data-keyref="GameMaker Name">GameMaker</span> dovreste dare al vostro nuovo <span class="notranslate">path</span> un nome unico, poiché questo è ciò che verrà usato per identificarlo in tutto il gioco che state facendo, e un buon sistema che molte persone usano è quello di mettere un prefisso (o suffisso) alla risorsa
+      per un facile riconoscimento nel codice o nelle azioni (ad esempio: <span class="inline">path_Enemy_1</span> o <span class="inline">PowerUp_path</span>). <br></p>
+    <p class="dropspot">Una volta che hai dato un nome a <span class="notranslate">path</span>, puoi iniziare a definirlo mettendo dei punti nell'editor principale sulla destra, con ogni punto che viene aggiunto alla lista qui insieme alla sua posizione e velocità. Il valore di velocità per i punti di <span class="notranslate">path</span> è definito da una percentuale
+      della velocità con cui si fa muovere l'istanza lungo <span class="notranslate">path</span> (l'impostazione predefinita è 100%). Quindi se iniziate un'istanza ad una velocità di 2 (2 pixel per passo) lungo un <span class="notranslate">path</span> e poi uno dei punti di <span class="notranslate">path</span> ha un valore di velocità del 50%, l'istanza ridurrà la velocità
+      man mano che si avvicina a questo punto ad una velocità di 1 (50% della velocità di <span class="notranslate">path</span> ). Allo stesso modo, potete impostare la velocità al 150% e l'istanza accelererà quando raggiunge il punto. In questo modo potete creare un movimento dall'aspetto dinamico senza alcun codice
+      di sorta.
+    </p>
+    <p class="dropspot">Vale la pena notare che è possibile fare doppio clic veloce <img> su uno qualsiasi dei punti definiti nella lista per spostare l'editor su
+      il punto selezionato, o fare doppio clic lento <img> su uno dei valori per modificarlo manualmente (x, y, o velocità).<br></p>
+    <p class="dropspot">Puoi anche specificare il tipo di connessione per l'intero <span class="notranslate">path</span> e se il <span class="notranslate">path</span> deve essere chiuso o meno (un <span class="notranslate">path</span> chiuso collegherà l'ultimo punto del <span class="notranslate">path</span> con il primo). Il tipo di connessione può essere sia <strong>linea retta</strong>, sia <strong>liscia </strong>dove
+      una linea retta collega semplicemente i punti di un <span class="notranslate">path</span> in modo lineare, con cambiamenti angolari in ogni punto, mentre una connessione liscia creerà un <span class="notranslate">path</span> molto più morbido che potrebbe non passare direttamente attraverso nessuno dei punti, ma piuttosto prendere una
+      linea approssimativa, creando delle belle curve usando un'<a data-glossterm="interpolazione liscia" class="glossterm" href="#">interpolazione morbida</a>. Potete anche specificare la precisione per le curve (l'impostazione predefinita è 4) che può essere da 1 a 8 con 8 che è la più
+      più liscia. L'immagine qui sotto mostra un esempio di come queste opzioni influenzano il percorso:</p>
+    <p class="dropspot"><img alt="The Path Editor" class="center" src="../assets/Images/Asset_Editors/Editor_Paths.png" /><br /></p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Path Editing</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down1" href="#">Modifica del percorso</a></p>
   <div class="droptext" data-targetname="drop-down1">
-    <p class="dropspot">You can add points to the path clicking <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> anywhere in the edit window, and all subsequent clicks will add further points. Once placed in the editor a point can be moved by clicking <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> and dragging on it or by changing the values presented to you on the left for the X and Y position and speed (see <strong>Path Properties</strong>, above). You can use <img alt="CTRL Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Ctrl.png" width="55" /> / <img alt="CMD Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Cmd.png" width="55" /> and left click <img alt="LMB Icon" class="icon" src="../assets/Images/Icons/Icon_LMB.png" /> on multiple points to select them together, and this group of points can then be dragged around and placed as you require. You can press <img alt="Delete Key Icon" class="icon" height="20" src="../assets/Images/Icons/Icon_Delete.png" width="55" /> to delete the selected point or points too.</p>
-    <p class="dropspot">There is an additional menu available to you in the editor window when you right click <img alt="RMB Icon" class="icon" src="../assets/Images/Icons/Icon_RMB.png" />, shown below:</p>
-    <p class="dropspot"><img alt="Path Editor RMB Menu" class="center" src="../assets/Images/Asset_Editors/Editor_Paths_Menu.png" />Each of the items in this menu work as follows:</p>
+    <p class="dropspot">Si possono aggiungere punti al <span class="notranslate">path</span> cliccando <img> in qualsiasi punto della finestra di modifica, e tutti i clic successivi aggiungeranno altri punti. Una volta posizionato nell'editor, un punto può essere spostato
+      cliccando <img> e trascinando su di esso o cambiando i valori presentati a sinistra per la posizione X e Y e la velocità (vedi <strong>Proprietà del percorso</strong>, sopra). Tu
+      potete usare <img> / <img> e cliccare con il tasto sinistro del mouse <img> su più punti per selezionarli insieme, e questo gruppo di punti può poi essere trascinato e posizionato come volete. Potete anche premere <img> per cancellare il punto o i punti selezionati.</p>
+    <p class="dropspot">C'è un menu aggiuntivo disponibile nella finestra dell'editor quando si clicca con il tasto destro del mouse su <img>, mostrato qui sotto:</p>
+    <p class="dropspot"><img>Ciascuna delle voci di questo menu funziona come segue:</p>
     <ul class="dropspotlist">
-      <li class="dropspot"><strong>Delete Points</strong> - Delete the selected point or points.</li>
-      <li class="dropspot"><strong>Pan To Path</strong> - Pan the view in the editor to the center of the path.</li>
-      <li class="dropspot"><strong>Reverse</strong> - Reverse the order of the path points. This doesn&#39;t move them, but rather changes the order that they will be processed in so that the start becomes the end and vice versa.</li>
-      <li class="dropspot"><strong>Flip</strong> - Flip the path along the horizontal axis.</li>
-      <li class="dropspot"><strong>Mirror</strong> - Flip the path along the vertical axis.</li>
+      <li class="dropspot"><strong>Cancella punti</strong> - Cancella il punto o i punti selezionati.</li>
+      <li class="dropspot"><strong>Pan To Path</strong> - Fa una panoramica della vista nell'editor al centro di <span class="notranslate">path</span>.</li>
+      <li class="dropspot"><strong>Reverse</strong> - Inverte l'ordine dei punti <span class="notranslate">path</span>. Questo non li sposta, ma piuttosto cambia l'ordine in cui saranno processati in modo che l'inizio diventi la fine e viceversa.</li>
+      <li class="dropspot"><strong>Flip</strong> - Ribalta il sito <span class="notranslate">path</span> lungo l'asse orizzontale.</li>
+      <li class="dropspot"><strong>Mirror</strong> - Ribalta il sito <span class="notranslate">path</span> lungo l'asse verticale.</li>
     </ul>
-    <p class="dropspot"> </p>
-    <p class="dropspot"> </p>
+    <p class="dropspot"> </p>
+    <p class="dropspot"> </p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">The Toolbox</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down2" href="#">La cassetta degli attrezzi</a></p>
   <div class="droptext" data-targetname="drop-down2">
-    <p class="dropspot">The tool box buttons at the top are where you can control how things are drawn in the editor window. You can toggle the background grid on or off, as well as set the addition of path points to either be snapped to this grid or not:<br /></p>
-    <p class="dropspot"><img data-cke-saved-src="../assets/Images/Asset_Editors/Editor_Paths_GridOptions.png" src="../assets/Images/Asset_Editors/Editor_Paths_GridOptions.png" class="center" alt="Path Editor Grid Options" />The snap values indicate the size of the grid cells
-      and this can be changed to any value you require. The rest of the tools are dedicated to zooming in and out and panning the editor area, and you can click the <img data-cke-saved-src="../assets/Images/Icons/Icon_ZoomReset.png" src="../assets/Images/Icons/Icon_ZoomReset.png" alt="Zoom Reset Icon" class="icon" /> button to reset to be 1:1 with the display. Note that if you pan too far from where you want to draw the path, you can use the right mouse button <img data-cke-saved-src="../assets/Images/Icons/Icon_RMB.png" src="../assets/Images/Icons/Icon_RMB.png" class="icon" alt="RMB Icon" /> menu, and then click <strong>Pan to Path</strong> to scroll back to where you were working.</p>
+    <p class="dropspot">I pulsanti della casella degli strumenti in alto sono dove puoi controllare come le cose sono disegnate nella finestra dell'editor. Puoi attivare o disattivare la griglia di sfondo, così come impostare l'aggiunta di <span class="notranslate">path</span> punti da agganciare o meno a questa griglia:<br></p>
+    <p class="dropspot"><img>I valori di snap indicano la dimensione delle celle della griglia
+      e questo può essere cambiato a qualsiasi valore desiderato. Il resto degli strumenti sono dedicati allo zoom in e out e al panning dell'area dell'editor, e si può cliccare il pulsante <img> per resettare per essere 1:1 con la visualizzazione. Notate che se vi spostate troppo lontano da dove volete disegnare il <span class="notranslate">path</span>, potete usare il tasto destro del mouse <img> menu, e poi fare clic su <strong>Pan to Path</strong> per tornare dove stavate lavorando.</p>
     <p class="dropspot"><br /></p>
   </div>
-  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Path Points</a></p>
+  <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down4" href="#">Punti del percorso</a></p>
   <div class="droptext" data-targetname="drop-down4">
-    <p class="dropspot">Paths are simply a collection of points joined together by a line. In the editor, you place these points by using the left mouse button <img alt="LMB Icon" class="icon" data-cke-saved-src="../assets/Images/Icons/Icon_LMB.png" src="../assets/Images/Icons/Icon_LMB.png" />. You can add points anywhere in the room editor and they will be added to the point list consecutively to make a path. If you place a point near a connecting line or another node, the new point will be inserted in the path rather than added to
-      it (you can set the detection distance for this in the <a href="../Setting_Up_And_Version_Information/IDE_Preferences/Spline_Editor.htm">Preferences</a>). You can press <img data-cke-saved-src="../assets/Images/Icons/Icon_Ctrl.png" src="../assets/Images/Icons/Icon_Ctrl.png" width="55" height="20" class="icon" alt="CTRL Icon" /> / <img data-cke-saved-src="../assets/Images/Icons/Icon_Cmd.png" src="../assets/Images/Icons/Icon_Cmd.png" width="55" height="20" class="icon" alt="CMD Icon" /> and click <img alt="LMB Icon" class="icon" data-cke-saved-src="../assets/Images/Icons/Icon_LMB.png" src="../assets/Images/Icons/Icon_LMB.png" /> on already placed points to select them, and then any operations done on the path points like moving them, will be applied to all
-      the selected points as a group. To remove a point or selection of points you can right-click <img data-cke-saved-src="../assets/Images/Icons/Icon_RMB.png" src="../assets/Images/Icons/Icon_RMB.png" class="icon" alt="RMB Icon" /> and select &quot;Delete
-      Point&quot; or press the <img data-cke-saved-src="../assets/Images/Icons/Icon_Delete.png" src="../assets/Images/Icons/Icon_Delete.png" width="55" height="20" class="icon" alt="Delete Key Icon" /> key.</p>
-    <p class="dropspot">Note that you can also use the following shortcuts to perform some extra operations that are not available through the right mouse button menu on the choose path point(s):</p>
+    <p class="dropspot">I percorsi sono semplicemente un insieme di punti uniti da una linea. Nell'editor, si posizionano questi punti usando il tasto sinistro del mouse <img>. Si possono aggiungere punti in qualsiasi punto dell'editor <span class="notranslate">room</span> ed essi verranno aggiunti consecutivamente alla lista dei punti per formare un <span class="notranslate">path</span>. Se si posiziona un punto vicino ad una linea di collegamento o ad un altro nodo, il nuovo punto verrà inserito nel <span class="notranslate">path</span> piuttosto che aggiunto ad esso (si può impostare la distanza di rilevamento per questo nelle Preferenze).
+      (è possibile impostare la distanza di rilevamento per questo nelle <a href="../Setting_Up_And_Version_Information/IDE_Preferences/Spline_Editor.htm">Preferenze</a>). Si può premere <img> / <img> e cliccare <img> su punti già posizionati per selezionarli, e poi qualsiasi operazione fatta sui punti <span class="notranslate">path</span> come spostarli, sarà applicata a tutti
+      i punti selezionati come gruppo. Per rimuovere un punto o una selezione di punti potete cliccare con il tasto destro del mouse su <img> e selezionare &quot;Delete
+      Point&quot; o premere il tasto <img>.</p>
+    <p class="dropspot">Si noti che è anche possibile utilizzare le seguenti scorciatoie per eseguire alcune operazioni extra che non sono disponibili attraverso il menu del tasto destro del mouse sulla scelta <span class="notranslate">path</span> point(s):</p>
     <ul class="dropspotlist">
-      <li class="dropspot">T + <img alt="LMB Icon" class="icon" data-cke-saved-src="../assets/Images/Icons/Icon_LMB.png" src="../assets/Images/Icons/Icon_LMB.png" />: Translate (move) the path points</li>
-      <li class="dropspot">R + <img alt="LMB Icon" class="icon" data-cke-saved-src="../assets/Images/Icons/Icon_LMB.png" src="../assets/Images/Icons/Icon_LMB.png" />: Rotate the path points</li>
-      <li class="dropspot">S + <img alt="LMB Icon" class="icon" data-cke-saved-src="../assets/Images/Icons/Icon_LMB.png" src="../assets/Images/Icons/Icon_LMB.png" />: Scale the path points</li>
+      <li class="dropspot">T + <img>: Traslare (spostare) i punti <span class="notranslate">path</span> </li>
+      <li class="dropspot">R + <img>: Ruota i punti di <span class="notranslate">path</span> </li>
+      <li class="dropspot">S + <img>: Scala i punti di <span class="notranslate">path</span> </li>
     </ul>
     <p class="dropspot"><br /></p>
     <p class="dropspot"></p>
   </div>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="The_Asset_Editors.htm">The Asset Editors</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="Rooms.htm">The Room Editor</a></div>
+        <div style="float:left">Indietro: <a href="The_Asset_Editors.htm">I redattori delle risorse</a></div>
+        <div style="float:right">Il prossimo: <a href="Rooms.htm">Camere</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Path Editor

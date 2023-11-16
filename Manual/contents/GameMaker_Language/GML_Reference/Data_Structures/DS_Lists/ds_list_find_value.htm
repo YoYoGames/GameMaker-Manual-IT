@@ -6,7 +6,7 @@
   <title>ds_list_find_value</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for ds_list_find_value" />
   <meta name="rh-index-keywords" content="ds_list_find_value" />
@@ -16,47 +16,47 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>ds_list_find_value</h1>
-  <p>With this function you can check the given list position and the value held within the list for that position will be returned. Note that if you give a position that is outside of the given list size (i.e.: position 11 in a 10 value list) then the function may return <span class="inline">undefined</span> <i>or</i> 0. This is because when you create the list, internally the first few entries in the list are set to 0 to minimize performance issues when initially adding items to the list (although the <a href="ds_list_size.htm"><span class="inline">ds_list_size()</span></a> function will still return 0 on a newly created list). If you wish to ensure that the list is &quot;truly&quot; empty on create, then you should call <a href="ds_list_clear.htm"><span class="inline">ds_list_clear()</span></a> after creating the list, which will then mean that any values returned for unpopulated list slots will be <span class="inline">undefined</span>, which you can then check consistently using the <a href="../../Variable_Functions/is_undefined.htm"><span class="inline">is_undefined()</span></a> function.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Con questa funzione potete controllare la posizione della lista data e verrà restituito il valore contenuto nella lista per quella posizione. Notate che se date una posizione che è al di fuori della dimensione della lista data (ad esempio: posizione 11 in una lista di 10 valori) allora la funzione potrebbe restituire <span class="inline">undefined</span> <i>o</i> 0. Questo perché quando create la lista, internamente le prime voci della lista sono impostate a 0 per minimizzare i problemi di prestazioni quando inizialmente si aggiungono elementi alla lista (sebbene la <a href="ds_list_size.htm"><span class="inline">ds_list_size()</span></a> restituirà comunque 0 su una lista appena creata). Se ci si vuole assicurare che la lista sia &quot;veramente&quot; vuota alla creazione, allora si dovrebbe chiamare <a href="ds_list_clear.htm"><span class="inline">ds_list_clear()</span></a> dopo aver creato la lista, il che significherà che qualsiasi valore restituito per gli slot della lista non riempiti sarà <span class="inline">undefined</span>, che si può poi controllare costantemente usando la funzione <a href="../../Variable_Functions/is_undefined.htm"><span class="inline">is_undefined()</span></a> funzione.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">ds_list_find_value(id, pos);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>id</td>
-        <td><span data-keyref="Type_ID_DS_List">DS List ID</span></td>
-        <td>The id of the list to use.</td>
+        <td><span class="notranslate">id</span></td>
+        <td><span data-keyref="Type_ID_DS_List">ID elenco DS</span></td>
+        <td><span class="notranslate">The id of the list to use.</span></td>
       </tr>
       <tr>
-        <td>pos</td>
+        <td><span class="notranslate">pos</span></td>
         <td><span data-keyref="Type_Real">Real</span></td>
-        <td>The position to look at, where 0 corresponds to the very beginning of the list and the final position is <span class="inline2">ds_list_size(id)-1</span>.</td>
+        <td><span class="notranslate">The position to look at, where 0 corresponds to the very beginning of the list and the final position is <span class="inline2">ds_list_size(id)-1</span>.</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Any">Variable</span> or <span data-keyref="Type_Undefined">undefined</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">val = ds_list_find_value(list, ds_list_size(list) - 1);</p>
-  <p>The above code checks the list indexed in the variable &quot;list&quot; at the last position in the list and stores the returned value in the variable &quot;val&quot;.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente controlla la lista indicizzata nella variabile &quot;list&quot; all'ultima posizione della lista e memorizza il valore restituito nella variabile &quot;val&quot;.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="DS_Lists.htm">DS Lists</a></div>
-        <div style="float:right">Next: <a href="ds_list_insert.htm">ds_list_insert</a></div>
+        <div style="float:left">Indietro: <a href="DS_Lists.htm">Elenchi DS</a></div>
+        <div style="float:right">Il prossimo: <a href="ds_list_insert.htm"><span class="notranslate">ds_list_insert</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 ds_list_find_value

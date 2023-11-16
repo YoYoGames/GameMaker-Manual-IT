@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Buffer Actions</title>
+  <title>Azioni del buffer</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Section detailing all the Buffer actions" />
   <meta name="rh-index-keywords" content="GML Visual Overview - Buffer Actions Library" />
@@ -14,95 +14,95 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Buffers Action Library</h1>
+  <h1>Buffer Biblioteca d'azione</h1>
   <p><img alt="Buffers Action Library" class="center" height="149" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/Lib_Buffers.png" width="241" /></p>
-  <p>A <b>buffer</b> is a region of physical memory used to temporarily hold data while it is being moved from one place to another or manipulated in some way, for example you can use a buffer to hold game state data. <span data-keyref="GameMaker Name">GameMaker</span> has a number of specific actions related to creating, modifying and loading/saving buffers, but before using them please note the following points:</p>
+  <p>Un <b>buffer</b> è una regione di memoria fisica usata per tenere temporaneamente i dati mentre vengono spostati da un posto all'altro o manipolati in qualche modo, per esempio si può usare un <span class="notranslate">buffer</span> per tenere i dati di stato del gioco. <span data-keyref="GameMaker Name">GameMaker</span> ha un certo numero di azioni specifiche relative alla creazione, alla modifica e al caricamento/salvataggio di <span class="notranslate">buffers</span>, ma prima di utilizzarle si prega di notare i seguenti punti:</p>
   <ul class="colour">
-    <li>When a buffer is created, it is automatically cleared and filled to 0.</li>
-    <li>The &quot;size&quot; argument of the buffer functions always refers to the size <i>in bytes</i> of the buffer.</li>
-    <li>GML Visual buffers are always <i>1 byte aligned</i>. The &quot;alignment&quot; refers to how data is stored within a buffer and is used when using the <a href="../../../GameMaker_Language/GML_Reference/Buffers/Buffers.htm">GML buffer Functions</a>, but for <span data-keyref="GML_Visual">GML Visual</span>, it&#39;s not relevant.</li>
-    <li>Data in buffers is read and written in a <i>sequential</i> manner (ie: you call the <a href="Write_Buffer.htm">Write Buffer</a> action three times, then it will write the first data, move forward, right the second data, move forward and then write the last data), with something called the &quot;seek&quot; value to tell you where in the buffer the next read/write will take place.</li>
-    <li>All data is written to the buffer and returned from the buffer as a <b>string</b> so if you have stored any real numbers you will have to use one of the <a href="../Data_Types/Data_Type_Actions.htm">Data Type Actions</a> to convert it from the string to the value.</li>
+    <li>Quando un <span class="notranslate">buffer</span> viene creato, viene automaticamente cancellato e riempito a 0.</li>
+    <li>L'argomento &quot;size&quot; delle funzioni <span class="notranslate">buffer</span> si riferisce sempre alla dimensione <i>in byte</i> di <span class="notranslate">buffer</span>.</li>
+    <li>GML Visual <span class="notranslate">buffers</span> sono sempre <i>allineati a 1 byte</i>. L'&quot;allineamento&quot; si riferisce a come i dati sono memorizzati all'interno di un <span class="notranslate">buffer</span> ed è usato quando si usano le <a href="../../../GameMaker_Language/GML_Reference/Buffers/Buffers.htm">funzioni GML <span class="notranslate">buffer</span> </a>, ma per <span data-keyref="GML_Visual">GML Visual</span>, non è rilevante.</li>
+    <li>I dati in <span class="notranslate">buffers</span> sono letti e scritti in modo <i>sequenziale</i> (cioè: chiamate l'azione <a href="Write_Buffer.htm">Write Buffer</a> tre volte, poi scriverà il primo dato, si sposterà in avanti, a destra il secondo dato, si sposterà in avanti e poi scriverà l'ultimo dato), con qualcosa chiamato il valore &quot;seek&quot; per dirvi dove in <span class="notranslate">buffer</span> avrà luogo la prossima lettura/scrittura.</li>
+    <li>Tutti i dati vengono scritti su <span class="notranslate">buffer</span> e restituiti da <span class="notranslate">buffer</span> come una <b>stringa</b>, quindi se avete memorizzato dei numeri reali dovrete usare una delle <a href="../Data_Types/Data_Type_Actions.htm">azioni di tipo dati</a> per convertirli da <span class="notranslate">string</span> al valore.</li>
   </ul>
-  <p>The memory used for creating buffers is system memory so even when the game doesn&#39;t have focus, any data stored in a buffer should be safe, however if the app is closed or re-started then it will be lost. It is also worth noting that buffers can also be saved as files then loaded back into the game using the <a href="../Files/File_Actions.htm">file actions</a>.</p>
-  <p>The following page explains in more detail how buffers work within the context of <span data-keyref="GameMaker Name">GameMaker</span> and contain a couple of GML code examples:</p>
+  <p>La memoria utilizzata per la creazione di <span class="notranslate">buffers</span> è la memoria di sistema, quindi anche quando il gioco non ha il focus, tutti i dati memorizzati in un <span class="notranslate">buffer</span> dovrebbero essere al sicuro, tuttavia se l'applicazione viene chiusa o riavviata allora saranno persi. Vale anche la pena notare che <span class="notranslate">buffers</span> può anche essere salvato come file e poi ricaricato nel gioco usando le <a href="../Files/File_Actions.htm">azioni di file</a>.</p>
+  <p>La pagina seguente spiega più in dettaglio come funziona <span class="notranslate">buffers</span> nel contesto di <span data-keyref="GameMaker Name">GameMaker</span> e contiene un paio di esempi di codice <span class="notranslate">GML</span>:</p>
   <ul class="colour">
-    <li><a href="../../../Additional_Information/Guide_To_Using_Buffers.htm">Using Buffers</a></li>
+    <li><a href="../../../Additional_Information/Guide_To_Using_Buffers.htm">Usare i buffer</a></li>
   </ul>
-  <p>The <b>Buffer</b> library has the following actions:</p>
-  <p> </p>
+  <p>La libreria <b>Buffer</b> ha le seguenti azioni:</p>
+  <p> </p>
   <table class="dnd" style="text-align: left;margin-left:">
     <tbody>
       <tr style="height: 1px;">
         <td class="icons" style="margin-left: 16px;"><img alt="Create Buffer Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Create_Buffer.png" /></td>
-        <td class="dnd" style=""><a href="Create_Buffer.htm">Create Buffer</a></td>
+        <td class="dnd" style=""><a href="Create_Buffer.htm">Creare un buffer</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Copy Buffer Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Copy_Buffer.png" /></td>
-        <td class="dnd" style=""><a href="Copy_Buffer.htm">Copy Buffer</a></td>
+        <td class="dnd" style=""><a href="Copy_Buffer.htm">Copiare il buffer</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Delete Buffer Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Delete_Buffer.png" /></td>
-        <td class="dnd" style=""><a href="Delete_Buffer.htm">Delete Buffer</a></td>
+        <td class="dnd" style=""><a href="Delete_Buffer.htm">Cancellare il buffer</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Read Buffer Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Read_Buffer.png" /></td>
-        <td class="dnd" style=""><a href="Read_Buffer.htm">Read Buffer</a></td>
+        <td class="dnd" style=""><a href="Read_Buffer.htm">Leggere il buffer</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Write Buffer Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Write_Buffer.png" /></td>
-        <td class="dnd" style=""><a href="Write_Buffer.htm">Write Buffer</a></td>
+        <td class="dnd" style=""><a href="Write_Buffer.htm">Buffer di scrittura</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Seek Buffer Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Seek_Buffer.png" /></td>
-        <td class="dnd" style=""><a href="Seek_Buffer.htm">Seek Buffer</a></td>
+        <td class="dnd" style=""><a href="Seek_Buffer.htm">Cercare il buffer</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Get Buffer Size Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Get_Buffer_Size.png" /></td>
-        <td class="dnd" style=""><a href="Get_Buffer_Size.htm">Get Buffer Size</a></td>
+        <td class="dnd" style=""><a href="Get_Buffer_Size.htm">Ottieni <span class="notranslate">Buffer</span> Dimensione</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="Get Buffer Position Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_Get_Buffer_Position.png" /></td>
-        <td class="dnd" style=""><a href="Get_Buffer_Position.htm">Get Buffer Position</a></td>
+        <td class="dnd" style=""><a href="Get_Buffer_Position.htm">Ottenere <span class="notranslate">Buffer</span> Posizione</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="If Buffer Exists Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_If_Buffer_Exists.png" /></td>
-        <td class="dnd" style=""><a href="If_Buffer_Exists.htm">If Buffer Exists</a></td>
+        <td class="dnd" style=""><a href="If_Buffer_Exists.htm">Se <span class="notranslate">Buffer</span> esiste</a></td>
       </tr>
       <tr>
         <td class="dnd_icons" style="margin-left: 16px;"><img alt="If End Of Buffer Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Buffers/i_Buffers_If_End_Of_Buffer.png" /></td>
-        <td class="dnd" style=""><a href="If_End_Of_Buffer.htm">If End Of Buffer</a></td>
+        <td class="dnd" style=""><a href="If_End_Of_Buffer.htm">Se fine del buffer</a></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../DnD_Reference.htm">Index</a></div>
-        <div style="float:right">Next: <a href="../Files/File_Actions.htm">File Actions</a></div>
+        <div style="float:left">Indietro: <a href="../DnD_Reference.htm">Indice</a></div>
+        <div style="float:right">Prossimo: <a href="../Files/File_Actions.htm">Azioni dei file</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
-GML Visual Buffer Actions
+GML Visual <span class="notranslate">Buffer</span> Actions
 Buffer Actions
 -->
   <!-- TAGS

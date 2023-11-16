@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Clipping Masks</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Maschere di ritaglio</title>
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page detailing how to use clipping masks in the track editor" />
   <meta name="rh-index-keywords" content="Sequences - Clipping Masks" />
@@ -14,27 +14,34 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Clipping Masks</h1>
-  <p>As mentioned in the <a href="The_Track_Panel.htm">Track Panel</a> page, there is an action to create what is called a <strong>clipping mask group </strong>in the track editor. This is accessed by clicking on the <img alt="Clip Mask Icon" src="../../assets/Images/Icons/Icon_AddClipMask.png" /> button at the bottom of the Track Panel:</p>
-  <p><img alt="Clip Mask Button in the Track Panel" class="center" src="../../assets/Images/Asset_Editors/Track_Panel_ClipMask_Button.png" />Clicking this will create a clipping mask group that is comprised of two sub-sets of assets that can be used as either the <strong>subject </strong>or the <strong>mask </strong>of the group. Basically the subject is the asset that is going to be masked, and the mask is the asset that is going to do the masking:</p>
-  <p><img alt="Basic Clipping Mask" class="center" src="../../assets/Images/Asset_Editors/Track_Clipping_Mask.png" />The idea behind using a clipping mask is that you add a subject sprite, and then a mask sprite, and the mask sprite will &quot;hide&quot; (mask) the subject. You can then use the mask sprite animation, or move or scale the mask sprite to change the visibility of the subject (or parts of the subject). Each group (mask and subject) can contain multiple assets, and each of the assets can have multiple parameter tracks.</p>
-  <p>To add a subject and mask, simply drag the sprite, object, sequence or particle system from the Asset Browser over the folder that you want to add it to:</p>
-  <p><img alt="Add A Clipping Mask" src="../../assets/Images/Asset_Editors/Track_Add_Clipping_Mask.gif" /></p>
-  <p>The mask sprite <em>alpha </em>will be used to &quot;hide&quot; whatever subject is underneath it, where a value of 100% alpha (opaque) will mask completely and a value of 0% alpha (transparent) will show it. For example, we have this sprite for masking:</p>
-  <p><img alt="Clipping Mask Example Sprite" class="center" src="../../assets/Images/Asset_Editors/Clipping_Mask_Sprite.png" />We can then apply this as a clipping mask to icons to create a &quot;cooldown&quot; effect, like this:</p>
-  <p><img alt="Animated Clipping Mask Example" class="center" src="../../assets/Images/Asset_Editors/Clipping_Mask_Example.gif" />In the above example &quot;<span class="inline">Sprite_2</span>&quot; is simply a static sprite asset that is the base icon, and then over that we&#39;ve created a clipping mask group with a greyscale version of the sprite, as well as a mask (using the example sprite shown above). When combined and the sequence is played, the clipping mask group reveals the base sprite underneath, creating our cooldown effect.</p>
-  <p>Note that clipping mask groups can be treated as a single item in the track list and dope sheet, and you can add rotation and position parameter tracks to the group <em>as a whole</em>. You can also apply clipping mask groups to group folders of assets or even to <em>other</em> clipping mask groups, making them a very powerful tool.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <h1>Maschere di ritaglio</h1>
+  <p>Come menzionato nella pagina del <a href="The_Track_Panel.htm">Track Panel</a>, c'è un'azione per creare quello che viene chiamato un <strong>gruppo di maschere di ritaglio </strong>nell'editor di tracce. Vi si accede cliccando sul pulsante <img> nella parte inferiore del pannello di traccia:</p>
+  <p><img>Facendo clic su questo si crea un gruppo di maschere di ritaglio che è composto da due sottoinsiemi di <span class="notranslate">assets</span> che possono essere utilizzati sia come
+    il <strong>soggetto </strong>o la <strong>maschera </strong>del gruppo. Fondamentalmente il soggetto è il <span class="notranslate">asset</span> che sta per essere mascherato, e la maschera è il <span class="notranslate">asset</span> che sta per fare il mascheramento:</p>
+  <p><img>L'idea dietro l'uso di una maschera di ritaglio è che si aggiunge un soggetto <span class="notranslate">sprite</span>, e poi una maschera <span class="notranslate">sprite</span>, e la maschera <span class="notranslate">sprite</span> &quot;nasconderà&quot;
+    (maschera) il soggetto. Potete poi usare l'animazione della maschera <span class="notranslate">sprite</span>, o spostare o scalare la maschera <span class="notranslate">sprite</span> per cambiare la visibilità del soggetto (o parti del soggetto). Ogni gruppo (maschera e soggetto) può contenere più <span class="notranslate">assets</span>, e ciascuno dei <span class="notranslate">assets</span> può
+    avere più tracce di parametri.</p>
+  <p>Per aggiungere un soggetto e una maschera, trascinate semplicemente <span class="notranslate">sprite</span>, <span class="notranslate">object</span> o <span class="notranslate">sequence</span> dal Browser di <span class="notranslate">Asset</span> sulla cartella a cui volete aggiungerlo:</p>
+  <p><img alt="Clip Mask Icon" src="../../assets/Images/Icons/Icon_AddClipMask.png"
+    /></p>
+  <p>La maschera <span class="notranslate">sprite</span> <em>alpha </em>sarà usata per &quot;nascondere&quot; qualsiasi soggetto ci sia sotto, dove un valore di 100% alpha (opaco) maschererà completamente e un valore di 0% alpha (trasparente) lo mostrerà. Per esempio, abbiamo questo <span class="notranslate">sprite</span> per il mascheramento:</p>
+  <p><img>Possiamo poi applicarlo come maschera di ritaglio alle icone per creare un effetto &quot;cooldown&quot;, come questo:</p>
+  <p><img>Nell'esempio precedente &quot;<span class="inline">Sprite_2</span>&quot; è semplicemente un <span class="notranslate">sprite</span> <span class="notranslate">asset</span> statico che è l'icona di base,
+    e poi sopra abbiamo creato un gruppo di maschere di ritaglio con una versione in scala di grigi di <span class="notranslate">sprite</span>, così come una maschera (usando l'esempio <span class="notranslate">sprite</span> mostrato sopra). Quando si combina e si riproduce <span class="notranslate">sequence</span>, il gruppo di maschere di ritaglio rivela lo sprite di base
+    sotto, creando il nostro effetto di cooldown.</p>
+  <p>Si noti che i gruppi di maschere di ritaglio possono essere trattati come un singolo elemento nell'elenco delle tracce e <span class="notranslate">dope sheet</span>, ed è possibile aggiungere tracce di parametri di rotazione e posizione al gruppo nel suo <em>insieme</em>. È anche possibile applicare gruppi di maschere di ritaglio a cartelle di gruppo di risorse
+    o anche ad <em>altri</em> gruppi di maschere di ritaglio, rendendoli uno strumento molto potente.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Sequences.htm">Sequences</a></div>
-        <div style="float:right">Next: <a href="Using_The_Dope_Sheet.htm">Using The Dope Sheet</a></div>
+        <div style="float:left">Indietro: <a href="../Sequences.htm">Sequenze</a></div>
+        <div style="float:right">Il prossimo: <a href="Using_The_Dope_Sheet.htm">Usare il foglio della droga</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Clipping Masks

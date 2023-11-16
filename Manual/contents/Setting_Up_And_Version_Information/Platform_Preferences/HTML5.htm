@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>HTML5</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../assets/css/default.css" type="text/css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that details the HTML5 Platform Preferences" />
   <meta name="rh-index-keywords" content="Prefs - HTML5" />
@@ -14,33 +14,27 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1 id="h"><span data-field="title" data-format="default">HTML5</span> Preferences</h1>
-  <p>The HTML5 preferences have the following options:<img alt="HTML5 Preferences" class="center" src="../../assets/Images/Setup_And_Version/Platform_Preferences/HTML5_Prefs.png" /></p>
+  <h1 id="h">Preferenze HTML5</h1>
+  <p>Le preferenze di HTML5 hanno le seguenti opzioni:</p>
+  <p><img alt="HTML5 Preferences" class="center" src="../../assets/Images/Setup_And_Version/Platform_Preferences/HTML5_Prefs.png" /></p>
   <ul class="colour">
-    <li><strong>Obfuscate</strong>: Whether the HTML5 runner code should be obfuscated in debug mode or not.</li>
-    <li><strong>Pretty Print</strong>: Whether the game code should be pretty printed (formatted) or not.</li>
-    <li><strong>Remove Unused Functions</strong>: Whether unused functions should be removed from the final JavaScript code (removes both built-in <span data-keyref="GameMaker Name">GameMaker</span> functions and custom GML functions which are unused). Enabling this reduces runtime size.</li>
-    <li><strong>Enable Debug Rename</strong>: This option prefixes identifiers in the minified code with <span class="inline2">obf_</span> instead of renaming them to short ones, making it easier to look for things when debugging.</li>
-    <li><strong>Enable Conditional Compilation</strong>: This option enables conditional compilation of the runtime code, <span>which will strip parts that are unused by your game. It can be used together with <strong>Remove Unused Functions</strong> for best results.</span></li>
-    <li><strong>Keep JSDoc</strong>: This enables or disables JSDoc comments in the game code.</li>
-    <li><strong>Verbose</strong>: Enable or disable verbose logging in the Output Log while building for HTML5.</li>
-    <li><strong>Default packaging type</strong>: When building a final HTML5 executable package, you can choose between <strong>Package as loose files</strong> - which will simply generate all the required files in a folder - or <strong>Package as Zip</strong> - which will create a compressed <span class="inline">ZIP </span>file that will have the game and any additional files within. By default you will be given a choice of which of these two options you wish to choose on compile, but you can set this preference to always use one or the other. Note that when this option is set to <em>Show Dialogue</em>, in the actual dialogue window that pops up on compile, choosing &quot;Remember Packaging Option&quot; will set this preference to the option you select.</li>
-    <li><strong>Default Web Server Port</strong>: This lets you change the default port for the HTML5 web server. Default value is 51264.</li>
-    <li><strong>Default Web Server Address</strong>: Here you can change the default web server address for the HTML5 web server. Default value is 127.0.0.1.</li>
-    <li><strong>Default Web Server Allowed IPs</strong>: Here you can add in any allowed IPs for the web server and they will be set as default for all devices added through the Target Manager.</li>
-    <li><strong>Path to HTML5 Runner</strong>: Here you can change the path to the HTML5 runner to use a custom version of the runner. The default value is <span class="inline2">${html5_runner_path}</span>, which points to the HTML5 runner downloaded through the IDE.</li>
+    <li><strong>Tipo di packaging predefinito</strong>: Quando si costruisce un pacchetto eseguibile HTML5 finale, è possibile scegliere tra <strong>Package as loose files</strong> - che genererà semplicemente tutti i file necessari in una cartella - o <strong>Package as Zip</strong> - che creerà un file compresso <span class="inline">ZIP </span>che avrà il gioco ed eventuali file aggiuntivi all'interno. Per impostazione predefinita ti verrà data la possibilità di scegliere quale di queste due opzioni vuoi scegliere in fase di compilazione, ma puoi impostare questa preferenza per usare sempre l'una o l'altra. Nota che quando questa opzione è impostata su <em>Show Dialogue</em>, nella finestra di dialogo che appare in fase di compilazione, scegliendo &quot;Remember Packaging Option&quot; imposterai questa preferenza sull'opzione che hai selezionato.</li>
+    <li><strong>Default Web <span class="notranslate">Server</span> Port</strong>: Questo permette di cambiare la porta predefinita per il web HTML5 <span class="notranslate">server</span>. Il valore predefinito è 51264.</li>
+    <li><strong>Indirizzo web predefinito <span class="notranslate">Server</span>:</strong> Qui potete cambiare l'indirizzo web predefinito <span class="notranslate">server</span> per il web HTML5 <span class="notranslate">server</span>. Il valore predefinito è 127.0.0.1.</li>
+    <li><strong>Default Web <span class="notranslate">Server</span> Allowed IPs</strong>: Qui è possibile aggiungere qualsiasi IP consentito per il web <span class="notranslate">server</span> e saranno impostati come predefiniti per tutti i dispositivi aggiunti attraverso il Target Manager.</li>
   </ul>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_important.hts"> </span> When using a particular target device (i.e. browser), the IP and port values set for that particular device are used instead of these preferences. Check <a data-xref="{text}" href="../The_Device_Manager.htm#h">The Device Manager</a> to see a list of your devices with their details.</p>
-  <p> </p>
-  <p> </p>
+  <p class="note"><span class="optional">IMPORTANTE</span> Quando si usa un particolare dispositivo di destinazione (cioè il browser), i valori IP e di porta impostati per quel particolare dispositivo sono usati al posto di queste preferenze. Controlla <a data-xref="{text}" href="../The_Device_Manager.htm#h">la Gestione dispositivi</a> per vedere un elenco dei tuoi dispositivi con i loro dettagli.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="../Platform_Preferences.htm">Platform Preferences</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="GX_Games_Preferences.htm">GX.games</a></div>
+        <div style="float:left">Indietro: <a href="../Platform_Preferences.htm">Preferenze della piattaforma</a></div>
+        <div style="float:right">Prossimo: <a data-xref="{title}" href="Opera_GX_Preferences.htm">Opera GX</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 HTML5 Preferences

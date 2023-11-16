@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>instance_furthest</title>
+  <title>istanza_più lontana</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function instance_furthest" />
   <meta name="rh-index-keywords" content="instance_furthest" />
@@ -15,54 +15,54 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>instance_furthest</h1>
-  <p>This function will check all the instances of the given object to see which is furthest from the given x/y point. All checks will be from the given x/y position to the <i>origin</i> (the x/y position) of instances of the object specified. If no instances of the object exist, the function will return the keyword <a href="../../../GML_Overview/Instance_Keywords.htm">noone</a>, but if there are instances then it will return the <a href="Instance_Variables/id.htm"><span class="inline">id</span></a> of the instance found. Please note that if the instance running the code has the same object index as the object being checked, then it will be included in the check (this includes checks for parent objects if the calling instance is also a child of the parent).</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>istanza_più lontana</h1>
+  <p>Questa funzione controllerà tutte le istanze del dato <span class="notranslate">object</span> per vedere quale è più lontano dal dato punto x/y. Tutti i controlli saranno dalla posizione x/y data all'<i>origine</i> (la posizione x/y) delle istanze del <span class="notranslate">object</span> specificato. Se non esistono istanze di <span class="notranslate">object</span>, la funzione restituirà la parola chiave <a href="../../../GML_Overview/Instance_Keywords.htm"><span class="notranslate">noone</span></a>, ma se ci sono istanze allora restituirà la parola chiave <a href="Instance_Variables/id.htm"><span class="inline">id</span></a> dell'istanza trovata. Si prega di notare che se l'istanza che esegue il codice ha lo stesso indice <span class="notranslate">object</span> del <span class="notranslate">object</span> che viene controllato, allora sarà incluso nel controllo (questo include i controlli per i genitori <span class="notranslate">objects</span> se l'istanza chiamante è anche un figlio del genitore).</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">instance_furthest(x, y, obj);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>x</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The x position to check for instances far from.</td>
+        <td><span class="notranslate">x</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The x position to check for instances far from.</span></td>
      </tr>
       <tr>
-        <td>y</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The y position to check for instances far from.</td>
+        <td><span class="notranslate">y</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The y position to check for instances far from.</span></td>
      </tr>
       <tr>
-        <td>obj</td><td><span data-keyref="Type_Asset_Object"></span></td>
-        <td>The object to check for instances of.</td>
+        <td><span class="notranslate">obj</span></td><td><span data-keyref="Type_Asset_Object"></span></td>
+        <td><span class="notranslate">The object to check for instances of.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_ID_Instance">Instance ID</span> or <span data-keyref="Type_ID_noone">noone</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var inst;<br />
     inst = instance_furthest(x, y, object_index);<br />
     if inst != id<br />
     {<br />
         draw_line(x, y, inst.x, inst.y);<br />
     }</p>
-  <p>The above code will find the furthest instance that shares the same object index as the instance running the code and store the id in a variable. This variable is then checked to see if it is the same as the id of the calling instance and, if it is not, a line is drawn between the two instances.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra troverà l'istanza più lontana che condivide lo stesso indice <span class="notranslate">object</span> dell'istanza che esegue il codice e memorizzerà l'id in una variabile. Questa variabile viene poi controllata per vedere se è uguale all'id dell'istanza chiamante e, se non lo è, viene tracciata una linea tra le due istanze.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Instances.htm">Instances</a></div>
-        <div style="float:right">Next: <a href="instance_nearest.htm">instance_nearest</a></div>
+        <div style="float:left">Indietro: <a href="Instances.htm">Istanze</a></div>
+        <div style="float:right">Il prossimo: <a href="instance_nearest.htm"><span class="notranslate">instance_nearest</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 instance_furthest

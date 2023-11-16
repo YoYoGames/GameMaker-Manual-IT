@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>sequence_destroy</title>
+  <title>distruggere la sequenza</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining function sequence_destroy" />
   <meta name="rh-index-keywords" content="sequence_destroy" />
@@ -14,46 +14,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sequence_destroy</h1>
-  <p>With this function you can destroy a sequence object that has been created dynamically. You supply either the sequence object struct (as returned by the function <a href="sequence_create.htm"><span class="inline">sequence_create()</span></a>) or the sequence ID (as returned by the function <a href="../Rooms/Sequence_Layers/layer_sequence_get_sequence.htm"><span class="inline">layer_sequence_get_sequence()</span></a> or from the sequence instance struct property <span class="inline">sequence</span>). This function should be used whenever a dynamically created sequence is no longer required to free up the memory associated with it.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>distruggere la sequenza</h1>
+  <p>Con questa funzione potete distruggere un <span class="notranslate">sequence</span> <span class="notranslate">object</span> che è stato creato dinamicamente. Si fornisce o il <span class="notranslate">sequence</span> <span class="notranslate">object</span> <span class="notranslate">struct</span> (come restituito dalla funzione <a href="sequence_create.htm"><span class="inline">sequence_create()</span></a>) o l'ID di <span class="notranslate">sequence</span> (come restituito dalla funzione <a href="../Rooms/Sequence_Layers/layer_sequence_get_sequence.htm"><span class="inline">layer_sequence_get_sequence()</span></a> o dall'istanza <span class="notranslate">sequence</span> <span class="notranslate">struct</span> proprietà <span class="inline">sequence</span>). Questa funzione dovrebbe essere usata ogni volta che un <span class="notranslate">sequence</span> creato dinamicamente non è più necessario per liberare la memoria ad esso associata.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">sequence_destroy(sequence_struct_or_id);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>sequence_struct_or_id</td>
-        <td><span data-keyref="Type_Asset_Sequence">Sequence Asset</span> or <span data-keyref="Type_Struct_Sequence_Object">Sequence Object Struct</span></td>
-        <td>The sequence object struct or ID to destroy</td>
+        <td><span class="notranslate">sequence_struct_or_id</span></td>
+        <td><span data-keyref="Type_Asset_Sequence">Sequence Asset</span> o <span data-keyref="Type_Struct_Sequence_Object">Sequence <span class="notranslate">Object</span> Struct</span></td>
+        <td><span class="notranslate">The sequence object struct or ID to destroy</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if sequence_exists(my_seq)<br />
     {<br />
         sequence_destroy(my_seq);<br />
     }</p>
-  <p>The above code checks to see if the given sequence object exists and if it does it is destroyed.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice precedente controlla se il dato <span class="notranslate">sequence</span> <span class="notranslate">object</span> esiste e se esiste viene distrutto.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sequences.htm">Sequences</a></div>
-        <div style="float:right">Next: <a href="sequence_get.htm">sequence_get</a></div>
+        <div style="float:left">Indietro: <a href="Sequences.htm">Sequenze</a></div>
+        <div style="float:right">Il prossimo: <a href="sequence_get.htm"><span class="notranslate">sequence_get</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 sequence_destroy

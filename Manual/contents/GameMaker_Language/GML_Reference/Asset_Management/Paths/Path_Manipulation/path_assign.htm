@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>path_assign</title>
+  <title>percorso_assegnato</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function path_assign" />
   <meta name="rh-index-keywords" content="path_assign" />
@@ -15,48 +15,48 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>path_assign</h1>
-  <p>With this function you can copy the path data from one path to another. The path being copied <i>to</i> will be cleared first (should it have any path points) and be <strong>completely overwritten</strong> by the path being
-    copied from. Neither path is deleted in the process and the result is two paths, with two different indexes, but the exact same form and points. In general you would want to use this function on a path created using <span class="inline"><a href="path_add.htm">path_add()</a></span>,
-    since if you use it on a path asset, <strong>it will permanently affect the path for all instances in the game</strong> from the moment the function is used until the end of the game.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>percorso_assegnato</h1>
+  <p>Con questa funzione è possibile copiare i dati di <span class="notranslate">path</span> da un <span class="notranslate">path</span> a un altro. Il <span class="notranslate">path</span> <i>in cui</i> viene copiato sarà cancellato per primo (se ha punti <span class="notranslate">path</span> ) e sarà <strong>completamente sovrascritto</strong> dal <span class="notranslate">path</span> da cui viene
+    copiato da. Nessuno dei due <span class="notranslate">path</span> viene cancellato nel processo e il risultato sono due <span class="notranslate">paths</span>, con due indici diversi, ma la stessa forma e gli stessi punti. In generale vorreste usare questa funzione su un <span class="notranslate">path</span> creato usando <span class="inline"><a href="path_add.htm">path_add()</a></span>,
+    poiché se la usate su un <span class="notranslate">path</span> <span class="notranslate">asset</span>, <strong>influenzerà permanentemente il <span class="notranslate">path</span> per tutte le istanze nel gioco</strong> dal momento in cui la funzione viene usata fino alla fine del gioco.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">path_assign(index, path);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>index</td><td><span data-keyref="Type_Asset_Path"></span></td>
-        <td>The index of the path to be overwritten.</td>
+        <td><span class="notranslate">index</span></td><td><span data-keyref="Type_Asset_Path"></span></td>
+        <td><span class="notranslate">The index of the path to be overwritten.</span></td>
      </tr>
       <tr>
-        <td>path</td><td><span data-keyref="Type_Asset_Path"></span></td>
-        <td>The index of the path that will overwrite &#39;index&#39;.</td>
+        <td><span class="notranslate">path</span></td><td><span data-keyref="Type_Asset_Path"></span></td>
+        <td><span class="notranslate">The index of the path that will overwrite &#39;index&#39;.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">mypath = path_add();<br/> path_assign(mypath, choose(path_1, path_2, path_3));</p>
-  <p>The above code will create a new, empty path indexed in the variable &quot;mypath&quot; and then copy over the path data from one of the three available path resources.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra creerà un nuovo, vuoto <span class="notranslate">path</span> indicizzato nella variabile &quot;mypath&quot; e poi copierà i dati di <span class="notranslate">path</span> da una delle tre risorse disponibili <span class="notranslate">path</span>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Path_Manipulation.htm">Path Manipulation</a></div>
-        <div style="float:right">Next: <a href="path_delete.htm">path_delete</a></div>
+        <div style="float:left">Indietro: <a href="Path_Manipulation.htm">Manipolazione del percorso</a></div>
+        <div style="float:right">Il prossimo: <a href="path_delete.htm"><span class="notranslate">path_delete</span></a></div>
         
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 path_assign

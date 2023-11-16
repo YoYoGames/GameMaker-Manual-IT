@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>file_text_open_from_string</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for file_text_open_from_string" />
   <meta name="rh-index-keywords" content="file_text_open_from_string" />
@@ -16,44 +15,42 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>file_text_open_from_string</h1>
-  <p>This function will create a text file from a string and open it for reading, returning the file &quot;handle&quot; that should be used in all further file function calls to read from this file. Note that this file is temporary and <i>read only</i>, and as such it will be removed from memory the moment it is closed.</p>
-  <p class="note"><b><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> </b>You can only have a maximum of 32 files open at any one time. You should also <b>always</b> close files when finished as this writes the information and frees the memory associated with the file.<b></b></p>
-  <div data-conref="../../../../assets/snippets/Note_Warning_GM_FileSystem_Sandboxed.hts"> </div>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione creerà un file di testo da un <span class="notranslate">string</span> e lo aprirà per la lettura, restituendo il file &quot;handle&quot; che dovrebbe essere usato in tutte le ulteriori chiamate alla funzione file per leggere da questo file. Notate che questo file è temporaneo e di <i>sola lettura</i>, e come tale verrà rimosso dalla memoria nel momento in cui verrà chiuso.</p>
+  <p class="note"><b>NOTA</b>: potete avere solo un massimo di 32 file aperti alla volta. Dovresti anche chiudere <b>sempre</b> i file quando hai finito, perché questo scrive le informazioni e libera la memoria associata al file.</p>
+  <p class="note"><b></b><b>ATTENZIONE!</b> Questa funzione potrebbe non funzionare come vi aspettate a causa della sandbox di <span data-keyref="GameMaker Name">GameMaker</span>! Vedere la sezione sul <a href="../../../../Additional_Information/The_File_System.htm">File System</a> per maggiori informazioni.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">file_text_open_from_string(string);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
+     </tr>
       <tr>
-        <td>string</td>
-        <td><span data-keyref="Type_String"><a href="../../../GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td>The string to create the file from.</td>
-      </tr>
+        <td><span class="notranslate">string</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The string to create the file from.</span></td>
+     </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_ID_File_Text"><a href="file_text_open_read.htm" target="_blank">Text File ID</a></span> or -1</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_ID_File_Text">File ID</span> or -1</p>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">file = file_text_open_from_string(reset_str);</p>
-  <p>The above code takes the string stored in the variable &quot;reset_str&quot; and uses it to create a read-only text file. The &quot;handle&quot; for this file is then stored in the variable &quot;file&quot; for all further file functions to use.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra prende il <span class="notranslate">string</span> memorizzato nella variabile &quot;reset_str&quot; e lo usa per creare un file di testo di sola lettura. L'&quot;handle&quot; per questo file è poi memorizzato nella variabile &quot;file&quot; per tutte le altre funzioni di file da usare.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Text_Files.htm">Text Files</a></div>
-        <div style="float:right">Next: <a href="file_text_read_real.htm">file_text_read_real</a></div>
+        <div style="float:left">Indietro: <a href="Text_Files.htm">File di testo</a></div>
+        <div style="float:right">Il prossimo: <a href="file_text_read_real.htm"><span class="notranslate">file_text_read_real</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 file_text_open_from_string
@@ -61,5 +58,5 @@ file_text_open_from_string
   <!-- TAGS
 file_text_open_from_string
 -->
-</body>
-</html>
+
+</body></html>

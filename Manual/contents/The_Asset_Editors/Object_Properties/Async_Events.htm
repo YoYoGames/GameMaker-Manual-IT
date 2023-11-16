@@ -1,141 +1,127 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Async Events</title>
+  <title>Eventi asincroni</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page detailing the async events." />
   <meta name="rh-index-keywords" content="Objects - Async Events" />
-  <meta name="search-keywords" content="Async Events,asynchronous,image loaded,audio playback,audio recording,cloud,dialog,http,in-app-purchase,networking,push notification,save/load,social,steam,system,audio playback ended" />
+  <meta name="search-keywords" content="Async Events,asynchronous,image loaded,audio playback,audio recording,cloud,dialog,http,in-app-purchase,networking,push notification,save/load,social,steam,system" />
   <link rel="stylesheet" type="text/css" href="../../assets/css/default.css" />
-  <script src="../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../assets/scripts/main_script.js"></script>
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>The <span data-field="title" data-format="default">Async Events</span></h1>
-  <p><img alt="The Async Event" class="center" height="322" src="../../assets/Images/Asset_Editors/Editor_Objects_Async.png" width="344" /></p>
-  <p>An Asynchronous Event is one that is fired when <span data-keyref="GameMaker Name">GameMaker</span> receives a <a class="glossterm" data-glossterm="callback" href="#">callback</a> from some external source, which can be from the web or from the device running your game.</p>
-  <p>Basically, you tell <span data-keyref="GameMaker Name">GameMaker</span> to do something - like load an image - and it will start to do this. As an example, let&#39;s say you want to add a sprite from an external file. This can be done <em>synchronously</em> or <em>asynchronously</em>. To do this synchronously, you use the function <span class="inline3_func"><a data-xref="{title}" href="../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Sprite_Manipulation/sprite_add.htm">sprite_add</a></span>: </p>
-  <p class="code">var _new_big_sprite = sprite_add(&quot;my_new_sprite_image.png&quot;, 1, false, true, 0, 0);<br />
-    <br />
-    // A lot more code below this line that all needs to be executed on time to keep a steady FPS
-  </p>
-  <p>This function has a bit of a disadvantage, however, as it <em>fully l<em>oads the sprite immediately</em></em>. The next line of code will only be executed after that&#39;s finished! This may barely be noticeable if you&#39;re just adding a single small sprite, but might freeze your game when loading one big sprite or many small ones.</p>
-  <p><span data-keyref="GameMaker Name">GameMaker</span> also has built-in functions that work <em>asynchronously</em> instead. Using these functions <span data-keyref="GameMaker Name">GameMaker</span> only <em>starts</em> doing what you asked, but doesn&#39;t stop executing code until this has finished. It continues to process your async request &quot;in the background&quot; and continues to run the rest of your game&#39;s code normally. When the request completes, a callback will be sent to <span data-keyref="GameMaker Name">GameMaker</span> and any Asynchronous Events defined for that type of callback will be fired.</p>
-  <p>In the example of <span class="inline3_func"><a data-xref="{title}" href="../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Sprite_Manipulation/sprite_add.htm">sprite_add</a></span>, you can use its asynchronous counterpart <span class="inline3_func"><a data-xref="{title}" href="../../GameMaker_Language/GML_Reference/Asset_Management/Sprites/Sprite_Manipulation/sprite_add_ext.htm">sprite_add_ext</a></span> to just <em>start</em> loading the sprite and trigger an async event afterwards: </p>
-  <p class="code">var _new_big_sprite = sprite_add_ext(&quot;my_new_sprite_image.png&quot;, 1, 0, 0, true);<br />
-    <br />
-    // A lot more code below this line that will be executed almost instantly after the call to sprite_add_ext
-  </p>
-  <p class="code_heading">Async Image Loaded Event</p>
-  <p class="code">/// &quot;The sprite you requested has finished loading&quot;</p>
-  <p>There are other situations in which you don&#39;t want the game to wait until something that might take an amount of time to complete has finished, such as making HTTP requests to a web server.</p>
-  <p>You don&#39;t always have to call a function yourself first in order to receive a callback in the form of an async event, for example the async <a data-xref="{title}" href="Async_Events/System.htm">System</a> event will be triggered when a gamepad is connected or disconnected. For this you don&#39;t have to call a function first.</p>
-  <p>Please note that the Asynchronous Events are fired for <em>all </em>instances that have them, much like the keyboard events, so you can - for example - do an <span class="inline3_func"><a data-xref="{title}" href="../../GameMaker_Language/GML_Reference/Asynchronous_Functions/HTTP/http_get.htm">http_get</a></span> call in one instance, yet have the <strong>Asynchronous HTTP Event</strong> in another to deal with the callback.</p>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> You should be aware that due to XSS protection in browsers, requests and attempts to load resources from across domains are blocked and may appear to return blank results when using any of the following events.</p>
-  <p>There are various types of events associated with the Asynchronous event category, and they are all explained in the sections below:</p>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> The variable <span class="inline2"><a data-xref="{title}" href="../../GameMaker_Language/GML_Overview/Variables/Builtin_Global_Variables/async_load.htm">async_load</a></span> which is mentioned in the following sections is <strong>only valid in these events</strong>, as the <a href="../../GameMaker_Language/GML_Reference/Data_Structures/DS_Maps/DS_Maps.htm">DS map</a> that it points to is created at the start of the event, then deleted again at the end, with this variable being reset to a value of <span class="inline2">-1</span> at all other times.</p>
+  <h1>Gli eventi asincroni</h1>
+  <p><img alt="The Async Event" class="center" src="../../assets/Images/Asset_Editors/Editor_Objects_Async.png"/></p>
+  <p>Un evento asincrono è un evento che viene lanciato quando <span data-keyref="GameMaker Name">GameMaker</span> riceve un <a class="glossterm" data-glossterm="callback" href="#">callback</a> da una fonte esterna, che può essere dal web o dal dispositivo che esegue il gioco. Fondamentalmente,
+    voi dite a <span data-keyref="GameMaker Name">GameMaker</span> di fare qualcosa - come caricare un'immagine - e lui inizierà a farlo, ma continuerà a fare qualsiasi altra cosa debba fare nel frattempo. Poi, quando la richiesta è stata completata, un callback sarà inviato a GameMaker
+    Studio 2 e qualsiasi evento asincrono definito per quel tipo di callback verrà sparato.</p>
+  <p>Si prega di notare che gli eventi asincroni vengono sparati per <em>tutte le </em>istanze che li hanno, proprio come gli eventi della tastiera, quindi si può - per esempio - fare una chiamata <span class="inline">http_get()</span> in un'istanza, ma avere l'<strong>evento HTTP asincrono</strong> in un'altra per gestire il callback.</p>
+  <p class="note"><strong>NOTA</strong>: dovresti essere consapevole che a causa della protezione XSS nei browser, le richieste e i tentativi di caricare risorse da altri domini sono bloccati e possono sembrare restituire risultati vuoti quando usi uno dei seguenti eventi.</p>
+  <p>Ci sono vari tipi di eventi associati alla categoria degli eventi asincroni, e sono tutti spiegati nelle sezioni seguenti:</p>
+  <p class="note"><strong>NOTA</strong>: La variabile <a href="../../GameMaker_Language/GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span style="font-size:14px;"><span class="inline" style="font-size: 14px">async_load</span></span></a>  che è menzionata
+    nelle sezioni seguenti è <strong>valida solo in questi eventi</strong>, poiché la mappa DS a cui punta viene creata all'inizio dell'evento, poi cancellata di nuovo alla fine, con questa variabile che viene resettata al valore -1 in tutti gli altri momenti.</p>
   <ul class="colour">
-    <li><a href="Async_Events/Audio_Playback.htm">Audio Playback</a></li>
-    <li><a data-xref="{title}" href="Async_Events/Audio_Playback_Ended.htm">Audio Playback Ended</a></li>
-    <li><a href="Async_Events/Audio_Recording.htm">Audio Recording</a></li>
+    <li><a href="Async_Events/Audio_Playback.htm">Riproduzione audio</a></li>
+    <li><a href="Async_Events/Audio_Recording.htm">Registrazione audio</a></li>
     <li><a href="Async_Events/Cloud.htm">Cloud</a></li>
-    <li><a href="Async_Events/Dialog.htm">Dialog</a></li>
+    <li><a href="Async_Events/Dialog.htm">Dialogo</a></li>
     <li><a href="Async_Events/HTTP.htm">HTTP</a></li>
-    <li><a href="Async_Events/IAP.htm">In App Purchase</a></li>
-    <li><a href="Async_Events/Image_Loaded.htm">Image Loaded</a></li>
+    <li><a href="Async_Events/IAP.htm">Acquisto in app</a></li>
+    <li><a href="Async_Events/Image_Loaded.htm">Immagine caricata</a></li>
     <li><a href="Async_Events/Networking.htm">Networking</a></li>
-    <li><a href="Async_Events/Push_Notifications.htm">Push Notifications</a></li>
-    <li><a href="Async_Events/Save_Load.htm">Save / Load</a></li>
-    <li><a href="Async_Events/Social.htm">Social</a></li>
-    <li><a href="Async_Events/Steam.htm">Steam</a></li>
-    <li><a href="Async_Events/System.htm">System</a></li>
+    <li><a href="Async_Events/Push_Notifications.htm">Notifiche push</a></li>
+    <li><a href="Async_Events/Save_Load.htm">Salva / Carica</a></li>
+    <li><a href="Async_Events/Social.htm">Sociale</a></li>
+    <li><a href="Async_Events/Steam.htm">Vapore</a></li>
+    <li><a href="Async_Events/System.htm">Sistema</a></li>
   </ul>
-  <p> </p>
-  <p>It may be that if you are making extensions for different platforms you would like to target one or more of these asynchronous events for callbacks from your extension functions. To that end, you can find a table below that outlines each of the internal event name constants and their corresponding ID value.</p>
-  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> These event constants are <b>only</b> for use with extensions!</p>
-  <p> </p>
-  <table id="async_event_constants" style="caption-side: top">
-    <caption>Async Event Constants</caption>
+  <p> </p>
+  <p>Può essere che se state facendo <span class="notranslate">extensions</span> per diverse piattaforme vorreste puntare a uno o più di questi eventi asincroni per i callback dalle vostre funzioni <span class="notranslate">extension</span>. A tal fine, potete trovare una tabella qui sotto che delinea ciascuna delle costanti interne
+    e il loro corrispondente valore ID. Notate che queste costanti di eventi sono da usare <b>solo</b> con <span class="notranslate">extensions</span>!</p>
+  <p> </p>
+  <table>
     <tbody>
       <tr>
-        <th width="40%">Constant</th>
-        <th>Value</th>
+        <th width="40%">Costante</th>
+        <th>Valore</th>
       </tr>
       <tr>
-        <td><b>EVENT_OTHER_WEB_IMAGE_LOAD </b></td>
+        <td><b>EVENTO_ALTRO_WEB_IMAGE_LOAD </b></td>
         <td style="text-align: center"><span style="text-align:center;">60</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_WEB_SOUND_LOAD </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_WEB_SOUND_LOAD </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">61</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_WEB_ASYNC </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_WEB_ASYNC </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">62</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_DIALOG_ASYNC </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_DIALOGO_ASYNC </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">63</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_WEB_IAP </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_WEB_IAP </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">66</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_WEB_CLOUD </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_WEB_CLOUD </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">67</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_WEB_NETWORKING </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_WEB_NETWORKING </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">68</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_WEB_STEAM </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_WEB_STEAM </b></span></td>
         <td style="text-align: center">69</td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_SOCIAL </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_SOCIALE </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">70</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_PUSH_NOTIFICATION </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_PUSH_NOTIFICATION </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">71</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_ASYNC_SAVE_LOAD </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_ASYNC_SAVE_LOAD </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">72</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_AUDIO_RECORDING </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRA_REGISTRAZIONE_AUDIO </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">73</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_AUDIO_PLAYBACK </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_RIPRODUZIONE_AUDIO </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">74</span></td>
       </tr>
       <tr>
-        <td><span style="text-align:center;"><b>EVENT_OTHER_SYSTEM_EVENT </b></span></td>
+        <td><span style="text-align:center;"><b>EVENTO_ALTRO_SISTEMA_EVENTO </b></span></td>
         <td style="text-align: center"><span style="text-align:center;">75</span></td>
       </tr>
       <tr>
-        <td><strong>EVENT_OTHER_MESSAGE_EVENT </strong></td>
+        <td><strong>EVENTO_ALTRO_MESSAGGIO_EVENTO </strong></td>
         <td style="text-align: center">76</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Object_Events.htm">Object Events</a></div>
-        <div style="float:right">Next: <a href="Gesture_Events.htm">Gesture Events</a></div>
+        <div style="float:left">Indietro: <a href="Object_Events.htm">Eventi dell'oggetto</a></div>
+        <div style="float:right">Il prossimo: <a href="Gesture_Events.htm">Eventi gestuali</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Asynchronous Events
@@ -145,7 +131,7 @@ Asynchronous HTTP Event
 Asynchronous IAP Event
 Asynchronous Cloud Event
 Asynchronous Networking Event
-Asynchronous Steam Event
+Asynchronous <span class="notranslate">Steam</span> Event
 Asynchronous Social Event
 Asynchronous Push Notification Event
 Asynchronous Audio Recording Event
@@ -182,5 +168,5 @@ ev_broadcast_message
   <!-- TAGS
 aync_events
 -->
-</body>
-</html>
+
+</body></html>

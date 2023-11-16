@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>skeleton_animation_get_duration</title>
+  <title>scheletro_animazione_get_duration</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function skeleton_animation_get_duration" />
   <meta name="rh-index-keywords" content="skeleton_animation_get_duration" />
@@ -15,46 +15,46 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>skeleton_animation_get_duration</h1>
-  <p>This function will return the time required for the given animation set to run before looping back to the beginning. The return value is in seconds.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>scheletro_animazione_get_duration</h1>
+  <p>Questa funzione restituisce il tempo necessario per l'esecuzione dell'animazione data prima di tornare all'inizio. Il valore di ritorno è in secondi.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">skeleton_animation_get_duration(animname);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>animname</td><td><span data-keyref="Type_String"></span></td>
-        <td>The name (a string) of the animation set to use.</td>
+        <td><span class="notranslate">animname</span></td><td><span data-keyref="Type_String"></span></td>
+        <td><span class="notranslate">The name (a string) of the animation set to use.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Real"></span></p>
-  <p> </p>
-  <h4>Example1:</h4>
+  <p> </p>
+  <h4>Esempio1:</h4>
   <p class="code">time += delta_time / 1000000;<br/> var duration = skeleton_animation_get_duration(skeleton_animation_get());<br/> var frame = floor((image_number * (mTime / duration)) + 0.5) % image_number;<br/> image_index = frame;<br/> draw_self();
   </p>
-  <p>The above code will set the <span class="inline">image_index</span> to the correct value for the currently assigned skeletal animation sprite.</p>
-  <h4>Example2:</h4>
+  <p>Il codice qui sopra imposterà il <span class="inline">image_index</span> al valore corretto per l'animazione scheletrica attualmente assegnata <span class="notranslate">sprite</span>.</p>
+  <h4>Esempio2:</h4>
   <p class="code">time += delta_time / 1000000;<br/> var d = skeleton_animation_get_duration(&quot;walk&quot;);<br/> if time &gt; d time -= d;<br/> draw_skeleton_time(sprite_index, &quot;walk&quot;, &quot;skin1&quot;, time, x, y, image_xscale, image_yscale, image_angle,
     c_white);</p>
-  <p>The above code will draw the given skeletal animation sprite using delta-time to set the frame being drawn.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra disegnerà l'animazione scheletrica data <span class="notranslate">sprite</span> usando il delta-time per impostare il fotogramma da disegnare.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Animation.htm">Animation</a></div>
-        <div style="float:right">Next: <a href="skeleton_animation_mix.htm">skeleton_animation_mix</a></div>
+        <div style="float:left">Indietro: <a href="Animation.htm">Animazione</a></div>
+        <div style="float:right">Il prossimo: <a href="skeleton_animation_mix.htm"><span class="notranslate">skeleton_animation_mix</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 skeleton_animation_get_duration

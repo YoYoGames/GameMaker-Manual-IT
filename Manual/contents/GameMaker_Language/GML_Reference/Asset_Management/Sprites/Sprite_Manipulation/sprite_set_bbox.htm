@@ -6,7 +6,7 @@
   <title>sprite_set_bbox</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page explaining the function sprite_set_bbox" />
   <meta name="rh-index-keywords" content="sprite_set_bbox" />
@@ -15,44 +15,44 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>sprite_set_bbox</h1>
-  <p>This function can be used to set the bounding box values for a sprite. You supply the sprite index to use and then the left, top, right and bottom values for the bounding box positions. The positions are <i>absolute</i> values, where the (0, 0) position corresponds to the top left corner of the sprite, regardless of the offset for the sprite, any &quot;empty&quot; pixels the sprite may have, or where it is being drawn in the room.</p>
-  <p class="note"><span class="note">NOTE</span> This function affects the sprite <b>asset </b>so that all further instances with this sprite will have the same bounding box.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Questa funzione può essere usata per impostare i valori del rettangolo di selezione per un <span class="notranslate">sprite</span>. Si fornisce l'indice <span class="notranslate">sprite</span> da usare e poi i valori sinistro, superiore, destro e inferiore per le posizioni del rettangolo di selezione. Le posizioni sono valori <i>assoluti</i>, dove la posizione (0, 0) corrisponde all'angolo in alto a sinistra di <span class="notranslate">sprite</span>, indipendentemente dall'offset di <span class="notranslate">sprite</span>, da qualsiasi pixel &quot;vuoto&quot; che <span class="notranslate">sprite</span> può avere, o da dove viene disegnato in <span class="notranslate">room</span>.</p>
+  <p class="note"><span class="note">NOTA</span> Questa funzione influenza la <b>risorsa </b> <span class="notranslate">sprite</span> in modo che tutte le ulteriori istanze con questo <span class="notranslate">sprite</span> avranno lo stesso riquadro di delimitazione.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">sprite_set_bbox(ind, left, top, right, bottom);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th><th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th><th>Tipo</th>
+        <th>Descrizione</th>
      </tr>
       <tr>
-        <td>ind</td><td><span data-keyref="Type_Asset_Sprite"></span></td>
-        <td>The index of the sprite to set the bounding box on.</td>
+        <td><span class="notranslate">ind</span></td><td><span data-keyref="Type_Asset_Sprite"></span></td>
+        <td><span class="notranslate">The index of the sprite to set the bounding box on.</span></td>
      </tr>
       <tr>
-        <td>left</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The left side of the bounding box</td>
+        <td><span class="notranslate">left</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The left side of the bounding box</span></td>
      </tr>
       <tr>
-        <td>top</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The top of the bounding box.</td>
+        <td><span class="notranslate">top</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The top of the bounding box.</span></td>
      </tr>
       <tr>
-        <td>right</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The right side of the bounding box</td>
+        <td><span class="notranslate">right</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The right side of the bounding box</span></td>
      </tr>
       <tr>
-        <td>bottom</td><td><span data-keyref="Type_Real"></span></td>
-        <td>The bottom of the bounding box.</td>
+        <td><span class="notranslate">bottom</span></td><td><span data-keyref="Type_Real"></span></td>
+        <td><span class="notranslate">The bottom of the bounding box.</span></td>
      </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns</h4>
+  <p> </p>
+  <h4>Restituisce</h4>
   <p class="code"><span data-keyref="Type_Void"></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if sprite_get_bbox_mode(sprite_index) == 2<br />
     {<br />
         left = irandom(sprite_width / 2);<br />
@@ -61,18 +61,18 @@
         bottom = irandom((sprite_height / 2) + irandom(sprite_height / 2));<br />
         sprite_set_bbox(sprite_index, left, top, right, bottom);<br />
     }</p>
-  <p>The above code will check the bounding box mode of the sprite assigned to the <span class="inline">sprite_index</span>, and if it is set to <span class="inline">manual</span> then it will have its bounding box changed.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra controllerà la modalità del riquadro di delimitazione di <span class="notranslate">sprite</span> assegnato a <span class="inline">sprite_index</span>, e se è impostato su <span class="inline">manual</span> allora avrà il suo riquadro di delimitazione cambiato.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sprite_Manipulation.htm">Sprite Manipulation</a></div>
-        <div style="float:right">Next: <a href="sprite_set_speed.htm">sprite_set_speed</a></div>
+        <div style="float:left">Indietro: <a href="Sprite_Manipulation.htm">Manipolazione degli sprite</a></div>
+        <div style="float:right">Il prossimo: <a href="sprite_set_speed.htm"><span class="notranslate">sprite_set_speed</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 sprite_set_bbox

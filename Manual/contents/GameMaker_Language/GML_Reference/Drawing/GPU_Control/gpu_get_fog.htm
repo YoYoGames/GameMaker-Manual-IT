@@ -6,7 +6,7 @@
   <title>gpu_get_fog</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for the function gpu_get_fog" />
   <meta name="rh-index-keywords" content="gpu_get_fog" />
@@ -16,37 +16,37 @@
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
   <h1>gpu_get_fog</h1>
-  <p>This function can be used to retrieve the fog settings. The function returns a 4 element 1D array with the following information:</p>
+  <p>Questa funzione può essere usata per recuperare le impostazioni della nebbia. La funzione restituisce un array 1D di 4 elementi con le seguenti informazioni:</p>
   <ul class="colour">
-    <li>[0] = enabled toggle (a <span data-keyref="Type_Bool">Boolean</span>, either <span class="inline">true</span> or <span class="inline">false</span>), default <span class="inline">false</span></li>
-    <li>[1] = <span data-keyref="Type_Constant_Colour">Colour Constant</span>, default <span class="inline">c_black</span></li>
-    <li>[2] = start distance (<span data-keyref="Type_Real">Real</span>), default 0</li>
-    <li>[3] = end distance (<span data-keyref="Type_Real">Real</span>), default 1</li>
+    <li>[0] = abilitato alla commutazione (un <span data-keyref="Type_Bool">booleano</span>, o <span class="inline">true</span> o <span class="inline">false</span>), predefinito <span class="inline">false</span></li>
+    <li>[1] = <span data-keyref="Type_Constant_Colour">Costante di colore</span>, predefinito <span class="inline">c_black</span></li>
+    <li>[2] = distanza iniziale<span data-keyref="Type_Real">(reale</span>), default 0</li>
+    <li>[3] = distanza finale<span data-keyref="Type_Real">(reale</span>), default 1</li>
   </ul>
-  <p>Note that you can change these values and pass the full array to the <a href="gpu_set_fog.htm"><span class="inline">gpu_set_fog()</span></a> function as a single argument.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Notate che potete cambiare questi valori e passare l'intero array alla funzione <a href="gpu_set_fog.htm"><span class="inline">gpu_set_fog()</span></a> come singolo argomento.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">gpu_get_fog();</p>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Array">Array</span> (4 elements only; see above for details)</p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">var fog_a = gpu_get_fog();<br />
     fog_a[1] = c_red;<br />
     gpu_set_fog(fog_a);</p>
-  <p>The above code gets the current fog settings and then sets the colour element of the array to <span class="inline">c_red</span> before setting the fog again using the changed array.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra ottiene le impostazioni correnti della nebbia e poi imposta l'elemento colore dell'array su <span class="inline">c_red</span> prima di impostare nuovamente la nebbia usando l'array modificato.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="GPU_Control.htm">GPU Control</a></div>
-        <div style="float:right">Next: <a href="gpu_get_cullmode.htm">gpu_get_cullmode</a></div>
+        <div style="float:left">Indietro: <a href="GPU_Control.htm">Controllo GPU</a></div>
+        <div style="float:right">Il prossimo: <a href="gpu_get_cullmode.htm"><span class="notranslate">gpu_get_cullmode</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 gpu_get_fog

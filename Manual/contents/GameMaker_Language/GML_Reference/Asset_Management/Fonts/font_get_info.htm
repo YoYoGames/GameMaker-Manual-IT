@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>font_get_info</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Gurpreet S. Matharoo" />
   <meta name="topic-comment" content="Page outlining the function font_get_info" />
   <meta name="rh-index-keywords" content="font_get_info" />
@@ -15,9 +15,8 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><span data-field="title" data-format="default">font_get_info</span></h1>
-  <p>This function is used to retrieve information for the given font. You supply a font index, which can be an asset added through <a data-xref="{title}" href="../../../../Introduction/The_Asset_Browser.htm">The Asset Browser</a> or a font <a href="font_add.htm">added</a> at runtime.</p>
-  <p>The function returns a <a href="../../../GML_Overview/Structs.htm">struct</a> with the following variables:</p>
+  <h1>font_get_info</h1>
+  <p>Questa funzione è usata per recuperare informazioni per il dato <span class="notranslate">font</span>. Si fornisce un indice <span class="notranslate">font</span> (che può essere un <span class="notranslate">asset</span> aggiunto attraverso l'<a href="../../../../Introduction/The_Asset_Browser.htm">Asset Browser</a> o un <span class="notranslate">font</span> <a href="font_add.htm">aggiunto</a> a <span class="notranslate">runtime</span>) e la funzione restituisce una <a href="../../../GML_Overview/Structs.htm">struct</a> con le seguenti variabili:</p>
   <table>
     <colgroup>
       <col />
@@ -26,85 +25,60 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="3"><span data-keyref="Type_Struct_Font_Info"><a href="GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_get_info.htm" target="_blank">Font Info Struct</a></span></th>
+        <th colspan="3"><span data-keyref="Type_Struct_Font_Info"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_get_info.htm">Struttura delle informazioni sui font</a></span></th>
       </tr>
       <tr>
-        <th>Variable Name</th>
-        <th style="">Data Type</th>
-        <th style="">Description</th>
-      </tr>
-      <tr>
-        <td><span class="inline">ascender</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">The height of the font&#39;s <a href="https://en.wikipedia.org/wiki/Ascender_(typography)">ascender</a> (in pixels)</td>
+        <th>Nome della variabile</th>
+        <th style="">Tipo di dati</th>
+        <th style="">Descrizione</th>
       </tr>
       <tr>
         <td><span class="inline">ascenderOffset</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">The maximum offset from the baseline to the top of the font (in pixels)</td>
+        <td style=""><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
+        <td style="">L'offset massimo dalla linea di base alla parte superiore di <span class="notranslate">font</span> (in pixel)</td>
       </tr>
       <tr>
         <td><span class="inline">size</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">The approximate size of the font (in pixels)</td>
+        <td style=""><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Real</a></span></td>
+        <td style="">La dimensione approssimativa di <span class="notranslate">font</span> (in pixel)</td>
       </tr>
       <tr>
         <td><span class="inline">spriteIndex</span></td>
-        <td style=""><span data-keyref="Type_Asset_Sprite"><a href="The_Asset_Editors/Sprites.htm" target="_blank">Sprite Asset</a></span></td>
-        <td style="">The sprite index for the font if it was <a href="font_add_sprite.htm">created from a sprite</a>, otherwise -1</td>
+        <td style=""><span data-keyref="Type_Asset_Sprite"><a data-rhwidget="HyperlinkPopover" href="../../../../../The_Asset_Editors/Sprites.htm">Sprite Asset</a></span></td>
+        <td style="">L'indice <span class="notranslate">sprite</span> per il <span class="notranslate">font</span> se è stato <a href="font_add_sprite.htm">creato da uno sprite</a>, altrimenti -1</td>
       </tr>
       <tr>
         <td><span class="inline">texture</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">-1 if the font was created from a sprite, otherwise the texture ID of the font</td>
+        <td style=""><span data-keyref="Type_Pointer"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Puntatore</a></span></td>
+        <td style="">-1 se il <span class="notranslate">font</span> è stato creato da un <span class="notranslate">sprite</span>, altrimenti l'ID <span class="notranslate">texture</span> del font</td>
       </tr>
       <tr>
         <td><span class="inline">name</span></td>
-        <td style=""><span data-keyref="Type_String"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">String</a></span></td>
-        <td style="">The name of the font</td>
+        <td style=""><span data-keyref="Type_String"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Stringa</a></span></td>
+        <td style="">Il nome del font</td>
       </tr>
       <tr>
         <td><span class="inline">bold</span></td>
-        <td style=""><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td style=""><span class="inline2">true</span> if the font is bold, otherwise <span class="inline2">false</span> <em>(see <strong>NOTE </strong>below)</em></td>
+        <td style=""><span data-keyref="Type_Bool"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Booleano</a></span></td>
+        <td style=""><span class="inline">true</span> se il <span class="notranslate">font</span> è in grassetto, altrimenti <span class="inline">false</span> <em>(vedi <strong>NOTA </strong></em>sotto)</td>
       </tr>
       <tr>
         <td><span class="inline">italic</span></td>
-        <td style=""><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td style=""><span class="inline2">true</span> if the font is italic, otherwise <span class="inline2">false</span> <em>(see <strong>NOTE </strong>below)</em></td>
+        <td style=""><span data-keyref="Type_Bool"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Overview/Data_Types.htm">Booleano</a></span></td>
+        <td style=""><span class="inline">true</span> se il <span class="notranslate">font</span> è in corsivo, altrimenti <span class="inline">false</span><em> (vedi <strong>NOTA </strong></em>sotto)</td>
       </tr>
       <tr>
         <td><span class="inline">glyphs</span></td>
-        <td style=""><span data-keyref="Type_Struct_Font_Info_Glyph"><a href="GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_get_info.htm" target="_blank">Font Glyph Struct</a></span></td>
-        <td style="">A struct containing information for each glyph in the font (more information is given <a href="#glyphs">below</a>)</td>
-      </tr>
-      <tr>
-        <td><span class="inline">sdfEnabled</span></td>
-        <td style=""><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td style="">Whether SDF is enabled or disabled for this font</td>
-      </tr>
-      <tr>
-        <td><span class="inline">sdfSpread</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">The SDF spread value set for this font</td>
-      </tr>
-      <tr>
-        <td><span class="inline">effectsEnabled</span></td>
-        <td style=""><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></td>
-        <td style="">Whether effects are enabled for this font</td>
-      </tr>
-      <tr>
-        <td><span class="inline">effectsParams</span></td>
-        <td style=""><span data-keyref="Type_Struct"><a href="GameMaker_Language/GML_Overview/Structs.htm" target="_blank">Struct</a></span></td>
-        <td style="">The effects struct for this font, which can be changed with <span class="inline3_func"><a data-xref="{title}" href="font_enable_effects.htm">font_enable_effects</a></span></td>
+        <td style=""><span data-keyref="Type_Struct_Font_Info_Glyph"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_get_info.htm">Strutturazione del glifo del carattere</a></span></td>
+        <td style="">Un <span class="notranslate">struct</span> contenente informazioni per ogni glifo in <span class="notranslate">font</span> (maggiori informazioni sono date di <a href="#glyphs">seguito</a>)</td>
       </tr>
     </tbody>
   </table>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> The <span class="inline"><strong>bold</strong></span> and <span class="inline">i</span><span class="inline">talic</span> variables only reflect the user&#39;s settings for the font, so they may not be accurate for fonts that appear bold or italic by default.</p>
-  <p>If the supplied font doesn&#39;t exist, the function will return <span class="inline2">undefined</span>.</p>
-  <p>Also note that changing the values of any of these variables, or any variables contained within the <span class="inline">glyphs</span> struct, will not change how the font is rendered, so this information should be considered <strong>read-only</strong>.</p>
-  <h2 id="glyphs">Glyphs Struct</h2>
-  <p>The <span class="inline">glyphs</span> variable in the returned struct will be a struct on its own, containing information for each glyph included in the font. Each variable in this struct will be a glyph&#39;s character name, which will hold a struct containing information for that glyph. You can imagine these nested structs in the following format (starting from the main struct):</p>
+  <p class="note"><span class="note">NOTA</span> Le variabili <span class="inline"><strong>bold</strong></span> e <span class="inline">i</span><span class="inline">talic</span> riflettono solo le impostazioni dell'utente per <span class="notranslate">font</span>, quindi potrebbero non essere accurate per <span class="notranslate">fonts</span> che appare in grassetto o in corsivo per default.</p>
+  <p>Se il <span class="notranslate">font</span> fornito non esiste, la funzione restituirà <span class="inline">undefined</span>.</p>
+  <p>Notate anche che cambiare i valori di una qualsiasi di queste variabili, o di qualsiasi variabile contenuta all'interno di <span class="inline">glyphs</span> <span class="notranslate">struct</span>, non cambierà il modo in cui <span class="notranslate">font</span> è reso, quindi queste informazioni dovrebbero essere considerate di <strong>sola lettura</strong>.</p>
+  <h2 id="glyphs">Strutture dei glifi</h2>
+  <p>La variabile <span class="inline">glyphs</span> nel <span class="notranslate">struct</span> restituito sarà un <span class="notranslate">struct</span> a sé stante, contenente informazioni per ogni glifo incluso nel <span class="notranslate">font</span>. Ogni variabile in questa struct sarà il nome del carattere di un glifo, che conterrà un <span class="notranslate">struct</span> contenente informazioni per quel glifo. Potete immaginare questi <span class="notranslate">structs</span> annidati nel seguente formato (partendo dal principale <span class="notranslate">struct</span>):</p>
   <p class="code">{<br />
         glyphs:<br />
         {<br />
@@ -115,16 +89,16 @@
         },<br />
         // ...other font info<br />
     }</p>
-  <p>You can use a glyph&#39;s character name to retrieve its information from the struct, such as in the following code:</p>
+  <p>Potete usare il nome del carattere di un glifo per recuperare le sue informazioni da <span class="notranslate">struct</span>, come nel seguente codice:</p>
   <p class="code">var _font_info = font_get_info(Font1);<br />
     <br />
     var _info_A = _font_info.glyphs[$ &quot;A&quot;]; // $ is a struct accessor<br />
     <br />
     show_debug_message(_info_A);
   </p>
-  <p>The code above gets the glyph struct for the &quot;A&quot; character and prints it to the output log. You can also replace the string (<span class="inline">&quot;A&quot;</span>) with a variable that holds a string, which will allow you to get information for any glyph through that variable at runtime.</p>
-  <p>The struct returned for a glyph will contain the following variables:</p>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> On HTML5, the glyphs struct will be empty for any loaded file fonts (such as <span class="inline">*.ttf</span> or <span class="inline">*.otf</span>) as the runtime will not have information on those glyphs.</p>
+  <p>Il codice qui sopra ottiene il glifo <span class="notranslate">struct</span> per il carattere &quot;A&quot; e lo stampa nell'output log. Potete anche sostituire il <span class="notranslate">string</span> (<span class="inline">&quot;A&quot;</span>) con una variabile che contiene un <span class="notranslate">string</span>, che vi permetterà di ottenere informazioni per qualsiasi glifo attraverso quella variabile a <span class="notranslate">runtime</span>.</p>
+  <p>Il <span class="notranslate">struct</span> restituito per un glifo conterrà le seguenti variabili:</p>
+  <p class="note"><span class="note">NOTA</span> Su HTML5, i glifi <span class="notranslate">struct</span> saranno vuoti per qualsiasi file caricato <span class="notranslate">fonts</span> (come <span class="inline">*.ttf</span> o <span class="inline">*.otf</span>) poiché <span class="notranslate">runtime</span> non avrà informazioni su quei glifi.</p>
   <table>
     <colgroup>
       <col />
@@ -133,82 +107,82 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="3"><span data-keyref="Type_Struct_Font_Info_Glyph"><a href="GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_get_info.htm" target="_blank">Font Glyph Struct</a></span></th>
+        <th colspan="3"><span data-keyref="Type_Struct_Font_Info_Glyph"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_get_info.htm">Strutturazione del glifo del carattere</a></span></th>
       </tr>
       <tr>
-        <th>Variable Name</th>
-        <th style="">Data Type</th>
-        <th style="">Description</th>
+        <th>Nome della variabile</th>
+        <th style="">Tipo di dati</th>
+        <th style="">Descrizione</th>
       </tr>
       <tr>
         <td><span class="inline">char</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">If the font was created from a sprite, this will be the image index of the glyph from that sprite, otherwise it will be its Unicode character number<br />
-          <br />
-          <em><strong>Note</strong>: All variables below this will not be present in the struct if the font was created from a sprite</em>
+        <td style="">vero</td>
+        <td style="">Se il <span class="notranslate">font</span> è stato creato da un <span class="notranslate">sprite</span>, questo sarà l'indice dell'immagine del glifo da quel <span class="notranslate">sprite</span>, altrimenti sarà il suo numero di carattere Unicode<br>
+          <br>
+         <em><strong>Nota</strong>: Tutte le variabili sotto questo non saranno presenti nel <span class="notranslate">struct</span> se il <span class="notranslate">font</span> è stato creato da uno sprite</em>
         </td>
       </tr>
       <tr>
         <td><span class="inline">x</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">The X position of the glyph on the texture page (in texels)</td>
+        <td style="">vero</td>
+        <td style="">La posizione X del glifo sulla pagina <span class="notranslate">texture</span> (in texel)</td>
       </tr>
       <tr>
         <td><span class="inline">y</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">The Y position of the glyph on the texture page (in texels)</td>
+        <td style="">vero</td>
+        <td style="">La posizione Y del glifo sulla pagina <span class="notranslate">texture</span> (in texel)</td>
       </tr>
       <tr>
         <td><span class="inline">w</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">The width of the glyph on the texture page (in texels)</td>
+        <td style="">vero</td>
+        <td style="">La larghezza del glifo sulla pagina <span class="notranslate">texture</span> (in texel)</td>
       </tr>
       <tr>
         <td><span class="inline">h</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">The height of the glyph on the texture page (in texels)</td>
+        <td style="">vero</td>
+        <td style="">L'altezza del glifo sulla pagina <span class="notranslate">texture</span> (in texel)</td>
       </tr>
       <tr>
         <td><span class="inline">shift</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">The number of pixels to shift right when advancing to the next character (can be negative for shifting left)</td>
+        <td style="">vero</td>
+        <td style="">Il numero di pixel da spostare a destra quando si avanza al carattere successivo (può essere negativo per lo spostamento a sinistra)</td>
       </tr>
       <tr>
         <td><span class="inline">offset</span></td>
-        <td style=""><span data-keyref="Type_Real"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Real</a></span></td>
-        <td style="">The number of pixels to horizontally offset the rendering of this glyph (can be positive or negative)</td>
+        <td style="">vero</td>
+        <td style="">Il numero di pixel per spostare orizzontalmente il rendering di questo glifo (può essere positivo o negativo)</td>
       </tr>
       <tr>
         <td><span class="inline">kerning</span></td>
-        <td style=""><span data-keyref="Type_Array"><a href="GameMaker_Language/GML_Overview/Arrays.htm" target="_blank">Array</a></span></td>
-        <td style="">An array of integers containing kerning information in pairs (or groups of 2). The first integer in a pair is the Unicode value for a character, and the second integer is the amount to add to that character&#39;s shift value (can be positive or negative) if it is preceded by this glyph&#39;s character.</td>
+        <td style="">array</td>
+        <td style="">Un array di interi contenenti informazioni sulla crenatura in coppie (o gruppi di 2). Il primo intero in una coppia è il valore Unicode per un carattere, e il secondo intero è la quantità da aggiungere al valore di spostamento di quel carattere (può essere positivo o negativo) se è preceduto dal carattere di questo glifo.</td>
       </tr>
     </tbody>
   </table>
-  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> For file fonts loaded at runtime, the <span class="inline">x</span> and <span class="inline">y</span> values for a glyph may be -1 if it hasn&#39;t been rendered yet, as it will have no position on the texture page used for caching.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
-  <p class="code"><span data-field="title" data-format="default">font_get_info</span>(font);</p>
+  <p class="note"><span class="note">NOTA</span> Per il file <span class="notranslate">fonts</span> caricato su <span class="notranslate">runtime</span>, i valori <span class="inline">x</span> e <span class="inline">y</span> per un glifo possono essere -1 se non è stato ancora reso, poiché non avrà una posizione nella pagina <span class="notranslate">texture</span> usata per la cache.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
+  <p class="code">font_get_info(font);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>font</td>
-        <td><span data-keyref="Type_Asset_Font"><a href="The_Asset_Editors/Fonts.htm" target="_blank">Font Asset</a></span></td>
-        <td>The font for which information should be retrieved.</td>
+        <td><span class="notranslate">font</span></td>
+        <td><span data-keyref="Type_Asset_Font"><a data-rhwidget="HyperlinkPopover" href="../../../../../The_Asset_Editors/Fonts.htm">Font Asset</a></span></td>
+        <td><span class="notranslate">The font for which information should be retrieved.</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
-  <p class="code"><span data-keyref="Type_Struct_Font_Info"><a href="GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_get_info.htm" target="_blank">Font Info Struct</a></span> (or undefined)</p>
-  <p> </p>
-  <h4>Example:</h4>
-  <p class="code">var _info = <span data-field="title" data-format="default">font_get_info</span>(my_font);<br />
+  <p> </p>
+  <h4>Ritorna:</h4>
+  <p class="code"><span data-keyref="Type_Struct_Font_Info"><a data-rhwidget="HyperlinkPopover" href="../../../../../GameMaker_Language/GML_Reference/Asset_Management/Fonts/font_get_info.htm">Font Info Struct</a></span> (or undefined)</p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p class="code">var _info = font_get_info(my_font);<br />
     <br />
     if (_info != undefined &amp;&amp; _info.bold)<br />
     {<br />
@@ -216,17 +190,17 @@
         image_yscale *= 2;<br />
     }
   </p>
-  <p>This code retrieves information for the font stored in the <span class="inline2">my_font</span> variable. If the returned value is <strong>not </strong><span class="inline2">undefined</span> and the given font is bold, the instance&#39;s scale is doubled.</p>
-  <p> </p>
-  <p> </p>
+  <p>Questo codice recupera informazioni per il <span class="notranslate">font</span> memorizzato nella variabile <span class="inline">my_font</span>. Se il valore restituito <strong>non </strong>è<span class="inline">undefined</span> e il dato <span class="notranslate">font</span> è in grassetto, la scala dell'istanza viene raddoppiata.</p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a data-xref="{title}" href="Fonts.htm">Fonts</a></div>
-        <div style="float:right">Next: <a data-xref="{title}" href="font_get_texture.htm">font_get_texture</a></div>
+        <div style="float:left">Indietro: <a href="Fonts.htm">Font</a></div>
+        <div style="float:right">Il prossimo: <a href="font_exists.htm"><span class="notranslate">font_exists</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 font_get_info

@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Sequence Events, Moments and Broadcast Messages</title>
-  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Sequenza di eventi, momenti e messaggi di trasmissione</title>
+  <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the different functions and variables associated with Sequence Events, Moments and Broadcast Messages" />
   <meta name="rh-index-keywords" content="" />
@@ -14,24 +14,24 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Events, Moments and Broadcast Messages</h1>
-  <p>Apart from all the properties listed <a href="Sequences.htm">here</a> for a sequence struct, you also have the possibility of adding in special &quot;action&quot; properties to a sequence. There are three different types of these &quot;action&quot; properties that can be added to a sequence object - <b>Events</b>. <b>Moments</b> and <b>Broadcast Messages</b> - and each of these is explained in more detail in the sections below.</p>
-  <h2>Sequence Events</h2>
-  <p>Sequence objects can have <b>events</b> added to them, and these events are analogous to the events used by object assets. The events you assign to a sequence object will occur in a specific order, either once at a defined moment in the sequence life-cycle, or every frame that the sequence is running. In this section, we discuss how these events are handled using code, but they can also be added using the <a href="../../../../The_Asset_Editors/Sequences.htm">Sequence Editor</a>. Note that that the order of events listed here is not influenced by the <a class="glossterm" data-glossterm="playhead" href="#">playhead</a> direction, and even if the sequence is playing backwards, the events will still be run in the order given below.</p>
-  <p>The available events are:<b></b></p>
+  <h1>Eventi, momenti e messaggi trasmessi</h1>
+  <p>Oltre a tutte le proprietà elencate <a href="Sequences.htm">qui</a> per un <span class="notranslate">sequence</span> <span class="notranslate">struct</span>, avete anche la possibilità di aggiungere proprietà speciali di &quot;azione&quot; a un <span class="notranslate">sequence</span>. Ci sono tre diversi tipi di queste proprietà di &quot;azione&quot; che possono essere aggiunte a un <span class="notranslate">sequence</span> <span class="notranslate">object</span> - <b>Eventi</b>. <b>Moments</b> e <b>Broadcast Messages</b> - e ognuna di queste è spiegata più in dettaglio nelle sezioni seguenti.</p>
+  <h2>Sequenza di eventi</h2>
+  <p>Le sequenze <span class="notranslate">objects</span> possono avere <b>eventi</b> aggiunti a loro, e questi eventi sono analoghi agli eventi usati da <span class="notranslate">object</span> <span class="notranslate">assets</span>. Gli eventi che assegnate a un <span class="notranslate">sequence</span> <span class="notranslate">object</span> si verificheranno in un ordine specifico, o una volta in un momento definito del ciclo di vita di <span class="notranslate">sequence</span>, o ogni fotogramma in cui <span class="notranslate">sequence</span> è in esecuzione. In questa sezione, discutiamo come questi eventi sono gestiti usando il codice, ma possono anche essere aggiunti usando l'<a href="../../../../The_Asset_Editors/Sequences.htm">Editor di sequenze</a>. Si noti che l'ordine degli eventi qui elencati non è influenzato dalla direzione del <a class="glossterm" data-glossterm="playhead" href="#">playhead</a>, e anche se <span class="notranslate">sequence</span> sta giocando all'indietro, gli eventi saranno ancora eseguiti nell'ordine dato sotto.</p>
+  <p>Gli eventi disponibili sono:<b></b></p>
   <ul class="colour">
-    <li><b>Create</b>: this is triggered when a sequence instance is created on a layer.</li>
-    <li><b>Destroy</b>: this is triggered when a sequence instance on a layer is destroyed.</li>
-    <li><b>Clean-up</b>: this is triggered when a sequence instance is garbage collected.</li>
-    <li><b>Step</b>: triggered just before the usual object step event. <b>Important!</b> If the sequence is paused then this event will not be triggered until the next step after the sequence starts playing again.</li>
-    <li><b>Begin Step</b>: triggered just before the object begin-step event. <b>Important!</b> If the sequence is paused then this event will not be triggered until the next step after the sequence starts playing again.</li>
-    <li><b>End Step</b>: triggered just before the object end-step event. <b>Important!</b> If the sequence is paused then this event will not be triggered until the next step after the sequence starts playing again.</li>
-    <li><b>Async System</b>: triggered the same as any object <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/System.htm">Asynchronous System Event</a> handlers. <em><b>Important!</b> If the sequence is paused then this event will not be triggered.</em></li>
-    <li><b>Broadcast Message</b>: triggered during sequence update as a broadcast message keyframe is encountered.</li>
+    <li><b>Create</b>: si attiva quando un'istanza di <span class="notranslate">sequence</span> viene creata su un livello.</li>
+    <li><b>Destroy</b>: si attiva quando un'istanza di <span class="notranslate">sequence</span> su un livello viene distrutta.</li>
+    <li><b>Clean-up</b>: è attivato quando un'istanza di <span class="notranslate">sequence</span> è garbage collect.</li>
+    <li><b>Step</b>: attivato appena prima del solito evento <span class="notranslate">object</span> step. <b>Importante!</b> Se <span class="notranslate">sequence</span> è in pausa, questo evento non verrà attivato fino al prossimo passo dopo che <span class="notranslate">sequence</span> ricomincia a suonare.</li>
+    <li><b>Begin Step</b>: attivato appena prima dell'evento <span class="notranslate">object</span> begin-step. <b>Importante!</b> Se <span class="notranslate">sequence</span> è in pausa, allora questo evento non sarà attivato fino al prossimo passo dopo che <span class="notranslate">sequence</span> ricomincia a suonare.</li>
+    <li><b>End Step</b>: attivato appena prima dell'evento <span class="notranslate">object</span> end-step. <b>Importante!</b> Se <span class="notranslate">sequence</span> è in pausa, allora questo evento non sarà attivato fino al prossimo passo dopo che <span class="notranslate">sequence</span> ricomincia a suonare.</li>
+    <li><b>Async System</b>: attivato come qualsiasi <span class="notranslate">object</span> gestori di <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/System.htm">eventi di sistema asincroni</a>. <em><b>Importante!</b> Se <span class="notranslate">sequence</span> è in pausa, questo evento non verrà attivato.</em></li>
+    <li><b>Broadcast Message</b>: attivato durante l'aggiornamento di <span class="notranslate">sequence</span> quando si incontra un messaggio broadcast <span class="notranslate">keyframe</span>.</li>
   </ul>
-  <p>All events need to be associated with functions that are defined in a script, so to set up an event a <a href="../../../GML_Overview/Method_Variables.htm">method variable</a> must be assigned to a property with the correct name that tells the sequence which event should call the function. The syntax for this is as follows:</p>
+  <p>Tutti gli eventi devono essere associati a funzioni che sono definite in un <span class="notranslate">script</span>, quindi per impostare un evento una <a href="../../../GML_Overview/Method_Variables.htm">variabile di metodo</a> deve essere assegnata a una proprietà con il nome corretto che dice a <span class="notranslate">sequence</span> quale evento deve chiamare la funzione. La sintassi per questo è la seguente:</p>
   <p class="code">&lt;sequence_struct&gt;.&lt;event_property&gt; = method(&lt;sequence_struct&gt;, &lt;function_name&gt;);</p>
-  <p>The sequence struct properties for the different events are as follows:<span class="inline"></span></p>
+  <p>Le proprietà di <span class="notranslate">sequence</span> <span class="notranslate">struct</span> per i diversi eventi sono le seguenti:<span class="inline"></span></p>
   <ul class="colour">
     <li><span class="inline">event_create</span><span class="inline"></span></li>
     <li><span class="inline">event_destroy</span><span class="inline"></span></li>
@@ -42,7 +42,7 @@
     <li><span class="inline">event_async_system</span><span class="inline"></span></li>
     <li><span class="inline">event_broadcast_message</span></li>
   </ul>
-  <p>To give an example of use, let&#39;s say we want the sequence to reverse direction when a left mouse button click is detected. We would first need to create a script with the function that we want to call, something like this:</p>
+  <p>Per dare un esempio d'uso, diciamo che vogliamo che <span class="notranslate">sequence</span> inverta la direzione quando viene rilevato un clic del tasto sinistro del mouse. Dovremmo prima creare un <span class="notranslate">script</span> con la funzione che vogliamo chiamare, qualcosa del genere:</p>
   <p class="code">/// @function seq_reverse();<br />
     <br />
     function seq_reverse()<br />
@@ -57,14 +57,14 @@
         }<br />
     }
   </p>
-  <p>In this function all we&#39;re doing is listening for a mouse press and then reversing the playback direction of the sequence that the method has been bound to. You&#39;ll notice that currently you are not able to pass any parameters to the functions which are linked to these properties, and in all cases the <a href="../../../GML_Overview/Instance_Keywords.htm"><span class="inline">self</span></a> variable within the scope of the function is assigned to be the sequence instance.</p>
-  <p class="note"><b><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span></b> It&#39;s worth noting that in the above script the <span class="inline">self</span> identifier can be omitted and is only used to explicitly show the scope of the method variable being used for this example.</p>
-  <p>To assign this to a sequence you would then do something like this:</p>
+  <p>In questa funzione tutto quello che stiamo facendo è ascoltare la pressione del mouse e poi invertire la direzione di riproduzione del <span class="notranslate">sequence</span> a cui il metodo è stato legato. Noterete che attualmente non siete in grado di passare alcun parametro alle funzioni che sono collegate a queste proprietà, e in tutti i casi la variabile <a href="../../../GML_Overview/Instance_Keywords.htm"><span class="inline">self</span></a> variabile nell'ambito della funzione è assegnata all'istanza <span class="notranslate">sequence</span>.</p>
+  <p class="note"><b>NOTA</b>: Vale la pena notare che nel precedente <span class="notranslate">script</span> l'identificatore <span class="inline">self</span> può essere omesso ed è usato solo per mostrare esplicitamente l'ambito della variabile del metodo utilizzato per questo esempio.</p>
+  <p>Per assegnare questo ad un <span class="notranslate">sequence</span> dovreste fare qualcosa del genere:</p>
   <p class="code">var _seq = sequence_get(Sequence1);<br />
     _seq.event_step = method(_seq, seq_reverse);</p>
-  <p>We have now assigned a step event to the sequence <i>object</i> with a function to detect when a mouse is pressed and then change the playhead direction of the sequence <i>instance</i> after it has been created in a room.</p>
-  <h2><label for="2">Moments</label></h2>
-  <p>A sequence <b>moment</b> is a unique code action that is fired on one or more specified frames as the sequence plays. These code moments are - like with events (explained above) - simply predefined <a href="../../../GML_Overview/Method_Variables.htm">method variables</a> that are triggered on the given frame. For example, say you want a sequence to create a &quot;bullet&quot; instance on a specific frame of the animation - first you&#39;d need to create the function that is to be used for this action, something like this:</p>
+  <p>Abbiamo ora assegnato un evento passo all'<i>oggetto</i> <span class="notranslate">sequence</span> con una funzione per rilevare quando viene premuto il mouse e quindi cambiare la direzione della playhead dell'<i>istanza</i> <span class="notranslate">sequence</span> dopo che è stata creata in un <span class="notranslate">room</span>.</p>
+  <h2><label for="2">Momenti</label></h2>
+  <p>Un <b>momento</b> <span class="notranslate">sequence</span> è un'azione unica di codice che viene sparata su uno o più fotogrammi specificati mentre <span class="notranslate">sequence</span> gioca. Questi momenti di codice sono - come per gli eventi (spiegati sopra) - semplicemente delle <a href="../../../GML_Overview/Method_Variables.htm">variabili di metodo</a> predefinite che vengono attivate su un dato fotogramma. Per esempio, diciamo che volete che <span class="notranslate">sequence</span> crei un'istanza di &quot;proiettile&quot; su un fotogramma specifico dell'animazione - prima dovrete creare la funzione che deve essere usata per questa azione, qualcosa come questa:</p>
   <p class="code">/// @function seq_shoot();<br />
     <br />
     seq_shoot = function()<br />
@@ -72,7 +72,7 @@
         instance_create_layer(sequence.xorigin, sequence.yorigin, &quot;Instances&quot;, obj_Bullet);<br />
     }
   </p>
-  <p>You would then add this to a frame in the <span class="inline">momentKeyframes</span> property of the sequence struct. This is essentially a &quot;special&quot; track that is only used for this purpose and so can only take keyframe data that is associated with moment actions that you want the sequence to have. This track is created in much the same way as you would create any other track, by creating keyframe structs and filling them with keyframe data, where channel 0 is the only channel that you can use and the track type is <span class="inline">seqtracktype_moment</span>. Below is an example of how this would be created, using the function we defined above to fire on the given moments (frames):</p>
+  <p>Dovreste quindi aggiungere questo a un frame nella proprietà <span class="inline">momentKeyframes</span> di <span class="notranslate">sequence</span> <span class="notranslate">struct</span>. Questa è essenzialmente una traccia &quot;speciale&quot; che è usata solo per questo scopo e quindi può prendere solo i dati di <span class="notranslate">keyframe</span> che sono associati con le azioni del momento che volete che <span class="notranslate">sequence</span> abbia. Questa traccia viene creata più o meno nello stesso modo in cui creereste qualsiasi altra traccia, creando <span class="notranslate">keyframe</span> <span class="notranslate">structs</span> e riempiendole con i dati di <span class="notranslate">keyframe</span>, dove il canale 0 è l'unico canale che potete usare e il tipo di traccia è <span class="inline">seqtracktype_moment</span>. Qui sotto c'è un esempio di come questa verrebbe creata, usando la funzione che abbiamo definito sopra per sparare sui momenti dati (frame):</p>
   <p class="code">var _seq = sequence_get(my_Seq);<br />
     var _k = array_create(3);<br />
     _k[0] = sequence_keyframe_new(seqtracktype_moment);<br />
@@ -89,10 +89,10 @@
     _k[1].channels = _d;<br />
     _k[2].channels = _d;<br />
     _seq.momentKeyframes = _k;</p>
-  <p>The above code will simply set frames 60, 120, and 180 of the &quot;moment&quot; track to call the method <span class="inline">seq_shoot</span>. You&#39;ll notice that currently you are not able to pass any parameters to the functions which are used for each moment, and in all cases the <span class="inline">self</span> variable within the scope of the function is assigned to be the sequence instance (you generally don&#39;t need to use <span class="inline">self</span> but under some special cases it may be useful).</p>
-  <h2><label for="3">Broadcast Messages</label></h2>
-  <p>Sequences can be made to generate <b>broadcast messages</b>, which simple strings that are added to specific frames along the animation timeline, and when that point in the timeline is reached, then the string will be broadcast out to all object instances that listen for it. You can add these messages in the IDE using the <a href="../../../../The_Asset_Editors/Sequences.htm">Sequence editor</a>, but they can also be created and edited using code.</p>
-  <p>To create a broadcast message on a sequence using GML, you need to add them to a frame in the <span class="inline">messageEventKeyframes</span> property of the sequence struct. This is essentially a &quot;special&quot; track that is only used for this purpose and so can only take keyframe data that is associated with the broadcast messages that you want the sequence to have. This track is created in much the same way as you would create any other track, by creating keyframe structs and filling them with keyframe data, where channel 0 is the only channel that you can use and the track type is <span class="inline">seqtracktype_message</span>. Below is an example of how this would be created:</p>
+  <p>Il codice qui sopra imposterà semplicemente i frame 60, 120 e 180 della traccia &quot;momento&quot; per chiamare il metodo <span class="inline">seq_shoot</span>. Noterete che attualmente non siete in grado di passare alcun parametro alle funzioni che vengono utilizzate per ogni momento, e in tutti i casi la variabile <span class="inline">self</span> nell'ambito della funzione è assegnata ad essere l'istanza <span class="notranslate">sequence</span> (generalmente non avete bisogno di usare <span class="inline">self</span> ma in alcuni casi speciali può essere utile).</p>
+  <h2><label for="3">Messaggi di trasmissione</label></h2>
+  <p>Le sequenze possono essere fatte per generare <b>messaggi broadcast</b>, che semplici <span class="notranslate">strings</span> che sono aggiunti a specifici fotogrammi lungo l'animazione <span class="notranslate">timeline</span>, e quando quel punto in <span class="notranslate">timeline</span> è raggiunto, allora il <span class="notranslate">string</span> sarà trasmesso a tutte le istanze <span class="notranslate">object</span> che lo ascoltano. Potete aggiungere questi messaggi in <span class="notranslate">IDE</span> usando l'<a href="../../../../The_Asset_Editors/Sequences.htm">editor di sequenze</a>, ma possono anche essere creati e modificati usando il codice.</p>
+  <p>Per creare un messaggio di trasmissione su un <span class="notranslate">sequence</span> usando <span class="notranslate">GML</span>, dovete aggiungerli a un frame nella proprietà <span class="inline">messageEventKeyframes</span> del <span class="notranslate">sequence</span> <span class="notranslate">struct</span>. Questa è essenzialmente una traccia &quot;speciale&quot; che viene usata solo per questo scopo e quindi può prendere solo i dati <span class="notranslate">keyframe</span> che sono associati ai messaggi di trasmissione che volete che il <span class="notranslate">sequence</span> abbia. Questa traccia viene creata più o meno nello stesso modo in cui creeresti qualsiasi altra traccia, creando <span class="notranslate">keyframe</span> <span class="notranslate">structs</span> e riempiendole con i dati di <span class="notranslate">keyframe</span>, dove il canale 0 è l'unico canale che puoi usare e il tipo di traccia è <span class="inline">seqtracktype_message</span>. Qui sotto c'è un esempio di come verrebbe creata:</p>
   <p class="code">var _seq = sequence_get(my_Seq);<br />
     var _k = array_create(2);<br />
     _k[0] = sequence_keyframe_new(seqtracktype_message);<br />
@@ -115,18 +115,18 @@
     _k[0].channels = _d1;<br />
     _k[1].channels = _d2;<br />
     _seq.messageEventKeyframes = _k;</p>
-  <p>You&#39;ll notice that the message text is passed to the keyframe data channel as an array. This is because you can broadcast multiple messages on the same frame, and have different object instances listen for them and react differently depending on the message they are actually expecting.</p>
-  <p>Once a broadcast message has been emitted by the sequence, you can parse it using the <i>Other</i> &gt; <i>Broadcast Message</i> event in object instances, which is explained in detail <a href="../../../../The_Asset_Editors/Sequence_Properties/Broadcast_Messages.htm">here</a>.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Noterete che il testo del messaggio viene passato al canale dati <span class="notranslate">keyframe</span> come un array. Questo perché si possono trasmettere più messaggi nello stesso frame, e avere diverse istanze di <span class="notranslate">object</span> che li ascoltano e reagiscono in modo diverso a seconda del messaggio che stanno effettivamente aspettando.</p>
+  <p>Una volta che un messaggio broadcast è stato emesso da <span class="notranslate">sequence</span>, è possibile analizzarlo utilizzando l'evento <i>Other</i> &gt; <i>Broadcast Message</i> nelle istanze di <span class="notranslate">object</span>, che è spiegato in dettaglio <a href="../../../../The_Asset_Editors/Sequence_Properties/Broadcast_Messages.htm">qui</a>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Sequences.htm">Sequences</a></div>
+        <div style="float:left">Indietro: <a href="Sequences.htm">Sequenze</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Sequence Events

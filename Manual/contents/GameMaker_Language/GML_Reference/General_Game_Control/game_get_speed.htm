@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>game_get_speed</title>
+  <title>velocità di gioco</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="This page outlines the function game_get_speed" />
   <meta name="rh-index-keywords" content="game_get_speed,gamespeed_fps,gamespeed_microseconds" />
@@ -15,8 +15,8 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>game_get_speed</h1>
-  <p>This function can be used to get the game speed as either the number of game frames to run per second or as the number of micro seconds per game frame. Note that this is <b>not</b> the actual running speed FPS value (for that use the <a href="../Debugging/fps_real.htm"><span class="inline">fps_real</span></a> variable) but rather the number of game frames (FPS) that the game will attempt to maintain each second, or the length of each game frame in microseconds that the game will try to maintain (MPF). When you use this function you need to give one of the following constants which will determine the type of the return value:</p>
+  <h1>velocità di gioco</h1>
+  <p>Questa funzione può essere usata per ottenere la velocità di gioco come numero di fotogrammi di gioco da eseguire al secondo o come numero di micro secondi per fotogramma di gioco. Si noti che questo <b>non</b> è l'effettivo valore FPS della velocità di esecuzione (per quello usate la variabile <a href="../Debugging/fps_real.htm"><span class="inline">fps_real</span></a> ) ma piuttosto il numero di fotogrammi di gioco (FPS) che il gioco tenterà di mantenere ogni secondo, o la lunghezza di ogni fotogramma di gioco in microsecondi che il gioco tenterà di mantenere (MPF). Quando usate questa funzione dovete dare una delle seguenti costanti che determineranno il tipo di valore di ritorno:</p>
   <table>
     <colgroup>
       <col />
@@ -24,61 +24,61 @@
     </colgroup>
     <tbody>
       <tr>
-        <th colspan="2"><span data-keyref="Type_Constant_GameSpeed"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/General_Game_Control/game_get_speed.htm">Game Speed Constant</a></span></th>
+        <th colspan="2"><span data-keyref="Type_Constant_GameSpeed"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/General_Game_Control/game_get_speed.htm">Velocità di gioco costante</a></span></th>
       </tr>
       <tr>
-        <th>Constant</th>
-        <th>Description</th>
+        <th>Costante</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td><span class="inline">gamespeed_fps</span></td>
-        <td>Gets the game speed using frames per second.</td>
+        <td><span class="notranslate"><span class="inline">gamespeed_fps</span></td>
+        <td>Ottiene la velocità di gioco usando i fotogrammi al secondo.</td>
       </tr>
       <tr>
-        <td><span class="inline">gamespeed_microseconds</span></td>
-        <td>Gets the game speed using microseconds per frame.</td>
+        <td><span class="notranslate"><span class="inline">gamespeed_microseconds</span></td>
+        <td>Ottiene la velocità di gioco usando microsecondi per frame.</td>
       </tr>
     </tbody>
   </table>
-  <p>So, for example, if the game speed is set at 30 in the Game Options and you use the FPS type, then the function will return 30, but if you use the MPF then the function will return 33333.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <p>Così, per esempio, se la velocità di gioco è impostata a 30 nelle Opzioni di gioco e si usa il tipo FPS, allora la funzione restituirà 30, ma se si usa l'MPF allora la funzione restituirà 33333.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">game_get_speed(type);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>type</td>
-        <td><span data-keyref="Type_Constant_GameSpeed"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/General_Game_Control/game_get_speed.htm">Game Speed Constant</a></span></td>
-        <td>The type of method used to get the game speed (see the constants above).</td>
+        <td><span class="notranslate">type</span></td>
+        <td><span data-keyref="Type_Constant_GameSpeed"><a data-rhwidget="HyperlinkPopover" href="../../../../GameMaker_Language/GML_Reference/General_Game_Control/game_get_speed.htm">Velocità di gioco costante</a></span></td>
+        <td><span class="notranslate">The type of method used to get the game speed (see the constants above).</span></td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Real"><a data-rhwidget="HyperlinkPopover" href="../../../../LINKGOESHERE">Real</a></span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if game_get_speed(gamespeed_fps) != 60<br />
     {<br />
         game_set_speed(60, gamespeed_fps);<br />
     }</p>
-  <p>The above code checks to see if the game is running with a game speed of 60 FPS and if not it is set to 60 FPS.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice di cui sopra controlla se il gioco è in esecuzione con una velocità di gioco di 60 FPS e se non lo è viene impostato a 60 FPS.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="General_Game_Control.htm">General Game Control</a></div>
-        <div style="float:right">Next: <a href="game_set_speed.htm">game_set_speed</a></div>
+        <div style="float:left">Indietro: <a href="General_Game_Control.htm">Controllo generale del gioco</a></div>
+        <div style="float:right">Il prossimo: <a href="game_set_speed.htm"><span class="notranslate">game_set_speed</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 game_get_speed

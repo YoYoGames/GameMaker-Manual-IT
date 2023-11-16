@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Create Particle Emitter</title>
+  <title>Creare emettitore di particelle</title>
   <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Create Particle Emitter action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Create Particle Emitter" />
@@ -14,50 +14,50 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1><img alt="Create Particle Emitter Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Create_Particle_Emitter.png" /> Create Particle Emitter</h1>
-  <p>To be able to see your particles you need to have first created a <a href="Create_Particle_System.htm">Particle System</a>, then have defined some <a href="Create_Particle_Type.htm">particle types</a> and then finally created a <b>particle emitter</b>    using this action. To create the emitter, you call this action and assign the emitter to a particle system that you have previously created (see <a href="Create_Particle_System.htm">Particle System</a>) and then give a target variable to store it&#39;s
-    unique ID value for use in further actions. You can choose to flag this variable as being a temporary local variable, but that will mean that it is discarded at the end of the action script or event, meaning that the emitter will still exist but leave
-    you without any means to access it, so care must be taken when using this (in general emitters will never need to be stored in a temporary local variable, but for certain things, like drawing particles to a surface, it may be required).</p>
-  <p class="note"><b>IMPORTANT!</b> If your particle system is <b>persistent</b> then you must either destroy all emitters at the end of each room using <a href="Destroy_Particle_Emitter.htm">Destroy Particle Emitter</a> and re-create them again in the next room as required,
-    or store their ID values in <b>global</b> variables so that they can be accessed anytime in any room, or have them created by a persistent object, so that the object will persist and be able to access them through instance variables. Also note that
-    if you call the <a href="../Game/Restart_Game.htm">Restart Game</a> action you should destroy the particle system beforehand so that the system and the emitters assigned are removed from memory before starting again. Failure to properly remove emitters
-    from system memory as outlined above will lead to a <b>memory leak</b>. This happens when a resource is added to memory and then &quot;de-referenced&quot;, meaning that <span data-keyref="GameMaker Name">GameMaker</span> has no way to interact with that resource any more. This leads
-    to the memory being clogged by inaccessible resources which in turn can cause issues with your game.</p>
-  <p> </p>
-  <h4>Action Syntax:</h4>
-  <p><img alt="Create Particle Emitter Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/a_Particles_Create_Particle_Emitter.png" /></p>
-  <h4>Arguments:</h4>
+  <h1><img> Creare emettitore di particelle</h1>
+  <p>Per poter vedere le tue particelle devi prima aver creato un <a href="Create_Particle_System.htm">Particle System</a>, poi aver definito alcuni <a href="Create_Particle_Type.htm">tipi di particelle</a> e infine aver creato un <b>emettitore di particelle</b> utilizzando questa azione. Per creare l'emettitore, chiama questa azione e assegna l'emettitore a un sistema di particelle che hai precedentemente creato (vedi Particle <a href="Create_Particle_System.htm">System</a>) e poi dai una variabile di destinazione per memorizzare il suo
+    valore ID unico per l'uso in ulteriori azioni. Puoi scegliere di contrassegnare questa variabile come una variabile locale temporanea, ma ciò significherà che verrà scartata alla fine dell'azione <span class="notranslate">script</span> o dell'evento, il che significa che l'emettitore esisterà ancora ma ti lascerà
+    senza alcun mezzo per accedervi, quindi bisogna fare attenzione quando si usa questo (in generale gli emettitori non avranno mai bisogno di essere memorizzati in una variabile locale temporanea, ma per certe cose, come disegnare particelle su una superficie, potrebbe essere necessario).</p>
+  <p class="note"><b>IMPORTANTE!</b> Se il tuo sistema di particelle è <b>persistente</b>, allora devi distruggere tutti gli emettitori alla fine di ogni <span class="notranslate">room</span> usando <a href="Destroy_Particle_Emitter.htm">Destroy Particle Emitter</a> e ricrearli nuovamente nel prossimo <span class="notranslate">room</span> come richiesto,
+    o memorizzare i loro valori ID in variabili <b>globali</b> in modo da potervi accedere in qualsiasi momento in qualsiasi <span class="notranslate">room</span>, o farli creare da un <span class="notranslate">object</span> persistente, in modo che il <span class="notranslate">object</span> persista e sia in grado di accedervi attraverso variabili di istanza. Notate anche che
+    se chiami l'azione <a href="../Game/Restart_Game.htm">Restart Game</a> dovresti prima distruggere il sistema di particelle in modo che il sistema e gli emettitori assegnati siano rimossi dalla memoria prima di ricominciare. Se non rimuovi correttamente gli emettitori
+    dalla memoria del sistema come indicato sopra porterà a una <b>perdita di memoria</b>. Questo accade quando una risorsa viene aggiunta alla memoria e poi &quot;de-referenziata&quot;, il che significa che <span data-keyref="GameMaker Name">GameMaker</span> non ha più modo di interagire con quella risorsa. Questo porta
+    la memoria ad essere intasata da risorse inaccessibili che a loro volta possono causare problemi con il vostro gioco.</p>
+  <p> </p>
+  <h4>Sintassi dell'azione:</h4>
+  <p><img alt="Create Particle Emitter Icon" class="icon" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/i_Particles_Create_Particle_Emitter.png" /></p>
+  <h4>Argomenti:</h4>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>System</td>
-        <td>The ID value for the global emitter to create</td>
+        <td><span class="notranslate">System</span></td>
+        <td>Il valore ID per l'emettitore globale da creare</td>
       </tr>
       <tr>
-        <td>Target</td>
-        <td>The target variable to hold the emitter ID</td>
+        <td><span class="notranslate">Target</span></td>
+        <td>La variabile di destinazione che contiene l'ID dell'emettitore</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Example:</h4>
-  <p><img alt="Create Particle Emitter Example" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Particles/e_Particles_Create_Particle_Emitter.png" />The above action block code will create a particle emitter, set it&#39;s
-    region, and then set it to emit a stream of particles.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <h4>Esempio:</h4>
+  <p><img>Il codice del blocco d'azione qui sopra creerà un emettitore di particelle, imposterà la sua
+    e quindi lo imposterà per emettere un flusso di particelle.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Particle_Actions.htm">Particle Actions</a></div>
-        <div style="float:right">Next: <a href="Destroy_Particle_Emitter.htm">Destroy Particle Emitter</a></div>
+        <div style="float:left">Indietro: <a href="Particle_Actions.htm">Azioni delle particelle</a></div>
+        <div style="float:right">Prossimo: <a href="Destroy_Particle_Emitter.htm">Distruggere l'emettitore di particelle</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2021 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Create Particle Emitter

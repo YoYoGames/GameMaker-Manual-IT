@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>show_error</title>
+  <title>mostra_errore</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference page for show_error" />
   <meta name="rh-index-keywords" content="show_error" />
@@ -14,53 +14,53 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>show_error</h1>
-  <p>This function will show a custom string as an error message.</p>
-  <p class="note"><span class="important">IMPORTANT</span> The second argument only exists for backwards compatibility with older projects and will have no effect on the error dialog shown.</p>
-  <p class="note"><span class="note"><b>NOTE</b></span> This function is for debug use <strong>only</strong>.</p>
-  <p> </p>
-  <h4>Syntax:</h4>
+  <h1>mostra_errore</h1>
+  <p>Questa funzione mostrerà un <span class="notranslate">string</span> personalizzato come messaggio di errore.</p>
+  <p class="note"><span class="important">IMPORTANTE</span> Il secondo argomento esiste solo per la compatibilità all'indietro con i vecchi progetti e non avrà alcun effetto sul dialogo di errore mostrato.</p>
+  <p class="note"><span class="note"><b>NOTA</b></span> Questa funzione è <strong>solo</strong> per il debug.</p>
+  <p> </p>
+  <h4>Sintassi:</h4>
   <p class="code">show_error(str, abort);</p>
   <table>
     <tbody>
       <tr>
-        <th>Argument</th>
-        <th>Type</th>
-        <th>Description</th>
+        <th>Argomento</th>
+        <th>Tipo</th>
+        <th>Descrizione</th>
       </tr>
       <tr>
-        <td>str</td>
-        <td><span data-keyref="Type_String">String</span></td>
-        <td>The string to show in the pop-up message.</td>
+        <td><span class="notranslate">str</span></td>
+        <td><span data-keyref="Type_String">Stringa</span></td>
+        <td><span class="notranslate">The string to show in the pop-up message.</span></td>
       </tr>
       <tr>
-        <td>abort</td>
-        <td><span data-keyref="Type_Bool">Boolean</span></td>
-        <td><span class="warning">UNUSED</span> Whether the error should abort the game (true) or allow the player to ignore it (false).</td>
+        <td><span class="notranslate">abort</span></td>
+        <td><span data-keyref="Type_Bool">Booleano</span></td>
+        <td><span class="notranslate"><span class="warning">UNUSED</span> Se l'errore deve interrompere il gioco (true) o permettere al giocatore di ignorarlo (false).</td>
       </tr>
     </tbody>
   </table>
-  <p> </p>
-  <h4>Returns:</h4>
+  <p> </p>
+  <h4>Ritorna:</h4>
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
-  <p> </p>
-  <h4>Example:</h4>
+  <p> </p>
+  <h4>Esempio:</h4>
   <p class="code">if (room != rm_Dungeon)<br />
     {<br />
         show_error(&quot;Error: Went to wrong area. Aborting game.&quot;, true);<br />
     }</p>
-  <p>The above code will check if the current room is <span class="inline2">rm_Dungeon</span>, and if it&#39;s not, it will show an error message.</p>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p>Il codice qui sopra controllerà se il corrente <span class="notranslate">room</span> è <span class="inline2">rm_Dungeon</span>, e se non lo è, mostrerà un messaggio di errore.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Debugging.htm">Debugging</a></div>
-        <div style="float:right">Next: <a href="show_message.htm">show_message</a></div>
+        <div style="float:left">Indietro: <a href="Debugging.htm">Debugging</a></div>
+        <div style="float:right">Il prossimo: <a href="show_message.htm"><span class="notranslate">show_message</span></a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
   <!-- KEYWORDS
 show_error
