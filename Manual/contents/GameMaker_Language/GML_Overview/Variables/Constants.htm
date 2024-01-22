@@ -36,7 +36,7 @@
   <p>Potreste poi usarlo nel vostro codice in questo modo:</p>
   <p class="code">pos++;<br />
     <br />
-    if (pos &gt;= total_weapons)<br />
+    if (pos &gt;= TOTAL_WEAPONS)<br />
     {<br />
         pos = 0;<br />
     }
@@ -62,38 +62,38 @@
   <p>Un enum è un &quot;enumeratore&quot;, e permette essenzialmente di creare il proprio limitato <span class="notranslate">data type</span> con una lista di valori costanti, e hanno la seguente struttura:</p>
   <p class="code">enum <i>&lt;variable&gt;</i><br />
     {<br />
-    <i>    &lt;constant&gt;</i> [= <i>&lt;value&gt;</i>],<br />
-    <i>    &lt;constant&gt;</i> [= <i>&lt;value&gt;</i>],<br />
+    <i>    &lt;MEMBER&gt;</i> [= <i>&lt;VALUE&gt;</i>],<br />
+    <i>    &lt;<i>MEMBER</i>&gt;</i> [= <i>&lt;<i>VALUE</i>&gt;</i>],<br />
         // etc...<br />
     }
   </p>
   <p>Nell'esempio seguente, creiamo un enum per i colori dell'arcobaleno e gli assegniamo varie costanti e valori predefiniti:</p>
   <p class="code">enum rainbowcolours<br />
     {<br />
-        red,<br />
-        orange,<br />
-        yellow,<br />
-        green,<br />
-        blue,<br />
-        indigo,<br />
-        violet<br />
+        RED,<br />
+        ORANGE,<br />
+        YELLOW,<br />
+        GREEN,<br />
+        BLUE,<br />
+        INDIGO,<br />
+        VIOLET<br />
     }</p>
   <p>Le voci di enum possono essere solo <b>numeri interi</b> o <b><a class="glossterm" data-glossterm="espressione" href="#">espressioni</a></b> con enum precedenti che valutano un numero intero, e per default sono numerate da 0 in su, quindi il nostro esempio dato sopra avrebbe come default <span class="inline">red = 0</span>, <span class="inline">orange = 1</span>, <span class="inline">yellow = 2</span>, ecc.</p>
   <p>Potete anche assegnare valori alle variabili enum al momento della creazione:</p>
   <p class="code">enum enum_test<br />
     {<br />
-        val = 10;<br />
+        VAL = 10<br />
     }<br />
     <br />
-    enum rainbowcolours<br />
+    enum RAINBOW<br />
     {<br />
-        red = 5,<br />
-        orange = 5 * 2,<br />
-        yellow = 15,<br />
-        green = 20,<br />
-        blue = 25,<br />
-        indigo = 30,<br />
-        violet = 35 * enum_test.val<br />
+        RED = 5,<br />
+        ORANGE = 5 * 2,<br />
+        YELLOW = 15,<br />
+        GREEN = 20,<br />
+        BLUE = 25,<br />
+        INDIGO = 30,<br />
+        VIOLET = 35 * ENUM_TEST.VAL<br />
     }
   </p>
   <p>Notate che nell'esempio precedente usiamo un altro enum per creare un'espressione per &quot;violet&quot;. Questo funziona solo se l'enum a cui si fa riferimento è stato creato <i>prima dell</i> 'enum che lo sta usando in un'espressione, ma non funzionerà per variabili o funzioni, poiché il valore dell'enum deve poter essere valutato come una costante quando il progetto viene <a class="glossterm" data-glossterm="Compilazione di" href="#">compilato</a>. Notate anche che tutti i valori enum sono valutati come valori <b>interi</b>, e quando create il vostro dovreste essere consapevoli che <i>solo i valori interi sono permessi</i> per gli enum per funzionare. Questo valore può essere qualsiasi numero intero che un numero in virgola mobile a doppia precisione può rappresentare, inclusi i valori negativi.</p>

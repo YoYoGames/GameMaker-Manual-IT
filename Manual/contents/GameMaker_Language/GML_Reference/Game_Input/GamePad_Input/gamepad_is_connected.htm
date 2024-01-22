@@ -39,9 +39,12 @@
   <p> </p>
   <h4>Esempio:</h4>
   <p class="code">var gp_num = gamepad_get_device_count();<br />
-    for (var i = 0; i &lt; gp_num; i++;)<br />
+    for (var i = 0; i &lt; gp_num; i++)<br />
     {<br />
-        if gamepad_is_connected(i) global.gp[i] = true else global.gp[i] = false;<br />
+        if gamepad_is_connected(i)<br />
+            global.gp[i] = true<br />
+        else<br />
+            global.gp[i] = false;<br />
     }</p>
   <p>Il codice di cui sopra <span class="notranslate">loops</span> attraverso i game pad disponibili (o slot gamepad) e poi controlla ognuno di essi per un gamepad collegato. il valore restituito viene quindi utilizzato per impostare un array globale su <span class="inline">true</span> o <span class="inline">false</span> per l'utilizzo nei controlli futuri.</p>
   <p> </p>

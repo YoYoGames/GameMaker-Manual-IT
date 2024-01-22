@@ -40,7 +40,7 @@
   <p>Nel codice precedente dell'esempio 1, c'è una <a href="../GML_Reference/Asset_Management/Instances/instance_exists.htm"><span class="inline">instance_exists()</span></a> nel blocco di codice. Questo perché usare il metodo point per accedere o cambiare il valore di un'altra istanza darà un errore e farà crashare il gioco se l'istanza non esiste, e c'è la possibilità che questo sia il caso in quell'esempio. Non abbiamo bisogno del controllo però negli Esempi 2 e 3 perché <i>sappiamo</i> che l'istanza è lì poiché nell'Esempio 2 l'abbiamo creata, e nell'Esempio 3, è l'altra istanza in un evento di collisione. Tuttavia, se c'è <i>qualche</i> possibilità che l'istanza possa essere distrutta, disattivata o altrimenti rimossa da <span class="notranslate">room</span> mentre si usa questo metodo, si dovrebbe <i>sempre</i> controllare in anticipo usando la funzione <span class="inline">instance_exists()</span> o la <a href="../GML_Reference/Asset_Management/Instances/instance_number.htm"><span class="inline">instance_number()</span></a> funzione.</p>
   <p>Si noti che non è possibile utilizzare la <a href="Instance_Keywords.htm">parola chiave</a> speciale &quot;<span class="inline">all</span>&quot; con questo metodo per indirizzare tutte le istanze (ad esempio: <span class="inline">all.val = 10</span> darebbe un errore), ma è <i>possibile</i> utilizzare le parole chiave &quot;<span class="inline">other</span>&quot; e &quot;<span class="inline">self</span>&quot; senza problemi. Per esempio, usando <span class="inline">other</span> in un <a href="../../The_Asset_Editors/Object_Properties/Object_Events.htm">evento di collisione</a>:</p>
   <p class="code">// Example 3 other.hp -= 10;<br />
-    if other.hp &lt;= 0<br />
+    if (other.hp &lt;= 0)<br />
     {<br />
         other.sprite_index = spr_E_Dead;<br />
     }</p>
@@ -51,8 +51,8 @@
     <br />
     //or<br />
     <br />
-    var inst = instance_nearest(x, y, obj);<br />
-    inst.speed = 0;
+    var _inst = instance_nearest(x, y, obj);<br />
+    _inst.speed = 0;
   </p>
   <p>Questi sono tutti modi perfettamente validi di leggere, cambiare e impostare variabili in altre istanze, e funzionano perché il punto è in realtà un <i>operatore</i>. Prende un valore come <a class="glossterm" data-glossterm="operando" href="#">operando</a> di sinistra e una variabile come operando di destra, e restituisce l'indirizzo di questa particolare variabile nel <span class="notranslate">object</span> o istanza indicata. Tutti i nomi <span class="notranslate">object</span>, le costanti, gli ID ecc... rappresentano semplicemente dei valori e questi possono essere trattati come qualsiasi altro valore.</p>
   <p>L'altro modo per fare riferimento a variabili in un'altra istanza è usare la funzione <span class="notranslate">GameMaker Language</span> <span class="inline">with()</span> , che è discussa in dettaglio <a href="Language_Features/with.htm">qui</a>:</p>
