@@ -45,9 +45,9 @@
   <p>Quanto sopra mostrerà un messaggio con il dato <span class="notranslate">string</span>. L'id del messaggio è memorizzato nella variabile &quot;msg&quot; e sarà usato nell'evento asincrono Dialogs come mostrato di seguito:</p>
   <p class="code">var i_d, stat;<br />
     i_d = ds_map_find_value(async_load, &quot;id&quot;);<br />
-    if i_d == msg<br />
+    if (i_d == msg) <br />
     {<br />
-        if ds_map_find_value(async_load, &quot;status&quot;)<br />
+        if (ds_map_find_value(async_load, &quot;status&quot;)) <br />
         {<br />
             url_open(&quot;https://play.google.com/store&quot;);<br />
         }<br />

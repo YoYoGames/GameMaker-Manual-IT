@@ -34,7 +34,7 @@
   <p>Il codice qui sopra avvia un gruppo <span class="notranslate">buffer</span> poi lo imposta per salvare 4 file in modo asincrono. La definizione del gruppo viene poi terminata (a quel punto inizierà il salvataggio), memorizzando l'ID della chiamata alla funzione nella variabile &quot;<i>save_id</i>&quot;. Quando il salvataggio è completo, l'evento asincrono Save/Load verrà attivato e sarà possibile analizzare la mappa <span class="inline">async_load</span> per l'ID corretto della funzione, in questo modo:</p>
   <p class="code">if ds_map_find_value(async_load, &quot;id&quot;) == saveid<br />
     {<br />
-        if ds_map_find_value(async_load, &quot;status&quot;) == false<br />
+        if (ds_map_find_value(async_load, &quot;status&quot;) == false) <br />
         {<br />
             show_debug_message(&quot;Save failed!&quot;);<br />
         }<br />
