@@ -20,12 +20,12 @@
   <p>Questa distinzione tra interi e float è molto importante quando si ha a che fare con lo sviluppo multipiattaforma, poiché la precisione dei calcoli eseguiti su un PC <span class="notranslate">Windows</span> <i>non è</i> la stessa di quella degli stessi calcoli eseguiti su un dispositivo mobile. Ciò significa che occorre prestare particolare attenzione quando si effettuano confronti, ad esempio:</p>
   <p class="code">if (image_index == 1)<br />
     {<br />
-        do something...<br />
+        // Do something...<br />
     }</p>
   <p>Nell'esempio precedente, se abbiamo impostato <span class="inline">image_speed</span> a 0,25 - per esempio - dopo quattro passaggi si potrebbe supporre che il valore <span class="inline">image_index</span> sia 1, ma <i>potrebbe essere</i> un valore come 1,0000002 a causa del modo in cui funziona la matematica in virgola mobile e quindi la valutazione non sarà <span class="inline">true</span>. Questo tipo di errori può essere piuttosto difficile da debuggare, per cui è sempre bene esserne consapevoli e pianificare in anticipo l'uso di altri mezzi di verifica dei valori o di utilizzare le funzioni appropriate di pavimentazione o di arrotondamento (elencate di seguito) per convertire il numero da verificare in un numero intero (per ulteriori informazioni sulla matematica in virgola mobile e sul perché questo è un problema, <a href="https://floating-point-gui.de/" target="_blank">vedere qui</a>). Ad esempio, il codice sopra riportato potrebbe essere scritto come:</p>
   <p class="code">if (floor(image_index) == 1)<br />
     {<br />
-        do something...<br />
+        // Do something...<br />
     }</p>
   <p>Vale anche la pena di notare che quando si usano i target di <b>YoYo Compiler</b>, tutte le espressioni e le funzioni vengono <i>valutate da sinistra a destra</i>, mentre su tutte le altre piattaforme di destinazione vengono valutate <i>da destra a sinistra</i>, il che significa che questo - ad esempio - darà risultati diversi a seconda della piattaforma:</p>
   <p class="code">val = max(num, ++num, num++);</p>
