@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
-  <meta name="topic-comment" content="Page outlining the with function" />
+  <meta name="topic-comment" content="Page outlining the with statement" />
   <meta name="rh-index-keywords" content="with" />
   <meta name="search-keywords" content="with" />
 </head>
@@ -22,46 +22,46 @@
   <p>avrà esattamente lo stesso effetto perché è semplicemente un'abbreviazione della prima dichiarazione. Quindi come <i>possiamo</i> ottenere qualcosa del genere? Questo è il motivo per cui la dichiarazione <span class="inline">with</span> esiste in <span class="notranslate">GML</span>. La dichiarazione <span class="inline">with</span> ha la seguente sintassi:</p>
   <p class="code">with (&lt;expression&gt;)<br />
     {<br />
-        &lt;statement&gt;;<br />
-        &lt;statement&gt;;<br />
-        ...<br />
+    &lt;statement&gt;;<br />
+    &lt;statement&gt;;<br />
+    ...<br />
     }</p>
   <p>Per l'<a class="glossterm" data-glossterm="espressione" href="#">espressione</a>, potete indicare una o più istanze (o un <span class="notranslate">struct</span>) su cui eseguire il codice, usando un ID di istanza, l'ID <span class="notranslate">object</span> (che indica che <i>tutte le istanze</i> nel <span class="notranslate">room</span> di questo <span class="notranslate">object</span> devono eseguire il blocco di codice), l'ID <span class="notranslate">struct</span>, o una delle <a href="../Instance_Keywords.htm">parole chiave</a> speciali (<span class="inline">all</span> o <span class="inline">other</span>). Questo cambierà lo <strong>scopo</strong> del codice all'interno delle parentesi graffe <span class="inline">{}</span> dall'istanza, <span class="notranslate">struct</span> o funzione che effettivamente contiene il codice all'istanza (o istanze o <span class="notranslate">struct</span>) data nell'espressione.</p>
   <p>Una volta che l'espressione ha impostato lo scopo di <span class="inline">with</span>, l'<a class="glossterm" data-glossterm="dichiarazione" href="#">istruzione</a> verrà eseguita per ciascuna delle istanze indicate, come se quell'istanza fosse l'istanza corrente ( <span class="inline">self</span>). Quindi, tornando al nostro problema originale, per spostare tutte le istanze della palla <span class="notranslate">object</span> 8 pixel verso il basso si dovrebbe digitare:</p>
   <p class="code">with (obj_ball)<br />
     {<br />
-        y += 8;<br />
+        y += 8;<br />
     }</p>
   <p>Essenzialmente questo è un <span class="notranslate">loop</span>, e ogni <a class="glossterm" data-glossterm="iterazione" href="#">iterazione</a> del <span class="notranslate">loop</span>, il codice verrà eseguito su un'istanza del <span class="notranslate">object</span> <span class="inline">obj_ball</span>.</p>
   <p>Se volete eseguire più istruzioni, basta includerle nelle parentesi graffe, come fareste con qualsiasi altro blocco di codice. Così, per esempio, per spostare tutte le palline nel nostro esempio in una posizione casuale e dare loro una velocità e una direzione casuale, si dovrebbe usare:</p>
   <p class="code">with (obj_ball)<br />
     {<br />
-        x = random(room_width);<br />
-        y = random(room_height);<br />
-        speed = 1 + random(2);<br />
-        direction = random(360);<br />
+        x = random(room_width);<br />
+        y = random(room_height);<br />
+        speed = 1 + random(2);<br />
+        direction = random(360);<br />
     }</p>
   <p>Come accennato in precedenza, all'interno delle dichiarazioni, l'istanza o la struct indicata è diventata l'istanza di destinazione (<span class="inline">self</span>) che esegue il blocco di codice, il che significa che l'istanza originale (che contiene l'indirizzo <span class="inline">with</span> e l'intero blocco di codice) è diventata l <a href="../Instance_Keywords.htm"><span class="inline">other</span></a> istanza. Così - per esempio - per spostare tutte le palline nella posizione dell'istanza corrente che contiene effettivamente il codice, si può digitare questo:</p>
   <p class="code">with (obj_ball)<br />
     {<br />
-        x = other.x;<br />
-        y = other.y;<br />
+        x = other.x;<br />
+        y = other.y;<br />
     }</p>
   <p>La dichiarazione <span class="inline">with</span> è uno strumento estremamente potente ed è utile in molte, molte circostanze quindi è importante che tu capisca appieno come può essere usata. Per aiutarvi ci sono alcuni esempi di utilizzo qui sotto:</p>
   <p class="code">with (instance_create_layer(x, y, &quot;Instances&quot;, obj_Ball))<br />
     {<br />
-        speed = other.speed;<br />
-        direction = other.direction;<br />
+        speed = other.speed;<br />
+        direction = other.direction;<br />
     }</p>
   <p>Il codice di cui sopra creerà un'istanza di <span class="inline">obj_Ball</span> e le assegnerà la velocità e la direzione dell'istanza che esegue l'intero blocco di codice.</p>
   <p class="code">with (instance_nearest(x, y, obj_Ball))<br />
     {<br />
-        instance_destroy();<br />
+        instance_destroy();<br />
     }</p>
   <p>Il codice di cui sopra distruggerà l'istanza di <span class="inline">obj_Ball</span> più vicina all'istanza che esegue il codice.</p>
   <p class="code">with(clone_struct)<br />
     {<br />
-        xx = other.x;<br />
+        xx = other.x;<br />
         yy = other.y;<br />
         spd = other.speed;<br />
         dir = other.direction;<br />
@@ -70,11 +70,12 @@
   <p class="code">var _inst = noone;<br />
     with (obj_ball)<br />
     {<br />
-        if (str &gt; other.str)<br />
-        {<br />
+        if (str &gt; other.str)<br />
+        {<br />
             _inst = id;<br />
         }<br />
     }<br />
+    <br />
     if (_inst != noone)<br />
     {<br />
         target = _inst;<br />
@@ -114,9 +115,11 @@
     </div>
     <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
   </div>
-  <p> </p>
-  <p><br />
-     </p>
-  <p> </p>
+  <!-- KEYWORDS
+with
+-->
+  <!-- TAGS
+with
+-->
 </body>
 </html>
