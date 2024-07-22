@@ -22,9 +22,9 @@
   <p>avrà esattamente lo stesso effetto perché è semplicemente un'abbreviazione della prima dichiarazione. Quindi come <i>possiamo</i> ottenere qualcosa del genere? Questo è il motivo per cui la dichiarazione <span class="inline">with</span> esiste in <span class="notranslate">GML</span>. La dichiarazione <span class="inline">with</span> ha la seguente sintassi:</p>
   <p class="code">with (&lt;expression&gt;)<br />
     {<br />
-    &lt;statement&gt;;<br />
-    &lt;statement&gt;;<br />
-    ...<br />
+        &lt;statement&gt;;<br />
+        &lt;statement&gt;;<br />
+        ...<br />
     }</p>
   <p>Per l'<a class="glossterm" data-glossterm="espressione" href="#">espressione</a>, potete indicare una o più istanze (o un <span class="notranslate">struct</span>) su cui eseguire il codice, usando un ID di istanza, l'ID <span class="notranslate">object</span> (che indica che <i>tutte le istanze</i> nel <span class="notranslate">room</span> di questo <span class="notranslate">object</span> devono eseguire il blocco di codice), l'ID <span class="notranslate">struct</span>, o una delle <a href="../Instance_Keywords.htm">parole chiave</a> speciali (<span class="inline">all</span> o <span class="inline">other</span>). Questo cambierà lo <strong>scopo</strong> del codice all'interno delle parentesi graffe <span class="inline">{}</span> dall'istanza, <span class="notranslate">struct</span> o funzione che effettivamente contiene il codice all'istanza (o istanze o <span class="notranslate">struct</span>) data nell'espressione.</p>
   <p>Una volta che l'espressione ha impostato lo scopo di <span class="inline">with</span>, l'<a class="glossterm" data-glossterm="dichiarazione" href="#">istruzione</a> verrà eseguita per ciascuna delle istanze indicate, come se quell'istanza fosse l'istanza corrente ( <span class="inline">self</span>). Quindi, tornando al nostro problema originale, per spostare tutte le istanze della palla <span class="notranslate">object</span> 8 pixel verso il basso si dovrebbe digitare:</p>

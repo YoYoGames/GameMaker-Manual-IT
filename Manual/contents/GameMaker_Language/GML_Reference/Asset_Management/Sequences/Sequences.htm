@@ -49,7 +49,7 @@
     <li>Impostare i valori di livello superiore di <span class="notranslate">sequence</span> <span class="notranslate">object</span> come lunghezza, modalità di riproduzione, velocità di riproduzione, ecc... Per esempio:</li>
   </ul>
   <p class="code">myseq.length = 120;<br />
-    myseq.loopmode = seqplay_pingpong</p>
+    myseq.loopmode = seqplay_pingpong;</p>
   <ul class="colour">
     <li>Prima di poter aggiungere tracce a <span class="notranslate">sequence</span> <span class="notranslate">object</span>, è necessario crearle, quindi ora si crea un array di tracce di <i>risorse</i> che sono state definite con la funzione <a href="sequence_track_new.htm"><span class="inline">sequence_track_new()</span></a>. Notate che nel codice, non c'è davvero alcuna differenza tra le tracce <span class="notranslate">asset</span> e le tracce dei parametri - sono tutte semplicemente tracce e come si comportano dipenderà dal tipo di traccia che si crea e se sono assegnate come sotto-tracce a una traccia di livello superiore o meno. Così, creereste una traccia per un <span class="notranslate">asset</span>, e poi assegnereste delle sotto-tracce per i diversi parametri ad essa e queste sotto-tracce agirebbero come le tracce dei <i>parametri</i> per il <span class="notranslate">asset</span>. L'esempio qui sotto crea una singola traccia grafica <span class="notranslate">asset</span> che sarà aggiunta al <span class="notranslate">sequence</span> in seguito:</li>
   </ul>
@@ -61,21 +61,26 @@
   <p class="code">// Create a new keyframe struct for a graphics asset track and add it to an array (as you can have multiple keys in a frame)<br />
     var graphickeys = array_create(1);<br />
     graphickeys[0] = sequence_keyframe_new(seqtracktype_graphic);<br />
+    <br />
     // Set the graphics keyframe top level data for the keyframe position and length, etc...<br />
     graphickeys[0].frame = 0;<br />
     graphickeys[0].length = 1;<br />
     graphickeys[0].stretch = true;<br />
     graphickeys[0].disabled = false;<br />
+    <br />
     // Create the channel data that will go into this keyframe (again an array, as each key can have multiple channels of keyframe data)<br />
     var graphickeydata = array_create(1);<br />
     graphickeydata[0] = sequence_keyframedata_new(seqtracktype_graphic);<br />
     graphickeydata[0].spriteIndex = spr_Platform;<br />
     graphickeydata[0].channel = 0;<br />
+    <br />
     // Add the keyframe data channels to the graphics track keyframe<br />
     graphickeys[0].channels = graphickeydata;<br />
+    <br />
     // Add the definied keyframes to the track<br />
     mytracks[0].name = &quot;TestGraphicTrack&quot;;<br />
-    mytracks[0].keyframes = graphickeys;</p>
+    mytracks[0].keyframes = graphickeys;
+  </p>
   <ul class="colour">
     <li>Ora abbiamo bisogno di creare una traccia di parametri che assegneremo come sottotraccia alla traccia grafica che abbiamo appena creato. Questo sarà fatto in un modo simile a quello mostrato sopra, solo che ora abbiamo bisogno di dare alla traccia un nome che mostri il suo scopo, in questo caso &quot;posizione&quot; perché useremo questa traccia per spostare la traccia grafica nel corso dei fotogrammi dell'animazione <span class="notranslate">sequence</span>:</li>
   </ul>
@@ -90,14 +95,17 @@
     paramkeys[0].frame = 0;<br />
     paramkeys[1] = sequence_keyframe_new(seqtracktype_real);<br />
     paramkeys[1].frame = 120;<br />
+    <br />
     // Create the keyframe data structs<br />
     var paramkeydata1 = array_create(2);<br />
     paramkeydata1[0] = sequence_keyframedata_new(seqtracktype_real);<br />
     paramkeydata1[0].channel = 0; // Channel 0 for a position track is the X position<br />
     paramkeydata1[0].value = 0;<br />
+    <br />
     paramkeydata1[1] = sequence_keyframedata_new(seqtracktype_real);<br />
     paramkeydata1[1].channel = 1; // Channel 1 for a position track is the Y position<br />
     paramkeydata1[1].value = 0;<br />
+    <br />
     var paramkeydata2 = array_create(2);<br />
     paramkeydata2[0] = sequence_keyframedata_new(seqtracktype_real);<br />
     paramkeydata2[0].channel = 0;<br />
@@ -105,11 +113,14 @@
     paramkeydata2[1] = sequence_keyframedata_new(seqtracktype_real);<br />
     paramkeydata2[1].channel = 1;<br />
     paramkeydata2[1].value = room_height;<br />
+    <br />
     // Assign the keyframe data structs to the channels for each key<br />
     paramkeys[0].channels = paramkeydata1;<br />
     paramkeys[1].channels = paramkeydata2;<br />
+    <br />
     // Assign the keys to the parameter track<br />
-    paramtracks[0].keyframes = paramkeys;</p>
+    paramtracks[0].keyframes = paramkeys;
+  </p>
   <ul class="colour">
     <li>Fatto questo, l'ultima cosa da fare è assegnare la traccia dei parametri come sottotraccia alla nostra traccia grafica principale <span class="notranslate">asset</span> che abbiamo creato all'inizio e poi assegnare queste tracce a <span class="notranslate">sequence</span> di cui possiamo creare un'istanza nella stanza:</li>
   </ul>
