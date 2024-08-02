@@ -42,13 +42,13 @@
   <p> </p>
   <h4>Esempio:</h4>
   <p class="code">var s_tex = shader_get_sampler_index(shader_glass, &quot;s_NoiseSampler&quot;);<br />
-    if (gpu_get_texfilter_ext(s_tex))<br />
+    if (gpu_get_texrepeat_ext(s_tex))<br />
     {<br />
-        gpu_set_texfilter_ext(s_tex, false);<br />
+        gpu_set_texrepeat_ext(s_tex, false);<br />
     }<br />
     else<br />
     {<br />
-        gpu_set_texfilter_ext(s_tex, true);<br />
+        gpu_set_texrepeat_ext(s_tex, true);<br />
     }</p>
   <p>Il codice di cui sopra controlla se il filtraggio <span class="notranslate">texture</span> è attivato o disattivato per uno specifico ID del campionatore (memorizzato in una variabile locale) e lo commuta di conseguenza.</p>
   <p> </p>
