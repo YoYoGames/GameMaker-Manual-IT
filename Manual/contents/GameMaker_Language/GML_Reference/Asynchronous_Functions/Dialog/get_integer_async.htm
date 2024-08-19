@@ -52,9 +52,9 @@
   <p class="code">var i_d = ds_map_find_value(async_load, &quot;id&quot;);<br />
     if (i_d == msg) <br />
     {<br />
-        if (ds_map_find_value(async_load, &quot;status&quot;)) <br />
+        if (ds_map_find_value(async_load, &quot;status&quot;))<br />
         {<br />
-            global.Age = ds_map_find_value(async_load, &quot;value&quot;);<br />
+            global.age = ds_map_find_value(async_load, &quot;value&quot;);<br />
         }<br />
     }</p>
   <p>Il codice di cui sopra controlla la chiave &quot;<span class="inline">id</span>&quot; del ritorno <span class="inline">DS Map</span> contro il valore memorizzato nella variabile &quot;msg&quot;. Se sono uguali, controlla se è stato premuto &quot;Ok&quot; (piuttosto che la finestra è stata chiusa/annullata) e se ritorna <span class="inline">true</span> imposta una variabile globale dall'intero restituito.</p>

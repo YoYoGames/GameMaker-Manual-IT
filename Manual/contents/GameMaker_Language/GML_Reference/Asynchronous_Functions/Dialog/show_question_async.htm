@@ -47,10 +47,10 @@
     i_d = ds_map_find_value(async_load, &quot;id&quot;);<br />
     if (i_d == msg) <br />
     {<br />
-        if (ds_map_find_value(async_load, &quot;status&quot;)) <br />
+        if (ds_map_find_value(async_load, &quot;status&quot;))<br />
         {<br />
-            coins -= armour[0,5];<br />
-            global.protection += armour[0,0];<br />
+            coins -= armour[0, 5];<br />
+            global.protection += armour[0, 0];<br />
         }<br />
     }</p>
   <p>Il codice qui sopra controlla la chiave &quot;id&quot; del <span class="inline">DS Map</span> restituito contro il valore memorizzato nella variabile &quot;msg&quot;. Se sono uguali, controlla se uno dei due pulsanti è stato premuto e se restituisce <span class="inline">true</span> allora dedurrà un valore da una variabile e aggiungerà anche un valore a una variabile globale.</p>
