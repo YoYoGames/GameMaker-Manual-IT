@@ -3531,7 +3531,6 @@ export default function(hljs) {
     variants: [
       { begin: "spr_" },
       { begin: "obj_" },
-      { begin: "shader_" },
     ]
   };
 
