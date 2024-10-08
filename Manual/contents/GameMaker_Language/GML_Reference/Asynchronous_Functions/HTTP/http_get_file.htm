@@ -62,10 +62,10 @@
   <p>Il codice sopra richiederà un file dall'URL dato e lo imposterà per essere scaricato nell'area di memorizzazione locale (come specificato nelle Opzioni di gioco HTML5), in una directory &quot;Downloads&quot; con il nome del file dato (questo non deve essere necessariamente lo stesso del nome del file sorgente, ma dovrebbe usare lo stesso file <span class="notranslate">extension</span>). L'indice della mappa <span class="inline">async_load</span> sarà memorizzato nella variabile &quot;file&quot; in modo da poter controllare il callback corretto nell'Evento Asincrono, e se la directory di salvataggio non esiste, sarà creata. L'evento asincrono innescato sarebbe il sotto-evento <b>HTTP</b>, e in quell'evento avresti qualcosa come il seguente:</p>
   <p class="code">if ds_map_find_value(async_load, &quot;id&quot;) == file<br />
     {<br />
-        var _status = ds_map_find_value(async_load, &quot;status&quot;);<br />
+        var _status = async_load[? &quot;status&quot;];<br />
         if (_status == 0)<br />
         {<br />
-            var _path = ds_map_find_value(async_load, &quot;result&quot;);<br />
+            var _path = async_load[? &quot;result&quot;];<br />
             var _files = zip_unzip(path, &quot;/NewContent/&quot;);<br />
             if (_files &gt; 0)<br />
             {<br />

@@ -62,9 +62,9 @@
   <p class="code">var r_str = &quot;null&quot;;<br />
     if (ds_map_find_value(async_load, &quot;id&quot;) == post) <br />
     {<br />
-        if (ds_map_find_value(async_load, &quot;status&quot;) == 0)<br />
+        if (async_load[? &quot;status&quot;] == 0)<br />
         {<br />
-            _r_str = ds_map_find_value(async_load, &quot;result&quot;);<br />
+            _r_str = async_load[? &quot;result&quot;];<br />
         }<br />
     }</p>
   <p>Il codice qui sopra controllerà prima l'id della mappa DS che è stata creata, poi controllerà lo stato della callback. Se il valore è uguale a 0 (segnalando il successo) il risultato della callback verrà memorizzato in una variabile per un uso futuro, altrimenti la variabile conterrà semplicemente un valore predefinito (in questo caso &quot;null&quot;).</p>
