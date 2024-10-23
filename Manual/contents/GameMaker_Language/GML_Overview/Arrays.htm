@@ -63,7 +63,7 @@
       total = array[0] + array[5];<br />
       <br />
       // Check an array value<br />
-      if array[9] == 10<br />
+      if (array[9] == 10)<br />
       {<br />
           // Do something<br />
       }<br />
@@ -76,11 +76,11 @@
       <br />
       for (var i = 0; i &lt; 10; ++i)<br />
       {<br />
-          total += array[i];<br />
-          draw_text(32, 32 + (i * 32), array[i]);<br />
+          _total += array[i];<br />
+          draw_text(32, 32 + (i * 32), array[i]);<br />
       }<br />
       <br />
-      draw_text(32, 32 + (i * 32), total);
+      draw_text(32, 32 + (i * 32), _total);
     </p>
     <p class="dropspot">Il codice qui sopra aggiungerà tutti i valori nella nostra matrice, disegnerà ognuno di loro e poi disegnerà il valore totale alla fine.</p>
     <h3 class="dropspot">       Cancellare gli array</h3>
