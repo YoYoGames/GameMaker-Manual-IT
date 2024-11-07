@@ -91,7 +91,7 @@
       }<br />
       <br />
       // Delete the array<br />
-      a = -1;
+      a = undefined;
     </p>
     <p class="dropspot">Se l'array ha più dimensioni (vedi sotto), anch'esse saranno ripulite, e nota che quando crei array nelle istanze, queste non hanno bisogno di essere ripulite quando l'istanza viene rimossa dal gioco, poiché saranno rimosse automaticamente dal <a class="glossterm" data-glossterm="collettore di rifiuti" href="#">garbage collector</a> su Destroy o <span class="notranslate">Room</span> End. Tuttavia, se una qualsiasi posizione dell'array contiene riferimenti a risorse <em>dinamiche</em>, come sistemi di particelle, <span class="notranslate">buffers</span>, o strutture dati, allora queste dovranno <em>essere</em> distrutte prima che l'array venga cancellato, l'istanza venga distrutta o il <span class="notranslate">room</span> termini.</p>
     <p class="dropspot"> </p>

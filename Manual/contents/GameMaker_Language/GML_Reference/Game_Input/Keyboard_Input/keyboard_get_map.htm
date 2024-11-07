@@ -39,7 +39,7 @@
   <h4><b>Esempio:</b></h4>
   <p class="code">if keyboard_get_map(ord(&quot;A&quot;)) = ord(&quot;A&quot;)<br />
     {<br />
-        keyboard_set_map(ord(&quot;A&quot;), keyboard_lastkey);<br />
+        keyboard_set_map(_keycode, keyboard_lastkey);<br />
     }</p>
   <p>Il codice dell'esempio precedente controllerà prima se &quot;A&quot; è stato mappato su un altro tasto, e se non lo è lo mapperà sull'ultimo tasto che l'utente ha premuto.</p>
   <p> </p>
