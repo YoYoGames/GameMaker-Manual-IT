@@ -6,11 +6,11 @@
   <title>vertex_format_add_custom</title>
   <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Reference for vertex_format_add_custom" />
-  <meta name="rh-index-keywords" content="vertex_format_add_custom,vertex_type_float1,vertex_type_float2,vertex_type_float3,vertex_type_float4,vertex_type_colour,vertex_type_ubyte4,vertex_usage_position,vertex_usage_colour,vertex_usage_normal,vertex_usage_textcoord,vertex_usage_blendweight,vertex_usage_blendindices,vertex_usage_depth,vertex_usage_tangent,vertex_usage_binormal,vertex_usage_fog,vertex_usage_sample" />
-  <meta name="search-keywords" content="vertex_format_add_custom,vertex_type_float1,vertex_type_float2,vertex_type_float3,vertex_type_float4,vertex_type_colour,vertex_type_ubyte4,vertex_usage_position,vertex_usage_colour,vertex_usage_normal,vertex_usage_textcoord,vertex_usage_blendweight,vertex_usage_blendindices,vertex_usage_depth,vertex_usage_tangent,vertex_usage_binormal,vertex_usage_fog,vertex_usage_sample" />
+  <meta name="rh-index-keywords" content="vertex_format_add_custom,vertex_type_float1,vertex_type_float2,vertex_type_float3,vertex_type_float4,vertex_type_colour,vertex_type_ubyte4,vertex_usage_position,vertex_usage_colour,vertex_usage_normal,vertex_usage_blendweight,vertex_usage_blendindices,vertex_usage_depth,vertex_usage_tangent,vertex_usage_binormal,vertex_usage_fog,vertex_usage_sample,vertex_usage_texcoord" />
+  <meta name="search-keywords" content="vertex_format_add_custom,vertex_type_float1,vertex_type_float2,vertex_type_float3,vertex_type_float4,vertex_type_colour,vertex_type_ubyte4,vertex_usage_position,vertex_usage_colour,vertex_usage_normal,vertex_usage_blendweight,vertex_usage_blendindices,vertex_usage_depth,vertex_usage_tangent,vertex_usage_binormal,vertex_usage_fog,vertex_usage_sample,vertex_usage_texcoord" />
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
@@ -84,7 +84,7 @@
         <td>vertex normal values (nx, ny, nz)</td>
       </tr>
       <tr>
-        <td><span class="inline">vertex_usage_textcoord</span></td>
+        <td><span class="inline">vertex_usage_texcoord</span></td>
         <td>UV coordinates (u, v)</td>
       </tr>
       <tr>
@@ -115,16 +115,19 @@
         <td><span class="inline">vertex_usage_sample</span></td>
         <td>sampler index</td>
       </tr>
+      <tr>
+        <td><span class="inline">vertex_usage_psize</span></td>
+        <td>point size for point sprites</td>
+      </tr>
     </tbody>
   </table>
-  <p><br />
-    There are some important things to note when using custom formats like these:</p>
+  <h3><br />
+    Usage Notes</h3>
   <ul class="colour">
     <li>The <span class="inline">vertex_format_add_custom()</span> function only supports <span class="inline">vertex_usage_position</span>, <span class="inline">vertex_usage_colour</span>, <span class="inline">vertex_usage_normal</span> and <span class="inline">vertex_usage_textcoord</span> when using GLSL shaders. These will map to the shader attributes <span class="inline">in_Position</span>, <span class="inline">in_Colour[0 - ...]</span>, <span class="inline">in_Normal</span> respectively (anything that is not one of these three attributes - e.g.: texture coordinates - can be mapped to any attribute you define).</li>
     <li>In general you should use <span class="inline">vertex_usage_textcoord</span> for all extra parameters where possible, as types like <span class="inline">vertex_usage_blendweight</span> and <span class="inline">vertex_usage_tangent</span> are close to deprecated in most shader languages, and probably won&#39;t convert properly. Instead use <span class="inline">vec</span>, <span class="inline">vec2</span>, <span class="inline">vec3</span> or <span class="inline">vec4</span> types <span class="inline">vertex_usage_textcoord</span> and everything should work fine.</li>
     <li>GLSL ES does <i>not</i> support integer attributes, so passing in <span class="inline">ivec4</span>&#39;s does not work (this type is usually used when passing in <span class="inline">vertex_usage_blendindices</span>). What you need to do is pass in texture coordinates and then in the shader, convert them to <span class="inline">ivec4</span> like this:</li>
   </ul>
-  <p> </p>
   <p class="code">attribute vec3 in_Position;<br />
     attribute vec4 in_BlendIndices;<br />
     attribute vec4 in_BlendWeights;<br />
@@ -147,6 +150,7 @@
   <ul class="colour"><br />
      
   </ul>
+  <p> </p>
   <h4>Syntax:</h4>
   <p class="code"><span data-field="title" data-format="default">vertex_format_add_custom</span>(type, usage);</p>
   <table>

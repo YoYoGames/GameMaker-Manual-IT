@@ -56,10 +56,10 @@
       </tr>
     </tbody>
   </table>
-  <p class="note"><span class="note">NOTE</span> You cannot use this function to check the type of a data structure, as the same index number may be used by multiple data structures of differing types.</p>
+  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> You cannot use this function to check the type of a data structure, as the same index number may be used by multiple data structures of differing types.</p>
   <p> </p>
   <h4>Syntax:</h4>
-  <p class="code">ds_exists(ind, type);</p>
+  <p class="code"><span data-field="title" data-format="default">ds_exists</span>(ind, type)</p>
   <table>
     <colgroup>
       <col />
@@ -89,12 +89,11 @@
   <p class="code"><span data-keyref="Type_Bool"><a href="GameMaker_Language/GML_Overview/Data_Types.htm" target="_blank">Boolean</a></span></p>
   <p> </p>
   <h4>Example:</h4>
-  <p class="code">if !ds_exists(ai_grid, ds_type_grid)<br />
+  <p class="code">if (!ds_exists(ai_grid, ds_type_grid))<br />
     {<br />
         ai_grid = ds_grid_create(room_width / 32, room_height / 32);<br />
     }</p>
-  <p>The above code checks the (previously initialised) variable &quot;ai_grid&quot; to see if it indexes a DS grid type data structure, and if it does not then it creates one and stores its index in the variable.</p>
-  <p> </p>
+  <p>The above code checks the (previously initialised) variable <span class="inline2">ai_grid</span> to see if it indexes a DS grid type data structure. If it doesn&#39;t, it creates one and stores its handle in the variable.</p>
   <p> </p>
   <p> </p>
   <div class="footer">

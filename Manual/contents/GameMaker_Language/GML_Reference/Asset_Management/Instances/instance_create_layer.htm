@@ -14,8 +14,8 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>instance_create_layer</h1>
-  <p>With this function you can create a new instance of the specified object at any given point within the room and on the layer specified. The layer can be identified using the layer ID value (as returned by the function <a href="../Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a>) or by the name of the layer (as a string, for example &quot;instance_layer&quot;) as defined in the <a href="../../../../The_Asset_Editors/Rooms.htm">room editor</a>.</p>
+  <h1><span data-field="title" data-format="default">instance_create_layer</span></h1>
+  <p>With this function you can create a new instance of the specified object at any given point within the room and on the layer specified. The layer can be identified using the layer ID value (as returned by the function <span class="inline3_func"><a data-xref="{title}" href="../Rooms/General_Layer_Functions/layer_create.htm">layer_create</a></span>) or by the name of the layer (as a string, for example &quot;instance_layer&quot;) as defined in <a data-xref="{title}" href="../../../../The_Asset_Editors/Rooms.htm">The Room Editor</a>.</p>
   <p>This function returns the <a href="Instance_Variables/id.htm"><span class="inline">id</span></a> of the new instance which can then be stored in a variable and used to access that instance. Note that this function will also call the <a href="../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">Create Event</a> of the instance being created <i>before</i> continuing with the code or actions for the event that called the function.</p>
   <div data-conref="../../../../assets/snippets/Note_layer_depth_range.hts"> </div>
   <h2>Optional Struct</h2>
@@ -26,7 +26,7 @@
   <p class="note"><span class="note">NOTE</span> Variables from the struct are &quot;shallow-copied&quot; to the new instance, meaning any arrays, structs, and other resources are copied by reference and not duplicated.</p>
   <p> </p>
   <h4>Syntax:</h4>
-  <p class="code">instance_create_layer(x, y, layer_id, obj);</p>
+  <p class="code">instance_create_layer(x, y, layer_id, obj, [var_struct]);</p>
   <table>
     <tbody>
       <tr>

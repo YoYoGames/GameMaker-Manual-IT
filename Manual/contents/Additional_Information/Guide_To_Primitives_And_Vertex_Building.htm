@@ -6,7 +6,7 @@
   <title>Guide To Primitives And Vertex Building</title>
   <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../assets/css/default.css" type="text/css" />
-  <script src="../assets/scripts/main_script.js" type="module"></script>
+  <script src="../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains how to set up and use primitives and vertex buffers" />
   <meta name="rh-index-keywords" content="Guide To Primitives And Vertex Building" />
@@ -93,9 +93,9 @@
     my_format = vertex_format_end();</p>
   <p>Now, how does the shader attribute get matched to the vertex format type? It&#39;s just based on the naming convention:</p>
   <ul class="colour">
-    <li><span class="inline">&quot;in_Position&quot;</span> maps to <span class="inline"><a href="../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_add_position.htm">vertex_format_add_position</a>/<a href="../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_add_position_3d.htm">_3d()</a></span></li>
-    <li><span class="inline">&quot;in_Colour&quot;</span> maps to <a href="../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_add_colour.htm"><span class="inline">vertex_format_add_colour()</span></a></li>
-    <li><span class="inline">&quot;in_TextureCoord&quot;</span> maps to <a href="../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_add_texcoord.htm"><span class="inline">vertex_format_add_texcoord()</span></a></li>
+    <li><span class="inline">&quot;in_Position&quot;</span> maps to <span class="inline3_func"><a data-xref="{title}" href="../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_add_position.htm">vertex_format_add_position</a></span> <span class="inline">/ <span class="inline3_func"><a data-xref="{title}" href="../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_add_position_3d.htm">vertex_format_add_position_3d</a></span></span></li>
+    <li><span class="inline">&quot;in_Colour&quot;</span> maps to <span class="inline3_func"><a data-xref="{title}" href="../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_add_colour.htm">vertex_format_add_colour</a></span></li>
+    <li><span class="inline">&quot;in_TextureCoord&quot;</span> maps to <span class="inline3_func"><a data-xref="{title}" href="../GameMaker_Language/GML_Reference/Drawing/Primitives/vertex_format_add_texcoord.htm">vertex_format_add_texcoord</a></span></li>
   </ul>
   <p><span class="inline"><span class="inline"><span class="inline"></span></span> </span>Now, things get trickier when you have multiple attributes of the same kind, but things are still based on the same naming convention. We&#39;ll look at supplying additional <b>colour</b> and <b>texture coordinates</b> now, as there can only be <b>one</b> Position and <b>one</b> Normal attribute in the shader or vertex format, but there <em>can</em> be multiple colour or texture attributes.</p>
   <p>When adding additional colour attributes to your shader, a number needs to be added to the end of the shader attribute to indicate which particular entry in the vertex format the attribute maps to. Here&#39;s an example - first the vertex format:</p>

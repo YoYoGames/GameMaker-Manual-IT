@@ -4,9 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Set Audio Pitch</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <meta name="generator" content="Adobe RoboHelp 2019" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
-  <script src="../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page that explains the Set Audio Pitch action" />
   <meta name="rh-index-keywords" content="GML Visual Action - Set Audio Pitch" />
@@ -20,7 +20,7 @@
   <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> The clamped value given above is what <span data-keyref="GameMaker Name">GameMaker</span> attempts to clamp the range to, but this value is not guaranteed on all target platforms. iOS, for example, clamps to (1/256) - 8, so you may need to experiment on each target platform and have different versions of a sound resource, each one pre-shifted, should you require higher or lower octave values.</p>
   <p> </p>
   <h4>Action Syntax:</h4>
-  <p><img alt="Set Audio Pitch Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/a_Audio_Set_Audio_Pitch.png" /></p>
+  <p><img alt="Set Audio Pitch Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/a_Audio_Get_Audio_Pitch.png" /></p>
   <h4>Arguments:</h4>
   <table>
     <tbody>
@@ -40,7 +40,9 @@
   </table>
   <p> </p>
   <h4>Example:</h4>
-  <p><img alt="Set Audio Pitch Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/e_Audio_Get_Audio_Pitch.png" />The above action block code first gets the pitch for the given sound and stores it in a temporary local variable. It then checks for a key press, and if one is detected, the value of the pitch is checked to see if it is less than 2. If it is, then the sound is stopped, the pitch variable has 0.1 added to it, and then this variable is used to set the pitch of the sound again before it is played.</p>
+  <p><img alt="Set Audio Pitch Action" class="center" src="../../../assets/Images/Scripting_Reference/Drag_And_Drop/Reference/Audio/e_Audio_Get_Audio_Pitch.png" />The above action block code first gets the pitch for the given sound and stores it in a temporary
+    local variable. It then checks for a key press, and if one is detected, the value of the pitch is checked to see if it is less than 2. If it is, then the sound is stopped, the pitch variable has 0.1 added to it, and then this variable is used to set
+    the pitch of the sound again before it is played.</p>
   <p> </p>
   <p> </p>
   <p> </p>
@@ -51,7 +53,7 @@
         <div style="float:right">Next: <a href="Get_Audio_Pitch.htm">Get Audio Pitch</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2021 All Rights Reserved</span></h5>
   </div>
   <!-- KEYWORDS
 Action - Set Audio Pitch

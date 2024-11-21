@@ -6,7 +6,7 @@
   <title>shader_set_uniform_matrix_array</title>
   <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
-  <script src="../../../../assets/scripts/main_script.js" type="module"></script>
+  <script src="../../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
   <meta name="topic-comment" content="Page outlining the function shader_set_uniform_matrix_array" />
   <meta name="rh-index-keywords" content="shader_set_uniform_matrix_array" />
@@ -19,7 +19,7 @@
   <div data-conref="../../../../assets/snippets/Note_Set_Uniforms_After_Shader_Set.hts"> </div>
   <p> </p>
   <h4>Syntax:</h4>
-  <p class="code">shader_set_uniform_matrix_array(handle, array);</p>
+  <p class="code"><span data-field="title" data-format="default">shader_set_uniform_matrix_array</span>(handle, array);</p>
   <table>
     <tbody>
       <tr>
@@ -44,20 +44,31 @@
   <p class="code"><span data-keyref="Type_Void">N/A</span></p>
   <p> </p>
   <h4>Example:</h4>
-  <p class="code">shader_set(shader_Glass);<br />
-    shader_params = shader_get_uniform(shader_tint, &quot;cMatrixArray&quot;);<br />
-    shader_set_uniform_matrix_array(shader_params, matrix_array);<br />
-    draw_self();<br />
-    shader_reset();</p>
-  <p>The above code will get the handle of the shader constant &quot;cMatrixArray&quot; then set that constant to the given array.</p>
-  <p> </p>
+  <p class="code">max_transforms = 32;<br />
+    arr_transform_matrices = array_create(max_transforms * 16);<br />
+    var _arr_matrix = matrix_build_identity();<br />
+    var i = 0;<br />
+    repeat(max_transforms)<br />
+    {<br />
+        array_copy(arr_transform_matrices, i * 16, _arr_matrix, 0, 16);<br />
+        i++;<br />
+    }<br />
+    <br />
+    shader_set(sh_dynamic_batch);<br />
+    shader_params = shader_get_uniform(sh_dynamic_batch, &quot;u_mTransforms&quot;);<br />
+    shader_set_uniform_matrix_array(shader_params, arr_transform_matrices);<br />
+    vertex_submit(vb_batch, pr_trianglelist, texture);<br />
+    shader_reset();
+  </p>
+  <p>The above code example shows how to initialise an array of matrices and send it to a shader.</p>
+  <p>First the maximum number of transforms is defined and an array is created to hold that number of transforms. An identity matrix is then copied to the array to initialise each individual matrix. A shader <span class="inline2">sh_dynamic_batch</span> that defines a <span class="inline2">mat4</span> array uniform named &quot;u_mTransforms&quot; is then set as the current shader and the handle to the uniform is retrieved with <span class="inline3_func"><a data-xref="{title}" href="shader_get_uniform.htm">shader_get_uniform</a></span>. <span class="inline3_func"><span data-field="title" data-format="default">shader_set_uniform_matrix_array</span></span> is then called to set the value of that uniform to the given array. Finally, a vertex buffer stored in the variable <span class="inline2">vb_batch</span> is then submitted.</p>
   <p> </p>
   <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
-        <div style="float:left">Back: <a href="Shaders.htm">Shaders</a></div>
-        <div style="float:right">Next: <a href="shader_reset.htm">shader_reset</a></div>
+        <div style="float:left">Back: <a data-xref="{title}" href="Shaders.htm">Shaders</a></div>
+        <div style="float:right">Next: <a data-xref="{title}" href="shader_reset.htm">shader_reset</a></div>
       </div>
     </div>
     <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>

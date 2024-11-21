@@ -32,8 +32,8 @@
   <p>These will always remain consistent, so if you have code that relies on specific timing during each step of your game, you should use: </p>
   <ul class="colour">
     <li><strong>Begin Step Event</strong></li>
-    <li><strong>Timelines</strong></li>
-    <li><strong>Time Sources</strong>
+    <li><a href="../Timelines.htm"><strong>Timelines</strong></a></li>
+    <li><a href="../../GameMaker_Language/GML_Reference/Time_Sources/Time_Sources.htm"><strong>Time Sources</strong></a>
       <ul>
         <li><strong>&quot;Ticks&quot; (updates)</strong></li>
         <li><strong>Callbacks</strong>
@@ -49,7 +49,10 @@
     <li><strong>Step Event</strong> (note that the Step event is executed just before instances are put in their new positions)</li>
     <li><strong>End Step Event</strong></li>
   </ul>
-  <p>All of the events for drawing are also always dealt with in the same order as follows (except for the <strong>Window Resize </strong>event, which is triggered differently):</p>
+  <p>After all Step events are complete, <span data-keyref="GameMaker Name">GameMaker</span> executes the Draw events for all instances, in the same game step. Within a particular event (e.g. Draw End), the order in which instances run that event depends on the layer order, e.g. the layer with the highest depth has its instances drawn first, and the layer with the lowest depth is drawn last.</p>
+  <p class="note"><span data-conref="../../assets/snippets/Tag_note.hts"> </span> The layer with the highest depth (which draws first) is displayed at the bottom of the Room Editor&#39;s <a href="../Room_Properties/Layer_Properties.htm">layer list</a>, while the lowest depth layer is at the top (as it is &quot;closer&quot; to the viewer).</p>
+  <p>Each Draw event draws instances in this order (based on the <a href="../../GameMaker_Language/GML_Reference/Asset_Management/Instances/Instance_Variables/depth.htm">depth</a> value), and then moves on to the next event, repeating the same instance order (e.g. Draw Begin moving to Draw and then Draw End).</p>
+  <p>This is the order of the Draw events:</p>
   <ul class="colour">
     <li><strong>Pre-Draw Event</strong></li>
     <li><strong>Draw Begin Event</strong></li>

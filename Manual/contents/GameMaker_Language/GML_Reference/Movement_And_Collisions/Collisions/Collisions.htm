@@ -58,9 +58,11 @@
   </ul>
   <h2>Bounding Boxes</h2>
   <p>Some instances will use a rectangular bounding box for checking collisions (unless a different mask shape is selected).</p>
-  <p>These bounding boxes use an inclusive system, i.e. they include the bottom-most and right-most edges. This means that the bounding box for a 16x16 collision mask is generated from <span class="inline2">(0.0, 0.0)</span> to <span class="inline2">(16.0, 16.0)</span> (relative).</p>
+  <p>These bounding boxes use an inclusive system, i.e. they include the bottom-most and right-most edges. This means that the bounding box for a 16x16 collision mask is generated from <span class="inline2">(0.0, 0.0)</span> to <span class="inline2">(16.0, 16.0)</span> (relative to the instance).</p>
+  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> You can get these values using the <span class="inline2"><a data-xref="{title}" href="../../Asset_Management/Sprites/Sprite_Instance_Variables/bbox_left.htm">bbox_left</a></span>, <span class="inline2"><a data-xref="{title}" href="../../Asset_Management/Sprites/Sprite_Instance_Variables/bbox_top.htm">bbox_top</a></span>, <span class="inline2"><a data-xref="{title}" href="../../Asset_Management/Sprites/Sprite_Instance_Variables/bbox_right.htm">bbox_right</a></span> and <span class="inline2"><a data-xref="{title}" href="../../Asset_Management/Sprites/Sprite_Instance_Variables/bbox_bottom.htm">bbox_bottom</a></span> variables.</p>
+  <p class="note"><span data-conref="../../../../assets/snippets/Tag_note.hts"> </span> Since the bounding box is inclusive (as explained above), it will always extend 1 pixel beyond its bottom-right corner compared to the sprite&#39;s bounding box. For example, a 16x16 square sprite&#39;s <a href="../../Asset_Management/Sprites/Sprite_Information/sprite_get_bbox_right.htm">right edge offset</a> will be <span class="inline2">15.0</span> (the 16th pixel when starting from 0), however an instance using this sprite will give you a <span class="inline2"><a data-xref="{title}" href="../../Asset_Management/Sprites/Sprite_Instance_Variables/bbox_right.htm">bbox_right</a></span> of 16 (+ its X position).</p>
   <p>For two instances to be in collision, their bounding boxes have to overlap. At a pixel level, an overlap is counted when the centre of that pixel is covered.</p>
-  <p>For example, if you&#39;re a rectangle trying to collide with a bounding box covering the area from <span class="inline2">(0.0, 0.0)</span> to <span class="inline2">(16.0, 16.0)</span>, the edge of your mask has to touch the area between  <span class="inline2">(0.5, 0.5)</span> and <span class="inline2">(15.5, 15.5)</span> for a collision to be counted.</p>
+  <p>For example, if you&#39;re trying to collide with a bounding box covering the area from <span class="inline2">(0.0, 0.0)</span> to <span class="inline2">(16.0, 16.0)</span>, the edge of your mask has to touch the area between  <span class="inline2">(0.5, 0.5)</span> and <span class="inline2">(15.5, 15.5)</span> for a collision to be counted.</p>
   <h2><label for="one">Simple Collision Checking</label></h2>
   <p>The following functions deal with the various ways in which you can have an instance check for collisions with another instance:</p>
   <ul class="colour">
@@ -122,7 +124,7 @@
         <div style="float:right">Next: <a href="../Movement/Movement.htm">Movement</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2023 All Rights Reserved</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2024 All Rights Reserved</span></h5>
   </div>
   <!-- KEYWORDS
 Collision Functions

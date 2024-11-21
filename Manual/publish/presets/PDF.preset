@@ -3,7 +3,6 @@
   <content>
     <conditional>
       <path>../expressions/StableManual.expn</path>
-      <name>StableManual</name>
     </conditional>
     <toc>
       <path>../../toc/Default.toc</path>
@@ -21,6 +20,10 @@
     <includeDropdownText type="boolean">true</includeDropdownText>
   </content>
   <title>GameMaker Manual</title>
+  <metadata>
+    <author>Gurpreet S. Matharoo, Mark Alexander, Bart Teunis</author>
+    <subject>GameMaker Documentation</subject>
+  </metadata>
   <type>pdf</type>
   <outputPath>I:/YYG Stuff/Outputs/ManualStablePDF/</outputPath>
   <name>PDF</name>
@@ -54,19 +57,4 @@
     <path>../templates/PDF/pdf.tpl</path>
   </template>
   <excludeTopicCss type="boolean">true</excludeTopicCss>
-  <metadataNew type="array">
-    <metadataNewitem>
-      <propkey>Title</propkey>
-      <propvalue>GameMaker Manual</propvalue>
-    </metadataNewitem>
-    <metadataNewitem>
-      <propkey>Author</propkey>
-      <propvalue>Gurpreet S. Matharoo, Bart Teunis, Mark Alexander</propvalue>
-    </metadataNewitem>
-    <metadataNewitem>
-      <propkey>Subject</propkey>
-      <propvalue>GameMaker Manual</propvalue>
-    </metadataNewitem>
-  </metadataNew>
-  <metadataOptions>list</metadataOptions>
 </preset>

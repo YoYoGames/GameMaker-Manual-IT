@@ -32,13 +32,13 @@
   <p>When forming variables in <b>GML</b> they must have a name that starts with a letter or the underscore symbol &quot;_&quot; and can contain only letters, numbers, and the underscore symbol &#39;_&#39; with a maximum length of 64 symbols. So, valid variables are things like <span class="inline">fish</span>, <span class="inline">foo_bar</span>, <span class="inline">num1</span>, or <span class="inline">_str</span>, while invalid variables would be <span class="inline">6fish</span>, <span class="inline">foo bar</span>, or <span class="inline">*num</span>.</p>
   <p>Now, in many programming languages you need to create a variable &quot;assignment&quot; before you can use it. This basically means that you tell the computer the name you wish to use for the variable and assign it an initial value. The variable is then given a place in memory to store the value or perform operations on it. Assigning a variable takes the form of:</p>
   <p class="code">&lt;variable&gt; = &lt;expression&gt;;</p>
-  <p>An expression can be a simple value but can also be more complicated, so, rather than assigning a value to a variable, one can also add a value to the current value of the variable using <span class="inline"><b>+=</b></span>, for example:</p>
+  <p>An expression can be a simple value but can also be more complicated, so, rather than assigning a value to a variable, you can also add a value to the current value of the variable using <span class="inline2">+=</span>, for example:</p>
   <p class="code">a = 100;   // Assigning a simple value<br />
     b = 200;<br />
     c = 300;<br />
     a += b;    // Assigning with operation<br />
     a = b + c; // Assigning with expression</p>
-  <p class="note"><span class="note">NOTE</span> The GameMaker Language will also accept &quot;<span class="inline">:=</span>&quot; for assignments, although this is not typically the most common way to do it:</p>
+  <p class="note"><span class="note">NOTE</span> The GameMaker Language will also accept <span class="inline2">:=</span> for assignments, although this is not typically the most common way to do it:</p>
   <p class="code">&lt;variable&gt; := &lt;expression&gt;;</p>
   <p>Similarly, you can subtract using <span class="inline"><b>-=</b></span>, multiply using <span class="inline"><b>*=</b></span>, divide using <span class="inline"><b>/=</b></span>, or use bitwise operators using <span class="inline"><b>|=</b></span>, <span class="inline"><b>&amp;=</b></span>, or <span class="inline"><b>^=</b></span>. You can also add or subtract <i>one</i> from a value using <span class="inline"><b>++</b></span>, <span class="inline"><b>--</b></span>. For further information see the section on <a data-xref="{title}" href="Expressions_And_Operators.htm">Expressions And Operators</a>.</p>
   <p>Note that you <i>cannot</i> do the following (or any variation):</p>
