@@ -40,10 +40,10 @@
   <p> </p>
   <h4>Esempio:</h4>
   <p class="code">var lay_id = layer_get_id(&quot;Sprites&quot;);<br />
-    if layer_get_hspeed(lay_id) != 0 || layer_get_vspeed(lay_id) != 0<br />
+    if (layer_get_hspeed(lay_id) != 0 || layer_get_vspeed(lay_id) != 0)<br />
     {<br />
-    layer_hspeed(lay_id, 0);<br />
-    layer_vspeed(lay_id, 0);<br />
+        layer_hspeed(lay_id, 0);<br />
+        layer_vspeed(lay_id, 0);<br />
     }</p>
   <p>Il codice di cui sopra controlla le velocità orizzontali e verticali del livello dato e se non sono entrambe impostate a 0 allora le imposta a 0.</p>
   <p> </p>
