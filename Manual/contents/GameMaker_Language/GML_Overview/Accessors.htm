@@ -23,10 +23,10 @@
     <p class="code">list_index[| index]</p>
     <p class="dropspot">Così, quando avete usato <span class="inline">ds_list_create()</span> per creare la vostra lista, userete l'indice della lista (che avete memorizzato in una variabile) per farvi riferimento, con il valore &quot;index&quot; che è la posizione nella lista da impostare o aggiungere. Per esempio, il seguente codice crea una lista e poi aggiunge 10 voci, impostando ogni voce su un numero casuale da 0 a 9:</p>
     <p class="code">ds = ds_list_create();<br />
-      var index = 0;<br />
+      var _index = 0;<br />
       repeat(10)<br />
       {<br />
-          ds[| index++] = irandom(9);<br />
+          ds[| _index++] = irandom(9);<br />
       }</p>
     <p class="dropspot">Notate che se state usando un'espressione per aggiungere un riferimento ad un indice che ha già un valore, il valore precedente sarà sostituito piuttosto che avere un ulteriore indice aggiunto alla lista. Per aggiungere ulteriori voci avreste bisogno di conoscere la dimensione di ds_list e aggiungerle alla fine. Vale anche la pena notare che è possibile impostare un indice di lista che è <i>maggiore</i> della dimensione della lista a cui si fa riferimento, e questo imposterà quel valore, espandendo la lista allo stesso tempo e inizializzando tutte le posizioni nella lista fino all'indice dato come 0.</p>
     <p class="dropspot">Una volta che avete creato la struttura della vostra lista e l'avete riempita di dati, per ottenere valori dalla lista dovreste avere qualcosa come:</p>
@@ -56,15 +56,15 @@
     <p class="dropspot">Dopo aver creato la vostra griglia con la funzione <span class="inline">ds_grid_create()</span>, userete l'indice della griglia che avete memorizzato in una variabile per farvi riferimento, con &quot;xpos&quot; e &quot;ypos&quot; che sono la posizione all'interno della griglia per ottenere o impostare un valore. Per esempio, il seguente codice crea una griglia, la cancella a 0 e poi vi aggiunge alcune voci:</p>
     <p class="code">ds = ds_grid_create();<br />
       ds_grid_clear(ds, 0);<br />
-      var gw = ds_grid_width(ds) - 1;<br />
-      var gh = ds_grid_height(ds) - 1;<br />
+      var _gw = ds_grid_width(ds) - 1;<br />
+      var _gh = ds_grid_height(ds) - 1;<br />
       repeat(10)<br />
       {<br />
-          var xx = irandom(gw);<br />
-          var yy = irandom(gh);<br />
-          if (ds[# xx, yy] == 0)<br />
+          var _xx = irandom(_gw);<br />
+          var _yy = irandom(_gh);<br />
+          if (ds[# _xx, _yy] == 0)<br />
           {<br />
-              ds[# xx, yy] = 1;<br />
+              ds[# _xx, _yy] = 1;<br />
           }<br />
       }</p>
     <p class="dropspot">Una volta che avete creato la vostra struttura a griglia e l'avete riempita di dati, per ottenere valori da una specifica posizione della griglia dovreste avere qualcosa come:</p>
@@ -84,7 +84,8 @@
     <p class="dropspot">La funzione stessa avrebbe qualcosa del genere:</p>
     <p class="code">function array_populate(_array)<br />
       {<br />
-          var a = _array; var i = 0; repeat(25)<br />
+          var a = _array; var i = 0;<br />
+          repeat(25)<br />
           {<br />
               i = irandom(99);<br />
               while (a[i] != 0)<br />
