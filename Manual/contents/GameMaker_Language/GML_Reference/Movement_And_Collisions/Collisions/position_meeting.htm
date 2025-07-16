@@ -51,9 +51,9 @@
   <h4>Esempio:</h4>
   <p class="code">if mouse_check_button(mb_left)<br />
     {<br />
-        if (!position_meeting(mouse_x, mouse_y, all)) <br />
+        if (!position_meeting(mouse_x, mouse_y, all))<br />
         {<br />
-            instance_create_layer(mouse_x, mouse_y, &quot;Walls&quot;, obj_Wall);<br />
+            instance_create_layer(mouse_x, mouse_y, &quot;Walls&quot;, obj_wall);<br />
         }<br />
     }</p>
   <p>Il codice di cui sopra controlla il pulsante sinistro del mouse, e se è premuto controlla la posizione x/y del mouse per una collisione con qualsiasi istanza. Se non ce n'è nessuna, allora viene creata un'istanza di &quot;obj_Wall&quot;.</p>

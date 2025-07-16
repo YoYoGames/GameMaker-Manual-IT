@@ -55,7 +55,7 @@
     ey = instance_nearest(x, y, enemy).y;<br />
     with (instance_create_layer(x, y, &quot;Bullets&quot;, obj_Missile))<br />
     {<br />
-        direction = point_direction(x, y, ex, ey);<br />
+        direction = point_direction(x, y, _ex, _ey);<br />
     }</p>
   <p>Il codice di cui sopra otterrà le coordinate x e y del nemico più vicino e poi le passerà a un proiettile <span class="notranslate">object</span> da usare nella funzione point_direction per impostare correttamente la sua direzione di marcia.</p>
   <p> </p>
