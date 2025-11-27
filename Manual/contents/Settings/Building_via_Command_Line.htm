@@ -51,10 +51,10 @@
         <tr>
           <td style=""><span class="inline">/uf=[user_folder]<strong></strong></span></td>
           <td style="">La cartella utente usata per recuperare le informazioni sulla licenza
-            <br>
-            <br>
+            <br />
+            <br />
             Su <span class="notranslate">Windows</span>, questa sarà: <span class="inline"><span>%appdata%\GameMaker\&lt;user_name&gt;_&lt;number&gt;</span>
-            <br>
+            <br />
             Su <span class="notranslate">macOS</span>, questo sarà: <span class="inline"><span>~/.config/GameMaker/&lt;user_name&gt;_&lt;number&gt;</span> </td>
         </tr>
         <tr>
@@ -76,8 +76,8 @@
         <tr>
           <td style=""><span class="inline">/of=[output_folder_filename]</span></td>
           <td style="">La directory di output dove la compilazione sarà estratta; non specificare solo una directory perché la voce finale viene sempre rimossa (ad esempio: specificando <span class="inline">d:\game\output</span> i file di gioco saranno collocati in <span class="inline">d:\game</span>)
-            <br>
-            <br>
+            <br />
+            <br />
             Se questo non è specificato, verrà creata una directory chiamata <span class="inline">output</span> nella stessa directory del file <span class="inline">.bat</span> (o da dove il comando viene eseguito), contenente i file di build estratti </td>
         </tr>
         <tr>
@@ -279,21 +279,21 @@
         <tr>
           <td style=""><span class="inline">Runtime ListInstalled [directory]</span></td>
           <td style="">Elenca il <span class="notranslate">runtimes</span> disponibile nella cartella corrente (<span class="inline">directory</span>=completo <span class="notranslate">path</span> alla cartella)
-            <br>
-            <br>
+            <br />
+            <br />
             È possibile specificare una directory in cui cercare, ma se non viene specificato, il default è la directory corrente
-            <br>
-            <br>
+            <br />
+            <br />
             Questo controlla anche se c'è un file <span class="inline">receipt.json</span> e una cartella <span class="inline">manifest</span> all'interno della directory (assicurandosi che sia effettivamente una <span class="notranslate">runtime</span>) </td>
         </tr>
         <tr>
           <td style=""><span class="inline">Runtime Info [version]</span></td>
           <td style="">Stampa informazioni sul più recente <span class="notranslate">runtime</span> sul feed dato; ha anche bisogno di un file di licenza per mostrare informazioni sui moduli disponibili per l'utente
-            <br>
-            <br>
+            <br />
+            <br />
             <span class="inline">version</span> può essere un <span class="notranslate">string</span> usato per cercare tra i titoli dei feed (ad esempio: <span class="inline">&quot;739&quot;</span> mostrerebbe informazioni per tutte le build contenenti 739 nei loro numeri di versione), oppure può essere <span class="inline">all</span> per mostrare informazioni per tutti i feed
-            <br>
-            <br>
+            <br />
+            <br />
             Elencherà i moduli con i nomi dei file <span class="inline">.zip</span> per ogni modulo </td>
         </tr>
         <tr>
@@ -303,11 +303,11 @@
         <tr>
           <td style=""><span class="inline">Runtime Verify [folder=.]</span></td>
           <td style="">Calcola le checksum per tutti i file installati e le confronta con le checksum scritte nel manifest <span class="inline">folder</span>. È possibile specificare una cartella da controllare, ma se non viene specificata, il calcolo si basa sulla directory corrente.
-            <br>
-            <br>
+            <br />
+            <br />
             Questo segnalerà tutti i file in cui le checksum non corrispondono, i file che mancano e quelli che non dovrebbero essere presenti.
-            <br>
-            <br>
+            <br />
+            <br />
             Si noti che i file manifest stessi non sono verificati e un utente può alterare i file manifest per farli corrispondere a quelli installati. </td>
         </tr>
       </tbody>
@@ -348,8 +348,8 @@
         <tr>
           <td style=""><span class="inline">/target=[list_of_targets]</span></td>
           <td style="">Elenco separato da virgole di obiettivi nel formato <span class="inline">PLATFORM|DEVICE</span>, ad esempio: <span class="inline">/target=&quot;Windows|Local,HTML|Firefox&quot;</span>
-            <br>
-            <br>
+            <br />
+            <br />
             Se si specifica <strong>all</strong>, i test tenteranno di essere eseguiti per ogni dispositivo nel file <span class="inline">devices.json</span> </td>
         </tr>
       </tbody>

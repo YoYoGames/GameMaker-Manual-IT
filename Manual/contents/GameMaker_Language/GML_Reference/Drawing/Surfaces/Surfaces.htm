@@ -104,18 +104,18 @@
   <p class="note"><b>NOTA</b>: L'unica cosa <b>che non si può</b> fare con la superficie dell'applicazione è liberarla. Essa esiste sempre, anche se il valore dell'indice per accedervi può cambiare.</p>
   <p>Quando si esegue il gioco, questa superficie viene creata la prima volta che viene richiamato l'<a href="../../../../The_Asset_Editors/Object_Properties/Draw_Events.htm">evento draw</a> in ogni nuovo <span class="notranslate">room</span> che viene inserito, il che significa che fino a quel momento non viene disegnato nulla. Tuttavia, è possibile ottenere la posizione della superficie dell'applicazione e ridimensionarla nell'<b>evento Create</b> o in qualsiasi altro evento senza ottenere alcun errore e i valori utilizzati saranno rilevanti per la superficie al momento della sua creazione. L'attuale <span class="notranslate">sequence</span> degli eventi per la creazione e il disegno della superficie dell'applicazione è il seguente:</p>
   <ul class="colour">
-    <li>Evento di pre-sorteggio<br>
+    <li>Evento di pre-sorteggio<br />
                --- &gt; <b>la superficie dell'applicazione viene creata (se non esiste) e il target di rendering viene impostato</b></li>
     <li><b></b>Per ogni porta di visualizzazione visibile, o, se non ci sono porte di visualizzazione attive, una volta
       <ul class="colour">
         <li>Evento di inizio disegno</li>
         <li>Evento di disegno</li>
-        <li>Evento di fine disegno<br>
+        <li>Evento di fine disegno<br />
                   --- Il <b>target di rendering della superficie dell'applicazione viene reimpostato qui</b>.</li>
       </ul>
     </li>
-    <li><b></b>Evento post sorteggio<br>
-              --- La <b>superficie dell'applicazione viene ora disegnata nel <a class="glossterm" data-glossterm="buffer di visualizzazione" href="#">buffer di visualizzazione</a> </b> per impostazione predefinita (anche se può essere disattivata da ). <b><br>
+    <li><b></b>Evento post sorteggio<br />
+              --- La <b>superficie dell'applicazione viene ora disegnata nel <a class="glossterm" data-glossterm="buffer di visualizzazione" href="#">buffer di visualizzazione</a> </b> per impostazione predefinita (anche se può essere disattivata da ). <b><br />
                          (anche se è possibile </b> <span class="notranslate">switch</span> disattivarlo usando <span class="inline"><a href="application_surface_draw_enable.htm">application_surface_draw_enable()</a></span>)</li>
     <li><b></b>Evento di inizio disegno della GUI</li>
     <li>Evento Draw GUI</li>

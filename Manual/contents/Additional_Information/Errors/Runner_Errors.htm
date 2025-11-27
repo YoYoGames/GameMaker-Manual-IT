@@ -19,11 +19,11 @@
   <p><img>Gli errori di esecuzione sono generalmente più gravi degli errori di compilazione, poiché significano che c'è qualcosa di gravemente sbagliato nel codice che né l'editor di codice né il compilatore sono stati in grado di rilevare. Quando si verifica un errore, è possibile utilizzare il pulsante <strong>Copia</strong> del pop-up per copiare l'errore negli appunti e incollarlo in un file di testo (o in un altro posto) per riferimenti futuri.</p>
   <p>La struttura di questo errore è la seguente:</p>
   <ul class="colour">
-    <li><img><br>
+    <li><img><br />
       Mostra l'evento in cui si è verificato l'errore e il sito <span class="notranslate">Object</span> (se applicabile).</li>
-    <li><img><br>
+    <li><img><br />
       Mostra l'errore effettivo.  Quindi, mostra l'<em>ambito </em>dell'errore e il tipo di errore. Il primo valore tra le parentesi sarà l'ID dell'istanza che stava eseguendo il codice - o potrebbe essere uno dei valori speciali elencati nella tabella sottostante - e il secondo è un valore interno che <span data-keyref="GameMaker Name">GameMaker</span> utilizza per identificare i bug e può essere ignorato. Nel caso dell'immagine qui sopra, sta dicendo che la variabile <span class="inline">_image</span> non è stata impostata (cioè non esiste prima di essere acceduta) su <span class="notranslate">object</span> <span class="inline">obj_EA_DEMO_Control</span>.</li>
-    <li><img><br>
+    <li><img><br />
       Questo mostra il numero di riga in cui si verifica l'errore e un frammento di codice che mostra la posizione. Si noti che questo non è sempre preciso al 100% a causa del modo in cui il gioco è compilato, ma dovrebbe essere sufficiente per aiutare a trovare esattamente il problema.</li>
   </ul>
   <p>Come già menzionato, alcuni messaggi di errore saranno identificati non da un valore di ID istanza, ma piuttosto da un valore <em>negativo </em>. Questi valori possono essere utilizzati per individuare la natura esatta dell'errore e a cosa si riferisce, con i seguenti valori possibili:</p>
@@ -264,7 +264,7 @@
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">With</span></td>
         <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Non si può usare il globale nell'istruzione with</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Con</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Si è tentato di utilizzare &quot;<span class="inline">global</span>&quot; come variabile all'interno di un'istruzione &quot;<span class="inline">with</span>&quot;, vale a dire:<br>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Si è tentato di utilizzare &quot;<span class="inline">global</span>&quot; come variabile all'interno di un'istruzione &quot;<span class="inline">with</span>&quot;, vale a dire:<br />
           <span class="inline">with (global)<br />
                {<br />
                //do something;<br />
@@ -275,7 +275,7 @@
         <td style="text-align: center;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px"><span class="inline">With</span></td>
         <td style="border-width: 1px;border-style: #333333;border-color: 1px;padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Non è possibile utilizzare local nell'istruzione with</td>
         <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Con</td>
-        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Si è tentato di utilizzare &quot;<span class="inline">local</span>&quot; come variabile all'interno di un'istruzione &quot;<span class="inline">with</span>&quot;, vale a dire:<br>
+        <td style="padding-top: 5px;padding-right: 10px;padding-left: 10px;padding-bottom: 8px">Si è tentato di utilizzare &quot;<span class="inline">local</span>&quot; come variabile all'interno di un'istruzione &quot;<span class="inline">with</span>&quot;, vale a dire:<br />
           <span class="inline">with (local)<br />
                {<br />
                //do something;<br />

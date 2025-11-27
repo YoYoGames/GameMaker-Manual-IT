@@ -40,7 +40,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Dovreste fare un &quot;or&quot; bitwise di queste costanti con il valore dell'indice <span class="notranslate">tile</span> per ottenere il tiledata finale:</p>
   <p class="code">var tiledata = 8 | tile_rotate | tile_flip;</p>
   <p>Il codice di cui sopra crea semplicemente una variabile locale per memorizzare i tiledata per il <span class="notranslate">tile</span> con l'indice di 8 sul <span class="notranslate">tile set</span>, e viene ruotato e capovolto. Questo può poi essere usato per disegnare il <span class="notranslate">tile</span> a quell'indice dal <span class="notranslate">tile set</span> che specifichi. questo non è collegato a nessun livello di tilemap e il <span class="notranslate">tile</span> sarà disegnato alla profondità del livello dell'istanza che fa il disegno, nella posizione x/y che specifichi nel <span class="notranslate">room</span>. Nota che puoi anche impostare il frame da disegnare. Se il <span class="notranslate">tile</span> indicizzato fa parte di un set di animazione, allora potete impostare qui il numero di frame (da 0 al numero di frame - 1) e il <span class="notranslate">tile</span> indicizzato sarà semplicemente l'indicatore di quale <span class="notranslate">tile set</span> animato state usando mentre sarà il dato frame ad essere disegnato. Se il <span class="notranslate">tile</span> non fa parte di un set animato allora il frame dovrebbe essere impostato a 0.</p>

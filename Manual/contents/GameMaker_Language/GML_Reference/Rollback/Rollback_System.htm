@@ -25,20 +25,20 @@
   <p>Il Rollback è deterministico. Condivide gli input solo con altri giocatori e si aspetta che tutti eseguano la stessa logica sull'input dato, dando gli stessi risultati su tutti i client.</p>
   <p>Un approccio diverso al multiplayer è la &quot;replica dello stato&quot;, che sincronizza continuamente lo stato del gioco tra i client, assicurando che stiano facendo sempre la stessa cosa.</p>
   <p>Rollback non fa questo: invia sempre e solo gli input, ma tiene anche d'occhio lo stato in modo da poter tornare indietro in caso di previsione errata.</p>
-  <p class="note"><em><strong>Che cos'è un cliente?</strong></em><br>
-    <br>
+  <p class="note"><em><strong>Che cos'è un cliente?</strong></em><br />
+    <br />
     Un &quot;client&quot; è un giocatore del gioco e si riferisce alla sua copia del gioco, in esecuzione sulla sua macchina.
   </p>
   <h2>Come funziona?</h2>
   <p>Come già detto, il Rollback <strong>comunica solo input</strong> tra giocatori.</p>
   <p>Ci sono due cose principali che Rollback gestisce:</p>
   <ul class="colour">
-    <li><strong>Input</strong>: Gli <a href="Rollback_Functions/rollback_define_input.htm">input</a> di ciascun giocatore vengono inviati agli altri giocatori. Se il giocatore 0 preme <strong>&quot;fuoco&quot;</strong> nel proprio client, Rollback farà in modo che anche gli altri client vedano il giocatore 0 premere <strong>&quot;fuoco&quot;.</strong><br>
-      <br>
+    <li><strong>Input</strong>: Gli <a href="Rollback_Functions/rollback_define_input.htm">input</a> di ciascun giocatore vengono inviati agli altri giocatori. Se il giocatore 0 preme <strong>&quot;fuoco&quot;</strong> nel proprio client, Rollback farà in modo che anche gli altri client vedano il giocatore 0 premere <strong>&quot;fuoco&quot;.</strong><br />
+      <br />
      <strong>Le previsioni vengono eseguite solo su input.</strong>
     </li>
-    <li><strong>Stato</strong>: Include tutti i siti <span class="notranslate">objects</span> gestiti e le loro variabili. Queste NON sono sincronizzate tra i giocatori: la modifica di una variabile in un client non la aggiornerà automaticamente in un altro client.<br>
-      <br>
+    <li><strong>Stato</strong>: Include tutti i siti <span class="notranslate">objects</span> gestiti e le loro variabili. Queste NON sono sincronizzate tra i giocatori: la modifica di una variabile in un client non la aggiornerà automaticamente in un altro client.<br />
+      <br />
      <strong>Lo stato è gestito solo per poter essere ripristinato.</strong>
     </li>
   </ul>
@@ -47,8 +47,8 @@
   <p>Ecco un esempio:</p>
   <ul class="colour">
     <li><strong>Ingresso</strong>: Il giocatore 0 preme <strong>&quot;fuoco&quot;.</strong></li>
-    <li><strong>Stato</strong>: Poiché il Giocatore 0 ha premuto il fuoco, viene creato un proiettile. Questo proiettile alla fine si scontra con una roccia. In questo modo il Giocatore 0 ottiene un punto.<br>
-      <br>
+    <li><strong>Stato</strong>: Poiché il Giocatore 0 ha premuto il fuoco, viene creato un proiettile. Questo proiettile alla fine si scontra con una roccia. In questo modo il Giocatore 0 ottiene un punto.<br />
+      <br />
       Questo è essenzialmente l'intero gioco, che dipende interamente dagli input.
     </li>
   </ul>

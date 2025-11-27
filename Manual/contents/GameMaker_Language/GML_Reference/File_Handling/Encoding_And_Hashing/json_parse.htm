@@ -48,12 +48,12 @@
     show_debug_message(data);
   </p>
   <p>Il codice qui sopra crea un nuovo <span class="notranslate">string</span> contenente un valido JSON <span class="notranslate">object</span>, e poi chiama <span class="inline">json_parse()</span> per convertire quel <span class="notranslate">string</span> in un <span class="notranslate">GML</span> <span class="notranslate">struct</span>. Poi stampa il risultato nel log di debug.</p>
-  <p class="note"><span class="note">NOTA</span> Noterete che il JSON <span class="notranslate">string</span> contiene un backslash<span class="inline2">(\</span>) prima di ogni doppio apice (<span class="inline2">&quot;</span>) al suo interno:<br>
-    <br>
-   <span class="inline2">json = &quot;{ \ <strong>&quot; </strong></span>myObj<br>
-    <br>
-    Questo per assicurarsi che le doppie virgolette siano lette come un vero carattere all'interno di <span class="notranslate">string</span>, invece di essere lette come parte del codice e chiudere prematuramente <span class="notranslate">string</span>. In questo modo stiamo usando un backslash per &quot;sfuggire&quot; alle doppie virgolette.<br>
-    <br>
+  <p class="note"><span class="note">NOTA</span> Noterete che il JSON <span class="notranslate">string</span> contiene un backslash<span class="inline2">(\</span>) prima di ogni doppio apice (<span class="inline2">&quot;</span>) al suo interno:<br />
+    <br />
+   <span class="inline2">json = &quot;{ \ <strong>&quot; </strong></span>myObj<br />
+    <br />
+    Questo per assicurarsi che le doppie virgolette siano lette come un vero carattere all'interno di <span class="notranslate">string</span>, invece di essere lette come parte del codice e chiudere prematuramente <span class="notranslate">string</span>. In questo modo stiamo usando un backslash per &quot;sfuggire&quot; alle doppie virgolette.<br />
+    <br />
     Se stai caricando JSON da un file esterno, tuttavia, non c'è bisogno di sfuggire ai caratteri in quel file e farlo potrebbe causare errori durante l'analisi.
   </p>
   <hr />
