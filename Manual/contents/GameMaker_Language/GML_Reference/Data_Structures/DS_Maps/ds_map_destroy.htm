@@ -13,7 +13,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_map_destroy</h1>
+  <h1><span data-field="title" data-format="default">ds_map_destroy</span></h1>
   <p>Le mappe DS occupano spazio in memoria, che viene assegnata loro quando vengono create. Ciò significa che è anche necessario liberare questa memoria quando la mappa DS non è necessaria per evitare errori, perdite di memoria e perdita di prestazioni durante l'esecuzione del gioco. Questa funzione
     fa proprio questo. Notate che la distruzione di una mappa de-referenzia qualsiasi struttura dati memorizzata nella mappa, causando una perdita di memoria, quindi dovreste passare attraverso la mappa e distruggere tutti gli elementi della struttura dati manualmente prima di distruggerla per evitare questo. Il
     unica volta che questo non è necessario è quando hai contrassegnato qualsiasi elemento nella mappa come una <a href="../DS_Lists/DS_Lists.htm">lista DS</a> o come un'altra <a href="DS_Maps.htm">mappa DS</a>, nel qual caso questi elementi saranno distrutti e la loro memoria ripulita
@@ -23,7 +23,7 @@
       sempre di impostare la variabile che conteneva l'indice DS a -1 dopo la distruzione.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">ds_map_destroy(id);</p>
+  <p class="code"><span data-field="title" data-format="default">ds_map_destroy</span>(id);</p>
   <table>
     <tbody>
       <tr>

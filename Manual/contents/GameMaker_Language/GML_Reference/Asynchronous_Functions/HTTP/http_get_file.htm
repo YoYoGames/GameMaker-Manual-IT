@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>http_get_file</h1>
+  <h1><span data-field="title" data-format="default">http_get_file</span></h1>
   <p>Con questa funzione, è possibile connettersi all'URL specificato per recuperare informazioni sotto forma di file. Poiché questa è una funzione asincrona, <span data-keyref="GameMaker Name">GameMaker</span> non si bloccherà in attesa di una risposta, ma continuerà a funzionare a meno che non riceva informazioni di richiamo. Queste informazioni saranno sotto forma di un <span class="notranslate">string</span> e attiveranno un <b>evento asincrono</b> in qualsiasi istanza che ne abbia uno definito nelle loro proprietà <span class="notranslate">object</span>.</p>
   <p class="note"><b><span class="note">NOTA</span> </b>Dovresti essere consapevole che a causa della protezione XSS nei browser, le richieste e i tentativi di caricare risorse da altri domini sono bloccati e possono sembrare restituire risultati vuoti. Si prega di vedere la parte sui <a href="HTTP.htm">problemi di dominio incrociato</a> per ulteriori dettagli.</p>
   <p>Questo evento genererà un &quot;richiamo&quot; che viene raccolto da qualsiasi <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/HTTP.htm">evento HTTP</a>, nel qual caso genererà un <a href="../../Data_Structures/DS_Maps/DS_Maps.htm"><span class="inline">DS Map</span></a> (più comunemente noto come &quot;dizionario&quot;) che è esclusivo di questo evento e viene memorizzato nella variabile speciale <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><b>async_load</b></a>. Questa mappa DS conterrà valori diversi a seconda dei dati restituiti, cioè: l'evento si attiverà più volte quando ogni pacchetto di dati viene ricevuto in modo da poter mostrare una barra di progresso, per esempio. La struttura generale della mappa DS sarà la seguente:</p>
@@ -32,7 +32,7 @@
   </ul>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">http_get_file(url, local_target);</p>
+  <p class="code"><span data-field="title" data-format="default">http_get_file</span>(url, local_target);</p>
   <table>
     <tbody>
       <tr>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>creare un giunto fisico</title>
+  <title>physics_joint_weld_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,14 +15,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>creare un giunto fisico</h1>
+  <h1><span data-field="title" data-format="default">physics_joint_weld_create</span></h1>
   <p>Il giunto a saldare è progettato per attaccare due attrezzature insieme in un legame forte, ma flessibile. Il giunto a saldare permetterà la flessione tra le due attrezzature unite, ma senza lo stiramento associato, per esempio, a un giunto a distanza, e cercherà sempre di &quot;tornare&quot; all'angolo di riferimento quando viene messo sotto stress o carico. Si definisce il punto in <span class="notranslate">room</span> dove il giunto deve essere creato, così come l'angolo che si desidera che il giunto cerchi di mantenere in ogni momento, come mostrato nell'immagine qui sotto:</p>
   <p><img>Come potete vedere, i punti di ancoraggio sono specificati come coordinate <span class="notranslate">room</span> quindi bisogna fare attenzione quando li si definisce, specialmente se le istanze vengono create allo stesso tempo dei giunti piuttosto che essere posizionate in <span class="notranslate">room</span> attraverso l'editor <span class="notranslate">room</span>. Dovreste anche rendervi conto che i giunti sono creati indipendentemente dalla dimensione del <span class="notranslate">sprite</span> delle istanze o delle attrezzature che hanno attaccato. Quindi, se create un giunto di saldatura in un posto diverso dall'origine dell'istanza, è ancora valido e vincolerà le due istanze relativamente alla posizione in cui è stato creato.</p>
   <p>Dato che il giunto di saldatura è flessibile e si piega e flette quando è sotto stress, potete impostare la frequenza di oscillazione (in Hz) così come il rapporto di smorzamento per il giunto per ottenere diversi effetti - potreste aver bisogno di giocare con questi valori per metterli a punto e si raccomanda di iniziare con valori più piccoli e aumentarli fino ad ottenere l'effetto desiderato.</p>
   <p>Se impostate il valore &quot;col&quot; su <span class="inline">true</span> allora le due istanze possono interagire e collidere l'una con l'altra ma <i>solo</i> se hanno eventi di collisione, invece se è impostato su <span class="inline">false</span>, non collideranno in nessun caso.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_joint_weld_create(inst1, inst2, anchor_x, anchor_y, ref_angle, freq_hz, damping_ratio, col)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_joint_weld_create</span>(inst1, inst2, anchor_x, anchor_y, ref_angle, freq_hz, damping_ratio, col)</p>
   <table>
     <tbody>
       <tr>

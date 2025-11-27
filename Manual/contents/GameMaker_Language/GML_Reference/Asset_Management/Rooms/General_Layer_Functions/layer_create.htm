@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>creare un livello</title>
+  <title>layer_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -15,14 +15,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>creare un livello</h1>
+  <h1><span data-field="title" data-format="default">layer_create</span></h1>
   <p>Questa funzione è usata per creare un nuovo livello all'interno del corrente <span class="notranslate">room</span>. Si fornisce la profondità che il nuovo livello deve occupare e la funzione restituisce il valore unico di ID del livello che può essere utilizzato per accedere al livello in ulteriori funzioni. Si può anche fornire un argomento opzionale &quot;name&quot;, che permette di dare al livello un nome specifico (come <span class="notranslate">string</span>), e invece di usare l'ID del livello per accedere al livello, si può usare questo nome <span class="notranslate">string</span>, anche se va notato che usare il nome <span class="notranslate">strings</span> avrà un impatto maggiore sulle prestazioni che usare solo il valore ID. Se non si specifica il nome del livello, allora al livello creato verrà assegnato un nome con il formato &quot;<span class="inline">_layer_XXX</span>&quot;, dove &quot;XXX&quot; è un valore esadecimale usato per dare al livello un nome unico.</p>
   <p>Quando si dà un valore di profondità, questo sarà più alto quanto più &quot;lontano&quot; dalla telecamera è il livello e più basso quanto più &quot;vicino&quot; alla telecamera è il livello, quindi se hai tre livelli con profondità -100, 0, 100, i livelli saranno disegnati nell'ordine 100, 0, -100, così che il livello &quot;superiore&quot; (cioè il più vicino alla telecamera e quindi disegnato sopra tutto il resto) sarà il livello con profondità -100.</p>
   <p>L'immagine seguente mostra uno schema di come funziona la profondità per i livelli:</p>
   <p><img>Vale la pena notare che mentre è <i>possibile</i> assegnare più di un livello ad una singola profondità, <i>non c'è modo di garantire che i livelli sulla stessa profondità vengano disegnati in un dato ordine</i> e come tale è meglio assegnare un solo livello ad una data profondità. Nota anche che le profondità minima e massima dei livelli sono da -16000 a 16000, e qualsiasi cosa al di fuori di queste profondità <b>non verrà renderizzata</b>. Se si richiede una profondità al di fuori di questo intervallo, allora è necessario utilizzare la funzione <a href="layer_force_draw_depth.htm"><span class="inline">layer_force_draw_depth()</span></a>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">layer_create(depth, [name])</p>
+  <p class="code"><span data-field="title" data-format="default">layer_create</span>(depth, [name])</p>
   <table>
     <tbody>
       <tr>

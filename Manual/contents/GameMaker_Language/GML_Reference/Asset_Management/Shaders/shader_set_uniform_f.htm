@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>shader_set_uniform_f</h1>
+  <h1><span data-field="title" data-format="default">shader_set_uniform_f</span></h1>
   <p>Con questa funzione potete impostare il valore (o i valori) di una costante <span class="notranslate">shader</span>. Dovete aver precedentemente ottenuto l'&quot;handle&quot; della costante usando la funzione <a href="shader_get_uniform.htm"><span class="inline">shader_get_uniform()</span></a>e dovrete sapere che tipo di costante è per passarle il numero corretto di valori in virgola mobile, cioè: se avete un <span class="inline">vec2</span> dovrete passare due valori alla funzione.</p>
   <p>Un'eccezione alla regola di cui sopra è quando si tratta di valori di colore a 32bit. Potete passare in <span class="notranslate">shader</span> fino a otto valori di colore a 32bit e saranno automaticamente convertiti per voi in valori vec4 di 0 - 1. Comunque per questo <i>dovete</i> usare il nome della costante <span class="notranslate">shader</span> <span class="inline">in_Colour</span> , per un singolo colore, o <span class="inline">in_Colour0</span>, <span class="inline">in_Colour1</span>, ecc... fino a <span class="inline">in_Colour7</span> per valori di input multipli. I seguenti esempi mostrano come questo apparirebbe in <span class="notranslate">shader</span> stesso:</p>
   <p class="code">    //Single colour<br />
@@ -32,7 +32,7 @@
   <p class="note"><b></b><b>NOTA</b>: tutte le uniformi devono essere impostate <b>dopo aver</b> chiamato la funzione <span style="font-size:1px;"><a href="shader_set.htm"><span class="inline">shader_set()</span></a></span>e prima di chiamare <span style="font-size:1px;"><a href="shader_reset.htm"><span class="inline">shader_reset()</span></a></span>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">shader_set_uniform_f(handle, value1 [, value2, value3, value4]);</p>
+  <p class="code"><span data-field="title" data-format="default">shader_set_uniform_f</span>(handle, value1 [, value2, value3, value4]);</p>
   <table>
     <tbody>
       <tr>

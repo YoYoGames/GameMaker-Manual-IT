@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_create_from_surface</h1>
+  <h1><span data-field="title" data-format="default">sprite_create_from_surface</span></h1>
   <p>Con questa funzione è possibile creare un <span class="notranslate">sprite</span> da una superficie precedentemente inizializzata (il valore dell'indice ID della superficie viene restituito quando si crea la superficie utilizzando <a href="../../../Drawing/Surfaces/surface_create.htm"><span class="inline">surface_create()</span></a>). Le coordinate x e y che inserite nella funzione devono essere relative alla posizione (0,0) della <i>superficie</i> (l'angolo in alto a sinistra) e non alla finestra di gioco (né alla vista se ne avete una attiva). Gli argomenti larghezza e altezza sono in pixel e definiscono la larghezza e l'altezza della parte di superficie da utilizzare.</p>
   <p>Impostando l'argomento &quot;removeback&quot; su <span class="inline">true</span> si rimuoverà un colore da <span class="notranslate">sprite</span>, controllando il pixel in <i>basso a sinistra</i> di <span class="notranslate">sprite</span> per il colore lì e poi usando quello come colore da rimuovere.</p>
   <p>Se scegliete l'opzione &quot;removeback&quot;, potreste anche volere che <span data-keyref="GameMaker Name">GameMaker</span> smussi i bordi di <span class="notranslate">sprite</span> impostando l'argomento &quot;smooth&quot; a <span class="inline">true</span>. Tutto ciò che fa è creare un bordo semi-trasparente intorno ai bordi di <span class="notranslate">sprite</span> dopo che il suo sfondo è stato rimosso.</p>
@@ -23,7 +23,7 @@
   <p class="note"><b><span class="note">NOTA</span></b> Quando si crea un <span class="notranslate">sprite</span> in <span data-keyref="GameMaker Name">GameMaker</span> con questo metodo bisogna ricordarsi di rimuoverlo di nuovo (con <a href="sprite_delete.htm"><span class="inline">sprite_delete()</span></a>) quando non è più necessario, altrimenti c'è il rischio di una perdita di memoria che rallenterà ed eventualmente bloccherà il gioco.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">sprite_create_from_surface(index, x, y, w, h, removeback, smooth, xorig, yorig);</p>
+  <p class="code"><span data-field="title" data-format="default">sprite_create_from_surface</span>(index, x, y, w, h, removeback, smooth, xorig, yorig);</p>
   <table>
     <tbody>
       <tr>

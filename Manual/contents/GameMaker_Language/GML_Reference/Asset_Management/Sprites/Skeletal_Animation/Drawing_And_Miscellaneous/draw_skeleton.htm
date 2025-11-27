@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>disegnare_scheletro</title>
+  <title>draw_skeleton</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>disegnare_scheletro</h1>
+  <h1><span data-field="title" data-format="default">draw_skeleton</span></h1>
   <p>Questa funzione è da usare <i>solo</i> con <span class="notranslate">sprites</span> che sono stati creati usando un programma di animazione scheletrica come <span class="notranslate">Spine</span>. Mentre è possibile disegnare questi <span class="notranslate">sprites</span> usando le normali funzioni di disegno (come <a href="../../../../Drawing/Sprites_And_Tiles/draw_self.htm"><span class="inline">draw_self()</span></a>), ci sono momenti in cui potreste voler disegnare un singolo fotogramma o mostrare un cambiamento di pelle <span class="notranslate">texture</span> senza effettivamente cambiare le proprietà di <span class="notranslate">sprite</span>. In questi casi potete disegnare il <span class="notranslate">sprite</span> con questa funzione, dove date l'indice <span class="notranslate">sprite</span> e poi il nome dell'animazione da cui prendere il fotogramma (un <span class="notranslate">string</span>, come impostato nel programma usato per fare il <span class="notranslate">sprite</span>). Poi si dà il nome della skin da usare (di nuovo, come impostato quando il <span class="notranslate">sprite</span> è stato fatto), e un valore di frame. Il valore del frame serve per dire a <span data-keyref="GameMaker Name">GameMaker</span> quale parte dell'animazione mostrare ed è un valore compreso tra 0 e <a href="../../Sprite_Instance_Variables/image_number.htm"><span class="inline">image_number</span></a>. Il resto degli argomenti sono gli stessi usati per il normale disegno di <span class="notranslate">sprite</span> e cambieranno la scala, l'angolo, il colore di fusione e l'alfa del fotogramma finale dell'animazione che viene disegnato.<b></b></p>
   <p class="note"><b>ATTENZIONE!</b> A causa del modo in cui le animazioni scheletriche sono interpolate tra vari fotogrammi &quot;chiave&quot;, c'è un overhead aggiuntivo associato a questa chiamata e quindi si raccomanda di evitare di disegnare scheletri basati su <span class="notranslate">sprites</span> usando questo metodo a meno che non sia assolutamente necessario.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">draw_skeleton(sprite, animname, skinname, frame, x, y, xscale, yscale, rot, colour, alpha);</p>
+  <p class="code"><span data-field="title" data-format="default">draw_skeleton</span>(sprite, animname, skinname, frame, x, y, xscale, yscale, rot, colour, alpha);</p>
   <table>
     <tbody>
       <tr>

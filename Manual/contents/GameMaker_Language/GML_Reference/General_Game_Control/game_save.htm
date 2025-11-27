@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>salvataggio del gioco</title>
+  <title>game_save</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>salvataggio del gioco</h1>
+  <h1><span data-field="title" data-format="default">game_save</span> <span data-conref="..\..\..\assets\snippets\Tag_deprecated.hts"> </span></h1>
   <p>Questa è una funzione legacy che può essere usata per salvare lo stato corrente del gioco, e non è più raccomandata per l'uso. Usa invece le <a href="../File_Handling/File_Handling.htm">funzioni File</a> per creare un sistema di salvataggio personalizzato in cui salvare e caricare solo dati di gioco specifici.</p>
   <p>Questa funzione salverà lo stato del gioco così com'è, ma non salverà le risorse dinamiche utilizzate in quel momento, come le strutture dati, le superfici, <span class="notranslate">assets</span> aggiunte su <span class="notranslate">runtime</span>, ecc. Se un tale file di salvataggio viene caricato, qualsiasi aggiornamento del gioco che è stato fatto dopo il salvataggio non sarà visibile, in quanto verrà ripristinata la versione del gioco che è stata utilizzata per creare il salvataggio.</p>
   <p>Si noti che i file di salvataggio creati con questa funzione potrebbero non essere supportati dalle versioni aggiornate di <a class="glossterm" data-glossterm="Runtime" href="#">Runtime</a>, quindi sostituire questa funzione con un nuovo sistema di salvataggio è essenziale per garantire la compatibilità con i futuri aggiornamenti di <span class="notranslate">GameMaker</span> e, per le ragioni elencate sopra, gli aggiornamenti fatti al proprio gioco.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">game_save(filename);</p>
+  <p class="code"><span data-field="title" data-format="default">game_save</span>(filename);</p>
   <table>
     <tbody>
       <tr>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>matrice_costruzione_proiezione_prospettiva</title>
+  <title>matrix_build_projection_perspective</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,14 +15,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>matrice_costruzione_proiezione_prospettiva</h1>
+  <h1><span data-field="title" data-format="default">matrix_build_projection_perspective</span></h1>
   <p>Questa funzione costruisce una matrice di proiezione prospettica basata sulle dimensioni del piano di ritaglio vicino, utilizzando i parametri specificati elencati di seguito.</p>
   <p>Si noti che il campo visivo della telecamera varia a seconda dei valori <span class="inline">width</span>, <span class="inline">height</span> e <span class="inline">znear</span> specificati, poiché la larghezza e l'altezza della proiezione sono collocate nella posizione Z specificata nell'argomento <span class="inline">znear</span>.</p>
   <p>Per esempio, data una dimensione costante di 640x480, il campo visivo sarà più ampio se <span class="inline">znear</span> è più vicino alla telecamera, ma sarà più stretto se <span class="inline">znear</span> è lontano dalla telecamera. Questo comportamento è dimostrato nella seguente immagine:</p>
   <p><img>A causa di questo, si raccomanda di usare un valore di <span class="inline">znear</span> che sia identico alla larghezza della proiezione, in modo che il campo visivo sia coerente con una proiezione ortografica equivalente.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">matrix_build_projection_perspective(width, height, znear, zfar);</p>
+  <p class="code"><span data-field="title" data-format="default">matrix_build_projection_perspective</span>(width, height, znear, zfar);</p>
   <table>
     <tbody>
       <tr>

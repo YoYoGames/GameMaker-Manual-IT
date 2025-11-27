@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>oggetto_set_persistente</title>
+  <title>object_set_persistent</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>oggetto_set_persistente</h1>
+  <h1><span data-field="title" data-format="default">object_set_persistent</span></h1>
   <p>Con questa funzione potete impostare la persistenza di uno specifico <span class="notranslate">object</span>. Un <span class="notranslate">object</span> persistente è &quot;riportato&quot; da <span class="notranslate">room</span> a <span class="notranslate">room</span> e mantiene le sue proprietà in ogni momento (per maggiori informazioni sulla persistenza vedere la sezione sull'<a href="../../../../The_Asset_Editors/Objects.htm">Object Editor</a>). Impostare la persistenza di <span class="notranslate">object</span> significa che tutte le istanze di questo <span class="notranslate">object</span> che sono create <i>dopo che la persistenza è stata cambiata</i> saranno create persistenti, mentre le istanze che sono già in <span class="notranslate">room</span> potrebbero non essere interessate.</p>
   <p>Quando si crea un'istanza con persistenza abilitata in un <span class="notranslate">room</span>, le viene assegnato un livello o una profondità (a seconda di quale funzione si è usata per creare l'istanza del <span class="notranslate">object</span>). Quando <span class="notranslate">room</span> viene cambiato, e se il seguente <span class="notranslate">room</span> <i>non</i> ha un livello con lo stesso nome o profondità di quello assegnato, allora verrà creato un nuovo livello per l'istanza che sta persistendo attraverso <span class="notranslate">rooms</span>. Se hai dato un nome al livello quando l'istanza è stata creata, allora anche il nuovo livello avrà lo stesso nome del livello originale, mentre se hai assegnato una profondità all'istanza allora il nuovo livello sarà chiamato &quot;<span class="inline">_layer_XXX</span>&quot;, dove &quot;XXX&quot; è un valore hex usato per dare un nome unico al livello. Questi livelli saranno rimossi da <span class="notranslate">room</span> su <span class="notranslate">Room</span> End. Un'altra cosa da notare sui livelli e le istanze persistenti è che se hai assegnato all'istanza un livello con un nome alla creazione, e c'è un altro livello nel seguente <span class="notranslate">rooms</span> con lo stesso nome, allora l'istanza persistente sarà assegnata al livello con lo stesso nome <i>indipendentemente dalla profondità del livello</i>. Infine, se un'istanza persistente si sposta su un <span class="notranslate">room</span> con un livello alla stessa profondità in cui l'istanza è stata creata, <i>non</i> verrà assegnata a questo livello, ma verrà invece creato un nuovo livello alla stessa profondità (seguendo la convenzione di denominazione spiegata in precedenza).</p>
   <p>Si prega di notare che questa non è una funzione di istanza! Potete impostare il flag persistente delle singole istanze usando la variabile <a href="../Instances/Instance_Variables/persistent.htm"><span class="inline">persistent</span></a> e quindi avere dieci istanze tutte contrassegnate come persistenti anche se il <span class="notranslate">object</span> in questione ha il flag impostato a false nel <span class="notranslate">IDE</span>, e anche se cambiate il flag persistente del <span class="notranslate">object</span> a true usando questa funzione, tutte le istanze che attualmente nel <span class="notranslate">room</span> rimarranno come erano, e solo le istanze create dopo aver chiamato la funzione inizieranno con persistent contrassegnato come true.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">object_set_persistent(index, pers);</p>
+  <p class="code"><span data-field="title" data-format="default">object_set_persistent</span>(index, pers);</p>
   <table>
     <tbody>
       <tr>

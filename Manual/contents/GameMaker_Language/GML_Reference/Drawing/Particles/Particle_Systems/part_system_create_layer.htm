@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>part_system_create_layer</h1>
+  <h1><span data-field="title" data-format="default">part_system_create_layer</span></h1>
   <p>Questa funzione creerà un nuovo sistema di particelle su un dato livello. Si dà l'ID univoco del livello come restituito dalla funzione <a href="../../../Asset_Management/Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a> o il nome del livello da usare come <span class="notranslate">string</span> - per esempio &quot;instance_layer&quot; - e quindi contrassegnare il sistema come persistente o no. Se il sistema non è contrassegnato come persistente allora sarà automaticamente distrutto alla fine del <span class="notranslate">room</span> in cui è stato creato (questo è lo stesso che se aveste chiamato la funzione <a href="part_system_destroy.htm"><span class="inline">part_system_destroy()</span></a> e distruggerà anche qualsiasi emettitore associato al sistema). Tuttavia, quando è contrassegnato come persistente, il sistema sarà portato al prossimo <span class="notranslate">room</span> quando il <span class="notranslate">room</span> è cambiato, e se il seguente <span class="notranslate">room</span> <i>non</i> ha un livello con lo stesso nome o profondità di quello assegnato, allora un nuovo livello sarà creato per il sistema che sta persistendo attraverso il <span class="notranslate">rooms</span>, e sarà chiamato come il livello originale. Quando si cambia <span class="notranslate">rooms</span>, se c'è un altro livello nel seguente <span class="notranslate">rooms</span> con lo stesso nome, allora l'istanza persistente sarà assegnata al livello con quel nome <i>indipendentemente dalla profondità del livello</i>. Infine, se un sistema persistente si sposta su un <span class="notranslate">room</span> con un livello alla stessa profondità del livello su cui il sistema è stato creato, <i>non</i> verrà assegnato a questo livello, ma verrà invece creato un nuovo livello alla stessa profondità (con lo stesso nome del livello originale).</p>
   <p>La funzione restituirà un valore ID unico per il sistema di particelle che dovrebbe essere usato in tutte le ulteriori chiamate di funzioni in cui è necessario dare un ID di sistema.</p>
   <p class="note"><b>IMPORTANTE!</b> Se contrassegnate il sistema di particelle come persistente, allora esso (e qualsiasi emettitore ad esso assegnato) dovrà essere ripulito manualmente usando le funzioni di distruzione appropriate quando non è in uso, altrimenti rischiate una perdita di memoria che avrà un impatto negativo sul vostro gioco finale.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">part_system_create_layer(layer_id, persistent);</p>
+  <p class="code"><span data-field="title" data-format="default">part_system_create_layer</span>(layer_id, persistent);</p>
   <table>
     <tbody>
       <tr>

@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>mp_grid_add_cell</h1>
+  <h1><span data-field="title" data-format="default">mp_grid_add_cell</span></h1>
   <p>Con questa funzione possiamo contrassegnare singole celle all'interno della griglia MP data come &quot;proibite&quot;, il che significa che le funzioni di ricerca di <span class="notranslate">path</span> non le attraverseranno mai. Ora, normalmente si lavora in coordinate x/y <i>della stanza</i>, e non in coordinate delle <i>celle della</i> griglia MP. Quindi consideriamo la seguente immagine che mostra come le due cose possano essere correlate:</p>
   <p><img>Come potete vedere la mp_grid è numerata come una serie di celle (a partire da 0,0 nell'angolo in alto a sinistra), e quando posizionate questa griglia su <span class="notranslate">room</span> c'è una correlazione diretta tra le coordinate <span class="notranslate">room</span> (che iniziano anch'esse a 0,0 in alto a sinistra) e le celle all'interno della griglia. Nell'immagine puoi vedere che un'istanza alla posizione 260,130 cade sulla cella 8,4 della griglia. Puoi calcolare matematicamente l'esatta cella su cui cade una posizione facilmente dividendo il numero per la risoluzione della griglia e poi arrotondando per difetto <i>o</i>, se stai usando risoluzioni di griglia in potenza di 2 (come 8, 16, 32 ecc...) puoi usare gli <a href="../../../../Additional_Information/Bitwise_Operators.htm">operatori bitwise</a>. Va notato che l'operazione bitwise è più veloce e l'esempio qui sotto mostra entrambi i metodi.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">mp_grid_add_cell(id, h, v);</p>
+  <p class="code"><span data-field="title" data-format="default">mp_grid_add_cell</span>(id, h, v);</p>
   <table>
     <tbody>
       <tr>

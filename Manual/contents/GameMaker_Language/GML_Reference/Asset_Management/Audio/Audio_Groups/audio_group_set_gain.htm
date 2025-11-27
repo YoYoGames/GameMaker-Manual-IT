@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_group_set_gain</h1>
+  <h1><span data-field="title" data-format="default">audio_group_set_gain</span></h1>
   <p>Con questa funzione si può sfumare un gruppo di suoni in entrata o in uscita per un determinato periodo di tempo, oppure si può usare per impostare il guadagno del gruppo istantaneamente.</p>
   <p>Il tempo è misurato in millisecondi, e la funzione richiede che si inserisca un livello finale di guadagno che il gruppo deve aver raggiunto alla fine di quel tempo. Questo guadagno può essere compreso tra 0 (silenzioso) e 1 (pieno volume) e la scala è lineare, così che un valore di 0,5 sarebbe metà volume. Per cambiare istantaneamente il guadagno, impostate semplicemente l'argomento del tempo a 0. Notate che su alcune piattaforme potete avere un guadagno maggiore di 1, anche se un valore di 1 è considerato &quot;pieno volume&quot; e qualsiasi valore maggiore può introdurre il clipping audio.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">audio_group_set_gain(groupID, volume, time);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_group_set_gain</span>(groupID, volume, time);</p>
   <table>
     <tbody>
       <tr>

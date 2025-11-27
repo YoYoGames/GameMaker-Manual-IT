@@ -14,14 +14,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_set_alpha_from_sprite</h1>
+  <h1><span data-field="title" data-format="default">sprite_set_alpha_from_sprite</span></h1>
   <p>Questa funzione usa il valore/saturazione di un <span class="notranslate">sprite</span> e lo moltiplica con l'alfa del <span class="notranslate">sprite</span> di destinazione. Idealmente il <span class="notranslate">sprite</span> usato per generare la nuova mappa alfa dovrebbe essere in scala di grigi, con le aree bianche che hanno un valore alfa equivalente a 1 (opaco), le aree nere equivalenti ad alfa 0 (trasparente), e le aree grigie con un'alfa tra 0 e 1. Il <span class="notranslate">sprite</span> di cui state impostando l'alfa <i>non può essere una risorsa permanente</i>, né il <span class="notranslate">sprite</span> che usate per impostare l'alfa, perché questo darà un errore. Questo significa che dovete creare due <span class="notranslate">sprites</span> completamente nuovi &quot;al volo&quot; in qualche modo perché la funzione funzioni correttamente. Questo può essere ottenuto usando le superfici, o creando un <span class="notranslate">sprite</span> dallo schermo (l'esempio di codice qui sotto mostra come l'effetto può essere ottenuto con le superfici).</p>
   <p class="note"><b>NOTA</b>: Questa funzione è utile solo per <b>bitmap</b> <span class="notranslate">sprites</span> e non funziona con SWF o JSON (<span class="notranslate">Spine</span>) <span class="notranslate">sprites</span>.</p>
   <p>Qui sotto c'è un'immagine che illustra come funziona questa funzione:</p>
   <p><img alt="Sprite Set Alpha Example" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Sprites/spr_alpha.png" /></p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">sprite_set_alpha_from_sprite(ind, spr);</p>
+  <p class="code"><span data-field="title" data-format="default">sprite_set_alpha_from_sprite</span>(ind, spr);</p>
   <table>
     <tbody>
       <tr>

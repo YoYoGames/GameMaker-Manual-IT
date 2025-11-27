@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>os_get_info</h1>
+  <h1><span data-field="title" data-format="default">os_get_info</span></h1>
   <p>Questa funzione restituisce un file <a href="../Data_Structures/DS_Maps/DS_Maps.htm"><span class="inline">DS Map</span></a> con informazioni dettagliate sul sistema operativo su cui è in esecuzione il gioco. Le informazioni esatte restituite dipendono dal sistema operativo e dal dispositivo, quindi si consiglia di testare questa funzione su tutte le piattaforme a cui si vuole puntare e di restituire i valori restituiti usando una funzione come <span class="inline"><a href="../Debugging/show_debug_message.htm">show_debug_message()</a></span>. Si noti che la mappa DS non viene automaticamente cancellata dalla memoria e si dovrebbe usare la funzione <a href="../Data_Structures/DS_Maps/ds_map_destroy.htm"><span class="inline">ds_map_destroy()</span></a> quando non è più necessaria.</p>
   <p>Di seguito sono riportati alcuni dettagli sui dati aggiuntivi che saranno resi disponibili per la mappa DS specifici per le seguenti piattaforme; si noti che su tutte le piattaforme <em>, tranne</em> HTML5, la mappa avrà la chiave<span>&quot;<span class="inline">is64bit</span>&quot;, che sarà <span class="inline">true</span> o <span class="inline">false</span> a seconda che il runner sia in esecuzione in modalità a 64 bit o meno</span>.</p>
   <p><a class="dropspot" data-rhwidget="DropSpot" data-target="drop-down" href="#">Windows / UWP</a></p>
@@ -164,7 +164,7 @@
   <p> </p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">os_get_info()</p>
+  <p class="code"><span data-field="title" data-format="default">os_get_info</span>()</p>
   <p> </p>
   <h4>Restituzione:</h4>
   <p class="code"><span data-keyref="Type_ID_DS_Map"><a href="../../../../GameMaker_Language/GML_Reference/Data_Structures/DS_Maps/ds_map_create.htm" target="_blank">DS Map ID</a></span></p>

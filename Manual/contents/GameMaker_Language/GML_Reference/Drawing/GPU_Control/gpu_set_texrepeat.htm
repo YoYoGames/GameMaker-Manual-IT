@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gpu_set_texrepeat</h1>
+  <h1><span data-field="title" data-format="default">gpu_set_texrepeat</span></h1>
   <p>Questa funzione può essere usata per indicare a <span data-keyref="GameMaker Name">GameMaker</span> se <span class="notranslate">textures</span> deve ripetersi (<span class="inline">true</span>) o meno (<span class="inline">false</span>) quando viene usato per modelli e primitive. Normalmente le larghezze e le altezze di <span class="notranslate">texture</span> sono comprese nell'intervallo 0 - 1, ma se si specifica un valore maggiore di 1 di default il resto non viene disegnato (l'intero <span class="notranslate">texture</span> sarà disegnato con una sezione &quot;vuota&quot; corrispondente alla percentuale oltre 1 che viene utilizzata. Così un valore di 2 per un <span class="notranslate">texture</span> larghezza o altezza disegnerebbe il <span class="notranslate">texture</span> in metà dello spazio e lascerebbe l'altra metà vuota). Tuttavia, utilizzando questa funzione per impostare la ripetizione su true, <span class="notranslate">texture</span> viene ripetuto automaticamente su tutti i modelli e le primitive. Il caso d'uso probabile per queste funzioni è la ripetizione di un <span class="notranslate">texture</span> in 3D, ma per far sì che funzioni e non tiri le immagini dal resto della pagina <span class="notranslate">texture</span>, il <span class="notranslate">sprite</span> usato dovrà essere segnato come se fosse su una &quot;Pagina separata <span class="notranslate">Texture</span> &quot; nell'editor <span class="notranslate">Sprite</span>.</p>
   <p class="note"><b>NOTA</b>: <span class="notranslate">Sprites</span> e gli sfondi sono sempre disegnati senza ripetizione, quindi una volta che si disegna un <span class="notranslate">sprite</span> o uno sfondo questo valore viene resettato a <span class="inline">false</span>. Questo comportamento di default non influenzerà le impostazioni dello stadio <span class="notranslate">texture</span> (cioè: chiamando la funzione lo farà, ma l'impostazione interna a false non lo farà).</p>
   <p class="note"><b>NOTA</b>: Questa impostazione sovrascrive qualsiasi <span class="notranslate">texture</span> ripetizione di fase impostata per <span class="notranslate">shaders</span> quando si usa la funzione <a href="gpu_set_texrepeat_ext.htm"><span class="inline">gpu_set_texrepeat_ext()</span></a>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">gpu_set_texrepeat(enable);</p>
+  <p class="code"><span data-field="title" data-format="default">gpu_set_texrepeat</span>(enable);</p>
   <table>
     <tbody>
       <tr>

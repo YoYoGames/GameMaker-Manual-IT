@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>creazione di un giunto fisico</title>
+  <title>physics_joint_rope_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>creazione di un giunto fisico</h1>
+  <h1><span data-field="title" data-format="default">physics_joint_rope_create</span></h1>
   <p>Un giunto a corda è un giunto che viene utilizzato per unire due istanze che si desidera mantenere una distanza costante, indipendentemente dalle altre forze che agiscono su di esso. Con un giunto a distanza, si può ottenere un &quot;allungamento del giunto&quot; in cui le due istanze si separano e si comportano in modo strano se viene esercitata troppa pressione sul giunto, tuttavia il giunto a corda non lo fa e non si allunga oltre la lunghezza massima definita. Quando si crea un giunto a corda le due istanze dovrebbero già essere create e avere una fixture assegnata, poi si definiscono i due punti di ancoraggio in coordinate <span class="notranslate">room</span>. Il primo punto di ancoraggio è collegato all'istanza 1, il secondo punto di ancoraggio è collegato all'istanza 2 e la distanza e l'argomento maxlength impostano il vincolo di lunghezza massima sul giunto. L'immagine qui sotto mostra come funziona:</p>
   <p><img>Come potete vedere, i punti di ancoraggio sono specificati come coordinate <span class="notranslate">room</span> quindi bisogna fare attenzione quando li si definisce, specialmente se le istanze vengono create allo stesso tempo dei giunti piuttosto che essere posizionate in <span class="notranslate">room</span> attraverso l'editor <span class="notranslate">room</span>. Dovreste anche rendervi conto che i giunti sono creati indipendentemente dalla dimensione del <span class="notranslate">sprite</span> delle istanze o delle attrezzature che hanno attaccato. Quindi, se create un giunto a corda da qualche parte diversa dall'origine dell'istanza, è ancora valido e vincolerà le due istanze relativamente alla posizione in cui è stato creato. Se impostate il valore &quot;col&quot; su <span class="inline">true</span> allora le due istanze possono interagire e collidere tra loro ma <i>solo</i> se hanno eventi di collisione, invece se è impostato su <span class="inline">false</span>, non collideranno in nessun caso.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_joint_rope_create(inst1, inst2, w_anchor1_x, w_anchor1_y, w_anchor2_x, w_anchor2_y, maxlength, col)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_joint_rope_create</span>(inst1, inst2, w_anchor1_x, w_anchor1_y, w_anchor2_x, w_anchor2_y, maxlength, col)</p>
   <table>
     <tbody>
       <tr>

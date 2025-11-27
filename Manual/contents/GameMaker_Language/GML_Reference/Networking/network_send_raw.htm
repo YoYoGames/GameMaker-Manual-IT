@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>rete_send_raw</title>
+  <title>network_send_raw</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>rete_send_raw</h1>
+  <h1><span data-field="title" data-format="default">network_send_raw</span></h1>
   <p>Con questa funzione potete inviare un pacchetto di dati &quot;grezzi&quot; attraverso la rete. La funzione prende l'<i>id del socket</i> a cui connettersi e poi si deve fornire l'<i>id del buffer</i> che contiene i dati da inviare (per maggiori informazioni su <span class="notranslate">buffers</span> vedere <a href="../Buffers/Buffers.htm">Reference - Buffers</a>) e infine la dimensione (in byte) del pacchetto di dati. I dati inviati non sono formattati da <span data-keyref="GameMaker Name">GameMaker</span> in alcun modo e i dispositivi riceventi riceveranno i dati come un flusso, il che significa che dovrete gestirli voi stessi. La funzione restituirà il numero di byte di dati inviati, o un numero inferiore a 0 se l'invio è fallito.</p>
   <h2>Opzioni Argomento</h2>
   <p>L'ultimo argomento è opzionale ed è usato solo con i WebSockets. Permette di scegliere tra l'invio di dati binari o di testo. Entrambe le costanti possono essere specificate in questo argomento:</p>
@@ -44,7 +44,7 @@
   <p>Le API di alcune piattaforme accettano solo messaggi di testo quando si usano i WebSockets (ad esempio Twitch), quindi la costante <span class="inline2">network_send_text</span> può essere usata in questi casi. Se questo argomento non è specificato, vengono inviati dati binari per impostazione predefinita.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">network_send_raw(socket, bufferid, size, [options]);</p>
+  <p class="code"><span data-field="title" data-format="default">network_send_raw</span>(socket, bufferid, size, [options]);</p>
   <table>
     <tbody>
       <tr>

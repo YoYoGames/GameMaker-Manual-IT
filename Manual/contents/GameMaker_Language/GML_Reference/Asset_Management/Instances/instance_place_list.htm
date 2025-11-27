@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>lista di istanze</title>
+  <title>instance_place_list</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>lista di istanze</h1>
+  <h1><span data-field="title" data-format="default">instance_place_list</span></h1>
   <p>Con questa funzione potete controllare una posizione per una collisione con tutte le istanze di un <span class="notranslate">object</span> usando la maschera di collisione dell'istanza che esegue il codice per il controllo. Quando usate questa funzione state effettivamente chiedendo a <span data-keyref="GameMaker Name">GameMaker</span> di spostare l'istanza nella nuova posizione, controllare la collisione, poi tornare indietro e dirvi se una collisione è stata trovata o meno. Questo funzionerà per le collisioni precise, ma solo se sia l'istanza che le istanze di <span class="notranslate">object</span> che vengono controllate hanno maschere di collisione precise selezionate, altrimenti vengono applicate solo le collisioni bounding box.</p>
   <p>Si fornisce anche una <a href="../../Data_Structures/DS_Lists/DS_Lists.htm">lista DS</a>, quindi i <a href="Instance_Variables/id.htm"><span class="inline">id</span></a> di tutte le istanze che collidono con l'istanza chiamante saranno aggiunte alla fine della lista data. Potete <a href="../../Data_Structures/DS_Lists/ds_list_clear.htm">cancellare</a> la lista prima di chiamare questa funzione in modo che contenga solo i risultati di questa chiamata di funzione. Avete anche la possibilità di ordinare la lista in base alla distanza dall'origine dell'istanza che fa il controllo all'origine delle istanze trovate in collisione.</p>
   <p>Si noti che la funzione accetta anche la parola chiave speciale <a href="../../../GML_Overview/Instance_Keywords.htm"><b><span class="inline">all</span></b></a>nel qual caso saranno elencate tutte le istanze trovate in collisione. La funzione restituisce il numero di istanze trovate, o 0 se non ne viene trovata nessuna.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">instance_place_list(x, y, obj, list, ordered);</p>
+  <p class="code"><span data-field="title" data-format="default">instance_place_list</span>(x, y, obj, list, ordered);</p>
   <table>
     <tbody>
       <tr>

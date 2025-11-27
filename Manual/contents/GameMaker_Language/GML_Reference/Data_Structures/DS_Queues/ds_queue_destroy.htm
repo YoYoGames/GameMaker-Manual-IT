@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_queue_destroy</h1>
+  <h1><span data-field="title" data-format="default">ds_queue_destroy</span></h1>
   <p>Questa funzione rimuoverà la data struttura <span class="notranslate">queue</span> dalla memoria, liberando le risorse che stava usando e rimuovendo tutti i valori che conteneva. Questa funzione dovrebbe sempre essere usata quando avete finito di usare la coda DS per prevenire perdite di memoria che possono rallentare e mandare in crash il vostro gioco.</p>
   <p class="note"><b>IMPORTANTE!</b> Quando create una struttura di dati, il valore dell'indice per identificarla è un valore intero che parte da 0. Questo significa che strutture di dati di tipo diverso possono avere lo <b>stesso</b> valore di indice, quindi nel dubbio dovreste usare la <span style="font-size:1px;"><a href="../ds_exists.htm"><span class="inline">ds_exists()</span></a></span> prima di accedervi. Notate anche che gli indici vengono riutilizzati, quindi un valore di indice di una struttura dati distrutta può essere utilizzato da una nuova struttura creata in seguito, quindi si consiglia di impostare sempre la variabile che conteneva l'indice DS a -1 dopo la distruzione.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">ds_queue_destroy(id);</p>
+  <p class="code"><span data-field="title" data-format="default">ds_queue_destroy</span>(id);</p>
   <table>
     <tbody>
       <tr>

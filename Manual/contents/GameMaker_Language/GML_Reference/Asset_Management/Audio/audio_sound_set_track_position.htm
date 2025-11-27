@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_sound_set_track_position</h1>
+  <h1><span data-field="title" data-format="default">audio_sound_set_track_position</span></h1>
   <p>Questa funzione imposta la posizione (in secondi) per l'ID del suono dato o <span class="notranslate">asset</span>.</p>
   <p>L'&quot;indice&quot; fornito può essere sia una singola istanza di un suono (come restituito da <a href="audio_play_sound.htm"><span class="inline">audio_play_sound()</span></a>) o un suono <span class="notranslate">asset</span> (per esempio uno aggiunto tramite il Browser <span class="notranslate">Asset</span> ). Il comportamento di questa funzione sarà diverso a seconda del tipo di indice che avete specificato:</p>
   <ul class="colour">
@@ -24,7 +24,7 @@
   <p>Questa funzione cambierà solo la posizione della traccia per il suono attualmente in riproduzione, o la sua prossima riproduzione (nel caso in cui venga fornito un suono <span class="notranslate">asset</span> ). Se il suono viene riprodotto con il looping abilitato, le riproduzioni successive inizieranno sempre dall'inizio (0,0 secondi), <em>non</em> dalla posizione della traccia definita con questa funzione. Per esempio, avviando un suono <span class="notranslate">loop</span> a 5,7 secondi verrà riprodotto il primo suono da quel punto, ma dopo continuerà a ripetere l'intera traccia, dall'inizio alla fine.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">audio_sound_set_track_position(index, time);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_sound_set_track_position</span>(index, time);</p>
   <table>
     <tbody>
       <tr>

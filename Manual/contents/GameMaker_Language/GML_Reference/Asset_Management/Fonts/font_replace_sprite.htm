@@ -14,14 +14,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>font_replace_sprite</h1>
+  <h1><span data-field="title" data-format="default">font_replace_sprite</span></h1>
   <p>Con questa funzione potete usare una &quot;striscia di sprite&quot; per sostituire una <span class="notranslate">sprite</span> <span class="notranslate">font</span> precedentemente creata <span class="notranslate">asset</span>, dove ogni sotto-immagine sarebbe un singolo simbolo o lettera. L'indice è il numero di mappa UTF8 per il primo carattere da usare e gli intervalli da usare sono gli stessi che usereste per un normale <span class="notranslate">font</span>, iniziando con &quot;!&quot; ma ricordate che dovreste includere solo ciò che vi serve e che dovreste usare la <a href="../../Strings/ord.htm"><span class="inline">ord()</span></a> per ottenere il corretto valore UTF8 per la lettera iniziale.</p>
   <p>Puoi anche impostare la spaziatura per il <span class="notranslate">font</span> per essere proporzionale (<span class="inline">true</span>) o no (<span class="inline">false</span>), dove un <span class="notranslate">font</span> proporzionale è spaziato in base alla larghezza effettiva delle lettere (così la lettera &quot;i&quot; prende meno <span class="notranslate">room</span> della lettera &quot;w&quot;, per esempio) mentre un <span class="notranslate">font</span> non proporzionale sarà spaziato in base alla larghezza della sub-immagine, come un <span class="notranslate">font</span> monospaziato. Infine, si può definire lo spazio da lasciare tra ogni lettera quando si scrive, e questo può essere qualsiasi valore intero, con 0 che non è uno spazio (le lettere si &quot;toccheranno&quot; se proporzionale). </p>
   <p>Se la funzione fallisce, allora fallirà silenziosamente senza sostituire il dato <span class="notranslate">sprite</span> <span class="notranslate">font</span>.</p>
   <p>Vale anche la pena notare che non ci possono essere <i>spazi</i> nella mappa dei caratteri, così che se, per esempio, usate '.' e '0' ma non '/', dovete includere comunque '/' o lasciare una sotto-immagine vuota tra i due caratteri usati. L'immagine qui sotto mostra un tipico layout <span class="notranslate">sprite</span> <span class="notranslate">font</span>:</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">font_replace_sprite(ind, spr, first, prop, sep);</p>
+  <p class="code"><span data-field="title" data-format="default">font_replace_sprite</span>(ind, spr, first, prop, sep);</p>
   <table>
     <tbody>
       <tr>

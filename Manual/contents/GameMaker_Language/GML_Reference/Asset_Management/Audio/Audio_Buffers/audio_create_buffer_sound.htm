@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>audio_creare_buffer_sound</title>
+  <title>audio_create_buffer_sound</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_creare_buffer_sound</h1>
+  <h1><span data-field="title" data-format="default">audio_create_buffer_sound</span></h1>
   <p>Con questa funzione potete creare un nuovo suono dal contenuto di un <span class="notranslate">buffer</span>. Il <span class="notranslate">buffer</span> sarà stato creato in precedenza (vedete le <a href="../../../Buffers/Buffers.htm">funzioni buffer</a> per i dettagli su come farlo), e vi saranno stati aggiunti o caricati dati. Quindi lo passate a questa funzione con il formato dei dati (solo <span class="inline">buffer_u8</span> o <span class="inline">buffer_s16</span> sono attualmente supportati), la frequenza di campionamento (che può essere tra 1000hz e 48000hz), e un offset in <span class="notranslate">buffer</span> da cui prendere i dati. Devi anche fornire il numero di campioni in <span class="notranslate">buffer</span> e i canali che il suono richiede. Questi canali sono definiti da una delle seguenti costanti:</p>
   <table>
     <colgroup>
@@ -47,7 +47,7 @@
   <p>Notate che dopo aver creato un suono, dovreste liberare l'indice del puntatore associato ad esso quando non è più necessario usando la funzione <a href="audio_free_buffer_sound.htm"><span class="inline">audio_free_buffer_sound()</span></a>. Se non lo fate e poi riassegnate la variabile o cambiate <span class="notranslate">rooms</span> ecc... l'ID del suono sarà perso e avrete una perdita di memoria. Notate anche che non potete cancellare il <span class="notranslate">buffer</span> se è stato creato un qualsiasi suono da esso e il suono non è stato prima liberato. Quindi dovreste prima liberare il suono (o i suoni), <i>poi</i> cancellare <span class="notranslate">buffer</span>. Vale anche la pena notare che aggiungere qualcosa a <span class="notranslate">buffer</span>, o cambiare la dimensione di <span class="notranslate">buffer</span>, dopo che è stato creato un suono da esso, darà risultati inaspettati e non è raccomandato - una volta che avete iniziato a creare suoni da qualsiasi <span class="notranslate">buffer</span> non dovreste manipolarlo in nessun altro modo dopo.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">audio_create_buffer_sound(bufferId, bufferFormat, bufferRate, bufferOffset, bufferLength, bufferChannels);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_create_buffer_sound</span>(bufferId, bufferFormat, bufferRate, bufferOffset, bufferLength, bufferChannels);</p>
   <table>
     <tbody>
       <tr>

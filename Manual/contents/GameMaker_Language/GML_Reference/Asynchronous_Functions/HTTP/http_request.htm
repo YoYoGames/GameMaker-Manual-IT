@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>http_request</h1>
+  <h1><span data-field="title" data-format="default">http_request</span></h1>
   <p>Con questa funzione è possibile creare una richiesta di intestazione HTTP per definire i parametri operativi di una transazione HTTP, che può essere utilizzata per molte cose come (ad esempio) l'autenticazione tramite intestazioni HTTP se si utilizzano API RESTful. La funzione richiede l'indirizzo IP completo di <span class="notranslate">server</span> da cui effettuare la richiesta e il tipo di richiesta da effettuare (come <span class="notranslate">string</span>, vedere la nota seguente): &quot;GET&quot;, &quot;HEAD&quot;, &quot;POST&quot;, &quot;PUT&quot;, &quot;DELETE&quot;, &quot;TRACE&quot;, &quot;OPTIONS&quot; o &quot;CONNECT&quot;. Si dovrà anche fornire un <span class="inline"><a href="../../Data_Structures/DS_Maps/DS_Maps.htm">DS map</a></span> di coppie chiave/valore (come <span class="notranslate">strings</span>, dove la chiave è il campo dell'intestazione e il valore è il dato richiesto per l'intestazione) e l'ultimo argomento è un dato opzionale <span class="notranslate">string</span> che si può aggiungere alla richiesta e, se non è necessario, può essere 0 o un <span class="notranslate">string</span> vuoto &quot;&quot;. Si noti che si può anche inviare un <span class="notranslate">buffer</span> (si veda la sezione sui <a href="../../Buffers/Buffers.htm">buffer</a> per maggiori dettagli), nel qual caso l'ultimo parametro sarebbe l'indice del <span class="notranslate">buffer</span> da inviare.</p>
   <p class="note"><b>NOTA</b>: Le intestazioni HTTP normalmente seguono il formato &quot;chiave:valore&quot;, ma poiché <span data-keyref="GameMaker Name">GameMaker</span> crea queste coppie per voi dalla ds_map, non è necessario includere i due punti &quot;:&quot; nella chiave o nel valore della mappa <span class="notranslate">strings</span>.</p>
   <p class="note"><b>NOTA</b>: Quando si usa un <span class="notranslate">buffer</span> per l'argomento body, se la posizione di ricerca di <span class="notranslate">buffer</span> è all'inizio (0), non viene inviato alcun body e <span class="notranslate">buffer</span> viene riempito con la risposta della chiamata http; se invece la posizione di ricerca di <span class="notranslate">buffer</span> è diversa da zero, il contenuto di <span class="notranslate">buffer</span> <span class="notranslate">string</span> viene inviato come body.</p>
@@ -28,7 +28,7 @@
   </ul>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">http_request(url, method, header_map, body);</p>
+  <p class="code"><span data-field="title" data-format="default">http_request</span>(url, method, header_map, body);</p>
   <table>
     <tbody>
       <tr>

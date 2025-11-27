@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>istanza_disattiva_strato</title>
+  <title>instance_deactivate_layer</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>istanza_disattiva_strato</h1>
+  <h1><span data-field="title" data-format="default">instance_deactivate_layer</span></h1>
   <p>Con questa funzione si possono disattivare tutte le istanze assegnate a uno specifico livello. È necessario fornire l'<b>ID del livello</b>, che può essere sia il nome del livello come scritto nell'editor di codice (come <span class="notranslate">string</span>) o il valore effettivo dell'ID del livello come restituito dalla funzione <a href="../../Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a>e si noti che si possono disattivare solo i livelli di <i>istanza</i> con questa funzione. Si noti che se si è disattivato un livello che ha istanze di <span class="notranslate">objects</span> contrassegnate come <b>Persistent</b>, allora sarà necessario riattivare nuovamente il livello con la funzione <a href="instance_activate_layer.htm"><span class="inline">instance_activate_layer()</span></a> prima di cambiare <span class="notranslate">room</span>, altrimenti qualsiasi istanza persistente sul livello <i>non</i> sarà riportata e sarà scartata. Si noti inoltre che la disattivazione non è istantanea, e un'istanza che è stata disattivata in questo modo non sarà considerata inattiva fino alla fine dell'evento in cui la funzione è stata chiamata.</p>
   <p class="note"><b>NOTA</b>: se si disattiva un'istanza all'inizio di <span class="notranslate">room</span> (cioè: dal codice di creazione di <span class="notranslate">room</span>, o da un evento di creazione di un'istanza all'interno di <span class="notranslate">room</span>) tutte le istanze che sono posizionate all'interno di <span class="notranslate">room</span> dall'editor di <span class="notranslate">room</span> <b>eseguiranno ancora il loro evento di creazione</b> prima di essere disattivate.</p>
   <p class="note"><b></b><b>ATTENZIONE</b>: Disattivare le istanze che hanno la fisica abilitata <b>NON</b> impedirà ai loro apparecchi di interagire all'interno della simulazione fisica. Per questo dovreste impostare la loro variabile <span style="font-size:1px;"><a href="../../../Physics/Physics_Variables/phy_active.htm"><span class="inline">phy_active</span></a></span> su <span class="inline">true</span> o <span class="inline">false</span> quando attivate/disattivate le istanze.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">instance_deactivate_layer(obj);</p>
+  <p class="code"><span data-field="title" data-format="default">instance_deactivate_layer</span>(obj);</p>
   <table>
     <tbody>
       <tr>

@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_get_depth</h1>
+  <h1><span data-field="title" data-format="default">layer_get_depth</span></h1>
   <p>Puoi usare questa funzione per ottenere il valore di <i>profondità</i> associato ad un dato livello. Si fornisce l'ID del livello (che si ottiene quando si crea il livello usando <a href="layer_create.htm"><span class="inline">layer_create()</span></a>) o il nome del livello (come <span class="notranslate">string</span> - questo avrà un impatto sulle prestazioni) e la funzione restituirà la profondità del livello come numero reale. Nota che la profondità è definita come più alta quanto più &quot;lontano&quot; dalla telecamera e più bassa quanto più &quot;vicino&quot; alla telecamera, quindi se hai tre livelli con profondità -100, 0, 100, i livelli saranno disegnati nell'ordine 100, 0, -100, così che il livello &quot;superiore&quot; (cioè il più vicino alla telecamera e quindi disegnato sopra tutto il resto) sarà il livello con profondità -100.</p>
   <p>L'immagine seguente mostra uno schema di come funziona la profondità per i livelli:</p>
   <p><img>Nota che se fornisci un valore di ID di livello non valido otterrai un errore.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">layer_get_depth(layer_id)</p>
+  <p class="code"><span data-field="title" data-format="default">layer_get_depth</span>(layer_id)</p>
   <table>
     <tbody>
       <tr>

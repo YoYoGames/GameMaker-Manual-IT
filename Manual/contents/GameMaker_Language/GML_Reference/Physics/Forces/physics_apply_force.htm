@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>fisica_applicare_forza</title>
+  <title>physics_apply_force</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>fisica_applicare_forza</h1>
+  <h1><span data-field="title" data-format="default">physics_apply_force</span></h1>
   <p>Quando si lavora con la fisica è necessario applicare non solo la gravità a <span class="notranslate">objects</span>, ma anche le forze. Una forza è qualsiasi influenza che fa sì che un <span class="notranslate">object</span> subisca un cambiamento di velocità, un cambiamento di direzione o un cambiamento di forma, ed è definita nel mondo della fisica di <span data-keyref="GameMaker Name">GameMaker</span> nello stesso modo in cui definiamo la gravità, ottenendo il vettore dalle due componenti xforce/yforce. Va notato che le forze non sono applicate al centro di massa di <span class="notranslate">object</span>, ma piuttosto in un punto di <span class="notranslate">room</span> e cambieranno la direzione e la velocità così come la coppia (spin) in funzione di qualsiasi altra forza che sta lavorando su <span class="notranslate">object</span> (come la gravità). Ecco un'immagine di esempio per aiutare ad illustrare:</p>
   <p><img>Nell'esempio precedente la molla <span class="notranslate">object</span> in basso ha creato una forza sulla palla <span class="notranslate">object</span> facendola muovere in una direzione diversa. La forza esatta è definita dal vettore che otteniamo dalle componenti xforce/yforce in relazione alle coordinate xpos/ypos - che significa semplicemente che la forza è calcolata come la distanza da xpos/ypos a xforce/yforce in Newton (un Newton è definito come la quantità di forza netta necessaria per accelerare una massa di un chilogrammo alla velocità di un metro al secondo quadrato) e la direzione è l'angolo che si ottiene da xpos/ypos a xforce/yforce. Il codice per una collisione come quella di cui sopra andrebbe nell'evento di collisione della molla <span class="notranslate">object</span> e sarebbe qualcosa di simile a quello fornito nell'esempio qui sotto.</p>
   <p class="note"><b>NOTA</b>: Il mondo fisico usa i metri per tutti i suoi calcoli, e il rapporto di pixel per metro è definito nell'editor <span class="notranslate">room</span> o usando <span style="font-size:1px;"><a href="../The_Physics_World/physics_world_create.htm"><span class="inline">physics_world_create()</span></a></span>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_apply_force(xpos, ypos, xforce, yforce)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_apply_force</span>(xpos, ypos, xforce, yforce)</p>
   <table>
     <tbody>
       <tr>

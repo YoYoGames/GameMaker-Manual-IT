@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>creazione di attrito fisico</title>
+  <title>physics_joint_friction_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>creazione di attrito fisico</h1>
+  <h1><span data-field="title" data-format="default">physics_joint_friction_create</span></h1>
   <p>Il giunto a frizione è un po' diverso da tutti gli altri giunti nella simulazione fisica in quanto la connessione creata non vincolerà la posizione o il movimento dell'istanza, ma piuttosto la sua velocità e rotazione. Questo funziona prendendo i valori massimi di input per la forza e la coppia e applicandoli al secondo dispositivo per portare la velocità e il momento angolare agli stessi valori della prima istanza. Quindi, se avete un'istanza ferma e un'istanza in movimento e le collegate con un giunto a frizione, l'istanza in movimento rallenterà gradualmente fino a quando anch'essa sarà ferma. Se entrambe le istanze erano in movimento, allora la seconda istanza avrà la sua velocità di movimento modificata per corrispondere a quella della prima istanza.</p>
   <p><img>Come con la maggior parte degli altri giunti, si forniscono le istanze da unire insieme, così come la posizione per il giunto da creare all'interno di <span class="notranslate">room</span>. Si fornisce poi la forza massima e la coppia massima (attrito direzionale e rotazionale), e se si imposta il valore &quot;col&quot; a <span class="inline">true</span> allora le due istanze possono interagire e collidere tra loro, ma <i>solo</i> se hanno eventi di collisione, tuttavia se è impostato su <span class="inline">false</span>, non si scontrano in nessun caso.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_joint_friction_create(inst1, inst2, anchor_x, anchor_y, max_force, max_torque, col)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_joint_friction_create</span>(inst1, inst2, anchor_x, anchor_y, max_force, max_torque, col)</p>
   <table>
     <tbody>
       <tr>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>physics_particle_set_flags</h1>
+  <h1><span data-field="title" data-format="default">physics_particle_set_flags</span></h1>
   <p>Con questa funzione puoi cambiare le bandiere delle particelle per una singola particella. Il valore <span class="inline">index</span> è l'ID della particella come restituito dalla funzione <a href="physics_particle_create.htm"><span class="inline">physics_particle_create()</span></a>mentre le bandiere sono il valore di ritorno di una combinazione delle seguenti <b>costanti</b>:</p>
   <table>
     <tbody>
@@ -63,7 +63,7 @@
   <p>Questi flag utilizzano la mascheratura dei bit per creare un valore di uscita finale che viene poi controllato per impostare le diverse proprietà di base della particella (con la proprietà di base che è sempre quella di <span class="inline">phy_particle_flag_water</span>). Per esempio, se vuoi simulare un liquido viscoso con tensione superficiale useresti il <a href="../../../../Additional_Information/Bitwise_Operators.htm">bitwise <i>o</i></a> &quot;|&quot; per mascherare i bit appropriati come mostrato nell'esempio qui sotto. In questo modo puoi impostare diverse proprietà (oltre a quelle globali) per ogni singola particella creata, se lo desideri.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_particle_set_flags(index, flags)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_particle_set_flags</span>(index, flags)</p>
   <table>
     <tbody>
       <tr>

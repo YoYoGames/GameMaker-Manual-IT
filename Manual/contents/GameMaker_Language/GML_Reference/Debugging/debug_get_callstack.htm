@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>debug_get_callstack</h1>
+  <h1><span data-field="title" data-format="default">debug_get_callstack</span></h1>
   <p>Questa funzione genera un array di <span class="notranslate">strings</span> come &quot;callstack&quot; dove l'attuale <span class="notranslate">script</span> è elencato per primo, e poi tutti gli altri <span class="notranslate">scripts</span> che sono stati eseguiti in modo che l'attuale <span class="notranslate">script</span> sia eseguito. Il formato esatto di <span class="notranslate">string</span> varia a seconda della piattaforma di destinazione scelta, ma per lo più avrà il nome dello script/evento, poi i due punti : e il numero di linea, simile a questo:</p>
   <p class="code"><span class="inline">&quot;gml_Script_script2:1&quot;<br />
       &quot;gml_Script_script1:32&quot;<br />
@@ -25,7 +25,7 @@
   <p>Si noti che l'array restituito conterrà sempre 0 nella sua ultima posizione, dopo aver elencato il callstack <span class="notranslate">scripts</span>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">debug_get_callstack([maxdepth])</p>
+  <p class="code"><span data-field="title" data-format="default">debug_get_callstack</span>([maxdepth])</p>
   <table>
     <tbody>
       <tr>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>mostra_messaggio_async</title>
+  <title>show_message_async</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>mostra_messaggio_async</h1>
+  <h1><span data-field="title" data-format="default">show_message_async</span></h1>
   <p>Questa funzione apre una finestra e mostra all'utente il messaggio che definite nella funzione. Questa è una funzione asincrona, e come tale <span data-keyref="GameMaker Name">GameMaker</span> <i>non</i> blocca il dispositivo su cui viene eseguita in attesa di una risposta, ma piuttosto continua a eseguire gli eventi normalmente. Una volta che l'utente ha premuto il pulsante &quot;Ok&quot;, un evento asincrono <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Dialog.htm"><b>Dialogo</b></a> che, <i>solo</i> per la durata di quell'evento, avrà una ds_map memorizzata nella variabile <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a>.</p>
   <p>Questa mappa conterrà le due chiavi, &quot;id&quot; e &quot;status&quot;, con &quot;id&quot; che è il valore che è stato restituito dalla funzione quando è stata chiamata, e lo &quot;status&quot; che è o <span class="inline">true</span> per il pulsante &quot;Ok&quot; premuto, o <span class="inline">false</span> se il messaggio è stato cancellato (se disponibile, poiché non tutte le piattaforme di destinazione permettono la cancellazione dei dialoghi).</p>
   <p class="note"><strong><em><span class="note">NOTA</span></em></strong><em> Questa funzione è <span data-keyref="Dialog for debug only"> <strong>solo</strong> per <strong>debug e test</strong></span>e non dovrebbe essere usata nei giochi rilasciati. A tal fine dovreste creare un'interfaccia utente personalizzata per ricevere input dai giocatori in modo da avere il controllo completo su come le finestre di dialogo appaiono e si comportano.</em></p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">show_message_async(string);</p>
+  <p class="code"><span data-field="title" data-format="default">show_message_async</span>(string);</p>
   <table>
     <tbody>
       <tr>

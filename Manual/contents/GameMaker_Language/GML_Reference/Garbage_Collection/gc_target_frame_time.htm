@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gc_target_frame_time</h1>
+  <h1><span data-field="title" data-format="default">gc_target_frame_time</span></h1>
   <p>Con questa funzione potete <span>indicare al garbage collector che dovrebbe mirare a spendere non più del tempo specificato nell'esecuzione di ogni frame. La funzione prende un valore di tempo <span>specificato in microsecondi (dove 1.000.000 di microsecondi equivale a un secondo) e il tempo predefinito del frame target è 100 microsecondi</span></span>.</p>
   <p><span><span>Si prega di notare che questo è semplicemente un </span></span><span>valore<em>obiettivo</em>, poiché alcune operazioni devono ancora essere eseguite completamente in un fotogramma e a volte possono richiedere più tempo del tempo obiettivo. Notate anche che<span>aumentando il tempo obiettivo il garbage collector sarà più reattivo ai rapidi cambiamenti nell'uso della memoria e farà sì che la memoria venga liberata più rapidamente, anche se in pratica è improbabile che ciò sia necessario nella maggior parte dei casi. Notate anche che impostare il tempo di frame target a 0 <em>non </em>causerà l'arresto completo del collettore - farà ancora una quantità minima di lavoro ad ogni frame. Per disabilitare completamente il raccoglitore usate la funzione <span class="inline"><a href="gc_enable.htm">gc_enable()</a></span> </span>. </span></p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">gc_target_frame_time(time);</p>
+  <p class="code"><span data-field="title" data-format="default">gc_target_frame_time</span>(time);</p>
   <table>
     <tbody>
       <tr>

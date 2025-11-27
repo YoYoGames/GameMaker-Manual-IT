@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_add_from_surface</h1>
+  <h1><span data-field="title" data-format="default">sprite_add_from_surface</span></h1>
   <p>Questa funzione funziona esattamente allo stesso modo di <a href="sprite_create_from_surface.htm"><span class="inline">sprite_create_from_surface()</span></a> solo che invece di creare un nuovo <span class="notranslate">sprite</span> dall'area della superficie indicizzata che si seleziona, aggiunge l'area definita della superficie come una nuova sotto-immagine a un <span class="notranslate">sprite</span> precedentemente creato (questo significa che non si può aggiungere direttamente a un <span class="notranslate">sprite</span> dall'albero delle risorse, ma solo a uno precedentemente creato da una superficie, o uno che è stato duplicato da una risorsa <span class="notranslate">sprite</span> usando <a href="sprite_duplicate.htm"><span class="inline">sprite_duplicate()</span></a>).</p>
   <p>Va notato che la memoria usata quando si aggiunge un <span class="notranslate">sprite</span> in questo modo sarà più grande di quanto ci si possa aspettare. Questo perché <span data-keyref="GameMaker Name">GameMaker</span> memorizzerà il <span class="notranslate">sprite</span> come una pagina <span class="notranslate">texture</span> <i>e</i> sarà anche memorizzato nella memoria della GPU, quindi la memoria totale sarà più grande di quella che ci si aspetterebbe per un file immagine dello stesso <span class="notranslate">sprite</span>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">sprite_add_from_surface(index, surface, x, y, w, h, removeback, smooth);</p>
+  <p class="code"><span data-field="title" data-format="default">sprite_add_from_surface</span>(index, surface, x, y, w, h, removeback, smooth);</p>
   <table>
     <tbody>
       <tr>

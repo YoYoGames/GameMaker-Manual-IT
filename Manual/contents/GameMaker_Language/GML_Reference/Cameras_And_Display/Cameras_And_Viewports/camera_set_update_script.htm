@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>camera_set_update_script</h1>
+  <h1><span data-field="title" data-format="default">camera_set_update_script</span></h1>
   <p>Questa funzione può essere usata per impostare una <a href="../../../GML_Overview/Script_Functions.htm">funzione di script</a> che sarà chiamata ogni fotogramma di gioco in cui la telecamera è assegnata a una porta di vista visibile e attiva. Si fornisce il valore unico dell'ID della telecamera (come restituito dalle diverse funzioni <span class="inline">camera_create</span> ) e l'ID della funzione da chiamare. L'ordine in cui le funzioni attaccate alle telecamere e l'effettivo rendering della vista della telecamera è il seguente:</p>
   <ul class="colour">
     <li>Le telecamere per tutte le porte di vista visibili e attive hanno la loro <b>funzione di aggiornamento </b>chiamata</li>
@@ -30,7 +30,7 @@
   <p>L'applicazione di una funzione di aggiornamento personalizzata a una telecamera sovrascrive il suo comportamento di aggiornamento predefinito. Per esempio, se impostate la vostra telecamera per seguire un <span class="notranslate">object</span> (diciamo, <span class="inline2">obj_player</span>) quando chiamate <span class="inline"><a href="camera_create_view.htm">camera_create_view()</a></span>, o lo impostate nelle proprietà di <span class="notranslate">Room</span>, smetterà di seguire quel <span class="notranslate">object</span> una volta impostato un aggiornamento personalizzato <span class="notranslate">script</span>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">camera_set_update_script(camera_id, script)</p>
+  <p class="code"><span data-field="title" data-format="default">camera_set_update_script</span>(camera_id, script)</p>
   <table>
     <tbody>
       <tr>

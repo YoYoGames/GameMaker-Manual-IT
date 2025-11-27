@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>creare un riferimento debole</title>
+  <title>weak_ref_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>creare un riferimento debole</h1>
+  <h1><span data-field="title" data-format="default">weak_ref_create</span></h1>
   <p>Con questa funzione potete creare un <a class="glossterm" data-glossterm="riferimento debole" href="#">riferimento debole</a> a un <span class="notranslate">struct</span> che può essere usato per controllare se il <span class="notranslate">struct</span> è ancora &quot;vivo&quot; (referenziato) o meno nel gioco. Voi fornite il riferimento a <span class="notranslate">struct</span> che volete tracciare, e la funzione restituirà un altro <span class="notranslate">struct</span> che è un riferimento debole a quel <span class="notranslate">struct</span>. Notate che potete controllare se un riferimento è &quot;forte&quot; o &quot;debole&quot; usando la funzione <span class="inline"><a href="../Variable_Functions/instanceof.htm">instanceof()</a></span>, poiché un riferimento forte restituirà o &quot;<span class="inline">struct</span>&quot; o il nome della funzione costruttrice che ha creato il <span class="notranslate">struct</span>, o &quot;<span class="inline">weakref</span>&quot; se è un riferimento debole. Notate anche che il riferimento debole <span class="notranslate">struct</span> avrà una variabile &quot;<span class="inline">ref</span>&quot; a cui si può accedere per ottenere il riferimento forte al <span class="notranslate">struct</span> in questione, a meno che non sia stato garbage collected, nel qual caso restituirà <span class="inline">undefined</span>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">weak_ref_create(struct_to_track);</p>
+  <p class="code"><span data-field="title" data-format="default">weak_ref_create</span>(struct_to_track);</p>
   <table>
     <tbody>
       <tr>

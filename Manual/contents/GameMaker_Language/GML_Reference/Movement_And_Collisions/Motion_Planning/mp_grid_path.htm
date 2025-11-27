@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>mp_grid_path</h1>
+  <h1><span data-field="title" data-format="default">mp_grid_path</span></h1>
   <p>Con questa funzione potete creare un <span class="notranslate">path</span> che navigherà da un punto di partenza a un punto di arrivo utilizzando un <span class="inline">mp_grid</span> che avete precedentemente definito, evitando eventuali ostacoli che sono già stati aggiunti nella griglia. Gli argomenti xstart e ystart indicano l'inizio del <span class="notranslate">path</span> in coordinate <span class="notranslate">room</span>, mentre gli argomenti xgoal, ygoal indicano la destinazione. È anche possibile selezionare solo il movimento orizzontale/verticale, o permettere movimenti diagonali completi specificando true nell'argomento allowdiag. La funzione restituisce true (è riuscita a trovare un <span class="notranslate">path</span>) o false (ha fallito) così come l'impostazione del <span class="notranslate">path</span> scelto. Nell'immagine seguente, potete vedere come tutto questo funziona insieme:</p>
   <p><img>Come potete vedere, il &quot;tubo&quot; <span class="notranslate">objects</span> è stato aggiunto nella griglia, il che significa che qualsiasi <span class="notranslate">path</span> creato deve girarci intorno. Ci sono due <span class="notranslate">paths</span> creati nell'immagine, uno (verde) è stato fatto con le diagonali permesse e l'altro (rosso) senza. La differenza tra i due è abbastanza ovvia con il verde <span class="notranslate">path</span> che appare molto più &quot;elegante&quot; e diretto, ma tutto dipende dall'uso che ne farete e quale preferite. Notate che il <span class="notranslate">path</span> è indipendente dall'istanza corrente - è un <span class="notranslate">path</span> attraverso la griglia, non un <span class="notranslate">path</span> per una specifica istanza, anche se una specifica istanza può avere la variabile che memorizza l'indice <span class="notranslate">path</span>. Potreste anche aver bisogno di fare il debug di questi <span class="notranslate">paths</span> per vedere come sono fatti e come interagiscono nell'ambiente di gioco, nel qual caso dovreste usare la funzione <span class="inline"><a href="../../Drawing/Basic_Forms/draw_path.htm">draw_path()</a></span>.</p>
   <p class="note"><b>NOTA</b>: Il <span class="notranslate">path</span> deve essere stato creato in precedenza (sia nel codice con <span style="font-size:1px;"><a href="../../Asset_Management/Paths/Path_Manipulation/path_add.htm"><span class="inline">path_add()</span></a></span> o come risorsa) e sarà sostituito dal <span class="notranslate">path</span> generato da questa funzione.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">mp_grid_path(id, path, xstart, ystart, xgoal, ygoal, allowdiag);</p>
+  <p class="code"><span data-field="title" data-format="default">mp_grid_path</span>(id, path, xstart, ystart, xgoal, ygoal, allowdiag);</p>
   <table>
     <tbody>
       <tr>

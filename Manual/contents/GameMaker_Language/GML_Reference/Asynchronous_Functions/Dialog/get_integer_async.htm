@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>get_integer_async</h1>
+  <h1><span data-field="title" data-format="default">get_integer_async</span></h1>
   <p>Questa funzione apre una finestra e visualizza il messaggio e uno spazio per l'utente per inserire un valore (che conterrà il valore di default fornito per iniziare). Questa è una funzione asincrona, e come tale <span data-keyref="GameMaker Name">GameMaker</span> <i>non</i> blocca il dispositivo su cui viene eseguita in attesa di una risposta, ma piuttosto continua a eseguire gli eventi normalmente. Una volta che l'utente ha digitato il suo <span class="notranslate">string</span> e premuto il pulsante &quot;Ok&quot;, un evento asincrono <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/Dialog.htm"><b>Dialogo</b></a> che, <i>solo</i> per la durata di quell'evento, avrà una mappa DS memorizzata nella variabile <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a>.</p>
   <p>Questa mappa conterrà le tre chiavi, &quot;<span class="inline">id</span>&quot;, &quot;<span class="inline">status</span>&quot;, e &quot;<span class="inline">value</span>&quot;. &quot;<span class="inline">id</span>&quot; è il valore che è stato restituito dalla funzione quando è stata chiamata, lo &quot;status&quot; sarà o <span class="inline">true</span> per il pulsante &quot;Ok&quot; premuto, o <span class="inline">false</span> se il messaggio è stato annullato (dove applicabile, poiché non tutte le piattaforme di destinazione permettono di annullare i messaggi). Infine &quot;<span class="inline">value</span>&quot; restituirà l'intero che l'utente ha inserito come <span class="notranslate">string</span> (un <span class="notranslate">string</span> &quot;&quot; vuoto sarà restituito se non è stato dato alcun input).</p>
   <p class="note"><strong><em><span class="note">NOTA</span></em></strong><em> Questa funzione è <span data-keyref="Dialog for debug only"> <strong>solo</strong> per <strong>debug e test</strong></span>e non dovrebbe essere usata nei giochi rilasciati. A tal fine dovreste creare un'interfaccia utente personalizzata per ricevere input dai giocatori in modo da avere il controllo completo su come le finestre di dialogo appaiono e si comportano.</em></p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">get_integer_async(string, default);</p>
+  <p class="code"><span data-field="title" data-format="default">get_integer_async</span>(string, default);</p>
   <table>
     <tbody>
       <tr>

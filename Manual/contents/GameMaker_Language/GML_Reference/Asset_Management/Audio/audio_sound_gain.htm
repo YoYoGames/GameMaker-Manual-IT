@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>guadagno audio_sound</title>
+  <title>audio_sound_gain</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>guadagno audio_sound</h1>
+  <h1><span data-field="title" data-format="default">audio_sound_gain</span></h1>
   <p>Con questa funzione si può sfumare un suono in entrata o in uscita per un determinato periodo di tempo, oppure si può usare per impostare il guadagno del suono istantaneamente.</p>
   <p>Il tempo è misurato in millisecondi, e la funzione richiede che tu inserisca un livello finale di guadagno che il suono deve raggiungere alla fine di quel tempo. Questo guadagno può essere compreso tra 0 (silenzioso) e qualsiasi valore maggiore di 0, anche se normalmente considerereste il volume massimo come 1. Qualsiasi valore superiore a 1 può essere usato ma, a seconda del suono usato e della piattaforma su cui viene compilato, potreste ottenere distorsione o clipping quando il suono viene riprodotto. Nota che la scala del guadagno è lineare, e per cambiare istantaneamente il guadagno, imposta semplicemente l'argomento del tempo a 0.</p>
   <p>Questa funzione influenzerà <i>tutte le</i> istanze del suono che stanno suonando attualmente in <span class="notranslate">room</span> se l'indice è una risorsa sonora, e il volume finale sarà il volume a cui tutte le ulteriori istanze del suono saranno riprodotte. Tuttavia se avete usato l'indice restituito da una funzione come <a href="audio_play_sound.htm"><span class="inline">audio_play_sound()</span></a> avrà effetto solo su quell'unica istanza del suono.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">audio_sound_gain(index, volume, time);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_sound_gain</span>(index, volume, time);</p>
   <table>
     <tbody>
       <tr>

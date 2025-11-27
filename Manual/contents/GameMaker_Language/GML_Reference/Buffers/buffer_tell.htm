@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>buffer_tell</h1>
+  <h1><span data-field="title" data-format="default">buffer_tell</span></h1>
   <p>Quando leggete o scrivete dati su un <span class="notranslate">buffer</span> usando il comando <a href="buffer_read.htm"><span class="inline">buffer_read()</span></a> o <a href="buffer_write.htm"><span class="inline">buffer_write()</span></a> la posizione di &quot;ricerca&quot; corrente viene anticipata dai byte scritti o letti, e con
     questa funzione potete ottenere la posizione di &quot;ricerca&quot; corrente per usarla in altre funzioni di <span class="notranslate">buffer</span>. Per esempio, se il vostro allineamento <span class="notranslate">buffer</span> è impostato a 4 byte e scrivete un singolo pezzo di dati che ha una dimensione di 1 byte, allora fate un <span class="inline">buffer_tell()</span>,
     otterrete un valore di ritorno di 1. Tuttavia, se scrivete un altro pezzo di dati, anch'esso di 1 byte, poi fate un <span class="inline">buffer_tell()</span>, otterrete un valore di ritorno di 5 poiché l'allineamento ha &quot;imbottito&quot; i dati in quella posizione.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">buffer_tell(buffer);</p>
+  <p class="code"><span data-field="title" data-format="default">buffer_tell</span>(buffer);</p>
   <table>
     <tbody>
       <tr>

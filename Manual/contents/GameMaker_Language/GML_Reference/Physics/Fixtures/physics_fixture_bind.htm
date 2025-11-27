@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>legame fisico_fisico</title>
+  <title>physics_fixture_bind</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,14 +14,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>legame fisico_fisico</h1>
+  <h1><span data-field="title" data-format="default">physics_fixture_bind</span></h1>
   <p>Una volta che abbiamo definito la nostra fixture deve essere legata ad un'istanza. Questo significa che le sue <i>proprietà</i> sono trasferite all'istanza selezionata, <b>non alla fixture stessa</b>, così che una fixture può essere legata a più istanze se tutte devono avere le stesse proprietà. Potete specificare un indice <span class="notranslate">object</span> per il target e tutte le istanze presenti in <span class="notranslate">room</span> in quel momento riceveranno le proprietà di quella fixture (ma non qualsiasi nuova istanza di <span class="notranslate">object</span> creata successivamente), oppure potete usare le parole chiave speciali <i>other</i> e <i>all</i>. Potete anche specificare un genitore <span class="notranslate">object</span> e tutte le istanze figlie con quel genitore riceveranno anche la fixture. Una volta che la fixture è stata legata a tutte le istanze di cui avete bisogno, può essere cancellata se non è più necessaria e le istanze con le proprietà di quella fixture non saranno interessate e manterranno quelle proprietà.</p>
   <p>La fixture sarà legata all'istanza con il centro di massa posizionato all'origine dell'istanza, e le fixture poligonali sono legate in base alla posizione dei punti <i>rispetto</i> all'origine. Se avete bisogno che la vostra fixture sia legata ad un punto diverso dall'origine, allora dovreste usare <a href="physics_fixture_bind_ext.htm"><span class="inline">physics_fixture_bind_ext()</span></a>.</p>
   <p><img>La funzione restituirà anche un valore &quot;id&quot; unico per la fixture <i>legata</i><b>(non la fixture stessa</b>) che può poi essere usato per rimuovere (&quot;un-bind&quot;) le proprietà fisiche dall'istanza usando la funzione <a href="physics_remove_fixture.htm"><span class="inline">physics_remove_fixture()</span></a>. Questo permette di aggiungere e rimuovere le proprietà fisiche da un'istanza senza distruggere e ricreare <span class="notranslate">objects</span>.</p>
   <p class="note"><b>NOTA</b>: Le fixture dovrebbero essere cancellate quando non sono più necessarie, in quanto la mancata cancellazione può causare una perdita di memoria che rallenterà ed eventualmente farà crashare il gioco.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_fixture_bind(fixture, target)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_fixture_bind</span>(fixture, target)</p>
   <table>
     <tbody>
       <tr>

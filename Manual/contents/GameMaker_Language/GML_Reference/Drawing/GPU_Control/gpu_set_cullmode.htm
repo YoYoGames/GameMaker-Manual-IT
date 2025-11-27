@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gpu_set_cullmode</h1>
+  <h1><span data-field="title" data-format="default">gpu_set_cullmode</span></h1>
   <p>Questa funzione può essere usata per impostare la modalità di abbattimento della faccia posteriore. Un poligono (primitiva) ha un lato <i>anteriore</i> e uno <i>posteriore</i>. Il lato anteriore è detto essere il lato in cui i vertici sono definiti in ordine <b>antiorario</b>. Normalmente vengono disegnati entrambi i lati, ma se si fa una forma chiusa (come una piramide) allora questo è uno spreco di potenza di elaborazione perché il lato posteriore del triangolo non può mai essere visto. È in questi casi che si può <span class="notranslate">switch</span> sul backface culling, dato che questo risparmia circa la metà del tempo di disegno, anche se significa che si ha il compito di definire i poligoni nel modo corretto per evitare problemi.</p>
   <p>Il valore di cull mode utilizzato deve essere una delle seguenti costanti (il valore predefinito è <span class="inline">cull_noculling</span>):</p>
   <table>
@@ -39,7 +39,7 @@
   </table>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">gpu_set_cullmode(cullmode);</p>
+  <p class="code"><span data-field="title" data-format="default">gpu_set_cullmode</span>(cullmode);</p>
   <table>
     <tbody>
       <tr>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>valore dell'asse del gamepad</title>
+  <title>gamepad_axis_value</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>valore dell'asse del gamepad</h1>
+  <h1><span data-field="title" data-format="default">gamepad_axis_value</span></h1>
   <p>Potete usare questa funzione per ottenere il valore dei diversi assi da un dato slot del gamepad. Si fornisce l'indice dello slot del gamepad da controllare, insieme a una costante dell'indice dell'asse (come elencato <a href="Gamepad_Input.htm">qui</a>), o un valore intero tra <span class="inline">0</span> e <span class="inline"><a href="gamepad_axis_count.htm">gamepad_axis_count()</a></span><span class="inline">-1</span>. Il valore restituito sarà compreso tra <span class="inline">-1</span> e <span class="inline">1</span> per ciascuno degli assi orizzontali e verticali disponibili.</p>
   <p>Si noti che il valore restituito è normalizzato per prendere in considerazione il valore impostato per la zona morta dell'asse (utilizzando la funzione <span class="inline"><a href="gamepad_set_axis_deadzone.htm">gamepad_set_axis_deadzone()</a></span>), e quindi sarà sempre tra -1 e 0, e 0 e 1. Per esempio, impostando la zona morta a 0.2 significherà che spingendo lo stick verso destra inizierà a restituire un valore da 0 a 1 solo quando il valore <em>grezzo</em> dell'asse è superiore a 0.2 - così per esempio, quando il valore grezzo è 0.2, il valore restituito sarà 0, quando il valore grezzo è a 0.5, il valore restituito sarà 0.375, o se il valore grezzo è 0.9, allora il valore restituito sarà 0.875.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">gamepad_axis_value(device, axisIndex);</p>
+  <p class="code"><span data-field="title" data-format="default">gamepad_axis_value</span>(device, axisIndex);</p>
   <table>
     <tbody>
       <tr>
