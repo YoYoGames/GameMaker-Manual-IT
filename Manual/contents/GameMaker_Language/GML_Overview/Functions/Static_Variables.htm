@@ -75,7 +75,6 @@
   <p>You can access both static variables through structs created from <span class="inline2">weapon</span>: </p>
   <p class="code">show_debug_message(my_weapon.number); // 0<br />
     show_debug_message(my_weapon.types);  // [&quot;sword&quot;, &quot;bow&quot;, &quot;hammer&quot;]</p>
-  <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> In more complex constructor hierarchies you might need to traverse the <a data-xref="{text}" href="../Structs/Static_Structs.htm#h">Static Chain</a>.</p>
   <h3>Initialisation Order</h3>
   <p>Inside the function, as with other variables, you should always <em>define</em> static variables <em>before </em><em>accessing</em> them.</p>
   <p>While it is possible to access a static variable before the line where it&#39;s defined (as, before running the function, <span data-keyref="GameMaker Name">GameMaker</span> first initalises all of its static variables), it is recommended to follow a natural order (define first, access after):</p>
