@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>applicare la telecamera</title>
+  <title>camera_apply</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>applicare la telecamera</h1>
+  <h1><span data-field="title" data-format="default">camera_apply</span></h1>
   <p>Questa funzione applicherà immediatamente le impostazioni della telecamera date alla vista della telecamera corrente in fase di rendering. Mentre è possibile impostare qualsiasi vista della telecamera utilizzando le funzioni specifiche di <span class="inline">camera_set_*</span>, le nuove impostazioni non saranno utilizzate per il rendering fino al <i>prossimo</i> fotogramma di gioco, ma con questa funzione è possibile apportare tali modifiche immediatamente. Se state usando più viste allora la funzione dovrebbe essere usata nel <b>Draw Event</b> e potete usare la variabile <a href="view_current.htm"><span class="inline">view_current</span></a> per applicare selettivamente la telecamera data solo alla vista della telecamera attualmente in fase di rendering. Notate che questo NON cambia il valore dell'ID della telecamera, ma solo le impostazioni per quella telecamera, e che se usate questa funzione sulla telecamera di default (cioè: la telecamera interna che <span data-keyref="GameMaker Name">GameMaker</span> usa quando nessuna telecamera della vista è attiva) le modifiche saranno sovrascritte nel prossimo fotogramma di gioco dalle impostazioni interne per il disegno di <span class="notranslate">room</span>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">camera_apply(camera_id)</p>
+  <p class="code"><span data-field="title" data-format="default">camera_apply</span>(camera_id)</p>
   <table>
     <tbody>
       <tr>

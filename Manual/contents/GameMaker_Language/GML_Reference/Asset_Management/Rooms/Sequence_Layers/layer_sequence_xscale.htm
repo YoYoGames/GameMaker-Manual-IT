@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>scala_livello_sequenza</title>
+  <title>layer_sequence_xscale</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>scala_livello_sequenza</h1>
+  <h1><span data-field="title" data-format="default">layer_sequence_xscale</span></h1>
   <p>Con questa funzione potete impostare la scala X per l'elemento dato <span class="notranslate">sequence</span>. Si fornisce l'ID dell'elemento <span class="notranslate">sequence</span> come restituito da <a href="layer_sequence_create.htm"><span class="inline">layer_sequence_create()</span></a> o da una delle <a href="../General_Layer_Functions/General_Layer_Functions.htm">funzioni degli elementi di livello</a> insieme alla nuova scala da impostare sull'asse X e il <span class="notranslate">sequence</span> sarà scalato di questa quantità. Una scala di 1 indica nessuna scala (1:1), valori più piccoli ridurranno la scala (0.5, per esempio, dimezzerà la larghezza di <span class="notranslate">sequence</span>), valori più grandi la scaleranno verso l'alto e valori negativi rispecchieranno <span class="notranslate">sequence</span> intorno alla sua origine <i>e</i> la scaleranno, a meno che il valore usato sia esattamente -1 (nel qual caso <span class="notranslate">sequence</span> viene semplicemente rispecchiato intorno alla sua origine senza scalare).</p>
   <p>È molto importante notare che applicare una scalatura <em>non uniforme</em> (ad esempio: scalare l'asse X di 3 e l'asse Y di 2) agli elementi di <span class="notranslate">sequence</span> che contengono qualsiasi istanza che usa la <em>rotazione</em>, <strong>può causare problemi con il disegno dell'istanza, le collisioni, il culling, e molte altre cose</strong>. Fondamentalmente, se il tuo <span class="notranslate">sequence</span> si basa su <em>qualsiasi</em> proprietà dell'istanza, allora non ti raccomandiamo di combinare il ridimensionamento non uniforme con la rotazione dell'istanza.</p>
   <p>Notate anche che non dovreste cambiare le variabili <span class="inline">image_xscale</span> \ <span class="inline">image_yscale</span> \ <span class="inline">image_angle</span> \ <span class="inline">x</span> \ <span class="inline">y</span> per qualsiasi istanza in un <span class="notranslate">sequence</span> che usa questa funzione poiché saranno sovrascritte non appena il <span class="notranslate">sequence</span> si aggiorna dopo aver chiamato la funzione.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">layer_sequence_xscale(sequence_element_id, xscale)</p>
+  <p class="code"><span data-field="title" data-format="default">layer_sequence_xscale</span>(sequence_element_id, xscale)</p>
   <table>
     <tbody>
       <tr>

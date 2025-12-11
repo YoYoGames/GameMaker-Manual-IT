@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>rete_invio_udp</title>
+  <title>network_send_udp</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>rete_invio_udp</h1>
+  <h1><span data-field="title" data-format="default">network_send_udp</span></h1>
   <p>Con questa funzione è possibile inviare dati attraverso la rete utilizzando UDP a un sito <span class="notranslate">server</span>. La funzione prende l'<i>id del socket</i> attraverso cui connettersi, l'URL a cui connettersi e la porta da utilizzare. Occorre poi fornire l'<i>id del buffer</i> che contiene i dati da inviare (per maggiori informazioni su <span class="notranslate">buffers</span> si veda <a href="../Buffers/Buffers.htm">Riferimento - Buffer</a>) e infine la dimensione (in byte) dei dati. UDP è &quot;senza connessione&quot;, in quanto non si effettua una vera e propria connessione, ma si invia un pacchetto direttamente a un IP e <span class="notranslate">server</span> riceve i dati in arrivo da un indirizzo IP e deve gestirli &quot;così come sono&quot;. La funzione restituisce il numero di byte di dati inviati, o un numero inferiore a 0 se l'invio è fallito. Va notato che la dimensione finale dei dati inviati restituita da questa funzione includerà anche le informazioni dell'intestazione <span class="notranslate">GameMaker</span>, che sono 12 byte aggiuntivi.</p>
   <p class="note"><span data-conref="../../../assets/snippets/Tag_note.hts"> </span> Questa funzione non funzionerà se utilizzata in un progetto in esecuzione sul target HTML5, né i progetti HTML5 saranno in grado di ricevere UDP.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">network_send_udp(socket, url, port, bufferid, size);</p>
+  <p class="code"><span data-field="title" data-format="default">network_send_udp</span>(socket, url, port, bufferid, size);</p>
   <table>
     <tbody>
       <tr>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>buffer_async_group_begin</h1>
+  <h1><span data-field="title" data-format="default">buffer_async_group_begin</span></h1>
   <p>Questa funzione viene chiamata quando si vuole iniziare il salvataggio di più <span class="notranslate">buffers</span> in più file (o il caricamento di più <span class="notranslate">buffers</span>). Il <span class="inline2">nome del gruppo</span> è un <span class="notranslate">string</span> e sarà usato come nome di directory per dove i file sono salvati, e dovrebbe essere usato come parte del file <span class="notranslate">path</span> quando si caricano di nuovo i file in <span class="notranslate">IDE</span> successivamente (usando una qualsiasi delle <a href="buffer_load.htm"><span class="inline">buffer_load()</span></a> funzioni). Questa funzione è da usare <i>solo</i> con le funzioni <a href="buffer_save_async.htm"><span class="inline">buffer_save_async()</span></a> e <span class="inline"><a href="buffer_load_async.htm">buffer_load_async()</a></span> e dovete anche terminare il gruppo asincrono chiamando <a href="buffer_async_group_end.htm"><span class="inline">buffer_async_group_end()</span></a> altrimenti i file non saranno salvati/caricati.</p>
   <p>Notate che per le piattaforme console (come PS4 per esempio), il <span class="inline2">nome del gruppo</span> sarà usato come descrizione dello slot di salvataggio, e usare questa funzione può aiutarvi ad evitare di avere l'UI che mostra ogni file che viene salvato. Notate anche che quando si usa UWP si può fare il roaming dei giochi salvati tra le finestre native di Xbox e Microsoft store creando un gruppo che è lo stesso di un gruppo ERA Xbox, per esempio:</p>
   <p class="code">if os_type == os_uwp<br />
@@ -27,7 +27,7 @@
     }</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">buffer_async_group_begin(groupname);</p>
+  <p class="code"><span data-field="title" data-format="default">buffer_async_group_begin</span>(groupname);</p>
   <table>
     <tbody>
       <tr>

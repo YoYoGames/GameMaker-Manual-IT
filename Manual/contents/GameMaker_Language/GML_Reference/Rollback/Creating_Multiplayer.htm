@@ -15,10 +15,10 @@
 </head>
 <body>
   <h1>Creare un gioco multiplayer</h1>
-  <p class="note">Questa pagina vi illustrerà i passaggi dettagliati per creare la vostra prima partita multigiocatore.<br>
-    <br>
-    Per informazioni sul sistema Rollback, leggere <a data-xref="{title}" href="Rollback_System.htm">Sistema Rollback</a>.<br>
-    <br>
+  <p class="note">Questa pagina vi illustrerà i passaggi dettagliati per creare la vostra prima partita multigiocatore.<br />
+    <br />
+    Per informazioni sul sistema Rollback, leggere <a data-xref="{title}" href="Rollback_System.htm">Sistema Rollback</a>.<br />
+    <br />
     Per informazioni dettagliate su tutte le funzioni di Rollback, leggete <a data-xref="{title}" href="Rollback_Functions/Rollback_Functions.htm">Funzioni di Rollback</a>.
   </p>
   <h2>Impostazione del progetto</h2>
@@ -26,8 +26,8 @@
   <p>Creare due oggetti:</p>
   <ul class="colour">
     <li><strong>obj_game</strong>: Gestisce la partita multigiocatore.</li>
-    <li><strong>obj_player</strong>: Questo sarà il giocatore effettivo <span class="notranslate">object</span>. Ogni giocatore collegato avrà la propria istanza di questo <span class="notranslate">object</span> che potrà controllare.<br>
-      <br>
+    <li><strong>obj_player</strong>: Questo sarà il giocatore effettivo <span class="notranslate">object</span>. Ogni giocatore collegato avrà la propria istanza di questo <span class="notranslate">object</span> che potrà controllare.<br />
+      <br />
       Assegnare il giocatore <span class="notranslate">sprite</span> al giocatore <span class="notranslate">object</span>.
     </li>
   </ul>
@@ -53,8 +53,8 @@
   <h2>Giocatori in movimento</h2>
   <p>L'input è gestito dal sistema Rollback e sincronizzato automaticamente tra i giocatori.</p>
   <p>Nel lettore <span class="notranslate">object</span>, chiamare <span class="inline"><a href="Rollback_Functions/rollback_get_input.htm">rollback_get_input()</a></span> per ottenere un <span class="notranslate">struct</span> contenente tutti gli ingressi predefiniti, che sono i seguenti:</p>
-  <p class="note"><span class="inline"><strong>left</strong>, <strong>right</strong>, <strong>up</strong>, <strong>down</strong>, <strong>Z</strong>, <strong>X</strong>, <strong>C</strong>, <strong>space</strong></span><br>
-    <br>
+  <p class="note"><span class="inline"><strong>left</strong>, <strong>right</strong>, <strong>up</strong>, <strong>down</strong>, <strong>Z</strong>, <strong>X</strong>, <strong>C</strong>, <strong>space</strong></span><br />
+    <br />
     <em>Indicano se la chiave è stata mantenuta.</em> <span class="inline">*<strong>_pressed</strong></span> <em>e </em><span class="inline">*<strong>_released</strong></span> <em>Sono previste anche delle varianti.</em>
   </p>
   <p>Per definire i propri ingressi, vedere <a data-xref="{title}" href="Defining_Inputs.htm">Definizione degli ingressi</a>.</p>

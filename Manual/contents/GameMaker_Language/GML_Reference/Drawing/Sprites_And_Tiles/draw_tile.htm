@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>disegnare piastrelle</title>
+  <title>draw_tile</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>disegnare piastrelle</h1>
+  <h1><span data-field="title" data-format="default">draw_tile</span></h1>
   <p>Con questa funzione potete disegnare qualsiasi dato <span class="notranslate">tile</span> da un <span class="notranslate">tile set</span> - competere con rotazioni, capovolgimenti e specchi - impostando la cornice (se animata) e la posizione all'interno del <span class="notranslate">room</span>. Il valore ID di <span class="notranslate">tile set</span> è l'indice <span class="notranslate">tile set</span> come impostato nel <span class="notranslate">IDE</span> e i dati <span class="notranslate">tile</span> sono il &quot;blob&quot; di dati che contiene tutte le informazioni sull'indice <span class="notranslate">tile</span> e le trasformazioni che sono state applicate. È possibile utilizzare la funzione <a href="../../Asset_Management/Rooms/Tile_Map_Layers/tilemap_get.htm"><span class="inline">tilemap_get()</span></a> per ottenere i dati di <span class="notranslate">tile</span> che possono poi essere manipolati usando le <a href="../../Asset_Management/Rooms/Tile_Map_Layers/Tile_Map_Layers.htm">funzioni Tile</a>, oppure potete costruirli voi stessi usando le seguenti costanti di <span class="notranslate">tile</span> insieme al valore dell'indice di <span class="notranslate">tile</span> da creare:</p>
   <table>
     <tbody>
@@ -40,13 +40,13 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Dovreste fare un &quot;or&quot; bitwise di queste costanti con il valore dell'indice <span class="notranslate">tile</span> per ottenere il tiledata finale:</p>
   <p class="code">var tiledata = 8 | tile_rotate | tile_flip;</p>
   <p>Il codice di cui sopra crea semplicemente una variabile locale per memorizzare i tiledata per il <span class="notranslate">tile</span> con l'indice di 8 sul <span class="notranslate">tile set</span>, e viene ruotato e capovolto. Questo può poi essere usato per disegnare il <span class="notranslate">tile</span> a quell'indice dal <span class="notranslate">tile set</span> che specifichi. questo non è collegato a nessun livello di tilemap e il <span class="notranslate">tile</span> sarà disegnato alla profondità del livello dell'istanza che fa il disegno, nella posizione x/y che specifichi nel <span class="notranslate">room</span>. Nota che puoi anche impostare il frame da disegnare. Se il <span class="notranslate">tile</span> indicizzato fa parte di un set di animazione, allora potete impostare qui il numero di frame (da 0 al numero di frame - 1) e il <span class="notranslate">tile</span> indicizzato sarà semplicemente l'indicatore di quale <span class="notranslate">tile set</span> animato state usando mentre sarà il dato frame ad essere disegnato. Se il <span class="notranslate">tile</span> non fa parte di un set animato allora il frame dovrebbe essere impostato a 0.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">draw_tile(tileset, tiledata, frame, x, y)</p>
+  <p class="code"><span data-field="title" data-format="default">draw_tile</span>(tileset, tiledata, frame, x, y)</p>
   <table>
     <tbody>
       <tr>

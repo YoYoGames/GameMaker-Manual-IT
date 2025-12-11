@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>disegna_abilita_dravviamento</title>
+  <title>draw_enable_drawevent</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>disegna_abilita_dravviamento</h1>
+  <h1><span data-field="title" data-format="default">draw_enable_drawevent</span></h1>
   <p>Con questa funzione potete scegliere di abilitare (<span class="inline">true</span>) o disabilitare (<span class="inline">false</span>) l'evento draw per <b>tutte le istanze del gioco</b>, dandovi così il controllo su come e quando le cose vengono disegnate, il che è utile se volete implementare una tecnica di &quot;salto di frame&quot;. Notate che questo non solo impedisce alle istanze di disegnare sullo schermo, ma sopprime completamente l'evento draw, il che significa che bisogna fare attenzione perché qualsiasi logica di gioco che è presente in quell'evento non sarà nemmeno eseguita.</p>
   <p>Una cosa importante da capire su questa funzione è che se la chiamate proprio all'inizio del gioco, prima che il frame iniziale venga renderizzato (cioè: l'evento Create del primo <span class="notranslate">object</span> nel primo <span class="notranslate">room</span> del gioco), allora la finestra di gioco <b>non verrà renderizzata</b>. Questo potrebbe essere utile per progetti multiplayer che richiedono un <span class="notranslate">server</span> dedicato che non ha bisogno di renderizzare nulla, tuttavia tenete a mente che questo <strong>non</strong> lo rende headless in quanto <span class="notranslate">GameMaker</span> non lo supporta -- quindi non sarete in grado di eseguirlo su un <span class="notranslate">server</span> che non ha un'interfaccia grafica.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">draw_enable_drawevent(enable);</p>
+  <p class="code"><span data-field="title" data-format="default">draw_enable_drawevent</span>(enable);</p>
   <table>
     <tbody>
       <tr>

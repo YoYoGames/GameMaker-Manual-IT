@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>tilemap_set_global_mask</h1>
+  <h1><span data-field="title" data-format="default">tilemap_set_global_mask</span></h1>
   <p>Questa funzione può essere usata per impostare la <b>maschera di bit delle mattonelle</b> per tutte le mappe <span class="notranslate">tile</span> nel gioco. L'idea è che se avete, per esempio, un <span class="notranslate">tile sets</span> piuttosto piccolo di 16 x 16 <span class="notranslate">tiles</span> avrà un totale di 256 diversi <span class="notranslate">tiles</span> in ogni <span class="notranslate">tile set</span>, che usa solo 8 bit dell'indice nel &quot;blob&quot; di dati <span class="notranslate">tile</span> (da un disponibile 19 bit di dati). Questi bit possono essere &quot;mascherati&quot; e poi il resto dei dati di <span class="notranslate">tile</span> può essere usato per memorizzare valori aggiuntivi.</p>
   <p>Un modo semplice per ottenere il valore iniziale della maschera di indice è prendere il numero di <span class="notranslate">tiles</span> in <span class="notranslate">tile set</span> e sottrarre 1, così un 16x16 <span class="notranslate">tile set</span> ha 256 <span class="notranslate">tiles</span> e un valore di maschera di 255 (o $ff in esadecimale), e se <span class="notranslate">tile set</span> ha un numero di <span class="notranslate">tiles</span> che <i>non</i> sono una potenza di due, allora arrotondate alla più vicina potenza di due per ottenere la maschera, per esempio un <span class="notranslate">tile set</span> che è 20x20 ha 400 <span class="notranslate">tiles</span>, che arrotonderete per eccesso a 512, e così otterrete un valore di indice della maschera di 511 ($1ff in esadecimale). A parte la maschera dell'indice, normalmente vorreste preservare anche i valori di flip, rotate e mirror che sono assegnati a <span class="notranslate">tile</span>, quindi per aiutare in questo ci sono alcune <b>costanti</b> che possono essere usate. Queste possono essere &quot;or&quot; insieme al valore della maschera di indice per preservare quei bit di dati. Le seguenti costanti possono essere usate (vedi il codice di esempio qui sotto per l'uso):</p>
   <table>
@@ -44,7 +44,7 @@
   <p>La mascheratura dei bit della mappa delle mattonelle è una caratteristica avanzata e permette di usare i bit del &quot;blob&quot; di dati <span class="notranslate">tile</span> per il proprio uso. Per esempio, l'utente potrebbe riservare un bit per significare &quot;solido&quot; nella struttura dei dati tile e poi questo può essere controllato per collisioni veloci. Fondamentalmente, la maschera di bit è &quot;and&quot; rispetto ai dati di <span class="notranslate">tile</span> quando la mappa di <span class="notranslate">tile</span> è <i>disegnata</i> (quindi non influenza nessuna delle altre funzionalità), il che significa che i bit che non sono nella maschera sono ignorati, ma possono ancora essere letti e scritti dall'utente per i propri scopi. Notate che ci sono due diverse maschere - una globale e una per la mappa <span class="notranslate">tile</span> - e queste sono &quot;and&quot; insieme internamente da <span data-keyref="GameMaker Name">GameMaker</span> prima di essere usate per il disegno.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">tilemap_set_global_mask(mask)</p>
+  <p class="code"><span data-field="title" data-format="default">tilemap_set_global_mask</span>(mask)</p>
   <table>
     <tbody>
       <tr>

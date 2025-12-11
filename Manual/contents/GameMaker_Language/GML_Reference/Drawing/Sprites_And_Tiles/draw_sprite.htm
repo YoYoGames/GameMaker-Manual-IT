@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>disegnare_sprite</title>
+  <title>draw_sprite</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>disegnare_sprite</h1>
+  <h1><span data-field="title" data-format="default">draw_sprite</span></h1>
   <p>Questa funzione disegna la <span class="notranslate">sprite</span> e la sottoimmagine data in una posizione all'interno del gioco <span class="notranslate">room</span>. Per <span class="notranslate">sprite</span> si può usare la variabile d'istanza <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/sprite_index.htm"><span class="inline">sprite_index</span></a> per ottenere il <span class="notranslate">sprite</span> corrente assegnato all'istanza che esegue il codice, oppure si può usare qualsiasi altro <span class="notranslate">sprite</span> <span class="notranslate">asset</span>. Lo stesso vale per la sottoimmagine, che può essere impostata sulla variabile di istanza <a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/image_index.htm"><span class="inline">image_index</span></a> che imposterà la sottoimmagine a quella selezionata per l'istanza corrente <span class="notranslate">sprite</span> (si noti che si può disegnare un <span class="notranslate">sprite</span> diverso e usare comunque il valore della sottoimmagine per l'istanza corrente), oppure si può usare qualsiasi altro valore per disegnare una sottoimmagine specifica del <span class="notranslate">sprite</span> scelto. Se il valore è maggiore del numero di sottoimmagini, <span data-keyref="GameMaker Name">GameMaker</span> <span class="notranslate">loop</span> automaticamente il numero per selezionare l'immagine corrispondente (ad esempio, se <span class="notranslate">sprite</span> che si sta disegnando ha 5 sottoimmagini numerate da 0 a 4 e si imposta il valore dell'indice a 7, la funzione disegnerà la sottoimmagine 3, numerata 0). Infine, la posizione x e y è la posizione all'interno di <span class="notranslate">room</span> in cui verrà disegnata l'immagine <span class="notranslate">sprite</span> ed è centrata sull'<a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/sprite_xoffset.htm">offset x</a> e sull'<a href="../../Asset_Management/Sprites/Sprite_Instance_Variables/sprite_yoffset.htm">offset y di</a> <span class="notranslate">sprite</span>.</p>
   <p class="note"><span class="note">NOTA</span> Questa funzione potrebbe non funzionare come previsto quando si usa l'animazione dello scheletro <span class="notranslate">sprites</span>, e si potrebbe scoprire che la funzione disegna solo il primo fotogramma della posa predefinita. Si dovrebbero invece usare le funzioni di <span class="inline">draw_skeleton_*</span>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">draw_sprite(sprite, subimg, x, y);</p>
+  <p class="code"><span data-field="title" data-format="default">draw_sprite</span>(sprite, subimg, x, y);</p>
   <table>
     <tbody>
       <tr>

@@ -15,7 +15,7 @@
   <meta name="is_pure" content="true" />
 </head>
 <body>
-  <h1>fx_set_single_layer</h1>
+  <h1><span data-field="title" data-format="default">fx_set_single_layer</span></h1>
   <p>Questa funzione è usata per abilitare o disabilitare la modalità &quot;Single Layer&quot; per un filtro/effetto. Per impostazione predefinita, un filtro/effetto viene applicato al livello <a href="layer_set_fx.htm">a cui</a> è <a href="layer_set_fx.htm">assegnato</a> e a tutti i livelli sotto quel livello, tuttavia è possibile abilitare la modalità Single Layer su un FX <span class="notranslate">struct</span> per assicurarsi che venga applicato solo al livello a cui è assegnato.</p>
   <p>Si specifica un FX <span class="notranslate">struct</span> (come restituito da <span class="inline"><a href="fx_create.htm">fx_create()</a></span> o <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>) e un valore <a class="glossterm" data-glossterm="booleano" href="#">booleano</a> per abilitare (<span class="inline">true</span>) o disabilitare (<span class="inline">false</span>) la modalità Single Layer.</p>
   <p>La seguente immagine mostra un filtro usato con la modalità Single Layer disabilitata (che è il comportamento predefinito per tutti i livelli FX) e lo stesso filtro con la modalità Single Layer abilitata:</p>
@@ -30,7 +30,7 @@
   <p class="note"><span class="note">NOTA</span> Quando abiliti la modalità Single Layer per un FX, assicurati di applicarla a un livello che non sia un <a href="../../../../../The_Asset_Editors/Room_Properties/Filters_and_Effects.htm">livello FX</a>, perché un livello FX da solo non contiene nulla e quindi nessun filtro/effetto sarà visibile.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">fx_set_single_layer(filter_or_effect, enable);</p>
+  <p class="code"><span data-field="title" data-format="default">fx_set_single_layer</span>(filter_or_effect, enable);</p>
   <table>
     <tbody>
       <tr>

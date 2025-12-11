@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>rete_creare_server_raw</title>
+  <title>network_create_server_raw</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>rete_creare_server_raw</h1>
+  <h1><span data-field="title" data-format="default">network_create_server_raw</span></h1>
   <p>Questa funzione è usata per creare una nuova rete <span class="notranslate">server</span> per il tuo gioco, usando uno dei protocolli di connessione permessi (vedi le costanti elencate sotto). Voi fornite il tipo <span class="notranslate">server</span>, poi gli date una porta da usare, e infine il numero di connessioni massime che dovrebbero essere permesse in ogni momento a <span class="notranslate">server</span> (notate che questo numero dipende da voi, ma troppi client connessi satureranno la rete o la CPU del dispositivo non sarà in grado di gestire l'elaborazione di quel numero di giocatori, quindi usate con cura). La funzione restituisce un <i>id</i> unico che dovrebbe essere usato memorizzato in una variabile e utilizzato per identificare il <span class="notranslate">server</span> in tutte le ulteriori funzioni di rete, o un valore inferiore a 0 se la connessione fallisce.</p>
   <div data-conref="../../../assets/snippets/network_socket_types.hts"> </div>
   <p>Poiché questo crea un <span class="notranslate">server</span>&quot;grezzo&quot;, non accetterà né userà nessuna delle intestazioni di dati costruite in <span class="notranslate">GameMaker</span> per la comunicazione, e quindi dovreste usare le funzioni <a href="network_send_raw.htm"><span class="inline">network_send_raw()</span></a> e <a href="network_send_udp_raw.htm"><span class="inline">network_send_udp_raw()</span></a> per inviare dati non formattati al <span class="notranslate">server</span> creato.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">network_create_server_raw(type, port, max_client);</p>
+  <p class="code"><span data-field="title" data-format="default">network_create_server_raw</span>(type, port, max_client);</p>
   <table>
     <tbody>
       <tr>

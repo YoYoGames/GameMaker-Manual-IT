@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>rete_invia_pacchetto</title>
+  <title>network_send_packet</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>rete_invia_pacchetto</h1>
+  <h1><span data-field="title" data-format="default">network_send_packet</span></h1>
   <p>Con questa funzione potete inviare un &quot;pacchetto&quot; di dati attraverso la rete. La funzione prende l'<i>id del socket</i> a cui connettersi e poi si deve fornire l'<i>id del buffer</i> che contiene i dati da inviare (per maggiori informazioni su <span class="notranslate">buffers</span> vedere <a href="../Buffers/Buffers.htm">Reference - Buffers</a>) e infine la dimensione (in byte) del pacchetto dati. I pacchetti inviati con questa funzione sono formattati in modo che il gioco <span data-keyref="GameMaker Name">GameMaker</span> che riceve i dati possa &quot;dividere&quot; correttamente i pacchetti, e la funzione restituirà il numero di byte di dati inviati, o un numero inferiore a 0 se l'invio è fallito. Vale la pena notare che la dimensione finale dei dati inviati che viene restituita da questa funzione includerà anche le informazioni di intestazione <span class="notranslate">GameMaker</span>, che è un ulteriore 12 byte.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">network_send_packet(socket, bufferid, size);</p>
+  <p class="code"><span data-field="title" data-format="default">network_send_packet</span>(socket, bufferid, size);</p>
   <table>
     <tbody>
       <tr>

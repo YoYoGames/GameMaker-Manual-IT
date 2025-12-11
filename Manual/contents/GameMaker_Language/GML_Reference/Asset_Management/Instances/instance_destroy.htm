@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>istanza_distruzione</title>
+  <title>instance_destroy</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>istanza_distruzione</h1>
+  <h1><span data-field="title" data-format="default">instance_destroy</span></h1>
   <p>Si chiama questa funzione ogni volta che si desidera &quot;distruggere&quot; un'istanza, normalmente innescando un <a href="../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">evento Destroy</a> e anche un <a href="../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">evento Clean Up</a>. Questo la rimuoverà da <span class="notranslate">room</span> fino a quando <span class="notranslate">room</span> non verrà riavviato (a meno che <span class="notranslate">room</span> non sia persistente). Chiamando la funzione senza argomenti si distruggerà semplicemente l'istanza che è attualmente nello scope e che esegue il codice, ma si può fornire un argomento opzionale &quot;id&quot; e puntare a un'istanza specifica usando il valore dell'istanza <span class="inline"><a href="Instance_Variables/id.htm">id</a></span>, oppure si possono puntare tutte le istanze di un particolare <span class="notranslate">object</span> usando un <a href="../Objects/object_index.htm"><span class="inline">object_index</span></a>. Per esempio:</p>
   <p class="code">instance_destroy(other);      // destroy the &quot;other&quot; instance in a Collision Event<br />
     instance_destroy(obj_Bullet); // destroy ALL instances of the object &quot;obj_Bullet&quot;</p>
@@ -28,7 +28,7 @@
   <p>La variabile &quot;score&quot; sarà incrementata <i>anche se la funzione <span class="inline">instance_destroy</span> è stata chiamata</i>, e l'istanza sarà infine rimossa dal vostro gioco alla fine dell'evento. Fate attenzione a questo, perché se avete (per esempio) creato una risorsa dinamica per l'istanza, come una struttura dati, e poi l'avete distrutta nell'evento destroy, se ci sono riferimenti ad essa dopo che la funzione o azione destroy è stata eseguita, otterrete un errore &quot;risorsa sconosciuta&quot;, poiché l'evento destroy l'ha rimossa dal gioco.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">instance_destroy([id, execute_event_flag]);</p>
+  <p class="code"><span data-field="title" data-format="default">instance_destroy</span>([id, execute_event_flag]);</p>
   <table>
     <tbody>
       <tr>

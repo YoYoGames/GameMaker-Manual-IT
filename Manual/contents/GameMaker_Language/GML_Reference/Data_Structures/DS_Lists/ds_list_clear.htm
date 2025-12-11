@@ -14,11 +14,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_list_clear</h1>
+  <h1><span data-field="title" data-format="default">ds_list_clear</span></h1>
   <p>Con questa funzione potete cancellare tutti i dati dalla struttura dati della lista data. Questo <i>NON</i> distrugge la struttura dei dati (per quello dovreste usare <a href="ds_list_destroy.htm"><span class="inline">ds_list_destroy()</span></a>) cancella solo tutti i dati da essa e rende la lista vuota (dimensione zero). Notate che la cancellazione di una lista de-referenzierà qualsiasi struttura dati memorizzata in essa, causando una perdita di memoria, quindi dovreste passare attraverso la lista e distruggere tutte le voci della struttura dati manualmente prima di cancellarla per evitare questo. L'unica volta che questo non è necessario è quando hai contrassegnato qualsiasi elemento della lista come un'altra <a href="DS_Lists.htm">lista DS</a> o come una <a href="../DS_Maps/DS_Maps.htm">mappa DS</a>, nel qual caso questi elementi saranno distrutti (non cancellati!) e la loro memoria ripulita automaticamente quando il genitore viene cancellato.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">ds_list_clear(id);</p>
+  <p class="code"><span data-field="title" data-format="default">ds_list_clear</span>(id);</p>
   <table>
     <tbody>
       <tr>

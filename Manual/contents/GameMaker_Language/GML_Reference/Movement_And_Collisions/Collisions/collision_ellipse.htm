@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>collisione_ellisse</title>
+  <title>collision_ellipse</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>collisione_ellisse</h1>
+  <h1><span data-field="title" data-format="default">collision_ellipse</span></h1>
   <p><span class="inline">Collision_ellipse</span> usa i primi quattro argomenti (x1,y1,x2,y2) per definire la larghezza e l'altezza di un'ellisse all'interno del corrente <span class="notranslate">room</span> e poi controlla per vedere se <b>qualsiasi</b> <span class="notranslate">object</span> che è definito dall'argomento &quot;obj&quot; è in collisione con quell'area. Questa collisione può essere controllata come precisa o meno, e si può anche scegliere di controllare l'istanza che esegue il codice stesso o meno. Considerate questa immagine:</p>
   <p><img>Qui, l'istanza al centro sta usando un'ellisse di collisione per controllare la palla <span class="notranslate">objects</span>. Ora, quelle blu <i>non</i> hanno un bounding box preciso e come potete vedere, anche se <span class="notranslate">sprite</span> non sta effettivamente toccando l'ellisse, la collisione può ancora avvenire (anche se impostate l'opzione precisa nella funzione a true) poiché il bounding box di quel <span class="notranslate">sprite</span> supera l'area ellittica definita da collision_circle. D'altra parte, le palline verdi saranno considerate in collisione solo se l'attuale <span class="notranslate">sprite</span> supera l'ellisse definita. Ricordate, perché le collisioni precise siano considerate <i>sia</i> il <span class="notranslate">object</span> <span class="notranslate">sprite</span> che la funzione collision devono avere precise marcato come on. Va anche notato che il valore di ritorno della funzione può essere l'id di <i>una qualsiasi</i> delle istanze considerate in collisione.</p>
   <p>Notate che invece di un indice <span class="notranslate">object</span> potete fornire un'istanza <a href="../../Asset_Management/Instances/Instance_Variables/id.htm"><span class="inline">id</span></a> per controllare un'istanza specifica, o le <a href="../../../GML_Overview/Instance_Keywords.htm">parole chiave di istanza</a> <span class="inline">all</span>, o <span class="inline">other</span> (a seconda dell'evento e dello scopo del codice corrente).</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">collision_ellipse(x1, y1, x2, y2, obj, prec, notme);</p>
+  <p class="code"><span data-field="title" data-format="default">collision_ellipse</span>(x1, y1, x2, y2, obj, prec, notme);</p>
   <table>
     <tbody>
       <tr>

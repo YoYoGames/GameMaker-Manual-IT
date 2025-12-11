@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gpu_set_blendmode_ext_sepalpha</h1>
+  <h1><span data-field="title" data-format="default">gpu_set_blendmode_ext_sepalpha</span></h1>
   <p>Quando <span data-keyref="GameMaker Name">GameMaker</span> va a disegnare un pixel c'è un colore sorgente (il colore del pixel che stiamo per disegnare) e un colore destinazione (il colore che è già nel pixel che stiamo disegnando), così quando si determina il nuovo colore del pixel, i colori sorgente e destinazione sono calcolati secondo la modalità di fusione scelta. Ogni componente dei colori è memorizzato come un valore in virgola mobile tra 0 e 1, e il nuovo colore è calcolato moltiplicando ogni componente del colore sorgente per qualche fattore e moltiplicando ogni componente del colore destinazione per qualche altro fattore e poi sommando i risultati componente per componente.</p>
   <p>Questa funzione permette di impostare le diverse parti dei componenti che dovrebbero essere fattorizzate insieme per creare una modalità di fusione personalizzata, selezionando diverse parti di diversi fattori di modalità di fusione per i componenti RGB e il componente Alpha. Quindi gli argomenti &quot;src&quot; e &quot;dest&quot; useranno i primi 3 valori di blend mode (RGB) e gli argomenti &quot;alphasrc&quot; e &quot;alphadest&quot; prenderanno l'ultima parte del fattore di blend mode. Per esempio, se avete la sorgente RGB come <span class="inline">bm_zero</span>, allora (0, 0, 0) sarà usato. Se poi imposti la sorgente Alpha come bm_one allora verrà usato (1), dando una modalità di fusione finale della sorgente di (0, 0, 0, 1).</p>
   <p>La seguente tabella mostra i valori RGBA per ogni modalità di fusione, dove (Rs, Gs, Bs, As) sono considerati i valori sorgente e (Rd, Gd, Bd, Ad) sono i valori di destinazione. Le undici costanti che sono disponibili per l'uso possono essere sia sorgente che destinazione (o entrambe) quando vengono usate in questa funzione.</p>
@@ -92,7 +92,7 @@
   </ul>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">gpu_set_blendmode(src, dest, alphasrc, alphadest);</p>
+  <p class="code"><span data-field="title" data-format="default">gpu_set_blendmode_ext_sepalpha</span>(src, dest, alphasrc, alphadest);</p>
   <table>
     <tbody>
       <tr>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>istanza_creata_strato</title>
+  <title>instance_create_layer</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>istanza_creata_strato</h1>
+  <h1><span data-field="title" data-format="default">instance_create_layer</span></h1>
   <p>Con questa funzione è possibile creare una nuova istanza del sito <span class="notranslate">object</span> specificato in un punto qualsiasi del sito <span class="notranslate">room</span> e sul layer specificato. Il livello può essere identificato utilizzando il valore dell'ID del livello (restituito dalla funzione <a href="../Rooms/General_Layer_Functions/layer_create.htm"><span class="inline">layer_create()</span></a>) o con il nome del layer (come <span class="notranslate">string</span>, ad esempio &quot;instance_layer&quot;) definito nell'<a href="../../../../The_Asset_Editors/Rooms.htm">editor della stanza</a>.</p>
   <p>Questa funzione restituisce il valore <a href="Instance_Variables/id.htm"><span class="inline">id</span></a> della nuova istanza, che può essere memorizzata in una variabile e utilizzata per accedere a tale istanza. Si noti che questa funzione richiamerà anche l'<a href="../../../../The_Asset_Editors/Object_Properties/Object_Events.htm">evento Create</a> dell'istanza creata <i>prima di</i> continuare con il codice o le azioni per l'evento che ha chiamato la funzione.</p>
   <p class="note"><span class="important">IMPORTANTE</span> Esiste una profondità minima e massima dei livelli compresa tra -16000 e 16000. Tutto ciò che viene posizionato su un livello al di fuori di questo intervallo <b>non verrà disegnato</b>, anche se tutti gli eventi continueranno a svolgersi normalmente.</p>
@@ -26,7 +26,7 @@
   <p class="note"><span class="note">NOTA</span> Le variabili di <span class="notranslate">struct</span> vengono &quot;copiate&quot; nella nuova istanza, il che significa che array, <span class="notranslate">structs</span> e altre risorse vengono copiate per riferimento e non duplicate.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">instance_create_layer(x, y, layer_id, obj);</p>
+  <p class="code"><span data-field="title" data-format="default">instance_create_layer</span>(x, y, layer_id, obj);</p>
   <table>
     <tbody>
       <tr>

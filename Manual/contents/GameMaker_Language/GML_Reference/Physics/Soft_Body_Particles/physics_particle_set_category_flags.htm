@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>physics_particle_set_category_flags</h1>
+  <h1><span data-field="title" data-format="default">physics_particle_set_category_flags</span></h1>
   <p>Con questa funzione puoi cambiare le bandiere delle particelle per una categoria di particelle. Il valore di <span class="inline">category</span> è quello che hai definito nella funzione <a href="physics_particle_create.htm"><span class="inline">physics_particle_create()</span></a> o (se hai creato un gruppo) <a href="physics_particle_group_begin.htm"><span class="inline">physics_particle_group_begin()</span></a>mentre le bandiere sono il valore di ritorno di una combinazione delle seguenti <b>costanti</b>:</p>
   <table>
     <tbody>
@@ -63,7 +63,7 @@
   <p>Questi flag utilizzano la mascheratura dei bit per creare un valore finale di uscita che viene poi controllato per impostare le diverse proprietà di base della categoria di particelle (con la proprietà di base che è sempre quella di <span class="inline">phy_particle_flag_water</span>). Per esempio, se vuoi simulare un liquido viscoso con tensione superficiale useresti il <a href="../../../../Additional_Information/Bitwise_Operators.htm">bitwise <i>o</i></a> &quot;|&quot; per mascherare i bit appropriati come mostrato nell'esempio qui sotto. In questo modo puoi impostare proprietà diverse (oltre alle proprietà globali) per ogni categoria di particelle creata.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_particle_set_category_flags(category, flags)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_particle_set_category_flags</span>(category, flags)</p>
   <table>
     <tbody>
       <tr>

@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Corde</title>
-  <meta name="generator" content="Adobe RoboHelp 2020" />
+  <title>Stringhe</title>
+  <meta name="generator" content="Adobe RoboHelp 2022" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
   <meta name="rh-authors" content="Mark Alexander" />
@@ -14,17 +14,17 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>Corde</h1>
-  <p>Prima o poi, durante la realizzazione di un gioco, sarà necessario utilizzare del testo. Il testo nei giochi viene trattato utilizzando le funzioni di <b>stringa</b> (un <span class="notranslate">string</span> è solo un altro modo di dire una riga di testo) e <span data-keyref="GameMaker Name">GameMaker</span> ha una serie completa di funzioni che permettono di manipolare <span class="notranslate">strings</span> in molti modi, tra cui l'inserimento di un <span class="notranslate">string</span> in un altro, la copia di <span class="notranslate">strings</span> e la possibilità di analizzare <span class="notranslate">strings</span> per le cifre o le lettere che contengono. In generale, un <span class="notranslate">string</span> testo può essere creato <i>solo</i> aggiungendolo all'interno di doppi apici &quot; &quot; e <em>non sono accettati <span class="notranslate">strings</span> apici singoli</em>, né è possibile dividere il <span class="notranslate">string</span> testo su più righe e aspettarsi che <span data-keyref="GameMaker Name">GameMaker</span> lo visualizzi come se le interruzioni di riga fossero dei newline (a meno che non si utilizzi un identificatore <span class="inline">@</span> <strong>letterale</strong> di <strong>stringa</strong>, come spiegato di seguito).</p>
-  <p>Vale la pena di notare che ci sono alcune convenzioni che si possono usare quando si crea <span class="notranslate">strings</span>, soprattutto per quanto riguarda l'uso dei <i>caratteri di escape</i>. Si tratta di caratteri preceduti dal simbolo &quot;<span class="inline">\</span>&quot;. Quindi, per esempio, se si volessero mettere le virgolette all'interno di un <span class="notranslate">string</span> si otterrebbe qualcosa di simile:</p>
+  <h1><span data-field="title" data-format="default">Stringhe</span></h1>
+  <p>Prima o poi, durante la realizzazione di un gioco, sarà necessario utilizzare del testo. Il testo nei giochi viene trattato utilizzando le funzioni di <b>stringa</b> (un <span class="notranslate">string</span> è solo un altro modo di dire una riga di testo) e <span data-keyref="GameMaker Name">GameMaker</span> ha una serie completa di funzioni che permettono di manipolare <span class="notranslate">strings</span> in molti modi, tra cui l&#39;inserimento di un <span class="notranslate">string</span> in un altro, la copia di <span class="notranslate">strings</span> e la possibilità di analizzare <span class="notranslate">strings</span> per le cifre o le lettere che contengono. In generale, un <span class="notranslate">string</span> testo può essere creato <i>solo</i> aggiungendolo all&#39;interno di doppi apici &quot; &quot; e <em>non sono accettati <span class="notranslate">strings</span> apici singoli</em>, né è possibile dividere il <span class="notranslate">string</span> testo su più righe e aspettarsi che <span data-keyref="GameMaker Name">GameMaker</span> lo visualizzi come se le interruzioni di riga fossero dei newline (a meno che non si utilizzi un identificatore <span class="inline">@</span> <strong>letterale</strong> di <strong>stringa</strong>, come spiegato di seguito).</p>
+  <p>Vale la pena di notare che ci sono alcune convenzioni che si possono usare quando si crea <span class="notranslate">strings</span>, soprattutto per quanto riguarda l&#39;uso dei <i>caratteri di escape</i>. Si tratta di caratteri preceduti dal simbolo &quot;<span class="inline">\</span>&quot;. Quindi, per esempio, se si volessero mettere le virgolette all&#39;interno di un <span class="notranslate">string</span> si otterrebbe qualcosa di simile:</p>
   <p class="code">str = &quot;Hello\&quot;World\&quot;&quot;;</p>
-  <p><span data-keyref="GameMaker Name">GameMaker</span> dispone anche di un supporto completo per i caratteri Unicode a quattro byte, che consente di decodificare e codificare i caratteri Unicode nei limiti superiori dello standard (compresi, ma non solo, gli emoji). Per lavorare con i caratteri Unicode, è possibile utilizzare &quot;<span class="inline">\</span>&quot; per precedere qualsiasi letterale Unicode - cifre esadecimali precedute da &quot;<span class="inline">u</span>&quot;, ad esempio &quot;<span class="inline"><span class="inline">\u00e2</span>&quot; per &quot;á&quot; - dove le cifre sono il numero del carattere Unicode. Quando si lavora con Unicode in questo modo, bisogna essere consapevoli del fatto che <span data-keyref="GameMaker Name">GameMaker</span> interpreterà <i>tutte le</i> cifre che seguono il &quot;<span class="inline">u</span>&quot;, quindi se si volesse scrivere &quot;áa&quot;, ad esempio, si dovrebbe usare:</p>
+  <p><span data-keyref="GameMaker Name">GameMaker</span> dispone anche di un supporto completo per i caratteri Unicode a quattro byte, che consente di decodificare e codificare i caratteri Unicode nei limiti superiori dello standard (compresi, ma non solo, gli emoji). Per lavorare con i caratteri Unicode, è possibile utilizzare &quot;<span class="inline">\</span>&quot; per precedere qualsiasi letterale Unicode - cifre esadecimali precedute da &quot;<span class="inline">u</span>&quot;, ad esempio &quot;<span class="inline">\u00e2</span>&quot; per &quot;á&quot; - dove le cifre sono il numero del carattere Unicode. Quando si lavora con Unicode in questo modo, bisogna essere consapevoli del fatto che <span data-keyref="GameMaker Name">GameMaker</span> interpreterà <i>tutte le</i> cifre che seguono il &quot;<span class="inline">u</span>&quot;, quindi se si volesse scrivere &quot;áa&quot;, ad esempio, si dovrebbe usare:</p>
   <p class="code">&quot;\u00e2\a&quot;</p>
   <p>o</p>
   <p class="code">&quot;\u00e2\u61&quot;</p>
   <p>o</p>
   <p class="code">&quot;\u00e2&quot; + &quot;a&quot;</p>
-  <p>poiché l'uso di &quot;<span class="inline">\u00e2a</span>&quot; darebbe luogo al carattere Unicode &quot;<span class="inline">ส</span>&quot; (che diventerebbe essenzialmente &quot;<span class="inline">\ue2a</span>&quot;).<i></i></p>
+  <p>poiché l&#39;uso di &quot;<span class="inline">\u00e2a</span>&quot; darebbe luogo al carattere Unicode &quot;<span class="inline">ส</span>&quot; (che diventerebbe essenzialmente &quot;<span class="inline">\ue2a</span>&quot;).<i></i></p>
   <p><span data-keyref="GameMaker Name">GameMaker</span> può anche gestire qualsiasi letterale esadecimale, normalmente scritto come cifre esadecimali dopo &quot;<span class="inline">0x</span>&quot;, ad esempio &quot;<span class="inline">0xff</span>&quot;, dove le cifre sono il numero del carattere da utilizzare. In <span data-keyref="GameMaker Name">GameMaker</span> si scrive &quot;<span class="inline">\x</span>&quot; e poi il valore esadecimale. Questi e altri caratteri di escape predefiniti sono elencati nella tabella seguente:</p>
   <table>
     <tbody>
@@ -78,22 +78,21 @@
       </tr>
     </tbody>
   </table>
-  <p class="note"><b>NOTA</b>: <span class="notranslate">Strings</span> supporta l'avanzamento modulo, la tabulazione verticale, ecc... ma questo non significa che lo faccia anche il <b>rendering</b>, e quando si disegna <span class="notranslate">strings</span> questi caratteri possono essere ignorati.</p>
-  <p>È anche possibile creare letterali di <i>stringa</i> precedendo l'intero <span class="notranslate">string</span> con il carattere <span class="inline">@</span>:</p>
+  <p class="note"><b>NOTA</b>: <span class="notranslate">Strings</span> supporta l&#39;avanzamento modulo, la tabulazione verticale, ecc... ma questo non significa che lo faccia anche il <b>rendering</b>, e quando si disegna <span class="notranslate">strings</span> questi caratteri possono essere ignorati.</p>
+  <p>È anche possibile creare letterali di <i>stringa</i> precedendo l&#39;intero <span class="notranslate">string</span> con il carattere <span class="inline">@</span>:</p>
   <p class="code">var test = @&quot;<br />
     Line breaks<br />
     over multiple<br />
     lines<br />
     &quot;;</p>
-  <p>Il codice sopra riportato renderà <span class="notranslate">string</span> su più righe come se fosse incluso un carattere di escape di interruzione di riga. Un letterale verbatim <span class="notranslate">string</span> è simile ai precedenti letterali <span class="notranslate">GameMaker</span> versione <span class="notranslate">string</span>, ma anch'essi usano virgolette doppie o singole e devono essere preceduti da un simbolo <span class="inline">@</span>, possono essere spezzati su più righe nel file di codice e NON supportano i caratteri di escape, cioè <span class="inline">@&quot;Hello\World&quot;</span> <em>non</em> cercherà di sfuggire alla W di World e sarà memorizzato verbatim. Si noti però che quando si usano i letterali <span class="notranslate">string</span> come questo, è necessario spezzare <span class="notranslate">string</span> se si vogliono includere le virgolette come parte di <span class="notranslate">string</span>, cioè:</p>
+  <p>Il codice sopra riportato renderà <span class="notranslate">string</span> su più righe come se fosse incluso un carattere di escape di interruzione di riga. Un letterale verbatim <span class="notranslate">string</span> è simile ai precedenti letterali <span class="notranslate">GameMaker</span> versione <span class="notranslate">string</span>, ma anch&#39;essi usano virgolette doppie o singole e devono essere preceduti da un simbolo <span class="inline">@</span>, possono essere spezzati su più righe nel file di codice e NON supportano i caratteri di escape, cioè <span class="inline">@&quot;Hello\World&quot;</span> <em>non</em> cercherà di sfuggire alla W di World e sarà memorizzato verbatim. Si noti però che quando si usano i letterali <span class="notranslate">string</span> come questo, è necessario spezzare <span class="notranslate">string</span> se si vogliono includere le virgolette come parte di <span class="notranslate">string</span>, cioè:</p>
   <p class="code">var test = @&quot;Hello &quot; + &quot;\&quot;&quot; + @&quot;World&quot; + &quot;\&quot;&quot;</p>
-  <p>Un'altra cosa da notare è che il carattere Unicode 9647 (▯) viene usato per sostituire qualsiasi glifo mancante che potrebbe essere presente nel vostro <span class="notranslate">font</span> designato quando lo rendete nell'evento draw. Quindi, se il vostro <span class="notranslate">font</span> non ha, per esempio, il simbolo °, la scrittura di 90° produrrà effettivamente 90▯.</p>
-  <p>L'elenco di funzioni che segue è tutto dedicato alla gestione delle stringhe:</p>
+  <p>Un&#39;altra cosa da notare è che il carattere Unicode 9647 (▯) viene usato per sostituire qualsiasi glifo mancante che potrebbe essere presente nel vostro <span class="notranslate">font</span> designato quando lo rendete nell&#39;evento draw. Quindi, se il vostro <span class="notranslate">font</span> non ha, per esempio, il simbolo °, la scrittura di 90° produrrà effettivamente 90▯.</p>
+  <p>L&#39;elenco di funzioni che segue è tutto dedicato alla gestione delle stringhe:</p>
   <ul class="colour">
     <li><a href="ansi_char.htm"><span class="notranslate">ansi_char</span></a></li>
     <li><a href="chr.htm"><span class="notranslate">chr</span></a></li>
     <li><a href="ord.htm"><span class="notranslate">ord</span></a></li>
-    <li><a href="real.htm"><span class="notranslate">real</span></a></li>
     <li><a href="string.htm"><span class="notranslate">string</span></a></li>
     <li><a href="string_byte_at.htm"><span class="notranslate">string_byte_at</span></a></li>
     <li><a href="string_byte_length.htm"><span class="notranslate">string_byte_length</span></a></li>
@@ -125,16 +124,16 @@
     <li><a href="string_hash_to_newline.htm"><span class="notranslate">string_hash_to_newline</span></a></li>
     <li><a href="../Variable_Functions/is_string.htm"><span class="notranslate">is_string</span></a></li>
   </ul>
-  <p> </p>
+  <p> </p>
   <p>Oltre alle funzioni che riguardano specificamente <span class="notranslate">strings</span>, alcuni target consentono di accedere agli appunti per ottenere e impostare informazioni di testo:</p>
   <ul class="colour">
     <li><a href="clipboard_has_text.htm"><span class="notranslate">clipboard_has_text</span></a></li>
     <li><a href="clipboard_get_text.htm"><span class="notranslate">clipboard_get_text</span></a></li>
     <li><a href="clipboard_set_text.htm"><span class="notranslate">clipboard_set_text</span></a></li>
   </ul>
-  <p> </p>
-  <p> </p>
-  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
   <div class="footer">
     <div class="buttons">
       <div class="clear">
@@ -142,7 +141,7 @@
         <div style="float:right">Il prossimo: <a href="../Maths_And_Numbers/Maths_And_Numbers.htm">Matematica e numeri</a></div>
       </div>
     </div>
-    <h5><span data-keyref="Copyright Notice">© Copyright <span class="notranslate">YoYo Games Ltd.</span> 2022 Tutti i diritti riservati</span></h5>
+    <h5><span data-keyref="Copyright Notice">© Copyright YoYo Games Ltd. 2022 All Rights Reserved</span></h5>
   </div>
   <!-- KEYWORDS
 Strings

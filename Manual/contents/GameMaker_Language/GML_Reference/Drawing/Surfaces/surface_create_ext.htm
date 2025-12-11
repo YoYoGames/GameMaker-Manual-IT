@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>crea_superficie_ext</title>
+  <title>surface_create_ext</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,14 +15,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>crea_superficie_ext</h1>
+  <h1><span data-field="title" data-format="default">surface_create_ext</span></h1>
   <p>Questa funzione vi permette di attaccare una superficie a un elemento canvas che esiste già nella vostra pagina web, il che significa che potete effettivamente dividere porzioni del vostro gioco da disegnare in vari punti diversi della pagina. A tal fine, <i>dovete</i> aver definito correttamente l'elemento canvas all'interno della pagina <span class="inline">*.html</span> del vostro gioco usando le dimensioni e i nomi corretti che corrispondono alle superfici che volete creare. Così, avreste la vostra tela &quot;principale&quot;, e poi i vostri elementi di tela di superficie secondaria, che saranno assegnati usando questa funzione alle superfici corrette. L'immagine seguente è un esempio di come verrebbe impostata una pagina con tre elementi canvas:</p>
   <p><img>Il layout della pagina può essere complicato, soprattutto se si desidera che tutti gli elementi siano allineati correttamente, ma una volta che il duro compito di creare il layout è stato completato, è possibile aggiungere questo file <span class="inline">html</span> come file di pagina predefinito per il gioco utilizzando la <a href="../../../../Settings/Game_Options/HTML5.htm">scheda HTML5</a> delle <a href="../../../../Settings/Game_Options.htm">Opzioni di gioco</a>. La prossima cosa da fare è impostare il tuo <span class="notranslate">room</span> e le viste, poiché ogni superficie dovrà essere associata ad una vista specifica per &quot;catturare&quot; le immagini del gioco (vedi la variabile vista <a href="../../Cameras_And_Display/Cameras_And_Viewports/view_surface_id.htm"><span class="inline">view_surface_id[0...7]</span></a>). L'immagine qui sotto mostra come sarebbe impostato il gioco <span class="notranslate">room</span> per l'esempio del canvas di cui sopra:</p>
   <p><img>Infine, usereste questa funzione per creare le superfici, con il nome uguale a quello usato per gli elementi del canvas e la dimensione corrispondente alla dimensione dello stesso canvas. La funzione restituirà l'indice della superficie che dovrebbe essere memorizzato in una variabile per le future chiamate di funzione. Quando la superficie viene creata per la prima volta, può contenere del &quot;rumore&quot;, in quanto fondamentalmente è solo un'area di memoria che viene messa da parte per lo scopo (e quella memoria può ancora contenere informazioni), quindi potreste voler cancellare la superficie prima dell'uso con una funzione come <a href="../Colour_And_Alpha/draw_clear_alpha.htm"><span class="inline">draw_clear_alpha()</span></a>.</p>
   <p class="note"><b>NOTA</b>: Questa funzione è disponibile solo con il modulo HTML5.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">surface_create_ext(name, w, h);</p>
+  <p class="code"><span data-field="title" data-format="default">surface_create_ext</span>(name, w, h);</p>
   <table>
     <tbody>
       <tr>

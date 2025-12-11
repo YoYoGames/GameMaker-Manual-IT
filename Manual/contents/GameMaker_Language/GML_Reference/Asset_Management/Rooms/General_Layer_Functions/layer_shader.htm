@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>ombreggiatore di livello</title>
+  <title>layer_shader</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ombreggiatore di livello</h1>
+  <h1><span data-field="title" data-format="default">layer_shader</span></h1>
   <p>Con questa funzione si può assegnare una risorsa <span class="notranslate">shader</span> a qualsiasi dato livello e il livello sarà poi reso usando quel <span class="notranslate">shader</span>. Si fornisce il valore ID unico del livello o il nome del livello (come <span class="notranslate">string</span> - questo avrà un impatto sulle prestazioni), insieme all'ID del <span class="notranslate">shader</span> da usare. Il <span class="notranslate">shader</span> deve essere stato creato in precedenza nel Browser <span class="notranslate">Asset</span> e l'indice <span class="notranslate">shader</span> (il nome della risorsa <span class="notranslate">shader</span> ) viene poi passato a questa funzione. Se il livello assegnato ha istanze aggiunte ad esso, allora il <span class="notranslate">shader</span> sarà applicato a <i>tutti gli</i> eventi di disegno che l'istanza usa - per esempio se l'istanza ha un evento Draw GUI Begin, allora il <span class="notranslate">shader</span> sarà applicato automaticamente ad esso. Il <span class="notranslate">shader</span> influenzerà anche qualsiasi altro elemento grafico disegnato su quel livello, come le mappe <span class="notranslate">sprite</span> <span class="notranslate">assets</span> o <span class="notranslate">tile</span>.</p>
   <p>Si noti che la funzione <i>non</i> deve essere chiamata in nessun evento di disegno o di passo, ma piuttosto deve essere chiamata solo all'inizio del <span class="notranslate">room</span> nel <b>codice di creazione della stanza</b> o nell'<b>evento Create / </b> <b>Room Start Event</b> di un'istanza.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">layer_shader(layer_id, shader)</p>
+  <p class="code"><span data-field="title" data-format="default">layer_shader</span>(layer_id, shader)</p>
   <table>
     <tbody>
       <tr>

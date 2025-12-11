@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_sound_set_listener_mask</h1>
+  <h1><span data-field="title" data-format="default">audio_sound_set_listener_mask</span></h1>
   <p>Questa funzione può essere usata per impostare la bit-mask per un suono in modo che venga riprodotto solo da quegli ascoltatori specificati. Potete creare una maschera di bit usando la funzione <a href="Audio_Listeners/audio_get_listener_info.htm"><span class="inline">audio_get_listener_info()</span></a> e poi usando il bitwise <span class="inline">or</span> (&quot;|&quot;) per creare una maschera personalizzata con quegli ascoltatori da cui volete che il suono venga riprodotto, e poi applicare questa maschera personalizzata al suono dopo averlo riprodotto. Questa maschera sovrascriverà la maschera di default o quella che potreste aver impostato usando la funzione <a href="Audio_Listeners/audio_get_listener_mask.htm"><span class="inline">audio_set_listener_mask()</span></a>.</p>
   <p>Questa funzione può essere usata solo su un suono dopo che è stato impostato per suonare e richiede l'ID del suono come restituito dalla funzione usata per suonare il suono.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">audio_sound_set_listener_mask(soundID, mask);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_sound_set_listener_mask</span>(soundID, mask);</p>
   <table>
     <tbody>
       <tr>

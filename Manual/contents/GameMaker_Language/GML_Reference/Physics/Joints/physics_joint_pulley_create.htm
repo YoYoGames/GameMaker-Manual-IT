@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>creazione di un giunto fisico</title>
+  <title>physics_joint_pulley_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>creazione di un giunto fisico</h1>
+  <h1><span data-field="title" data-format="default">physics_joint_pulley_create</span></h1>
   <p>Il giunto a carrucola è usato per collegare due istanze all'interno del mondo fisico in modo tale che muovendone una si influenzi direttamente il movimento dell'altra. Questi giunti sono prima ancorati nello spazio del mondo in due punti, ognuno collegato a un'istanza al suo centro di massa. Questo può essere cambiato impostando le coordinate locali di ancoraggio x/y relative all'origine dell'istanza, il che significa che la connessione effettiva dall'istanza al punto di ancoraggio del mondo fisico può essere spostata da qualche parte diversa dalla sua origine. L'immagine seguente illustra questo:</p>
   <p><img>Se guardate inst2 potete vedere che il suo punto di ancoraggio locale è stato spostato di 20 pixel a &quot;sinistra&quot; della sua origine (Ricordate! I punti di ancoraggio del mondo sono definiti usando le coordinate <span class="notranslate">room</span>, mentre i punti di ancoraggio locali sono definiti relativamente all'origine dell'istanza). Potete anche specificare un rapporto per il giunto della puleggia, che dice a un lato o all'altro di muoversi più velocemente, con un valore inferiore a 1 che fa muovere più velocemente la prima istanza (ad esempio 0,5 la farà muovere due volte più velocemente) e un valore superiore a 1 che fa muovere più velocemente la seconda istanza (ad esempio 2 la farà muovere due volte più velocemente).</p>
   <p>Come per tutti i giunti, se impostate il valore &quot;col&quot; su <span class="inline">true</span> allora le due istanze possono interagire e collidere tra loro ma <i>solo</i> se hanno eventi di collisione, invece se è impostato su <span class="inline">false</span>, non collideranno in nessun caso.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_joint_pulley_create(inst1, inst2, w_anchor1_x, w_anchor1_y, w_anchor2_x, w_anchor2_y, l_anchor1_x, l_anchor1_y, l_anchor2_x, l_anchor2_y, ratio, col)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_joint_pulley_create</span>(inst1, inst2, w_anchor1_x, w_anchor1_y, w_anchor2_x, w_anchor2_y, l_anchor1_x, l_anchor1_y, l_anchor2_x, l_anchor2_y, ratio, col)</p>
   <table>
     <tbody>
       <tr>

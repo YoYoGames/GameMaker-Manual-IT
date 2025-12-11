@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_list_mark_as_map</h1>
+  <h1><span data-field="title" data-format="default">ds_list_mark_as_map</span></h1>
   <p>Questa funzione &quot;marcherà&quot; (o &quot;flag&quot;) una data posizione all'interno di una lista DS precedentemente creata come contenente una <a href="../DS_Maps/DS_Maps.htm">mappa DS</a>. Questa funzionalità è necessaria quando si codifica JSON <span class="notranslate">strings</span> (che si può creare usando <a href="../../File_Handling/Encoding_And_Hashing/json_encode.htm"><span class="inline">json_encode()</span></a>), ma può anche essere utile quando si annidano le strutture di dati, poiché gli elementi marcati in questo modo saranno automaticamente smaltiti (distrutti) quando la lista DS madre viene distrutta. Questo significa che non devi passare manualmente attraverso il contenuto della lista e distruggere le strutture dati marcate individualmente prima di distruggere la lista &quot;madre&quot;. Tuttavia, se si elimina la posizione dell'elenco individualmente, la struttura dati che conteneva <i>non</i> verrà eliminata e si dovrebbe chiamare la funzione appropriata di distruzione della mappa DS prima di eliminare la posizione dell'elenco padre. Nota anche che se chiami la funzione <a href="ds_list_clear.htm"><span class="inline">ds_list_clear()</span></a> su una lista, qualsiasi elemento contrassegnato come mappa verrà distrutto anch'esso quando la lista verrà cancellata.</p>
   <p>Vale anche la pena notare che se la posizione che è stata segnata cambia all'interno della lista, il &quot;marchio&quot; si sposterà con essa, quindi se avete segnato la posizione 3 nella lista (per esempio) e poi inserite altri 2 elementi sotto di essa in modo che si sposti fino alla posizione 5, sarà <i>ancora</i> segnato come una mappa.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">ds_list_mark_as_map(id, pos);</p>
+  <p class="code"><span data-field="title" data-format="default">ds_list_mark_as_map</span>(id, pos);</p>
   <table>
     <tbody>
       <tr>

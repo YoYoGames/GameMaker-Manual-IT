@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>audio_play_sound</h1>
+  <h1><span data-field="title" data-format="default">audio_play_sound</span></h1>
   <p>Con questa funzione è possibile riprodurre qualsiasi risorsa sonora nel gioco. L'utente fornisce l'indice del suono e gli assegna una priorità, che viene poi utilizzata per determinare il modo in cui i suoni vengono gestiti quando il numero di suoni in riproduzione supera il limite impostato dalla funzione. <a href="audio_channel_num.htm"><span class="inline">audio_channel_num()</span></a>. Il valore di priorità può essere un numero reale qualsiasi (il valore effettivo è arbitrario e può andare da 0 a 1 o da 0 a 100, in quanto <span data-keyref="GameMaker Name">GameMaker</span> assegnerà la stessa priorità). Si noti che quando si parla di priorità, più <i>alto</i> è il numero <i>più alta</i> è la priorità, per cui un suono con priorità 100 sarà favorito rispetto a un suono con priorità 1. Il terzo argomento serve per rendere il suono prioritario. Il terzo argomento serve a creare il suono <span class="notranslate">loop</span> e impostandolo su <span class="inline">true</span> il suono verrà riprodotto <span class="notranslate">loop</span> fino a quando non verrà interrotto, mentre impostandolo su <span class="inline">false</span> il suono verrà riprodotto una sola volta.</p>
   <div data-conref="../../../../assets/snippets/audio_play_sound_last_arguments.hts"> </div>
   <p>Questa funzione restituisce anche un numero di indice univoco per il suono riprodotto, che può essere memorizzato in una variabile per poterlo mettere in pausa o interrompere con le funzioni appropriate. In questo modo, se si hanno più istanze dello stesso suono in riproduzione, si può scegliere una sola istanza di quel suono da gestire con le funzioni audio.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">audio_play_sound(index, priority, loop, [gain], [offset], [pitch], [listener_mask]);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_play_sound</span>(index, priority, loop, [gain], [offset], [pitch], [listener_mask]);</p>
   <table>
     <tbody>
       <tr>

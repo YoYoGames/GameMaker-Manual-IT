@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>physics_world_draw_debug</h1>
+  <h1><span data-field="title" data-format="default">physics_world_draw_debug</span></h1>
   <p>Questa funzione disegnerà una rappresentazione del sistema del mondo fisico di <span class="notranslate">room</span> per aiutare con <span class="notranslate">debugging</span> quando si hanno problemi a far funzionare correttamente la scena fisica. A volte il problema può essere nella parte di rendering del vostro gioco, per esempio un <span class="notranslate">sprite</span> può essere disegnato nella posizione o nella rotazione sbagliata, dando l'impressione di una fisica scorretta, o può essere che i vostri calcoli non siano corretti. In entrambi i casi, questa funzione vi aiuterà a trovare e risolvere il problema disegnando ciò che sta succedendo nel vostro sistema fisico. Per fare questo, dovete dirgli quale parte del sistema disegnare, e questo viene fatto passando un valore creato dai bit memorizzati in varie costanti &quot;flag&quot;:</p>
   <table>
     <colgroup>
@@ -66,7 +66,7 @@
   <p><img>Come potete vedere con il codice qui sopra, solo le forme e i centri di massa sono disegnati sullo schermo (così come i colori che rappresentano i loro stati - per ulteriori informazioni controllate la documentazione online di Box 2D). Allo stesso modo potete visualizzare più, o anche tutte, le costanti che desiderate debuggare... Basta &quot;o&quot; tutti insieme! Un'altra cosa da notare - questa funzione dovrebbe essere chiamata <i>solo</i> nell'evento di disegno di un'istanza che ha una profondità inferiore a quella che desideri debuggare, altrimenti non sarai in grado di vedere le informazioni di debug.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_world_draw_debug(flag)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_world_draw_debug</span>(flag)</p>
   <table>
     <tbody>
       <tr>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>fisica_applica_impulso</title>
+  <title>physics_apply_impulse</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>fisica_applica_impulso</h1>
+  <h1><span data-field="title" data-format="default">physics_apply_impulse</span></h1>
   <p>Non solo è possibile applicare forza e gravità a un <span class="notranslate">object</span> con la fisica in <span data-keyref="GameMaker Name">GameMaker</span>, ma è anche possibile applicare un impulso. Questo è leggermente diverso da una forza in quanto quando viene applicato influenzerà <i>immediatamente </i>la velocità, e, potenzialmente la coppia (o &quot;spin&quot;) del <span class="notranslate">object</span>, in particolare se il punto scelto per applicare l'impulso non è allineato con il centro di massa (nota: il centro di massa <i>non è necessariamente</i> lo stesso dell'origine!) Ecco un'illustrazione:</p>
   <p><img>Come potete vedere, il giocatore ha cliccato sulla palla e questo gli ha dato un impulso a muoversi verso l'alto a destra, girando mentre va. L'impulso esatto è definito dal vettore che otteniamo dalle componenti ximpulso/yimpulse in relazione alle coordinate xpos/ypos - che significa semplicemente che l'impulso è calcolato come la distanza da xpos/ypos a ximpulso/yimpulse in Newton, e la direzione è l'angolo che otteniamo da xpos/ypos a ximpulso/yimpulse.</p>
   <p class="note"><b>NOTA</b>: Il mondo fisico usa i metri per tutti i suoi calcoli, e il rapporto di pixel per metro è definito nell'editor <span class="notranslate">room</span> o usando <span style="font-size:1px;"><a href="../The_Physics_World/physics_world_create.htm"><span class="inline">physics_world_create()</span></a></span>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_apply_impulse(xpos, ypos, ximpulse, yimpulse)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_apply_impulse</span>(xpos, ypos, ximpulse, yimpulse)</p>
   <table>
     <tbody>
       <tr>

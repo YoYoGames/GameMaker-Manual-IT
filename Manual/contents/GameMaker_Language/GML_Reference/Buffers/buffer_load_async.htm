@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>buffer_load_async</h1>
+  <h1><span data-field="title" data-format="default">buffer_load_async</span></h1>
   <p>Con questa funzione potete caricare un file che avete creato in precedenza usando la funzione <a href="buffer_save.htm"><span class="inline">buffer_save()</span></a> (o qualsiasi altra funzione per salvare <span class="notranslate">buffers</span>) in un <span class="notranslate">buffer</span>. L'&quot;offset&quot; definisce la posizione iniziale all'interno del <span class="notranslate">buffer</span> per il caricamento (in byte), e la &quot;dimensione&quot; è la dimensione dell'area <span class="notranslate">buffer</span> da caricare da quell'offset in poi (anche questa in byte). Potete fornire un valore di -1 per l'argomento "size" e l'intero <span class="notranslate">buffer</span> sarà caricato. Notate che la funzione caricherà da una cartella &quot;predefinita&quot;, che <i>non</i> ha bisogno di essere inclusa come parte del file <span class="notranslate">path</span> che fornite. Questa cartella verrà creata se non esiste o quando si salva un file usando <a href="buffer_save_async.htm"><span class="inline">buffer_save_async()</span></a>.</p>
   <p>La funzione restituisce un valore ID unico che può poi essere usato nell'<a href="../../../The_Asset_Editors/Object_Properties/Async_Events/Save_Load.htm">evento asincrono Save / Load</a> per controllare il <a href="../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> ID, come mostrato nell'esempio esteso qui sotto. La mappa <span class="inline">async_load</span> nell'evento avrà le seguenti due coppie chiave/valore:</p>
   <ul class="colour">
@@ -25,7 +25,7 @@
   <p>Si prega di leggere la pagina <span class="inline"><a href="buffer_load.htm">buffer_load()</a></span> per le note specifiche della piattaforma.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">buffer_load_async(buffer, filename, offset, size);</p>
+  <p class="code"><span data-field="title" data-format="default">buffer_load_async</span>(buffer, filename, offset, size);</p>
   <table>
     <tbody>
       <tr>

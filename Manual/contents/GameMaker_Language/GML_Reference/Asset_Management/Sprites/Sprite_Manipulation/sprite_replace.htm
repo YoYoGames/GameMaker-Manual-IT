@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_replace</h1>
+  <h1><span data-field="title" data-format="default">sprite_replace</span></h1>
   <p>Questa funzione funziona quasi allo stesso modo di <a href="sprite_add.htm"><span class="inline">sprite_add()</span></a>solo che invece di restituire l'indice del <span class="notranslate">sprite</span> che state importando, sovrascrive un indice creato in precedenza <span class="notranslate">sprite</span>. Quando usate questa funzione dovreste usare un indice <span class="notranslate">sprite</span> che è stato creato e memorizzato in una variabile usando altre funzioni come <a href="sprite_add.htm"><span class="inline">sprite_add()</span></a> o <a href="sprite_create_from_surface.htm"><span class="inline">sprite_create_from_surface()</span></a>, o anche <a href="sprite_duplicate.htm"><span class="inline">sprite_duplicate()</span></a>piuttosto che un albero delle risorse <span class="notranslate">sprite</span> <span class="notranslate">asset</span>. È <i>possibile</i> sostituire un <span class="notranslate">sprite</span> dal gioco <span class="notranslate">assets</span> usando questa funzione, ma così facendo si perde l'ID di riferimento per il <span class="notranslate">sprite</span> che si sta sostituendo, indipendentemente dal fatto che si chiami o meno <span class="inline">game_restart()</span>, e quindi non è raccomandato. Indipendentemente dal <span class="notranslate">sprite</span> che viene sostituito, questa funzione <b>creerà una nuova pagina <span class="notranslate">texture</span> per lo sprite</b> e quindi si dovrebbe prestare attenzione quando la si usa perché potrebbe influire negativamente sulle prestazioni aumentando il numero di scambi <span class="notranslate">texture</span> richiesti per il rendering.</p>
   <p>Il file immagine da caricare deve essere <b>sempre</b> in formato <span class="inline">*.png</span> e tutte le immagini che devono essere trasformate in <span class="notranslate">sprites</span> animate devono avere un formato &quot;strip&quot; (vedi l'immagine qui sotto). Saranno divise nel numero di sotto-immagini specificato seguendo la regola <b>sprite width = strip width / sub images</b>.</p>
   <p><img alt="Example Sprite Strip" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Sprites/spr_strip.png" /></p>
@@ -26,7 +26,7 @@
   <p class="note"><b>NOTA</b>: dovresti essere consapevole che se stai usando questa funzione nel tuo gioco HTML5 per caricare risorse da un <span class="notranslate">server</span> esterno, allora, a causa della protezione XSS nei browser, i tentativi di caricare risorse da altri domini possono essere bloccati e possono sembrare restituire risultati vuoti.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">sprite_replace(ind, fname, imgnumb, removeback, smooth, xorig, yorig);</p>
+  <p class="code"><span data-field="title" data-format="default">sprite_replace</span>(ind, fname, imgnumb, removeback, smooth, xorig, yorig);</p>
   <table>
     <tbody>
       <tr>

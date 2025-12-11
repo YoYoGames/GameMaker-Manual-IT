@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>creare un buffer</title>
+  <title>buffer_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../assets/css/default.css" type="text/css" />
   <script src="../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>creare un buffer</h1>
+  <h1><span data-field="title" data-format="default">buffer_create</span></h1>
   <p>Usate questa funzione per allocare una porzione di memoria come <span class="notranslate">buffer</span> nel vostro gioco, con la funzione che restituisce l'<i>id</i> unico del <i>buffer</i> che dovrebbe essere memorizzato in una variabile e utilizzato per tutte le ulteriori chiamate di funzione a <span class="notranslate">buffer</span>. Il <span class="notranslate">buffer</span> può quindi essere utilizzato per memorizzare diversi tipi di dati (specificati quando si scrive sul <span class="notranslate">buffer</span> usando la funzione <a href="buffer_write.htm"><span class="inline">buffer_write()</span></a> con le seguenti costanti per definire il tipo <span class="notranslate">buffer</span>:</p>
   <table>
     <colgroup>
@@ -31,23 +31,23 @@
         <th>Descrizione</th>
       </tr>
       <tr>
-        <td><span class="notranslate"><span class="inline">buffer_fixed</span></td>
+        <td><span class="inline">buffer_fixed</span></td>
         <td>Un <span class="notranslate">buffer</span> di dimensioni fisse.</td>
       </tr>
       <tr>
-        <td><span class="notranslate"><span class="inline">buffer_grow</span></td>
+        <td><span class="inline">buffer_grow</span></td>
         <td>Un <span class="notranslate">buffer</span> che &quot;crescerà&quot; dinamicamente con l'aggiunta di dati</td>
       </tr>
       <tr>
-        <td><span class="notranslate"><span class="inline">buffer_wrap</span></td>
+        <td><span class="inline">buffer_wrap</span></td>
         <td>Un <span class="notranslate">buffer</span> dove i dati saranno &quot;avvolti&quot;. Quando i dati aggiunti raggiungono il limite della dimensione di <span class="notranslate">buffer</span>, la sovrascrittura sarà rimessa all'inizio di <span class="notranslate">buffer</span>, e la scrittura continuerà da quel punto.</td>
       </tr>
       <tr>
-        <td><span class="notranslate"><span class="inline">buffer_fast</span></td>
+        <td><span class="inline">buffer_fast</span></td>
         <td>Speciale &quot;spogliato&quot; <span class="notranslate">buffer</span> che è estremamente veloce da leggere/scrivere. Può essere usato solo con i <a href="buffer_read.htm">tipi di dati</a> <span class="inline">buffer_u8</span> e <i>deve</i> essere allineato a 1 byte.</td>
       </tr>
       <tr>
-        <td><span class="notranslate"><span class="inline">buffer_vbuffer</span></td>
+        <td><span class="inline">buffer_vbuffer</span></td>
         <td>Questo tipo di <span class="notranslate">buffer</span> deve essere usato solo come vertice <span class="notranslate">buffer</span>.</td>
       </tr>
     </tbody>
@@ -66,7 +66,7 @@
   <p class="note"><b>NOTA</b>: è importante che rimuoviate qualsiasi risorsa creata dinamicamente come questa dalla memoria quando non ne avete più bisogno per evitare perdite di memoria, quindi quando avete finito con il <span class="notranslate">buffer</span> che avete creato dovreste liberarlo di nuovo usando <span style="font-size:1px;"><a href="buffer_delete.htm"><span class="inline">buffer_delete()</span></a></span>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">buffer_create(size, type, alignment)</p>
+  <p class="code"><span data-field="title" data-format="default">buffer_create</span>(size, type, alignment)</p>
   <table>
     <tbody>
       <tr>

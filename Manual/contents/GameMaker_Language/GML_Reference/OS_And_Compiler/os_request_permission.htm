@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>controllare le autorizzazioni</h1>
+  <h1><span data-field="title" data-format="default">os_request_permission</span></h1>
   <p>Con questa funzione potete richiedere un permesso specifico. Si fornisce il permesso da richiedere come <span class="notranslate">string</span> usando il formato &quot;<span class="inline">android.permission.&lt;permission&gt;</span>&quot;, quindi per richiedere il permesso <span class="inline">RECORD_AUDIO</span> (per esempio) si chiama</p>
   <p class="code">os_request_permission(&quot;android.permission.RECORD_AUDIO&quot;);</p>
   <p>La funzione restituirà un <a href="../../../The_Asset_Editors/Object_Properties/Async_Events/System.htm">evento asincrono di sistema</a> in cui la mappa DS incorporata conterrà le seguenti coppie chiave/valore <a href="../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> DS conterrà le seguenti coppie chiave/valore:</p>
@@ -49,7 +49,7 @@
   <p class="note"><b>IMPORTANTE!</b> Questa funzione è solo per il target <b>Android</b>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">os_request_permission(permission)</p>
+  <p class="code"><span data-field="title" data-format="default">os_request_permission</span>(permission)</p>
   <table>
     <tbody>
       <tr>

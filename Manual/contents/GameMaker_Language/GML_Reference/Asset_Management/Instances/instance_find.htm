@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>trova_istanza</title>
+  <title>instance_find</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>trova_istanza</h1>
+  <h1><span data-field="title" data-format="default">instance_find</span></h1>
   <p>Tutte le istanze hanno un identificatore unico (<a href="Instance_Variables/id.htm"><span class="inline">id</span></a>) che può essere usato per modificarle e manipolarle mentre un gioco è in esecuzione, ma non sempre si può sapere quale sia l'id di una specifica istanza e quindi questa funzione può essere d'aiuto in quanto può essere usata per iterare attraverso tutte le istanze per trovare ciò di cui si ha bisogno. Specificate il sito <span class="notranslate">object</span> di cui volete trovare l'istanza e un numero, e se c'è un'istanza in quella posizione nella lista delle istanze, allora la funzione restituisce l'id di quell'istanza, altrimenti restituisce la <a href="../../../GML_Overview/Instance_Keywords.htm">parola chiave</a> speciale <span class="inline"><b>noone</b></span>. Potete anche usare la parola chiave <span class="inline"><b>all</b></span> per iterare attraverso tutte le istanze in un <span class="notranslate">room</span>, così come un genitore <span class="notranslate">object</span> per iterare attraverso tutte le istanze che fanno parte di quella gerarchia genitore/figlio, e potete anche specificare un'istanza (se avete il suo <span class="inline">id</span>) come controllo per vedere se effettivamente esiste nel corrente <span class="notranslate">room</span>. Si prega di notare che, poiché le istanze sono ordinate in modo <i>arbitrario</i>, non c'è un ordine specifico per come le istanze sono controllate da questa funzione, e qualsiasi istanza può essere in qualsiasi posizione.</p>
   <p>Il valore massimo di &quot;n&quot; in questa funzione sarebbe</p>
   <ul class="colour">

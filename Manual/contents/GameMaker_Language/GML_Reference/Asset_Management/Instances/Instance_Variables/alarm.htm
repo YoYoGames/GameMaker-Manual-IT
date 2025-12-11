@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>allarme</title>
+  <title>alarm</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>allarme</h1>
+  <h1><span data-field="title" data-format="default">alarm</span></h1>
   <p>Questo <a href="../../../../GML_Overview/Arrays.htm">array di</a> 1 dimensione è usato per ottenere il valore corrente per qualsiasi allarme che l'istanza può avere, o può essere usato per impostare tali allarmi. Ci sono dodici allarmi incorporati in ogni istanza di un <span class="notranslate">object</span>, e ognuno ha il suo <a href="../../../../../The_Asset_Editors/Object_Properties/Object_Events.htm"><span class="notranslate">event</span></a> che verrà eseguito quando questa variabile raggiunge lo 0.</p>
   <p>Gli allarmi sono contati all'inizio di ogni passo, <strong>dopo</strong> l'evento Begin Step ma <strong>prima dell</strong> 'evento Main Step, e prima che qualsiasi cosa sia resa per il fotogramma. Questo significa che se impostate un allarme a <span class="inline2">1</span> nell'evento Begin Step, il suo evento verrà eseguito in quello stesso fotogramma (poiché l'allarme verrà contato a 0 dopo che Begin Step è finito), ma se impostate un allarme a <span class="inline2">1</span> nell'evento Step, verrà eseguito nel fotogramma successivo.</p>
   <p>Va notato che l'allarme non è finito quando raggiunge lo 0 (anche se l'evento è stato innescato) in quanto il passo successivo scenderà a -1, quindi se avete bisogno di fermare un allarme per qualsiasi motivo dovreste impostare il suo valore di array a -1 <i>e non</i> a 0. I tempi di allarme sono calcolati in <i>passi di gioco</i>, con un valore di 30 che è 30 passi, 60 che è 60 passi, ecc.</p>

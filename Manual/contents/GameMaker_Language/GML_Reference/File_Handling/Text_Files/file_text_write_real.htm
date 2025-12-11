@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>file_text_write_real</h1>
+  <h1><span data-field="title" data-format="default">file_text_write_real</span></h1>
   <p>Con questa funzione potete scrivere un numero nel file di testo precedentemente aperto. Notate che poiché il valore da scrivere può essere un numero reale, tutti i decimali saranno scritti con un punto &quot;.&quot; come separatore. Se il file contiene già delle informazioni, queste verranno cancellate e il <span class="notranslate">string</span> verrà scritto all'inizio del file, a meno che non abbiate aperto il file con il <a href="file_text_open_append.htm"><span class="inline">file_text_open_append()</span></a>. Potete anche evitare questo usando la funzione <a href="file_text_readln.htm"><span class="inline">file_text_readln()</span></a> insieme alla funzione <a href="file_text_eof.htm"><span class="inline">file_text_eof()</span></a> per <span class="notranslate">loop</span> attraverso il contenuto del file fino ad arrivare alla fine e poi iniziare a scrivere.</p>
   <p>È importante notare che quando si scrivono numeri molto grandi in un file di testo utilizzando questa funzione, potrebbe essere tradotto in un formato standard semplificato, come &quot;6.6624e+003&quot;, che non può essere letto correttamente in <span data-keyref="GameMaker Name">GameMaker</span>. Per evitare problemi come questo, si dovrebbe invece convertire il valore in un <span class="notranslate">string</span> e utilizzare la funzione <a href="file_text_write_string.htm"><span class="inline">file_text_write_string()</span></a> invece.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">file_text_write_real(fileid, val);</p>
+  <p class="code"><span data-field="title" data-format="default">file_text_write_real</span>(fileid, val);</p>
   <table>
     <tbody>
       <tr>

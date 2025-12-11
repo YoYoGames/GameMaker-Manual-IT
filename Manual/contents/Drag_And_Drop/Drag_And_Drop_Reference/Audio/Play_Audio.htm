@@ -45,7 +45,7 @@
       </tr>
       <tr>
         <td><span class="notranslate">Offset</span></td>
-        <td>Il tempo (in secondi) a cui impostare il punto di partenza (valore predefinito 0). I valori più lunghi della lunghezza del suono dato vengono ignorati.<br>
+        <td>Il tempo (in secondi) a cui impostare il punto di partenza (valore predefinito 0). I valori più lunghi della lunghezza del suono dato vengono ignorati.<br />
           Quando questo campo viene lasciato vuoto, viene utilizzato l'offset dell'asset sonoro (posizione della traccia).</td>
       </tr>
       <tr>
@@ -56,10 +56,10 @@
   </table>
   <p> </p>
   <h4>Esempio 1:</h4>
-  <p><img>Il codice del blocco d'azione di cui sopra controlla la pressione di un pulsante del mouse e, se ne viene rilevato uno, controlla una variabile globale per vedere se non è <span class="inline">true</span>. Se non è <span class="inline">true</span>, allora viene riprodotto un suono (in loop) e la variabile globale viene impostata su <span class="inline">true</span>, altrimenti il suono viene interrotto e la variabile globale viene impostata su <span class="inline">false</span>.<br>
+  <p><img>Il codice del blocco d'azione di cui sopra controlla la pressione di un pulsante del mouse e, se ne viene rilevato uno, controlla una variabile globale per vedere se non è <span class="inline">true</span>. Se non è <span class="inline">true</span>, allora viene riprodotto un suono (in loop) e la variabile globale viene impostata su <span class="inline">true</span>, altrimenti il suono viene interrotto e la variabile globale viene impostata su <span class="inline">false</span>.<br />
     Il suono viene riprodotto con le impostazioni predefinite: un guadagno e un moltiplicatore di intonazione pari a 1 e un offset pari a 0 (l'offset predefinito del suono <span class="notranslate">asset</span>).</p>
   <h4>Esempio 2:</h4>
-  <p><img>Il codice del blocco di azione sopra riportato imposta innanzitutto la posizione della traccia del suono <span class="notranslate">asset</span> &quot;snd_MusicBoss&quot; a 20 secondi. Quindi controlla se la variabile di istanza &quot;skip_intro&quot; è impostata su <span class="inline">true</span>. Se lo è, inizia la riproduzione di &quot;snd_MusicBoss&quot; a 20 secondi, il valore per la posizione della traccia impostato in precedenza (questo perché il campo &quot;Offset&quot; è lasciato vuoto e quindi viene utilizzato l'offset dell'<strong>asset</strong> ). I primi 20 secondi dell'audio vengono saltati.<br>
+  <p><img>Il codice del blocco di azione sopra riportato imposta innanzitutto la posizione della traccia del suono <span class="notranslate">asset</span> &quot;snd_MusicBoss&quot; a 20 secondi. Quindi controlla se la variabile di istanza &quot;skip_intro&quot; è impostata su <span class="inline">true</span>. Se lo è, inizia la riproduzione di &quot;snd_MusicBoss&quot; a 20 secondi, il valore per la posizione della traccia impostato in precedenza (questo perché il campo &quot;Offset&quot; è lasciato vuoto e quindi viene utilizzato l'offset dell'<strong>asset</strong> ). I primi 20 secondi dell'audio vengono saltati.<br />
     Se la variabile di istanza &quot;skip_intro&quot; è impostata su <span class="inline">false</span>, viene avviata anche la riproduzione di &quot;snd_MusicBoss&quot; ma, poiché &quot;Offset&quot; è stato impostato su 0, l'audio inizierà a essere riprodotto dall'inizio. La posizione della traccia di 20 secondi, definita in precedenza per l'<strong>asset</strong> audio, viene ignorata.</p>
   <p> </p>
   <p> </p>

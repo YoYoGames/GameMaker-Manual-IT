@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>ds_list_destroy</h1>
+  <h1><span data-field="title" data-format="default">ds_list_destroy</span></h1>
   <p>Questa funzione rimuoverà la data-struttura della lista data dalla memoria, liberando le risorse che stava usando e rimuovendo tutti i valori che conteneva. Questa funzione dovrebbe sempre essere usata quando avete finito di usare la ds_list per prevenire perdite di memoria che possono rallentare e mandare in crash il vostro gioco. Notate che distruggere una lista de-referenzia qualsiasi struttura di dati memorizzata in essa dando una perdita di memoria, quindi dovreste passare attraverso la lista e distruggere tutte le voci della struttura di dati manualmente prima di distruggerla per prevenire questo. L'unica volta che questo non è necessario è quando avete contrassegnato qualsiasi elemento della lista come un'altra <a href="DS_Lists.htm">lista DS</a> o come una <a href="../DS_Maps/DS_Maps.htm">mappa DS</a>, nel qual caso questi elementi saranno distrutti e la loro memoria pulita automaticamente.</p>
   <p class="note"><b>IMPORTANTE!</b> Quando create una struttura di dati, il valore dell'indice per identificarla è un valore intero che parte da 0. Questo significa che strutture di dati di tipo diverso possono avere lo <b>stesso</b> valore di indice, quindi nel dubbio dovreste usare la <span style="font-size:1px;"><a href="../ds_exists.htm"><span class="inline">ds_exists()</span></a></span> prima di accedervi. Notate anche che gli indici vengono riutilizzati, quindi un valore di indice di una struttura dati distrutta può essere utilizzato da una nuova struttura creata in seguito, quindi si consiglia di impostare sempre la variabile che conteneva l'indice DS a -1 dopo la distruzione.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">ds_list_destroy(id);</p>
+  <p class="code"><span data-field="title" data-format="default">ds_list_destroy</span>(id);</p>
   <table>
     <tbody>
       <tr>

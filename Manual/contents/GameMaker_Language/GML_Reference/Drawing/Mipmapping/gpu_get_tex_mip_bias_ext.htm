@@ -15,11 +15,11 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gpu_get_tex_mip_bias_ext</h1>
+  <h1><span data-field="title" data-format="default">gpu_get_tex_mip_bias_ext</span></h1>
   <p>Con questa funzione potete recuperare il valore di bias di mipmap per un dato campionatore <span class="notranslate">shader</span>. Si fornisce il valore dell'indice per il campionatore <span class="notranslate">shader</span> (come restituito dalla funzione <a href="../../Asset_Management/Shaders/shader_get_sampler_index.htm"><span class="inline">shader_get_sampler_index()</span></a>e la funzione restituirà un valore di 0,0 per nessun bias, o un valore maggiore dove 1 è uguale alla prima mipmap, 2 è uguale alla seconda mipmap ecc. Questo controlla la velocità con cui la mappa mip viene scambiata e generalmente renderà il <span class="notranslate">shader</span> <span class="notranslate">textures</span> più sfocato quanto più alto è il valore e quanto più grande è la &quot;distanza&quot; che viene vista. Si noti che può restituire anche valori negativi, nel qual caso <span class="notranslate">shader</span> <span class="notranslate">textures</span> sarà più nitido su una distanza maggiore quanto più basso è il valore.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">gpu_get_tex_mip_bias_ext(sampler_index);</p>
+  <p class="code"><span data-field="title" data-format="default">gpu_get_tex_mip_bias_ext</span>(sampler_index);</p>
   <table>
     <tbody>
       <tr>

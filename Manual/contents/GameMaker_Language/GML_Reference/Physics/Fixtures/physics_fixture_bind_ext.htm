@@ -14,14 +14,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>physics_fixture_bind_ext</h1>
+  <h1><span data-field="title" data-format="default">physics_fixture_bind_ext</span></h1>
   <p>Una volta che abbiamo definito la nostra fixture deve essere legata ad un'istanza. Questo significa che le sue <i>proprietà</i> sono trasferite all'istanza selezionata, <b>non alla fixture stessa</b>, così che una fixture può essere legata a più istanze se tutte devono avere le stesse proprietà. Potete specificare un indice <span class="notranslate">object</span> per il target e tutte le istanze presenti in <span class="notranslate">room</span> in quel momento riceveranno le proprietà di quella fixture (ma non qualsiasi nuova istanza di <span class="notranslate">object</span> creata successivamente), oppure potete usare le parole chiave speciali <i>other</i> e <i>all</i>. Potete anche specificare un genitore <span class="notranslate">object</span> e tutte le istanze figlie con quel genitore riceveranno anche la fixture. Una volta che la fixture è stata legata a tutte le istanze di cui avete bisogno, può essere cancellata se non è più necessaria e le istanze con le proprietà di quella fixture non saranno interessate e manterranno quelle proprietà.</p>
   <p>Normalmente, l'attrezzatura sarà legata all'istanza con il centro di massa posizionato all'origine dell'istanza, tuttavia questo non è sempre ciò che si richiede e quindi questa funzione permette anche di spostare la posizione x e y in cui l'attrezzatura è legata di una data quantità (se non avete bisogno di questo allora usate <a href="physics_fixture_bind.htm"><span class="inline">physics_fixture_bind()</span></a> invece). È importante notare che una fixture può supportare solo un <i>singolo</i> offset, poiché l'aggiunta di più offset a una singola fixture non è supportata da Box2D.</p>
   <p><img>La funzione restituirà anche un valore &quot;id&quot; unico per la fixture <i>legata</i><b>(non la fixture stessa</b>) che può poi essere usato per rimuovere (&quot;un-bind&quot;) le proprietà fisiche dall'istanza usando la funzione <a href="physics_remove_fixture.htm"><span class="inline">physics_remove_fixture()</span></a>. Questo permette di aggiungere e rimuovere le proprietà fisiche da un'istanza senza distruggere e ricreare <span class="notranslate">objects</span>.</p>
   <p class="note"><b>NOTA</b>: Le fixture dovrebbero essere cancellate quando non sono più necessarie, poiché la mancata cancellazione può causare una perdita di memoria che rallenterà ed eventualmente farà crashare il gioco.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_fixture_bind_ext(fixture, target, xoffset, yoffset)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_fixture_bind_ext</span>(fixture, target, xoffset, yoffset)</p>
   <table>
     <tbody>
       <tr>

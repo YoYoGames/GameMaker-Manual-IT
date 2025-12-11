@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>mp_potential_settings</h1>
+  <h1><span data-field="title" data-format="default">mp_potential_settings</span></h1>
   <p>Le funzioni di <span class="inline">mp_potential_</span> fanno il loro lavoro usando una serie di parametri che possono essere cambiati usando questa funzione. Globalmente il metodo funziona come segue: prima cerca di muoversi dritto verso l'obiettivo, guardando un certo numero di passi avanti che può essere impostato con il parametro &quot;avanti&quot; (il valore predefinito è 3). Ridurre questo valore significa che l'istanza inizierà a cambiare direzione più tardi perché non &quot;vede&quot; così lontano, e aumentarlo significa che inizierà a cambiare direzione prima. Se questo controllo porta ad una collisione, allora inizia a guardare le direzioni più a sinistra e a destra della direzione ideale, in linea retta. Fa questo in passi di dimensione &quot;rotstep&quot; (il valore predefinito è 10), e riducendo questo dà all'istanza più possibilità di movimento ma sarà più lenta perché ha bisogno di più potenza di elaborazione.</p>
   <p>Il parametro &quot;maxrot&quot; è un po' più difficile da spiegare! L'istanza ha una direzione corrente di movimento, e maxrot (il valore predefinito è 30) indica quanto le è permesso di variare la sua direzione su entrambi i lati di quella direzione corrente in un passo. Quindi, anche se può muoversi, per esempio, dritto verso l'obiettivo, lo farà solo se non viola questo massimo cambiamento di direzione. Se rendete maxrot un valore grande allora l'istanza può cambiare molto direzione in ogni passo, e questo renderà più facile trovare un breve <span class="notranslate">path</span> ma il <span class="notranslate">path</span> sarà più brutto e meno naturale. Se si rende il valore più piccolo allora il <span class="notranslate">path</span> sarà più liscio ma potrebbe richiedere deviazioni più lunghe (e a volte anche fallire nel trovare la meta). Infine, quando nessun passo può essere fatto il comportamento dipende dal valore del parametro &quot;onspot&quot;. Se onspot è true (il valore predefinito), allora l'istanza ruoterà sul suo punto della quantità indicata con &quot;maxrot&quot; e se è false non si muoverà affatto. Impostarlo su false è utile, ad esempio, per le auto, ma riduce la possibilità che l'istanza trovi un <span class="notranslate">path</span>.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">mp_potential_settings(maxrot, rotstep, ahead, onspot)</p>
+  <p class="code"><span data-field="title" data-format="default">mp_potential_settings</span>(maxrot, rotstep, ahead, onspot)</p>
   <table>
     <tbody>
       <tr>

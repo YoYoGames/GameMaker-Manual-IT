@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>object_set_mask</h1>
+  <h1><span data-field="title" data-format="default">object_set_mask</span></h1>
   <p>Con questa funzione si può impostare il mask_index di uno specifico <span class="notranslate">object</span> (per maggiori informazioni sulle maschere si veda <a href="../../../../The_Asset_Editors/Objects.htm">The <span class="notranslate">Object</span> Editor</a>). Questo significa che tutte le istanze di questo <span class="notranslate">object</span> che sono create <i>dopo che la maschera è stata cambiata</i> saranno create con questa nuova maschera, mentre le istanze che sono già in <span class="notranslate">room</span> potrebbero non essere interessate. Si può impostare a -1 per rimuovere una maschera <span class="notranslate">sprite</span> e quindi tornare alla maschera definita per la <span class="notranslate">sprite</span> della <span class="notranslate">object</span> (o nessuna maschera se non è stato scelto <span class="notranslate">sprite</span> ).</p>
   <p>Si prega di notare che questa non è una funzione di istanza! Potete impostare l'indice della maschera delle singole istanze usando la variabile <a href="../Sprites/Sprite_Instance_Variables/mask_index.htm"><span class="inline">mask_index</span></a> e quindi avere dieci istanze tutte con una maschera diversa da quella di <span class="notranslate">object</span> da cui sono state create, e anche se cambiate l'indice della maschera di <span class="notranslate">object</span> usando questa funzione, tutte le istanze che sono attualmente in <span class="notranslate">room</span> rimarranno come erano, e solo le istanze create dopo aver chiamato la funzione inizieranno con la nuova maschera.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">object_set_mask(index, spr);</p>
+  <p class="code"><span data-field="title" data-format="default">object_set_mask</span>(index, spr);</p>
   <table>
     <tbody>
       <tr>

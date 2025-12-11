@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>creare una sequenza di livelli</title>
+  <title>layer_sequence_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,12 +14,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>creare una sequenza di livelli</h1>
+  <h1><span data-field="title" data-format="default">layer_sequence_create</span></h1>
   <p>Con questa funzione puoi creare un'istanza di un <span class="notranslate">sequence</span> <span class="notranslate">asset</span> sul dato livello. Si fornisce l'ID del livello che può essere un <span class="notranslate">string</span> del nome del livello - come definito nell'editor di <span class="notranslate">room</span> - o l'ID unico del livello - come restituito dalla funzione <a href="../General_Layer_Functions/layer_get_id.htm"><span class="inline">layer_get_id()</span></a>, così come la posizione X e Y in <span class="notranslate">room</span> per creare il <span class="notranslate">sequence</span>, e infine l'ID del <span class="notranslate">sequence</span> da creare. L'ID di <span class="notranslate">sequence</span> è la costante del nome che avete definito nel Browser di <span class="notranslate">Asset</span> per l'elemento <span class="notranslate">sequence</span>. La funzione restituirà l'ID univoco dell'elemento <span class="notranslate">sequence</span>, che può poi essere usato in tutte le ulteriori funzioni di livello per <span class="notranslate">sequences</span>, o può essere usato per recuperare l'istanza <span class="notranslate">sequence</span> <span class="notranslate">struct</span> usando la funzione <a href="layer_sequence_get_sequence.htm"><span class="inline">layer_sequence_get_instance()</span></a>.</p>
   <p>Vale la pena notare che se il <span class="notranslate">sequence</span> contiene qualsiasi traccia <span class="notranslate">object</span>, le loro istanze saranno create non appena l'elemento <span class="notranslate">sequence</span> stesso viene creato, indipendentemente da dove sono posizionate le loro chiavi <span class="notranslate">asset</span> sul <a href="../../../../../The_Asset_Editors/Sequence_Properties/Using_The_Dope_Sheet.htm">Dope Sheet</a>. Il controllore <span class="notranslate">Sequence</span> semplicemente alterna la <a href="../../Instances/Instance_Variables/visible.htm">visibilità</a> dell'istanza per nasconderla e mostrarla a seconda della posizione e della durata della chiave della traccia <span class="notranslate">asset</span> e <em>non </em>la crea e distrugge ripetutamente. Di conseguenza, le istanze eseguiranno i loro eventi Create quando l'elemento <span class="notranslate">sequence</span> viene creato e non quando iniziano le loro chiavi di risorsa.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">layer_sequence_create(layer_id, x, y, sequence_id)</p>
+  <p class="code"><span data-field="title" data-format="default">layer_sequence_create</span>(layer_id, x, y, sequence_id)</p>
   <table>
     <tbody>
       <tr>

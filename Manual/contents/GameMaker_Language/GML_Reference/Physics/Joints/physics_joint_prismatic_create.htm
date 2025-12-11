@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>creazione di un giunto fisico prismatico</title>
+  <title>physics_joint_prismatic_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,14 +15,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>creazione di un giunto fisico prismatico</h1>
+  <h1><span data-field="title" data-format="default">physics_joint_prismatic_create</span></h1>
   <p>Come un giunto revoluto, il giunto prismatico ha solo un grado di libertà, ma con questo giunto è direzionale rispetto a un asse piuttosto che rotazionale e di fatto impedisce qualsiasi forma di rotazione. Ecco un'immagine per aiutarvi a visualizzare come funziona:</p>
   <p><img>Abbiamo due istanze unite nel punto di ancoraggio, con un asse per il movimento definito dal vettore delle due coordinate x/y dell'asse w rispetto alle coordinate (0,0) del mondo fisico (quindi una componente x di 0 e una componente y di 1 (0,1) renderebbero il giunto un giunto prismatico verticale). Questo giunto può quindi muoversi <i>solo</i> relativamente a questo asse, come una molla o un pistone. Se impostate il limite trans inferiore o superiore, state fondamentalmente limitando la quantità di movimento lungo questo asse, dove la posizione 0 è il punto esatto che avete definito con w_anchor x/y, quindi un valore negativo andrebbe a &quot;sinistra&quot; di quel punto lungo l'asse e un valore positivo a &quot;destra&quot; come mostrato nel seguente diagramma (rendetevi conto che &quot;sinistra&quot; e &quot;destra&quot; sono termini relativi!)</p>
   <p><img>Si può anche definire il giunto come avente o meno un motore. Questo significa che quando non è influenzato da una collisione, il giunto si muoverà in una direzione lungo l'asse. Questa direzione è definita dalla velocità del motore, con un numero positivo verso le coordinate dell'asse (&quot;destra&quot;) e un numero negativo verso il punto di ancoraggio (&quot;sinistra&quot;). L'argomento &quot;max_motor_force&quot; serve a limitare la velocità del movimento per non avere un motore sempre in accelerazione e per limitare l'influenza che una collisione può avere sul movimento. In questo modo si può usare un motore di articolazione per simulare l'attrito dell'articolazione impostando la velocità dell'articolazione a zero e la forza massima a qualche valore piccolo, ma significativo. Il motore cercherà di impedire al giunto di muoversi, ma cederà ad un carico significativo.</p>
   <p>Come per tutti i giunti, se impostate il valore &quot;col&quot; su <span class="inline">true</span> allora le due istanze possono interagire e collidere tra loro ma <i>solo</i> se hanno eventi di collisione, invece se è impostato su <span class="inline">false</span>, non collideranno in nessun caso.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_joint_prismatic_create(inst1, inst2, w_anchor_x, w_anchor_y, w_axis_x, w_axis_x, lower_trans_limit, upper_trans_limit, limit, max_motor_force, motor_speed, motor, col)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_joint_prismatic_create</span>(inst1, inst2, w_anchor_x, w_anchor_y, w_axis_x, w_axis_x, lower_trans_limit, upper_trans_limit, limit, max_motor_force, motor_speed, motor, col)</p>
   <table>
     <tbody>
       <tr>

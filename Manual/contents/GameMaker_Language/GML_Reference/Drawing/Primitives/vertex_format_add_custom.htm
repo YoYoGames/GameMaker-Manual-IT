@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>vertex_format_add_custom</h1>
+  <h1><span data-field="title" data-format="default">vertex_format_add_custom</span></h1>
   <p>Questa funzione permette di utilizzare un <span class="notranslate">data type</span> personalizzato per specifici attributi del formato dei vertici come parte del nuovo formato dei vertici che viene creato. I valori disponibili da utilizzare sono definiti dalla costante <span class="notranslate">data type</span> che si sceglie, elencata di seguito:</p>
   <table>
     <colgroup>
@@ -55,7 +55,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Anche l'uso che verrà fatto di queste costanti deve essere definito in modo che i valori possano essere &quot;legati&quot; correttamente all'interno di <span class="notranslate">shader</span> che viene creato. Questo è necessario a causa del fatto che DX e OpenGL hanno requisiti diversi, quindi se non li si lega correttamente, non verranno visualizzati correttamente in <span class="notranslate">shader</span>. Le costanti d'uso disponibili che si possono scegliere sono elencate di seguito e quelle che si utilizzano dipendono dalle specifiche di <span class="notranslate">shader</span> che si sta creando:</p>
   <table>
     <colgroup>
@@ -116,7 +116,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Ci sono alcune cose importanti da notare quando si usano formati personalizzati come questi:</p>
   <ul class="colour">
     <li>La funzione <span class="inline">vertex_format_add_custom()</span> supporta solo <span class="inline">vertex_usage_position</span>, <span class="inline">vertex_usage_colour</span>, <span class="inline">vertex_usage_normal</span> e <span class="inline">vertex_usage_textcoord</span> quando si usa GLSL <span class="notranslate">shaders</span>. Questi mappano rispettivamente agli attributi <span class="notranslate">shader</span> <span class="inline">in_Position</span> , <span class="inline">in_Colour[0 - ...]</span>, <span class="inline">in_Normal</span> (tutto ciò che non è uno di questi tre attributi - ad esempio: <span class="notranslate">texture</span> coordinate - può essere mappato a qualsiasi attributo definito).</li>
@@ -145,7 +145,7 @@
      
   </ul>
   <h4>Sintassi:</h4>
-  <p class="code">vertex_format_add_custom(type, usage);</p>
+  <p class="code"><span data-field="title" data-format="default">vertex_format_add_custom</span>(type, usage);</p>
   <table>
     <tbody>
       <tr>

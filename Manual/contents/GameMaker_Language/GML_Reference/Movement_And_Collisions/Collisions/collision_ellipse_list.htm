@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>elenco collisioni_ellisse</title>
+  <title>collision_ellipse_list</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>elenco collisioni_ellisse</h1>
+  <h1><span data-field="title" data-format="default">collision_ellipse_list</span></h1>
   <p>Questa funzione è la stessa della funzione <a href="collision_ellipse.htm"><span class="inline">collision_ellipse()</span></a> solo che invece di rilevare solo un'istanza in collisione alla volta, rileverà istanze multiple. Si forniscono le posizioni x/y dell'alto a sinistra e del basso a destra dell'area ellittica da controllare insieme al <span class="notranslate">object</span> da controllare, e si può impostare il controllo per essere preciso (nel qual caso tutte le istanze controllate dovranno avere maschere di collisione <i>precise</i> ) e se il controllo deve includere o meno l'istanza chiamante.</p>
   <p>Si fornisce anche una <a href="../../Data_Structures/DS_Lists/DS_Lists.htm">lista DS</a>, quindi i <a href="../../Asset_Management/Instances/Instance_Variables/id.htm"><span class="inline">id</span></a> di tutte le istanze che collidono con l'istanza chiamante saranno aggiunte alla fine della lista data. Potete <a href="../../Data_Structures/DS_Lists/ds_list_clear.htm">cancellare</a> la lista prima di chiamare questa funzione in modo che contenga solo i risultati di questa chiamata di funzione. Avete anche la possibilità di ordinare le istanze in base alle loro distanze dall'origine dell'area ellittica alle loro origini. La funzione restituisce il numero di istanze trovate o 0 se non ne viene trovata nessuna.</p>
   <p>Notate che invece di un indice <span class="notranslate">object</span> potete fornire la <a href="../../../GML_Overview/Instance_Keywords.htm">parola chiave istanza</a> <span class="inline">all</span>, per controllare tutte le istanze nella corrente <span class="notranslate">room</span>, che può includere l'istanza che esegue il codice (a seconda dell'argomento <span class="inline">notme</span> ).</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">collision_ellipse_list(x1, y1, x2, y2, obj, prec, notme, list, ordered);</p>
+  <p class="code"><span data-field="title" data-format="default">collision_ellipse_list</span>(x1, y1, x2, y2, obj, prec, notme, list, ordered);</p>
   <table>
     <tbody>
       <tr>

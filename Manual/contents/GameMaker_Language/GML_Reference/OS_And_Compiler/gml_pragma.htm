@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>gml_pragma</h1>
+  <h1><span data-field="title" data-format="default">gml_pragma</span></h1>
   <p>La funzione <span class="inline">gml_pragma</span> influisce su come il target dato compila il vostro codice e dovrebbe essere chiamata con i diversi comandi per ottimizzare ulteriormente la compilazione finale del vostro progetto. Questi comandi sono effettivamente <i>pre-elaborati</i> prima che il gioco sia compilato e quindi la funzione può essere posizionata ovunque nel vostro progetto e sarà comunque elaborata prima che il gioco sia completamente compilato. I comandi disponibili sono i seguenti:</p>
   <ul class="colour">
     <li>&quot;<b>forceinline</b>&quot; - Quando la funzione viene chiamata con il pragma &quot;forceinline&quot; in una <b>funzione di script</b>, lo YYC compilerà il progetto con la funzione inline, piuttosto che referenziata. Questo darà un'ulteriore spinta all'elaborazione, ma bisogna fare attenzione quando lo si usa perché gonfierà anche la dimensione finale del file eseguibile, specialmente se il codice inline è grande e/o usato in più posti diversi, oltre ad aumentare notevolmente il tempo di compilazione. Si noti che questo pragma è <b>valido solo quando si costruisce usando YYC</b>.</li>
@@ -51,7 +51,7 @@
   <p class="note"><b>NOTA</b>: il primo argomento della funzione <span class="inline">gml_pragma</span> <b>deve essere una costante a tempo di compilazione <span class="notranslate">string</span> </b> e non una variabile.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">gml_pragma(command, [optional...]);</p>
+  <p class="code"><span data-field="title" data-format="default">gml_pragma</span>(command, [optional...]);</p>
   <table>
     <tbody>
       <tr>

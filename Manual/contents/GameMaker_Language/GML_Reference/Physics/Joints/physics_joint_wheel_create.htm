@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>creazione di un giunto per ruote fisse</title>
+  <title>physics_joint_wheel_create</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,13 +15,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>creazione di un giunto per ruote fisse</h1>
+  <h1><span data-field="title" data-format="default">physics_joint_wheel_create</span></h1>
   <p>Un giunto a ruota combina semplicemente un pistone e un giunto rotante, come una ruota montata sull'ammortizzatore di un'auto. Si specifica il punto di ancoraggio per il giunto così come le due istanze fisiche abilitate al giunto, e la prima istanza agirà come &quot;corpo&quot; per il giunto, mentre la seconda sarà la &quot;ruota&quot;, e sarà autorizzata a muoversi liberamente intorno all'asse del giunto. Potete anche impostare un vettore asse, che è la linea immaginaria lungo la quale il giunto agirà come una &quot;molla&quot; permettendo alla ruota di rimbalzare su e giù lungo di essa quando incontra degli ostacoli (molto simile al giunto a pistone). L'immagine seguente illustra questo:</p>
   <p><img>Se si sceglie di abilitare un motore, allora la seconda istanza ruoterà intorno alla posizione di ancoraggio, e si può impostare la coppia massima del motore utilizzata per ottenere la velocità del motore desiderata (N/m) così come la velocità alla quale il motore dovrebbe girare. Poiché il giunto della ruota ha anche un asse lungo il quale può muoversi, potete impostare la frequenza di oscillazione (in Hz) così come il rapporto di smorzamento per il giunto - potreste aver bisogno di giocare con questi valori per metterli a punto e si raccomanda di iniziare con valori più piccoli e aumentarli fino ad ottenere l'effetto desiderato.</p>
   <p>Come per tutti i giunti, se impostate il valore &quot;col&quot; su <span class="inline">true</span> allora le due istanze possono interagire e collidere tra loro ma <i>solo</i> se hanno eventi di collisione, invece se è impostato su <span class="inline">false</span>, non collideranno in nessun caso.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">physics_joint_wheel_create(inst1, inst2, anchor_x, anchor_y, axis_x, axis_y, enableMotor, max_motor_torque, motor_speed, freq_hz, damping_ratio, col)</p>
+  <p class="code"><span data-field="title" data-format="default">physics_joint_wheel_create</span>(inst1, inst2, anchor_x, anchor_y, axis_x, axis_y, enableMotor, max_motor_torque, motor_speed, freq_hz, damping_ratio, col)</p>
   <table>
     <tbody>
       <tr>

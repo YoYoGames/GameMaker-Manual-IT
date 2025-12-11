@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>orientamento_audio_ascoltatore</title>
+  <title>audio_listener_orientation</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,14 +14,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>orientamento_audio_ascoltatore</h1>
+  <h1><span data-field="title" data-format="default">audio_listener_orientation</span></h1>
   <p>Con questa funzione è possibile modificare l'orientamento dell'<i>ascoltatore</i> nello spazio audio 3D. La direzione <b>dello sguardo</b> e la direzione <b>verso l'alto</b> si basano sui vettori risolti dalle posizioni relative x, y e z indicate e sono predefinite a <span data-keyref="Unit_Vector_Z">(0, 0, 1)</span> per la direzione dello sguardo e <span data-keyref="Unit_Vector_Y">(0, 1, 0)</span> per la direzione verso l'alto, come mostrato nell'illustrazione seguente:</p>
   <p><img alt="Listener Orientation Diagram" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Audio/Audio_Orientation_Base.png" /></p>
   <p class="note"><b><span class="note">NOTA</span> </b>se si hanno più ascoltatori si deve usare la funzione <a href="audio_listener_set_orientation.htm"><span class="inline">audio_listener_set_orientation()</span></a>.</p>
   <p>La modifica dell'orientamento dell'ascoltatore con questa funzione cambierà il modo in cui i suoni creati dagli emettitori audio intorno al gioco <span class="notranslate">room</span> vengono percepiti dal giocatore del gioco. Nell'esempio che segue, i suoni creati dall'emettitore quando l'ascoltatore si trova nella posizione predefinita sembrerebbero provenire dal basso e a destra dell'ascoltatore, ma con la nuova posizione e il nuovo orientamento dell'ascoltatore saranno percepiti come provenienti dall'<i>alto</i> e a destra.</p>
   <p><img alt="Listener Orientation Example" class="center" src="../../../../../assets/Images/Scripting_Reference/GML/Reference/Audio/Audio_Orientation_Example.png" /></p>
   <h4>Sintassi:</h4>
-  <p class="code">audio_listener_orientation(lookat_x, lookat_y, lookat_z, up_x, up_y, up_z);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_listener_orientation</span>(lookat_x, lookat_y, lookat_z, up_x, up_y, up_z);</p>
   <table>
     <tbody>
       <tr>

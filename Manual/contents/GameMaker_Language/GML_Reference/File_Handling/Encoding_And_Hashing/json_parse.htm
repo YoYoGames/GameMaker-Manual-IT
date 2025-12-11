@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>json_parse</h1>
+  <h1><span data-field="title" data-format="default">json_parse</span></h1>
   <p>Questa funzione può essere usata per analizzare un JSON <span class="notranslate">string</span> (sia precedentemente creato usando <a href="json_stringify.htm"><span class="notranslate">json_stringify</span></a> o da qualsiasi fonte valida), e convertirlo in una collezione di array o <span class="notranslate">structs</span>, dove un array è l'equivalente di un array JSON e un <span class="notranslate">struct</span> è l'equivalente di un JSON <span class="notranslate">object</span>. Voi fornite il <span class="notranslate">string</span> da analizzare, e la funzione restituirà l'array di primo livello o <span class="notranslate">struct</span> che può essere usato nel vostro codice. Se non siete sicuri del contenuto del JSON, potete usare le diverse <a href="../../Variable_Functions/Variable_Functions.htm">funzioni variabili</a> (come <a href="../../Variable_Functions/typeof.htm"><span class="inline">typeof()</span></a> e <a href="../../Variable_Functions/variable_struct_get_names.htm"><span class="inline">variable_struct_get_names()</span></a> nel caso di un <span class="notranslate">struct</span>) per controllare il contenuto restituito. Si noti che il tentativo di analizzare un valore non valido (cioè: non un <span class="notranslate">string</span>) genererà un errore di eccezione.</p>
   <p>Quando si usa questa funzione ci sono alcune cose importanti da notare:</p>
   <ul class="colour">
@@ -24,7 +24,7 @@
   </ul>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">json_parse(json)</p>
+  <p class="code"><span data-field="title" data-format="default">json_parse</span>(json)</p>
   <table>
     <tbody>
       <tr>
@@ -48,12 +48,12 @@
     show_debug_message(data);
   </p>
   <p>Il codice qui sopra crea un nuovo <span class="notranslate">string</span> contenente un valido JSON <span class="notranslate">object</span>, e poi chiama <span class="inline">json_parse()</span> per convertire quel <span class="notranslate">string</span> in un <span class="notranslate">GML</span> <span class="notranslate">struct</span>. Poi stampa il risultato nel log di debug.</p>
-  <p class="note"><span class="note">NOTA</span> Noterete che il JSON <span class="notranslate">string</span> contiene un backslash<span class="inline2">(\</span>) prima di ogni doppio apice (<span class="inline2">&quot;</span>) al suo interno:<br>
-    <br>
-   <span class="inline2">json = &quot;{ \ <strong>&quot; </strong></span>myObj<br>
-    <br>
-    Questo per assicurarsi che le doppie virgolette siano lette come un vero carattere all'interno di <span class="notranslate">string</span>, invece di essere lette come parte del codice e chiudere prematuramente <span class="notranslate">string</span>. In questo modo stiamo usando un backslash per &quot;sfuggire&quot; alle doppie virgolette.<br>
-    <br>
+  <p class="note"><span class="note">NOTA</span> Noterete che il JSON <span class="notranslate">string</span> contiene un backslash<span class="inline2">(\</span>) prima di ogni doppio apice (<span class="inline2">&quot;</span>) al suo interno:<br />
+    <br />
+   <span class="inline2">json = &quot;{ \ <strong>&quot; </strong></span>myObj<br />
+    <br />
+    Questo per assicurarsi che le doppie virgolette siano lette come un vero carattere all'interno di <span class="notranslate">string</span>, invece di essere lette come parte del codice e chiudere prematuramente <span class="notranslate">string</span>. In questo modo stiamo usando un backslash per &quot;sfuggire&quot; alle doppie virgolette.<br />
+    <br />
     Se stai caricando JSON da un file esterno, tuttavia, non c'è bisogno di sfuggire ai caratteri in quel file e farlo potrebbe causare errori durante l'analisi.
   </p>
   <hr />

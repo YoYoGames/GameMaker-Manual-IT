@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>creare una vista della telecamera</title>
+  <title>camera_create_view</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>creare una vista della telecamera</h1>
+  <h1><span data-field="title" data-format="default">camera_create_view</span></h1>
   <p>Questa funzione creerà una nuova telecamera e poi imposterà la sua vista in <span class="notranslate">room</span>, prima di restituire il valore ID unico per identificare la telecamera nelle future chiamate di funzione. La telecamera verrà creata utilizzando i valori che hai impostato in questa funzione per la posizione, la dimensione e altri dettagli che sono correlati ai valori che hai impostato nell'Editor <span class="notranslate">Room</span> (vedi <a href="../../../../The_Asset_Editors/Rooms.htm">qui</a>). Nota che questa funzione può prendere un <i>numero variabile di argomenti</i> con solo gli argomenti di posizione x/y e larghezza/altezza obbligatori. Tutti gli argomenti non forniti useranno i loro argomenti predefiniti.</p>
   <p>Si noti che le telecamere sono come tutte le risorse dinamiche e occupano memoria quando vengono create. Questo significa che bisogna fare attenzione a non creare inutilmente telecamere e a distruggere quelle che non servono chiamando la funzione <a href="camera_destroy.htm"><span class="inline">camera_destroy()</span></a>. Questo significa anche che le telecamere persisteranno da <span class="notranslate">room</span> a <span class="notranslate">room</span> se assegnate a una variabile <span class="inline">global</span> (persisteranno anche quando assegnate a variabili di istanza o locali, ma non è possibile accedervi dopo aver cambiato <span class="notranslate">room</span>, da cui la perdita di memoria), in modo che si possa - per esempio - creare una nuova telecamera, assegnarla a una variabile globale, e poi all'inizio di ogni <span class="notranslate">room</span> utilizzare le funzioni <span class="inline">camera_set_*</span> per impostare le proprietà prima di assegnarla a una porta di vista.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">camera_create_view(room_x, room_y, width, height, [angle, object, x_speed, y_speed, x_border, y_border])</p>
+  <p class="code"><span data-field="title" data-format="default">camera_create_view</span>(room_x, room_y, width, height, [angle, object, x_speed, y_speed, x_border, y_border])</p>
   <table>
     <tbody>
       <tr>

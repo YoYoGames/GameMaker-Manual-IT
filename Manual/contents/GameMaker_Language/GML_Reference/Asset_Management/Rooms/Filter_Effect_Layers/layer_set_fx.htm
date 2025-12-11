@@ -14,14 +14,14 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>layer_set_fx</h1>
+  <h1><span data-field="title" data-format="default">layer_set_fx</span></h1>
   <p>Questa funzione serve ad assegnare un FX <span class="notranslate">struct</span> a un <span class="notranslate">Room</span> livello. Si specifica l'ID o il nome del livello che si desidera modificare, quindi un FX <span class="notranslate">struct</span> (come restituito da <span class="inline"><a href="fx_create.htm">fx_create()</a></span> o <span class="inline"><a href="layer_get_fx.htm">layer_get_fx()</a></span>) che verrà applicato al livello specificato, rendendo l'effetto visibile in <span class="notranslate">room</span>.</p>
   <p>Se si specifica un livello che non è un livello filtro/effetto ma è di un altro tipo (come un livello istanza, <span class="notranslate">Asset</span>, <span class="notranslate">Tile</span>, ecc.), l'effetto verrà applicato al contenuto di quel livello e a tutti i livelli sottostanti.</p>
   <p>Se al layer specificato è già assegnato un FX <span class="notranslate">struct</span>, questo verrà sostituito dal nuovo.</p>
   <p class="note"><span class="note">NOTA</span> La chiamata di questa funzione al livello principale di un <span class="notranslate">script</span> non avrà alcun effetto, poiché <span class="notranslate">scripts</span> viene eseguito prima del caricamento del primo <span class="notranslate">room</span>. È possibile impostare prima una <a href="../General_Layer_Functions/layer_set_target_room.htm">stanza di destinazione</a> e poi chiamare questa funzione.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">layer_set_fx(layer_name_or_id, filter_or_effect);</p>
+  <p class="code"><span data-field="title" data-format="default">layer_set_fx</span>(layer_name_or_id, filter_or_effect);</p>
   <table>
     <tbody>
       <tr>

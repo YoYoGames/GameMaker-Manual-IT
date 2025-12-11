@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>emettitore audio_falloff</title>
+  <title>audio_emitter_falloff</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -14,13 +14,13 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>emettitore audio_falloff</h1>
+  <h1><span data-field="title" data-format="default">audio_emitter_falloff</span></h1>
   <p>Con questa funzione potete impostare la distanza di caduta per un emettitore. Questa è la distanza dall'<i>ascoltatore</i> che l'emettitore deve essere prima che il suono sia &quot;caduto&quot; a un volume di 0. Il valore predefinito è 100, ma attenzione a impostarlo a qualsiasi valore inferiore a 1 in quanto ciò renderà qualsiasi suono riprodotto attraverso questo emettitore inudibile per l'<i>ascoltatore</i>, tuttavia qualsiasi altro valore causerà il suono a svanire più lontano l'emettitore è dall'<i>ascoltatore</i>.</p>
   <p>Il modo in cui il suono stesso viene ascoltato dipenderà dal riferimento di falloff (che è la distanza sotto la quale il volume della sorgente diminuisce normalmente della metà) e dal fattore di roll off (che influenza il suono solo dopo la distanza di riferimento di falloff). Il fattore di default è normalmente 1, e l'effetto dei diversi valori di falloff dipenderà dal modello scelto.</p>
   <p>Per una guida completa ai diversi modelli di falloff e a come questi valori sono utilizzati, si veda la funzione <span class="inline"><a href="../audio_falloff_set_model.htm">audio_falloff_set_model()</a>.</span></p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">audio_emitter_falloff(emitter, falloff_ref, falloff_max, falloff_factor);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_emitter_falloff</span>(emitter, falloff_ref, falloff_max, falloff_factor);</p>
   <table>
     <tbody>
       <tr>

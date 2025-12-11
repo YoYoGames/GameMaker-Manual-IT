@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>superficie_set_target</title>
+  <title>surface_set_target</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>superficie_set_target</h1>
+  <h1><span data-field="title" data-format="default">surface_set_target</span></h1>
   <p>Con questa funzione impostate tutti gli ulteriori disegni sulla superficie di destinazione piuttosto che sullo schermo e in questo modo potete dire a <span data-keyref="GameMaker Name">GameMaker</span> di disegnare solo cose specifiche sulla superficie specificata. Notate che se non chiamate <a href="surface_reset_target.htm"><span class="inline">surface_reset_target()</span></a> dopo che avete finito, niente sarà disegnato sullo schermo poiché tutti i disegni successivi (anche in altre istanze) saranno fatti sulla superficie. Dovreste anche rendervi conto che nulla sarà visto se la superficie stessa non è disegnata sullo schermo nell'evento draw di un'istanza. Potete anche controllare il valore di ritorno di questa funzione come strumento di debug per verificare se il target della superficie è stato impostato o meno, con un valore di ritorno di 0 che rappresenta un fallimento nell'impostare il target e qualsiasi altro valore positivo che rappresenta un successo.</p>
   <p>Una cosa che va notata è che le superfici sono <i>impilate</i>, quindi non si può saltare da un obiettivo all'altro e poi tornare al normale obiettivo di disegno alla fine, ma piuttosto bisogna aprire e chiudere gli obiettivi di rendering. Per esempio, questo <b>non</b> funzionerà correttamente:</p>
   <p class="code">surface_set_target(surf1);<br />
@@ -39,7 +39,7 @@
   <p class="note"><b>NOTA</b>: Quando si lavora con le superfici c'è la possibilità che esse possano cessare di esistere in qualsiasi momento perché sono memorizzate in <span class="notranslate">texture</span> memory. Dovreste <b>SEMPRE</b> controllare che una superficie esista usando <span style="font-size:1px;"><a href="surface_exists.htm"><span class="inline">surface_exists()</span></a></span> prima di farvi riferimento direttamente.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">surface_set_target(surface_id);</p>
+  <p class="code"><span data-field="title" data-format="default">surface_set_target</span>(surface_id);</p>
   <table>
     <tbody>
       <tr>

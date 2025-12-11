@@ -15,12 +15,12 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>mp_grid_add_instances</h1>
+  <h1><span data-field="title" data-format="default">mp_grid_add_instances</span></h1>
   <p>Questa funzione usa la maschera di collisione dell'istanza (decisa dalle proprietà di <span class="notranslate">sprite</span> o dall'indice della maschera dell'istanza chiamante) per marcare le celle come proibite o meno in una griglia MP, dove le celle proibite non possono essere attraversate da nessuna delle funzioni di pathfinding. È possibile specificare nella funzione se considerare le collisioni precise o meno e le celle proibite contrassegnate cambieranno a seconda di questa impostazione. Questa immagine illustra questo comportamento:</p>
   <p><img>Le due istanze qui sopra sono state aggiunte nella griglia MP usando la funzione <span class="inline">mp_grid_add_instances()</span> con preciso impostato come vero. Come potete vedere, l'istanza verde ha segnato solo le caselle della griglia che &quot;tocca&quot; come proibite, a causa del fatto che anche la sua maschera <span class="notranslate">sprite</span> è impostata su preciso. Tuttavia la seconda istanza ha marcato anche altre celle che non <i>sembrano</i> toccare. Questo perché la maschera di <span class="notranslate">sprite</span> <b>non</b> è impostata su preciso, il che significa che anche se state usando l'impostazione precisa nella funzione, solo il rettangolo di delimitazione di <span class="notranslate">sprite</span> sarà considerato. Questo è anche ciò che accadrebbe se impostaste l'argomento preciso della funzione su false - anche le istanze con una maschera precisa <span class="notranslate">sprite</span> saranno aggiunte nella griglia in base ai loro riquadri di delimitazione.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">mp_grid_add_instances(id, obj, prec);</p>
+  <p class="code"><span data-field="title" data-format="default">mp_grid_add_instances</span>(id, obj, prec);</p>
   <table>
     <tbody>
       <tr>

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>http_post_stringa</title>
+  <title>http_post_string</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>http_post_stringa</h1>
+  <h1><span data-field="title" data-format="default">http_post_string</span></h1>
   <p>In informatica, una <b>post</b> request viene utilizzata quando il client ha bisogno di inviare dati al <span class="notranslate">server</span> come parte della richiesta di recupero, come quando si carica un file o si invia un modulo compilato, e lo stesso vale per questa funzione in <span data-keyref="GameMaker Name">GameMaker</span>. A differenza del metodo di richiesta <span class="inline"><a href="http_get.htm">http_get()</a></span> in cui solo un URL viene inviato a <span class="notranslate">server</span>, <span class="inline">http_post_string()</span> include anche un <span class="notranslate">string</span> che viene inviato a <span class="notranslate">server</span> e può risultare nella creazione di una nuova risorsa o l'aggiornamento di una risorsa esistente o entrambi. Si dovrebbe notare che i parametri di richiesta HTTP (i bit a volte &quot;attaccati&quot; alla fine di un URL quando si invia un modulo su una pagina web) sono perfettamente accettabili anche quando si usa questa funzione.</p>
   <p class="note"><b><span class="note">NOTA</span> </b>Dovresti essere consapevole che a causa della protezione XSS nei browser, le richieste e i tentativi di caricare risorse da altri domini sono bloccati e possono sembrare restituire risultati vuoti. Si prega di vedere la parte sui <a href="HTTP.htm">problemi di dominio incrociato</a> per ulteriori dettagli.</p>
   <p>Questo evento genererà un &quot;call back&quot; che viene raccolto da qualsiasi <a href="../../../../The_Asset_Editors/Object_Properties/Async_Events/HTTP.htm">evento HTTP</a>, nel qual caso genererà una <a href="../../Data_Structures/DS_Maps/DS_Maps.htm">DS Map</a> (più comunemente nota come &quot;dizionario&quot;) che è esclusiva di questo evento e viene memorizzata nella variabile speciale <a href="../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><b>async_load</b></a>. Questa mappa DS conterrà valori diversi a seconda che ci siano dati restituiti o meno. Per esempio, se è stato richiesto un file, l'evento si attiverà più volte man mano che ogni pacchetto di dati viene ricevuto, in modo da poter mostrare una barra di progresso, per esempio. La struttura generale della mappa DS sarà la seguente:</p>
@@ -33,7 +33,7 @@
   </ul>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">http_post_string(url, string);</p>
+  <p class="code"><span data-field="title" data-format="default">http_post_string</span>(url, string);</p>
   <table>
     <tbody>
       <tr>

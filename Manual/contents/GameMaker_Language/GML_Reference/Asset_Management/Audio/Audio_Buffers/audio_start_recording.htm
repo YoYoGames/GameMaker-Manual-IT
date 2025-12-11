@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>inizio_registrazione_audio</title>
+  <title>audio_start_recording</title>
   <meta name="generator" content="Adobe RoboHelp 2020" />
   <link rel="stylesheet" href="../../../../../assets/css/default.css" type="text/css" />
   <script src="../../../../../assets/scripts/main_script.js"></script>
@@ -15,7 +15,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>inizio_registrazione_audio</h1>
+  <h1><span data-field="title" data-format="default">audio_start_recording</span></h1>
   <p>Questa funzione avvia la registrazione dell'audio dalla sorgente del registratore indicizzata. È possibile ottenere il numero di sorgenti del registratore utilizzando la funzione <a href="audio_get_recorder_count.htm"><span class="inline">audio_get_recorder_count()</span></a>Una volta avviata la registrazione, l'audio verrà memorizzato in un <span class="notranslate">buffer</span> temporaneo e inizierà a scatenare un <a href="../../../../../The_Asset_Editors/Object_Properties/Async_Events/Audio_Recording.htm">evento asincrono di registrazione audio</a>. Questo evento viene attivato a ogni passo della registrazione e creerà la speciale <a href="../../../Data_Structures/DS_Maps/DS_Maps.htm">mappa DS</a> nella variabile <a href="../../../../GML_Overview/Variables/Builtin_Global_Variables/async_load.htm"><span class="inline">async_load</span></a> con le seguenti coppie chiave/valore:</p>
   <ul class="colour">
     <li>&quot;<strong>buffer_id</strong>&quot; - l'ID del sito temporaneo <span class="notranslate">buffer</span> da utilizzare per recuperare i dati audio</li>
@@ -26,7 +26,7 @@
   <p class="note"><b><span class="note">NOTA</span> </b>La maggior parte delle piattaforme supporta la registrazione dell'audio in qualche forma, ma ciò non significa che tutti i dispositivi lo permettano, anche se la piattaforma lo fa, quindi si dovrebbe sempre controllare che la funzione <span style="font-size:1px;"><a href="audio_get_recorder_count.htm"><span class="inline">audio_get_recorder_count()</span></a></span> restituisca un valore maggiore di 0 per verificare che i dispositivi di registrazione siano disponibili prima di utilizzare le altre funzioni di registrazione.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">audio_start_recording(recorder_index);</p>
+  <p class="code"><span data-field="title" data-format="default">audio_start_recording</span>(recorder_index);</p>
   <table>
     <tbody>
       <tr>

@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--<div class="body-scroll" style="top: 150px;">-->
-  <h1>sprite_set_speed</h1>
+  <h1><span data-field="title" data-format="default">sprite_set_speed</span></h1>
   <p>Questa funzione può essere usata per impostare la velocità e il tipo di animazione di base per la risorsa <span class="notranslate">sprite</span>. Questo è normalmente impostato nello <a href="../../../../../The_Asset_Editors/Sprites.htm">Sprite Editor</a>, ma ci possono essere momenti in cui è necessario impostarlo manualmente per una data risorsa <span class="notranslate">sprite</span>. È necessario fornire l'indice <span class="notranslate">sprite</span> da impostare, la velocità di animazione e il tipo di velocità di animazione da applicare. Il tipo di velocità di animazione può essere una qualsiasi delle seguenti costanti:</p>
   <table>
     <tbody>
@@ -32,7 +32,7 @@
       </tr>
     </tbody>
   </table>
-  <p><br>
+  <p><br />
     Selezionare il tipo di velocità da usare per calcolare le animazioni è molto importante, poiché c'è un'enorme differenza tra le due opzioni. I due esempi seguenti illustrano questa differenza:</p>
   <ul class="colour">
     <li>Se avete un <span class="notranslate">sprite</span> che disegna 1 fotogramma al <i>secondo</i> e impostate la velocità dell'immagine a 0.5, esso disegnerà a 0.5 fotogrammi al secondo. Se il tuo frame rate di gioco è di 60 frame al secondo, allora <span class="notranslate">sprite</span> disegnerà 1 frame ogni 120 frame di gioco.</li>
@@ -42,7 +42,7 @@
   <p class="note"><b>IMPORTANTE!</b> Questa funzione influenzerà la <b>risorsa</b> <span class="notranslate">sprite</span>, quindi qualsiasi cambiamento fatto con questa funzione influenzerà <b>tutte le</b> istanze che stanno usando <span class="notranslate">sprite</span> e anche tutte le istanze future.</p>
   <p> </p>
   <h4>Sintassi:</h4>
-  <p class="code">sprite_set_speed(index, speed, type)</p>
+  <p class="code"><span data-field="title" data-format="default">sprite_set_speed</span>(index, speed, type)</p>
   <table>
     <tbody>
       <tr>
