@@ -3126,9 +3126,6 @@ export default function(hljs) {
   ];
   // many of these look like enumerables to me (see comments below)
   const SYMBOLS = [
-    "audio_bus_main", 
-    "wallpaper_config", 
-    "wallpaper_subscription_data", 
     "argument_relative",
     "argument",
     "argument0",
